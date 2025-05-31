@@ -4,7 +4,7 @@
 @section('third_party_stylesheets')
 
   <style>
-    .contact .map-container {
+    .map .map-container {
         width: 100%;
         height: 280px;
         border-radius: 15px;
@@ -112,7 +112,7 @@
     </section><!-- /Contact Section -->
 
     <!-- Clients Section -->
-    <section id="clients" class="recent-news section light-background">
+    <section id="clients" class="map section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
