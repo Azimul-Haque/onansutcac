@@ -613,7 +613,7 @@
             <article>
 
               <div class="post-img">
-                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid">
+                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid"></a>
               </div>
 
               <p class="post-category">Clean Water Technology</p>
@@ -640,7 +640,7 @@
             <article>
 
               <div class="post-img">
-                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid">
+                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
               </div>
 
               <p class="post-category">Nano Technology</p>
