@@ -570,7 +570,7 @@
     </section><!-- /Features Section -->
 
     <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
+    <section id="clients" class="recent-news section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
