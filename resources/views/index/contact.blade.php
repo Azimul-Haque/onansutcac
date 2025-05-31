@@ -134,7 +134,7 @@
         }
 
         .map-container iframe {
-          
+          display: block;
         }
     </style>
     <!-- /Map Section -->
