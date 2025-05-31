@@ -199,7 +199,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Partners</h2>
-        <p>CHECK OUR PORTFOLIO</p>
+        <p>Our Clients & Collaborators</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
