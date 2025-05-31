@@ -415,6 +415,30 @@
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
+                <div class="card mb-3" style="max-width: 300px;">
+                  <div class="card-body py-2">
+                    <h6 class="card-subtitle mb-2 text-muted">Event Details</h6>
+                    <div class="meta-item d-flex align-items-center mb-1">
+                      <i class="bi bi-clock me-2"></i>
+                      <span>01:00 PM - 07:00 PM</span>
+                    </div>
+                    <div class="meta-item d-flex align-items-center">
+                      <i class="bi bi-geo-alt me-2"></i>
+                      <span>Various Classrooms</span>
+                    </div>
+                  </div>
+                </div>
+
+                <style>
+                  /* Optional: Add some basic styling for meta-item if not already defined */
+                  .meta-item {
+                    font-size: 0.95rem; /* Slightly larger font */
+                    color: #495057; /* Darker text */
+                  }
+                  .meta-item i {
+                    color: #0d6efd; /* Bootstrap primary color for icons */
+                  }
+                </style>
                 <p>
                   Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
@@ -441,6 +465,30 @@
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
+                <div class="card mb-3" style="max-width: 300px;">
+                  <div class="card-body py-2">
+                    <h6 class="card-subtitle mb-2 text-muted">Event Details</h6>
+                    <div class="meta-item d-flex align-items-center mb-1">
+                      <i class="bi bi-clock me-2"></i>
+                      <span>01:00 PM - 07:00 PM</span>
+                    </div>
+                    <div class="meta-item d-flex align-items-center">
+                      <i class="bi bi-geo-alt me-2"></i>
+                      <span>Various Classrooms</span>
+                    </div>
+                  </div>
+                </div>
+
+                <style>
+                  /* Optional: Add some basic styling for meta-item if not already defined */
+                  .meta-item {
+                    font-size: 0.95rem; /* Slightly larger font */
+                    color: #495057; /* Darker text */
+                  }
+                  .meta-item i {
+                    color: #0d6efd; /* Bootstrap primary color for icons */
+                  }
+                </style>
                 <p>
                   Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
