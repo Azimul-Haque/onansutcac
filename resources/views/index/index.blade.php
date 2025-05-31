@@ -604,13 +604,13 @@
               "breakpoints": {
                 "768": { /* For screens 768px and up (md breakpoint) */
                   "slidesPerView": 2,
-                  "spaceBetween": 30
-                  // "slidesPerGroup": 2 /* Optional: slide 2 testimonials at a time */
+                  "spaceBetween": 30,
+                  "slidesPerGroup": 2 /* Optional: slide 2 testimonials at a time for smoother experience */
                 },
                 "992": { /* For screens 992px and up (lg breakpoint) */
                   "slidesPerView": 3,
-                  "spaceBetween": 30
-                  // "slidesPerGroup": 3 /* Optional: slide 3 testimonials at a time */
+                  "spaceBetween": 30,
+                  "slidesPerGroup": 3 /* Optional: slide 3 testimonials at a time for smoother experience */
                 }
               }
             }
