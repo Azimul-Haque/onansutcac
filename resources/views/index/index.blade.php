@@ -466,10 +466,12 @@
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
-      <h2>asdasd</h2>
+
 
       {{-- <img src="{{ asset('vendor/dewi/assets/img/testimonials-bg.jpg') }}" class="testimonials-bg" alt=""> --}}
       <img src="{{ asset('images/factory.png') }}" class="testimonials-bg" alt="">
+
+      <h2>asdasd</h2>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
