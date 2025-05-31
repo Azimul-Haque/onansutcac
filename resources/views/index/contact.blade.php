@@ -4,7 +4,7 @@
 @section('third_party_stylesheets')
 
   <style>
-    .map .map-container {
+    .map-container {
             background: var(--surface-color);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     padding: 30px;
