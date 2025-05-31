@@ -469,7 +469,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Partners</h2>
+        <h2>Testimonials</h2>
         <p>Hear From Our Clients</p>
       </div><!-- End Section Title -->
       
