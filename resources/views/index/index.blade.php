@@ -565,7 +565,7 @@
                         Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                       </p>
                       <div class="profile mt-auto">
-                        <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
+                        <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
                         <h3>Matt Brandon</h3>
                         <h4>Freelancer</h4>
                       </div>
@@ -581,7 +581,7 @@
                         Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                       </p>
                       <div class="profile mt-auto">
-                        <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
+                        <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
                         <h3>John Larson</h3>
                         <h4>Entrepreneur</h4>
                       </div>
