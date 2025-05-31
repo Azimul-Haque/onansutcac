@@ -364,6 +364,16 @@
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <div class="event-meta">
+                  <div class="meta-item">
+                    <i class="bi bi-clock"></i>
+                    <span>01:00 PM - 07:00 PM</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Various Classrooms</span>
+                  </div>
+                </div>
                 <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                   magna aliqua.
