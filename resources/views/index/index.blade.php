@@ -741,7 +741,8 @@
                         <h4>Ceo &amp; Founder</h4>
                       </div>
                     </div>
-                  </div><!-- End testimonial item -->
+                  </div>
+                  <!-- End testimonial item -->
 
                   <div class="swiper-slide swiper-slide-prev" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
                     <div class="testimonial-item">
