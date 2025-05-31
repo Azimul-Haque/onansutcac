@@ -656,6 +656,8 @@
                 </div>
               </div>
 
+              <a href="https://www.gradiant.com/gradiant-2024-a-year-in-review/" class="newsroom-item-link" target="">Read more</a>
+
             </article>
           </div><!-- End post list item -->
 
