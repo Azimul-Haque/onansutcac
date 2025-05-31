@@ -582,7 +582,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
-          <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <article>
 
               <div class="post-img">
@@ -609,7 +609,7 @@
             </article>
           </div><!-- End post list item -->
 
-          <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="300">
             <article>
 
               <div class="post-img">
@@ -636,7 +636,7 @@
             </article>
           </div><!-- End post list item -->
 
-          <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="400">
             <article>
 
               <div class="post-img">
