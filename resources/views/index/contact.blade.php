@@ -116,7 +116,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>In the News</h2>
+        <h2>Google Map</h2>
         <p>Where Our Journey Unfolds</p>
       </div><!-- End Section Title -->
 
