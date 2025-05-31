@@ -652,7 +652,7 @@
               <div class="d-flex align-items-center">
                 <img src="assets/img/person/person-m-10.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
+                  <p class="post-author">ASU News</p>
                   <p class="post-date">
                     <time datetime="2022-01-01">Jun 22, 2022</time>
                   </p>
