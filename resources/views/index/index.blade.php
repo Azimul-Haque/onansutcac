@@ -585,7 +585,7 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-post-1.webp" alt="" class="img-fluid">
+                <img src="{{ asset('vendor/dewi/assets/img/blog/blog-post-1.webp') }}" alt="" class="img-fluid">
               </div>
 
               <p class="post-category">Politics</p>
