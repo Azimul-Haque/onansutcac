@@ -103,7 +103,7 @@
 
     </section><!-- /Contact Section -->
 
-    <!-- Clients Section -->
+    <!-- Map Section -->
     <section id="map" class="map section light-background">
 
       <!-- Section Title -->
@@ -117,12 +117,27 @@
         <div class="map-container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-
       </div>
 
     </section>
-    <!-- /Clients Section -->
+
+    <style>
+      /* You can put this CSS in your main stylesheet (e.g., style.css) */
+        .map-container {
+          min-height: 280px; /* Sets the minimum height for the map container */
+          overflow: hidden; /* Ensures shadow is contained and map doesn't spill */
+          border-radius: 8px; /* Optional: Adds slightly rounded corners */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a subtle drop shadow */
+          /* You can adjust the shadow values (horizontal-offset, vertical-offset, blur-radius, spread-radius, color) */
+        }
+
+        .map-container iframe {
+          height: 100%; /* Ensures iframe takes full height of its container */
+          width: 100%; /* Ensures iframe takes full width of its container */
+          display: block; /* Removes any potential extra space below the iframe */
+        }
+    </style>
+    <!-- /Map Section -->
 
 
 @endsection
