@@ -470,7 +470,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Partners</h2>
-        <p>Our Clients & Collaborators</p>
+        <p>Hear From Our Clients</p>
       </div><!-- End Section Title -->
       
       {{-- <img src="{{ asset('vendor/dewi/assets/img/testimonials-bg.jpg') }}" class="testimonials-bg" alt=""> --}}
