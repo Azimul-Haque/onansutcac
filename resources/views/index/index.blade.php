@@ -373,7 +373,7 @@
 
     </section><!-- /Features Section -->
 
-    <section id="stats" class="stats section light-background" style="background: url('your-background-image.jpg') no-repeat center center / cover; padding: 60px 0;">
+    <section id="stats" class="section" style="background: url('your-background-image.jpg') no-repeat center center / cover; padding: 60px 0;">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
