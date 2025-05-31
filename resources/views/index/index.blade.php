@@ -373,7 +373,7 @@
 
     </section><!-- /Features Section -->
 
-    <section id="stats" class="section" style="background: url('your-background-image.jpg') no-repeat center center / cover; padding: 60px 0;">
+    <section id="stats" class="team section light-background" style="background: url('your-background-image.jpg') no-repeat center center / cover; padding: 60px 0;">
 
       <div class="container">
         <div class="row gy-4 justify-content-center">
