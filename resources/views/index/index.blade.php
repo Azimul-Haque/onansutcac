@@ -588,7 +588,7 @@
                 <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Politics</p>
+              <p class="post-category">AI Photonics</p>
 
               <h2 class="title">
                 <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
@@ -615,7 +615,7 @@
                 <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Water </p>
+              <p class="post-category">Clean Water Technology</p>
 
               <h2 class="title">
                 <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
