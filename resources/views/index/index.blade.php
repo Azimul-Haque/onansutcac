@@ -653,6 +653,8 @@
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
                         </div>
                         <div class="profile-info">
                           <img src="assets/img/person/person-f-7.webp" alt="Profile Image">
