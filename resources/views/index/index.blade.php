@@ -624,7 +624,7 @@
               <div class="d-flex align-items-center">
                 <img src="assets/img/person/person-f-13.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
+                  <p class="post-author">AZ Big Media</p>
                   <p class="post-date">
                     <time datetime="2022-01-01">Jun 5, 2022</time>
                   </p>
