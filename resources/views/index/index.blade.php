@@ -603,6 +603,7 @@
                   </p>
                 </div>
               </div>
+              <a href="#!" class="newsroom-item-link" target="">Read more</a>
 
             </article>
           </div><!-- End post list item -->
@@ -629,6 +630,7 @@
                   </p>
                 </div>
               </div>
+              <a href="#!" class="newsroom-item-link" target="">Read more</a>
 
             </article>
           </div><!-- End post list item -->
@@ -656,7 +658,7 @@
                   </p>
                 </div>
               </div>
-              <a href="https://www.gradiant.com/gradiant-2024-a-year-in-review/" class="newsroom-item-link" target="">Read more</a>
+              <a href="#!" class="newsroom-item-link" target="">Read more</a>
 
 
 
