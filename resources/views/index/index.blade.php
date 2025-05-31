@@ -347,7 +347,7 @@
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
               <i class="bi bi-command"></i>
-              <h4 class="d-none d-lg-block">Nostrum qui dile node Nostrum qui dile node Nostrum qui dile node Nostrum qui dile node Nostrum qui dile node</h4>
+              <h4 class="d-none d-lg-block">Event 4: Ttitle</h4>
             </a>
           </li>
         </ul><!-- End Tab Nav -->
