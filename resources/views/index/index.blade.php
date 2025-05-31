@@ -540,57 +540,9 @@
                         </div>
                       </div>
                     </div>
-                  </div><div class="swiper-slide" style="width: 352px; margin-right: 30px;" role="group" aria-label="2 / 6" data-swiper-slide-index="1">
-                    <div class="testimonial-card">
-                      <div class="testimonial-content">
-                        <p>
-                          <i class="bi bi-quote quote-icon"></i>
-                          Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et maecenas aliquam.
-                        </p>
-                      </div>
-                      <div class="testimonial-profile">
-                        <div class="rating">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </div>
-                        <div class="profile-info">
-                          <img src="assets/img/person/person-f-3.webp" alt="Profile Image">
-                          <div>
-                            <h3>Lisa Williams</h3>
-                            <h4>Product Manager</h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><div class="swiper-slide swiper-slide-prev" style="width: 352px; margin-right: 30px;" role="group" aria-label="3 / 6" data-swiper-slide-index="2">
-                    <div class="testimonial-card">
-                      <div class="testimonial-content">
-                        <p>
-                          <i class="bi bi-quote quote-icon"></i>
-                          Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram.
-                        </p>
-                      </div>
-                      <div class="testimonial-profile">
-                        <div class="rating">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </div>
-                        <div class="profile-info">
-                          <img src="assets/img/person/person-f-10.webp" alt="Profile Image">
-                          <div>
-                            <h3>Emma Parker</h3>
-                            <h4>UX Designer</h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><div class="swiper-slide swiper-slide-active" style="width: 352px; margin-right: 30px;" role="group" aria-label="4 / 6" data-swiper-slide-index="3">
+                  </div>
+                  
+                  <div class="swiper-slide swiper-slide-active" style="width: 352px; margin-right: 30px;" role="group" aria-label="4 / 6" data-swiper-slide-index="3">
                     <div class="testimonial-card">
                       <div class="testimonial-content">
                         <p>
