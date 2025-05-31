@@ -832,6 +832,8 @@
 
         /* Optional: Ensure text color is visible on dark background */
         color: #fff; /* White text for readability */
+        margin-left: 20px;
+        margin-right: 20px;
       }
 
       /* You might need to adjust other testimonial item styles as well */
