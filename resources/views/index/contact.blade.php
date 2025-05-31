@@ -135,7 +135,6 @@
 
         .map-container iframe {
           display: block;
-          height: 100%;
         }
     </style>
     <!-- /Map Section -->
