@@ -468,7 +468,7 @@
       </div>
 
       <div class="text-center mt-5">
-        <a href="#" class="btn-view-all">View All Events</a>
+        <a href="#" class="btn btn-view-all">View All Events</a>
       </div>
 
     </section><!-- /Features Section -->
