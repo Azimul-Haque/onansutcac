@@ -828,7 +828,7 @@
         border-radius: 15px; /* Adjust as needed for desired roundness */
 
         /* Optional: Add some padding to prevent content from touching edges */
-        padding: 20px;
+        padding: 50px;
 
         /* Optional: Ensure text color is visible on dark background */
         color: #fff; /* White text for readability */
