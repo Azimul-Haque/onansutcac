@@ -773,7 +773,7 @@
     <!-- /Portfolio Section -->
 
     <!-- Team Section -->
-    <section id="team" class="team section light-background">
+    {{-- <section id="team" class="team section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -837,7 +837,8 @@
 
       </div>
 
-    </section><!-- /Team Section -->
+    </section> --}}
+    <!-- /Team Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
