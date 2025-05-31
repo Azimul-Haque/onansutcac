@@ -406,7 +406,8 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="{{ asset('vendor/dewi/assets/img/working-1.jpg') }}" alt="" class="img-fluid">
+                {{-- <img src="{{ asset('vendor/dewi/assets/img/working-1.jpg') }}" alt="" class="img-fluid"> --}}
+                <img src="{ asset('images/ElectNano-Gif-compressed.webp') }}" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
