@@ -10,12 +10,12 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>About Us</h1>
+        <h1>Contact</h1>
         <p>Innovating from Concept to Creation as a Global Integrated Device Manufacturer.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">About Us</li>
+            <li class="current">Contact</li>
           </ol>
         </nav>
       </div>
@@ -26,7 +26,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
+        <h2>Contact</h2>
         <p>Driven by Innovation<br></p>
       </div><!-- End Section Title -->
 
