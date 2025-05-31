@@ -37,7 +37,7 @@
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
 
-    <a class="cta-btn" href="#contact">Contact</a>
+    <a class="cta-btn" href="{{ route('index.get-contact') }}">Contact</a>
 
   </div>
 </header>
