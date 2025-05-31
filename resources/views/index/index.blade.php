@@ -645,7 +645,7 @@
               <h2 class="title">
                 <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
               </h2>
-              <a href="https://www.gradiant.com/gradiant-2024-a-year-in-review/" class="newsroom-item-link" target="">Read more</a>
+
 
               <div class="d-flex align-items-center">
                 <img src="assets/img/person/person-m-10.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
@@ -656,6 +656,7 @@
                   </p>
                 </div>
               </div>
+              <a href="https://www.gradiant.com/gradiant-2024-a-year-in-review/" class="newsroom-item-link" target="">Read more</a>
 
 
 
