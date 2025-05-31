@@ -256,21 +256,8 @@
           </div><!-- End Client Item -->
 
           
-
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="{{ asset('vendor/dewi/assets/img/clients/client-1.png') }}" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="{{ asset('vendor/dewi/assets/img/clients/client-2.png') }}" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="{{ asset('vendor/dewi/assets/img/clients/client-3.png') }}" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="{{ asset('vendor/dewi/assets/img/clients/client-4.png') }}" class="img-fluid" alt="">
+            <img src="{{ asset('vendor/dewi/assets/img/clients/client-6.png') }}" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
@@ -278,7 +265,19 @@
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="{{ asset('vendor/dewi/assets/img/clients/client-6.png') }}" class="img-fluid" alt="">
+            <img src="{{ asset('vendor/dewi/assets/img/clients/client-4.png') }}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{{ asset('vendor/dewi/assets/img/clients/client-3.png') }}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{{ asset('vendor/dewi/assets/img/clients/client-2.png') }}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{{ asset('vendor/dewi/assets/img/clients/client-1.png') }}" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
         </div>
