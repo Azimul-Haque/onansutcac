@@ -6,7 +6,7 @@
   <style>
     .map .map-container {
         width: 100%;
-        height: 280px;
+        height: 280px !important;
         border-radius: 15px;
         overflow: hidden;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
