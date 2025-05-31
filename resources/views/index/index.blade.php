@@ -888,22 +888,20 @@
 
     </section><!-- /Contact Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
+    <section id="stats" class="stats section light-background" style="background: linear-gradient(to right, #39b54a, #007cc2); color: white; padding: 80px 0; text-align: center;">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-         
-
-          
-
-        </div>
-
+        <h2 style="font-weight: 700; font-size: 2rem; margin-bottom: 10px;">Innovating with Nature</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 30px;">
+          Advanced materials and smart technologies for a sustainable future.
+        </p>
+        <a href="#contact" class="btn btn-light" style="color: #39b54a; font-weight: 600; padding: 10px 24px; border-radius: 30px;">
+          Connect with Us
+        </a>
       </div>
 
-    </section><!-- /Stats Section -->
+    </section>
+
 
 @endsection
 
