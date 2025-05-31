@@ -472,7 +472,7 @@
         <h2>Testimonials</h2>
         <p>Hear From Our Clients</p>
       </div><!-- End Section Title -->
-      
+
       {{-- <img src="{{ asset('vendor/dewi/assets/img/testimonials-bg.jpg') }}" class="testimonials-bg" alt=""> --}}
       <img src="{{ asset('images/factory.png') }}" class="testimonials-bg" alt="">
 
@@ -581,6 +581,9 @@
         </div>
 
       </div>
+
+
+      
 
     </section><!-- /Testimonials Section -->
 
