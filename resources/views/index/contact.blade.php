@@ -138,7 +138,7 @@
         .map-container iframe {
           height: 100%; /* Ensures iframe takes full height of its container */
           width: 100%; /* Ensures iframe takes full width of its container */
-          display: block; /* Removes any potential extra space below the iframe */
+          
         }
     </style>
     <!-- /Map Section -->
