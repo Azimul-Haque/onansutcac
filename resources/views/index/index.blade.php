@@ -726,7 +726,7 @@
                 </script>
                 <div class="swiper-wrapper" id="swiper-wrapper-9c7a64342fe292c6" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-744.667px, 0px, 0px); transition-delay: 0ms;">
 
-                  <div class="swiper-slide" style="width: 400px; margin-right: 1px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
+                  <div class="swiper-slide" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
                     <div class="testimonial-item">
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -742,7 +742,7 @@
                     </div>
                   </div><!-- End testimonial item -->
 
-                  <div class="swiper-slide swiper-slide-prev" style="width: 400px; margin-right: 1px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
+                  <div class="swiper-slide swiper-slide-prev" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
                     <div class="testimonial-item">
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -758,7 +758,7 @@
                     </div>
                   </div><!-- End testimonial item -->
 
-                  <div class="swiper-slide swiper-slide-active" style="width: 400px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
+                  <div class="swiper-slide swiper-slide-active" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
                     <div class="testimonial-item">
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -774,7 +774,7 @@
                     </div>
                   </div><!-- End testimonial item -->
 
-                  <div class="swiper-slide swiper-slide-next" style="width: 400px; margin-right: 1px;" role="group" aria-label="4 / 5" data-swiper-slide-index="3">
+                  <div class="swiper-slide swiper-slide-next" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="4 / 5" data-swiper-slide-index="3">
                     <div class="testimonial-item">
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -790,7 +790,7 @@
                     </div>
                   </div><!-- End testimonial item -->
 
-                  <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 400px; margin-right: 1px;">
+                  <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 371.333px; margin-right: 1px;">
                     <div class="testimonial-item">
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
