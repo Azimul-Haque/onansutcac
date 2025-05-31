@@ -326,7 +326,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Events</h2>
-        <p>Necessitatibus eius consequatur</p>
+        <p>Discover Our Latest Happenings</p>
       </div><!-- End Section Title -->
 
       <div class="container">
