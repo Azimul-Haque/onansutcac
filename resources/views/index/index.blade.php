@@ -364,7 +364,30 @@
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                
+                <div class="card mb-3" style="max-width: 300px;">
+                  <div class="card-body py-2">
+                    <h6 class="card-subtitle mb-2 text-muted">Event Details</h6>
+                    <div class="meta-item d-flex align-items-center mb-1">
+                      <i class="bi bi-clock me-2"></i>
+                      <span>01:00 PM - 07:00 PM</span>
+                    </div>
+                    <div class="meta-item d-flex align-items-center">
+                      <i class="bi bi-geo-alt me-2"></i>
+                      <span>Various Classrooms</span>
+                    </div>
+                  </div>
+                </div>
+
+                <style>
+                  /* Optional: Add some basic styling for meta-item if not already defined */
+                  .meta-item {
+                    font-size: 0.95rem; /* Slightly larger font */
+                    color: #495057; /* Darker text */
+                  }
+                  .meta-item i {
+                    color: #0d6efd; /* Bootstrap primary color for icons */
+                  }
+                </style>
                 <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                   magna aliqua.
