@@ -386,6 +386,31 @@
                   </div>
                 </div>
 
+                <div class="card mb-3" style="max-width: 300px;">
+                  <div class="card-body py-2">
+                    <h6 class="card-subtitle mb-2 text-muted">Event Details</h6>
+                    <div class="meta-item d-flex align-items-center mb-1">
+                      <i class="bi bi-clock me-2"></i>
+                      <span>01:00 PM - 07:00 PM</span>
+                    </div>
+                    <div class="meta-item d-flex align-items-center">
+                      <i class="bi bi-geo-alt me-2"></i>
+                      <span>Various Classrooms</span>
+                    </div>
+                  </div>
+                </div>
+
+                <style>
+                  /* Optional: Add some basic styling for meta-item if not already defined */
+                  .meta-item {
+                    font-size: 0.95rem; /* Slightly larger font */
+                    color: #495057; /* Darker text */
+                  }
+                  .meta-item i {
+                    color: #0d6efd; /* Bootstrap primary color for icons */
+                  }
+                </style>
+
                 <style>
                   /* Optional: Add some basic styling for meta-item if not already defined */
                   .meta-item {
