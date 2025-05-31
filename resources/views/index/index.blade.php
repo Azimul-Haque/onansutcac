@@ -373,84 +373,40 @@
 
     </section><!-- /Features Section -->
 
-    <!-- Services 2 Section -->
-    <section id="services-2" class="services-2 section light-background">
+    <section id="stats" class="stats section light-background" style="background: url('your-background-image.jpg') no-repeat center center / cover; padding: 60px 0;">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>CHECK OUR SERVICES</p>
-      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-briefcase icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              </div>
+          <div class="col-lg-4 col-md-6">
+            <div style="background: linear-gradient(135deg, #5aa6de, #91c6eb); border-radius: 20px; padding: 30px; color: white;">
+              <h4 style="font-weight: bold;">Solutions</h4>
+              <p style="color: #f0f0f0;">We offer end-to-end, turnkey treatment systems. Our portfolio of solutions is fully engineered to deliver specific results to your exacting requirements.</p>
+              <a href="#" style="display: inline-block; margin-top: 15px; background-color: #205ed7; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Discover More</a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              </div>
+          <div class="col-lg-4 col-md-6">
+            <div style="background: linear-gradient(135deg, #ba5ddc, #cab5ee); border-radius: 20px; padding: 30px; color: white;">
+              <h4 style="font-weight: bold;">Industries</h4>
+              <p style="color: #f5f5f5;">We serve the world’s most important industries, delivering bespoke, sustainable solutions for critical water challenges in every corner of the planet.</p>
+              <a href="#" style="display: inline-block; margin-top: 15px; background-color: #9b18b9; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Discover More</a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-bar-chart icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              </div>
+          <div class="col-lg-4 col-md-6">
+            <div style="background: linear-gradient(135deg, #4eb3b0, #a5d8d6); border-radius: 20px; padding: 30px; color: white;">
+              <h4 style="font-weight: bold;">CURE Chemicals</h4>
+              <p style="color: #f2f2f2;">We develop custom formulations in-house to meet the high-performance specifications our customers and technologies demand. We formulate for all site-wide applications.</p>
+              <a href="#" style="display: inline-block; margin-top: 15px; background-color: #0b7b74; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Discover More</a>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-binoculars icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
-
       </div>
 
-    </section><!-- /Services 2 Section -->
+    </section>
+
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
