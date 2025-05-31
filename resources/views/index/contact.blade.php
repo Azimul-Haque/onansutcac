@@ -119,7 +119,7 @@
     </section><!-- /Contact Section -->
 
     <!-- Clients Section -->
-    <section id="clients" class="map section light-background">
+    <section id="map" class="map section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
