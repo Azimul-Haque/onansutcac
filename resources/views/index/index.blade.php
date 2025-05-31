@@ -329,7 +329,7 @@
         <p>Discover Our Latest Happenings</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
           <li class="nav-item col-3">
