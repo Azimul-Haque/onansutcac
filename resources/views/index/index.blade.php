@@ -396,7 +396,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div style="background: linear-gradient(135deg, #4eb3b0, #a5d8d6); border-radius: 20px; padding: 30px; color: white;">
-              <h4 style="font-weight: bold;">CURE Chemicals</h4>
+              <h4 style="font-weight: bold;">Success Stories</h4>
               <p style="color: #f2f2f2;">We develop custom formulations in-house to meet the high-performance specifications our customers and technologies demand. We formulate for all site-wide applications.</p>
               <a href="#" style="display: inline-block; margin-top: 15px; background-color: #0b7b74; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Explore Further</a>
             </div>
