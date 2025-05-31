@@ -553,7 +553,7 @@
                   <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
                 </ul>
               </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up">
                 <img src="{{ asset('vendor/dewi/assets/img/working-4.jpg') }}" alt="" class="img-fluid">
               </div>
             </div>
