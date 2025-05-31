@@ -828,12 +828,12 @@
         border-radius: 15px; /* Adjust as needed for desired roundness */
 
         /* Optional: Add some padding to prevent content from touching edges */
-        padding: 20px;
+        padding: 10px;
 
         /* Optional: Ensure text color is visible on dark background */
         color: #fff; /* White text for readability */
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
 
       /* You might need to adjust other testimonial item styles as well */
