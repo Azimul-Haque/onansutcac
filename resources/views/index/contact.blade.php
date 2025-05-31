@@ -5,11 +5,12 @@
 
   <style>
     .map .map-container {
-        width: 100%;
-        height: 280px !important;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px;
+            background: var(--surface-color);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
     }
   </style>
 
