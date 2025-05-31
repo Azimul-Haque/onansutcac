@@ -3,22 +3,7 @@
 
 @section('third_party_stylesheets')
 
-  <style>
-    /* You can put this CSS in your main stylesheet (e.g., style.css) */
-      .map-container {
-        min-height: 280px; /* Sets the minimum height for the map container */
-        overflow: hidden; /* Ensures shadow is contained and map doesn't spill */
-        border-radius: 8px; /* Optional: Adds slightly rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a subtle drop shadow */
-        /* You can adjust the shadow values (horizontal-offset, vertical-offset, blur-radius, spread-radius, color) */
-      }
-
-      .map-container iframe {
-        height: 100%; /* Ensures iframe takes full height of its container */
-        width: 100%; /* Ensures iframe takes full width of its container */
-        display: block; /* Removes any potential extra space below the iframe */
-      }
-  </style>
+  
 
 @endsection
 
