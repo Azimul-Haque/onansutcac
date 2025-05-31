@@ -574,7 +574,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Partners</h2>
+        <h2>In the News</h2>
         <p>Our Clients & Collaborators</p>
       </div><!-- End Section Title -->
 
