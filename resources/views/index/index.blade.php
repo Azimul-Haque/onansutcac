@@ -323,6 +323,12 @@
     <!-- Features Section -->
     <section id="features" class="features section">
 
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur</p>
+      </div><!-- End Section Title -->
+
       <div class="container">
 
         <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
