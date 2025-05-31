@@ -129,7 +129,8 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section>
+    <!-- /Clients Section -->
 
 
 @endsection
