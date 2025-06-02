@@ -32,149 +32,109 @@
         <p>Explore Our Range of Quality Offerings<br></p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-5">
+              <div class="row justify-content-center g-5">
 
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-1.jpg') }}" class="img-fluid" alt=""></div> --}}
-              <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/7f22d3e0-5fe1-4415-a2e0-212b05bd15a4/rafi-x-3_orig.jpg?format=750w" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Rafiqul Islam, PhD</h4>
-                <span>CEO, CTO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <div class="col-md-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                  <div class="service-item">
+                    <div class="service-icon">
+                      <i class="bi bi-code-slash"></i>
+                    </div>
+                    <div class="service-content">
+                      <h3>Custom Web Development</h3>
+                      <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+                  <div class="service-item">
+                    <div class="service-icon">
+                      <i class="bi bi-phone-fill"></i>
+                    </div>
+                    <div class="service-content">
+                      <h3>Mobile App Solutions</h3>
+                      <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</p>
+                      <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-md-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+                  <div class="service-item">
+                    <div class="service-icon">
+                      <i class="bi bi-palette2"></i>
+                    </div>
+                    <div class="service-content">
+                      <h3>UI/UX Design</h3>
+                      <p>Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                      <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="200">
+                  <div class="service-item">
+                    <div class="service-icon">
+                      <i class="bi bi-bar-chart-line"></i>
+                    </div>
+                    <div class="service-content">
+                      <h3>Digital Marketing</h3>
+                      <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.</p>
+                      <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-md-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="300">
+                  <div class="service-item">
+                    <div class="service-icon">
+                      <i class="bi bi-cloud-check"></i>
+                    </div>
+                    <div class="service-content">
+                      <h3>Cloud Computing</h3>
+                      <p>Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                      <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
+                  <div class="service-item">
+                    <div class="service-icon">
+                      <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <div class="service-content">
+                      <h3>Cybersecurity Solutions</h3>
+                      <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et. Proin eget tortor risus.</p>
+                      <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div><!-- End Service Item -->
+
               </div>
+
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div> --}}
-              <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/2655d062-a29c-48c1-a77f-a9aa3d100107/1598986250498.jpg?format=750w" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Ron Elwood</h4>
-                <span>CPA CFO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div> --}}
-              <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/e36dfafd-a19c-4c20-b7a1-41d9a0dd1baf/iqbal.jpg?format=750w" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Iqbal Ali, PhD</h4>
-                <span>Director of Engineering</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div> --}}
-              <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/e36dfafd-a19c-4c20-b7a1-41d9a0dd1baf/iqbal.jpg?format=750w" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Roger Spencer</h4>
-                <span>Director of Sales</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-1.jpg') }}" class="img-fluid" alt=""></div> --}}
-              <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/7f22d3e0-5fe1-4415-a2e0-212b05bd15a4/rafi-x-3_orig.jpg?format=750w" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Rafiqul Islam, PhD</h4>
-                <span>CEO, CTO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div> --}}
-              <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/2655d062-a29c-48c1-a77f-a9aa3d100107/1598986250498.jpg?format=750w" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Ron Elwood</h4>
-                <span>CPA CFO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div> --}}
-              <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/e36dfafd-a19c-4c20-b7a1-41d9a0dd1baf/iqbal.jpg?format=750w" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Iqbal Ali, PhD</h4>
-                <span>Director of Engineering</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div> --}}
-              <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/e36dfafd-a19c-4c20-b7a1-41d9a0dd1baf/iqbal.jpg?format=750w" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Roger Spencer</h4>
-                <span>Director of Sales</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
 
     </section><!-- /Team Section -->
 
