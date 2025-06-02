@@ -18,7 +18,7 @@ Route::get('/contact', 'IndexController@getContact')->name('index.get-contact');
 Route::get('/about-us', 'IndexController@getAboutUs')->name('index.get-about-us');
 Route::get('/terms-and-conditions', 'IndexController@termsAndConditions')->name('index.terms-and-conditions');
 Route::get('/privacy-policy', 'IndexController@privacyPolicy')->name('index.privacy-policy');
-Route::get('/products', 'IndexController@getProducts')->name('index.refund-policy');
+Route::get('/products', 'IndexController@getProducts')->name('index.products');
 
 Route::post('/payment/proceed', 'IndexController@paymentProceed')->name('index.payment.proceed');
 Route::get('/payment/cancel', 'IndexController@paymentCancel')->name('index.payment.cancel');
