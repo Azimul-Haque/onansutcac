@@ -11,7 +11,7 @@
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
         <h1>Products</h1>
-        <p>Innovating from Concept to Creation as a Global Integrated Device Manufacturer.</p>
+        <p>Discover Solutions Designed for You</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
