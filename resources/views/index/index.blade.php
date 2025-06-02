@@ -79,7 +79,7 @@
             <div style="background: linear-gradient(135deg, #5aa6de, #91c6eb); border-radius: 20px; padding: 30px; color: white;">
               <h4 style="font-weight: bold;">Products</h4>
               <p style="color: #f0f0f0;">We offer end-to-end, turnkey treatment systems. Our portfolio of solutions is fully engineered to deliver specific results to your exacting requirements.</p>
-              <a href="#" style="display: inline-block; margin-top: 15px; background-color: #205ed7; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Explore Further</a>
+              <a href="{{ route('index.products') }}" style="display: inline-block; margin-top: 15px; background-color: #205ed7; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Explore Further</a>
             </div>
           </div>
 
