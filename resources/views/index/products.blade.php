@@ -24,7 +24,7 @@
     
 
     <!-- services Section -->
-    <section id="services" class="services section ">
+    <section id="services" class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
