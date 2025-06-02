@@ -21,15 +21,15 @@
       </div>
     </div><!-- End Page Title -->
 
+    
 
     <!-- Team Section -->
     <section id="team" class="team section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>CHECK OUR TEAM</p>
-        <h5>Meet the minds shaping the nanoscale future — visionaries, engineers, and innovators pushing the boundaries of what's possible.</h5>
+        <h2>Products</h2>
+        <p>Explore Our Range of Quality Offerings<br></p>
       </div><!-- End Section Title -->
 
       <div class="container">
