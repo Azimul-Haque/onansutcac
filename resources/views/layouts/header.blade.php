@@ -10,7 +10,7 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         {{-- <li><a href="#hero" class="active">Home</a></li> --}}
-        <li><a href="{{ route('index.get-about-us') }}" {{ Request::is('about-us') ? 'active' : '' }}>About Us</a></li>
+        <li><a href="{{ route('index.get-about-us') }}" {{ Request::is('/about-us') ? 'active' : '' }}>About Us</a></li>
         <li><a href="{{ route('index.products') }}">Products</a></li>
         <li><a href="#portfolio">Markets</a></li>
         <li class="dropdown"><a href="#"><span>Regional Offices</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
