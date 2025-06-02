@@ -21,51 +21,6 @@
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Products</h2>
-        <p>Explore Our Range of Quality Offerings<br></p>
-      </div><!-- End Section Title -->
-
-      {{-- <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
-      </div> --}}
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>The future is smaller, smarter — and we’re building the nanoscale tech to power it.</h3>
-            <img src="{{ asset('images/about-us-page.gif') }}" class="img-fluid rounded-4 mb-4" alt="">
-            {{-- <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p> --}}
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Our advanced nano-devices, semiconductors, and power technologies power the innovations of tomorrow — from clean energy to smart electronics.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Engineering at the Atomic Scale</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Powering the Future with Nano Innovation</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Smarter Devices, Sustainable Impact</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Precision-Driven. Purpose-Led.</span></li>
-              </ul>
-              <p>
-                We engineer at the atomic level to deliver performance that’s lighter, stronger, and more sustainable. At the heart of our mission is sustainability. We design and manufacture with efficiency in mind — reducing waste, conserving energy, and extending the life of critical technologies. Our solutions help industries build greener products and smarter systems, without compromise.
-              </p>
-              <p>
-                From precision nano-engineering to scalable manufacturing, we’re not just keeping up with the future — we’re building it.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Starter Section Section -->
 
     <!-- Team Section -->
     <section id="team" class="team section light-background">
