@@ -68,7 +68,7 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  {{-- <div id="preloader"></div> --}}
 
  
   {{-- <script type="text/javascript" src="{{ asset('vendor/wp-content/plugins/flying-pages/flying-pages.min3575.js') }}" id="flying-pages-js" defer></script> --}}
