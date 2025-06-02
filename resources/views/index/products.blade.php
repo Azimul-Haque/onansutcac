@@ -27,7 +27,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Products</h2>
-        <p>Driven by Innovation<br></p>
+        <p>Explore Our Range of Quality Offerings<br></p>
       </div><!-- End Section Title -->
 
       {{-- <div class="container" data-aos="fade-up">
