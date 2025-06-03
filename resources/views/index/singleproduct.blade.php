@@ -303,16 +303,22 @@
                   <h4>Ceo &amp; Founder</h4>
                 </div>
 
+                <div class="post-img">
+                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
+                </div>
+
+                <p class="post-category">Nano Technology</p>
+
                 <h2 class="title">
-                  <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                  <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
 
+
                 <div class="d-flex align-items-center">
-                  <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
                   <div class="post-meta">
-                    <p class="post-author">Phoenix Business Journal</p>
+                    <p class="post-author">ASU News</p>
                     <p class="post-date">
-                      <time datetime="2022-01-01">Jan 1, 2022</time>
+                      <time datetime="2022-01-01">Jun 22, 2022</time>
                     </p>
                   </div>
                 </div>
