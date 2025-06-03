@@ -384,7 +384,7 @@
           height: 100%;
       }
 
-      testimonials .testimonial-item {
+      .testimonials .testimonial-item {
           text-align: left !important;
       }
 
