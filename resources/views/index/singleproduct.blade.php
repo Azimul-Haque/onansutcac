@@ -127,7 +127,6 @@
         <p>See Where We Make an Impact<br></p>
       </div><!-- End Section Title -->
       <div class="container" data-aos="fade-up">
-        <h2 class="text-center mb-5 text-uppercase" style="color: #6a1aed; letter-spacing: 2px;">Relevant Technologies</h2>
 
         <div class="relevant-technologies-widget p-4">
           <div class="row">
