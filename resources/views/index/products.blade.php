@@ -50,7 +50,7 @@
                 </a>
                 <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
 
-                <a href="#" class="service-link">
+                <a href="{{ route('index.singleproduct', 'single') }}" class="service-link">
                   <span>Explore More</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
