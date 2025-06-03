@@ -201,7 +201,7 @@
       }
 
       .custom-nav-link:hover {
-        color: #4a00af; /* Darker hover color */
+        color: #08AAE9; /* Darker hover color */
         background-color: rgba(255, 255, 255, 0.3); /* Slightly brighter hover background */
       }
 
