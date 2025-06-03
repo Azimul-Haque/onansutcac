@@ -190,7 +190,7 @@
 
       /* Styling for the left navigation links */
       .custom-nav-link {
-        color: #08AAE9; /* Your desired text color for inactive links */
+        color: #6a1aed; /* Your desired text color for inactive links */
         font-weight: 500;
         padding: 10px 20px;
         margin-bottom: 8px; /* Space between links */
@@ -201,8 +201,8 @@
       }
 
       .custom-nav-link:hover {
-        color: #08AAE9; /* Darker hover color */
-        background-color: #08AAE9; /* Slightly brighter hover background */
+        color: #4a00af; /* Darker hover color */
+        background-color: rgba(255, 255, 255, 0.3); /* Slightly brighter hover background */
       }
 
       .custom-nav-link.active {
