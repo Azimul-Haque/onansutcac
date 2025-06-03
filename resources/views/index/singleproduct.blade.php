@@ -255,7 +255,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Success Stories</h2>
-        <p>Hear From Our Clients</p>
+        <p>Where Innovation Meets Success</p>
       </div><!-- End Section Title -->
 
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
