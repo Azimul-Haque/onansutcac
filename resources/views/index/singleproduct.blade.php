@@ -310,16 +310,6 @@
                 <h2 class="title">
                   <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
-
-
-                <div class="d-flex align-items-center">
-                  <div class="post-meta">
-                    <p class="post-author">ASU News</p>
-                    <p class="post-date">
-                      <time datetime="2022-01-01">Jun 22, 2022</time>
-                    </p>
-                  </div>
-                </div>
                 <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
             </div>
