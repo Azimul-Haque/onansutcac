@@ -266,125 +266,125 @@
 
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
-              <div class="swiper init-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 4000
-                    },
-                    "slidesPerView": "auto",
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    },
-                    "breakpoints": {
-                      "320": {
-                        "slidesPerView": 1,
-                        "spaceBetween": 40
-                      },
-                      "1200": {
-                        "slidesPerView": 3,
-                        "spaceBetween": 1
-                      }
-                    }
-                  }
-                </script>
-                <div class="swiper-wrapper" id="swiper-wrapper-9c7a64342fe292c6" aria-live="off" >
-                  {{-- style="transition-duration: 0ms; transform: translate3d(-744.667px, 0px, 0px); transition-delay: 0ms;" --}}
+        <div class="swiper init-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 4000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper" id="swiper-wrapper-9c7a64342fe292c6" aria-live="off" >
+            {{-- style="transition-duration: 0ms; transform: translate3d(-744.667px, 0px, 0px); transition-delay: 0ms;" --}}
 
-                  <div class="swiper-slide" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                      </p>
-                      <div class="profile mt-auto">
-                        <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End testimonial item -->
-
-                  <div class="swiper-slide swiper-slide-prev" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                      </p>
-                      <div class="profile mt-auto">
-                        <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
-                        <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide swiper-slide-active" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                      </p>
-                      <div class="profile mt-auto">
-                        <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-                        <h3>Jena Karlis</h3>
-                        <h4>Store Owner</h4>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide swiper-slide-next" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="4 / 5" data-swiper-slide-index="3">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                      </p>
-                      <div class="profile mt-auto">
-                        <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
-                        <h3>Matt Brandon</h3>
-                        <h4>Freelancer</h4>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 371.333px; margin-right: 1px;">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                      </p>
-                      <div class="profile mt-auto">
-                        <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
+            <div class="swiper-slide" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
-              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
-              <div class="text-center mt-5">
-                <a href="#!" style="display: inline-block; margin-top: 15px; background-color: #205ed7; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">See All Endorsements</a>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
               </div>
-
             </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide swiper-slide-prev" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide swiper-slide-active" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide swiper-slide-next" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="4 / 5" data-swiper-slide-index="3">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 371.333px; margin-right: 1px;">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+        <div class="text-center mt-5">
+          <a href="#!" style="display: inline-block; margin-top: 15px; background-color: #205ed7; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">See All Endorsements</a>
+        </div>
+
+      </div>
 
     </section><!-- /Testimonials Section -->
 
