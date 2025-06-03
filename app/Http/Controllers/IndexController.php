@@ -86,6 +86,11 @@ class IndexController extends Controller
         return view('index.products');
     }
 
+    public function getProduct()
+    {
+        return view('index.singleproduct');
+    }
+
     public function paymentProceed(Request $request)
     {
         $this->validate($request,array(
