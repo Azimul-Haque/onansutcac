@@ -95,9 +95,9 @@
 
                   <i class="bi bi-tags"></i>
                   <ul class="tags">
-                    <li><a href="#" class="badge bg-success">Creative</a></li>
-                    <li><a href="#" class="badge bg-success">Tips</a></li>
-                    <li><a href="#" class="badge bg-success">Marketing</a></li>
+                    <li><a href="#" class="badge bg-primary">Creative</a></li>
+                    <li><a href="#" class="badge bg-primary">Tips</a></li>
+                    <li><a href="#" class="badge bg-primary">Marketing</a></li>
                   </ul>
                 </div><!-- End meta bottom -->
 
