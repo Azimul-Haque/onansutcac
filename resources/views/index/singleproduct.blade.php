@@ -250,7 +250,7 @@
     </style>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
+    <section id="testimonials" class="testimonials section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
