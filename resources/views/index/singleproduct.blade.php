@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title') Products @endsection
+@section('title') Title 1 | Products @endsection
 
 @section('third_party_stylesheets')
 
