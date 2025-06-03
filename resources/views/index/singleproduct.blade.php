@@ -97,7 +97,7 @@
                   <ul class="tags">
                     <li><a href="#" class="badge bg-secondary">Creative</a></li>
                     <li><a href="#" class="badge bg-secondary">Tips</a></li>
-                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#" class="badge bg-secondary">Marketing</a></li>
                   </ul>
                 </div><!-- End meta bottom -->
 
