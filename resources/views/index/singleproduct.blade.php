@@ -243,6 +243,56 @@
       }
     </style>
 
+
+
+
+
+
+
+
+
+    <h2 class="mb-4 text-center text-primary">RELEVANT TECHNOLOGIES</h2>
+
+      <div class="container relevant-tech-container shadow-lg">
+        <!-- Left Tab Menu -->
+        <div class="nav flex-column nav-pills nav-container me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="tab-ro" data-bs-toggle="pill" data-bs-target="#content-ro" type="button" role="tab">RO Infinity (ROI)</button>
+          <button class="nav-link" id="tab-bio" data-bs-toggle="pill" data-bs-target="#content-bio" type="button" role="tab">Bio Infinity (Bio-I)</button>
+          <button class="nav-link" id="tab-ai" data-bs-toggle="pill" data-bs-target="#content-ai" type="button" role="tab">SmartOps AI</button>
+          <button class="nav-link" id="tab-sce" data-bs-toggle="pill" data-bs-target="#content-sce" type="button" role="tab">Selective Contaminant Extraction (SCE)</button>
+          <button class="nav-link" id="tab-cge" data-bs-toggle="pill" data-bs-target="#content-cge" type="button" role="tab">Carrier Gas Extraction (CGE)</button>
+          <button class="nav-link" id="tab-fro" data-bs-toggle="pill" data-bs-target="#content-fro" type="button" role="tab">Free Radical Oxidation (FRO)</button>
+        </div>
+
+        <!-- Right Content -->
+        <div class="tab-content tech-description" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="content-ro" role="tabpanel">
+            <p>Advanced platform of membrane-based solutions for complex water & wastewater challenges. Combining our patented CFRO technology with innovative reverse osmosis (RO) membrane processes.</p>
+            <button class="gradient-button mt-3">Discover More</button>
+          </div>
+          <div class="tab-pane fade" id="content-bio" role="tabpanel">
+            <p>Details about Bio Infinity (Bio-I) go here.</p>
+            <button class="gradient-button mt-3">Discover More</button>
+          </div>
+          <div class="tab-pane fade" id="content-ai" role="tabpanel">
+            <p>Details about SmartOps AI go here.</p>
+            <button class="gradient-button mt-3">Discover More</button>
+          </div>
+          <div class="tab-pane fade" id="content-sce" role="tabpanel">
+            <p>Details about Selective Contaminant Extraction (SCE) go here.</p>
+            <button class="gradient-button mt-3">Discover More</button>
+          </div>
+          <div class="tab-pane fade" id="content-cge" role="tabpanel">
+            <p>Details about Carrier Gas Extraction (CGE) go here.</p>
+            <button class="gradient-button mt-3">Discover More</button>
+          </div>
+          <div class="tab-pane fade" id="content-fro" role="tabpanel">
+            <p>Details about Free Radical Oxidation (FRO) go here.</p>
+            <button class="gradient-button mt-3">Discover More</button>
+          </div>
+        </div>
+      </div>
+
     
 
 
