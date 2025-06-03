@@ -302,6 +302,21 @@
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                 </div>
+
+                <h2 class="title">
+                  <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                </h2>
+
+                <div class="d-flex align-items-center">
+                  <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                  <div class="post-meta">
+                    <p class="post-author">Phoenix Business Journal</p>
+                    <p class="post-date">
+                      <time datetime="2022-01-01">Jan 1, 2022</time>
+                    </p>
+                  </div>
+                </div>
+                <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
             </div>
             <!-- End testimonial item -->
