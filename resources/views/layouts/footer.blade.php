@@ -60,7 +60,7 @@
       <div class="col-lg-4 col-md-12 footer-about footer-newsletter">
         <a href="{{ route('index.index') }}" class="logo d-flex align-items-center">
           <img src="{{ asset('images/logo.png') }}" alt="">
-          <span class="sitename">CactusNANO</span>
+          <span class="sitename"><span style="color: #70BE42;">Cactus</span><span style="color: #08AAE9;">NANO</span></span>
         </a>
         <h5>Our Newsletter</h5>
         <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
