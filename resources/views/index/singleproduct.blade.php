@@ -389,6 +389,37 @@
           margin: -30px -30px 15px;
           overflow: hidden;
       }
+
+      .recent-news .post-img {
+          max-height: 240px;
+          margin: -30px -30px 15px -30px;
+          overflow: hidden;
+      }
+
+      .recent-news .post-category {
+          font-size: 16px;
+          color: 
+       color-mix(in srgb, var(--default-color), transparent 50%);
+          margin-bottom: 10px;
+      }
+
+      .recent-news .title {
+          font-size: 20px;
+          font-weight: 700;
+          padding: 0;
+          margin: 0 0 20px 0;
+      }
+
+      .recent-news .post-author {
+          font-weight: 600;
+          margin-bottom: 5px;
+      }
+
+      .recent-news .post-date {
+          font-size: 14px;
+          color: color-mix(in srgb, var(--default-color), transparent 50%);
+          margin-bottom: 0;
+      }
     </style>
 
     
