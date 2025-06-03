@@ -90,7 +90,7 @@
                 <div class="meta-bottom">
                   <i class="bi bi-folder"></i>
                   <ul class="cats">
-                    <li><a href="#" class="badge bg-primary">Business</a></li>
+                    <li><a href="#" class="badge bg-secondary">Business</a></li>
                   </ul>
 
                   <i class="bi bi-tags"></i>
