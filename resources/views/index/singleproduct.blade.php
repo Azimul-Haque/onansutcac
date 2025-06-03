@@ -124,7 +124,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Relevant Markets</h2>
-        <p>Explore Our Range of Quality Offerings<br></p>
+        <p>See Where We Make an Impact<br></p>
       </div><!-- End Section Title -->
       <div class="container" data-aos="fade-up">
         <h2 class="text-center mb-5 text-uppercase" style="color: #6a1aed; letter-spacing: 2px;">Relevant Technologies</h2>
