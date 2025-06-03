@@ -264,7 +264,7 @@
                 <img src="{{ asset('images/story-renewable.jpg') }}" class="card-img-top" alt="Renewable Energy - Solar PV Wastewater Reclaim">
                 <div class="card-body">
                   <h5 class="card-title">Renewable Energy - Solar PV Wastewater Reclaim</h5>
-                  <a href="{{ route('success-story-renewable') }}" class="read-more-link">Read More</a>
+                  <a href="#!" class="read-more-link">Read More</a>
                 </div>
               </div>
             </div>
@@ -274,7 +274,7 @@
                 <img src="{{ asset('images/story-food-beverages.jpg') }}" class="card-img-top" alt="Food and Beverages - Delivering Compliance & Sustainable Energy">
                 <div class="card-body">
                   <h5 class="card-title">Food and Beverages - Delivering Compliance & Sustainable Energy</h5>
-                  <a href="{{ route('success-story-food-beverages') }}" class="read-more-link">Read More</a>
+                  <a href="#!" class="read-more-link">Read More</a>
                 </div>
               </div>
             </div>
@@ -284,7 +284,7 @@
                 <img src="{{ asset('images/story-cure-chemicals.jpg') }}" class="card-img-top" alt="CURE Chemicals - Industrial Practices">
                 <div class="card-body">
                   <h5 class="card-title">CURE Chemicals - Industrial Practices</h5>
-                  <a href="{{ route('success-story-cure-chemicals') }}" class="read-more-link">Read More</a>
+                  <a href="#!" class="read-more-link">Read More</a>
                 </div>
               </div>
             </div>
@@ -294,7 +294,7 @@
                 <img src="{{ asset('images/story-manufacturing.jpg') }}" class="card-img-top" alt="Manufacturing - Water Reclamation for Sustainable Operations">
                 <div class="card-body">
                   <h5 class="card-title">Manufacturing - Water Reclamation for Sustainable Operations</h5>
-                  <a href="{{ route('success-story-manufacturing') }}" class="read-more-link">Read More</a>
+                  <a href="#!" class="read-more-link">Read More</a>
                 </div>
               </div>
             </div>
@@ -304,7 +304,7 @@
                 <img src="{{ asset('images/story-mining.jpg') }}" class="card-img-top" alt="Mining - Efficient Water Management in Arid Regions">
                 <div class="card-body">
                   <h5 class="card-title">Mining - Efficient Water Management in Arid Regions</h5>
-                  <a href="{{ route('success-story-mining') }}" class="read-more-link">Read More</a>
+                  <a href="#!" class="read-more-link">Read More</a>
                 </div>
               </div>
             </div>
