@@ -320,6 +320,172 @@
       </div>
     </section>
 
+    <style>
+      /* --- Section Background --- */
+      #success-stories {
+        background: linear-gradient(to bottom right, #e0f2f7, #d0e8f0, #c0dae8); /* Light blue/purple gradient */
+        padding: 80px 0; /* Adjust padding as needed */
+        overflow: hidden; /* Important for slider elements outside container */
+      }
+
+      /* --- Section Title Styling --- */
+      .section-title {
+        font-size: 3rem; /* Adjust font size */
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        background: linear-gradient(to right, #87CEEB, #9370DB); /* Light blue to medium purple gradient */
+        -webkit-background-clip: text; /* Clip background to text */
+        -webkit-text-fill-color: transparent; /* Make text color transparent */
+        background-clip: text;
+        color: transparent; /* Fallback for browsers not supporting -webkit-text-fill-color */
+        margin-bottom: 60px !important;
+      }
+
+      /* --- Story Card Styling --- */
+      .story-card.card {
+        border: none; /* Remove default card border */
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for lifted effect */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        overflow: hidden; /* Ensures image corners are rounded */
+        height: 100%; /* Ensures all cards are same height if content varies */
+        display: flex;
+        flex-direction: column;
+      }
+
+      .story-card.card:hover {
+        transform: translateY(-5px); /* Lift card on hover */
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+      }
+
+      .story-card .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 200px; /* Fixed height for images */
+        object-fit: cover; /* Ensures images cover the area without distortion */
+      }
+
+      .story-card .card-body {
+        padding: 25px;
+        flex-grow: 1; /* Allows body to expand and push link to bottom */
+        display: flex;
+        flex-direction: column;
+      }
+
+      .story-card .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .read-more-link {
+        color: #6a1aed; /* Blue/purple link color */
+        font-weight: 500;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: auto; /* Pushes link to the bottom */
+        transition: color 0.3s ease;
+      }
+
+      .read-more-link:hover {
+        color: #4a00af; /* Darker on hover */
+        text-decoration: underline;
+      }
+
+      /* --- Swiper Navigation Arrows --- */
+      .custom-arrow {
+        width: 50px; /* Size of the arrow button */
+        height: 50px;
+        background-color: #9370DB; /* Purple background for arrows */
+        border-radius: 50%; /* Make it circular */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff; /* White arrow icon */
+        font-size: 1.5rem; /* Size of the arrow icon */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        z-index: 10; /* Ensure arrows are above slides */
+      }
+
+      .custom-arrow:hover {
+        background-color: #6a1aed; /* Darker purple on hover */
+        transform: scale(1.05);
+      }
+
+      .custom-arrow::after {
+        /* Remove default Swiper icon and use Bootstrap Icons or custom SVG if desired */
+        content: ''; /* Empty content, as we'll use icon font */
+        font-family: 'bootstrap-icons' !important; /* If using Bootstrap Icons */
+        font-size: 1.5rem;
+        display: block;
+      }
+
+      /* Specific icons for prev/next */
+      .custom-arrow-prev::after {
+        content: "\f270"; /* bi-arrow-left-short */
+        transform: translateX(-2px); /* Slight adjustment */
+      }
+
+      .custom-arrow-next::after {
+        content: "\f271"; /* bi-arrow-right-short */
+        transform: translateX(2px); /* Slight adjustment */
+      }
+
+      /* Positioning for arrows */
+      .custom-arrow-prev {
+        left: 0; /* Adjust as needed, e.g., 20px */
+        margin-left: 20px; /* Offset from container edge */
+      }
+
+      .custom-arrow-next {
+        right: 0; /* Adjust as needed, e.g., 20px */
+        margin-right: 20px; /* Offset from container edge */
+      }
+
+      /* Ensure arrows are vertically centered and visible */
+      .swiper-button-prev,
+      .swiper-button-next {
+        top: 50%; /* Position vertically */
+        transform: translateY(-50%);
+        width: 50px; /* Override default Swiper size */
+        height: 50px; /* Override default Swiper size */
+      }
+
+
+      /* --- Swiper Pagination Dots --- */
+      .custom-pagination.swiper-pagination-bullets {
+        bottom: 0px !important; /* Position below the slides, adjust as needed */
+        padding-top: 30px; /* Space between slides and dots */
+      }
+
+      .custom-pagination .swiper-pagination-bullet {
+        background-color: #9370DB; /* Color of inactive dots */
+        opacity: 0.5;
+        width: 10px; /* Size of dots */
+        height: 10px;
+        transition: opacity 0.3s ease, background-color 0.3s ease;
+      }
+
+      .custom-pagination .swiper-pagination-bullet-active {
+        background-color: #6a1aed; /* Color of active dot */
+        opacity: 1;
+        transform: scale(1.2); /* Slightly larger active dot */
+      }
+
+      /* Ensure content is centered if less than full width on smaller screens */
+      @media (max-width: 767.98px) {
+        .section-title {
+          font-size: 2rem;
+        }
+        .story-card .card-img-top {
+          height: 180px;
+        }
+      }
+    </style>
+
     
 
 
