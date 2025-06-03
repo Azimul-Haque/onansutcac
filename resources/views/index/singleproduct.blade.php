@@ -125,7 +125,7 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Relevant Markets</h2>
         <p>See Where We Make an Impact<br></p>
-      </div><!-- End Section Title --><br>
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
 
