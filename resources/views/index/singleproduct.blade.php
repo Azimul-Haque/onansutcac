@@ -119,14 +119,14 @@
       </div>
     </div>
 
-    <section id="relevant-technologies" class="py-5 section light-background" style="background-image: url('YOUR_BACKGROUND_IMAGE_URL.jpg'); background-size: cover; background-position: center; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+    <section id="relevant-technologies" class="services section light-background" style="background-image: url('YOUR_BACKGROUND_IMAGE_URL.jpg'); background-size: cover; background-position: center; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Relevant Markets</h2>
         <p>See Where We Make an Impact<br></p>
       </div><!-- End Section Title --><br>
-      
+
       <div class="container" data-aos="fade-up">
 
         <div class="relevant-technologies-widget p-4">
