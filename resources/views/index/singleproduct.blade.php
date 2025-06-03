@@ -95,7 +95,7 @@
 
                   <i class="bi bi-tags"></i>
                   <ul class="tags">
-                    <li><a href="#" class="badge badge-success">Creative</a></li>
+                    <li><a href="#" class="label ">Creative</a></li>
                     <li><a href="#">Tips</a></li>
                     <li><a href="#">Marketing</a></li>
                   </ul>
