@@ -1,6 +1,6 @@
 <div class="widgets-container">
 
-  <!-- Blog Author Widget -->
+  {{-- <!-- Blog Author Widget -->
   <div class="blog-author-widget widget-item">
 
     <div class="d-flex flex-column align-items-center">
@@ -18,7 +18,7 @@
       </p>
 
     </div>
-  </div><!--/Blog Author Widget -->
+  </div><!--/Blog Author Widget --> --}}
 
   <!-- Search Widget -->
   <div class="search-widget widget-item">
