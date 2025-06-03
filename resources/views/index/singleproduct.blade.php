@@ -293,6 +293,59 @@
         </div>
       </div>
 
+      <style>
+         body {
+           font-family: 'Segoe UI', sans-serif;
+         }
+
+         .relevant-tech-container {
+           display: flex;
+           border-radius: 15px;
+           overflow: hidden;
+           background: rgba(255, 255, 255, 0.5); /* semi-transparent */
+           backdrop-filter: blur(10px);
+         }
+
+         .nav-pills .nav-link {
+           border-radius: 0;
+           color: #2255cc;
+           font-weight: 500;
+         }
+
+         .nav-pills .nav-link.active {
+           background-color: transparent;
+           border-left: 3px solid #3366ff;
+           color: #000;
+           font-weight: 600;
+         }
+
+         .tech-description {
+           padding: 2rem;
+           flex-grow: 1;
+         }
+
+         .gradient-button {
+           background: linear-gradient(90deg, #00bcd4, #9c27b0);
+           border: none;
+           color: #fff;
+           padding: 0.5rem 1.2rem;
+           font-weight: 600;
+           border-radius: 20px;
+           text-transform: uppercase;
+           font-size: 0.9rem;
+         }
+
+         .nav-container {
+           width: 300px;
+           padding: 1.5rem;
+           background: rgba(255, 255, 255, 0.3);
+         }
+
+         .tab-content h5 {
+           font-weight: 600;
+         }
+       </style>
+
     
 
 
