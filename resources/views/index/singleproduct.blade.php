@@ -384,6 +384,10 @@
           height: 100%;
       }
 
+      testimonials .testimonial-item {
+          text-align: center;
+      }
+
       .testimonials .post-img {
           max-height: 240px;
           margin: -30px -30px 15px;
