@@ -329,6 +329,19 @@
               </div>
             </div><!-- End testimonial item -->
 
+            <div class="swiper-slide swiper-slide-active" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
+              <div class="testimonial-item">
+                <div class="post-img">
+                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
+                </div>
+
+                <h2 class="title">
+                  <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                </h2>
+                <a href="#!" class="newsroom-item-link" target="">Read more</a>
+              </div>
+            </div><!-- End testimonial item -->
+
             
 
           </div>
