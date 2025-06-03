@@ -4,7 +4,7 @@
     <a href="{{ route('index.index') }}" class="logo d-flex align-items-center me-auto">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <img src="{{ asset('images/logo.png') }}" alt="">
-      <h1 class="sitename">CactusNANO</h1>
+      <h1 class="sitename"><span style="color: green;">CACTUS</span><span style="color: blue;">NANO</span></h1>
     </a>
 
     <nav id="navmenu" class="navmenu">
