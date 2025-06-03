@@ -318,17 +318,14 @@
 
             <div class="swiper-slide swiper-slide-active" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
               <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <div class="post-img">
+                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
                 </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
+
+                <h2 class="title">
+                  <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                </h2>
+                <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
             </div><!-- End testimonial item -->
 
