@@ -119,7 +119,7 @@
       </div>
     </div>
 
-    <section id="relevant-technologies" class="services section light-background" style="background-image: url('YOUR_BACKGROUND_IMAGE_URL.jpg'); background-size: cover; background-position: center; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+    <section id="relevant-technologies" class="section light-background" style="background-image: url('YOUR_BACKGROUND_IMAGE_URL.jpg'); background-size: cover; background-position: center; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
