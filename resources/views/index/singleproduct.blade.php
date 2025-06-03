@@ -190,7 +190,7 @@
 
       /* Styling for the left navigation links */
       .custom-nav-link {
-        color: #6a1aed; /* Your desired text color for inactive links */
+        color: #08AAE9; /* Your desired text color for inactive links */
         font-weight: 500;
         padding: 10px 20px;
         margin-bottom: 8px; /* Space between links */
