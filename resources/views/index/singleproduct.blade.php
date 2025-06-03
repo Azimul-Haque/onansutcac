@@ -246,7 +246,7 @@
 
         <div class="col-lg-4 sidebar">
 
-          @include('_productsidebar')
+          @include('partials._productsidebar')
 
         </div>
 
