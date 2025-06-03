@@ -90,12 +90,12 @@
                 <div class="meta-bottom">
                   <i class="bi bi-folder"></i>
                   <ul class="cats">
-                    <li><a href="#" class="badge bg-secondary">Business</a></li>
+                    <li><a href="#" class="badge bg-secondary" style="color: #FFFFFF;">Business</a></li>
                   </ul>
 
                   <i class="bi bi-tags"></i>
                   <ul class="tags">
-                    <li><a href="#" class="badge bg-primary">Creative</a></li>
+                    <li><a href="#" class="badge bg-primary" style="color: #FFFFFF;">Creative</a></li>
                     <li><a href="#" class="badge bg-primary">Tips</a></li>
                     <li><a href="#" class="badge bg-primary">Marketing</a></li>
                   </ul>
