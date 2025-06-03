@@ -82,7 +82,7 @@
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p>© {{ date('Y') }} <span>Copyright</span> <strong class="px-1 sitename"><span style="color: #70BE42;">Cactus</span><span style="color: blue;">NANO</span></strong> <span>All Rights Reserved</span></p>
+    <p>© {{ date('Y') }} <span>Copyright</span> <strong class="px-1 sitename"><span style="color: #70BE42;">Cactus</span><span style="color: b#08AAE9lue;">NANO</span></strong> <span>All Rights Reserved</span></p>
     <div class="credits" style="opacity: 0.0;">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you've purchased the pro version. -->
