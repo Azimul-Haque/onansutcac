@@ -22,196 +22,86 @@
     </div><!-- End Page Title -->
 
     
-    
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Stats</h2>
-        <p>A Legacy of Progress</p>
-      </div><!-- End Section Title -->
+    <section id="blog-details" class="blog-details section">
+                <div class="container">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+                  <article class="article">
 
-        <div class="row gy-4">
+                    <div class="post-img">
+                      <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                    </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Years of Hard Work</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+                    <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Engineers & Scientists</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+                    <div class="meta-top">
+                      <ul>
+                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">John Doe</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li>
+                      </ul>
+                    </div><!-- End meta top -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-headset color-green flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Nationalities</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+                    <div class="content">
+                      <p>
+                        Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                        Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                      </p>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-people color-pink flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+                      <p>
+                        Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                      </p>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Industry Awards</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+                      <blockquote>
+                        <p>
+                          Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
+                        </p>
+                      </blockquote>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Global Offices</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+                      <p>
+                        Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
+                        Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
+                        Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
+                      </p>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-headset color-green flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Nationalities</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+                      <h3>Et quae iure vel ut odit alias.</h3>
+                      <p>
+                        Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
+                        Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
+                        Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
+                      </p>
+                      <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-people color-pink flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+                      <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
+                      <p>
+                        Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.
+                        Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
+                      </p>
+                      <p>
+                        Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+                      </p>
 
-        </div>
+                    </div><!-- End post content -->
 
-      </div>
+                    <div class="meta-bottom">
+                      <i class="bi bi-folder"></i>
+                      <ul class="cats">
+                        <li><a href="#">Business</a></li>
+                      </ul>
 
-    </section><!-- /Stats Section -->
+                      <i class="bi bi-tags"></i>
+                      <ul class="tags">
+                        <li><a href="#">Creative</a></li>
+                        <li><a href="#">Tips</a></li>
+                        <li><a href="#">Marketing</a></li>
+                      </ul>
+                    </div><!-- End meta bottom -->
 
-    <section id="services" class="services section light-background">
+                  </article>
 
-          <!-- Section Title -->
-          <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-            <h2>Services</h2>
-            <p>Our Distinct Edge</p>
-          </div><!-- End Section Title -->
-
-          <div class="container">
-
-            <div class="row gy-4">
-
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>Nesciunt Mete</h3>
-                  </a>
-                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
                 </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>Eosle Commodi</h3>
-                  </a>
-                  <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-chat-text" style="color: #20c997;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>Ledo Markt</h3>
-                  </a>
-                  <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>Asperiores Commodit</h3>
-                  </a>
-                  <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-globe" style="color: #6610f2;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>Velit Doloremque</h3>
-                  </a>
-                  <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-clock" style="color: #f3268c;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>Dolori Architecto</h3>
-                  </a>
-                  <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-            </div>
-
-          </div>
-
-        </section>
+              </section>
 
 
 @endsection
