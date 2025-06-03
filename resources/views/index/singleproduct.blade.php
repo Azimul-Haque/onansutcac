@@ -33,7 +33,7 @@
               <article class="article">
 
                 <div class="post-img">
-                  <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                  <img src="{{ asset('vendor/dewi/assets/img/blog/blog-1.jpg') }}" alt="" class="img-fluid">
                 </div>
 
                 <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
