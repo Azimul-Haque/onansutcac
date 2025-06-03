@@ -243,13 +243,6 @@
       }
     </style>
 
-    <script>
-      // Ensure Bootstrap's JS is loaded for tab functionality
-      // This usually comes from your main Bootstrap JS bundle.
-      // Example if you're loading it via CDN:
-      // <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </script>
-
     
 
 
