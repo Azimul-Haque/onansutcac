@@ -385,7 +385,7 @@
       }
 
       testimonials .testimonial-item {
-          text-align: center;
+          text-align: right;
       }
 
       .testimonials .post-img {
