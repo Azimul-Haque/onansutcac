@@ -598,7 +598,6 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">Phoenix Business Journal</p>
                   <p class="post-date">
@@ -625,7 +624,6 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-13.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">AZ Big Media</p>
                   <p class="post-date">
@@ -653,7 +651,6 @@
 
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-m-10.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">ASU News</p>
                   <p class="post-date">
