@@ -414,7 +414,7 @@
           height: 100%;
       }
 
-      .testimonials .recent-news .post-img {
+      .testimonials .post-img {
           max-height: 240px;
           margin: -30px -30px 15px;
           overflow: hidden;
