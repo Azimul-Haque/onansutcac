@@ -382,6 +382,34 @@
 
     </section><!-- /Testimonials Section -->
 
+    <style>
+      .testimonial-item {
+        /* Background with 50% transparency */
+        background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+
+        /* Rounded borders */
+        border-radius: 15px; /* Adjust as needed for desired roundness */
+
+        /* Optional: Add some padding to prevent content from touching edges */
+        padding: 10px;
+
+        /* Optional: Ensure text color is visible on dark background */
+        color: #fff; /* White text for readability */
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      /* You might need to adjust other testimonial item styles as well */
+      .testimonial-item h3,
+      .testimonial-item h4 {
+        color: #fff; /* Ensure names are white */
+      }
+
+      .testimonial-item .stars i {
+        color: #ffc107; /* Bootstrap yellow for stars (or your desired star color) */
+      }
+    </style>
+
     
 
 
