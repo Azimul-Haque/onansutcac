@@ -45,7 +45,7 @@
                 <div class="icon">
                   <i class="bi bi-activity"></i>
                 </div>
-                <a href="#!" class="stretched-link">
+                <a href="{{ route('index.singleproduct', 'single') }}" class="stretched-link">
                   <h3>Nesciunt Mete</h3>
                 </a>
                 <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
