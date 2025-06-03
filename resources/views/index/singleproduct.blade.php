@@ -129,7 +129,7 @@
 
       <div class="container" data-aos="fade-up">
 
-        <div class="relevant-technologies-widget p-4">
+        <div class="relevant-technologies-widget ">
           <div class="row">
             <div class="col-md-4">
               <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
