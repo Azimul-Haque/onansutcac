@@ -258,9 +258,6 @@
         <p>Hear From Our Clients</p>
       </div><!-- End Section Title -->
 
-      {{-- <img src="{{ asset('vendor/dewi/assets/img/testimonials-bg.jpg') }}" class="testimonials-bg" alt=""> --}}
-      <img src="{{ asset('images/factory.png') }}" class="testimonials-bg" alt="">
-
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
