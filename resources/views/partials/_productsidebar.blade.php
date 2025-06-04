@@ -39,9 +39,9 @@
       <li><a href="#">Product - 1 <span>(Details)</span></a></li>
       <li><a href="#">Product - 2 <span>(25)</span></a></li>
       <li><a href="#">Product - 3 <span>(Other)</span></a></li>
-      <li><a href="#">Product - 4 <span>(25)</span></a></li>
+      <li><a href="#">Product - 4 <span>(10)</span></a></li>
       <li><a href="#">Product - 5 <span>(25)</span></a></li>
-      <li><a href="#">Product - 6 <span>(25)</span></a></li>
+      <li><a href="#">Product - 6 <span>(See More)</span></a></li>
     </ul>
 
   </div><!--/Categories Widget -->
