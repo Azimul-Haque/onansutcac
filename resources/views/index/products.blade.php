@@ -276,7 +276,7 @@
     <section id="services" class="services section light-background">
 
           <!-- Section Title -->
-          <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <div class="container section-title aos-init" data-aos="fade-up">
             <h2>Services</h2>
             <p>Our Distinct Edge</p>
           </div><!-- End Section Title -->
@@ -285,7 +285,7 @@
 
             <div class="row gy-4">
 
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item-rifat position-relative">
                   <div class="icon">
                     <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
@@ -297,7 +297,7 @@
                 </div>
               </div><!-- End Service Item -->
 
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-item-rifat position-relative">
                   <div class="icon">
                     <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
@@ -309,7 +309,7 @@
                 </div>
               </div><!-- End Service Item -->
 
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-item-rifat position-relative">
                   <div class="icon">
                     <i class="bi bi-chat-text" style="color: #20c997;"></i>
@@ -321,7 +321,7 @@
                 </div>
               </div><!-- End Service Item -->
 
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-item-rifat position-relative">
                   <div class="icon">
                     <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
@@ -333,7 +333,7 @@
                 </div>
               </div><!-- End Service Item -->
 
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="500">
                 <div class="service-item-rifat position-relative">
                   <div class="icon">
                     <i class="bi bi-globe" style="color: #6610f2;"></i>
@@ -345,7 +345,7 @@
                 </div>
               </div><!-- End Service Item -->
 
-              <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="600">
                 <div class="service-item-rifat position-relative">
                   <div class="icon">
                     <i class="bi bi-clock" style="color: #f3268c;"></i>
