@@ -93,12 +93,12 @@ class IndexController extends Controller
 
     public function getMarkets()
     {
-        return view('index.products');
+        return view('index.markets');
     }
 
     public function getMarket()
     {
-        return view('index.singleproduct');
+        return view('index.singlemarket');
     }
 
     public function paymentProceed(Request $request)
