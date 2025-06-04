@@ -34,9 +34,9 @@
   <!-- Categories Widget -->
   <div class="categories-widget widget-item">
 
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Products</h3>
     <ul class="mt-3">
-      <li><a href="#">General <span>(25)</span></a></li>
+      <li><a href="#">Product - 1 <span>(25)</span></a></li>
       <li><a href="#">Lifestyle <span>(12)</span></a></li>
       <li><a href="#">Travel <span>(5)</span></a></li>
       <li><a href="#">Design <span>(22)</span></a></li>
