@@ -32,11 +32,11 @@
         <p>Explore Our Range of Quality Offerings<br></p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row justify-content-center g-5">
 
-          <div class="col-md-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+          <div class="col-md-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-code-slash"></i>
@@ -52,7 +52,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="200">
+          <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-phone-fill"></i>
