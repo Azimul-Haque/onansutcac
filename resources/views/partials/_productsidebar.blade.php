@@ -20,7 +20,7 @@
     </div>
   </div><!--/Blog Author Widget --> --}}
 
-  <!-- Search Widget -->
+  {{-- <!-- Search Widget -->
   <div class="search-widget widget-item">
 
     <h3 class="widget-title">Search</h3>
@@ -29,7 +29,7 @@
       <button type="submit" title="Search"><i class="bi bi-search"></i></button>
     </form>
 
-  </div><!--/Search Widget -->
+  </div><!--/Search Widget --> --}}
 
   <!-- Categories Widget -->
   <div class="categories-widget widget-item">
