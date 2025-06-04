@@ -411,7 +411,7 @@
 
             <div class="row gy-4">
 
-              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-item-rifat position-relative">
                   <div class="icon">
                     <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
