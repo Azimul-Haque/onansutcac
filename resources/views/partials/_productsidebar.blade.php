@@ -49,7 +49,7 @@
   <!-- Recent Posts Widget -->
   <div class="recent-posts-widget widget-item">
 
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Markets</h3>
 
     <div class="post-item">
       <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
