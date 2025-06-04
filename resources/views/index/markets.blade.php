@@ -32,7 +32,7 @@
         <p>Explore Our Range of Quality Offerings<br></p>
       </div><!-- End Section Title -->
 
-      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row justify-content-center g-5">
 
