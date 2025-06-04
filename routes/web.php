@@ -21,7 +21,7 @@ Route::get('/privacy-policy', 'IndexController@privacyPolicy')->name('index.priv
 Route::get('/products', 'IndexController@getProducts')->name('index.products');
 Route::get('/products/{id}', 'IndexController@getProduct')->name('index.singleproduct');
 Route::get('/markets', 'IndexController@getMarkets')->name('index.markets');
-Route::get('/markets/{id}', 'IndexController@getMarket')->name('index.singleproduct');
+Route::get('/markets/{id}', 'IndexController@getMarket')->name('index.singlemarket');
 
 Route::post('/payment/proceed', 'IndexController@paymentProceed')->name('index.payment.proceed');
 Route::get('/payment/cancel', 'IndexController@paymentCancel')->name('index.payment.cancel');
