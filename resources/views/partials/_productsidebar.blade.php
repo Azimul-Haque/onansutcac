@@ -37,11 +37,11 @@
     <h3 class="widget-title">Products</h3>
     <ul class="mt-3">
       <li><a href="#">Product - 1 <span>(25)</span></a></li>
-      <li><a href="#">Product - 1 <span>(25)</span></a></li>
-      <li><a href="#">Product - 1 <span>(25)</span></a></li>
-      <li><a href="#">Product - 1 <span>(25)</span></a></li>
-      <li><a href="#">Product - 1 <span>(25)</span></a></li>
-      <li><a href="#">Product - 1 <span>(25)</span></a></li>
+      <li><a href="#">Product - 2 <span>(25)</span></a></li>
+      <li><a href="#">Product - 3 <span>(25)</span></a></li>
+      <li><a href="#">Product - 4 <span>(25)</span></a></li>
+      <li><a href="#">Product - 5 <span>(25)</span></a></li>
+      <li><a href="#">Product - 6 <span>(25)</span></a></li>
     </ul>
 
   </div><!--/Categories Widget -->
