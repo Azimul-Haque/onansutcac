@@ -52,7 +52,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+          <div class="col-md-6 aos-init" data-aos="fade-left" data-aos-delay="100">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-phone-fill"></i>
@@ -84,7 +84,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="200">
+          <div class="col-md-6 aos-init" data-aos="fade-left" data-aos-delay="200">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-bar-chart-line"></i>
@@ -116,7 +116,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
+          <div class="col-md-6 aos-init" data-aos="fade-left" data-aos-delay="300">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-shield-lock"></i>
