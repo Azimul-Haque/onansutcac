@@ -29,7 +29,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Products</h2>
-        <p>Tailored Solutions for Every Sector</p>
+        <p>Tailored Solutions for Every Sector<br></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
