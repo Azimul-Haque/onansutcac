@@ -87,7 +87,7 @@
             <div style="background: linear-gradient(135deg, #ba5ddc, #cab5ee); border-radius: 20px; padding: 30px; color: white;">
               <h4 style="font-weight: bold;">Markets</h4>
               <p style="color: #f5f5f5;">We serve the world’s most important industries, delivering bespoke, sustainable solutions for critical water challenges in every corner of the planet.</p>
-              <a href="#" style="display: inline-block; margin-top: 15px; background-color: #9b18b9; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Explore Further</a>
+              <a href="{{ route('index.markets') }}" style="display: inline-block; margin-top: 15px; background-color: #9b18b9; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Explore Further</a>
             </div>
           </div>
 
