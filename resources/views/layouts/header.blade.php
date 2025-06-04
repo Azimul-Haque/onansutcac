@@ -12,7 +12,7 @@
         {{-- <li><a href="#hero" class="active">Home</a></li> --}}
         <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') ? 'active' : '' }}">Products</a></li>
-        <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') ? 'active' : '' }}">Markets</a></li>
+        <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li>
         <li class="dropdown"><a href="#"><span>Regional Offices</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">USA</a></li>
