@@ -10,12 +10,12 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>Product</h1>
+        <h1>Market</h1>
         <p>Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">Product Details</li>
+            <li class="current">Market Details</li>
           </ol>
         </nav>
       </div>
