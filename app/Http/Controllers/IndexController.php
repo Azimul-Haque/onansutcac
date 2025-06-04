@@ -91,6 +91,16 @@ class IndexController extends Controller
         return view('index.singleproduct');
     }
 
+    public function getMarkets()
+    {
+        return view('index.products');
+    }
+
+    public function getMarket()
+    {
+        return view('index.singleproduct');
+    }
+
     public function paymentProceed(Request $request)
     {
         $this->validate($request,array(
