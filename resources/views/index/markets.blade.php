@@ -36,7 +36,7 @@
 
         <div class="row justify-content-center g-5">
 
-          <div class="col-md-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-md-6  aos-animate" data-aos="fade-right" data-aos-delay="100">
             <div class="service-item">
               <div class="service-icon">
                 <i class="bi bi-code-slash"></i>
