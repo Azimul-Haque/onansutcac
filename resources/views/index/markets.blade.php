@@ -74,7 +74,7 @@
                 <i class="bi bi-palette2"></i>
               </div>
               <div class="service-content">
-                <h3>UI/UX Design</h3>
+                <h3>Health Tech</h3>
                 <p>Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
                 <a href="{{ route('index.singlemarket', '1') }}" class="service-link">
                   <span>Learn More</span>
