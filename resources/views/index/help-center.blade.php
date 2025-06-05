@@ -60,7 +60,7 @@
 
               <div class="tab-content" id="faqTabContent">
                 <!-- General FAQs -->
-                <div class="tab-pane fade" id="faq-general" role="tabpanel" aria-labelledby="general-tab">
+                <div class="tab-pane fade active show" id="faq-general" role="tabpanel" aria-labelledby="general-tab">
                   <div class="faq-list">
 
                     <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
