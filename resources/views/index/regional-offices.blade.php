@@ -66,7 +66,7 @@
             position: relative;
             width: 100%;
             max-width: 100%; /* Optional: constrain width on larger screens */
-            min-height: 650px;
+            min-height: 500px;
             border-radius: 15px;
             padding: 20px;
             background-color: white;
