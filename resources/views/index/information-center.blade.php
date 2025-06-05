@@ -311,7 +311,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2 style="font-weight: 700; font-size: 2rem; margin-bottom: 10px; color: #ffffff;">Got Questions?</h2>
         <p style="font-size: 1.1rem; margin-bottom: 30px;">
-          Unlock the answers you need, and conquer any challenge.
+          Unlock the answers you need, and conquer any challenge!
         </p>
         <a href="{{ route('index.get-contact') }}" class="btn btn-light" style="color: #39b54a; font-weight: 600; padding: 10px 24px; border-radius: 30px; animation: experience-float 3s ease-in-out infinite; margin: 5px;">
           Connect with Us
