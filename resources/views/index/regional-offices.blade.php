@@ -44,7 +44,7 @@
             </div>
           </div>
 
-          <div class="pin" style="top: 58.5%; left: 79%;">
+          <div class="pin" style="top: 62%; left: 75.5%;">
             <div class="tooltip">
               Singapore Office<br>
               <a href="https://sg.example.com" target="_blank">Visit Site</a>
