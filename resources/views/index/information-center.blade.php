@@ -123,7 +123,40 @@
                 </div>
                 <div class="feature-content">
                   <h3 class="feature-title">Business Landscape</h3>
-                  <p class="feature-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p class="feature-text">
+                    <ul class="list-unstyled mt-4">
+                      <li class="mb-4">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-rocket-takeoff me-2"></i> Space
+                        </a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-lightning me-2"></i> Grid
+                        </a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-shield-fill-check me-2"></i> Weapons
+                        </a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-ev-front me-2"></i> EV
+                        </a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-server me-2"></i> Data Centers
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-broadcast me-2"></i> Communications
+                        </a>
+                      </li>
+                    </ul>
+                  </p>
                 </div>
               </div>
             </div>
