@@ -173,7 +173,7 @@
             <div class="feature-box green">
               <i class="bi bi-sunrise"></i>
               <h4>Regional Office</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              <p>10 Anson Road, #22-15 International Plaza, Singapore 079903</p>
             </div>
           </div><!-- End Feature Borx-->
 
