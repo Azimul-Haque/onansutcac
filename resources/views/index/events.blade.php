@@ -40,6 +40,7 @@
               </div>
             </div>
           </div>
+          
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
