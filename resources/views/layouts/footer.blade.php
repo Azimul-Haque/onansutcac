@@ -48,7 +48,7 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Materials & Media</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Events</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.events') }}">Events</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Case Study</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">News & Updates</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Academia</a></li>
