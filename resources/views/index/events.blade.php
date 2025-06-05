@@ -64,16 +64,43 @@
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                  <div class="modal-header border-0 pb-0">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    ...
+                  <div class="modal-body pt-0">
+                    <div class="text-center mb-4">
+                      <img src="{{ asset('vendor/dewi/assets/img/events/ai-summit-banner.webp') }}" class="img-fluid rounded shadow-sm mb-4" alt="AI & Sustainable Water Futures Summit" style="max-height: 350px; object-fit: cover; width: 100%;">
+                      <h3 class="modal-title fw-bold mb-2" id="eventModalLabel">AI & Sustainable Water Futures Summit</h3>
+                      <p class="text-muted fst-italic mb-1">
+                        <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
+                      </p>
+                      <p class="text-muted fst-italic mb-0">
+                        <i class="bi bi-geo-alt me-2"></i> **Grand Ballroom, International Convention City Bashundhara (ICCB), Dhaka**
+                      </p>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="px-4">
+                      <p class="lead text-dark">
+                        Join industry leaders and innovators at the **AI & Sustainable Water Futures Summit**, a pivotal event exploring cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions.
+                      </p>
+                      <p>
+                        This summit is designed to foster collaboration and knowledge exchange, bringing together leading experts, policymakers, and technologists. Attendees will gain invaluable insights into the latest advancements in smart water infrastructure, predictive analytics for resource management, and data-driven strategies crucial for a sustainable water future.
+                      </p>
+                      <p>
+                        Engage in dynamic discussions, network with pioneers in the field, and discover scalable solutions impacting communities globally. Don't miss this opportunity to be part of the conversation shaping the next generation of water technology.
+                      </p>
+                      <ul class="list-unstyled mt-4 text-start">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> **Keynote Speakers:** Featuring renowned experts from academia and industry.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> **Interactive Panels:** Deep dives into practical AI implementation challenges and successes.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> **Networking Sessions:** Opportunities to connect with peers and potential collaborators.</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                  <div class="modal-footer justify-content-center border-0 pt-0">
+                    <a href="#" class="btn btn-primary btn-lg shadow-sm">Register Now</a>
+                    <button type="button" class="btn btn-outline-secondary btn-lg shadow-sm" data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
