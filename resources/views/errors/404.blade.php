@@ -71,6 +71,17 @@
 
     </section>
 
+    <style type="text/css">
+      .error-404 .error-illustration {
+          position: relative;
+          height: 350px;
+          display: flex
+      ;
+          align-items: center;
+          justify-content: center;
+      }
+    </style>
+
 
 
 
