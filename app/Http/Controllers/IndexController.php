@@ -96,7 +96,7 @@ class IndexController extends Controller
         return view('index.markets');
     }
 
-    public function getMarket()
+    public function getMarket($id)
     {
         return view('index.singlemarket');
     }
