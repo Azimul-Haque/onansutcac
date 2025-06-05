@@ -113,7 +113,7 @@ class IndexController extends Controller
 
     public function getNews ()
     {
-        return view('index.singlemarket');
+        return view('index.news');
     }
 
     public function getSingleNews($slug)
