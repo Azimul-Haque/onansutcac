@@ -29,7 +29,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Events</h2>
-        <p>The Latest from CactusNano<br></p>
+        <p>Where Connections Happen<br></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
