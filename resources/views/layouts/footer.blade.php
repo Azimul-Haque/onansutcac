@@ -53,7 +53,7 @@
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">News & Updates</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.information-center') }}">Information Center</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Client Endorsemen</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.endorsement') }}">Client Endorsement</a></li>
         </ul>
       </div>
 
