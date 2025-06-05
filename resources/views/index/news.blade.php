@@ -45,7 +45,7 @@
               <p class="post-category">AI Photonics</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}">Dolorum optio tempore voluptas dignissimos</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -71,7 +71,7 @@
               <p class="post-category">Clean Water Technology</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}">Nisi magni odit consequatur autem nulla dolorem</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -97,7 +97,7 @@
               <p class="post-category">Nano Technology</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
               </h2>
 
 
@@ -126,7 +126,7 @@
               <p class="post-category">AI Photonics</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}">Dolorum optio tempore voluptas dignissimos</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -152,7 +152,7 @@
               <p class="post-category">Clean Water Technology</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}">Nisi magni odit consequatur autem nulla dolorem</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -178,7 +178,7 @@
               <p class="post-category">Nano Technology</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
               </h2>
 
 
@@ -250,7 +250,7 @@
                 </div>
 
                 <h2 class="title">
-                  <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
                 <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
@@ -264,7 +264,7 @@
                 </div>
 
                 <h2 class="title">
-                  <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
                 <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
@@ -277,7 +277,7 @@
                 </div>
 
                 <h2 class="title">
-                  <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
                 <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
@@ -290,7 +290,7 @@
                 </div>
 
                 <h2 class="title">
-                  <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
                 <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
