@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title') News & Updates @endsection
+@section('title') Events @endsection
 
 @section('third_party_stylesheets')
 
@@ -10,12 +10,12 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/news-page-background.gif') }}');">
       <div class="container position-relative">
-        <h1>News & Updates</h1>
+        <h1>Events</h1>
         <p>Your Source for What's New</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">News & Updates</li>
+            <li class="current">Events</li>
           </ol>
         </nav>
       </div>
@@ -28,7 +28,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>News & Updates</h2>
+        <h2>Events</h2>
         <p>The Latest from CactusNano<br></p>
       </div><!-- End Section Title -->
 
