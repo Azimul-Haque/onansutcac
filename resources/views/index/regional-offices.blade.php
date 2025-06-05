@@ -90,7 +90,7 @@
             }
           }
 
-          @media (min-width: 1198px) {
+          @media (min-width: 1398px) {
             .map-container {
               height: 650px;
             }
