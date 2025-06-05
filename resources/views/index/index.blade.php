@@ -844,7 +844,7 @@
       }
     </style>
 
-    <!-- Portfolio Section -->
+    {{-- <!-- Portfolio Section -->
     {{-- <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
@@ -1018,7 +1018,7 @@
       </div>
 
     </section> --}}
-    <!-- /Portfolio Section -->
+    <!-- /Portfolio Section --> --}}
 
     <!-- Team Section -->
     {{-- <section id="team" class="team section light-background">
