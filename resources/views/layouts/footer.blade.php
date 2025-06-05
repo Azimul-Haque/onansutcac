@@ -49,7 +49,7 @@
         <h4>Materials & Media</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.events') }}">Events</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Case Study</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Case Study</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">News & Updates</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.information-center') }}">Information Center</a></li>
