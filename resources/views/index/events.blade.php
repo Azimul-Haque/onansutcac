@@ -54,7 +54,7 @@
                 </div>
                 <div class="portfolio2-content">
                   <span class="category">AI & Water Solutions</span>
-                  <h3 data-bs-toggle="modal" data-bs-target="#staticBackdrop">AI & Sustainable Water Futures Summit</h3>
+                  <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>AI & Sustainable Water Futures Summit</h3></a>
                   <p>Explore cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions. </p>
                 </div>
               </div>
