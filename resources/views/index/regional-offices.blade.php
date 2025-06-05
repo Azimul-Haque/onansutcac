@@ -196,6 +196,11 @@
       <i class="bi bi-geo-alt-fill"></i> <!-- Location pin for main -->
 
 
+      <i class="bi bi-globe2"></i> <!-- Global presence -->
+      <i class="bi bi-map-fill"></i> <!-- Region-focused -->
+      <i class="bi bi-flag-fill"></i> <!-- Regional representation -->
+
+
 
 
     </section>
