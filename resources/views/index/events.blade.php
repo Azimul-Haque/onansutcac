@@ -123,6 +123,9 @@
                 <div class="portfolio2-content">
                   <span class="category">Nanotechnology & Water</span>
                   <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>Nanotech Innovations for Clean Water: A Global Forum</h3></a>
+                  <p class="text-muted fst-italic mb-1">
+                    <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
+                  </p>
                   <p>Discover groundbreaking advancements in nanotechnology for water purification, desalination, and contaminant removal. </p>
                 </div>
               </div>
@@ -142,6 +145,9 @@
                 <div class="portfolio2-content">
                   <span class="category">Tech & Water Economy</span>
                   <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>The Tech-Driven Water Economy Conference 2025</h3></a>
+                  <p class="text-muted fst-italic mb-1">
+                    <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
+                  </p>
                   <p>A deep dive into the integration of digital technologies, IoT, and advanced analytics transforming the water sector. </p>
                 </div>
               </div>
