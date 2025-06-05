@@ -161,16 +161,6 @@
 
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">+44 20 7946 0958</span>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">info.uk@company.com</span>
-              
-              <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                <i class="bi bi-telephone-fill" style="font-size: 14px; color: #d99c3b; margin-right: 6px;"></i>
-                
-              </div>
-
-              <div style="display: flex; align-items: center;">
-                <i class="bi bi-envelope-fill" style="font-size: 14px; color: #d99c3b; margin-right: 6px;"></i>
-                
-              </div>
             </div>
           </div><!-- End Feature Borx-->
 
