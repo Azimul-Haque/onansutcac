@@ -86,7 +86,7 @@ class IndexController extends Controller
         return view('index.products');
     }
 
-    public function getProduct()
+    public function getProduct($id)
     {
         return view('index.singleproduct');
     }
