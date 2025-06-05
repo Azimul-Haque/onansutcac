@@ -66,6 +66,55 @@
 
       </div>
 
+      <style>
+          .map-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+          }
+
+          .world-map {
+            width: 100%;
+            display: block;
+          }
+
+          .pin {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background-color: red;
+            border-radius: 50%;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+          }
+
+          .pin:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          .tooltip {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            font-size: 0.85rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+          }
+
+          .tooltip a {
+            color: #aeeaff;
+            text-decoration: underline;
+          }
+        </style>
+
 
 
     </section><!-- /services Section -->
