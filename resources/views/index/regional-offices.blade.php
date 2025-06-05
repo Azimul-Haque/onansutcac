@@ -157,7 +157,7 @@
             <div class="feature-box orange">
               <i class="bi bi-award"></i>
               <h4>Head Office</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              <p>A108 Adam Street, New York, NY 535022</p>
             </div>
           </div><!-- End Feature Borx-->
 
