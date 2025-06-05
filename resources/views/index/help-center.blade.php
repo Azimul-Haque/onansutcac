@@ -30,7 +30,7 @@
       </div>
     </div><!-- End Page Title -->
 
-    <section id="faq" class="faq section">
+    <section id="faq" class="faq section light-background">
 
         <!-- Section Title -->
         <div class="container section-title aos-init" data-aos="fade-up">
