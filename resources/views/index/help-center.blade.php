@@ -31,7 +31,7 @@
           <p>Frequently Asked Questions</p>
         </div><!-- End Section Title -->
 
-        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
           <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -61,7 +61,7 @@
                 <div class="tab-pane fade" id="faq-general" role="tabpanel" aria-labelledby="general-tab">
                   <div class="faq-list">
 
-                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
                       <h3>
                         <span class="num">1</span>
                         <span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
@@ -72,7 +72,7 @@
                       </div>
                     </div><!-- End FAQ Item -->
 
-                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
                       <h3>
                         <span class="num">2</span>
                         <span class="question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span>
@@ -84,7 +84,7 @@
                       </div>
                     </div><!-- End FAQ Item -->
 
-                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
                       <h3>
                         <span class="num">3</span>
                         <span class="question">Dolor sit amet consectetur adipiscing elit pellentesque?</span>
@@ -103,7 +103,7 @@
                 <div class="tab-pane fade" id="faq-pricing" role="tabpanel" aria-labelledby="pricing-tab">
                   <div class="faq-list">
 
-                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
                       <h3>
                         <span class="num">1</span>
                         <span class="question">Ac odio tempor orci dapibus ultrices in iaculis?</span>
@@ -114,7 +114,7 @@
                       </div>
                     </div><!-- End FAQ Item -->
 
-                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
                       <h3>
                         <span class="num">2</span>
                         <span class="question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span>
@@ -126,7 +126,7 @@
                       </div>
                     </div><!-- End FAQ Item -->
 
-                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
                       <h3>
                         <span class="num">3</span>
                         <span class="question">Varius vel pharetra vel turpis nunc eget lorem dolor?</span>
@@ -144,7 +144,7 @@
                 <div class="tab-pane fade active show" id="faq-support" role="tabpanel" aria-labelledby="support-tab">
                   <div class="faq-list">
 
-                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
                       <h3>
                         <span class="num">1</span>
                         <span class="question">Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?</span>
@@ -156,7 +156,7 @@
                       </div>
                     </div><!-- End FAQ Item -->
 
-                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
                       <h3>
                         <span class="num">2</span>
                         <span class="question">Tortor dignissim convallis aenean et tortor at risus viverra?</span>
@@ -167,7 +167,7 @@
                       </div>
                     </div><!-- End FAQ Item -->
 
-                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
                       <h3>
                         <span class="num">3</span>
                         <span class="question">Venenatis urna cursus eget nunc scelerisque viverra mauris in?</span>
@@ -183,7 +183,7 @@
                 </div>
               </div>
 
-              <div class="faq-cta text-center mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-cta text-center mt-5 aos-init" data-aos="fade-up" data-aos-delay="300">
                 <div class="container">
                   <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 mb-4">
