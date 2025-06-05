@@ -184,27 +184,47 @@
               </div>
 
               <div class="faq-cta text-center mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <div class="container"> <div class="row justify-content-center"> <div class="col-lg-4 col-md-6 mb-4"> <div class="info-box">
-                        <i class="bi bi-geo-alt display-4 text-primary mb-3"></i> <h4>Address</h4>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="info-box">
+                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3" style="width: 40px; height: 40px;">
+                          <i class="bi bi-geo-alt fs-5"></i>
+                        </span>
+                        <h6 class="mb-2 fw-bold">Address</h6>
+                        <p class="small text-muted">A108 Adam Street, New York, NY 535022</p>
                       </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4"> <div class="info-box">
-                        <i class="bi bi-envelope display-4 text-primary mb-3"></i> <h4>Email Us</h4>
-                        <p><a href="mailto:info@example.com" class="text-decoration-none text-dark">info@example.com</a></p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="info-box">
+                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3" style="width: 40px; height: 40px;">
+                          <i class="bi bi-envelope fs-5"></i>
+                        </span>
+                        <h6 class="mb-2 fw-bold">Email Us</h6>
+                        <p class="small text-muted"><a href="mailto:info@example.com" class="text-decoration-none text-dark">info@example.com</a></p>
                       </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4"> <div class="info-box">
-                        <i class="bi bi-phone display-4 text-primary mb-3"></i> <h4>Call Us</h4>
-                        <p><a href="tel:+155895548855" class="text-decoration-none text-dark">+1 5589 55488 55</a></p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="info-box">
+                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3" style="width: 40px; height: 40px;">
+                          <i class="bi bi-phone fs-5"></i>
+                        </span>
+                        <h6 class="mb-2 fw-bold">Call Us</h6>
+                        <p class="small text-muted"><a href="tel:+155895548855" class="text-decoration-none text-dark">+1 5589 55488 55</a></p>
                       </div>
                     </div>
 
                   </div>
                 </div>
               </div>
+
+              <style>
+                .icon-circle {
+                  /* You can further customize the circle's appearance here if needed */
+                }
+              </style>
 
             </div>
           </div>
