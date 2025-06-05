@@ -142,7 +142,7 @@
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-11.webp') }}" class="img-fluid" alt="Smart Cities & Water: IoT's Role in Urban Sustainability" loading="lazy">
                   <div class="portfolio2-overlay">
                     <div class="portfolio2-actions">
-                      <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-11.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-11.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i> Details</a>
                       {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
