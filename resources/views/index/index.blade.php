@@ -844,8 +844,8 @@
       }
     </style>
 
-    {{-- <!-- Portfolio Section -->
-    {{-- <section id="portfolio" class="portfolio section">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -1017,8 +1017,8 @@
 
       </div>
 
-    </section> --}}
-    <!-- /Portfolio Section --> --}}
+    </section>
+    <!-- /Portfolio Section -->
 
     <!-- Team Section -->
     {{-- <section id="team" class="team section light-background">
