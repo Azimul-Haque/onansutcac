@@ -130,6 +130,11 @@ class IndexController extends Controller
     {
         return view('index.success-stories');
     }
+
+    public function getSingleSuccessStory($slug)
+    {
+        return view('index.success-stories');
+    }
     
 
     public function paymentProceed(Request $request)
