@@ -317,7 +317,7 @@
           Connect with Us
         </a>
         <a href="{{ route('index.information-center') }}" class="btn btn-dark" style="color: #39b54a; font-weight: 600; padding: 10px 24px; border-radius: 30px; animation: experience-float 3s ease-in-out infinite; margin: 5px;">
-          Help Center
+          Information Center
         </a>
       </div>
     </section>
