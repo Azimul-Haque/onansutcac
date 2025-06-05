@@ -43,7 +43,7 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/events-2.jpg" alt="...">
+                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="James 6th Birthday">
               </div>
               <div class="card-body">
                 <h5 class="card-title">James 6th Birthday</h5>
