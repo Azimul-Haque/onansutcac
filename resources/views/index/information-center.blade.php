@@ -50,27 +50,27 @@
                           <i class="bi bi-gear me-2"></i> Boiler Systems
                         </a>
                       </li>
-                    <li class="mb-2">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-snow me-2"></i> Cooling Systems
-                      </a>
-                    </li>
-                    <li class="mb-2">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-filter-circle me-2"></i> Membrane Systems
-                      </a>
-                    </li>
-                    <li class="mb-2">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-tools me-2"></i> Process Treatment
-                      </a>
-                    </li>
-                    <li class="mb-2">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-water me-2"></i> Wastewater Treatment
-                      </a>
-                    </li>
-                  </ul>
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-snow me-2"></i> Cooling Systems
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-filter-circle me-2"></i> Membrane Systems
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-tools me-2"></i> Process Treatment
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-water me-2"></i> Wastewater Treatment
+                        </a>
+                      </li>
+                    </ul>
                   </p>
                 </div>
               </div>
