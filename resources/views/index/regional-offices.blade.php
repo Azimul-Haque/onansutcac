@@ -40,7 +40,7 @@
           <div class="pin" style="top: 38%; left: 22%;">
             <div class="tooltip">
               USA Office<br>
-              <span>Head Office</span>
+              <span>Head Office</span><br>
               <a href="#features-cards">Details</a>
             </div>
           </div>
@@ -48,6 +48,7 @@
           <div class="pin" style="top: 62%; left: 75.5%;">
             <div class="tooltip">
               Singapore Office<br>
+              <span>Head Office</span><br>
               <a href="#features-cards">Details</a>
             </div>
           </div>
