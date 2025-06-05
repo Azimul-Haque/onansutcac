@@ -155,7 +155,8 @@
               </div>
             </div>
 
-          </div><!-- End Portfolio Container -->
+          </div>
+          <!-- End Portfolio Container -->
 
         </div>
 
