@@ -31,6 +31,7 @@ Route::get('/sitemap', 'IndexController@getSitemap')->name('index.sitemap');
 
 Route::get('/events', 'IndexController@getEvents')->name('index.events');
 Route::get('/success-stories', 'IndexController@getSuccessStories')->name('index.success-stories');
+Route::get('/success-stories/{slug}', 'IndexController@getSingleSuccessStory')->name('index.single-success-story');
 Route::get('/academia', 'IndexController@getAcademia')->name('index.academia');
 Route::get('/information-center', 'IndexController@getInformationCenter')->name('index.information-center');
 Route::get('/testimonials', 'IndexController@getTestimonials')->name('index.testimonials');
