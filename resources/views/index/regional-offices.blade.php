@@ -48,7 +48,7 @@
           <div class="pin" style="top: 62%; left: 75.5%;">
             <div class="tooltip">
               Singapore Office<br>
-              <span>Head Office</span><br>
+              <span>Regional Office</span><br>
               <a href="#features-cards">Details</a>
             </div>
           </div>
