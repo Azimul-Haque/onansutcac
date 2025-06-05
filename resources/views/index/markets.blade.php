@@ -90,7 +90,7 @@
                 <i class="bi bi-bar-chart-line"></i>
               </div>
               <div class="service-content">
-                <h3>Digital Marketing</h3>
+                <h3>Smart Industry</h3>
                 <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.</p>
                 <a href="{{ route('index.singlemarket', '1') }}" class="service-link">
                   <span>Learn More</span>
