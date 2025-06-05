@@ -33,7 +33,7 @@
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
         <h1>403 Forbidden</h1>
-        <p>Page Not Found, But Your Journey Continues</p>
+        <p>Unauthorized Access Attempted</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
