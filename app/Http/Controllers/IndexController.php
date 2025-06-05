@@ -111,7 +111,7 @@ class IndexController extends Controller
         return view('index.singlemarket');
     }
 
-    public function getSingleNews()
+    public function getSingleNews($slug)
     {
         return view('index.regional-offices');
     }
