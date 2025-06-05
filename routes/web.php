@@ -25,6 +25,7 @@ Route::get('/markets/{id}', 'IndexController@getMarket')->name('index.singlemark
 Route::get('/regional-offices', 'IndexController@getRegionalOffices')->name('index.regional-offices');
 Route::get('/regional-offices/{id}', 'IndexController@getRegionalOffice')->name('index.single-regional-office');
 Route::get('/news', 'IndexController@getRegionalOffice')->name('index.single-regional-office');
+Route::get('/regional-offices/{id}', 'IndexController@getRegionalOffice')->name('index.single-regional-office');
 
 Route::post('/payment/proceed', 'IndexController@paymentProceed')->name('index.payment.proceed');
 Route::get('/payment/cancel', 'IndexController@paymentCancel')->name('index.payment.cancel');
