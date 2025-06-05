@@ -24,7 +24,6 @@
     </div><!-- End Page Title -->
 
     <section id="error-404" class="error-404 section">
-
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
         <div class="error-wrapper">
