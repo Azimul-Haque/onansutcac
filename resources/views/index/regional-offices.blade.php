@@ -201,6 +201,9 @@
       <i class="bi bi-flag-fill"></i> <!-- Regional representation -->
 
 
+      <i class="bi bi-shop"></i> <!-- Local/smaller office -->
+      <i class="bi bi-pin-map-fill"></i> <!-- Precise sub-location -->
+      <i class="bi bi-house-door-fill"></i> <!-- Small office/home office -->
 
 
     </section>
