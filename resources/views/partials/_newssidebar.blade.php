@@ -29,7 +29,7 @@
   <!-- Recent Posts Widget -->
   <div class="recent-posts-widget widget-item">
 
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recent News</h3>
 
     <div class="post-item">
       <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="flex-shrink-0">
