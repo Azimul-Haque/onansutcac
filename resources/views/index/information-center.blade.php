@@ -216,32 +216,32 @@
                   <ul class="list-unstyled mt-4">
                     <li class="mb-4">
                       <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-rocket-takeoff me-2"></i> Space
+                        <i class="bi bi-file-earmark-bar-graph me-2"></i> Future of Quantum Materials in Space Exploration
                       </a>
                     </li>
                     <li class="mb-4">
                       <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-lightning me-2"></i> Grid
+                        <i class="bi bi-water me-2"></i> Nanotechnology's Role in Next-Gen Water Purification
                       </a>
                     </li>
                     <li class="mb-4">
                       <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-shield-fill-check me-2"></i> Weapons
+                        <i class="bi bi-plug me-2"></i> Advancing Grid Resiliency with Smart Materials
                       </a>
                     </li>
                     <li class="mb-4">
                       <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-ev-front me-2"></i> EV
+                        <i class="bi bi-cpu me-2"></i> AI-Driven Solutions for Sustainable Data Centers
                       </a>
                     </li>
                     <li class="mb-4">
                       <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-server me-2"></i> Data Centers
+                        <i class="bi bi-battery-charging me-2"></i> High-Performance Materials for EV Battery Longevity
                       </a>
                     </li>
                     <li class="">
                       <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-broadcast me-2"></i> Communications
+                        <i class="bi bi-clipboard-data me-2"></i> Research Insights: Advanced Composites in Defense
                       </a>
                     </li>
                   </ul>
