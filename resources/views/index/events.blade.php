@@ -31,19 +31,6 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" alt="Lara's 1th Birthday">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">AI & Sustainable Water Futures Summit</h5>
-                <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
-                <p class="card-text">Explore cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions. This summit brings together leading experts to discuss smart infrastructure, predictive analytics, and data-driven resource management.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
-              <div class="card-img">
                 <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" alt="AI & Sustainable Water Futures Summit">
               </div>
               <div class="card-body">
@@ -57,7 +44,7 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" alt="Nanotech Innovations for Clean Water: A Global Forum">
+                <img src="{{ asset('vendor/dewi/assets/img/about-2.jpg') }}" alt="Nanotech Innovations for Clean Water: A Global Forum">
               </div>
               <div class="card-body">
                 <h5 class="card-title">Nanotech Innovations for Clean Water: A Global Forum</h5>
@@ -70,7 +57,7 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" alt="The Tech-Driven Water Economy Conference 2025">
+                <img src="{{ asset('vendor/dewi/assets/img/about-2.jpg') }}" alt="The Tech-Driven Water Economy Conference 2025">
               </div>
               <div class="card-body">
                 <h5 class="card-title">The Tech-Driven Water Economy Conference 2025</h5>
@@ -96,7 +83,7 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" alt="Nano-Filtration Breakthroughs: Addressing Emerging Contaminants">
+                <img src="{{ asset('vendor/dewi/assets/img/about-2.jpg-') }}" alt="Nano-Filtration Breakthroughs: Addressing Emerging Contaminants">
               </div>
               <div class="card-body">
                 <h5 class="card-title">Nano-Filtration Breakthroughs: Addressing Emerging Contaminants</h5>
