@@ -96,7 +96,8 @@
             <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/mcc-logo.png" class="img-fluid" alt="Mesa Community College Logo" style="max-height: 80px;">
           </div>
 
-        </div></div>```
+        </div>
+      </div>
 
     </section>
 
