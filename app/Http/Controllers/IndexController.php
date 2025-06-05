@@ -145,6 +145,11 @@ class IndexController extends Controller
     {
         return view('index.information-center');
     }
+
+    public function getHelpCenter()
+    {
+        return view('index.help-center');
+    }
     
 
     public function paymentProceed(Request $request)
