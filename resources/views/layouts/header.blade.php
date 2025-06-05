@@ -20,7 +20,7 @@
             <li><a href="#">Singapore</a></li>
           </ul>
         </li> --}}
-        <li><a href="#contact">News</a></li>
+        <li><a href="{{ route('index.news') }}">News</a></li>
         <li><a href="#contact">Events</a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
