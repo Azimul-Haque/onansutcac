@@ -233,7 +233,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Lates News</h2>
-        <p>Tailored Solutions for Every Sector<br></p>
+        <p>Your Essential Source for What's Happening Now<br></p>
       </div><!-- End Section Title -->
 
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
