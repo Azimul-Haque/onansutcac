@@ -271,7 +271,7 @@
                 </div>
 
                 <h2 class="title">
-                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="{{ route('index.single-success-story', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
                 <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
@@ -285,7 +285,7 @@
                 </div>
 
                 <h2 class="title">
-                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="{{ route('index.single-success-story', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
                 <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
@@ -298,7 +298,7 @@
                 </div>
 
                 <h2 class="title">
-                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="{{ route('index.single-success-story', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
                 <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
@@ -311,7 +311,7 @@
                 </div>
 
                 <h2 class="title">
-                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="{{ route('index.single-success-story', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
                 </h2>
                 <a href="#!" class="newsroom-item-link" target="">Read more</a>
               </div>
