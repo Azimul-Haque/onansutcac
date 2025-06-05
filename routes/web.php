@@ -22,8 +22,8 @@ Route::get('/products', 'IndexController@getProducts')->name('index.products');
 Route::get('/products/{id}', 'IndexController@getProduct')->name('index.singleproduct');
 Route::get('/markets', 'IndexController@getMarkets')->name('index.markets');
 Route::get('/markets/{id}', 'IndexController@getMarket')->name('index.singlemarket');
-Route::get('/markets', 'IndexController@getMarkets')->name('index.regional-offices');
-Route::get('/markets/{id}', 'IndexController@getMarket')->name('index.single-regional-office');
+Route::get('/markets', 'IndexController@getRegionalOffices')->name('index.regional-offices');
+Route::get('/markets/{id}', 'IndexController@getRegionalOffice')->name('index.single-regional-office');
 
 Route::post('/payment/proceed', 'IndexController@paymentProceed')->name('index.payment.proceed');
 Route::get('/payment/cancel', 'IndexController@paymentCancel')->name('index.payment.cancel');
