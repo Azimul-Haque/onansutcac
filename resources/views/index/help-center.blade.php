@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title') Help Center @endsection
+@section('title') Help Center-FAQ @endsection
 
 @section('third_party_stylesheets')
 
