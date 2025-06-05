@@ -159,7 +159,7 @@
               <h4>Head Office</h4>
               <p style="margin-bottom: 20px;">A108 Adam Street, New York, NY 535022</p>
 
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
           </div><!-- End Feature Borx-->
