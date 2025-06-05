@@ -143,7 +143,7 @@
                 </div>
 
                 <!-- Support FAQs -->
-                <div class="tab-pane fade show" id="faq-support" role="tabpanel" aria-labelledby="support-tab">
+                <div class="tab-pane fade active show" id="faq-support" role="tabpanel" aria-labelledby="support-tab">
                   <div class="faq-list">
 
                     <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
