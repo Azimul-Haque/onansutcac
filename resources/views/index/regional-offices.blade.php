@@ -167,7 +167,7 @@
             <div class="feature-box blue">
               <i class="bi bi-patch-check"></i>
               <h4>Corporate Office</h4>
-              <p>221B Baker Street, London, NW1 6XE, UK</p>
+              <p style="margin-bottom: 20px;">221B Baker Street, London, NW1 6XE, UK</p>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
@@ -177,7 +177,7 @@
             <div class="feature-box green">
               <i class="bi bi-sunrise"></i>
               <h4>Regional Office</h4>
-              <p>10 Anson Road, #22-15 International Plaza, Singapore 079903</p>
+              <p style="margin-bottom: 20px;">10 Anson Road, #22-15 International Plaza, Singapore 079903</p>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
@@ -187,7 +187,7 @@
             <div class="feature-box red">
               <i class="bi bi-shield-check"></i>
               <h4>Regional Office</h4>
-              <p>80 Raffles Place, #24-20 UOB Plaza, Singapore 048624</p>
+              <p style="margin-bottom: 20px;">80 Raffles Place, #24-20 UOB Plaza, Singapore 048624</p>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
