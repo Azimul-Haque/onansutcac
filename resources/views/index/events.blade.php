@@ -79,18 +79,18 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion" style="position: absolute; left: 570px; top: 509.25px;">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-motion" style="position: absolute; left: 570px; top: 509.25px;">
+              <div class="portfolio2-card">
+                <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-7.webp') }}" class="img-fluid" alt="The Tech-Driven Water Economy Conference 2025" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
+                  <div class="portfolio2-overlay">
+                    <div class="portfolio2-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-7.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
                       {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
-                <div class="portfolio-content">
+                <div class="portfolio2-content">
                   <span class="category">Tech & Water Economy</span>
                   <h3>The Tech-Driven Water Economy Conference 2025</h3>
                   <p>A deep dive into the integration of digital technologies, IoT, and advanced analytics transforming the water sector. </p>
@@ -98,18 +98,18 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brand" style="position: absolute; left: 0px; top: 533.25px;">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-brand" style="position: absolute; left: 0px; top: 533.25px;">
+              <div class="portfolio2-card">
+                <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-4.webp') }}" class="img-fluid" alt="Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
+                  <div class="portfolio2-overlay">
+                    <div class="portfolio2-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-4.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
                       {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
-                <div class="portfolio-content">
+                <div class="portfolio2-content">
                   <span class="category">AI, Robotics & Water</span>
                   <h3>Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience</h3>
                   <p>Focus on how AI and robotics are revolutionizing inspection, maintenance, and automation in water infrastructure.</p>
