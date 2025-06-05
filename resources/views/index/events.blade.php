@@ -117,18 +117,18 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 570px; top: 1018.5px;">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-web" style="position: absolute; left: 570px; top: 1018.5px;">
+              <div class="portfolio2-card">
+                <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-2.webp') }}" class="img-fluid" alt="Nano-Filtration Breakthroughs: Addressing Emerging Contaminants" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
+                  <div class="portfolio2-overlay">
+                    <div class="portfolio2-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-2.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
                       {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
-                <div class="portfolio-content">
+                <div class="portfolio2-content">
                   <span class="category">Nanofiltration</span>
                   <h3>Nano-Filtration Breakthroughs: Addressing Emerging Contaminants</h3>
                   <p>Uncover the latest research and commercial applications of nanofiltration in tackling microplastics, pharmaceuticals, and other emerging pollutants in water.</p>
@@ -136,18 +136,18 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 0px; top: 1042.5px;">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-graphics" style="position: absolute; left: 0px; top: 1042.5px;">
+              <div class="portfolio2-card">
+                <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-11.webp') }}" class="img-fluid" alt="Smart Cities & Water: IoT's Role in Urban Sustainability" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
+                  <div class="portfolio2-overlay">
+                    <div class="portfolio2-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-11.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
                       {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
-                <div class="portfolio-content">
+                <div class="portfolio2-content">
                   <span class="category">IoT & Urban Sustainability</span>
                   <h3>Smart Cities & Water: IoT's Role in Urban Sustainability</h3>
                   <p>Explore how the Internet of Things (IoT) is critical for developing smart water management systems in urban environments. </p>
