@@ -70,8 +70,7 @@
           .map-container {
             position: relative;
             width: 100%;
-            max-width: 900px;
-            margin: auto;
+            overflow: hidden;
           }
 
           .world-map {
@@ -81,10 +80,11 @@
 
           .pin {
             position: absolute;
-            width: 14px;
-            height: 14px;
-            background-color: red;
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(145deg, #4e00c2, #00c2c2);
             border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             cursor: pointer;
             transform: translate(-50%, -50%);
           }
@@ -107,6 +107,7 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
+            z-index: 10;
           }
 
           .tooltip a {
