@@ -181,7 +181,7 @@
             <div class="feature-box red">
               <i class="bi bi-shield-check"></i>
               <h4>Regional Office</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              <p>80 Raffles Place, #24-20 UOB Plaza, Singapore 048624</p>
             </div>
           </div><!-- End Feature Borx-->
 
