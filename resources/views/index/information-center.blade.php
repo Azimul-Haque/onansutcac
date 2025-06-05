@@ -36,67 +36,11 @@
 
         <div class="row gy-4">
 
-          <div class="col-md-6 aos-init" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Collaboration Hub</a></h4>
-                <p class="description">CactusNano collaborates with different Universities. We work together and partner with a variety of world class institutions to fulfill NASA, NSF, DOE, and/or DOD grants.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6 aos-init" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-binoculars icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Future Focus</a></h4>
-                <p class="description">Many of these funding opportunities are focused on the future of space, grid, weapons, EV, data centers, and communications. </p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+          
         </div>
 
 
 
-      </div>
-
-      <div class="container mt-5 pt-5">
-        <div class="row justify-content-center gx-4 gy-4" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture25.png" class="img-fluid" alt="University Logo 1" style="max-height: 80px;">
-          </div>
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture20.png" class="img-fluid" alt="University Logo 2" style="max-height: 80px;">
-          </div>
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture21.png" class="img-fluid" alt="University Logo 3" style="max-height: 80px;">
-          </div>
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture22.png" class="img-fluid" alt="University Logo 4" style="max-height: 80px;">
-          </div>
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture23.png" class="img-fluid" alt="University Logo 5" style="max-height: 80px;">
-          </div>
-
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/purdue.png" class="img-fluid" alt="Purdue University Logo" style="max-height: 80px;">
-          </div>
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/uofa-logo.png" class="img-fluid" alt="University of Arizona Logo" style="max-height: 80px;">
-          </div>
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/gcu-logo.png" class="img-fluid" alt="Grand Canyon University Logo" style="max-height: 80px;">
-          </div>
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/nau-logo.png" class="img-fluid" alt="Northern Arizona University Logo" style="max-height: 80px;">
-          </div>
-          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/mcc-logo.png" class="img-fluid" alt="Mesa Community College Logo" style="max-height: 80px;">
-          </div>
-
-        </div>
       </div>
 
     </section>
