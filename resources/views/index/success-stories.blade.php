@@ -34,6 +34,9 @@
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
+          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
+
+          </div>
           
         </div>
 
