@@ -211,6 +211,9 @@
                 <div class="portfolio2-content">
                   <span class="category">IoT & Urban Sustainability</span>
                   <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>Smart Cities & Water: IoT's Role in Urban Sustainability</h3></a>
+                  <p class="text-muted fst-italic mb-1">
+                    <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
+                  </p>
                   <p>Explore how the Internet of Things (IoT) is critical for developing smart water management systems in urban environments. </p>
                 </div>
               </div>
