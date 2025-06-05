@@ -19,7 +19,7 @@
 @endsection
 
 @extends('layouts.index')
-@section('title') 404 Not Found @endsection
+@section('title') 403 Forbidden @endsection
 
 @section('third_party_stylesheets')
 
@@ -32,12 +32,12 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>404 Not Found</h1>
+        <h1>403 Forbidden</h1>
         <p>Page Not Found, But Your Journey Continues</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">404 Not Found</li>
+            <li class="current">403 Forbidden</li>
           </ol>
         </nav>
       </div>
