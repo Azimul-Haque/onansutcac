@@ -203,154 +203,19 @@
       </div>
 
     </section><!-- /services Section -->
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Success Stories</h2>
-        <p>Where Innovation Meets Success</p>
-      </div><!-- End Section Title -->
-
-      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 4000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper" id="swiper-wrapper-9c7a64342fe292c6" aria-live="off" >
-            {{-- style="transition-duration: 0ms; transform: translate3d(-744.667px, 0px, 0px); transition-delay: 0ms;" --}}
-
-            <div class="swiper-slide" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
-              <div class="testimonial-item">
-                <div class="post-img">
-                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
-                </div>
-
-                <h2 class="title">
-                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-                </h2>
-                <a href="#!" class="newsroom-item-link" target="">Read more</a>
-              </div>
-            </div>
-            <!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-prev" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
-              <div class="testimonial-item">
-                <div class="post-img">
-                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
-                </div>
-
-                <h2 class="title">
-                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-                </h2>
-                <a href="#!" class="newsroom-item-link" target="">Read more</a>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-active" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
-              <div class="testimonial-item">
-                <div class="post-img">
-                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
-                </div>
-
-                <h2 class="title">
-                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-                </h2>
-                <a href="#!" class="newsroom-item-link" target="">Read more</a>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-active" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
-              <div class="testimonial-item">
-                <div class="post-img">
-                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
-                </div>
-
-                <h2 class="title">
-                  <a href="{{ route('index.single-news', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-                </h2>
-                <a href="#!" class="newsroom-item-link" target="">Read more</a>
-              </div>
-            </div><!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
-        
-
+    <section id="stats" class="stats section light-background" style="background: linear-gradient(to right, #39b54a, #007cc2); color: white; padding: 80px 0; text-align: center;">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2 style="font-weight: 700; font-size: 2rem; margin-bottom: 10px; color: #ffffff;">Innovating with Nature</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 30px;">
+          Advanced materials and smart technologies for a sustainable future.
+        </p>
+        <a href="{{ route('index.get-contact') }}" class="btn btn-light" style="color: #39b54a; font-weight: 600; padding: 10px 24px; border-radius: 30px; animation: experience-float 3s ease-in-out infinite;">
+          Connect with Us
+        </a>
       </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <style>
-      .testimonials .testimonial-item {
-          background-color: var(--surface-color);
-          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-          box-sizing: content-box;
-          padding: 30px;
-          margin: 30px 15px;
-          position: relative;
-          height: 100%;
-      }
-
-      .testimonials .testimonial-item {
-          text-align: left !important;
-      }
-
-      .testimonials .post-img {
-          max-height: 240px;
-          margin: -30px -30px 15px;
-          overflow: hidden;
-      }
-
-      .testimonials .post-category {
-          font-size: 16px;
-          color: 
-       color-mix(in srgb, var(--default-color), transparent 50%);
-          margin-bottom: 10px;
-      }
-
-      .testimonials .title {
-          font-size: 20px;
-          font-weight: 700;
-          padding: 0;
-          margin: 0 0 20px 0;
-      }
-
-      .testimonials .post-author {
-          font-weight: 600;
-          margin-bottom: 5px;
-      }
-
-      .testimonials .post-date {
-          font-size: 14px;
-          color: color-mix(in srgb, var(--default-color), transparent 50%);
-          margin-bottom: 0;
-      }
-    </style>
+    </section>
 
 
 @endsection
