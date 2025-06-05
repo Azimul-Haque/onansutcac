@@ -31,7 +31,7 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="...">
+                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Lara's 1th Birthday">
               </div>
               <div class="card-body">
                 <h5 class="card-title">Lara's 1th Birthday</h5>
