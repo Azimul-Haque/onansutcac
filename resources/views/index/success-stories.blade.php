@@ -52,7 +52,7 @@
 
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
-              <img src="assets/img/blog/blog-post-portrait-3.webp" alt="Blog Image">
+              <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
                 <div class="post-meta">
                   <span><i class="bi bi-person"></i> Sarah Johnson</span>
@@ -68,7 +68,7 @@
 
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
-              <img src="assets/img/blog/blog-post-portrait-4.webp" alt="Blog Image">
+              <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
                 <div class="post-meta">
                   <span><i class="bi bi-person"></i> David Brown</span>
@@ -100,7 +100,7 @@
 
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
-              <img src="assets/img/blog/blog-post-portrait-3.webp" alt="Blog Image">
+              <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
                 <div class="post-meta">
                   <span><i class="bi bi-person"></i> Sarah Johnson</span>
@@ -116,7 +116,7 @@
 
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
-              <img src="assets/img/blog/blog-post-portrait-4.webp" alt="Blog Image">
+              <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
                 <div class="post-meta">
                   <span><i class="bi bi-person"></i> David Brown</span>
