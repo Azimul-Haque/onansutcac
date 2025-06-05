@@ -160,9 +160,8 @@
                 </div>
               </div>
             </div>
-
-
           </div>
+          
           <div class="row feature-boxes">
             <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="200">
               <div class="feature-box">
