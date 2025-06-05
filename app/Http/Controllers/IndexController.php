@@ -103,12 +103,12 @@ class IndexController extends Controller
 
     public function getRegionalOffices()
     {
-        return view('index.markets');
+        return view('index.regional-offices');
     }
 
     public function getRegionalOffice()
     {
-        return view('index.singlemarket');
+        return view('index.single-regional-office');
     }
 
     public function paymentProceed(Request $request)
