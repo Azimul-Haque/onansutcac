@@ -189,6 +189,15 @@
 
       </div>
 
+
+
+      <i class="bi bi-building"></i> <!-- Default office building -->
+      <i class="bi bi-bank"></i> <!-- Institutional look -->
+      <i class="bi bi-geo-alt-fill"></i> <!-- Location pin for main -->
+
+
+
+
     </section>
 
     <section id="stats" class="stats section light-background" style="background: linear-gradient(to right, #39b54a, #007cc2); color: white; padding: 80px 0; text-align: center;">
