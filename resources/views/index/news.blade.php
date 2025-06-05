@@ -39,7 +39,7 @@
             <article>
 
               <div class="post-img">
-                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid"></a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid"></a>
               </div>
 
               <p class="post-category">AI Photonics</p>
@@ -56,7 +56,7 @@
                   </p>
                 </div>
               </div>
-              <a href="#!" class="newsroom-item-link" target="">Read more</a>
+              <a href="{{ route('index.single-news', 'slug-2123') }}" class="newsroom-item-link" target="">Read more</a>
 
             </article>
           </div><!-- End post list item -->
@@ -65,7 +65,7 @@
             <article>
 
               <div class="post-img">
-                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid"></a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid"></a>
               </div>
 
               <p class="post-category">Clean Water Technology</p>
@@ -82,7 +82,7 @@
                   </p>
                 </div>
               </div>
-              <a href="#!" class="newsroom-item-link" target="">Read more</a>
+              <a href="{{ route('index.single-news', 'slug-2123') }}" class="newsroom-item-link" target="">Read more</a>
 
             </article>
           </div><!-- End post list item -->
@@ -91,7 +91,7 @@
             <article>
 
               <div class="post-img">
-                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
               </div>
 
               <p class="post-category">Nano Technology</p>
@@ -109,7 +109,7 @@
                   </p>
                 </div>
               </div>
-              <a href="#!" class="newsroom-item-link" target="">Read more</a>
+              <a href="{{ route('index.single-news', 'slug-2123') }}" class="newsroom-item-link" target="">Read more</a>
 
 
 
@@ -120,7 +120,7 @@
             <article>
 
               <div class="post-img">
-                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid"></a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid"></a>
               </div>
 
               <p class="post-category">AI Photonics</p>
@@ -137,7 +137,7 @@
                   </p>
                 </div>
               </div>
-              <a href="#!" class="newsroom-item-link" target="">Read more</a>
+              <a href="{{ route('index.single-news', 'slug-2123') }}" class="newsroom-item-link" target="">Read more</a>
 
             </article>
           </div><!-- End post list item -->
@@ -146,7 +146,7 @@
             <article>
 
               <div class="post-img">
-                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid"></a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid"></a>
               </div>
 
               <p class="post-category">Clean Water Technology</p>
@@ -163,7 +163,7 @@
                   </p>
                 </div>
               </div>
-              <a href="#!" class="newsroom-item-link" target="">Read more</a>
+              <a href="{{ route('index.single-news', 'slug-2123') }}" class="newsroom-item-link" target="">Read more</a>
 
             </article>
           </div><!-- End post list item -->
@@ -172,7 +172,7 @@
             <article>
 
               <div class="post-img">
-                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
+                <a href="{{ route('index.single-news', 'slug-2123') }}" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
               </div>
 
               <p class="post-category">Nano Technology</p>
@@ -190,7 +190,7 @@
                   </p>
                 </div>
               </div>
-              <a href="#!" class="newsroom-item-link" target="">Read more</a>
+              <a href="{{ route('index.single-news', 'slug-2123') }}" class="newsroom-item-link" target="">Read more</a>
 
 
 
