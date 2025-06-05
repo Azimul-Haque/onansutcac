@@ -236,7 +236,7 @@
         <p>Stay Informed: Our Latest Updates<br></p>
       </div><!-- End Section Title -->
 
-      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
   
         <!-- List Posts -->
         <div class="row">
