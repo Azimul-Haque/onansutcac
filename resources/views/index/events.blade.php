@@ -48,7 +48,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-10.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
@@ -86,7 +86,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-7.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
@@ -105,7 +105,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-4.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
@@ -124,7 +124,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-2.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
@@ -143,7 +143,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-11.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
