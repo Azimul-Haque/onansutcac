@@ -52,7 +52,7 @@
                   </li>
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="pricing-tab" data-bs-toggle="pill" data-bs-target="#faq-pricing" type="button" role="tab" aria-controls="pricing" aria-selected="false" tabindex="-1">
-                      <i class="bi bi-credit-card me-2"></i>Pricing
+                      <i class="bi bi-credit-card me-2"></i>Technical
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
