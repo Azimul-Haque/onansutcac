@@ -40,8 +40,8 @@
           <div class="pin" style="top: 38%; left: 22%;">
             <div class="tooltip">
               USA Office<br>
-              <span>Head Offioce</span>
-              <a href="https://usa.example.com" target="_blank">Visit Site</a>
+              <span>Head Office</span>
+              <a href="#" target="_blank">Visit Site</a>
             </div>
           </div>
 
