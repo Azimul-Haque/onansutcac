@@ -111,7 +111,7 @@ class IndexController extends Controller
         return view('index.single-regional-office');
     }
 
-    public function getNews ()
+    public function getNews()
     {
         return view('index.news');
     }
@@ -119,6 +119,11 @@ class IndexController extends Controller
     public function getSingleNews($slug)
     {
         return view('index.single-news');
+    }
+
+    public function getEvents()
+    {
+        return view('index.events');
     }
     
 
