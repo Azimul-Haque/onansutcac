@@ -101,6 +101,16 @@ class IndexController extends Controller
         return view('index.singlemarket');
     }
 
+    public function getRegionalOffices()
+    {
+        return view('index.markets');
+    }
+
+    public function getRegionalOffice()
+    {
+        return view('index.singlemarket');
+    }
+
     public function paymentProceed(Request $request)
     {
         $this->validate($request,array(
