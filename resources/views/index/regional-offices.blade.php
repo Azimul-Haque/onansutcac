@@ -126,7 +126,7 @@
             position: absolute;
             top: -10px;
             left: 20px;
-            background: rgba(255, 255, 255, 255.75);
+            background: rgba(0, 0, 0, 0.75);
             color: #fff;
             padding: 6px 10px;
             border-radius: 5px;
