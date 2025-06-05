@@ -54,7 +54,7 @@
                   <i class="bi bi-window"></i>
                 </div>
                 <div class="feature-content">
-                  <h3 class="feature-title">Advanced Security</h3>
+                  <h3 class="feature-title">Personnel Highlights</h3>
                   <p class="feature-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
               </div>
