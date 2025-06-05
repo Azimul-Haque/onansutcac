@@ -211,7 +211,7 @@
                 <i class="bi bi-cpu"></i>
               </div>
               <div class="feature-content">
-                <h3 class="feature-title">Tech Overview</h3>
+                <h3 class="feature-title">Scholarly Publications</h3>
                 <p class="feature-text">
                   <ul class="list-unstyled mt-4">
                     <li class="mb-4">
