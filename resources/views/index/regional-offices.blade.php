@@ -34,6 +34,36 @@
 
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
+        <div class="map-container">
+          <!-- SVG World Map -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" alt="World Map" class="world-map">
+
+          <!-- USA -->
+          <div class="pin" style="top: 37%; left: 23%;">
+            <div class="tooltip">
+              USA Office<br>
+              <a href="https://usa-office.example.com" target="_blank">Visit Site</a>
+            </div>
+          </div>
+
+          <!-- Singapore -->
+          <div class="pin" style="top: 59%; left: 78%;">
+            <div class="tooltip">
+              Singapore Office<br>
+              <a href="https://sg-office.example.com" target="_blank">Visit Site</a>
+            </div>
+          </div>
+
+          <!-- Add more pins here -->
+          <!-- Example: UK -->
+          <div class="pin" style="top: 33%; left: 41%;">
+            <div class="tooltip">
+              UK Office<br>
+              <a href="https://uk-office.example.com" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
 
