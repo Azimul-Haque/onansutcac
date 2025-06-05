@@ -172,7 +172,7 @@
           <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
             <div class="feature-box green">
               <i class="bi bi-sunrise"></i>
-              <h4>Ullamco laboris</h4>
+              <h4>Regional Office</h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
             </div>
           </div><!-- End Feature Borx-->
@@ -180,7 +180,7 @@
           <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400">
             <div class="feature-box red">
               <i class="bi bi-shield-check"></i>
-              <h4>Labore consequatur</h4>
+              <h4>Regional Office</h4>
               <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
             </div>
           </div><!-- End Feature Borx-->
