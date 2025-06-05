@@ -75,16 +75,14 @@
       .error-404 .error-illustration {
           position: relative;
           height: 350px;
-          display: flex
-      ;
+          display: flex;
           align-items: center;
           justify-content: center;
       }
 
       .error-404 .error-illustration i {
           font-size: 9rem;
-          color: 
-       color-mix(in srgb, var(--accent-color), transparent 10%);
+          color: color-mix(in srgb, var(--accent-color), transparent 10%);
           position: relative;
           z-index: 2;
           animation: pulse 2s infinite;
