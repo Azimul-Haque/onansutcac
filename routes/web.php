@@ -31,7 +31,7 @@ Route::get('/events', 'IndexController@getEvents')->name('index.events');
 Route::get('/success-stories', 'IndexController@getSuccessStories')->name('index.success-stories');
 Route::get('/academia', 'IndexController@getAcademia')->name('index.academia');
 Route::get('/information-center', 'IndexController@getInformationCenter')->name('index.information-center');
-Route::get('/endorsement', 'IndexController@getEndorsement')->name('index.endorsement');
+Route::get('/testimonials', 'IndexController@getTestimonials')->name('index.testimonials');
 
 Route::post('/payment/proceed', 'IndexController@paymentProceed')->name('index.payment.proceed');
 Route::get('/payment/cancel', 'IndexController@paymentCancel')->name('index.payment.cancel');
