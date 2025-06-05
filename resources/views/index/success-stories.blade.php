@@ -36,7 +36,7 @@
         <div class="row gy-4">
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
-              <img src="assets/img/blog/blog-post-portrait-2.webp" alt="Blog Image">
+              <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
                 <div class="post-meta">
                   <span><i class="bi bi-person"></i> Mark Wilson</span>
@@ -84,7 +84,7 @@
 
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
-              <img src="assets/img/blog/blog-post-portrait-2.webp" alt="Blog Image">
+              <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
                 <div class="post-meta">
                   <span><i class="bi bi-person"></i> Mark Wilson</span>
