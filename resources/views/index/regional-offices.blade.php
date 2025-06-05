@@ -165,7 +165,7 @@
             <div class="feature-box blue">
               <i class="bi bi-patch-check"></i>
               <h4>Corporate Office</h4>
-              <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+              <p>221B Baker Street, London, NW1 6XE, UK</p>
             </div>
           </div><!-- End Feature Borx-->
 
