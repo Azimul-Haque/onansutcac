@@ -247,7 +247,7 @@
               </div>
               <div class="post-content">
                 <div class="category-meta">
-                  <span class="post-category">Gaming</span>
+                  <span class="post-category">AI Photonics</span>
                 </div>
                 <h3 class="title">
                   <a href="blog-details.html">Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
@@ -267,7 +267,7 @@
               </div>
               <div class="post-content">
                 <div class="category-meta">
-                  <span class="post-category">Gaming</span>
+                  <span class="post-category">Nano Technology</span>
                 </div>
                 <h3 class="title">
                   <a href="blog-details.html">At vero eos et accusamus et iusto</a>
@@ -287,7 +287,7 @@
               </div>
               <div class="post-content">
                 <div class="category-meta">
-                  <span class="post-category">Gaming</span>
+                  <span class="post-category">Water Modeling</span>
                 </div>
                 <h3 class="title">
                   <a href="blog-details.html">Et harum quidem rerum facilis est et expedita distinctio</a>
@@ -307,7 +307,7 @@
               </div>
               <div class="post-content">
                 <div class="category-meta">
-                  <span class="post-category">Gaming</span>
+                  <span class="post-category">GIS Modeling</span>
                 </div>
                 <h3 class="title">
                   <a href="blog-details.html">Nam libero tempore, cum soluta nobis est eligendi</a>
@@ -327,7 +327,7 @@
               </div>
               <div class="post-content">
                 <div class="category-meta">
-                  <span class="post-category">Gaming</span>
+                  <span class="post-category">AI Photonics</span>
                 </div>
                 <h3 class="title">
                   <a href="blog-details.html">Temporibus autem quibusdam et aut officiis debitis</a>
@@ -347,7 +347,7 @@
               </div>
               <div class="post-content">
                 <div class="category-meta">
-                  <span class="post-category">Gaming</span>
+                  <span class="post-category">AI Photonics</span>
                 </div>
                 <h3 class="title">
                   <a href="blog-details.html">Itaque earum rerum hic tenetur a sapiente delectus</a>
