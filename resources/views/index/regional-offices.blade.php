@@ -85,7 +85,7 @@
           }
 
           @media (max-width: 767.98px) {
-            .map-wrapper {
+            .map-container {
               display: none;
             }
           }
