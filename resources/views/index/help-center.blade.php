@@ -184,8 +184,26 @@
               </div>
 
               <div class="faq-cta text-center mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <p>Still have questions? We're here to help!</p>
-                <a href="#" class="btn btn-primary">Contact Support</a>
+                <div class="container"> <div class="row justify-content-center"> <div class="col-lg-4 col-md-6 mb-4"> <div class="info-box">
+                        <i class="bi bi-geo-alt display-4 text-primary mb-3"></i> <h4>Address</h4>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4"> <div class="info-box">
+                        <i class="bi bi-envelope display-4 text-primary mb-3"></i> <h4>Email Us</h4>
+                        <p><a href="mailto:info@example.com" class="text-decoration-none text-dark">info@example.com</a></p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4"> <div class="info-box">
+                        <i class="bi bi-phone display-4 text-primary mb-3"></i> <h4>Call Us</h4>
+                        <p><a href="tel:+155895548855" class="text-decoration-none text-dark">+1 5589 55488 55</a></p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
               </div>
 
             </div>
