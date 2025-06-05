@@ -55,7 +55,7 @@
                 <div class="portfolio-content">
                   <span class="category">AI & Water Solutions</span>
                   <h3>AI & Sustainable Water Futures Summit</h3>
-                  <p>Explore cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions. This summit brings together leading experts to discuss smart infrastructure, predictive analytics, and data-driven resource management.</p>
+                  <p>Explore cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions. </p>
                 </div>
               </div>
             </div>
