@@ -92,7 +92,7 @@
                 </div>
                 <div class="portfolio2-content">
                   <span class="category">Nanotechnology & Water</span>
-                  <h3>Nanotech Innovations for Clean Water: A Global Forum</h3>
+                  <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>Nanotech Innovations for Clean Water: A Global Forum</h3></a>
                   <p>Discover groundbreaking advancements in nanotechnology for water purification, desalination, and contaminant removal. </p>
                 </div>
               </div>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="portfolio2-content">
                   <span class="category">Tech & Water Economy</span>
-                  <h3>The Tech-Driven Water Economy Conference 2025</h3>
+                  <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>The Tech-Driven Water Economy Conference 2025</h3></a>
                   <p>A deep dive into the integration of digital technologies, IoT, and advanced analytics transforming the water sector. </p>
                 </div>
               </div>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="portfolio2-content">
                   <span class="category">AI, Robotics & Water</span>
-                  <h3>Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience</h3>
+                  <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience</h3></a>
                   <p>Focus on how AI and robotics are revolutionizing inspection, maintenance, and automation in water infrastructure.</p>
                 </div>
               </div>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="portfolio2-content">
                   <span class="category">Nanofiltration</span>
-                  <h3>Nano-Filtration Breakthroughs: Addressing Emerging Contaminants</h3>
+                  <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>Nano-Filtration Breakthroughs: Addressing Emerging Contaminants</h3></a>
                   <p>Uncover the latest research and commercial applications of nanofiltration in tackling microplastics, pharmaceuticals, and other emerging pollutants in water.</p>
                 </div>
               </div>
@@ -168,7 +168,7 @@
                 </div>
                 <div class="portfolio2-content">
                   <span class="category">IoT & Urban Sustainability</span>
-                  <h3>Smart Cities & Water: IoT's Role in Urban Sustainability</h3>
+                  <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>Smart Cities & Water: IoT's Role in Urban Sustainability</h3></a>
                   <p>Explore how the Internet of Things (IoT) is critical for developing smart water management systems in urban environments. </p>
                 </div>
               </div>
