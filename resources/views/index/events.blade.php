@@ -40,8 +40,8 @@
           </div>
 
           <div class="row g-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" style="position: relative; height: 1551.75px;">
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 0px; top: 0px;">
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 0px; top: 0px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="AI & Sustainable Water Futures Summit" loading="lazy">
@@ -58,7 +58,9 @@
                   <p>Explore cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions. This summit brings together leading experts to discuss smart infrastructure, predictive analytics, and data-driven resource management.</p>
                 </div>
               </div>
-            </div><div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 570px; top: 0px;">
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 570px; top: 0px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-10.webp') }}" class="img-fluid" alt="Nanotech Innovations for Clean Water: A Global Forum" loading="lazy">
@@ -75,7 +77,9 @@
                   <p>Discover groundbreaking advancements in nanotechnology for water purification, desalination, and contaminant removal. Sessions will highlight novel membrane technologies, advanced filtration materials, and scalable nano-solutions for global water challenges.</p>
                 </div>
               </div>
-            </div><div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion" style="position: absolute; left: 570px; top: 509.25px;">
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion" style="position: absolute; left: 570px; top: 509.25px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-7.webp') }}" class="img-fluid" alt="The Tech-Driven Water Economy Conference 2025" loading="lazy">
@@ -92,7 +96,9 @@
                   <p>A deep dive into the integration of digital technologies, IoT, and advanced analytics transforming the water sector. This conference examines smart water grids, operational efficiency, and investment opportunities in the evolving water industry.</p>
                 </div>
               </div>
-            </div><div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand" style="position: absolute; left: 0px; top: 533.25px;">
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brand" style="position: absolute; left: 0px; top: 533.25px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-4.webp') }}" class="img-fluid" alt="Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience" loading="lazy">
@@ -109,7 +115,9 @@
                   <p>Focus on how AI and robotics are revolutionizing inspection, maintenance, and automation in water infrastructure. Learn about intelligent monitoring systems, autonomous solutions, and their role in ensuring resilient water supply.</p>
                 </div>
               </div>
-            </div><div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 570px; top: 1018.5px;">
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 570px; top: 1018.5px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-2.webp') }}" class="img-fluid" alt="Nano-Filtration Breakthroughs: Addressing Emerging Contaminants" loading="lazy">
@@ -126,7 +134,9 @@
                   <p>Uncover the latest research and commercial applications of nanofiltration in tackling microplastics, pharmaceuticals, and other emerging pollutants in water. This event provides insights into advanced materials and their environmental impact.</p>
                 </div>
               </div>
-            </div><div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 0px; top: 1042.5px;">
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 0px; top: 1042.5px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-11.webp') }}" class="img-fluid" alt="Smart Cities & Water: IoT's Role in Urban Sustainability" loading="lazy">
