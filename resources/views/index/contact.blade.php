@@ -140,7 +140,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2 style="font-weight: 700; font-size: 2rem; margin-bottom: 10px; color: #ffffff;">Innovating with Nature</h2>
         <p style="font-size: 1.1rem; margin-bottom: 30px;">
-          Advanced materials and smart technologies for a sustainable future.
+          To connect or learn more, please explore the options below.
         </p>
         <a href="{{ route('index.help-center') }}" class="btn btn-light" style="color: #39b54a; font-weight: 600; padding: 10px 24px; border-radius: 30px; animation: experience-float 3s ease-in-out infinite;">
           Help Center
