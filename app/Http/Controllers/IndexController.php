@@ -118,7 +118,7 @@ class IndexController extends Controller
 
     public function getSingleNews($slug)
     {
-        return view('index.regional-offices');
+        return view('index.single-news');
     }
     
 
