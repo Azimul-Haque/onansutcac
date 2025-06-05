@@ -41,7 +41,7 @@
               <i class="bi bi-briefcase icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                <p class="description">Cactus Materials collaborates with different Universities. We work together and partner with a variety of world class institutions to fulfill NASA, NSF, DOE, and/or DOD grants.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
