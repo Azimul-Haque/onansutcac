@@ -84,6 +84,12 @@
             z-index: 0;
           }
 
+          @media (max-width: 767.98px) {
+            .map-wrapper {
+              display: none;
+            }
+          }
+
           /* Content over the map */
           .content-on-map {
             position: relative;
