@@ -113,7 +113,7 @@
 
         <div class="col-lg-4 sidebar">
 
-          @include('partials._productsidebar')
+          @include('partials._newssidebar')
 
         </div>
 
