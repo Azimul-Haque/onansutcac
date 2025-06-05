@@ -232,7 +232,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Products</h2>
+        <h2>Lates News</h2>
         <p>Tailored Solutions for Every Sector<br></p>
       </div><!-- End Section Title -->
 
