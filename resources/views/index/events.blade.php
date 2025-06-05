@@ -31,7 +31,7 @@
 
           <div class="portfolio-filters-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
             <ul class="portfolio-filters isotope-filters">
-              <li data-filter="*" class="filter-active">All Work</li>
+              <li data-filter="*" class="filter-active">All Events</li>
               <li data-filter=".filter-web" class="">Web Design</li>
               <li data-filter=".filter-graphics" class="">Graphics</li>
               <li data-filter=".filter-motion" class="">Motion</li>
