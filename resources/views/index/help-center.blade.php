@@ -39,7 +39,7 @@
               <div class="faq-tabs mb-5">
                 <ul class="nav nav-pills justify-content-center" id="faqTab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="general-tab" data-bs-toggle="pill" data-bs-target="#faq-general" type="button" role="tab" aria-controls="general" aria-selected="true" tabindex="-1">
+                    <button class="nav-link active" id="general-tab" data-bs-toggle="pill" data-bs-target="#faq-general" type="button" role="tab" aria-controls="general" aria-selected="true" tabindex="-1">
                       <i class="bi bi-question-circle me-2"></i>General
                     </button>
                   </li>
