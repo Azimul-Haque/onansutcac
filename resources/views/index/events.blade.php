@@ -243,7 +243,7 @@
           <div class="col-xl-4 col-lg-6">
             <article class="list-post">
               <div class="post-img">
-                <img src="assets/img/blog/blog-post-6.webp" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }} alt="" class="img-fluid" loading="lazy">
               </div>
               <div class="post-content">
                 <div class="category-meta">
@@ -263,7 +263,7 @@
           <div class="col-xl-4 col-lg-6">
             <article class="list-post">
               <div class="post-img">
-                <img src="assets/img/blog/blog-post-9.webp" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }} alt="" class="img-fluid" loading="lazy">
               </div>
               <div class="post-content">
                 <div class="category-meta">
@@ -283,7 +283,7 @@
           <div class="col-xl-4 col-lg-6">
             <article class="list-post">
               <div class="post-img">
-                <img src="assets/img/blog/blog-post-10.webp" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid" loading="lazy">
               </div>
               <div class="post-content">
                 <div class="category-meta">
@@ -303,7 +303,7 @@
           <div class="col-xl-4 col-lg-6">
             <article class="list-post">
               <div class="post-img">
-                <img src="assets/img/blog/blog-post-2.webp" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }} alt="" class="img-fluid" loading="lazy">
               </div>
               <div class="post-content">
                 <div class="category-meta">
@@ -323,7 +323,7 @@
           <div class="col-xl-4 col-lg-6">
             <article class="list-post">
               <div class="post-img">
-                <img src="assets/img/blog/blog-post-1.webp" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }} alt="" class="img-fluid" loading="lazy">
               </div>
               <div class="post-content">
                 <div class="category-meta">
@@ -343,7 +343,7 @@
           <div class="col-xl-4 col-lg-6">
             <article class="list-post">
               <div class="post-img">
-                <img src="assets/img/blog/blog-post-3.webp" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }} alt="" class="img-fluid" loading="lazy">
               </div>
               <div class="post-content">
                 <div class="category-meta">
