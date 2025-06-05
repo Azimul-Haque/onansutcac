@@ -31,7 +31,7 @@
         <div><span>Check Our</span> <span class="description-title">Featured Posts</span></div>
       </div><!-- End Section Title -->
 
-      <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
@@ -78,7 +78,19 @@
 
             <!-- End slide item -->
           <div class="swiper-slide" style="width: 412px; margin-right: 30px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
-              
+              <div class="blog-post-item">
+                <img src="assets/img/blog/blog-post-portrait-2.webp" alt="Blog Image">
+                <div class="blog-post-content">
+                  <div class="post-meta">
+                    <span><i class="bi bi-person"></i> Mark Wilson</span>
+                    <span><i class="bi bi-clock"></i> Jan 18, 2025</span>
+                    <span><i class="bi bi-chat-dots"></i> 6 Comments</span>
+                  </div>
+                  <h2><a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h2>
+                  <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
+                  <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
             </div><div class="swiper-slide swiper-slide-prev" style="width: 412px; margin-right: 30px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
               <div class="blog-post-item">
                 <img src="assets/img/blog/blog-post-portrait-3.webp" alt="Blog Image">
