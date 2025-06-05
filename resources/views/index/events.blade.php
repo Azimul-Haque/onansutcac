@@ -231,9 +231,9 @@
     <section id="category-section" class="category-section section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Products</h2>
-        <p>Tailored Solutions for Every Sector<br></p>
+      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>Category Section</h2>
+        <div> <span class="description-title">Category Section</span></div>
       </div><!-- End Section Title -->
 
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
