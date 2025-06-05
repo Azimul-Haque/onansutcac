@@ -83,7 +83,35 @@
                 </div>
                 <div class="feature-content">
                   <h3 class="feature-title">Personnel Highlights</h3>
-                  <p class="feature-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <p class="feature-text">
+                    <ul class="list-unstyled mt-4">
+                      <li class="mb-4">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-person-circle me-2"></i> Rafi Islam, PhD
+                        </a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-person-circle me-2"></i> Eric Sherb, CPA
+                        </a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-person-circle me-2"></i> Iqbal Ali, PhD
+                        </a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-person-circle me-2"></i> Marc Papageorge, MS
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-person-circle me-2"></i> Michel Francois, PhD
+                        </a>
+                      </li>
+                    </ul>
+                  </p>
                 </div>
               </div>
             </div>
