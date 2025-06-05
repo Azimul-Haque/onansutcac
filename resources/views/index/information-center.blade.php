@@ -253,7 +253,7 @@
           <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="400">
             <div class="feature-box">
               <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-collection-play"></i>
+                <i class="bi bi-camera-video"></i>
               </div>
               <div class="feature-content">
                 <h3 class="feature-title">Video Library</h3>
