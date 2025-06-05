@@ -34,7 +34,7 @@
                 <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" alt="Lara's 1th Birthday">
               </div>
               <div class="card-body">
-                <h5 class="card-title">Lara's 1th Birthday</h5>
+                <h5 class="card-title">AI & Sustainable Water Futures Summit</h5>
                 <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
               </div>
