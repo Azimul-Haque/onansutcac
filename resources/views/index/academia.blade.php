@@ -38,7 +38,7 @@
 
           <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-briefcase icon flex-shrink-0"></i>
+              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Collaboration Hub</a></h4>
                 <p class="description">CactusNano collaborates with different Universities. We work together and partner with a variety of world class institutions to fulfill NASA, NSF, DOE, and/or DOD grants.</p>
