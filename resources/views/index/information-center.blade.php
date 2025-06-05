@@ -260,33 +260,33 @@
                 <p class="feature-text">
                   <ul class="list-unstyled mt-4">
                     <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-file-earmark-bar-graph me-2"></i> Future of Quantum Materials in Space Exploration
+                      <a href="[http://www.youtube.com/watch?v=iTwzbnXJf7g](http://www.youtube.com/watch?v=iTwzbnXJf7g)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                        <i class="bi bi-play-circle me-2"></i> Advanced Quantum Material Curves the Fabric of Space!
                       </a>
                     </li>
                     <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-water me-2"></i> Nanotechnology's Role in Next-Gen Water Purification
+                      <a href="[http://www.youtube.com/watch?v=hMtpmvWlZVE](http://www.youtube.com/watch?v=hMtpmvWlZVE)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                        <i class="bi bi-play-circle me-2"></i> Shaking the Nanomaterials Out: New Method to Purify Water
+                      </a>
+                    </li>
+                     <li class="mb-4">
+                      <a href="[http://www.youtube.com/watch?v=V2rkPCNtMi4](http://www.youtube.com/watch?v=V2rkPCNtMi4)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                        <i class="bi bi-play-circle me-2"></i> Maintaining Grid Resilience with the Adoption of Smart Grid Technologies
                       </a>
                     </li>
                     <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-plug me-2"></i> Advancing Grid Resiliency with Smart Materials
+                      <a href="[http://www.youtube.com/watch?v=SkWzwoDIGmE](http://www.youtube.com/watch?v=SkWzwoDIGmE)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                        <i class="bi bi-play-circle me-2"></i> How AI and data centers impact climate change
                       </a>
                     </li>
                     <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-cpu me-2"></i> AI-Driven Solutions for Sustainable Data Centers
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-battery-charging me-2"></i> High-Performance Materials for EV Battery Longevity
+                      <a href="[http://www.youtube.com/watch?v=nTOMpxycEss](http://www.youtube.com/watch?v=nTOMpxycEss)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                        <i class="bi bi-play-circle me-2"></i> Does the 80% Charging Rule Still Matter? | EV Basics
                       </a>
                     </li>
                     <li class="">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-clipboard-data me-2"></i> Research Insights: Advanced Composites in Defense
+                      <a href="[http://www.youtube.com/watch?v=Db3HjwDU9FU](http://www.youtube.com/watch?v=Db3HjwDU9FU)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                        <i class="bi bi-play-circle me-2"></i> Permali - Composite Solutions for Defence
                       </a>
                     </li>
                   </ul>
