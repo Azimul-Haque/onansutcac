@@ -12,7 +12,7 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>Help Center</h1>
+        <h1>Help Center-FAQ</h1>
         <p>Answers at Your Fingertips</p>
         <nav class="breadcrumbs">
           <ol>
