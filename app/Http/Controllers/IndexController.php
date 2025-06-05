@@ -123,7 +123,6 @@ class IndexController extends Controller
 
     public function getEvents()
     {
-        abort(403);
         return view('index.events');
     }
     
