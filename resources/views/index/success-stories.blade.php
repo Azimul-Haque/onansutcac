@@ -23,7 +23,7 @@
       </div>
     </div><!-- End Page Title -->
 
-    <section id="featured-posts" class="featured-posts section">
+    <section id="featured-posts" class="featured-posts section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
