@@ -41,7 +41,7 @@
 
           <div class="row g-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" style="position: relative; height: 1551.75px;">
             
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 0px; top: 0px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 0px; top: 0px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="AI & Sustainable Water Futures Summit" loading="lazy">
@@ -60,7 +60,7 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 570px; top: 0px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 570px; top: 0px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-10.webp') }}" class="img-fluid" alt="Nanotech Innovations for Clean Water: A Global Forum" loading="lazy">
@@ -79,7 +79,7 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion" style="position: absolute; left: 570px; top: 509.25px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion" style="position: absolute; left: 570px; top: 509.25px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-7.webp') }}" class="img-fluid" alt="The Tech-Driven Water Economy Conference 2025" loading="lazy">
@@ -98,7 +98,7 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand" style="position: absolute; left: 0px; top: 533.25px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brand" style="position: absolute; left: 0px; top: 533.25px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-4.webp') }}" class="img-fluid" alt="Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience" loading="lazy">
@@ -117,7 +117,7 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 570px; top: 1018.5px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 570px; top: 1018.5px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-2.webp') }}" class="img-fluid" alt="Nano-Filtration Breakthroughs: Addressing Emerging Contaminants" loading="lazy">
@@ -136,7 +136,7 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 0px; top: 1042.5px;">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 0px; top: 1042.5px;">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-11.webp') }}" class="img-fluid" alt="Smart Cities & Water: IoT's Role in Urban Sustainability" loading="lazy">
