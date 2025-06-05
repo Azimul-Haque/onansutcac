@@ -29,7 +29,7 @@
       <!-- Section Title -->
       <div class="container section-title aos-init" data-aos="fade-up">
         <h2>Help Center</h2>
-        <p>Our Comprehensive Resource Library</p>
+        <p>Frequently Asked Questions</p>
       </div><!-- End Section Title -->
 
       <div class="container">
