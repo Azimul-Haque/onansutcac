@@ -23,7 +23,7 @@
 
     
 
-    <section id="portfolio" class="portfolio2 section">
+    <section id="portfolio" class="portfolio2 section light-background">
 
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
