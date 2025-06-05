@@ -563,7 +563,7 @@
         </div>
 
         <div class="text-center mt-5">
-          <a href="#!" style="display: inline-block; margin-top: 15px; background-color: #205ed7; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">View All Events</a>
+          <a href="{{ route('index.events') }}" style="display: inline-block; margin-top: 15px; background-color: #205ed7; padding: 10px 20px; color: white; border-radius: 25px; font-weight: 600; text-transform: uppercase; font-size: 14px;">View All Events</a>
         </div>
 
       </div>
