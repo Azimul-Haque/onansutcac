@@ -160,7 +160,7 @@
               <p>
                 A108 Adam Street, New York, NY 535022<br/>
                 <i class="bi bi-telephone-fill" style="font-size: 15px;"></i> <strong>+44 20 7946 0958</strong>
-                <i class="bi bi-envelope-fill"></i> <strong>info.uk@company.com</strong>
+                <i class="bi bi-envelope-fill" style="font-size: 15px;"></i> <strong>info.uk@company.com</strong>
               </p>
             </div>
           </div><!-- End Feature Borx-->
