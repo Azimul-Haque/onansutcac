@@ -59,10 +59,10 @@
             <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
               <div class="error-content">
                 <span class="error-badge aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400">Error</span>
-                <h1 class="error-code aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">404</h1>
+                <h1 class="error-code aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">403</h1>
                 <h2 class="error-title aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">Page Not Found</h2>
                 <p class="error-description aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
-                  The Page You Requested Isn't Here. Explore Our Site.
+                  The page you are requesting is not allowed for you.
                 </p>
 
                 <div class="error-actions aos-init aos-animate" data-aos="fade-up" data-aos-delay="800">
