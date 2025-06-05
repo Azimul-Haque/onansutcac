@@ -126,9 +126,9 @@ class IndexController extends Controller
         return view('index.events');
     }
 
-    public function getSuccessStories ()
+    public function getSuccessStories()
     {
-        return view('index.events');
+        return view('index.success-stories');
     }
     
 
