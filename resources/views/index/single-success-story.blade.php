@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title') Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia | News Details @endsection
+@section('title') Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia | Success Story @endsection
 
 @section('third_party_stylesheets')
 
@@ -10,12 +10,12 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/news-page-background.gif') }}');">
       <div class="container position-relative">
-        <h1>News Details</h1>
+        <h1>Success Story</h1>
         <p>Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">News Details</li>
+            <li class="current">Success Story</li>
           </ol>
         </nav>
       </div>
