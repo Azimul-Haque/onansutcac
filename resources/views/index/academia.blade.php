@@ -57,7 +57,46 @@
           </div><!-- End Service Item -->
         </div>
 
+
+
       </div>
+
+      <div class="container my-5">
+        <div class="row justify-content-center gx-4 gy-4">
+
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture25.png" class="img-fluid" alt="University Logo 1" style="max-height: 80px;">
+          </div>
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture20.png" class="img-fluid" alt="University Logo 2" style="max-height: 80px;">
+          </div>
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture21.png" class="img-fluid" alt="University Logo 3" style="max-height: 80px;">
+          </div>
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture22.png" class="img-fluid" alt="University Logo 4" style="max-height: 80px;">
+          </div>
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture23.png" class="img-fluid" alt="University Logo 5" style="max-height: 80px;">
+          </div>
+
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/purdue.png" class="img-fluid" alt="Purdue University Logo" style="max-height: 80px;">
+          </div>
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/uofa-logo.png" class="img-fluid" alt="University of Arizona Logo" style="max-height: 80px;">
+          </div>
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/gcu-logo.png" class="img-fluid" alt="Grand Canyon University Logo" style="max-height: 80px;">
+          </div>
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/nau-logo.png" class="img-fluid" alt="Northern Arizona University Logo" style="max-height: 80px;">
+          </div>
+          <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <img src="https://cactusmaterials.com/wp-content/uploads/2024/08/mcc-logo.png" class="img-fluid" alt="Mesa Community College Logo" style="max-height: 80px;">
+          </div>
+
+        </div></div>```
 
     </section>
 
