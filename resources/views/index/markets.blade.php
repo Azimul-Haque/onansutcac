@@ -58,7 +58,7 @@
                 <i class="bi bi-phone-fill"></i>
               </div>
               <div class="service-content">
-                <h3>Mobile App Solutions</h3>
+                <h3>Electrical Transport</h3>
                 <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</p>
                 <a href="{{ route('index.singlemarket', '1') }}" class="service-link">
                   <span>Learn More</span>
