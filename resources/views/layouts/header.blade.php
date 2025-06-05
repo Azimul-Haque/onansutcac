@@ -13,24 +13,13 @@
         <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
         <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li>
-        <li class="dropdown"><a href="#"><span>Regional Offices</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li><a href="{{ route('index.regional-offices') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Regional Offices</a></li>
+        {{-- <li class="dropdown"><a href="#"><span>Regional Offices</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">USA</a></li>
             <li><a href="#">Singapore</a></li>
-            {{-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li> --}}
-            {{-- <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li> --}}
           </ul>
-        </li>
+        </li> --}}
         <li><a href="#contact">Events</a></li>
         <li><a href="#contact">Newsroom</a></li>
       </ul>
