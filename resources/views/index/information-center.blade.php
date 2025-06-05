@@ -34,137 +34,135 @@
 
       <div class="container">
 
-        <div class="row gy-4">
-          <div class="row feature-boxes">
-            <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="200">
-              <div class="feature-box">
-                <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                  <i class="bi bi-lightbulb"></i>
-                </div>
-                <div class="feature-content">
-                  <h3 class="feature-title">Technical Summaries</h3>
-                  <p class="feature-text">
-                    <ul class="list-unstyled mt-4">
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-gear me-2"></i> Boiler Systems
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-snow me-2"></i> Cooling Systems
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-filter-circle me-2"></i> Membrane Systems
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-tools me-2"></i> Process Treatment
-                        </a>
-                      </li>
-                      <li class="">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-water me-2"></i> Wastewater Treatment
-                        </a>
-                      </li>
-                    </ul>
-                  </p>
-                </div>
+        <div class="row gy-4 feature-boxes">
+          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Technical Summaries</h3>
+                <p class="feature-text">
+                  <ul class="list-unstyled mt-4">
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-gear me-2"></i> Boiler Systems
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-snow me-2"></i> Cooling Systems
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-filter-circle me-2"></i> Membrane Systems
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-tools me-2"></i> Process Treatment
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-water me-2"></i> Wastewater Treatment
+                      </a>
+                    </li>
+                  </ul>
+                </p>
               </div>
             </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="300">
-              <div class="feature-box">
-                <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                  <i class="bi bi-person-badge"></i>
-                </div>
-                <div class="feature-content">
-                  <h3 class="feature-title">Personnel Highlights</h3>
-                  <p class="feature-text">
-                    <ul class="list-unstyled mt-4">
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-person-circle me-2"></i> Rafi Islam, PhD
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-person-circle me-2"></i> Eric Sherb, CPA
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-person-circle me-2"></i> Iqbal Ali, PhD
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-person-circle me-2"></i> Marc Papageorge, MS
-                        </a>
-                      </li>
-                      <li class="">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-person-circle me-2"></i> Michel Francois, PhD
-                        </a>
-                      </li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="400">
-              <div class="feature-box">
-                <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                  <i class="bi bi-briefcase"></i>
-                </div>
-                <div class="feature-content">
-                  <h3 class="feature-title">Business Landscape</h3>
-                  <p class="feature-text">
-                    <ul class="list-unstyled mt-4">
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-rocket-takeoff me-2"></i> Space
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-lightning me-2"></i> Grid
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-shield-fill-check me-2"></i> Weapons
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-ev-front me-2"></i> EV
-                        </a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-server me-2"></i> Data Centers
-                        </a>
-                      </li>
-                      <li class="">
-                        <a href="#" class="text-decoration-none text-dark fw-medium">
-                          <i class="bi bi-broadcast me-2"></i> Communications
-                        </a>
-                      </li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
           </div>
-          
+
+          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-person-badge"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Personnel Highlights</h3>
+                <p class="feature-text">
+                  <ul class="list-unstyled mt-4">
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-person-circle me-2"></i> Rafi Islam, PhD
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-person-circle me-2"></i> Eric Sherb, CPA
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-person-circle me-2"></i> Iqbal Ali, PhD
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-person-circle me-2"></i> Marc Papageorge, MS
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-person-circle me-2"></i> Michel Francois, PhD
+                      </a>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Business Landscape</h3>
+                <p class="feature-text">
+                  <ul class="list-unstyled mt-4">
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-rocket-takeoff me-2"></i> Space
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-lightning me-2"></i> Grid
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-shield-fill-check me-2"></i> Weapons
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-ev-front me-2"></i> EV
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-server me-2"></i> Data Centers
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-broadcast me-2"></i> Communications
+                      </a>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
         </div>
+
 
 
 
