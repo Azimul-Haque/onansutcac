@@ -275,17 +275,17 @@
                       </a>
                     </li>
                     <li class="mb-4">
-                      <a href="[http://www.youtube.com/watch?v=SkWzwoDIGmE](http://www.youtube.com/watch?v=SkWzwoDIGmE)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                      <a href="http://www.youtube.com/watch?v=SkWzwoDIGmE" class="text-decoration-none text-dark fw-medium" target="_blank">
                         <i class="bi bi-play-circle me-2"></i> How AI and data centers impact climate change
                       </a>
                     </li>
                     <li class="mb-4">
-                      <a href="[http://www.youtube.com/watch?v=nTOMpxycEss](http://www.youtube.com/watch?v=nTOMpxycEss)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                      <a href="http://www.youtube.com/watch?v=nTOMpxycEss" class="text-decoration-none text-dark fw-medium" target="_blank">
                         <i class="bi bi-play-circle me-2"></i> Does the 80% Charging Rule Still Matter? | EV Basics
                       </a>
                     </li>
                     <li class="">
-                      <a href="[http://www.youtube.com/watch?v=Db3HjwDU9FU](http://www.youtube.com/watch?v=Db3HjwDU9FU)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                      <a href="http://www.youtube.com/watch?v=Db3HjwDU9FU" class="text-decoration-none text-dark fw-medium" target="_blank">
                         <i class="bi bi-play-circle me-2"></i> Permali - Composite Solutions for Defence
                       </a>
                     </li>
