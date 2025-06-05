@@ -156,7 +156,7 @@
           <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
             <div class="feature-box orange">
               <i class="bi bi-award"></i>
-              <h4>Corporis voluptates</h4>
+              <h4>Head Office</h4>
               <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
             </div>
           </div><!-- End Feature Borx-->
