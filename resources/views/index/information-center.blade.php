@@ -34,7 +34,7 @@
 
       <div class="container">
 
-        <div class="row feature-boxes">
+        <div class="row gy-4 feature-boxes">
           <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="200">
             <div class="feature-box">
               <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
