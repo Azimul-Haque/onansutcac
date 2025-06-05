@@ -81,7 +81,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: url('images/world-map.svg') no-repeat center/cover;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/d/df/World_map_%28Miller_cylindrical_projection%2C_blank_without_Antarctica%29.svg') no-repeat center/cover;
             opacity: 0.5;
             z-index: 0;
           }
