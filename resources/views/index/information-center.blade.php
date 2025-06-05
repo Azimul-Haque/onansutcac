@@ -256,7 +256,7 @@
                 <i class="bi bi-file-earmark-pdf"></i>
               </div>
               <div class="feature-content">
-                <h3 class="feature-title">Scholarly Publications</h3>
+                <h3 class="feature-title">Video Library</h3>
                 <p class="feature-text">
                   <ul class="list-unstyled mt-4">
                     <li class="mb-4">
