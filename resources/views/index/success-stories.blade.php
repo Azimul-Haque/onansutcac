@@ -65,6 +65,22 @@
               </div>
             </div>
           </div>
+
+          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
+            <div class="blog-post-item">
+              <img src="assets/img/blog/blog-post-portrait-4.webp" alt="Blog Image">
+              <div class="blog-post-content">
+                <div class="post-meta">
+                  <span><i class="bi bi-person"></i> David Brown</span>
+                  <span><i class="bi bi-clock"></i> Jan 24, 2025</span>
+                  <span><i class="bi bi-chat-dots"></i> 10 Comments</span>
+                </div>
+                <h2><a href="#">Et harum quidem rerum facilis est et expedita distinctio</a></h2>
+                <p>Donec quam felis ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim.</p>
+                <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
           
         </div>
 
