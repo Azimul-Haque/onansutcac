@@ -164,7 +164,7 @@
           <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
             <div class="feature-box blue">
               <i class="bi bi-patch-check"></i>
-              <h4>Explicabo consectetur</h4>
+              <h4>Corporate Office</h4>
               <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
             </div>
           </div><!-- End Feature Borx-->
