@@ -94,3 +94,10 @@
   </div><!--/Tags Widget -->
 
 </div>
+
+<style>
+  .recent-posts-widget .post-item img {
+      width: 80px;
+      margin-right: 15px;
+  }
+</style>
