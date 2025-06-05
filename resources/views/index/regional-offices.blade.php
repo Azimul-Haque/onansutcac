@@ -47,19 +47,19 @@
             </div>
           </div>
 
-          {{-- <div class="pin" style="top: 58.5%; left: 79%;">
+          <div class="pin" style="top: 58.5%; left: 79%;">
             <div class="tooltip">
               Singapore Office<br>
               <a href="https://sg.example.com" target="_blank">Visit Site</a>
             </div>
-          </div> --}}
+          </div>
 
-          <div class="pin" style="top: 33%; left: 41%;">
+          {{-- <div class="pin" style="top: 33%; left: 41%;">
             <div class="tooltip">
               UK Office<br>
               <a href="https://uk.example.com" target="_blank">Visit Site</a>
             </div>
-          </div>
+          </div> --}}
         </div>
 
       </div>
