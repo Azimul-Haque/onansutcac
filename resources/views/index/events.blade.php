@@ -163,10 +163,6 @@
 
     </section>
 
-    <style>
-      
-    </style>
-
 
 @endsection
 
