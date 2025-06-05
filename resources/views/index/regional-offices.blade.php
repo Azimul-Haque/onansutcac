@@ -36,31 +36,34 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" alt="World Map" class="world-map">
 
         <div class="map-container">
-          <!-- SVG World Map -->
-          
+          <!-- Simplified SVG World Map (no Antarctica, land colored #DAF3F8) -->
+          <svg class="world-map" viewBox="0 0 2000 1001" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="#fff"/>
+            <g fill="#DAF3F8">
+              <path d="M1835,395L...Z"/> <!-- Simplified world outline (only major continents) -->
+              <!-- For demo, placeholder path — you should replace this with real SVG world map paths without Antarctica -->
+            </g>
+          </svg>
 
-          <!-- USA -->
-          <div class="pin" style="top: 37%; left: 23%;">
+          <!-- Example Pins -->
+          <div class="pin" style="top: 38%; left: 22%;">
             <div class="tooltip">
               USA Office<br>
-              <a href="https://usa-office.example.com" target="_blank">Visit Site</a>
+              <a href="https://usa.example.com" target="_blank">Visit Site</a>
             </div>
           </div>
 
-          <!-- Singapore -->
-          <div class="pin" style="top: 59%; left: 78%;">
+          <div class="pin" style="top: 58.5%; left: 79%;">
             <div class="tooltip">
               Singapore Office<br>
-              <a href="https://sg-office.example.com" target="_blank">Visit Site</a>
+              <a href="https://sg.example.com" target="_blank">Visit Site</a>
             </div>
           </div>
 
-          <!-- Add more pins here -->
-          <!-- Example: UK -->
           <div class="pin" style="top: 33%; left: 41%;">
             <div class="tooltip">
               UK Office<br>
-              <a href="https://uk-office.example.com" target="_blank">Visit Site</a>
+              <a href="https://uk.example.com" target="_blank">Visit Site</a>
             </div>
           </div>
         </div>
