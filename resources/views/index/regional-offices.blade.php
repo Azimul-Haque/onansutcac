@@ -35,7 +35,7 @@
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
         
 
-        <div class="map-container">
+        <div class="map-container content-on-map">
 
           <!-- Example Pins -->
           <div class="pin" style="top: 38%; left: 22%;">
