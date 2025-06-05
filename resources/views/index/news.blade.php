@@ -204,7 +204,7 @@
 
     </section><!-- /services Section -->
 
-    <section id="blog-pagination" class="blog-pagination section">
+    <section id="blog-pagination" class="blog-pagination section light-background">
 
       <div class="container">
         <div class="d-flex justify-content-center">
