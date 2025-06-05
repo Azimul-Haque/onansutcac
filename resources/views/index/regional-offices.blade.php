@@ -41,14 +41,14 @@
             <div class="tooltip">
               USA Office<br>
               <span>Head Office</span>
-              <a href="#" target="_blank">Visit Site</a>
+              <a href="#features-cards" >Visit Site</a>
             </div>
           </div>
 
           <div class="pin" style="top: 62%; left: 75.5%;">
             <div class="tooltip">
               Singapore Office<br>
-              <a href="https://sg.example.com" target="_blank">Visit Site</a>
+              <a href="#features-cards" >Visit Site</a>
             </div>
           </div>
 
