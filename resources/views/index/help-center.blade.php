@@ -261,6 +261,25 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
+<script>
+  document.querySelectorAll('.faq-item h3').forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      const icon = header.querySelector('.faq-toggle');
+
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        icon.classList.remove('bi-dash-lg');
+        icon.classList.add('bi-plus-lg');
+      } else {
+        content.style.display = "block";
+        icon.classList.remove('bi-plus-lg');
+        icon.classList.add('bi-dash-lg');
+      }
+    });
+  });
+</script>
+
 
 {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
