@@ -60,14 +60,14 @@
           </div> --}}
 
           <a href="https://example.com/usa-office" target="_blank">
-                <circle cx="420" cy="340" r="12" fill="#007BFF">
+                <circle cx="420" cy="340" r="12" fill="#000">
                   <title>USA Office</title>
                 </circle>
               </a>
 
               <!-- Singapore Pin -->
               <a href="https://example.com/singapore-office" target="_blank">
-                <circle cx="1540" cy="640" r="12" fill="#28a745">
+                <circle cx="1540" cy="640" r="12" fill="#000">
                   <title>Singapore Office</title>
                 </circle>
               </a>
