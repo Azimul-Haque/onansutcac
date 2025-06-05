@@ -58,7 +58,7 @@
                   <h3>You might want to:</h3>
                   <ul>
                     <li><a href="{{ route('index.sitemap') }}"><i class="bi bi-arrow-right-circle"></i> Check our sitemap</a></li>
-                    <li><a href="{{ route('index.contact') }}"><i class="bi bi-arrow-right-circle"></i> Contact support</a></li>
+                    <li><a href="{{ route('index.contact-us') }}"><i class="bi bi-arrow-right-circle"></i> Contact support</a></li>
                     {{-- <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Return to previous page</a></li> --}}
                   </ul>
                 </div>
