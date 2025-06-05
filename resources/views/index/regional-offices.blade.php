@@ -37,28 +37,30 @@
 
         <div class="map-container">
 
-          <!-- Example Pins -->
-          <div class="pin" style="top: 38%; left: 22%;">
-            <div class="tooltip">
-              USA Office<br>
-              <a href="https://usa.example.com" target="_blank">Visit Site</a>
+          <div class="content-on-map">
+              <!-- Example Pins -->
+              <div class="pin" style="top: 38%; left: 22%;">
+                <div class="tooltip">
+                  USA Office<br>
+                  <a href="https://usa.example.com" target="_blank">Visit Site</a>
+                </div>
+              </div>
+
+              <div class="pin" style="top: 58.5%; left: 79%;">
+                <div class="tooltip">
+                  Singapore Office<br>
+                  <a href="https://sg.example.com" target="_blank">Visit Site</a>
+                </div>
+              </div>
+
+              {{-- <div class="pin" style="top: 33%; left: 41%;">
+                <div class="tooltip">
+                  UK Office<br>
+                  <a href="https://uk.example.com" target="_blank">Visit Site</a>
+                </div>
+              </div> --}}
             </div>
           </div>
-
-          <div class="pin" style="top: 58.5%; left: 79%;">
-            <div class="tooltip">
-              Singapore Office<br>
-              <a href="https://sg.example.com" target="_blank">Visit Site</a>
-            </div>
-          </div>
-
-          {{-- <div class="pin" style="top: 33%; left: 41%;">
-            <div class="tooltip">
-              UK Office<br>
-              <a href="https://uk.example.com" target="_blank">Visit Site</a>
-            </div>
-          </div> --}}
-        </div>
 
       </div>
 
