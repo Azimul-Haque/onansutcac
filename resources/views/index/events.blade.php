@@ -237,8 +237,7 @@
       </div><!-- End Section Title -->
 
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-        <!-- Featured Posts -->
-
+  
         <!-- List Posts -->
         <div class="row">
           <div class="col-xl-4 col-lg-6">
