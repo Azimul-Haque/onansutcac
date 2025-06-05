@@ -49,6 +49,22 @@
               </div>
             </div>
           </div>
+
+          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
+            <div class="blog-post-item">
+              <img src="assets/img/blog/blog-post-portrait-3.webp" alt="Blog Image">
+              <div class="blog-post-content">
+                <div class="post-meta">
+                  <span><i class="bi bi-person"></i> Sarah Johnson</span>
+                  <span><i class="bi bi-clock"></i> Jan 21, 2025</span>
+                  <span><i class="bi bi-chat-dots"></i> 15 Comments</span>
+                </div>
+                <h2><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
+                <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi.</p>
+                <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
           
         </div>
 
