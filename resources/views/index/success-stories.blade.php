@@ -38,11 +38,11 @@
             <div class="blog-post-item">
               <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
-                <div class="post-meta">
+                {{-- <div class="post-meta">
                   <span><i class="bi bi-person"></i> Mark Wilson</span>
                   <span><i class="bi bi-clock"></i> Jan 18, 2025</span>
                   <span><i class="bi bi-chat-dots"></i> 6 Comments</span>
-                </div>
+                </div> --}}
                 <h2><a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h2>
                 <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
                 <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
