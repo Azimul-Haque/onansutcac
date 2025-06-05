@@ -123,7 +123,6 @@
           }
 
           .tooltip {
-            max-width: 200px;
             position: absolute;
             top: -10px;
             left: 20px;
