@@ -42,7 +42,7 @@
                   <i class="bi bi-gear"></i>
                 </div>
                 <div class="feature-content">
-                  <h3 class="feature-title">Rapid Deployment</h3>
+                  <h3 class="feature-title">Technical Summaries</h3>
                   <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                 </div>
               </div>
