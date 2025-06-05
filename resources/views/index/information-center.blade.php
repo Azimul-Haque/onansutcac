@@ -166,7 +166,7 @@
                 <i class="bi bi-briefcase"></i>
               </div>
               <div class="feature-content">
-                <h3 class="feature-title">Business Landscape</h3>
+                <h3 class="feature-title">Tech Overview</h3>
                 <p class="feature-text">
                   <ul class="list-unstyled mt-4">
                     <li class="mb-4">
