@@ -915,7 +915,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app filter-books">
               <div class="portfolio-content h-100">
                 <img src="{{ asset('vendor/dewi/assets/img/portfolio/app-2.jpg') }}" class="img-fluid" alt="">
                 <div class="portfolio-info">
