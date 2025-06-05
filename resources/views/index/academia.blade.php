@@ -51,7 +51,7 @@
               <i class="bi bi-card-checklist icon flex-shrink-0"></i>
               <div>
                 <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                <p class="description">Many of these funding opportunities are focused on the future of space, grid, weapons, EV, data centers, and communications.  </p>
               </div>
             </div>
           </div><!-- End Service Item -->
