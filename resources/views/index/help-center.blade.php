@@ -23,287 +23,177 @@
       </div>
     </div><!-- End Page Title -->
 
+    <section id="faq" class="faq section">
 
-    <section id="services-2" class="services-2 section light-background">
+        <!-- Section Title -->
+        <div class="container section-title aos-init" data-aos="fade-up">
+          <h2>Help Center</h2>
+          <p>Frequently Asked Questions</p>
+        </div><!-- End Section Title -->
 
-      <!-- Section Title -->
-      <div class="container section-title aos-init" data-aos="fade-up">
-        <h2>Help Center</h2>
-        <p>Frequently Asked Questions</p>
-      </div><!-- End Section Title -->
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
 
-        <div class="row gy-4 feature-boxes mt-0">
-          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-lightbulb"></i>
+              <div class="faq-tabs mb-5">
+                <ul class="nav nav-pills justify-content-center" id="faqTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="general-tab" data-bs-toggle="pill" data-bs-target="#faq-general" type="button" role="tab" aria-controls="general" aria-selected="false" tabindex="-1">
+                      <i class="bi bi-question-circle me-2"></i>General
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pricing-tab" data-bs-toggle="pill" data-bs-target="#faq-pricing" type="button" role="tab" aria-controls="pricing" aria-selected="false" tabindex="-1">
+                      <i class="bi bi-credit-card me-2"></i>Pricing
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="support-tab" data-bs-toggle="pill" data-bs-target="#faq-support" type="button" role="tab" aria-controls="support" aria-selected="true">
+                      <i class="bi bi-headset me-2"></i>Support
+                    </button>
+                  </li>
+                </ul>
               </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Technical Summaries</h3>
-                <p class="feature-text">
-                  <ul class="list-unstyled mt-4">
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-gear me-2"></i> Boiler Systems
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-snow me-2"></i> Cooling Systems
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-filter-circle me-2"></i> Membrane Systems
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-tools me-2"></i> Process Treatment
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-water me-2"></i> Wastewater Treatment
-                      </a>
-                    </li>
-                  </ul>
-                </p>
+
+              <div class="tab-content" id="faqTabContent">
+                <!-- General FAQs -->
+                <div class="tab-pane fade" id="faq-general" role="tabpanel" aria-labelledby="general-tab">
+                  <div class="faq-list">
+
+                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                      <h3>
+                        <span class="num">1</span>
+                        <span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+                        <i class="bi bi-plus-lg faq-toggle"></i>
+                      </h3>
+                      <div class="faq-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                      </div>
+                    </div><!-- End FAQ Item -->
+
+                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                      <h3>
+                        <span class="num">2</span>
+                        <span class="question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span>
+                        <i class="bi bi-plus-lg faq-toggle"></i>
+                      </h3>
+                      <div class="faq-content">
+                        <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.</p>
+                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
+                      </div>
+                    </div><!-- End FAQ Item -->
+
+                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                      <h3>
+                        <span class="num">3</span>
+                        <span class="question">Dolor sit amet consectetur adipiscing elit pellentesque?</span>
+                        <i class="bi bi-plus-lg faq-toggle"></i>
+                      </h3>
+                      <div class="faq-content">
+                        <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.</p>
+                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
+                      </div>
+                    </div><!-- End FAQ Item -->
+
+                  </div>
+                </div>
+
+                <!-- Pricing FAQs -->
+                <div class="tab-pane fade" id="faq-pricing" role="tabpanel" aria-labelledby="pricing-tab">
+                  <div class="faq-list">
+
+                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                      <h3>
+                        <span class="num">1</span>
+                        <span class="question">Ac odio tempor orci dapibus ultrices in iaculis?</span>
+                        <i class="bi bi-plus-lg faq-toggle"></i>
+                      </h3>
+                      <div class="faq-content">
+                        <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
+                      </div>
+                    </div><!-- End FAQ Item -->
+
+                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                      <h3>
+                        <span class="num">2</span>
+                        <span class="question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span>
+                        <i class="bi bi-plus-lg faq-toggle"></i>
+                      </h3>
+                      <div class="faq-content">
+                        <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
+                        <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.</p>
+                      </div>
+                    </div><!-- End FAQ Item -->
+
+                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                      <h3>
+                        <span class="num">3</span>
+                        <span class="question">Varius vel pharetra vel turpis nunc eget lorem dolor?</span>
+                        <i class="bi bi-plus-lg faq-toggle"></i>
+                      </h3>
+                      <div class="faq-content">
+                        <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
+                      </div>
+                    </div><!-- End FAQ Item -->
+
+                  </div>
+                </div>
+
+                <!-- Support FAQs -->
+                <div class="tab-pane fade active show" id="faq-support" role="tabpanel" aria-labelledby="support-tab">
+                  <div class="faq-list">
+
+                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                      <h3>
+                        <span class="num">1</span>
+                        <span class="question">Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?</span>
+                        <i class="bi bi-plus-lg faq-toggle"></i>
+                      </h3>
+                      <div class="faq-content">
+                        <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                        <p>Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.</p>
+                      </div>
+                    </div><!-- End FAQ Item -->
+
+                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                      <h3>
+                        <span class="num">2</span>
+                        <span class="question">Tortor dignissim convallis aenean et tortor at risus viverra?</span>
+                        <i class="bi bi-plus-lg faq-toggle"></i>
+                      </h3>
+                      <div class="faq-content">
+                        <p>In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit.</p>
+                      </div>
+                    </div><!-- End FAQ Item -->
+
+                    <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                      <h3>
+                        <span class="num">3</span>
+                        <span class="question">Venenatis urna cursus eget nunc scelerisque viverra mauris in?</span>
+                        <i class="bi bi-plus-lg faq-toggle"></i>
+                      </h3>
+                      <div class="faq-content">
+                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
+                        <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.</p>
+                      </div>
+                    </div><!-- End FAQ Item -->
+
+                  </div>
+                </div>
               </div>
+
+              <div class="faq-cta text-center mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <p>Still have questions? We're here to help!</p>
+                <a href="#" class="btn btn-primary">Contact Support</a>
+              </div>
+
             </div>
           </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="300">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-person-badge"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Personnel Highlights</h3>
-                <p class="feature-text">
-                  <ul class="list-unstyled mt-4">
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-person-circle me-2"></i> Rafi Islam, PhD
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-person-circle me-2"></i> Eric Sherb, CPA
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-person-circle me-2"></i> Iqbal Ali, PhD
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-person-circle me-2"></i> Marc Papageorge, MS
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-person-circle me-2"></i> Michel Francois, PhD
-                      </a>
-                    </li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-briefcase"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Business Landscape</h3>
-                <p class="feature-text">
-                  <ul class="list-unstyled mt-4">
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-rocket-takeoff me-2"></i> Space
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-lightning me-2"></i> Grid
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-shield-fill-check me-2"></i> Weapons
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-ev-front me-2"></i> EV
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-server me-2"></i> Data Centers
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-broadcast me-2"></i> Communications
-                      </a>
-                    </li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-cpu"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Tech Overview</h3>
-                <p class="feature-text">
-                  <ul class="list-unstyled mt-4">
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-rocket-takeoff me-2"></i> Space
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-lightning me-2"></i> Grid
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-shield-fill-check me-2"></i> Weapons
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-ev-front me-2"></i> EV
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-server me-2"></i> Data Centers
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-broadcast me-2"></i> Communications
-                      </a>
-                    </li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-file-earmark-pdf"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Scholarly Publications</h3>
-                <p class="feature-text">
-                  <ul class="list-unstyled mt-4">
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-file-earmark-bar-graph me-2"></i> Future of Quantum Materials in Space Exploration
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-water me-2"></i> Nanotechnology's Role in Next-Gen Water Purification
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-plug me-2"></i> Advancing Grid Resiliency with Smart Materials
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-cpu me-2"></i> AI-Driven Solutions for Sustainable Data Centers
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-battery-charging me-2"></i> High-Performance Materials for EV Battery Longevity
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#" class="text-decoration-none text-dark fw-medium">
-                        <i class="bi bi-clipboard-data me-2"></i> Research Insights: Advanced Composites in Defense
-                      </a>
-                    </li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-camera-video"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Video Library</h3>
-                <p class="feature-text">
-                  <ul class="list-unstyled mt-4">
-                    <li class="mb-4">
-                      <a href="http://www.youtube.com/watch?v=iTwzbnXJf7g" class="text-decoration-none text-dark fw-medium" target="_blank">
-                        <i class="bi bi-play-circle me-2"></i> Advanced Quantum Material Curves the Fabric of Space!
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="http://www.youtube.com/watch?v=hMtpmvWlZVE" class="text-decoration-none text-dark fw-medium" target="_blank">
-                        <i class="bi bi-play-circle me-2"></i> Shaking the Nanomaterials Out: New Method to Purify Water
-                      </a>
-                    </li>
-                     <li class="mb-4">
-                      <a href="http://www.youtube.com/watch?v=V2rkPCNtMi4" class="text-decoration-none text-dark fw-medium" target="_blank">
-                        <i class="bi bi-play-circle me-2"></i> Maintaining Grid Resilience with the Adoption of Smart Grid Technologies
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="http://www.youtube.com/watch?v=SkWzwoDIGmE" class="text-decoration-none text-dark fw-medium" target="_blank">
-                        <i class="bi bi-play-circle me-2"></i> How AI and data centers impact climate change
-                      </a>
-                    </li>
-                    <li class="mb-4">
-                      <a href="http://www.youtube.com/watch?v=nTOMpxycEss" class="text-decoration-none text-dark fw-medium" target="_blank">
-                        <i class="bi bi-play-circle me-2"></i> Does the 80% Charging Rule Still Matter? | EV Basics
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="http://www.youtube.com/watch?v=Db3HjwDU9FU" class="text-decoration-none text-dark fw-medium" target="_blank">
-                        <i class="bi bi-play-circle me-2"></i> Permali - Composite Solutions for Defence
-                      </a>
-                    </li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-
 
         </div>
 
-
-
-
-      </div>
-
-    </section>
+      </section>
 
     
 
