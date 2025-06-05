@@ -258,7 +258,7 @@
         <p>Where Innovation Meets Success</p>
       </div><!-- End Section Title -->
 
-      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
           <script type="application/json" class="swiper-config">
