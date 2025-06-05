@@ -90,6 +90,12 @@
             }
           }
 
+          @media (min-width: 1198px) {
+            .map-container {
+              height: 650px;
+            }
+          }
+
           /* Content over the map */
           .content-on-map {
             position: relative;
