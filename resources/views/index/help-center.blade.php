@@ -257,4 +257,38 @@
 
 @section('third_party_scripts')
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(); // Initialize AOS if you're using it
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // This is for the +/- icon toggle, if it's not directly handled by Bootstrap's collapse.
+      // If your theme uses a custom script for this, you'll need to adapt.
+      const faqItems = document.querySelectorAll('.faq-item h3');
+
+      faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+          const faqContent = this.nextElementSibling;
+          const toggleIcon = this.querySelector('.faq-toggle');
+
+          // Toggle the active class on the faq-item
+          this.parentNode.classList.toggle('active');
+
+          // Toggle the display of the content
+          if (faqContent.style.maxHeight) {
+            faqContent.style.maxHeight = null;
+            toggleIcon.classList.remove('bi-dash-lg');
+            toggleIcon.classList.add('bi-plus-lg');
+          } else {
+            faqContent.style.maxHeight = faqContent.scrollHeight + "px";
+            toggleIcon.classList.remove('bi-plus-lg');
+            toggleIcon.classList.add('bi-dash-lg');
+          }
+        });
+      });
+    });
+  </script>
+
 @endsection
