@@ -40,7 +40,7 @@
           <div class="pin" style="top: 38%; left: 22%;">
             <div class="tooltip">
               USA Office<br>
-              <span>A108 Adam Street, New York, NY 535022</span>
+              <span >A108 Adam Street, New York, NY 535022</span>
               <a href="https://usa.example.com" target="_blank">Visit Site</a>
             </div>
           </div>
