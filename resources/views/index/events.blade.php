@@ -104,7 +104,7 @@
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-7.webp') }}" class="img-fluid" alt="The Tech-Driven Water Economy Conference 2025" loading="lazy">
                   <div class="portfolio2-overlay">
                     <div class="portfolio2-actions">
-                      <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"on"><i class="bi bi-eye"></i></a>
+                      <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-eye"></i></a>
                       {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
@@ -123,7 +123,7 @@
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-4.webp') }}" class="img-fluid" alt="Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience" loading="lazy">
                   <div class="portfolio2-overlay">
                     <div class="portfolio2-actions">
-                      <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"d"><i class="bi bi-eye"></i></a>
+                      <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-eye"></i></a>
                       {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
