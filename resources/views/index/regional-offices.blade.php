@@ -112,7 +112,7 @@
             height: 16px;
             background: linear-gradient(145deg, #4e00c2, #00c2c2);
             border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(255,255,255,255.3);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             cursor: pointer;
             transform: translate(-50%, -50%);
           }
