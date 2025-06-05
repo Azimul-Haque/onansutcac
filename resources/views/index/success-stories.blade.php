@@ -140,7 +140,8 @@
                   <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div></div>
+            </div>
+          </div>
 
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 
