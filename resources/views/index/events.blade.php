@@ -23,14 +23,14 @@
 
     
 
-    <section id="portfolio" class="portfolio section">
+    <section id="portfolio" class="portfolio2 section">
 
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <div class="portfolio-filters-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-            <ul class="portfolio-filters isotope-filters">
+          <div class="portfolio2-filters-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <ul class="portfolio2-filters isotope-filters">
               <li data-filter="*" class="filter-active">All Events</li>
               <li data-filter=".filter-web" class="">USA</li>
               <li data-filter=".filter-graphics" class="">Singapore</li>
@@ -41,18 +41,18 @@
 
           <div class="row g-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" style="position: relative; height: 1551.75px;">
             
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web" style="position: absolute; left: 0px; top: 0px;">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-web" style="position: absolute; left: 0px; top: 0px;">
+              <div class="portfolio2-card">
+                <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="AI & Sustainable Water Futures Summit" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
+                  <div class="portfolio2-overlay">
+                    <div class="portfolio2-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
                       {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
-                <div class="portfolio-content">
+                <div class="portfolio2-content">
                   <span class="category">AI & Water Solutions</span>
                   <h3>AI & Sustainable Water Futures Summit</h3>
                   <p>Explore cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions. </p>
@@ -60,18 +60,18 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics" style="position: absolute; left: 570px; top: 0px;">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-graphics" style="position: absolute; left: 570px; top: 0px;">
+              <div class="portfolio2-card">
+                <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-10.webp') }}" class="img-fluid" alt="Nanotech Innovations for Clean Water: A Global Forum" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
+                  <div class="portfolio2-overlay">
+                    <div class="portfolio2-actions">
                       <a href="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-10.webp') }}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
                       {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                     </div>
                   </div>
                 </div>
-                <div class="portfolio-content">
+                <div class="portfolio2-content">
                   <span class="category">Nanotechnology & Water</span>
                   <h3>Nanotech Innovations for Clean Water: A Global Forum</h3>
                   <p>Discover groundbreaking advancements in nanotechnology for water purification, desalination, and contaminant removal. </p>
