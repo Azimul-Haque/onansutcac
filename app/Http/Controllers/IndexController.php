@@ -135,6 +135,11 @@ class IndexController extends Controller
     {
         return view('index.single-success-story');
     }
+
+    public function getAcademia ()
+    {
+        return view('index.academia');
+    }
     
 
     public function paymentProceed(Request $request)
