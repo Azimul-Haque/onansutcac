@@ -43,7 +43,35 @@
                 </div>
                 <div class="feature-content">
                   <h3 class="feature-title">Technical Summaries</h3>
-                  <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                  <p class="feature-text">
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-dark fw-medium">
+                          <i class="bi bi-gear me-2"></i> Boiler Systems
+                        </a>
+                      </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-snow me-2"></i> Cooling Systems
+                      </a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-filter-circle me-2"></i> Membrane Systems
+                      </a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-tools me-2"></i> Process Treatment
+                      </a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-water me-2"></i> Wastewater Treatment
+                      </a>
+                    </li>
+                  </ul>
+                  </p>
                 </div>
               </div>
             </div>
