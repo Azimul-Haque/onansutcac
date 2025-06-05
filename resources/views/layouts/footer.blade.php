@@ -52,7 +52,7 @@
           <li><i class="bi bi-chevron-right"></i> <a href="#">Case Study</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">News & Updates</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Information Center</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Information Center</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Client Endorsemen</a></li>
         </ul>
       </div>
