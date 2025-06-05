@@ -133,7 +133,7 @@ class IndexController extends Controller
 
     public function getSingleSuccessStory($slug)
     {
-        return view('index.success-stories');
+        return view('index.single-success-story');
     }
     
 
