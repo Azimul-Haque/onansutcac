@@ -29,7 +29,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Regional Offices</h2>
-        <p>Explore Our Range of Quality Offerings<br></p>
+        <p>Find the Office Nearest You<br></p>
       </div><!-- End Section Title -->
 
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
