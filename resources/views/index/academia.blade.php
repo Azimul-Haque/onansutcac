@@ -50,7 +50,7 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-card-checklist icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
+                <h4 class="title"><a href="#" class="stretched-link">Future Focus</a></h4>
                 <p class="description">Many of these funding opportunities are focused on the future of space, grid, weapons, EV, data centers, and communications. </p>
               </div>
             </div>
