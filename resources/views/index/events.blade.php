@@ -167,6 +167,9 @@
                 <div class="portfolio2-content">
                   <span class="category">AI, Robotics & Water</span>
                   <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience</h3></a>
+                  <p class="text-muted fst-italic mb-1">
+                    <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
+                  </p>
                   <p>Focus on how AI and robotics are revolutionizing inspection, maintenance, and automation in water infrastructure.</p>
                 </div>
               </div>
@@ -186,6 +189,9 @@
                 <div class="portfolio2-content">
                   <span class="category">Nanofiltration</span>
                   <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>Nano-Filtration Breakthroughs: Addressing Emerging Contaminants</h3></a>
+                  <p class="text-muted fst-italic mb-1">
+                    <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
+                  </p>
                   <p>Uncover the latest research and commercial applications of nanofiltration in tackling microplastics, pharmaceuticals, and other emerging pollutants in water.</p>
                 </div>
               </div>
