@@ -50,7 +50,7 @@
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.events') }}">Events</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Case Study</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">News & Updates</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">News & Updates</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Academia</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Information Center</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Client Endorsemen</a></li>
