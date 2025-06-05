@@ -96,8 +96,39 @@
 </div>
 
 <style>
+  .recent-posts-widget .post-item {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .recent-posts-widget .post-item:last-child {
+    margin-bottom: 0;
+  }
+
   .recent-posts-widget .post-item img {
-      width: 80px;
-      margin-right: 15px;
+    width: 80px;
+    margin-right: 15px;
+  }
+
+  .recent-posts-widget .post-item h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .recent-posts-widget .post-item h4 a {
+    color: var(--default-color);
+    transition: 0.3s;
+  }
+
+  .recent-posts-widget .post-item h4 a:hover {
+    color: var(--accent-color);
+  }
+
+  .recent-posts-widget .post-item time {
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
   }
 </style>
