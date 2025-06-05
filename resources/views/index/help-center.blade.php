@@ -49,7 +49,7 @@
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="support-tab" data-bs-toggle="pill" data-bs-target="#faq-support" type="button" role="tab" aria-controls="support" aria-selected="false">
+                    <button class="nav-link active" id="support-tab" data-bs-toggle="pill" data-bs-target="#faq-support" type="button" role="tab" aria-controls="support" aria-selected="false" tabindex="-1">
                       <i class="bi bi-headset me-2"></i>Support
                     </button>
                   </li>
