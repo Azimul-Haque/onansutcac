@@ -65,7 +65,7 @@
                           <i class="bi bi-tools me-2"></i> Process Treatment
                         </a>
                       </li>
-                      <li class="mb-4">
+                      <li class="">
                         <a href="#" class="text-decoration-none text-dark fw-medium">
                           <i class="bi bi-water me-2"></i> Wastewater Treatment
                         </a>
