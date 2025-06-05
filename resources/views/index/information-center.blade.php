@@ -39,7 +39,7 @@
             <div class="col-lg-4 mb-4 mb-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
               <div class="feature-box">
                 <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                  <i class="bi bi-gear"></i>
+                  <i class="bi bi-lightbulb"></i>
                 </div>
                 <div class="feature-content">
                   <h3 class="feature-title">Technical Summaries</h3>
