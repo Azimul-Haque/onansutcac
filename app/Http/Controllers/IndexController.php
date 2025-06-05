@@ -143,7 +143,7 @@ class IndexController extends Controller
 
     public function getInformationCenter()
     {
-        return view('index.academia');
+        return view('index.information-center');
     }
     
 
