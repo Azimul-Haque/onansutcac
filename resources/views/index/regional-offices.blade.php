@@ -158,15 +158,16 @@
               <i class="bi bi-award"></i>
               <h4>Head Office</h4>
               <p style="margin-bottom: 20px;">A108 Adam Street, New York, NY 535022</p>
-              <p style="margin: 0; display: flex; align-items: center;">
-                <i class="bi bi-telephone-fill" style="font-size: 14px; margin-right: 6px;"></i>
-                <strong style="font-size: 14px;">+44 20 7946 0958</strong>
-              </p>
               
-              <p style="margin: 4px 0 0; display: flex; align-items: center;">
-                <i class="bi bi-envelope-fill" style="font-size: 14px; margin-right: 6px;"></i>
-                <strong style="font-size: 14px;">info.uk@company.com</strong>
-              </p>
+              <div style="display: flex; align-items: center; margin-bottom: 4px;">
+                <i class="bi bi-telephone-fill" style="font-size: 14px; color: #d99c3b; margin-right: 6px;"></i>
+                <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">+44 20 7946 0958</span>
+              </div>
+
+              <div style="display: flex; align-items: center;">
+                <i class="bi bi-envelope-fill" style="font-size: 14px; color: #d99c3b; margin-right: 6px;"></i>
+                <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">info.uk@company.com</span>
+              </div>
             </div>
           </div><!-- End Feature Borx-->
 
