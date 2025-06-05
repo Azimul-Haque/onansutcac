@@ -183,7 +183,7 @@
                 </div>
               </div>
 
-              <div class="faq-cta text-center mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-cta text-center  aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="container">
                   <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 mb-4">
