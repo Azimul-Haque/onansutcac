@@ -26,7 +26,7 @@
     <section id="featured-posts" class="featured-posts section">
 
       <!-- Section Title -->
-      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+      <div class="container section-title aos-init" data-aos="fade-up">
         <h2>Featured Posts</h2>
         <div><span>Check Our</span> <span class="description-title">Featured Posts</span></div>
       </div><!-- End Section Title -->
