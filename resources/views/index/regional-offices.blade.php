@@ -69,7 +69,7 @@
             width: 100%;
             max-width: 100%; /* Optional: constrain width on larger screens */
             min-height: 650px;
-            border-radius: 10px;
+            border-radius: 15px;
             padding: 20px;
             background-color: white;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
