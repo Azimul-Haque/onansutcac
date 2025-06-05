@@ -62,7 +62,7 @@
       </div>
 
       <div class="container my-5">
-        <div class="row justify-content-center gx-4 gy-4">
+        <div class="row justify-content-center gx-4 gy-4" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
             <img src="https://cactusmaterials.com/wp-content/uploads/2024/07/Picture25.png" class="img-fluid" alt="University Logo 1" style="max-height: 80px;">
