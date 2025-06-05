@@ -79,7 +79,7 @@
   </div><!--/Recent Posts Widget -->
 
   <!-- Tags Widget -->
-  <div class="tags-widget widget-item">
+  {{-- <div class="tags-widget widget-item">
 
     <h3 class="widget-title">Tags</h3>
     <ul>
@@ -96,6 +96,7 @@
       <li><a href="#">Marketing</a></li>
     </ul>
 
-  </div><!--/Tags Widget -->
+  </div> --}}
+  <!--/Tags Widget -->
 
 </div>
