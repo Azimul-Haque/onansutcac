@@ -37,7 +37,7 @@
 
         <div class="map-container">
           <!-- Simplified SVG World Map (no Antarctica, land colored #DAF3F8) -->
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/World_map_%28Miller_cylindrical_projection%2C_blank_without_Antarctica%29.svg" style="opacity: 50%; -moz-user-select: none; -webkit-user-select: none; user-select: none;" alt="World Map" class="world-map">
+          {{-- <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/World_map_%28Miller_cylindrical_projection%2C_blank_without_Antarctica%29.svg" style="opacity: 50%; -moz-user-select: none; -webkit-user-select: none; user-select: none;" alt="World Map" class="world-map"> --}}
 
           <!-- Example Pins -->
           <div class="pin" style="top: 38%; left: 22%;">
@@ -68,12 +68,31 @@
           .map-container {
             position: relative;
             width: 100%;
+            max-width: 100%; /* Optional: constrain width on larger screens */
+            height: 500px;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             overflow: hidden;
           }
 
-          .world-map {
-            width: 100%;
-            display: block;
+          /* Background map with 50% opacity */
+          .map-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('images/world-map.svg') no-repeat center/cover;
+            opacity: 0.5;
+            z-index: 0;
+          }
+
+          /* Content over the map */
+          .content-on-map {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 20px;
+            color: #333;
           }
 
           .pin {
