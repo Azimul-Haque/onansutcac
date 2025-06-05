@@ -106,6 +106,11 @@ class IndexController extends Controller
         return view('index.regional-offices');
     }
 
+    public function getRegionalOffice()
+    {
+        return view('index.single-regional-office');
+    }
+
     public function getNews ()
     {
         return view('index.singlemarket');
@@ -115,11 +120,7 @@ class IndexController extends Controller
     {
         return view('index.regional-offices');
     }
-
-    public function getRegionalOffice()
-    {
-        return view('index.single-regional-office');
-    }
+    
 
     public function paymentProceed(Request $request)
     {
