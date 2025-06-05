@@ -27,7 +27,7 @@
     <section id="services-2" class="services-2 section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+      <div class="container section-title aos-init" data-aos="fade-up">
         <h2>Academia</h2>
         <p>Insights from Our Academic Endeavors</p>
       </div><!-- End Section Title -->
@@ -36,7 +36,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 aos-init" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-brightness-high icon flex-shrink-0"></i>
               <div>
@@ -46,7 +46,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6 aos-init" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-binoculars icon flex-shrink-0"></i>
               <div>
