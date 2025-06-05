@@ -58,6 +58,19 @@
               <a href="https://uk.example.com" target="_blank">Visit Site</a>
             </div>
           </div> --}}
+
+          <a href="https://example.com/usa-office" target="_blank">
+                <circle cx="420" cy="340" r="12" fill="#007BFF">
+                  <title>USA Office</title>
+                </circle>
+              </a>
+
+              <!-- Singapore Pin -->
+              <a href="https://example.com/singapore-office" target="_blank">
+                <circle cx="1540" cy="640" r="12" fill="#28a745">
+                  <title>Singapore Office</title>
+                </circle>
+              </a>
         </div>
 
       </div>
