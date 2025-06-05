@@ -28,7 +28,8 @@ Route::get('/news', 'IndexController@getNews')->name('index.news');
 Route::get('/news/{slug}', 'IndexController@getSingleNews')->name('index.single-news');
 
 Route::get('/events', 'IndexController@getEvents')->name('index.events');
-Route::get('/events', 'IndexController@getEvents')->name('index.events');
+Route::get('/success-stories', 'IndexController@getSuccessStories')->name('index.success-stories');
+Route::get('/success-stories', 'IndexController@getSuccessStories')->name('index.success-stories');
 
 Route::post('/payment/proceed', 'IndexController@paymentProceed')->name('index.payment.proceed');
 Route::get('/payment/cancel', 'IndexController@paymentCancel')->name('index.payment.cancel');
