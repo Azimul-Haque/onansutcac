@@ -11,7 +11,7 @@
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/news-page-background.gif') }}');">
       <div class="container position-relative">
         <h1>News Details</h1>
-        <p>Your Source for What's New</p>
+        <p>Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
