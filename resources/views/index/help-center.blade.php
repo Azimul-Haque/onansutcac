@@ -195,7 +195,7 @@
                   <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6">
                       <div class="info-box">
-                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3" style="width: 40px; height: 40px;">
+                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3 mt-3" style="width: 40px; height: 40px;">
                           <i class="bi bi-geo-alt fs-5"></i>
                         </span>
                         <h6 class="mb-2 fw-bold">Address</h6>
@@ -205,7 +205,7 @@
 
                     <div class="col-lg-4 col-md-6">
                       <div class="info-box">
-                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3" style="width: 40px; height: 40px;">
+                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3 mt-3" style="width: 40px; height: 40px;">
                           <i class="bi bi-envelope fs-5"></i>
                         </span>
                         <h6 class="mb-2 fw-bold">Email Us</h6>
@@ -215,7 +215,7 @@
 
                     <div class="col-lg-4 col-md-6">
                       <div class="info-box">
-                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3" style="width: 40px; height: 40px;">
+                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3 mt-3" style="width: 40px; height: 40px;">
                           <i class="bi bi-phone fs-5"></i>
                         </span>
                         <h6 class="mb-2 fw-bold">Call Us</h6>
