@@ -11,7 +11,7 @@
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/market-background-top.gif') }}');">
       <div class="container position-relative">
         <h1>Regional Offices</h1>
-        <p>Discover the Industries We Empower</p>
+        <p>Connecting You to Our Global Network</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
