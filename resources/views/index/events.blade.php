@@ -25,11 +25,11 @@
 
     <section id="portfolio" class="portfolio2 section">
 
-      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <div class="portfolio2-filters-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio2-filters-container aos-init" data-aos="fade-up" data-aos-delay="200">
             <ul class="portfolio2-filters isotope-filters">
               <li data-filter="*" class="filter-active">All Events</li>
               <li data-filter=".filter-web" class="">USA</li>
@@ -39,7 +39,7 @@
             </ul>
           </div>
 
-          <div class="row g-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" style="position: relative; height: 1551.75px;">
+          <div class="row g-4 isotope-container aos-init" data-aos="fade-up" data-aos-delay="300" style="position: relative; height: 1551.75px;">
             
             <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-web" style="position: absolute; left: 0px; top: 0px;">
               <div class="portfolio2-card">
