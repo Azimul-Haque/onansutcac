@@ -37,7 +37,7 @@
 
         <div class="map-container">
           <!-- Simplified SVG World Map (no Antarctica, land colored #DAF3F8) -->
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/World_map_%28Miller_cylindrical_projection%2C_blank_without_Antarctica%29.svg" alt="World Map" class="world-map">
+          <img src="https://simplemaps.com/static/demos/resources/svg-library/svgs/world.svg" alt="World Map" class="world-map">
 
           <!-- Example Pins -->
           <div class="pin" style="top: 38%; left: 22%;">
@@ -47,19 +47,19 @@
             </div>
           </div>
 
-          <div class="pin" style="top: 58.5%; left: 79%;">
+          {{-- <div class="pin" style="top: 58.5%; left: 79%;">
             <div class="tooltip">
               Singapore Office<br>
               <a href="https://sg.example.com" target="_blank">Visit Site</a>
             </div>
-          </div>
+          </div> --}}
 
-          {{-- <div class="pin" style="top: 33%; left: 41%;">
+          <div class="pin" style="top: 33%; left: 41%;">
             <div class="tooltip">
               UK Office<br>
               <a href="https://uk.example.com" target="_blank">Visit Site</a>
             </div>
-          </div> --}}
+          </div>
         </div>
 
       </div>
