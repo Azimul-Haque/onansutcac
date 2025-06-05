@@ -13,7 +13,7 @@
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
         <h1>Academia</h1>
-        <p>Transforming Challenges into Victories</p>
+        <p>Exploring Knowledge, Driving Discovery</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
