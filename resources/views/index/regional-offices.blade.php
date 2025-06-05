@@ -84,7 +84,7 @@
             z-index: 0;
           }
 
-          @media (max-width: 1200px) {
+          @media (max-width: 1024px) {
             .map-container {
               display: none;
             }
