@@ -36,7 +36,6 @@
         
 
         <div class="map-container">
-
           <div class="content-on-map">
               <!-- Example Pins -->
               <div class="pin" style="top: 38%; left: 22%;">
