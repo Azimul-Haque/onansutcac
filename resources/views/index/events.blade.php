@@ -101,9 +101,9 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="modal-footer justify-content-center border-0 pt-0">
-                    <a href="#" class="btn btn-primary btn-lg shadow-sm">Register Now</a>
-                    <button type="button" class="btn btn-outline-secondary btn-lg shadow-sm" data-bs-dismiss="modal">Close</button>
+                  <div class="modal-footer border-0 pt-0">
+                    <a href="#" class="btn btn-primary shadow-sm">Register Now</a>
+                    <button type="button" class="btn btn-outline-secondary shadow-sm" data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
