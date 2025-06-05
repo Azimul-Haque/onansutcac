@@ -74,7 +74,7 @@
                 <div class="portfolio-content">
                   <span class="category">Nanotechnology & Water</span>
                   <h3>Nanotech Innovations for Clean Water: A Global Forum</h3>
-                  <p>Discover groundbreaking advancements in nanotechnology for water purification, desalination, and contaminant removal. Sessions will highlight novel membrane technologies, advanced filtration materials, and scalable nano-solutions for global water challenges.</p>
+                  <p>Discover groundbreaking advancements in nanotechnology for water purification, desalination, and contaminant removal. </p>
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@
                 <div class="portfolio-content">
                   <span class="category">Tech & Water Economy</span>
                   <h3>The Tech-Driven Water Economy Conference 2025</h3>
-                  <p>A deep dive into the integration of digital technologies, IoT, and advanced analytics transforming the water sector. This conference examines smart water grids, operational efficiency, and investment opportunities in the evolving water industry.</p>
+                  <p>A deep dive into the integration of digital technologies, IoT, and advanced analytics transforming the water sector. </p>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@
                 <div class="portfolio-content">
                   <span class="category">AI, Robotics & Water</span>
                   <h3>Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience</h3>
-                  <p>Focus on how AI and robotics are revolutionizing inspection, maintenance, and automation in water infrastructure. Learn about intelligent monitoring systems, autonomous solutions, and their role in ensuring resilient water supply.</p>
+                  <p>Focus on how AI and robotics are revolutionizing inspection, maintenance, and automation in water infrastructure.</p>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
                 <div class="portfolio-content">
                   <span class="category">Nanofiltration</span>
                   <h3>Nano-Filtration Breakthroughs: Addressing Emerging Contaminants</h3>
-                  <p>Uncover the latest research and commercial applications of nanofiltration in tackling microplastics, pharmaceuticals, and other emerging pollutants in water. This event provides insights into advanced materials and their environmental impact.</p>
+                  <p>Uncover the latest research and commercial applications of nanofiltration in tackling microplastics, pharmaceuticals, and other emerging pollutants in water.</p>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@
                 <div class="portfolio-content">
                   <span class="category">IoT & Urban Sustainability</span>
                   <h3>Smart Cities & Water: IoT's Role in Urban Sustainability</h3>
-                  <p>Explore how the Internet of Things (IoT) is critical for developing smart water management systems in urban environments. Discussions will cover real-time monitoring, leak detection, and optimizing resource usage for sustainable cities.</p>
+                  <p>Explore how the Internet of Things (IoT) is critical for developing smart water management systems in urban environments. </p>
                 </div>
               </div>
             </div>
