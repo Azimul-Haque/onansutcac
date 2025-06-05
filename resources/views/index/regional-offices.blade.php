@@ -37,7 +37,7 @@
 
         <div class="map-container">
           <!-- Simplified SVG World Map (no Antarctica, land colored #DAF3F8) -->
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/BlankMap-World-Compact.svg" alt="World Map" class="world-map">
+          <img src="https://simplemaps.com/static/demos/resources/svg-library/svgs/world.svg" alt="World Map" class="world-map">
 
           <!-- Example Pins -->
           <div class="pin" style="top: 38%; left: 22%;">
