@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title') News Details @endsection
+@section('title') Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia | News Details @endsection
 
 @section('third_party_stylesheets')
 
