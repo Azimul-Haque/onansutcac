@@ -44,7 +44,7 @@
                 <div class="feature-content">
                   <h3 class="feature-title">Technical Summaries</h3>
                   <p class="feature-text">
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled mt-4">
                       <li class="mb-4">
                         <a href="#" class="text-decoration-none text-dark fw-medium">
                           <i class="bi bi-gear me-2"></i> Boiler Systems
