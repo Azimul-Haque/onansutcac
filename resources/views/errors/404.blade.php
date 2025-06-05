@@ -49,7 +49,7 @@
                   <a href="{{ route('index.index') }}" class="btn-home">
                     <i class="bi bi-house-door"></i> Back to Home
                   </a>
-                  <a href="#" class="btn-help">
+                  <a href="{{ route('index.help-center') }}" class="btn-help">
                     <i class="bi bi-question-circle"></i> Help Center
                   </a>
                 </div>
