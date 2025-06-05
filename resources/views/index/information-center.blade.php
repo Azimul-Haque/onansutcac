@@ -260,17 +260,17 @@
                 <p class="feature-text">
                   <ul class="list-unstyled mt-4">
                     <li class="mb-4">
-                      <a href="[http://www.youtube.com/watch?v=iTwzbnXJf7g](http://www.youtube.com/watch?v=iTwzbnXJf7g)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                      <a href="http://www.youtube.com/watch?v=iTwzbnXJf7g" class="text-decoration-none text-dark fw-medium" target="_blank">
                         <i class="bi bi-play-circle me-2"></i> Advanced Quantum Material Curves the Fabric of Space!
                       </a>
                     </li>
                     <li class="mb-4">
-                      <a href="[http://www.youtube.com/watch?v=hMtpmvWlZVE](http://www.youtube.com/watch?v=hMtpmvWlZVE)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                      <a href="http://www.youtube.com/watch?v=hMtpmvWlZVE" class="text-decoration-none text-dark fw-medium" target="_blank">
                         <i class="bi bi-play-circle me-2"></i> Shaking the Nanomaterials Out: New Method to Purify Water
                       </a>
                     </li>
                      <li class="mb-4">
-                      <a href="[http://www.youtube.com/watch?v=V2rkPCNtMi4](http://www.youtube.com/watch?v=V2rkPCNtMi4)" class="text-decoration-none text-dark fw-medium" target="_blank">
+                      <a href="http://www.youtube.com/watch?v=V2rkPCNtMi4" class="text-decoration-none text-dark fw-medium" target="_blank">
                         <i class="bi bi-play-circle me-2"></i> Maintaining Grid Resilience with the Adoption of Smart Grid Technologies
                       </a>
                     </li>
