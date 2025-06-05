@@ -28,7 +28,7 @@
 
       <!-- Section Title -->
       <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-        <h2>Services</h2>
+        <h2>Academia</h2>
         <p>CHECK OUR SERVICES</p>
       </div><!-- End Section Title -->
 
