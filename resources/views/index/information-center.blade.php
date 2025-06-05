@@ -250,6 +250,51 @@
             </div>
           </div>
 
+          <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-box">
+              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+                <i class="bi bi-file-earmark-pdf"></i>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Scholarly Publications</h3>
+                <p class="feature-text">
+                  <ul class="list-unstyled mt-4">
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-file-earmark-bar-graph me-2"></i> Future of Quantum Materials in Space Exploration
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-water me-2"></i> Nanotechnology's Role in Next-Gen Water Purification
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-plug me-2"></i> Advancing Grid Resiliency with Smart Materials
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-cpu me-2"></i> AI-Driven Solutions for Sustainable Data Centers
+                      </a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-battery-charging me-2"></i> High-Performance Materials for EV Battery Longevity
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#" class="text-decoration-none text-dark fw-medium">
+                        <i class="bi bi-clipboard-data me-2"></i> Research Insights: Advanced Composites in Defense
+                      </a>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
 
         </div>
 
