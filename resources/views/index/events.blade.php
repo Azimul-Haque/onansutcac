@@ -250,7 +250,7 @@
                   <span class="post-category">AI Photonics</span>
                 </div>
                 <h3 class="title">
-                  <a href="blog-details.html">Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
+                  <a href="{{ route('index.single-news', 'slug') }}">Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
                 </h3>
                 <div class="post-meta">
                   <span class="read-time">2 mins read</span>
@@ -270,7 +270,7 @@
                   <span class="post-category">Nano Technology</span>
                 </div>
                 <h3 class="title">
-                  <a href="blog-details.html">At vero eos et accusamus et iusto</a>
+                  <a href="{{ route('index.single-news', 'slug') }}">At vero eos et accusamus et iusto</a>
                 </h3>
                 <div class="post-meta">
                   <span class="read-time">2 mins read</span>
@@ -290,7 +290,7 @@
                   <span class="post-category">Water Modeling</span>
                 </div>
                 <h3 class="title">
-                  <a href="blog-details.html">Et harum quidem rerum facilis est et expedita distinctio</a>
+                  <a href="{{ route('index.single-news', 'slug') }}">Et harum quidem rerum facilis est et expedita distinctio</a>
                 </h3>
                 <div class="post-meta">
                   <span class="read-time">2 mins read</span>
@@ -310,7 +310,7 @@
                   <span class="post-category">GIS Modeling</span>
                 </div>
                 <h3 class="title">
-                  <a href="blog-details.html">Nam libero tempore, cum soluta nobis est eligendi</a>
+                  <a href="{{ route('index.single-news', 'slug') }}">Nam libero tempore, cum soluta nobis est eligendi</a>
                 </h3>
                 <div class="post-meta">
                   <span class="read-time">2 mins read</span>
@@ -330,7 +330,7 @@
                   <span class="post-category">AI Photonics</span>
                 </div>
                 <h3 class="title">
-                  <a href="blog-details.html">Temporibus autem quibusdam et aut officiis debitis</a>
+                  <a href="{{ route('index.single-news', 'slug') }}">Temporibus autem quibusdam et aut officiis debitis</a>
                 </h3>
                 <div class="post-meta">
                   <span class="read-time">2 mins read</span>
@@ -350,7 +350,7 @@
                   <span class="post-category">AI Photonics</span>
                 </div>
                 <h3 class="title">
-                  <a href="blog-details.html">Itaque earum rerum hic tenetur a sapiente delectus</a>
+                  <a href="{{ route('index.single-news', 'slug') }}">Itaque earum rerum hic tenetur a sapiente delectus</a>
                 </h3>
                 <div class="post-meta">
                   <span class="read-time">2 mins read</span>
