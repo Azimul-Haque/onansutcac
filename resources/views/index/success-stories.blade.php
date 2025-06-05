@@ -38,12 +38,12 @@
             <div class="blog-post-item">
               <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
-                {{-- <div class="post-meta">
+                <div class="post-meta">
                   <span><i class="bi bi-person"></i> Mark Wilson</span>
                   <span><i class="bi bi-clock"></i> Jan 18, 2025</span>
                   <span><i class="bi bi-chat-dots"></i> 6 Comments</span>
                 </div>
- --}}                <h2><a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h2>
+                <h2><a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h2>
                 <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
                 <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
@@ -54,11 +54,11 @@
             <div class="blog-post-item">
               <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
-                {{-- <div class="post-meta">
+                <div class="post-meta">
                   <span><i class="bi bi-person"></i> Sarah Johnson</span>
                   <span><i class="bi bi-clock"></i> Jan 21, 2025</span>
                   <span><i class="bi bi-chat-dots"></i> 15 Comments</span>
-                </di --}}v>
+                </div>
                 <h2><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
                 <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi.</p>
                 <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
@@ -70,11 +70,11 @@
             <div class="blog-post-item">
               <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
-                {{-- <div class="post-meta">
+                <div class="post-meta">
                   <span><i class="bi bi-person"></i> David Brown</span>
                   <span><i class="bi bi-clock"></i> Jan 24, 2025</span>
                   <span><i class="bi bi-chat-dots"></i> 10 Comments</span>
-                </div> --}}
+                </div>
                 <h2><a href="#">Et harum quidem rerum facilis est et expedita distinctio</a></h2>
                 <p>Donec quam felis ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim.</p>
                 <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
@@ -90,8 +90,8 @@
                   <span><i class="bi bi-person"></i> Mark Wilson</span>
                   <span><i class="bi bi-clock"></i> Jan 18, 2025</span>
                   <span><i class="bi bi-chat-dots"></i> 6 Comments</span>
-                </div>
- --}}                <h2><a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h2>
+                </div> --}}
+                <h2><a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h2>
                 <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
                 <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
@@ -106,7 +106,7 @@
                   <span><i class="bi bi-person"></i> Sarah Johnson</span>
                   <span><i class="bi bi-clock"></i> Jan 21, 2025</span>
                   <span><i class="bi bi-chat-dots"></i> 15 Comments</span>
-                </di --}}v>
+                </div> --}}
                 <h2><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
                 <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi.</p>
                 <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
