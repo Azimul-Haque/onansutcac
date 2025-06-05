@@ -106,7 +106,7 @@
                 <i class="bi bi-cloud-check"></i>
               </div>
               <div class="service-content">
-                <h3>Cloud Computing</h3>
+                <h3>Research Labs</h3>
                 <p>Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
                 <a href="{{ route('index.singlemarket', '1') }}" class="service-link">
                   <span>Learn More</span>
