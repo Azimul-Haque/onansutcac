@@ -83,7 +83,7 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="{{ asset('vendor/dewi/assets/img/about-2.jpg-') }}" alt="Nano-Filtration Breakthroughs: Addressing Emerging Contaminants">
+                <img src="{{ asset('vendor/dewi/assets/img/about-2.jpg') }}" alt="Nano-Filtration Breakthroughs: Addressing Emerging Contaminants">
               </div>
               <div class="card-body">
                 <h5 class="card-title">Nano-Filtration Breakthroughs: Addressing Emerging Contaminants</h5>
