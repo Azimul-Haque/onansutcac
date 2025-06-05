@@ -116,6 +116,87 @@
             </article>
           </div><!-- End post list item -->
 
+          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
+            <article>
+
+              <div class="post-img">
+                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid"></a>
+              </div>
+
+              <p class="post-category">AI Photonics</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <div class="post-meta">
+                  <p class="post-author">Phoenix Business Journal</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jan 1, 2022</time>
+                  </p>
+                </div>
+              </div>
+              <a href="#!" class="newsroom-item-link" target="">Read more</a>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="300">
+            <article>
+
+              <div class="post-img">
+                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid"></a>
+              </div>
+
+              <p class="post-category">Clean Water Technology</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <div class="post-meta">
+                  <p class="post-author">AZ Big Media</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jun 5, 2022</time>
+                  </p>
+                </div>
+              </div>
+              <a href="#!" class="newsroom-item-link" target="">Read more</a>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="400">
+            <article>
+
+              <div class="post-img">
+                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
+              </div>
+
+              <p class="post-category">Nano Technology</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+              </h2>
+
+
+              <div class="d-flex align-items-center">
+                <div class="post-meta">
+                  <p class="post-author">ASU News</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jun 22, 2022</time>
+                  </p>
+                </div>
+              </div>
+              <a href="#!" class="newsroom-item-link" target="">Read more</a>
+
+
+
+            </article>
+          </div><!-- End post list item -->
+
         </div>
 
 
