@@ -36,7 +36,7 @@
 
         <div class="row gy-4">
           <div class="row feature-boxes">
-            <div class="col-lg-4 mb-4 aos-init" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="200">
               <div class="feature-box">
                 <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
                   <i class="bi bi-lightbulb"></i>
@@ -76,7 +76,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 mb-4 aos-init" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 mb-4 mb-lg-0 aos-init" data-aos="fade-up" data-aos-delay="300">
               <div class="feature-box">
                 <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
                   <i class="bi bi-person-badge"></i>
