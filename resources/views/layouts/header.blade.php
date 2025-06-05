@@ -21,7 +21,7 @@
           </ul>
         </li> --}}
         <li><a href="{{ route('index.news') }}" class="{{ Request::is('news') || Request::is('news/*') ? 'active' : '' }}">News</a></li>
-        <li><a href="{{ route('index.events') }}">Events</a></li>
+        <li><a href="{{ route('index.events') }}" class="{{ Request::is('events') || Request::is('events/*') ? 'active' : '' }}">Events</a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
