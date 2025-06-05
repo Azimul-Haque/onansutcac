@@ -81,7 +81,6 @@
               </div>
             </div>
           </div>
-          
         </div>
 
         <div class="blog-posts-slider swiper init-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
