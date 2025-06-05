@@ -29,7 +29,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>News & Updates</h2>
-        <p>Explore Our Range of Quality Offerings<br></p>
+        <p>The Latest from CactusNano<br></p>
       </div><!-- End Section Title -->
 
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
