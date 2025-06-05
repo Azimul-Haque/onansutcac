@@ -7,7 +7,7 @@
   .faq-content {
     display: none;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: max-height 0.3s ease-out;
   }
 </style>
   
