@@ -161,7 +161,7 @@
           </div>
 
           <!-- Important Notices -->
-          <div class="terms-notices aos-init aos-animate" data-aos="fade-up">
+          <div class="terms-notices aos-init mt-5 aos-animate" data-aos="fade-up">
             <div class="notice-wrapper">
               <div class="notice-items">
                 <div class="notice-item">
