@@ -30,7 +30,7 @@
       </div>
     </div><!-- End Page Title -->
 
-    <section id="terms-of-service" class="terms-of-service section">
+    <section id="terms-of-service" class="terms-of-service section light-background">
 
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <!-- Hero Section -->
