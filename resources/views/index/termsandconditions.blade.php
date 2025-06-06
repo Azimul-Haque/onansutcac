@@ -220,21 +220,7 @@
 
     
 
-    <section id="stats" class="stats section light-background" style="background: linear-gradient(to right, #39b54a, #007cc2); color: white; padding: 80px 0; text-align: center;">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2 style="font-weight: 700; font-size: 2rem; margin-bottom: 10px; color: #ffffff;">Your Solution Hub</h2>
-        <p style="font-size: 1.1rem; margin-bottom: 30px;">
-          Navigate with ease. Expertise and support are just a click away.
-        </p>
-        <a href="{{ route('index.get-contact') }}" class="btn btn-light" style="color: #39b54a; font-weight: 600; padding: 10px 24px; border-radius: 30px; animation: experience-float 3s ease-in-out infinite; margin: 5px;">
-          Connect with Us
-        </a>
-        <a href="{{ route('index.information-center') }}" class="btn btn-dark" style="color: #39b54a; font-weight: 600; padding: 10px 24px; border-radius: 30px; animation: experience-float 3s ease-in-out infinite; margin: 5px;">
-          Information Center
-        </a>
-      </div>
-    </section>
-
+   
     
 
 
