@@ -30,7 +30,7 @@
       </div>
     </div><!-- End Page Title -->
 
-    <section id="privacy" class="privacy section">
+    <section id="privacy" class="privacy section light-background">
 
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <!-- Header -->
