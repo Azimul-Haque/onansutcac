@@ -148,7 +148,7 @@ class IndexController extends Controller
 
     public function getHelpCenter()
     {
-        return view('index.get-contact');
+        return view('index.help-center');
     }
     
 

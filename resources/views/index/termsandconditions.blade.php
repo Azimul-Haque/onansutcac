@@ -206,7 +206,7 @@
                   <p>If you have questions about these terms, our support team is here to help.</p>
                 </div>
                 <div class="contact-actions">
-                  <a href="{{ route('index.get-contact-us') }}" class="btn-primary">Contact Support</a>
+                  <a href="{{ route('index.get-contact') }}" class="btn-primary">Contact Support</a>
                   <a href="#" class="btn-primary">Contact Support</a>
                   <a href="#" class="btn-outline">Download Terms</a>
                 </div>
