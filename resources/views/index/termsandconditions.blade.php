@@ -15,6 +15,21 @@
 @endsection
 
 @section('content')
+    <!-- Page Title -->
+    {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
+      <div class="container position-relative">
+        <h1>Terms & Conditions</h1>
+        <p>Answers at Your Fingertips</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{{ route('index.index') }}">Home</a></li>
+            <li class="current">Terms & Conditions</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
     <section id="terms-of-service" class="terms-of-service section">
 
       <div class="container aos-init aos-animate" data-aos="fade-up">
