@@ -19,7 +19,7 @@
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-about-us') }}">About us</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="https://cactusmaterials.com/" target="_blank">Cactus Materials</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="https://www.cactusantimicrobial.com/" target="_blank">Cactus Antimicrobial</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of Service</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.terms-and-conditions') }}">Terms of Service</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a></li>
         </ul>
       </div>
