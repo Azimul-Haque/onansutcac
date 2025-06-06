@@ -30,216 +30,126 @@
       </div>
     </div><!-- End Page Title -->
 
-    <section id="faq" class="faq section light-background">
+    <section id="privacy" class="privacy section">
 
-        <!-- Section Title -->
-        <div class="container section-title aos-init" data-aos="fade-up">
-          <h2>Help Center</h2>
-          <p>Frequently Asked Questions</p>
-        </div><!-- End Section Title -->
-
-        <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-
-              <div class="faq-tabs mb-5">
-                <ul class="nav nav-pills justify-content-center" id="faqTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="general-tab" data-bs-toggle="pill" data-bs-target="#faq-general" type="button" role="tab" aria-controls="general" aria-selected="true" tabindex="-1">
-                      <i class="bi bi-question-circle me-2"></i>General
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pricing-tab" data-bs-toggle="pill" data-bs-target="#faq-pricing" type="button" role="tab" aria-controls="pricing" aria-selected="false" tabindex="-1">
-                      <i class="bi bi-cpu me-2"></i>Technical
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="support-tab" data-bs-toggle="pill" data-bs-target="#faq-support" type="button" role="tab" aria-controls="support" aria-selected="false" tabindex="-1">
-                      <i class="bi bi-headset me-2"></i>Support
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="tab-content" id="faqTabContent">
-                <!-- General FAQs -->
-                <div class="tab-pane fade active show" id="faq-general" role="tabpanel" aria-labelledby="general-tab">
-                  <div class="faq-list">
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                        <span class="num">1</span>
-                        <span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
-                      <h3>
-                        <span class="num">2</span>
-                        <span class="question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.</p>
-                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
-                      <h3>
-                        <span class="num">3</span>
-                        <span class="question">Dolor sit amet consectetur adipiscing elit pellentesque?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.</p>
-                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                  </div>
-                </div>
-
-                <!-- Pricing FAQs -->
-                <div class="tab-pane fade" id="faq-pricing" role="tabpanel" aria-labelledby="pricing-tab">
-                  <div class="faq-list">
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                        <span class="num">1</span>
-                        <span class="question">Ac odio tempor orci dapibus ultrices in iaculis?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
-                      <h3>
-                        <span class="num">2</span>
-                        <span class="question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
-                        <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
-                      <h3>
-                        <span class="num">3</span>
-                        <span class="question">Varius vel pharetra vel turpis nunc eget lorem dolor?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                  </div>
-                </div>
-
-                <!-- Support FAQs -->
-                <div class="tab-pane fade" id="faq-support" role="tabpanel" aria-labelledby="support-tab">
-                  <div class="faq-list">
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                        <span class="num">1</span>
-                        <span class="question">Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                        <p>Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
-                      <h3>
-                        <span class="num">2</span>
-                        <span class="question">Tortor dignissim convallis aenean et tortor at risus viverra?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
-                      <h3>
-                        <span class="num">3</span>
-                        <span class="question">Venenatis urna cursus eget nunc scelerisque viverra mauris in?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
-                        <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-cta text-center mt-5 aos-init" data-aos="fade-up" data-aos-delay="300">
-                <div class="container">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                      <div class="info-box">
-                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3 mt-4" style="width: 40px; height: 40px;">
-                          <i class="bi bi-geo-alt fs-5"></i>
-                        </span>
-                        <h6 class="mb-2 fw-bold">Address</h6>
-                        <p class="small text-muted">A108 Adam Street, New York, NY 535022</p>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                      <div class="info-box">
-                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3 mt-4" style="width: 40px; height: 40px;">
-                          <i class="bi bi-envelope fs-5"></i>
-                        </span>
-                        <h6 class="mb-2 fw-bold">Email Us</h6>
-                        <p class="small text-muted"><a href="mailto:info@example.com" class="text-decoration-none text-dark">info@example.com</a></p>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                      <div class="info-box">
-                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3 mt-4" style="width: 40px; height: 40px;">
-                          <i class="bi bi-phone fs-5"></i>
-                        </span>
-                        <h6 class="mb-2 fw-bold">Call Us</h6>
-                        <p class="small text-muted"><a href="tel:+155895548855" class="text-decoration-none text-dark">+1 5589 55488 55</a></p>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-              <style>
-                .icon-circle {
-                  /* You can further customize the circle's appearance here if needed */
-                }
-              </style>
-
-            </div>
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <!-- Header -->
+        <div class="privacy-header aos-init aos-animate" data-aos="fade-up">
+          <div class="header-content">
+            <div class="last-updated">Effective Date: February 27, 2025</div>
+            <h1>Privacy Policy</h1>
+            <p class="intro-text">This Privacy Policy describes how we collect, use, process, and disclose your information, including personal information, in conjunction with your access to and use of our services.</p>
           </div>
-
         </div>
 
-      </section>
+        <!-- Main Content -->
+        <div class="privacy-content aos-init aos-animate" data-aos="fade-up">
+          <!-- Introduction -->
+          <div class="content-section">
+            <h2>1. Introduction</h2>
+            <p>When you use our services, you're trusting us with your information. We understand this is a big responsibility and work hard to protect your information and put you in control.</p>
+            <p>This Privacy Policy is meant to help you understand what information we collect, why we collect it, and how you can update, manage, export, and delete your information.</p>
+          </div>
 
+          <!-- Information Collection -->
+          <div class="content-section">
+            <h2>2. Information We Collect</h2>
+            <p>We collect information to provide better services to our users. The types of information we collect include:</p>
+
+            <h3>2.1 Information You Provide</h3>
+            <p>When you create an account or use our services, you provide us with personal information that includes:</p>
+            <ul>
+              <li>Your name and contact information</li>
+              <li>Account credentials</li>
+              <li>Payment information when required</li>
+              <li>Communication preferences</li>
+            </ul>
+
+            <h3>2.2 Automatic Information</h3>
+            <p>We automatically collect and store certain information when you use our services:</p>
+            <ul>
+              <li>Device information and identifiers</li>
+              <li>Log information and usage statistics</li>
+              <li>Location information when enabled</li>
+              <li>Browser type and settings</li>
+            </ul>
+          </div>
+
+          <!-- Use of Information -->
+          <div class="content-section">
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the information we collect to provide, maintain, and improve our services. Specifically, we use your information to:</p>
+            <ul>
+              <li>Provide and personalize our services</li>
+              <li>Process transactions and send related information</li>
+              <li>Send notifications and updates about our services</li>
+              <li>Maintain security and verify identity</li>
+              <li>Analyze and improve our services</li>
+            </ul>
+          </div>
+
+          <!-- Information Sharing -->
+          <div class="content-section">
+            <h2>4. Information Sharing and Disclosure</h2>
+            <p>We do not share personal information with companies, organizations, or individuals outside of our company except in the following cases:</p>
+
+            <h3>4.1 With Your Consent</h3>
+            <p>We will share personal information with companies, organizations, or individuals outside of our company when we have your consent to do so.</p>
+
+            <h3>4.2 For Legal Reasons</h3>
+            <p>We will share personal information if we have a good-faith belief that access, use, preservation, or disclosure of the information is reasonably necessary to:</p>
+            <ul>
+              <li>Meet any applicable law, regulation, legal process, or enforceable governmental request</li>
+              <li>Enforce applicable Terms of Service</li>
+              <li>Detect, prevent, or otherwise address fraud, security, or technical issues</li>
+              <li>Protect against harm to the rights, property, or safety of our users</li>
+            </ul>
+          </div>
+
+          <!-- Data Security -->
+          <div class="content-section">
+            <h2>5. Data Security</h2>
+            <p>We work hard to protect our users from unauthorized access to or unauthorized alteration, disclosure, or destruction of information we hold. In particular:</p>
+            <ul>
+              <li>We encrypt our services using SSL</li>
+              <li>We review our information collection, storage, and processing practices</li>
+              <li>We restrict access to personal information to employees who need that information</li>
+            </ul>
+          </div>
+
+          <!-- Your Rights -->
+          <div class="content-section">
+            <h2>6. Your Rights and Choices</h2>
+            <p>You have certain rights regarding your personal information, including:</p>
+            <ul>
+              <li>The right to access your personal information</li>
+              <li>The right to correct inaccurate information</li>
+              <li>The right to request deletion of your information</li>
+              <li>The right to restrict or object to our processing of your information</li>
+            </ul>
+          </div>
+
+          <!-- Policy Updates -->
+          <div class="content-section">
+            <h2>7. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the effective date at the top.</p>
+            <p>Your continued use of our services after any changes to this Privacy Policy constitutes your acceptance of such changes.</p>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="privacy-contact aos-init aos-animate" data-aos="fade-up">
+          <h2>Contact Us</h2>
+          <p>If you have any questions about this Privacy Policy or our practices, please contact us:</p>
+          <div class="contact-details">
+            <p><strong>Email:</strong> privacy@example.com</p>
+            <p><strong>Address:</strong> 123 Privacy Street, Security City, 12345</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
     
 
     <section id="stats" class="stats section light-background" style="background: linear-gradient(to right, #39b54a, #007cc2); color: white; padding: 80px 0; text-align: center;">
