@@ -15,230 +15,193 @@
 @endsection
 
 @section('content')
-    <!-- Page Title -->
-    {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
-      <div class="container position-relative">
-        <h1>Terms & Conditions</h1>
-        <p>Answers at Your Fingertips</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">Terms & Conditions</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+    <section id="terms-of-service" class="terms-of-service section">
 
-    <section id="faq" class="faq section light-background">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <!-- Hero Section -->
+        <div class="terms-hero aos-init aos-animate" data-aos="fade-up">
+          <span class="badge">Last Updated: February 27, 2025</span>
+          <h2>Terms &amp; Conditions</h2>
+          <p>These terms and conditions outline your rights and responsibilities when using our services</p>
+          <div class="terms-highlights">
+            <div class="highlight-item">
+              <i class="bi bi-shield-check"></i>
+              <span>Secure Service</span>
+            </div>
+            <div class="highlight-item">
+              <i class="bi bi-lock"></i>
+              <span>Data Protection</span>
+            </div>
+            <div class="highlight-item">
+              <i class="bi bi-hand-thumbs-up"></i>
+              <span>Fair Terms</span>
+            </div>
+          </div>
+        </div>
 
-        <!-- Section Title -->
-        <div class="container section-title aos-init" data-aos="fade-up">
-          <h2>Help Center</h2>
-          <p>Frequently Asked Questions</p>
-        </div><!-- End Section Title -->
-
-        <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-
-              <div class="faq-tabs mb-5">
-                <ul class="nav nav-pills justify-content-center" id="faqTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="general-tab" data-bs-toggle="pill" data-bs-target="#faq-general" type="button" role="tab" aria-controls="general" aria-selected="true" tabindex="-1">
-                      <i class="bi bi-question-circle me-2"></i>General
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pricing-tab" data-bs-toggle="pill" data-bs-target="#faq-pricing" type="button" role="tab" aria-controls="pricing" aria-selected="false" tabindex="-1">
-                      <i class="bi bi-cpu me-2"></i>Technical
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="support-tab" data-bs-toggle="pill" data-bs-target="#faq-support" type="button" role="tab" aria-controls="support" aria-selected="false" tabindex="-1">
-                      <i class="bi bi-headset me-2"></i>Support
-                    </button>
-                  </li>
-                </ul>
+        <!-- Terms Grid -->
+        <div class="terms-grid aos-init aos-animate" data-aos="fade-up">
+          <!-- Agreement Card -->
+          <div class="terms-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header">
+              <div class="header-icon">
+                <i class="bi bi-file-text"></i>
               </div>
+              <h3>Agreement Terms</h3>
+            </div>
+            <div class="card-content">
+              <p>By accessing our service, you confirm that you are agreeing to be bound by these terms of service. These terms apply to all users and visitors.</p>
+              <ul class="check-list">
+                <li>Acceptance of terms</li>
+                <li>Compliance with laws</li>
+                <li>Service availability</li>
+                <li>User obligations</li>
+              </ul>
+            </div>
+          </div>
 
-              <div class="tab-content" id="faqTabContent">
-                <!-- General FAQs -->
-                <div class="tab-pane fade active show" id="faq-general" role="tabpanel" aria-labelledby="general-tab">
-                  <div class="faq-list">
+          <!-- User Rights Card -->
+          <div class="terms-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-header">
+              <div class="header-icon">
+                <i class="bi bi-person-check"></i>
+              </div>
+              <h3>User Rights</h3>
+            </div>
+            <div class="card-content">
+              <p>As a user, you have specific rights when using our service, including data privacy and access to features.</p>
+              <ul class="check-list">
+                <li>Account control</li>
+                <li>Data privacy</li>
+                <li>Service access</li>
+                <li>Content ownership</li>
+              </ul>
+            </div>
+          </div>
 
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                        <span class="num">1</span>
-                        <span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
+          <!-- Restrictions Card -->
+          <div class="terms-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-header">
+              <div class="header-icon">
+                <i class="bi bi-shield-x"></i>
+              </div>
+              <h3>Restrictions</h3>
+            </div>
+            <div class="card-content">
+              <div class="restrictions-list">
+                <div class="restriction-item">
+                  <i class="bi bi-x-circle"></i>
+                  <span>No unauthorized data collection</span>
+                </div>
+                <div class="restriction-item">
+                  <i class="bi bi-x-circle"></i>
+                  <span>No service misuse</span>
+                </div>
+                <div class="restriction-item">
+                  <i class="bi bi-x-circle"></i>
+                  <span>No intellectual property violation</span>
+                </div>
+                <div class="restriction-item">
+                  <i class="bi bi-x-circle"></i>
+                  <span>No harmful activities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
-                      <h3>
-                        <span class="num">2</span>
-                        <span class="question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.</p>
-                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
+        <!-- Key Points -->
+        <div class="terms-points aos-init gy-4 aos-animate" data-aos="fade-up">
+          <h3>Key Points to Note</h3>
+          <div class="points-grid gy-4">
+            <div class="point-item">
+              <div class="point-icon">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <div class="point-content">
+                <h4>Service Availability</h4>
+                <p>We strive to provide uninterrupted service but cannot guarantee 100% availability.</p>
+              </div>
+            </div>
 
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
-                      <h3>
-                        <span class="num">3</span>
-                        <span class="question">Dolor sit amet consectetur adipiscing elit pellentesque?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.</p>
-                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
+            <div class="point-item">
+              <div class="point-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="point-content">
+                <h4>Privacy Protection</h4>
+                <p>Your data is protected according to our privacy policy and applicable laws.</p>
+              </div>
+            </div>
 
+            <div class="point-item">
+              <div class="point-icon">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+              <div class="point-content">
+                <h4>Content Rights</h4>
+                <p>You retain rights to your content while granting us license to use it.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Important Notices -->
+          <div class="terms-notices aos-init aos-animate" data-aos="fade-up">
+            <div class="notice-wrapper">
+              <div class="notice-items">
+                <div class="notice-item">
+                  <div class="notice-marker">
+                    <i class="bi bi-exclamation-circle"></i>
+                  </div>
+                  <div class="notice-content">
+                    <h4>Service Modifications</h4>
+                    <p>We reserve the right to modify or discontinue any part of our service with or without notice.</p>
                   </div>
                 </div>
 
-                <!-- Pricing FAQs -->
-                <div class="tab-pane fade" id="faq-pricing" role="tabpanel" aria-labelledby="pricing-tab">
-                  <div class="faq-list">
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                        <span class="num">1</span>
-                        <span class="question">Ac odio tempor orci dapibus ultrices in iaculis?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
-                      <h3>
-                        <span class="num">2</span>
-                        <span class="question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
-                        <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
-                      <h3>
-                        <span class="num">3</span>
-                        <span class="question">Varius vel pharetra vel turpis nunc eget lorem dolor?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
+                <div class="notice-item">
+                  <div class="notice-marker">
+                    <i class="bi bi-exclamation-circle"></i>
+                  </div>
+                  <div class="notice-content">
+                    <h4>Account Termination</h4>
+                    <p>We may terminate accounts that violate these terms or for any other reason at our discretion.</p>
                   </div>
                 </div>
 
-                <!-- Support FAQs -->
-                <div class="tab-pane fade" id="faq-support" role="tabpanel" aria-labelledby="support-tab">
-                  <div class="faq-list">
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                        <span class="num">1</span>
-                        <span class="question">Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                        <p>Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
-                      <h3>
-                        <span class="num">2</span>
-                        <span class="question">Tortor dignissim convallis aenean et tortor at risus viverra?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
-                      <h3>
-                        <span class="num">3</span>
-                        <span class="question">Venenatis urna cursus eget nunc scelerisque viverra mauris in?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
-                        <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
+                <div class="notice-item">
+                  <div class="notice-marker">
+                    <i class="bi bi-exclamation-circle"></i>
+                  </div>
+                  <div class="notice-content">
+                    <h4>Terms Updates</h4>
+                    <p>These terms may be updated at any time. Continued use of the service implies acceptance.</p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="faq-cta text-center mt-5 aos-init" data-aos="fade-up" data-aos-delay="300">
-                <div class="container">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                      <div class="info-box">
-                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3 mt-4" style="width: 40px; height: 40px;">
-                          <i class="bi bi-geo-alt fs-5"></i>
-                        </span>
-                        <h6 class="mb-2 fw-bold">Address</h6>
-                        <p class="small text-muted">A108 Adam Street, New York, NY 535022</p>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                      <div class="info-box">
-                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3 mt-4" style="width: 40px; height: 40px;">
-                          <i class="bi bi-envelope fs-5"></i>
-                        </span>
-                        <h6 class="mb-2 fw-bold">Email Us</h6>
-                        <p class="small text-muted"><a href="mailto:info@example.com" class="text-decoration-none text-dark">info@example.com</a></p>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                      <div class="info-box">
-                        <span class="icon-circle d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-3 mt-4" style="width: 40px; height: 40px;">
-                          <i class="bi bi-phone fs-5"></i>
-                        </span>
-                        <h6 class="mb-2 fw-bold">Call Us</h6>
-                        <p class="small text-muted"><a href="tel:+155895548855" class="text-decoration-none text-dark">+1 5589 55488 55</a></p>
-                      </div>
-                    </div>
-
-                  </div>
+          <!-- Contact Box -->
+          <div class="terms-contact aos-init aos-animate" data-aos="fade-up">
+            <div class="contact-wrapper">
+              <div class="contact-content">
+                <div class="contact-text">
+                  <h4>Need Clarification?</h4>
+                  <p>If you have questions about these terms, our support team is here to help.</p>
+                </div>
+                <div class="contact-actions">
+                  <a href="#" class="btn-primary">Contact Support</a>
+                  <a href="#" class="btn-outline">Download Terms</a>
                 </div>
               </div>
-
-              <style>
-                .icon-circle {
-                  /* You can further customize the circle's appearance here if needed */
-                }
-              </style>
-
             </div>
           </div>
 
         </div>
 
-      </section>
+      </div>
+    </section>
 
     
 
