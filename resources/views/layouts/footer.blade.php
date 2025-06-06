@@ -27,21 +27,21 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Products</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Products 1</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Products 2</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Products 3</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Products 4</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Products 5</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 1</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 2</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 3</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 4</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 5</a></li>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Markets</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Markets 1</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Markets 2</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Markets 3</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Markets 4</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Markets 5</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 1</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 2</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 3</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 4</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 5</a></li>
         </ul>
       </div>
 
