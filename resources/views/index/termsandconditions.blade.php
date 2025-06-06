@@ -207,8 +207,8 @@
                 </div>
                 <div class="contact-actions">
                   <a href="#" class="btn-primary">Contact Support</a>
-                  <a href="#" class="btn-primary">Contact Support</a>
                   <a href="#" class="btn-outline">Download Terms</a>
+                  <a href="#" class="btn-primary">Contact Support</a>
                 </div>
               </div>
             </div>
