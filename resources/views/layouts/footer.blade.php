@@ -55,6 +55,7 @@
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.information-center') }}">Information Center</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.testimonials') }}">Client Testimonials</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.testimonials') }}">Help Center</a></li>
         </ul>
       </div>
 
