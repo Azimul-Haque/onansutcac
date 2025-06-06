@@ -207,7 +207,7 @@
                 </div>
                 <div class="contact-actions">
                   <a href="{{ route('index.get-contact') }}" class="btn-primary">Contact Support</a>
-                  <a href="{{ route('index.get-contact') }}" class="btn-primary">Help Center</a>
+                  <a href="{{ route('index.help-center') }}" class="btn-primary">Help Center</a>
                   <a href="#" class="btn-outline">Download Terms</a>
                 </div>
               </div>
