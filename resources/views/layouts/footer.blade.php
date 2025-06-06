@@ -46,6 +46,7 @@
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
+      <div class="col-lg-2 col-md-3 footer-links">
         <h4>Materials & Media</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.events') }}">Events</a></li>
