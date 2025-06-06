@@ -20,7 +20,7 @@
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
         <h1>Privacy Policy</h1>
-        <p>Answers at Your Fingertips</p>
+        <p>Safeguarding Your Privacy, Always</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
