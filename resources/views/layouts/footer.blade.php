@@ -27,21 +27,21 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Products</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 1</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 2</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 3</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 4</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Products 5</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 1</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 2</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 3</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 4</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 5</a></li>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Markets</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 1</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 2</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 3</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 4</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Markets 5</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 1</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 2</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 3</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 4</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 5</a></li>
         </ul>
       </div>
 
