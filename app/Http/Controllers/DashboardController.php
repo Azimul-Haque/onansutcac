@@ -130,12 +130,10 @@ class DashboardController extends Controller
     {
         $this->validate($request,array(
             'name'        => 'required|string|max:191',
-            'district_id' => 'required',
+            
             'mobile'      => 'required|string|max:191|unique:users,mobile,'.$id,
-            'name'        => 'required|string|max:191',
-            'email' => 'required|email|unique:users,email',
-            'mobile'      => 'required|string|max:191|unique:users,mobile',
-            'password'    => 'required|string|min:8|max:191',        ));
+            'password'    => 'nullable|string|min:8|max:191',
+        ));
 
         $user = User::find($id);
         $user->district_id = $request->district_id;
