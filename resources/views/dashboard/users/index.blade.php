@@ -196,67 +196,11 @@
                                     </div>
 
             				                <div class="input-group mb-3">
-            				                	<select name="role" class="form-control" required>
-            				                		<option disabled="" value="">ধরন নির্ধারণ করুন</option>
-            				                		<option value="admin" @if($user->role == 'admin') selected="" @endif>এডমিন</option>
-              													<option value="editor" @if($user->role == 'editor') selected="" @endif>জেলা এডমিন</option>
-                                        <option value="manager" @if($user->role == 'manager') selected="" @endif>প্রতিষ্ঠান ম্যানেজার</option>
-                                        {{-- <option value="volunteer" @if($user->role == 'volunteer') selected="" @endif>ভলান্টিয়ার</option>
-              													<option value="user" @if($user->role == 'user') selected="" @endif>User</option> --}}
-              													{{-- <option value="accountant" @if($user->role == 'accountant') selected="" @endif>একাউন্টেন্ট</option> --}}
-            				                	</select>
-            				                    <div class="input-group-append">
-            				                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
-            				                    </div>
-            				                </div>
-
-                                    <select name="district_id" id="district" class="form-control district select21" data-placeholder="জেলা নির্বাচন করুন" required>
-                                        <option selected="" disabled="" value="">জেলা নির্বাচন করুন</option>
-                                        @foreach($districts as $district)
-                                          <option value="{{ $district->id }}" @if($district->id == $user->district_id) selected @endif>{{ $district->name_bangla }}-{{ $district->name }}</option>
-                                        @endforeach
-                                    </select>
-
-                                    <div style="margin-bottom: 15px; margin-top: 15px;">
-                                      <select name="hospitals[]" class="form-control multiple-select" multiple="multiple" data-placeholder="যে যে হাসপাতালের এক্সেস দেওয়া হবে (প্রয়োজনে একাধিক সিলেক্ট করা যাবে) [Optional]">
-                                          @foreach($hospitals as $hospital)
-                                            <option value="{{ $hospital->id }}" @if($user->accessibleHospitals->contains($hospital)) selected @endif>{{ $hospital->name }} - ({{ $hospital->upazilla->name_bangla }}, {{ $hospital->district->name_bangla }})</option>
-                                          @endforeach
-                                      </select>
-                                    </div>
-
-                                    <div style="margin-bottom: 15px;">
-                                      <select name="doctors[]" class="form-control multiple-select" multiple="multiple" data-placeholder="যে যে ডাক্তারের এক্সেস দেওয়া হবে (প্রয়োজনে একাধিক সিলেক্ট করা যাবে) [Optional]" onautocomplete="off">
-                                          @foreach($doctors as $doctor)
-                                            <option value="{{ $doctor->id }}" @if($user->accessibleDoctors->contains($doctor)) selected @endif>{{ $doctor->name }} - ({{ $doctor->upazilla->name_bangla }}, {{ $doctor->district->name_bangla }})</option>
-                                          @endforeach
-                                      </select>
-                                    </div>
-
-                                    <div style="margin-bottom: 15px;">
-                                      <select name="blooddonors[]" class="form-control multiple-select" multiple="multiple" data-placeholder="যে যে রক্তদাতা/সংগঠনের এক্সেস দেওয়া হবে (প্রয়োজনে একাধিক সিলেক্ট করা যাবে) [Optional]" onautocomplete="off">
-                                          @foreach($blooddonors as $blooddonor)
-                                            <option value="{{ $blooddonor->id }}" @if($user->accessibleBlooddonors->contains($blooddonor)) selected @endif>{{ $blooddonor->name }} - ({{ $blooddonor->upazilla->name_bangla }}, {{ $blooddonor->district->name_bangla }})</option>
-                                          @endforeach
-                                      </select>
-                                    </div>
-
-                                    <div style="margin-bottom: 15px;">
-                                      <select name="coachings[]" class="form-control multiple-select" multiple="multiple" data-placeholder="যে যে শিক্ষা প্রতিষ্ঠানের এক্সেস দেওয়া হবে (প্রয়োজনে একাধিক সিলেক্ট করা যাবে) [Optional]" onautocomplete="off">
-                                          @foreach($coachings as $coaching)
-                                            <option value="{{ $coaching->id }}" @if($user->accessibleCoachings->contains($coaching)) selected @endif>{{ $coaching->name }} - ({{ $coaching->district->name_bangla }})</option>
-                                          @endforeach
-                                      </select>
-                                    </div>
-
-
-
-            				                <div class="input-group mb-3">
             				                    <input type="password"
             				                           name="password"
             				                           class="form-control"
             				                           autocomplete="new-password"
-            				                           placeholder="পাসওয়ার্ড (ঐচ্ছিক)">
+            				                           placeholder="Password (Optional)">
             				                    <div class="input-group-append">
             				                        <div class="input-group-text"><span class="fas fa-lock"></span></div>
             				                    </div>
@@ -387,7 +331,7 @@
 	                           name="password"
 	                           class="form-control"
 	                           autocomplete="off"
-	                           placeholder="পাসওয়ার্ড" required>
+	                           placeholder="Password" required>
 	                    <div class="input-group-append">
 	                        <div class="input-group-text"><span class="fas fa-lock"></span></div>
 	                    </div>
