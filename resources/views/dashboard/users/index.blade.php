@@ -131,7 +131,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-warning">দাখিল করুন</button>
+                                <button type="submit" class="btn btn-warning">Submit</button>
                               </div>
                             </form>
                           </div>
@@ -209,7 +209,7 @@
             				          </div>
             				          <div class="modal-footer">
             				            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            				            <button type="submit" class="btn btn-primary">দাখিল করুন</button>
+            				            <button type="submit" class="btn btn-primary">Submit</button>
             				          </div>
             			          </form>
             			        </div>
@@ -340,7 +340,7 @@
 	          </div>
 	          <div class="modal-footer">
 	            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	            <button type="submit" class="btn btn-success">দাখিল করুন</button>
+	            <button type="submit" class="btn btn-success">Submit</button>
 	          </div>
           </form>
         </div>
