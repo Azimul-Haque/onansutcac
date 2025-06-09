@@ -177,7 +177,7 @@
             				                           value="{{ $user->mobile }}"
             				                           autocomplete="off"
             				                           class="form-control"
-            				                           placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
+            				                           placeholder="Mobile" required>
             				                    <div class="input-group-append">
             				                        <div class="input-group-text"><span class="fas fa-phone"></span></div>
             				                    </div>
@@ -340,7 +340,7 @@
 	                           value="{{ old('mobile') }}"
 	                           autocomplete="off"
 	                           class="form-control"
-	                           placeholder="মোবাইল নম্বর (১১ ডিজিট)" required>
+	                           placeholder="Mobile" required>
 	                    <div class="input-group-append">
 	                        <div class="input-group-text"><span class="fas fa-phone"></span></div>
 	                    </div>
