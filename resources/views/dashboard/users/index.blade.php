@@ -83,7 +83,7 @@
                                     <textarea class="form-control" placeholder="মেসেজ লিখুন" name="message" style="min-height: 150px; resize: none;" required></textarea>
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-info">মেসেজ পাঠান</button>
                               </div>
                             </form>
@@ -130,7 +130,7 @@
                                     </div>
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-warning">দাখিল করুন</button>
                               </div>
                             </form>
@@ -264,7 +264,7 @@
             				            
             				          </div>
             				          <div class="modal-footer">
-            				            <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+            				            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             				            <button type="submit" class="btn btn-primary">দাখিল করুন</button>
             				          </div>
             			          </form>
@@ -300,7 +300,7 @@
                                 </center>
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <a href="{{ route('dashboard.users.delete', $user->id) }}" class="btn btn-danger">ডিলেট করুন</a>
                               </div>
                             </div>
@@ -395,7 +395,7 @@
 	            
 	          </div>
 	          <div class="modal-footer">
-	            <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+	            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 	            <button type="submit" class="btn btn-success">দাখিল করুন</button>
 	          </div>
           </form>
