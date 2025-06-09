@@ -47,7 +47,7 @@
                 <div class="input-group mb-3">
                     <input type="password"
                            name="password"
-                           placeholder="পাসওয়ার্ড"
+                           placeholder="Password"
                            class="form-control @error('password') is-invalid @enderror">
                     <div class="input-group-append">
                         <div class="input-group-text">
