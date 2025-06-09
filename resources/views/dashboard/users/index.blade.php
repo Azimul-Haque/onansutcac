@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title') ড্যাশবোর্ড | ব্যবহারকারীগণ @endsection
+@section('title') Dashboard | ব্যবহারকারীগণ @endsection
 
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
