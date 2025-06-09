@@ -150,7 +150,7 @@
             			      <div class="modal-dialog modal-lg" role="document">
             			        <div class="modal-content">
             			          <div class="modal-header bg-primary">
-            			            <h5 class="modal-title" id="editUserModalLabel">ব্যবহারকারী তথ্য হালনাগাদ</h5>
+            			            <h5 class="modal-title" id="editUserModalLabel">User তথ্য হালনাগাদ</h5>
             			            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             			              <span aria-hidden="true">&times;</span>
             			            </button>
@@ -202,7 +202,7 @@
               													<option value="editor" @if($user->role == 'editor') selected="" @endif>জেলা এডমিন</option>
                                         <option value="manager" @if($user->role == 'manager') selected="" @endif>প্রতিষ্ঠান ম্যানেজার</option>
                                         {{-- <option value="volunteer" @if($user->role == 'volunteer') selected="" @endif>ভলান্টিয়ার</option>
-              													<option value="user" @if($user->role == 'user') selected="" @endif>ব্যবহারকারী</option> --}}
+              													<option value="user" @if($user->role == 'user') selected="" @endif>User</option> --}}
               													{{-- <option value="accountant" @if($user->role == 'accountant') selected="" @endif>একাউন্টেন্ট</option> --}}
             				                	</select>
             				                    <div class="input-group-append">
@@ -287,13 +287,13 @@
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deleteUserModalLabel">ব্যবহারকারী ডিলেট</h5>
+                                <h5 class="modal-title" id="deleteUserModalLabel">User ডিলেট</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
                               <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই ব্যবহারকারীকে ডিলেট করতে চান?<br/>
+                                আপনি কি নিশ্চিতভাবে এই Userকে ডিলেট করতে চান?<br/>
                                 <center>
                                     <big><b>{{ $user->name }}</b></big><br/>
                                     <small><i class="fas fa-phone"></i> {{ $user->mobile }}</small>
@@ -325,7 +325,7 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addUserModalLabel">নতুন ব্যবহারকারী যোগ</h5>
+            <h5 class="modal-title" id="addUserModalLabel">নতুন User যোগ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
