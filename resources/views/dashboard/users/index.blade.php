@@ -167,7 +167,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="{{ route('dashboard.users.delete', $user->id) }}" class="btn btn-danger">Delete করুন</a>
+                                <a href="{{ route('dashboard.users.delete', $user->id) }}" class="btn btn-danger">Delete</a>
                               </div>
                             </div>
                           </div>
