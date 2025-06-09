@@ -73,11 +73,11 @@ class DashboardController extends Controller
                      ->orderBy('id', 'asc')
                      ->paginate(10);
 
-        $hospitals = Hospital::all();
-        $doctors = Doctor::all();
-        $blooddonors = Blooddonor::all();
-        $coachings = Coaching::all();
-        $districts = District::all();
+        // $hospitals = Hospital::all();
+        // $doctors = Doctor::all();
+        // $blooddonors = Blooddonor::all();
+        // $coachings = Coaching::all();
+        // $districts = District::all();
 
         return view('dashboard.users.index')
                     ->withUsers($users)
