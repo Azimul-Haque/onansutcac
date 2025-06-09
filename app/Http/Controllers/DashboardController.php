@@ -136,8 +136,8 @@ class DashboardController extends Controller
         ));
 
         $user = User::find($id);
-        $user->district_id = $request->district_id;
         $user->name = $request->name;
+        $user->email = $request->email;
         $user->mobile = $request->mobile;
         $user->role = $request->role;
         if(isset($request->hospitals)){
