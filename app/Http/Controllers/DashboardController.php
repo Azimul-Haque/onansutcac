@@ -111,11 +111,6 @@ class DashboardController extends Controller
             'name'        => 'required|string|max:191',
             'email' => 'required|email|unique:users,email',
             'mobile'      => 'required|string|max:191|unique:users,mobile',
-            'role'        => 'required',
-            'hospitals'   => 'sometimes',
-            'doctors'   => 'sometimes',
-            'blooddonors'   => 'sometimes',
-            'coachings'   => 'sometimes',
             'password'    => 'required|string|min:8|max:191',
         ));
 
