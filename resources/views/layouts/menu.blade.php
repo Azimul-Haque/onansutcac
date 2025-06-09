@@ -2,7 +2,7 @@
 <li class="nav-item">
     <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard') ? 'active' : '' }}">
         <i class="nav-icon fas fa-home"></i>
-        <p>ড্যাশবোর্ড</p>
+        <p>Dashboard</p>
     </a>
 </li>
 
@@ -10,7 +10,7 @@
 <li class="nav-item">
     <a href="{{ route('dashboard.users') }}" class="nav-link {{ Request::is('dashboard/users') ? 'active' : '' }} {{ Request::is('dashboard/users/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-users"></i>
-        <p>ব্যবহারকারীগণ</p>
+        <p>Users</p>
     </a>
 </li>
 @endif
