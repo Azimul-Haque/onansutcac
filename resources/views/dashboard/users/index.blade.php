@@ -29,10 +29,10 @@
                   <input type="text" class="form-control form-control-sm" placeholder="ব্যবহারকারী খুঁজুন" id="search-param" required>
                 </div>
                 <button type="button" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
-                  <i class="fas fa-search"></i> খুঁজুন
+                  <i class="fas fa-search"></i> Search
                 </button>
                 <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addUserModal" style="margin-left: 5px;">
-                  <i class="fas fa-user-plus"></i> নতুন
+                  <i class="fas fa-user-plus"></i> New
                 </button>
               </form>
             	
