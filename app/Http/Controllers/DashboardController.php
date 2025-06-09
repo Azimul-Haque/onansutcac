@@ -89,32 +89,19 @@ class DashboardController extends Controller
         $userscount = User::where('name', 'LIKE', "%$search%")
                           ->orWhere('email', 'LIKE', "%$search%")
                           ->orWhere('mobile', 'LIKE', "%$search%")
-                          ->orWhere('uid', 'LIKE', "%$search%")
-                          ->orWhere('onesignal_id', 'LIKE', "%$search%")
                           ->orderBy('id', 'desc')
                           ->count();
+
         $users = User::where('name', 'LIKE', "%$search%")
                      ->orWhere('email', 'LIKE', "%$search%")
                      ->orWhere('mobile', 'LIKE', "%$search%")
-                     ->orWhere('uid', 'LIKE', "%$search%")
-                     ->orWhere('onesignal_id', 'LIKE', "%$search%")
                      ->orderBy('id', 'desc')
                      ->paginate(10);
 
-        $hospitals = Hospital::all();
-        $doctors = Doctor::all();
-        $blooddonors = Blooddonor::all();
-        $coachings = Coaching::all();
-        $districts = District::all();
 
         return view('dashboard.users.index')
                     ->withUsers($users)
-                    ->withDistricts($districts)
-                    ->withUserscount($userscount)
-                    ->withHospitals($hospitals)
-                    ->withDoctors($doctors)
-                    ->withBlooddonors($blooddonors)
-                    ->withCoachings($coachings);
+                    ->withUserscount($userscount);
     }
 
     public function storeUser(Request $request)
