@@ -288,7 +288,7 @@
             $('#search-param').css({ "border": '#FF0000 2px solid'});
             Toast.fire({
                 icon: 'warning',
-                title: 'কিছু লিখে খুঁজুন!'
+                title: 'Write something!'
             })
           }
         });
@@ -301,7 +301,7 @@
               $('#search-param').css({ "border": '#FF0000 2px solid'});
               Toast.fire({
                   icon: 'warning',
-                  title: 'কিছু লিখে খুঁজুন!'
+                  title: 'Write something!'
               })
             }
           }
