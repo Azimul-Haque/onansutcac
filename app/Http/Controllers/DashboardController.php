@@ -116,7 +116,7 @@ class DashboardController extends Controller
 
         $user = new User;
         $user->name = $request->name;
-        $user->district_id = $request->district_id;
+        $user->email = $request->email;
         $user->mobile = $request->mobile;
         $user->role = $request->role;
         $user->password = Hash::make($request->password);
