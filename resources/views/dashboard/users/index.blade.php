@@ -58,7 +58,7 @@
                       
                 			<br/>
                             {{-- {{ $user->balances2 }} --}}
-                			<small class="text-black-50">{{ $user->mobile }}</small> 
+                			<small class="text-black-50">{{ $user->email }}</small> 
                 			{{-- <span class="badge @if($user->role == 'admin') bg-success @elseif($user->role == 'editor') bg-warning @else bg-info @endif">{{ role_bangla($user->role) }}</span> --}}
                 		</td>
                 		<td align="right" width="40%">
