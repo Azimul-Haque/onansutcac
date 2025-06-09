@@ -173,15 +173,27 @@
 
             				                <div class="input-group mb-3">
             				                    <input type="text"
-            				                           name="mobile"
-            				                           value="{{ $user->mobile }}"
+            				                           name="email"
+            				                           value="{{ $user->email }}"
             				                           autocomplete="off"
             				                           class="form-control"
-            				                           placeholder="Mobile" required>
+            				                           placeholder="Email" required>
             				                    <div class="input-group-append">
             				                        <div class="input-group-text"><span class="fas fa-phone"></span></div>
             				                    </div>
             				                </div>
+
+                                    <div class="input-group mb-3">
+                                        <input type="text"
+                                               name="mobile"
+                                               value="{{ $user->mobile }}"
+                                               autocomplete="off"
+                                               class="form-control"
+                                               placeholder="Mobile" required>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><span class="fas fa-phone"></span></div>
+                                        </div>
+                                    </div>
 
             				                <div class="input-group mb-3">
             				                	<select name="role" class="form-control" required>
