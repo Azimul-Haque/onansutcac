@@ -153,13 +153,13 @@
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deleteUserModalLabel">User ডিলেট</h5>
+                                <h5 class="modal-title" id="deleteUserModalLabel">User Delete</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
                               <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই Userকে ডিলেট করতে চান?<br/>
+                                আপনি কি নিশ্চিতভাবে এই Userকে Delete করতে চান?<br/>
                                 <center>
                                     <big><b>{{ $user->name }}</b></big><br/>
                                     <small><i class="fas fa-phone"></i> {{ $user->mobile }}</small>
@@ -167,7 +167,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="{{ route('dashboard.users.delete', $user->id) }}" class="btn btn-danger">ডিলেট করুন</a>
+                                <a href="{{ route('dashboard.users.delete', $user->id) }}" class="btn btn-danger">Delete করুন</a>
                               </div>
                             </div>
                           </div>
