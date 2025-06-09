@@ -165,7 +165,7 @@
             				                           name="name"
             				                           class="form-control"
             				                           value="{{ $user->name }}"
-            				                           placeholder="নাম" required>
+            				                           placeholder="Name" required>
             				                    <div class="input-group-append">
             				                        <div class="input-group-text"><span class="fas fa-user"></span></div>
             				                    </div>
@@ -328,7 +328,7 @@
 	                           name="name"
 	                           class="form-control"
 	                           value="{{ old('name') }}"
-	                           placeholder="নাম" required>
+	                           placeholder="Name" required>
 	                    <div class="input-group-append">
 	                        <div class="input-group-text"><span class="fas fa-user"></span></div>
 	                    </div>
