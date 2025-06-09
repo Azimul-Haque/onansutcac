@@ -346,21 +346,17 @@
 	                    </div>
 	                </div>
 
-	                <div class="input-group mb-3">
+	              {{--   <div class="input-group mb-3">
 	                	<select name="role" id="adduserrole" class="form-control" required>
 	                		<option selected="" disabled="" value="">ধরন</option>
 	                		<option value="admin">এডমিন</option>
                      <option value="editor">জেলা এডমিন</option>
                      <option value="manager">প্রতিষ্ঠান ম্যানেজার</option>
-                    {{--  <option value="manager">ম্যানেজার</option>
-                     <option value="volunteer">ভলান্টিয়ার</option>
-	                		<option value="user">ব্যবহারকারী</option> --}}
-							{{-- <option value="accountant">একাউন্টেন্ট</option> --}}
 	                	</select>
 	                    <div class="input-group-append">
 	                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
 	                    </div>
-	                </div>
+	                </div> --}}
 
                   <select name="district_id" id="district" class="form-control district select21" data-placeholder="জেলা নির্বাচন করুন" required>
                       <option selected="" disabled="" value="">জেলা নির্বাচন করুন</option>
