@@ -34,7 +34,7 @@
                     <input type="number"
                            name="email"
                            value="{{ old('email') }}"
-                           placeholder="মোবাইল নম্বর (১১ ডিজিট)"
+                           placeholder="Email"
                            class="form-control @error('email') is-invalid @enderror">
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-phone"></span></div>
