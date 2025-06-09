@@ -15,7 +15,7 @@
 @endsection
 
 @section('content')
-	@section('page-header') Users (Total {{ bangla($userscount) }} জন) @endsection
+	@section('page-header') Users (Total {{ $userscount }}) @endsection
     <div class="container-fluid">
 		<div class="card">
           <div class="card-header">
