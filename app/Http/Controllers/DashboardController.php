@@ -139,47 +139,6 @@ class DashboardController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->mobile = $request->mobile;
-        $user->role = $request->role;
-        if(isset($request->hospitals)){
-            $user->accessibleHospitals()->detach();
-            foreach($request->hospitals as $hospital_id) {
-                $hospital = Hospital::find($hospital_id);
-                $user->accessibleHospitals()->attach($hospital);
-            }
-        } else {
-            $user->accessibleHospitals()->detach();
-        }
-        if(isset($request->doctors)){
-            $user->accessibleDoctors()->detach();
-            foreach($request->doctors as $doctors_id) {
-                $doctor = Doctor::find($doctors_id);
-                $user->accessibleDoctors()->attach($doctor);
-            }
-        } else {
-            $user->accessibleDoctors()->detach();
-        }
-        if(isset($request->blooddonors)){
-            $user->accessibleBlooddonors()->detach();
-            foreach($request->blooddonors as $blooddonor_id) {
-                $blooddonor = Blooddonor::find($blooddonor_id);
-                $user->accessibleBlooddonors()->attach($blooddonor);
-            }
-        } else {
-            $user->accessibleBlooddonors()->detach();
-        }
-
-        if(isset($request->coachings)){
-            $user->accessibleCoachings()->detach();
-            foreach($request->coachings as $coaching_id) {
-                $coaching = Coaching::find($coaching_id);
-                $user->accessibleCoachings()->attach($coaching);
-            }
-        } else {
-            $user->accessibleCoachings()->detach();
-        }
-        if(!empty($request->password)) {
-            $user->password = Hash::make($request->password);
-        }
         $user->save();
 
         Session::flash('success', 'User updated successfully!');
