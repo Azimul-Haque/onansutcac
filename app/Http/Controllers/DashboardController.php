@@ -81,12 +81,7 @@ class DashboardController extends Controller
 
         return view('dashboard.users.index')
                     ->withUsers($users)
-                    ->withDistricts($districts)
-                    ->withUserscount($userscount)
-                    ->withHospitals($hospitals)
-                    ->withDoctors($doctors)
-                    ->withBlooddonors($blooddonors)
-                    ->withCoachings($coachings);
+                    ->withUserscount($userscount);
     }
 
     public function getUsersSearch($search)
