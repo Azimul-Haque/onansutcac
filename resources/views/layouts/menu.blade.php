@@ -223,6 +223,6 @@
 <li class="nav-item">
     <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link">
         <i class="nav-icon fas fa-sign-out-alt"></i>
-        <p>লগআউট</p>
+        <p>Logout</p>
     </a>
 </li>
