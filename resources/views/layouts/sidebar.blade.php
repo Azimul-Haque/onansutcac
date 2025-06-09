@@ -3,7 +3,9 @@
         <img src="{{ asset('images/logo.png') }}"
              alt="AdminLTE Logo"
              class="brand-image img-circle elevation-2">
-        <span class="brand-text font-weight-light">CactusNano</span>
+        <span class="brand-text font-weight-light">
+            <span style="color: #70BE42;">CACTUS</span><span style="color: #08AAE9;">NANO</span>
+        </span>
     </a>
 
     <div class="sidebar">
