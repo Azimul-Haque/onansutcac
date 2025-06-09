@@ -32,14 +32,14 @@
 
                 <div class="input-group mb-3">
                     <input type="number"
-                           name="mobile"
-                           value="{{ old('mobile') }}"
+                           name="email"
+                           value="{{ old('email') }}"
                            placeholder="মোবাইল নম্বর (১১ ডিজিট)"
-                           class="form-control @error('mobile') is-invalid @enderror">
+                           class="form-control @error('email') is-invalid @enderror">
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-phone"></span></div>
                     </div>
-                    @error('mobile')
+                    @error('email')
                     <span class="error invalid-feedback">{{ $message }}</span>
                     @enderror
                 </div>
