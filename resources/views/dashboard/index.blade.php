@@ -1,12 +1,12 @@
 @extends('layouts.app')
-@section('title') ড্যাশবোর্ড @endsection
+@section('title') Dashboard @endsection
 
 @section('third_party_stylesheets')
 
 @endsection
 
 @section('content')
-	@section('page-header') ড্যাশবোর্ড @endsection
+	@section('page-header') Dashboard @endsection
     <div class="container-fluid">
         <div class="row">
           {{-- @if(Auth::user()->role == 'admin' || in_array('hospitals', Auth::user()->accessibleTables())) --}}
