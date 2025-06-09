@@ -3,7 +3,7 @@
         <img src="{{ asset('images/logo.png') }}"
              alt="AdminLTE Logo"
              class="brand-image img-circle elevation-2">
-        <span class="brand-text font-weight-light">
+        <span class="brand-text font-weight-bold">
             <span style="color: #70BE42;">Cactus</span><span style="color: #08AAE9;">Nano</span>
         </span>
     </a>
