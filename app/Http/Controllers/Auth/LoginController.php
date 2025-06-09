@@ -38,8 +38,8 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function username()
-    {
-        return 'email'; // Change 'mobile_number' back to 'email'
-    }
+    // public function username()
+    // {
+    //     return 'email'; // Change 'mobile_number' back to 'email'
+    // }
 }
