@@ -177,7 +177,7 @@
             				                           value="{{ $user->email }}"
             				                           autocomplete="off"
             				                           class="form-control"
-            				                           placeholder="Email" required>
+            				                           placeholder="Email Address" required>
             				                    <div class="input-group-append">
             				                        <div class="input-group-text"><span class="fas fa-phone"></span></div>
             				                    </div>
@@ -189,7 +189,7 @@
                                                value="{{ $user->mobile }}"
                                                autocomplete="off"
                                                class="form-control"
-                                               placeholder="Mobile" required>
+                                               placeholder="Mobile No" required>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><span class="fas fa-phone"></span></div>
                                         </div>
