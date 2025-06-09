@@ -187,7 +187,7 @@
     <a href="{{ route('dashboard.messages') }}" class="nav-link {{ Request::is('dashboard/messages') ? 'active' : '' }} {{ Request::is('dashboard/messages/*') ? 'active' : '' }}">
         <i class="nav-icon far fa-envelope"></i>
         <p>
-            মেসেজসমূহ
+            Messages
             @if($unresolvedmessagecount > 0)
             ({{ $unresolvedmessagecount }})
             @endif
