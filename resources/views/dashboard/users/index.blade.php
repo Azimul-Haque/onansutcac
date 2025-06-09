@@ -159,7 +159,7 @@
                                 </button>
                               </div>
                               <div class="modal-body">
-                                আপনি কি নিশ্চিতভাবে এই Userকে Delete করতে চান?<br/>
+                                Are you sure to delete this user?<br/>
                                 <center>
                                     <big><b>{{ $user->name }}</b></big><br/>
                                     <small><i class="fas fa-phone"></i> {{ $user->mobile }}</small>
