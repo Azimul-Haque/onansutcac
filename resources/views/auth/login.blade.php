@@ -25,7 +25,7 @@
     <!-- /.login-box-body -->
     <div class="card">
         <div class="card-body login-card-body">
-            <p class="login-box-msg">লগইন করুন</p>
+            <p class="login-box-msg">Login</p>
 
             <form method="post" action="{{ url('/login') }}">
                 @csrf
@@ -69,7 +69,7 @@
                     </div>
 
                     <div class="col-6">
-                        <button type="submit" class="btn btn-primary btn-block">লগইন করুন</button>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
                     </div>
 
                 </div>
