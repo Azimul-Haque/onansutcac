@@ -122,34 +122,6 @@ class DashboardController extends Controller
         $user->password = Hash::make($request->password);
         $user->save();
 
-        if(isset($request->hospitals)){
-            foreach($request->hospitals as $hospital_id) {
-                $hospital = Hospital::find($hospital_id);
-                $user->accessibleHospitals()->attach($hospital);
-            }
-        }
-
-        if(isset($request->doctors)){
-            foreach($request->doctors as $doctors_id) {
-                $doctor = Doctor::find($doctors_id);
-                $user->accessibleDoctors()->attach($doctor);
-            }
-        }
-
-        if(isset($request->blooddonors)){
-            foreach($request->blooddonors as $blooddonor_id) {
-                $blooddonor = Blooddonor::find($blooddonor_id);
-                $user->accessibleBlooddonors()->attach($blooddonor);
-            }
-        }
-
-        if(isset($request->coachings)){
-            foreach($request->coachings as $coaching_id) {
-                $coaching = Coaching::find($coaching_id);
-                $user->accessibleCoachings()->attach($coaching);
-            }
-        }
-
         Session::flash('success', 'User created successfully!');
         return redirect()->route('dashboard.users');
     }
