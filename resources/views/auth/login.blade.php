@@ -64,7 +64,7 @@
                     <div class="col-6">
                         <div class="icheck-primary">
                             <input type="checkbox" id="remember">
-                            <label for="remember">মনে রাখুন</label>
+                            <label for="remember">Remember me</label>
                         </div>
                     </div>
 
