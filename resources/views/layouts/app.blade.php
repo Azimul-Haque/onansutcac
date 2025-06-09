@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title')</title>
+    <title>@yield('title') | CactusNano</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="{{ asset('images/favicon.png') }}">
