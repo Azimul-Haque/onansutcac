@@ -37,7 +37,7 @@
                            placeholder="Email"
                            class="form-control @error('email') is-invalid @enderror">
                     <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-phone"></span></div>
+                        <div class="input-group-text"><span class="fas fa-email"></span></div>
                     </div>
                     @error('email')
                     <span class="error invalid-feedback">{{ $message }}</span>
