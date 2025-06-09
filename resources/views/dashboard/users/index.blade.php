@@ -236,18 +236,6 @@
 	                    </div>
 	                </div>
 
-	              {{--   <div class="input-group mb-3">
-	                	<select name="role" id="adduserrole" class="form-control" required>
-	                		<option selected="" disabled="" value="">ধরন</option>
-	                		<option value="admin">এডমিন</option>
-                     <option value="editor">জেলা এডমিন</option>
-                     <option value="manager">প্রতিষ্ঠান ম্যানেজার</option>
-	                	</select>
-	                    <div class="input-group-append">
-	                        <div class="input-group-text"><span class="fas fa-user-secret"></span></div>
-	                    </div>
-	                </div> --}}
-
 	                <div class="input-group mb-3">
 	                    <input type="password"
 	                           name="password"
