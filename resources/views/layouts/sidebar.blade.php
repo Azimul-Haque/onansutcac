@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-light-primary elevation-2">
     <a href="{{ route('dashboard.index') }}" class="brand-link">
-        <img src="{{ asset('images/icon.png') }}"
+        <img src="{{ asset('images/logo.png') }}"
              alt="AdminLTE Logo"
              class="brand-image img-circle elevation-2">
         <span class="brand-text font-weight-light">CactusNano</span>
