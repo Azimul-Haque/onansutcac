@@ -349,7 +349,7 @@
                   <div class="input-group mb-3">
                       <input type="text"
                              name="email"
-                             value="{{ $user->email }}"
+                             value="{{ old('email') }}"
                              autocomplete="off"
                              class="form-control"
                              placeholder="Email Address" required>
