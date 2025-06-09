@@ -4,7 +4,7 @@
              alt="AdminLTE Logo"
              class="brand-image img-circle elevation-2">
         <span class="brand-text font-weight-light">
-            <span style="color: #70BE42;">CACTUS</span><span style="color: #08AAE9;">NANO</span>
+            <span style="color: #70BE42;">Cactus</span><span style="color: #08AAE9;">Nano</span>
         </span>
     </a>
 
