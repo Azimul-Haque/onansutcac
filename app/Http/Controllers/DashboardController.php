@@ -282,6 +282,7 @@ class DashboardController extends Controller
 
         $market->save();
 
+        Cache::forget('products_for_footer');
         Session::flash('success', 'Market created successfully!');
         return redirect()->route('dashboard.markets');
     }
