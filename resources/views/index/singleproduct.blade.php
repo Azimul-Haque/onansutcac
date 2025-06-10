@@ -34,6 +34,11 @@
 
                 <div class="post-img">
                   <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid">
+                  @if($product->image)
+                      <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid" alt="">
+                  @else
+                      <img src="{{ asset('vendor/dewi/assets/img/services-1.jpg') }}" class="img-fluid" alt="">
+                  @endif
                 </div>
 
                 <h2 class="title">{{ $product->title }}</h2>
