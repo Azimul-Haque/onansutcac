@@ -10,18 +10,18 @@
     <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
-              <a href="{{ route('dashboard.team-details') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.users') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-users"></i></span>
 
                   <div class="info-box-content">
-                      <span class="info-box-text">Team Details</span>
+                      <span class="info-box-text">Users</span>
                       <small class="info-box-text" style="margin-top: 10px;">View More</small>
                   </div>
               </a>
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.meta-data') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-success elevation-1"><i class="fas fa-info-circle"></i></span>
 
                   <div class="info-box-content">
@@ -32,7 +32,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.abouts-data') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-address-card"></i></span>
 
                   <div class="info-box-content">
@@ -54,7 +54,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.markets') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-chart-line"></i></span>
 
                   <div class="info-box-content">
@@ -65,7 +65,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.news') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-success elevation-1"><i class="fas fa-newspaper"></i></span>
 
                   <div class="info-box-content">
@@ -76,7 +76,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.events') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-calendar-alt"></i></span>
 
                   <div class="info-box-content">
@@ -87,7 +87,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.success-stories') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-info elevation-1"><i class="fas fa-trophy"></i></span>
 
                   <div class="info-box-content">
@@ -98,7 +98,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.clients') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-handshake"></i></span>
 
                   <div class="info-box-content">
@@ -109,7 +109,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.testimonials') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-success elevation-1"><i class="fas fa-comment-alt"></i></span>
 
                   <div class="info-box-content">
@@ -120,7 +120,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.information-center') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-info-circle"></i></span>
 
                   <div class="info-box-content">
@@ -131,7 +131,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.help-center-faq') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-info elevation-1"><i class="fas fa-question-circle"></i></span>
 
                   <div class="info-box-content">
@@ -142,7 +142,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.statistics') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-chart-pie"></i></span>
 
                   <div class="info-box-content">
