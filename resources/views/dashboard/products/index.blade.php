@@ -118,7 +118,7 @@
 
                                         <div class="form-group">
                                             <label for="productTextEdit{{ $product->id }}">Product Description/Article</label>
-                                            <textarea id="productTextEdit{{ $product->id }}" name="text" class="form-control summernote-editor">{{ old('text', $product->text) }}</textarea>
+                                            <textarea id="productTextEdit{{ $product->id }}" name="text" class="form-control summernote-editor" required>{{ old('text', $product->text) }}</textarea>
                                             @error('text')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
