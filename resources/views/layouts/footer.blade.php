@@ -30,6 +30,11 @@
           @foreach($productsforfooter as $product)
             <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
           @endforeach
+          
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 2</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 3</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 4</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 5</a></li>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
