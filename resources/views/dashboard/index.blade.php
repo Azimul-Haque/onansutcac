@@ -220,7 +220,7 @@
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a href="{{ route('dashboard.clearquerycache') }}" class="btn btn-warning">ক্যাশ ক্লিয়ার করুন</a>
+                    <a href="{{ route('dashboard.clearquerycache') }}" class="btn btn-warning">Clear Caches</a>
                     </div>
                 </div>
                 </div>
