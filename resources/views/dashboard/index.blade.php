@@ -15,7 +15,7 @@
 
                 <div class="info-box-content">
                   <span class="info-box-text">হাসপাতাল তালিকা</span>
-                  <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                  <small class="info-box-text" style="margin-top: 10px;">Click</small>
                 </div>
               </a>
             </div>
@@ -26,7 +26,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">ডাক্তার তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -37,7 +37,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">রক্তদাতা তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -48,7 +48,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">অ্যাম্বুলেন্স তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -59,7 +59,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">ই-সেবা তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -70,7 +70,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">আইনজীবী তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -81,7 +81,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">শিক্ষা প্রতিষ্ঠান তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -92,7 +92,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">বাস তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -103,7 +103,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">রেন্ট-এ-কার তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -114,7 +114,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">দৈনিক পত্রিকা তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -125,7 +125,7 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">সাংবাদিকরৃন্দ</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
@@ -136,12 +136,12 @@
 
               <div class="info-box-content">
                 <span class="info-box-text">বাস তালিকা</span>
-                <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
+                <small class="info-box-text" style="margin-top: 10px;">Click</small>
               </div>
             </a>
           </div>
         </div>
-        
+
         @if(Auth::user()->role == 'admin')
         <div class="row">
           <div class="col-md-6">
