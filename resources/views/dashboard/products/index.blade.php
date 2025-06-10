@@ -49,7 +49,7 @@
                     <th>Title</th>
                     <th>Slug</th>
                     <th>Image</th>
-                    <th style="width: 40%">Actions</th>
+                    <th style="width: 40%" align="right">Actions</th>
                 </tr>
               </thead>
               <tbody>
