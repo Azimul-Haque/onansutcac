@@ -39,6 +39,9 @@
       @foreach($products as $product)
         <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}<span>(USA, SG)</span></a></li>
       @endforeach
+      @foreach($products as $product)
+        <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}<span>(USA, SG)</span></a></li>
+      @endforeach
     </ul>
 
   </div><!--/Categories Widget -->
