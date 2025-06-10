@@ -140,6 +140,27 @@
     </footer>
 </div>
 
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- Popper.js (required for Bootstrap 4 tooltips) -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap 4 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+<!-- Summernote JS -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+
+<!-- Initialize Summernote (can go in page-specific script) -->
+<script>
+    $(document).ready(function() {
+        $('.summernote-editor').summernote({
+            height: 200
+        });
+    });
+</script>
+
 <script src="{{ mix('js/app.js') }}" defer></script>
 <script src="{{ asset('js/pace.min.js') }}"></script>
 <script>
