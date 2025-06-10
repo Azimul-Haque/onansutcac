@@ -16,6 +16,7 @@
 
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pace.min.css') }}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     @yield('third_party_stylesheets')
 
     @stack('page_css')
@@ -140,7 +141,6 @@
     </footer>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="{{ mix('js/app.js') }}" defer></script>
 <script src="{{ asset('js/pace.min.js') }}"></script>
 <script>
