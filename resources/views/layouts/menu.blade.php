@@ -14,20 +14,6 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.products') }}" class="nav-link {{ Request::is('dashboard/products') ? 'active' : '' }} {{ Request::is('dashboard/products/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-list"></i>
-        <p>Products</p>
-    </a>
-</li>
-
-<li class="nav-item">
-    <a href="{{ route('dashboard.markets') }}" class="nav-link {{ Request::is('dashboard/markets') ? 'active' : '' }} {{ Request::is('dashboard/markets/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-chart-bar"></i>
-        <p>Markets</p>
-    </a>
-</li>
-
-<li class="nav-item">
     <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-users-cog"></i>
         <p>Team Details</p>
@@ -45,6 +31,20 @@
     <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-file-alt"></i>
         <p>Abouts Data</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.products') }}" class="nav-link {{ Request::is('dashboard/products') ? 'active' : '' }} {{ Request::is('dashboard/products/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-list"></i>
+        <p>Products</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.markets') }}" class="nav-link {{ Request::is('dashboard/markets') ? 'active' : '' }} {{ Request::is('dashboard/markets/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-chart-bar"></i>
+        <p>Markets</p>
     </a>
 </li>
 
