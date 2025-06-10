@@ -49,7 +49,9 @@
                   <a href="{{ route('index.singleproduct', 'single') }}" class="stretched-link">
                     <h3>{{ $product->title }}</h3>
                   </a>
-                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+                  <p>
+                    {!! $product->text !!}
+                  </p>
 
                   <a href="{{ route('index.singleproduct', 'single') }}" class="service-link">
                     <span>Explore More</span>
