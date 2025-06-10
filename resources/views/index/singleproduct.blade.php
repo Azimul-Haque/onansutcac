@@ -2,7 +2,17 @@
 @section('title') {{ $product->title }} | Products @endsection
 
 @section('third_party_stylesheets')
-  
+  <style type="text/css">
+    .blink_me {
+      animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
 @endsection
 <style type="text/css">
   .content img {
