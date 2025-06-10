@@ -216,7 +216,7 @@
                     </button>
                     </div>
                     <div class="modal-body">
-                      আপনি কি নিশ্চিতভাবে সকল কোয়েরি ক্যাশ ক্লিয়ার করতে চান?<br/>
+                      Are you sure you want to clear all query caches?<br/>
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
