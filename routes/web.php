@@ -314,10 +314,10 @@ Route::post('/dashboard/blogs/category/{id}/update', 'DashboardController@update
 Route::get('/dashboard/components', 'DashboardController@getComponents')->name('dashboard.components');
 
 
-Route::get('/dashboard/products', 'DashboardController@getBlogs')->name('dashboard.products');
-Route::get('/dashboard/products/{search}', 'DashboardController@getBlogsSearch')->name('dashboard.products.search');
-Route::post('/dashboard/products/store', 'DashboardController@storeBlog')->name('dashboard.products.store');
-Route::post('/dashboard/products/{id}/update', 'DashboardController@updateBlog')->name('dashboard.products.update');
-Route::get('/dashboard/products/{id}/delete', 'DashboardController@deleteBlog')->name('dashboard.products.delete');
-Route::post('/dashboard/products/category/store', 'DashboardController@storeBlogCategory')->name('dashboard.products.blogcategory.store');
-Route::post('/dashboard/products/category/{id}/update', 'DashboardController@updateBlogCategory')->name('dashboard.products.blogcategory.update');
+Route::get('/dashboard/products', 'DashboardController@getProducts')->name('dashboard.products');
+Route::get('/dashboard/products/{search}', 'DashboardController@getProductsSearch')->name('dashboard.products.search');
+Route::post('/dashboard/products/store', 'DashboardController@storeProduct')->name('dashboard.products.store');
+Route::post('/dashboard/products/{id}/update', 'DashboardController@updateProduct')->name('dashboard.products.update');
+Route::get('/dashboard/products/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.products.delete');
+Route::post('/dashboard/products/category/store', 'DashboardController@storeProductCategory')->name('dashboard.products.Productcategory.store');
+Route::post('/dashboard/products/category/{id}/update', 'DashboardController@updateProductCategory')->name('dashboard.products.blogcategory.update');
