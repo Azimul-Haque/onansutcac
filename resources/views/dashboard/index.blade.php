@@ -64,7 +64,6 @@
             </a>
           </div>
 
-          @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
           <div class="col-md-3">
             <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-success elevation-1"><i class="fas fa-gavel"></i></span>
@@ -75,9 +74,7 @@
               </div>
             </a>
           </div>
-          @endif
 
-          @if(Auth::user()->role == 'admin')
           <div class="col-md-3">
             <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chalkboard-teacher"></i></span>
@@ -88,7 +85,7 @@
               </div>
             </a>
           </div>
-          @elseif(Auth::user()->role == 'editor' || Auth::user()->role == 'manager')
+          
           <div class="col-md-3">
             <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chalkboard-teacher"></i></span>
