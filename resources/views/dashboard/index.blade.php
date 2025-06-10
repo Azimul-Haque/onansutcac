@@ -219,7 +219,7 @@
                       Are you sure you want to clear all query caches?<br/>
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ফিরে যান</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <a href="{{ route('dashboard.clearquerycache') }}" class="btn btn-warning">ক্যাশ ক্লিয়ার করুন</a>
                     </div>
                 </div>
