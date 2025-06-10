@@ -103,11 +103,15 @@ class IndexController extends Controller
 
     public function getMarkets()
     {
+        $markets = Product::orderBy('id', 'desc')->get();
         return view('index.markets');
     }
 
     public function getMarket($id)
     {
+        $product = Product::where('slug', $slug)->orderBy('id', 'desc')->first();
+        $markets = Product::orderBy('id', 'desc')->get()->take(6);
+
         $products = Product::orderBy('id', 'desc')->get()->take(6);
 
         return view('index.singlemarket')->withProducts($products);
