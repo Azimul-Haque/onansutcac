@@ -40,9 +40,11 @@
             @php
               $modulo_index = ($loop->iteration - 1) % 2;
               $delay = 100 + ($modulo_index * 100);
-              echo $modulo_index;
+              if($modulo_index == 0) {
+                $datadirection = fade-right
+              }
             @endphp
-            <div class="col-md-6 aos-init" data-aos="fade-right" data-aos-delay="100">
+            <div class="col-md-6 aos-init" data-aos="" data-aos-delay="100">
               <div class="service-item">
                 <div class="service-icon">
                   <i class="bi bi-code-slash"></i>
