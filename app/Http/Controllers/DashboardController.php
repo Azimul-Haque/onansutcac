@@ -230,7 +230,7 @@ class DashboardController extends Controller
 
     public function deleteProduct($id)
     {
-
+        $product = Product::findOrFail($id);
     }
 
 
