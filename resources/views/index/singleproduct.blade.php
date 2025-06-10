@@ -13,6 +13,7 @@
       }
     }
   </style>
+  TEXTTTTTTTTTTTTTTTTTT
 @endsection
 <style type="text/css">
   .content img {
