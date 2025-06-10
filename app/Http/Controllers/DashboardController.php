@@ -213,7 +213,7 @@ class DashboardController extends Controller
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug',
             'text'  => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ));
 
         $product = new Product;
@@ -242,7 +242,7 @@ class DashboardController extends Controller
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug,' . $id,
             'text'  => 'required',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
 
         $product = Product::findOrFail($id);
@@ -271,7 +271,7 @@ class DashboardController extends Controller
 
     public function deleteProduct($id)
     {
-        
+
     }
 
 
