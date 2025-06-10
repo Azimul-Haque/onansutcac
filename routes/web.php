@@ -320,4 +320,4 @@ Route::post('/dashboard/products/store', 'DashboardController@storeProduct')->na
 Route::post('/dashboard/products/{id}/update', 'DashboardController@updateProduct')->name('dashboard.products.update');
 Route::get('/dashboard/products/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.products.delete');
 Route::post('/dashboard/products/category/store', 'DashboardController@storeProductCategory')->name('dashboard.products.productcategory.store');
-Route::post('/dashboard/products/category/{id}/update', 'DashboardController@updateProductCategory')->name('dashboard.products.blogcategory.update');
+Route::post('/dashboard/products/category/{id}/update', 'DashboardController@updateProductCategory')->name('dashboard.products.productcategory.update');
