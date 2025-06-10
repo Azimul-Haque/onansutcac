@@ -3,7 +3,7 @@
 
 @section('third_party_stylesheets')
   <style>
-    .blog-details .content img {
+    .blog-details .content p img {
       width: 100%;
     }
   </style>
