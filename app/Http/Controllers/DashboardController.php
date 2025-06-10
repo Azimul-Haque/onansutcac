@@ -23,6 +23,7 @@ use Artisan;
 use OneSignal;
 use Purifier;
 use Cache;
+use View;
 
 class DashboardController extends Controller
 {
