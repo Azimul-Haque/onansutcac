@@ -5,8 +5,8 @@
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/select2-bootstrap4.min.css') }}" rel="stylesheet" />
-    <!-- CKEditor 4 CDN for WYSIWYG editor - Updated to 4.25.1-lts -->
-    <script src="https://cdn.ckeditor.com/4.25.1-lts/standard/ckeditor.js"></script>
+    <!-- CKEditor 4 CDN for WYSIWYG editor - Reverted to 4.16.2/standard for stability and no messages -->
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <style type="text/css">
       .select2-selection__choice{
           background-color: rgba(0, 123, 255) !important;
@@ -119,7 +119,7 @@
                                             <div class="form-group">
                                                 <label for="productImageEdit{{ $product->id }}">Current Image:</label><br>
                                                 @if($product->image)
-                                                    <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="max-width: 150px; height: auto;">
+                                                    <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
                                                     <br>
                                                     <small class="text-muted">Leave blank to keep current image.</small>
                                                 @else
