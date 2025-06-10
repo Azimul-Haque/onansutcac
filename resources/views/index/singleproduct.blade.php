@@ -5,14 +5,12 @@
 
 @endsection
 
-@stack('page_css')
-  <style type="text/css">
-    .content img {
-      max-width: 100% !important;
-      height: auto !important;
-    }
-  </style>
-@endstack
+<style type="text/css">
+  .content img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+</style>
 
 
 @section('content')
