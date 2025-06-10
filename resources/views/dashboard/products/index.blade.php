@@ -232,7 +232,7 @@
 
                 <div class="form-group">
                     <label for="productTextAdd">Product Description/Article</label>
-                    <textarea id="productTextAdd" name="text" class="form-control summernote-editor">{{ old('text') }}</textarea>
+                    <textarea id="productTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea>
                     @error('text')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
