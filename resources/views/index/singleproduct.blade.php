@@ -3,10 +3,10 @@
 
 @section('third_party_stylesheets')
   <style>
-    .blog-details .content img {
-      max-width: 100%;
-      height: auto;
-      display: block;
+    img {
+        max-width: 100%; /* Important: Makes the image shrink if it's wider than its container */
+        height: auto;    /* Important: Maintains the image's aspect ratio when scaling down */
+        display: block;  /* Optional but often helpful: Treats the image as a block element, removing extra space below it */
     }
   </style>
 @endsection
