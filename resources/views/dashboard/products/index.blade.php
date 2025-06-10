@@ -58,7 +58,7 @@
                         <td>
                             <a href="#!">{{ $product->title }}</a>
                             <br/>
-                            <small class="text-black-50">{{ Str::limit(strip_tags($product->text), 100) }}</small>
+                            {{-- <small class="text-black-50">{{ Str::limit(strip_tags($product->text), 100) }}</small> --}}
                         </td>
                         <td>{{ $product->slug }}</td>
                         <td>
