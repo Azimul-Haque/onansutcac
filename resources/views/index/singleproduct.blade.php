@@ -2,7 +2,9 @@
 @section('title') Title 1 | Products @endsection
 
 @section('third_party_stylesheets')
-
+  <style>
+    .content
+  </style>
 @endsection
 
 @section('content')
