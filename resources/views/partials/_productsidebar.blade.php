@@ -35,14 +35,15 @@
   <div class="categories-widget widget-item">
 
     <h3 class="widget-title">Products</h3>
-    {{-- <ul class="mt-3">
+    <ul class="mt-3">
       @foreach($products as $product)
         <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}<span>(USA, SG)</span></a></li>
       @endforeach
-    </ul> --}}
-    @foreach($products as $product)
-      <h4><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></h4>
-    @endforeach
+      @foreach($products as $product)
+        <h4><a href="{{ route('index.singleproduct', $product->slug) }}">Nihil blanditiis at in nihil autem</a></h4>
+      @endforeach
+    </ul>
+
   </div><!--/Categories Widget -->
 
   <!-- Recent Posts Widget -->
