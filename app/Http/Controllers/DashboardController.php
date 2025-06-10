@@ -331,6 +331,7 @@ class DashboardController extends Controller
 
         $market->delete();
 
+        Cache::forget('markets_for_footer');
         Session::flash('success', 'Market deleted successfully!');
         return redirect()->route('dashboard.markets');
     }
