@@ -30,10 +30,11 @@ class IndexController extends Controller
      *
      * @return void
      */
-    // public function __construct()
-    // {
-        
-    // }
+    public function __construct()
+    {
+        $productsforfooter = Product::orderBy('id', 'desc')->get()->take(6);
+        View::share('productsforfooter', $productsforfooter);
+    }
 
     /**
      * Show the application dashboard.
