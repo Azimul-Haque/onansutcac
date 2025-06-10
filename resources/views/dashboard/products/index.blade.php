@@ -83,7 +83,7 @@
                                   <form method="post" action="{{ route('dashboard.products.update', $product->id) }}" enctype="multipart/form-data">
                                         <div class="modal-body">
                                             @csrf
-                                            @method('PUT') {{-- Use PUT method for updates --}}
+                                            @method('PUT') {{-- Use PUT method for updates --}
 
                                             <div class="input-group mb-3">
                                                 <input type="text"
@@ -265,17 +265,25 @@
     <!-- Summernote JS for WYSIWYG editor -->
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
     <script type="text/javascript">
-        // Initialize Summernote on all textareas with class 'summernote-editor'
+        // Ensure jQuery is loaded before attempting to initialize Summernote
+        // Also ensure Bootstrap 4's JavaScript is loaded in your layouts.app
+        // (e.g., <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>)
         $(document).ready(function() {
-            $('.summernote-editor').summernote({
-                toolbar: [
-                    ['style', ['bold', 'italic', 'strikethrough']],
-                    ['para', ['ul', 'ol', 'paragraph', 'blockquote']], // Includes paragraph format and blockquote
-                    ['insert', ['link', 'picture', 'table', 'hr']], // Link, Image, Table, Horizontal Rule
-                    ['history', ['undo', 'redo']] // Undo/Redo
-                ],
-                height: 200, // Set the height of the editor area
-            });
+            // Check if Summernote function exists before initializing
+            if ($.fn.summernote) {
+                $('.summernote-editor').summernote({
+                    toolbar: [
+                        ['style', ['bold', 'italic', 'strikethrough']],
+                        ['para', ['ul', 'ol', 'paragraph', 'blockquote']], // Includes paragraph format and blockquote
+                        ['insert', ['link', 'picture', 'table', 'hr']], // Link, Image, Table, Horizontal Rule
+                        ['history', ['undo', 'redo']] // Undo/Redo
+                    ],
+                    height: 200, // Set the height of the editor area
+                });
+            } else {
+                console.error("Summernote is not loaded. Check the CDN link or if there are conflicts.");
+                console.log("Ensure Bootstrap 4 JS is included in your layouts.app before Summernote JS.");
+            }
 
             // Handle custom file input label update
             $('.custom-file-input').on('change', function() {
