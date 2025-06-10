@@ -52,7 +52,7 @@
     <h3 class="widget-title">Products</h3>
     @foreach($products as $product)
     <div class="post-item">
-      @if($product->image && file_exists(public_path('images/products/' . $product->image)))
+      @if($product->image && file_exists(public_path('images/productss/' . $product->image)))
         <img src="{{ asset('images/products/' . $product->image) }}" alt="N/A" class="flex-shrink-0">
       @else
         <img src="https://placehold.co/100x100/40b0e0/ffffff?text=P" alt="N/A" class="flex-shrink-0">
