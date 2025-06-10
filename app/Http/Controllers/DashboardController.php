@@ -257,20 +257,15 @@ class DashboardController extends Controller
 
             // Process and save the new image
             $image    = $request->file('image');
-            // Assuming random_string is a global helper or Str::random() is intended
             $filename = Str::random(5) . time() . '.' . "webp";
             $location = public_path('images/products/' . $filename);
             Image::make($image)->fit(200, 355)->save($location);
-            $product->image = $filename; // Update product's image field with the new filename
+            $product->image = $filename;
         }
-        // If no new image is uploaded ($request->hasFile('image') is false),
-        // the $product->image field will retain its existing value, which is the desired behavior.
 
-        $product->save(); // Save the updated product data to the database
+        $product->save();
 
-        // Flash a success message to the session
         Session::flash('success', 'Product updated successfully!');
-        // Redirect back to the products listing page
         return redirect()->route('dashboard.products');
     }
 
