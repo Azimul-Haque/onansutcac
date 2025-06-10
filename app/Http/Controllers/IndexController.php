@@ -17,6 +17,7 @@ use Image;
 use File;
 use Session;
 use Artisan;
+use Cache;
 // use Redirect;
 // use OneSignal;
 // use PDF;
