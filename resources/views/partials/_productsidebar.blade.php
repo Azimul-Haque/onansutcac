@@ -50,7 +50,7 @@
 
     <div class="post-item">
       <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
-      {{-- <time datetime="2020-01-01">Jan 1, 2020</time> --}}
+      <time datetime="2020-01-01">Jan 1, 2020</time>
     </div><!-- End recent post item-->
 
     <div class="post-item">
