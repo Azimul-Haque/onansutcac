@@ -38,7 +38,8 @@
 
           @foreach($products as $product)
               @php
-                $delay = 100 * ($loop->iteration + 1);
+                $modulo_index = ($loop->iteration - 1) % 3;
+                $delay = 200 + ($modulo_index * 100);
               @endphp
             <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="{{ $delay }}">
               <div class="service-item">
