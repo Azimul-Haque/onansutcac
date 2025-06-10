@@ -2,13 +2,14 @@
 @section('title') {{ $product->title }} | Products @endsection
 
 @section('third_party_stylesheets')
-  <style type="text/css">
-    .content img {
-      max-width: 100% !important;
-      height: auto !important;
-    }
-  </style>
+  
 @endsection
+<style type="text/css">
+  .content img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+</style>
 
 @section('content')
     <!-- Page Title -->
