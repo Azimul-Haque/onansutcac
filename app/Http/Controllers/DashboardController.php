@@ -250,7 +250,6 @@ class DashboardController extends Controller
         $product->text = Purifier::clean($request->text, 'youtube');
 
         if($request->hasFile('image')) {
-            // Check if an old image exists and delete it from the public directory
             if ($product->image && file_exists(public_path('images/products/' . $product->image))) {
                 unlink(public_path('images/products/' . $product->image));
             }
