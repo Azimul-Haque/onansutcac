@@ -107,7 +107,9 @@ class IndexController extends Controller
 
     public function getMarket($id)
     {
-        return view('index.singlemarket');
+        $products = Product::orderBy('id', 'desc')->get()->take(6);
+        
+        return view('index.singlemarket')->withProducts($products);
     }
 
     public function getRegionalOffices()
