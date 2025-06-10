@@ -65,7 +65,7 @@
         </a>
         <h5>Our Newsletter</h5>
         <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-        <form action="forms/newsletter.php" method="post" class="php-email-form">
+        <form action="" method="post" class="php-email-form">
           <div class="newsletter-form"><input type="email" name="email" required><input type="submit" value="Subscribe"></div>
           <div class="loading">Loading</div>
           <div class="error-message"></div>
