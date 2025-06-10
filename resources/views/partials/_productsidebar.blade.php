@@ -37,7 +37,7 @@
     <h3 class="widget-title">Products</h3>
     <ul class="mt-3">
       @foreach($products as $product)
-        <li><a href="#">{{ $product->title }}<span>(USA, SG)</span></a></li>
+        <li><a href="{{ route('index.singleproduct', {{ $product->title }}) }}">{{ $product->title }}<span>(USA, SG)</span></a></li>
       @endforeach
     </ul>
 
