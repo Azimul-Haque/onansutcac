@@ -34,9 +34,9 @@ class DashboardController extends Controller
     public function __construct()
     {
         parent::__construct();
-        $unresolvedmessagecount = Product::where('status', 0)->count();
+        $unresolvedmessagecount = Product::orderBy('id', 'desc')->get()->take(6);
         View::share('unresolvedmessagecount', $unresolvedmessagecount);
-              
+
         $this->middleware('auth')->except('clear');
         $this->middleware(['admin'])->only('getUsers', 'storeUser', 'updateUser', 'deleteUser', 'getUser', 'getMessages', 'updateMessage', 'getNotifications');
 
