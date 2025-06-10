@@ -227,6 +227,18 @@ class DashboardController extends Controller
         }
         $product->image = $imagePath; // Save the path to the database
 
+        // image upload
+        if($request->hasFile('image')) {
+            $image    = $request->file('image');
+            $filename = random_string(5) . time() .'.' . "webp";
+            $location = public_path('images/ambulances/'. $filename);
+            Image::make($image)->fit(200, 200)->save($location);
+            $ambulanceimage              = new Ambulanceimage;
+            $ambulanceimage->ambulance_id   = $ambulance->id;
+            $ambulanceimage->image       = $filename;
+            $ambulanceimage->save();
+        }
+
         $product->save(); // Save the new product to the database
 
         Session::flash('success', 'Product created successfully!'); // Flash a success message
