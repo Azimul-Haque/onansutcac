@@ -2,7 +2,7 @@
 @section('title') {{ $product->title }} | Products @endsection
 
 @section('third_party_stylesheets')
-  <style>
+  <style type="text/css">
     .content img {
       max-width: 100% !important;
       height: auto !important;
