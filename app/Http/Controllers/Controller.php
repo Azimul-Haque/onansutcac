@@ -8,6 +8,8 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
 use App\Message;
+use App\Product;
+use App\Market;
 use View;
 
 class Controller extends BaseController
