@@ -49,7 +49,8 @@
                 </div><!-- End meta top -->
 
                 <div class="content">
-                  <p>
+                  {{ $product->text }}
+                  {{-- <p>
                     Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
                     Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
                   </p>
@@ -85,7 +86,7 @@
                   </p>
                   <p>
                     Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
-                  </p>
+                  </p> --}}
 
                 </div><!-- End post content -->
 
