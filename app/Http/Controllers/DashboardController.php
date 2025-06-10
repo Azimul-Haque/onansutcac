@@ -242,6 +242,96 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.products');
     }
 
+    public function getMarkets(Request $request)
+        {
+            if($request->search) {
+                $markets = Market::where('title', 'LIKE', "%$request->search%")
+                                 ->orWhere('slug', 'LIKE', "%$request->search%")
+                                 ->orWhere('text', 'LIKE', "%$request->search%")
+                                 ->orderBy('id', 'desc')
+                                 ->paginate(10);
+            } else {
+                $markets = Market::orderBy('id', 'desc')->paginate(10);
+            }
+
+            return view('dashboard.markets.index')->withMarkets($markets);
+        }
+
+        public function storeMarket(Request $request)
+        {
+            $this->validate($request, array(
+                'title' => 'required|string|max:191',
+                'slug'  => 'required|string|max:300|unique:markets,slug',
+                'text'  => 'required',
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+            ));
+
+            $market = new Market;
+            $market->title = $request->title;
+            $market->slug = Str::slug($request->slug);
+            $market->text = Purifier::clean($request->text, 'youtube');
+
+            if($request->hasFile('image')) {
+                $image    = $request->file('image');
+                $filename = Str::random(5) . time() .'.' . "webp";
+                $location = public_path('images/markets/'. $filename);
+                Image::make($image)->fit(711, 400)->save($location);
+                $market->image        = $filename;
+            }
+
+            $market->save();
+
+            Session::flash('success', 'Market created successfully!');
+            return redirect()->route('dashboard.markets');
+        }
+
+        public function updateMarket(Request $request, $id)
+        {
+            $this->validate($request, [
+                'title' => 'required|string|max:191',
+                'slug'  => 'required|string|max:300|unique:markets,slug,' . $id,
+                'text'  => 'required',
+                'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+            ]);
+
+            $market = Market::findOrFail($id);
+            $market->title = $request->title;
+            $market->slug = Str::slug($request->slug);
+
+            $market->text = Purifier::clean($request->text, 'youtube');
+
+            if($request->hasFile('image')) {
+                if ($market->image && file_exists(public_path('images/markets/' . $market->image))) {
+                    unlink(public_path('images/markets/' . $market->image));
+                }
+
+                $image    = $request->file('image');
+                $filename = Str::random(5) . time() . '.' . "webp";
+                $location = public_path('images/markets/' . $filename);
+                Image::make($image)->fit(711, 400)->save($location);
+                $market->image = $filename;
+            }
+
+            $market->save();
+
+            Session::flash('success', 'Market updated successfully!');
+            return redirect()->route('dashboard.markets');
+        }
+
+        public function deleteMarket($id)
+        {
+            $market = Market::findOrFail($id);
+
+            if ($market->image && file_exists(public_path('images/markets/' . $market->image))) {
+                unlink(public_path('images/markets/' . $market->image));
+            }
+
+            $market->delete();
+
+            Session::flash('success', 'Market deleted successfully!');
+            return redirect()->route('dashboard.markets');
+        }
+
 
     
 
