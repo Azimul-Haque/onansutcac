@@ -108,7 +108,6 @@
             </a>
           </div>
 
-          @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
           <div class="col-md-3">
             <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-success elevation-1"><i class="fas fa-newspaper"></i></span>
@@ -119,11 +118,9 @@
               </div>
             </a>
           </div>
-          @endif
 
-          {{-- @if(Auth::user()->role == 'admin' || in_array('journalists', Auth::user()->accessibleTables())) --}}
-          {{-- <div class="col-md-3">
-            <a href="{{ route('dashboard.journalists') }}" class="info-box mb-3">
+          <div class="col-md-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-gavel"></i></span>
 
               <div class="info-box-content">
@@ -131,11 +128,10 @@
                 <small class="info-box-text" style="margin-top: 10px;">ক্লিক করুন</small>
               </div>
             </a>
-          </div> --}}
-          {{-- @endif --}}
+          </div>
 
           {{-- <div class="col-md-3">
-            <a href="{{ route('dashboard.buses') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-bus"></i></span>
 
               <div class="info-box-content">
