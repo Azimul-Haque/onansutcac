@@ -202,7 +202,7 @@ class DashboardController extends Controller
 
     public function getProducts()
     {
-        $products = Product::orderBy('id', 'desc')->paginate(5);
+        $products = Product::orderBy('id', 'desc')->paginate(10);
 
         return view('dashboard.products.index')->withProducts($products);
     }
