@@ -66,6 +66,15 @@
 
     <h3 class="widget-title">Markets</h3>
 
+    @foreach($products as $product)
+    <div class="post-item">
+      <img src="{{ asset('images/products/' . $product->image) }}" alt="N/A" class="flex-shrink-0">
+      <div>
+        <h4><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></h4>
+        <time datetime="2020-01-01">{{ date('F d, Y', strtotime($product->created_at)) }}</time>
+      </div>
+    </div><!-- End recent post item-->
+    @endforeach
     <div class="post-item">
       <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
       {{-- <time datetime="2020-01-01">Jan 1, 2020</time> --}}
