@@ -98,7 +98,7 @@
           <div class="col-md-6 aos-init" data-aos="fade-right" data-aos-delay="200">
             <div class="service-item">
               <div class="service-icon">
-                <i class="bi bi-palette2"></i>
+                <i class="bi bi-palette1"></i>
               </div>
               <div class="service-content">
                 <h3>Health Tech</h3>
