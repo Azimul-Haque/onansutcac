@@ -42,9 +42,6 @@
           <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}<span>(USA, SG)</span></a>
         </li>
       @endforeach
-      @foreach($products as $product)
-        <h4><a href="{{ route('index.singleproduct', $product->slug) }}">Nihil blanditiis at in nihil autem</a></h4>
-      @endforeach
     </ul>
 
   </div><!--/Categories Widget -->
