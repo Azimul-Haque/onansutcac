@@ -244,14 +244,11 @@ class DashboardController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        // Update basic text fields
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
 
-        // Sanitize the 'text' content using Purifier as done in the store method
         $product->text = Purifier::clean($request->text, 'youtube');
 
-        // Handle image upload for update
         if($request->hasFile('image')) {
             // Check if an old image exists and delete it from the public directory
             if ($product->image && file_exists(public_path('images/products/' . $product->image))) {
