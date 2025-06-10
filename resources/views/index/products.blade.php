@@ -71,7 +71,7 @@
           @endforeach
           
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+         {{--  <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
                 <img src="{{ asset('vendor/dewi/assets/img/services-2.jpg') }}" class="img-fluid" alt="">
@@ -179,7 +179,7 @@
                 </a>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div><!-- End Service Item --> --}}
 
         </div>
 
