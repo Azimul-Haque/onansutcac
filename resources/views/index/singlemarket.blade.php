@@ -18,8 +18,8 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>Market</h1>
-        <p>{{ $market->title }}</p>
+        <h1>{{ $market->title }}</h1>
+        <p>Market</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
