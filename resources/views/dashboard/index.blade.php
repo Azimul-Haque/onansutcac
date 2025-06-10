@@ -21,7 +21,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.team-data') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.index') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-success elevation-1"><i class="fas fa-users-cog"></i></span>
 
                   <div class="info-box-content">
