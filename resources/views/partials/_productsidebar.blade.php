@@ -72,10 +72,10 @@
 
     @foreach($markets as $market)
       <div class="post-item">
-        @if($product->image && file_exists(public_path('images/products/' . $product->image)))
+        @if($product->image && file_exists(public_path('images/productss/' . $product->image)))
           <img src="{{ asset('images/markets/' . $market->image) }}" alt="N/A" class="flex-shrink-0">
         @else
-          <img src="https://placehold.co/100x100/40b0e0/ffffff?text=M" alt="N/A" class="flex-shrink-0">
+          <img src="https://placehold.co/100x100/8BE78B/ffffff?text=M" alt="N/A" class="flex-shrink-0">
         @endif
         <h4><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></h4>
         {{-- <time datetime="2020-01-01">Jan 1, 2020</time> --}}
