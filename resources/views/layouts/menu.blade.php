@@ -35,7 +35,7 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.meta-data') }}" class="nav-link {{ Request::is('dashboard/meta-data') ? 'active' : '' }} {{ Request::is('dashboard/meta-data/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-info"></i>
         <p>Meta Data</p>
     </a>
