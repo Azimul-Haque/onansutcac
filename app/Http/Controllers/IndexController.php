@@ -93,8 +93,9 @@ class IndexController extends Controller
     public function getProduct($slug)
     {
         $product = Product::where('slug', $slug)->first();
-        
-        return view('index.singleproduct');
+
+        return view('index.singleproduct')
+                    ->withProduct($product);
     }
 
     public function getMarkets()
