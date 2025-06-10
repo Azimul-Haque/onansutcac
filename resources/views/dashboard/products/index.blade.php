@@ -264,33 +264,35 @@
     <script src="{{ asset('js/select2.full.min.js') }}"></script>
     <!-- Summernote JS for WYSIWYG editor -->
     {{-- <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script> --}}
-    
+
     <script type="text/javascript">
         // Ensure jQuery is loaded before attempting to initialize Summernote
         // Also ensure Bootstrap 4's JavaScript is loaded in your layouts.app
         
         $(document).ready(function() {
             // Check if Summernote function exists before initializing
-            if ($.fn.summernote) {
-                $('.summernote-editor').summernote({
-                    toolbar: [
-                        ['style', ['bold', 'italic', 'strikethrough']],
-                        ['para', ['ul', 'ol', 'paragraph', 'blockquote']], // Includes paragraph format and blockquote
-                        ['insert', ['link', 'picture', 'table', 'hr']], // Link, Image, Table, Horizontal Rule
-                        ['history', ['undo', 'redo']] // Undo/Redo
-                    ],
-                    height: 200, // Set the height of the editor area
-                });
-            } else {
-                console.error("Summernote is not loaded. Check the CDN link or if there are conflicts.");
-                console.log("Ensure Bootstrap 4 JS is included in your layouts.app before Summernote JS.");
-            }
+            
+        });
 
-            // Handle custom file input label update
-            $('.custom-file-input').on('change', function() {
-                let fileName = $(this).val().split('\\').pop();
-                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+        if ($.fn.summernote) {
+            $('.summernote-editor').summernote({
+                toolbar: [
+                    ['style', ['bold', 'italic', 'strikethrough']],
+                    ['para', ['ul', 'ol', 'paragraph', 'blockquote']], // Includes paragraph format and blockquote
+                    ['insert', ['link', 'picture', 'table', 'hr']], // Link, Image, Table, Horizontal Rule
+                    ['history', ['undo', 'redo']] // Undo/Redo
+                ],
+                height: 200, // Set the height of the editor area
             });
+        } else {
+            console.error("Summernote is not loaded. Check the CDN link or if there are conflicts.");
+            console.log("Ensure Bootstrap 4 JS is included in your layouts.app before Summernote JS.");
+        }
+
+        // Handle custom file input label update
+        $('.custom-file-input').on('change', function() {
+            let fileName = $(this).val().split('\\').pop();
+            $(this).next('.custom-file-label').addClass("selected").html(fileName);
         });
 
         // Search functionality
