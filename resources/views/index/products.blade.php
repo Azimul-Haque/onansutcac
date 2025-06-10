@@ -36,7 +36,41 @@
 
         <div class="row gy-5">
 
-          
+          @foreach($products as $product)
+              @php
+                $delay = 100 * ($loop->iteration + 1); // This will give 200, 300, 400, etc.
+                // If you always want to start exactly at 200, 300, 400 for every row of 3 items,
+                // you might use the modulo operator. Let's assume you want it to increment
+                // for every item in the loop without resetting per row for now.
+              @endphp
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="service-item">
+                <div class="img">
+                  @if($product->image)
+                      <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid" alt="">
+                  @else
+                      <img src="{{ asset('vendor/dewi/assets/img/services-1.jpg') }}" class="img-fluid" alt="">
+                  @endif
+                </div>
+                <div class="details position-relative">
+                  <div class="icon">
+                    <i class="bi bi-activity"></i>
+                  </div>
+                  <a href="{{ route('index.singleproduct', $product->slug) }}" class="stretched-link">
+                    <h3>{{ $product->title }}</h3>
+                  </a>
+                  <p>
+                    {{ Str::limit(strip_tags($product->text), 100) }}
+                  </p>
+
+                  <a href="{{ route('index.singleproduct', $product->slug) }}" class="service-link">
+                    <span>Explore More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+          @endforeach
           
 
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
