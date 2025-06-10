@@ -28,7 +28,7 @@
 <li class="nav-item">
     <a href="{{ route('dashboard.markets') }}" class="nav-link {{ Request::is('dashboard/markets') ? 'active' : '' }} {{ Request::is('dashboard/markets/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-list"></i>
-        <p>Products</p>
+        <p>Markets</p>
     </a>
 </li>
 @endif
