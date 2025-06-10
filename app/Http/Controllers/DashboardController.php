@@ -269,6 +269,8 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.products');
     }
 
+    deleteProduct 
+
 
     public function getPackages()
     {
