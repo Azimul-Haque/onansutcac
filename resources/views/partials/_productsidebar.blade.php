@@ -55,7 +55,7 @@
       <img src="{{ asset('images/products/' . $product->image) }}" alt="N/A" class="flex-shrink-0">
       <div>
         <h4><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></h4>
-        <time datetime="2020-01-01">Jan 1, 2020</time>
+        <time datetime="2020-01-01">{{ $product->title }}</time>
       </div>
     </div><!-- End recent post item-->
     @endforeach
