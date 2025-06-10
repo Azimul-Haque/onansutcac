@@ -235,6 +235,51 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.products'); // Redirect back to the products listing
     }
 
+    public function update(Request $request, Product $product)
+    {
+        // Validation rules for updating a product
+        // The 'slug' uniqueness rule now excludes the current product's ID ($product->id)
+        // 'image' is made 'nullable' as it's optional during an update
+        $this->validate($request, [
+            'title' => 'required|string|max:191',
+            'slug'  => 'required|string|max:300|unique:products,slug,' . $product->id,
+            'text'  => 'required',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        // Update basic text fields
+        $product->title = $request->title;
+        $product->slug = Str::slug($request->slug);
+
+        // Sanitize the 'text' content using Purifier as done in the store method
+        $product->text = Purifier::clean($request->text, 'youtube');
+
+        // Handle image upload for update
+        if($request->hasFile('image')) {
+            // Check if an old image exists and delete it from the public directory
+            if ($product->image && file_exists(public_path('images/products/' . $product->image))) {
+                unlink(public_path('images/products/' . $product->image));
+            }
+
+            // Process and save the new image
+            $image    = $request->file('image');
+            // Assuming random_string is a global helper or Str::random() is intended
+            $filename = Str::random(5) . time() . '.' . "webp";
+            $location = public_path('images/products/' . $filename);
+            Image::make($image)->fit(200, 355)->save($location);
+            $product->image = $filename; // Update product's image field with the new filename
+        }
+        // If no new image is uploaded ($request->hasFile('image') is false),
+        // the $product->image field will retain its existing value, which is the desired behavior.
+
+        $product->save(); // Save the updated product data to the database
+
+        // Flash a success message to the session
+        Session::flash('success', 'Product updated successfully!');
+        // Redirect back to the products listing page
+        return redirect()->route('dashboard.products');
+    }
+
 
     public function getPackages()
     {
