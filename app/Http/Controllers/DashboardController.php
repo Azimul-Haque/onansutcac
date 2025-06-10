@@ -197,6 +197,15 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.users');
     }
 
+
+    public function getPackages()
+    {
+        $packages = Package::all();
+
+        return view('dashboard.packages.index')->withPackages($packages);
+    }
+
+
     public function getPackages()
     {
         $packages = Package::all();
