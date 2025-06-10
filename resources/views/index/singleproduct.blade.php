@@ -5,6 +5,21 @@
 
 @endsection
 
+@push('page_css')
+    <style>
+        /* Specific CSS for this product details page only */
+        .product-details-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .product-image {
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+    <link href="{{ asset('css/product-specific.css') }}" rel="stylesheet">
+@endpush
 <style type="text/css">
   .content img {
     max-width: 100% !important;
