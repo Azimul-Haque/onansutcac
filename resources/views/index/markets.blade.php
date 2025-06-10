@@ -35,7 +35,9 @@
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row justify-content-center g-5">
-
+          @php
+            $biicons = ['code-slash', 'bi-palette2', 'phone-fill', bar-chart-line, cloud-check, shield-lock]
+          @endphp
           @foreach($markets as $market)
             @php
               $modulo_index = ($loop->iteration - 1) % 2;
@@ -62,7 +64,7 @@
               </div>
             </div>
           @endforeach
-          
+
         </div>
 
       </div>
