@@ -122,7 +122,7 @@
                                             <div class="form-group">
                                                 <label for="productImageEdit{{ $product->id }}">Product Image: (16:9 should be ideal)</label><br>
                                                 @if($product->image)
-                                                    <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
+                                                    <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
                                                     <br>
                                                     <small class="text-muted">Leave blank to keep current image.</small>
                                                 @else
