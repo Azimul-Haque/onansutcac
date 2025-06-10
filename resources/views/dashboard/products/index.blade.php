@@ -75,7 +75,7 @@
 
                             <!-- Edit Product Modal Code -->
                             <div class="modal fade" id="editProductModal{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="editProductModalLabel{{ $product->id }}" aria-hidden="true" data-backdrop="static">
-                              <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-dialog modal-xl" role="document">
                                 <div class="modal-content">
                                   <div class="modal-header bg-primary">
                                     <h5 class="modal-title" id="editProductModalLabel{{ $product->id }}">Update Product: {{ $product->title }}</h5>
@@ -196,7 +196,7 @@
 
     <!-- Add Product Modal Code -->
     <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
             <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
