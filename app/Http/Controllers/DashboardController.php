@@ -151,7 +151,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.users');
     }
 
-    public function getProducts()
+    public function getProducts(Request $request)
     {
         $products = Product::orderBy('id', 'desc')->paginate(10);
 
