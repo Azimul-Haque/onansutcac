@@ -140,7 +140,7 @@
     </footer>
 </div>
 
-@if(Request::is('dashboard/products'))
+@if(Request::is('dashboard/products') || Request::is('dashboard/products/*'))
     <script src="{{ mix('js/app.js') }}" defer></script>
 @endif
 <script src="{{ asset('js/pace.min.js') }}"></script>
