@@ -210,7 +210,7 @@ class DashboardController extends Controller
     {
         $this->validate($request, array(
             'title' => 'required|string|max:191', // Corresponds to 'name'
-            'slug'  => 'required|string|max:191|unique:products,slug', // Corresponds to 'email'
+            'slug'  => 'required|string|max:300|unique:products,slug', // Corresponds to 'email'
             'text'  => 'required', // Corresponds to 'mobile' (for article content)
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Corresponds to 'password'
         ));
