@@ -208,7 +208,29 @@ class DashboardController extends Controller
 
     public function storeProduct(Request $request)
     {
-        
+        $this->validate($request, array(
+            'title' => 'required|string|max:255', // Corresponds to 'name'
+            'slug'  => 'required|string|max:255|unique:products,slug', // Corresponds to 'email'
+            'text'  => 'required', // Corresponds to 'mobile' (for article content)
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Corresponds to 'password'
+        ));
+
+        $product = new Product;
+        $product->title = $request->title;
+        $product->slug = Str::slug($request->slug); // Generate URL-friendly slug
+        $product->text = $request->text;
+
+        // Handle image upload
+        $imagePath = null;
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('products', 'public'); // Store image in storage/app/public/products
+        }
+        $product->image = $imagePath; // Save the path to the database
+
+        $product->save(); // Save the new product to the database
+
+        Session::flash('success', 'Product created successfully!'); // Flash a success message
+        return redirect()->route('dashboard.products'); // Redirect back to the products listing
     }
 
 
