@@ -4,9 +4,8 @@
 @section('third_party_stylesheets')
   <style>
     img {
-        max-width: 100%; /* Important: Makes the image shrink if it's wider than its container */
-        height: auto;    /* Important: Maintains the image's aspect ratio when scaling down */
-        display: block;  /* Optional but often helpful: Treats the image as a block element, removing extra space below it */
+      max-width: 100%;
+      height: auto;
     }
   </style>
 @endsection
