@@ -38,7 +38,7 @@
     <ul class="mt-3">
       @foreach($products as $product)
         <li>
-          <img src="asd/asdasd" alt="" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+          <img src="{{ asset('images/products/' . $product->image) }}" alt="" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
           <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}<span>(USA, SG)</span></a>
         </li>
       @endforeach
