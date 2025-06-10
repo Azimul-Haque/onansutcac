@@ -70,35 +70,35 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.clients') }}" class="nav-link {{ Request::is('dashboard/clients') ? 'active' : '' }} {{ Request::is('dashboard/clients/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-handshake"></i>
         <p>Clients</p>
     </a>
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.testimonials') }}" class="nav-link {{ Request::is('dashboard/testimonials') ? 'active' : '' }} {{ Request::is('dashboard/testimonials/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-comment-alt"></i>
         <p>Testimonials</p>
     </a>
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.information-center') }}" class="nav-link {{ Request::is('dashboard/information-center') ? 'active' : '' }} {{ Request::is('dashboard/information-center/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-info-circle"></i>
         <p>Information Center</p>
     </a>
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.help-center-faq') }}" class="nav-link {{ Request::is('dashboard/help-center-faq') ? 'active' : '' }} {{ Request::is('dashboard/help-center-faq/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-question-circle"></i>
         <p>Help Center/FAQ</p>
     </a>
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.statistics') }}" class="nav-link {{ Request::is('dashboard/statistics') ? 'active' : '' }} {{ Request::is('dashboard/statistics/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-chart-pie"></i>
         <p>Statistics</p>
     </a>
