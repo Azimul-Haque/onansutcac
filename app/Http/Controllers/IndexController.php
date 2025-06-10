@@ -114,6 +114,10 @@ class IndexController extends Controller
     public function getMarket($slug)
     {
         $market = Market::where('slug', $slug)->orderBy('id', 'desc')->first();
+        if (is_null($product)) {
+            // Option 1: Manually abort with 404
+            abort(404);
+        }
         $markets = Market::orderBy('id', 'desc')->get()->take(6);
 
         $products = Product::orderBy('id', 'desc')->get()->take(6);
