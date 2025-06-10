@@ -5,8 +5,8 @@
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/select2-bootstrap4.min.css') }}" rel="stylesheet" />
-    <!-- CKEditor 4 CDN for WYSIWYG editor -->
-    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+    <!-- CKEditor 4 CDN for WYSIWYG editor - Updated to 4.25.1-lts -->
+    <script src="https://cdn.ckeditor.com/4.25.1-lts/standard/ckeditor.js"></script>
     <style type="text/css">
       .select2-selection__choice{
           background-color: rgba(0, 123, 255) !important;
@@ -18,9 +18,9 @@
 @endsection
 
 @section('content')
-	@section('page-header') Products (Total {{ $productsCount ?? 0 }}) @endsection {{-- Use $productsCount from controller --}}
+    @section('page-header') Products (Total {{ $productsCount ?? 0 }}) @endsection {{-- Use $productsCount from controller --}}
     <div class="container-fluid">
-		<div class="card">
+        <div class="card">
           <div class="card-header">
             <h3 class="card-title">Products</h3>
 
@@ -51,13 +51,13 @@
               </thead>
               <tbody>
                 @forelse($products as $product)
-                	<tr>
-                		<td>
-                			<a href="#!">{{ $product->title }}</a>
+                    <tr>
+                        <td>
+                            <a href="#!">{{ $product->title }}</a>
                             <br/>
                             <small class="text-black-50">{{ Str::limit(strip_tags($product->text), 100) }}</small>
-                		</td>
-                		<td>{{ $product->slug }}</td>
+                        </td>
+                        <td>{{ $product->slug }}</td>
                         <td>
                             @if($product->image)
                                 <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
@@ -65,24 +65,24 @@
                                 <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                             @endif
                         </td>
-                		<td align="right">
-                			<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editProductModal{{ $product->id }}">
-                				<i class="fas fa-edit"></i> Edit
-                			</button>
+                        <td align="right">
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editProductModal{{ $product->id }}">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
 
-                			<!-- Edit Product Modal Code -->
-                			<div class="modal fade" id="editProductModal{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="editProductModalLabel{{ $product->id }}" aria-hidden="true" data-backdrop="static">
-                			  <div class="modal-dialog modal-lg" role="document">
-                			    <div class="modal-content">
-                			      <div class="modal-header bg-primary">
-                			        <h5 class="modal-title" id="editProductModalLabel{{ $product->id }}">Update Product: {{ $product->title }}</h5>
-                			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                			          <span aria-hidden="true">&times;</span>
-                			        </button>
-                			      </div>
-                			      <form method="post" action="{{ route('dashboard.products.update', $product->id) }}" enctype="multipart/form-data">
-                				        <div class="modal-body">
-                				            @csrf
+                            <!-- Edit Product Modal Code -->
+                            <div class="modal fade" id="editProductModal{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="editProductModalLabel{{ $product->id }}" aria-hidden="true" data-backdrop="static">
+                              <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-primary">
+                                    <h5 class="modal-title" id="editProductModalLabel{{ $product->id }}">Update Product: {{ $product->title }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <form method="post" action="{{ route('dashboard.products.update', $product->id) }}" enctype="multipart/form-data">
+                                        <div class="modal-body">
+                                            @csrf
                                             @method('PUT') {{-- Use PUT method for updates --}}
 
                                             <div class="input-group mb-3">
@@ -134,48 +134,48 @@
                                                 @enderror
                                             </div>
 
-                				        </div>
-                				        <div class="modal-footer">
-                				            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                				            <button type="submit" class="btn btn-primary">Update Product</button>
-                				        </div>
-                			      </form>
-                			    </div>
-                			  </div>
-                			</div>
-                			<!-- End Edit Product Modal Code -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Update Product</button>
+                                        </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Edit Product Modal Code -->
 
-                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteProductModal{{ $product->id }}">
-                				<i class="fas fa-trash"></i> Delete
-                			</button>
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteProductModal{{ $product->id }}">
+                                <i class="fas fa-trash"></i> Delete
+                            </button>
 
-                			<!-- Delete Product Modal Code -->
-                			<div class="modal fade" id="deleteProductModal{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteProductModalLabel{{ $product->id }}" aria-hidden="true" data-backdrop="static">
-                			  <div class="modal-dialog" role="document">
-                			    <div class="modal-content">
-                			      <div class="modal-header bg-danger">
-                			        <h5 class="modal-title" id="deleteProductModalLabel{{ $product->id }}">Delete Product</h5>
-                			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                			          <span aria-hidden="true">&times;</span>
-                			        </button>
-                			      </div>
-                			      <div class="modal-body">
-                			        Are you sure you want to delete this product?<br/>
-                			        <center>
-                			            <big><b>{{ $product->title }}</b></big><br/>
-                			            <small>Slug: {{ $product->slug }}</small>
-                			        </center>
-                			      </div>
-                			      <div class="modal-footer">
-                			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                			        <a href="{{ route('dashboard.products.delete', $product->id) }}" class="btn btn-danger">Delete</a>
-                			      </div>
-                			    </div>
-                			  </div>
-                			</div>
-                			<!-- End Delete Product Modal Code -->
-                		</td>
-                	</tr>
+                            <!-- Delete Product Modal Code -->
+                            <div class="modal fade" id="deleteProductModal{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteProductModalLabel{{ $product->id }}" aria-hidden="true" data-backdrop="static">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-danger">
+                                    <h5 class="modal-title" id="deleteProductModalLabel{{ $product->id }}">Delete Product</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Are you sure you want to delete this product?<br/>
+                                    <center>
+                                        <big><b>{{ $product->title }}</b></big><br/>
+                                        <small>Slug: {{ $product->slug }}</small>
+                                    </center>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a href="{{ route('dashboard.products.delete', $product->id) }}" class="btn btn-danger">Delete</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Delete Product Modal Code -->
+                        </td>
+                    </tr>
                 @empty
                     <tr>
                         <td colspan="4" class="text-center">No products found.</td>
@@ -202,31 +202,31 @@
             </button>
           </div>
           <form method="post" action="{{ route('dashboard.products.store') }}" enctype="multipart/form-data">
-	          <div class="modal-body">
-	            @csrf
+              <div class="modal-body">
+                @csrf
 
-	            <div class="input-group mb-3">
-	                <input type="text"
-	                       name="title"
-	                       class="form-control"
-	                       value="{{ old('title') }}"
-	                       placeholder="Product Title" required>
-	                <div class="input-group-append">
-	                    <div class="input-group-text"><span class="fas fa-box"></span></div>
-	                </div>
-	            </div>
+                <div class="input-group mb-3">
+                    <input type="text"
+                           name="title"
+                           class="form-control"
+                           value="{{ old('title') }}"
+                           placeholder="Product Title" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text"><span class="fas fa-box"></span></div>
+                    </div>
+                </div>
 
-	            <div class="input-group mb-3">
-	                <input type="text"
-	                       name="slug"
-	                       class="form-control"
-	                       value="{{ old('slug') }}"
-	                       autocomplete="off"
-	                       placeholder="Product Slug (e.g., my-awesome-product)" required>
-	                <div class="input-group-append">
-	                    <div class="input-group-text"><span class="fas fa-link"></span></div>
-	                </div>
-	            </div>
+                <div class="input-group mb-3">
+                    <input type="text"
+                           name="slug"
+                           class="form-control"
+                           value="{{ old('slug') }}"
+                           autocomplete="off"
+                           placeholder="Product Slug (e.g., my-awesome-product)" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text"><span class="fas fa-link"></span></div>
+                    </div>
+                </div>
 
                 <div class="form-group">
                     <label for="productTextAdd">Product Description/Article</label>
@@ -247,11 +247,11 @@
                     @enderror
                 </div>
 
-	          </div>
-	          <div class="modal-footer">
-	            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	            <button type="submit" class="btn btn-success">Add Product</button>
-	          </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-success">Add Product</button>
+              </div>
           </form>
         </div>
       </div>
@@ -266,7 +266,17 @@
         // Initialize CKEditor on all textareas with class 'ckeditor-editor'
         $(document).ready(function() {
             $('.ckeditor-editor').each(function() {
-                CKEDITOR.replace(this.id);
+                CKEDITOR.replace(this.id, {
+                    toolbar: [
+                        { name: 'basicstyles', items: [ 'Bold', 'Italic', 'Strike' ] },
+                        { name: 'clipboard', items: [ 'Undo', 'Redo' ] },
+                        { name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
+                        { name: 'links', items: [ 'Link', 'Unlink' ] },
+                        { name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule' ] },
+                        { name: 'styles', items: [ 'Styles', 'Format' ] }, // Styles for font sizes, colors, etc. & Format for Paragraph, Heading styles
+                        { name: 'tools', items: [ 'Maximize' ] } // Maximize button for full screen editor
+                    ]
+                });
             });
 
             // Handle custom file input label update
