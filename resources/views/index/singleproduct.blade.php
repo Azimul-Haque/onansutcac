@@ -12,7 +12,6 @@
         height: auto !important;
       }
     </style>
-    <link href="{{ asset('css/product-specific.css') }}" rel="stylesheet">
 @endpush
 
 
