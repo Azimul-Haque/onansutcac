@@ -60,7 +60,7 @@
                             <br/>
                             {{-- <small class="text-black-50">{{ Str::limit(strip_tags($product->text), 100) }}</small> --}}
                         </td>
-                        <td>{{ $product->slug }}</td>
+                        <td><small>{{ $product->slug }}</small></td>
                         <td>
                             @if($product->image)
                                 <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
