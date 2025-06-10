@@ -5,13 +5,13 @@
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/select2-bootstrap4.min.css') }}" rel="stylesheet" />
-    <!-- CKEditor 4 CDN for WYSIWYG editor - Reverted to 4.16.2/standard for stability and no messages -->
-    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+    <!-- Summernote CSS for WYSIWYG editor -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
     <style type="text/css">
       .select2-selection__choice{
           background-color: rgba(0, 123, 255) !important;
       }
-      .ck-editor__editable {
+      .note-editor.note-frame .note-editing-area .note-editable {
           min-height: 200px; /* Adjust height for the editor */
       }
     </style>
@@ -110,7 +110,7 @@
 
                                             <div class="form-group">
                                                 <label for="productTextEdit{{ $product->id }}">Product Description/Article</label>
-                                                <textarea id="productTextEdit{{ $product->id }}" name="text" class="form-control ckeditor-editor">{{ old('text', $product->text) }}</textarea>
+                                                <textarea id="productTextEdit{{ $product->id }}" name="text" class="form-control summernote-editor">{{ old('text', $product->text) }}</textarea>
                                                 @error('text')
                                                     <span class="text-danger">{{ $message }}</span>
                                                 @enderror
@@ -230,7 +230,7 @@
 
                 <div class="form-group">
                     <label for="productTextAdd">Product Description/Article</label>
-                    <textarea id="productTextAdd" name="text" class="form-control ckeditor-editor">{{ old('text') }}</textarea>
+                    <textarea id="productTextAdd" name="text" class="form-control summernote-editor">{{ old('text') }}</textarea>
                     @error('text')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
@@ -262,21 +262,19 @@
 @section('third_party_scripts')
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{ asset('js/select2.full.min.js') }}"></script>
+    <!-- Summernote JS for WYSIWYG editor -->
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
     <script type="text/javascript">
-        // Initialize CKEditor on all textareas with class 'ckeditor-editor'
+        // Initialize Summernote on all textareas with class 'summernote-editor'
         $(document).ready(function() {
-            $('.ckeditor-editor').each(function() {
-                CKEDITOR.replace(this.id, {
-                    toolbar: [
-                        { name: 'basicstyles', items: [ 'Bold', 'Italic', 'Strike' ] },
-                        { name: 'clipboard', items: [ 'Undo', 'Redo' ] },
-                        { name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
-                        { name: 'links', items: [ 'Link', 'Unlink' ] },
-                        { name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule' ] },
-                        { name: 'styles', items: [ 'Styles', 'Format' ] }, // Styles for font sizes, colors, etc. & Format for Paragraph, Heading styles
-                        { name: 'tools', items: [ 'Maximize' ] } // Maximize button for full screen editor
-                    ]
-                });
+            $('.summernote-editor').summernote({
+                toolbar: [
+                    ['style', ['bold', 'italic', 'strikethrough']],
+                    ['para', ['ul', 'ol', 'paragraph', 'blockquote']], // Includes paragraph format and blockquote
+                    ['insert', ['link', 'picture', 'table', 'hr']], // Link, Image, Table, Horizontal Rule
+                    ['history', ['undo', 'redo']] // Undo/Redo
+                ],
+                height: 200, // Set the height of the editor area
             });
 
             // Handle custom file input label update
