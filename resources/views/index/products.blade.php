@@ -53,7 +53,7 @@
                     {{ Str::limit(strip_tags($product->text), 100) }}
                   </p>
 
-                  <a href="{{ route('index.singleproduct', 'single') }}" class="service-link">
+                  <a href="{{ route('index.singleproduct', $product->slug) }}" class="service-link">
                     <span>Explore More</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
