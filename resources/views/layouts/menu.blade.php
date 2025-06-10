@@ -42,21 +42,21 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.abouts-data') }}" class="nav-link {{ Request::is('dashboard/abouts-data') ? 'active' : '' }} {{ Request::is('dashboard/abouts-data/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-file-alt"></i>
         <p>Abouts Data</p>
     </a>
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.news') }}" class="nav-link {{ Request::is('dashboard/news') ? 'active' : '' }} {{ Request::is('dashboard/news/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-newspaper"></i>
         <p>News</p>
     </a>
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.events') }}" class="nav-link {{ Request::is('dashboard/events') ? 'active' : '' }} {{ Request::is('dashboard/events/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-calendar-alt"></i>
         <p>Events</p>
     </a>
