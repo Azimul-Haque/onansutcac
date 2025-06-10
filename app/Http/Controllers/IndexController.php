@@ -111,7 +111,7 @@ class IndexController extends Controller
                     ->withMarkets($markets);
     }
 
-    public function getMarket($id)
+    public function getMarket($slug)
     {
         $market = Market::where('slug', $slug)->orderBy('id', 'desc')->first();
         $markets = Market::orderBy('id', 'desc')->get()->take(6);
