@@ -35,7 +35,7 @@ class IndexController extends Controller
         $productsforfooter = Product::orderBy('id', 'desc')->get()->take(6);
         View::share('productsforfooter', $productsforfooter);
 
-        View::share('productsforfooter', Cache::remember('markets_for_footer', 60, function () {
+        View::share('productsforfooter', Cache::remember('markets_for_footer', 60 * 24 * 30, function () {
             return Market::orderBy('id', 'desc')->get()->take(6);
         }));
 
