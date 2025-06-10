@@ -103,6 +103,6 @@ Route::post('/dashboard/products/{id}/update', 'DashboardController@updateProduc
 Route::get('/dashboard/products/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.products.delete');
 
 Route::get('/dashboard/markets', 'DashboardController@getMarkets')->name('dashboard.markets');
-Route::post('/dashboard/markets/store', 'DashboardController@storeMarkets')->name('dashboard.markets.store');
-Route::post('/dashboard/markets/{id}/update', 'DashboardController@updateMarkets')->name('dashboard.markets.update');
-Route::get('/dashboard/markets/{id}/delete', 'DashboardController@deleteMarkets')->name('dashboard.markets.delete');
+Route::post('/dashboard/markets/store', 'DashboardController@storeMarket')->name('dashboard.markets.store');
+Route::post('/dashboard/markets/{id}/update', 'DashboardController@updateMarket')->name('dashboard.markets.update');
+Route::get('/dashboard/markets/{id}/delete', 'DashboardController@deleteMarket')->name('dashboard.markets.delete');
