@@ -128,7 +128,7 @@
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 5px;
-    padding: 10px 0px 10px 0px;
+    padding: 15px 0px 10px 0px;
   }
 
   .recent-posts-widget .post-item h4 a {
