@@ -5,14 +5,12 @@
 
 @endsection
 
-@push('page_css')
-    <style type="text/css">
-      .content img {
-        max-width: 100% !important;
-        height: auto !important;
-      }
-    </style>
-@endpush
+<style type="text/css">
+  .content img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+</style>
 
 
 
