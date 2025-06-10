@@ -83,7 +83,7 @@
                                   <form method="post" action="{{ route('dashboard.products.update', $product->id) }}" enctype="multipart/form-data">
                                         <div class="modal-body">
                                             @csrf
-                                            @method('PUT') {{-- Use PUT method for updates --}
+                                            @method('PUT') 
 
                                             <div class="input-group mb-3">
                                                 <input type="text"
