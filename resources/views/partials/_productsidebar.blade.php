@@ -55,7 +55,7 @@
       @if($product->image && file_exists(public_path('images/products/' . $product->image)))
         <img src="{{ asset('images/products/' . $product->image) }}" alt="N/A" class="flex-shrink-0">
       @else
-        <img src="{{ asset('images/products/' . $product->image) }}" alt="N/A" class="flex-shrink-0">
+        <img src="https://placehold.co/100x100/40b0e0/ffffff?text=P" alt="N/A" class="flex-shrink-0">
       @endif
       <div>
         <h4><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></h4>
