@@ -3,7 +3,7 @@
 
 @section('third_party_stylesheets')
   <style>
-    img {
+    .content img {
       max-width: 100% !important;
       height: auto !important;
     }
