@@ -51,7 +51,7 @@
             <div class="col-md-6 aos-init" data-aos="{{ $datadirection }}" data-aos-delay="100">
               <div class="service-item">
                 <div class="service-icon">
-                  <i class="bi bi-{{ $biicons[$loop->iteration] }}"></i>{{ $biicons[$loop->iteration] }}
+                  <i class="bi bi-{{ $biicons[$loop->iteration] }}"></i>
                 </div>
                 <div class="service-content">
                   <h3>{{ $market->title }}</h3>
