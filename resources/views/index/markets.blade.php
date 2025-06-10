@@ -41,7 +41,9 @@
               $modulo_index = ($loop->iteration - 1) % 2;
               $delay = 100 + ($modulo_index * 100);
               if($modulo_index == 0) {
-                $datadirection = fade-right
+                $datadirection = 'fade-right';
+              } else {
+                $datadirection = 'fade-left';
               }
             @endphp
             <div class="col-md-6 aos-init" data-aos="" data-aos-delay="100">
