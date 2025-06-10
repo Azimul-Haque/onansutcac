@@ -622,6 +622,7 @@ class ComposerStaticInitd99be2aa22b662638be63ef18831ea06
         'App\\Newspaperimage' => __DIR__ . '/../..' . '/app/Newspaperimage.php',
         'App\\Notification' => __DIR__ . '/../..' . '/app/Notification.php',
         'App\\Police' => __DIR__ . '/../..' . '/app/Police.php',
+        'App\\Product' => __DIR__ . '/../..' . '/app/Product.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',

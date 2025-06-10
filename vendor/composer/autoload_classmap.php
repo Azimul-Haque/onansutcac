@@ -71,6 +71,7 @@ return array(
     'App\\Newspaperimage' => $baseDir . '/app/Newspaperimage.php',
     'App\\Notification' => $baseDir . '/app/Notification.php',
     'App\\Police' => $baseDir . '/app/Police.php',
+    'App\\Product' => $baseDir . '/app/Product.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
