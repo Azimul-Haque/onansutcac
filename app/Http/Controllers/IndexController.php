@@ -20,7 +20,7 @@ use Artisan;
 // use Redirect;
 use OneSignal;
 use PDF;
-use Shipu\Aamarpay\Facades\Aamarpay;
+use View;
 
 
 class IndexController extends Controller
