@@ -255,7 +255,6 @@ class DashboardController extends Controller
                 unlink(public_path('images/products/' . $product->image));
             }
 
-            // Process and save the new image
             $image    = $request->file('image');
             $filename = Str::random(5) . time() . '.' . "webp";
             $location = public_path('images/products/' . $filename);
