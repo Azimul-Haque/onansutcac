@@ -5,6 +5,7 @@
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/select2-bootstrap4.min.css') }}" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Summernote CSS for WYSIWYG editor -->
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
     <style type="text/css">
@@ -264,7 +265,7 @@
     <script src="{{ asset('js/select2.full.min.js') }}"></script>
     <!-- Summernote JS for WYSIWYG editor -->
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
-    
+
     <script type="text/javascript">
         // Ensure jQuery is loaded before attempting to initialize Summernote
         // Also ensure Bootstrap 4's JavaScript is loaded in your layouts.app
