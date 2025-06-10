@@ -39,12 +39,12 @@
       @foreach($products as $product)
 
       @endforeach
-      <li><a href="#">Product - 1 <span>(USA, SG)</span></a></li>
-      <li><a href="#">Product - 2 <span>(USA)</span></a></li>
-      <li><a href="#">Product - 3 <span>(USA)</span></a></li>
-      <li><a href="#">Product - 4 <span>(USA, SG)</span></a></li>
-      <li><a href="#">Product - 5 <span>(SG)</span></a></li>
-      <li><a href="#">Product - 6 <span>(USA, SG)</span></a></li>
+      <li><a href="#">{{ $product->title }}<span>(USA, SG)</span></a></li>
+      <li><a href="#">{{ $product->title }}<span>(USA)</span></a></li>
+      <li><a href="#">{{ $product->title }}<span>(USA)</span></a></li>
+      <li><a href="#">{{ $product->title }}<span>(USA, SG)</span></a></li>
+      <li><a href="#">{{ $product->title }}<span>(SG)</span></a></li>
+      <li><a href="#">{{ $product->title }}<span>(USA, SG)</span></a></li>
     </ul>
 
   </div><!--/Categories Widget -->
