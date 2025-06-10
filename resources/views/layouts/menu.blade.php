@@ -24,6 +24,15 @@
 </li>
 @endif
 
+@if(Auth::user()->role == 'admin')
+<li class="nav-item">
+    <a href="{{ route('dashboard.products') }}" class="nav-link {{ Request::is('dashboard/products') ? 'active' : '' }} {{ Request::is('dashboard/products/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-list"></i>
+        <p>Products</p>
+    </a>
+</li>
+@endif
+
 
 @if(Auth::user()->role == 'admin')
 <li class="nav-item">
