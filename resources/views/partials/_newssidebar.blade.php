@@ -154,6 +154,8 @@
 
   .recent-posts-widget .post-item img {
     width: 80px;
+    height: 60px;
+    object-fit: cover;
     margin-right: 15px;
   }
 
