@@ -215,8 +215,6 @@ class DashboardController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ));
 
-        dd($request->all());
-
         $product = new Product;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
