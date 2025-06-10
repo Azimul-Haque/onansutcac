@@ -46,7 +46,7 @@
                 $datadirection = 'fade-left';
               }
             @endphp
-            <div class="col-md-6 aos-init" data-aos="" data-aos-delay="100">
+            <div class="col-md-6 aos-init" data-aos="{{ $datadirection }}" data-aos-delay="100">
               <div class="service-item">
                 <div class="service-icon">
                   <i class="bi bi-code-slash"></i>
