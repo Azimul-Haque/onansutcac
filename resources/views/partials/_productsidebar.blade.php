@@ -36,6 +36,9 @@
 
     <h3 class="widget-title">Products</h3>
     <ul class="mt-3">
+      @foreach($products as $product)
+
+      @endforeach
       <li><a href="#">Product - 1 <span>(USA, SG)</span></a></li>
       <li><a href="#">Product - 2 <span>(USA)</span></a></li>
       <li><a href="#">Product - 3 <span>(USA)</span></a></li>
