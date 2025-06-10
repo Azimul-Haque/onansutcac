@@ -209,8 +209,8 @@ class DashboardController extends Controller
     public function storeProduct(Request $request)
     {
         $this->validate($request, array(
-            'title' => 'required|string|max:255', // Corresponds to 'name'
-            'slug'  => 'required|string|max:255|unique:products,slug', // Corresponds to 'email'
+            'title' => 'required|string|max:191', // Corresponds to 'name'
+            'slug'  => 'required|string|max:191|unique:products,slug', // Corresponds to 'email'
             'text'  => 'required', // Corresponds to 'mobile' (for article content)
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Corresponds to 'password'
         ));
