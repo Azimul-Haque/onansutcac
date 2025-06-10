@@ -36,14 +36,6 @@ Route::get('/academia', 'IndexController@getAcademia')->name('index.academia');
 Route::get('/information-center', 'IndexController@getInformationCenter')->name('index.information-center');
 Route::get('/testimonials', 'IndexController@getTestimonials')->name('index.testimonials');
 
-Route::post('/payment/proceed', 'IndexController@paymentProceed')->name('index.payment.proceed');
-Route::get('/payment/cancel', 'IndexController@paymentCancel')->name('index.payment.cancel');
-Route::get('/payment/failed', 'IndexController@paymentFailed')->name('index.payment.failed');
-Route::get('/payment/fail', 'IndexController@paymentFailed')->name('index.payment.failed');
-Route::post('/payment/success', 'IndexController@paymentSuccess')->name('index.payment.success');
-Route::post('/payment/app/confirm', 'IndexController@paymentSuccessApp')->name('index.payment.success.app');
-Route::get('/payment/app/cancel', 'IndexController@paymentCancelApp')->name('index.payment.cancel.app');
-Route::get('/check/ip', 'IndexController@checkIP')->name('index.check.ip');
 
 // Hospital
 Route::get('/dashboard/hospitals', 'HospitalController@index')->name('dashboard.hospitals');
@@ -201,23 +193,7 @@ Route::get('/single/exam/pdf/{softtoken}/{examid}', 'IndexController@getExamSolv
 // Clear Route
 Route::get('/clear', ['as'=>'clear','uses'=>'IndexController@clear']);
 
-// Payment Routes for bKash
-Route::get('bkash/production/test', 'BkashController@prodTest')->name('bkash-prod-test');
-Route::post('bkash/production/test/payment', 'BkashController@prodPaymentTest')->name('bkash-prod-test-payment');
-Route::get('bkash/production/final/payment/{amount}/{mobile}/{package_id}', 'BkashController@prodPayment')->name('bkash-prod-final-payment');
-Route::post('bkash/get-token', 'BkashController@getToken')->name('bkash-get-token');
-Route::post('bkash/create-payment', 'BkashController@createPayment')->name('bkash-create-payment');
-Route::post('bkash/execute-payment', 'BkashController@executePayment')->name('bkash-execute-payment');
-Route::get('bkash/query-payment', 'BkashController@queryPayment')->name('bkash-query-payment');
-Route::post('bkash/success', 'BkashController@bkashSuccess')->name('bkash-success');
-Route::get('bkash/cancel/page', 'BkashController@bkashCancelPage')->name('bkash-cancel-page');
-Route::get('bkash/success/page', 'BkashController@bkashSuccessPage')->name('bkash-success-page');
-Route::get('bkash/failed/page', 'BkashController@bkashFailedPage')->name('bkash-failed-page');
 
-Route::get('bkash/cancel/page/web', 'BkashController@bkashCancelPageWeb')->name('bkash-cancel-page-web');
-Route::get('bkash/success/page/web', 'BkashController@bkashSuccessPageWeb')->name('bkash-success-page-web');
-Route::get('bkash/failed/page/web', 'BkashController@bkashFailedPageWeb')->name('bkash-failed-page-web');
-// Payment Routes for bKash
 
 // Auth::routes();
 Auth::routes(['register' => false]);
