@@ -102,3 +102,9 @@ Route::get('/dashboard/products/{search}', 'DashboardController@getProductsSearc
 Route::post('/dashboard/products/store', 'DashboardController@storeProduct')->name('dashboard.products.store');
 Route::post('/dashboard/products/{id}/update', 'DashboardController@updateProduct')->name('dashboard.products.update');
 Route::get('/dashboard/products/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.products.delete');
+
+Route::get('/dashboard/products', 'DashboardController@getProducts')->name('dashboard.products');
+Route::get('/dashboard/products/{search}', 'DashboardController@getProductsSearch')->name('dashboard.products.search');
+Route::post('/dashboard/products/store', 'DashboardController@storeProduct')->name('dashboard.products.store');
+Route::post('/dashboard/products/{id}/update', 'DashboardController@updateProduct')->name('dashboard.products.update');
+Route::get('/dashboard/products/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.products.delete');
