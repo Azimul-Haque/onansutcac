@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 use App\User;
 use App\Message;
@@ -28,7 +29,6 @@ use Artisan;
 use OneSignal;
 use Purifier;
 use Cache;
-use Illuminate\Support\Str;
 
 class DashboardController extends Controller
 {
