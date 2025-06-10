@@ -189,7 +189,7 @@ class DashboardController extends Controller
 
         $product->save();
 
-        Cache::forget('products_for_footer')
+        Cache::forget('products_for_footer');
         Session::flash('success', 'Product created successfully!');
         return redirect()->route('dashboard.products');
     }
@@ -223,7 +223,7 @@ class DashboardController extends Controller
 
         $product->save();
 
-        Cache::forget('products_for_footer')
+        Cache::forget('products_for_footer');
         Session::flash('success', 'Product updated successfully!');
         return redirect()->route('dashboard.products');
     }
@@ -238,6 +238,7 @@ class DashboardController extends Controller
 
         $product->delete();
 
+        Cache::forget('products_for_footer');
         Session::flash('success', 'Product deleted successfully!');
         return redirect()->route('dashboard.products');
     }
