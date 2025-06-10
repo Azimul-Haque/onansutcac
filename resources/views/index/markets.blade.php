@@ -40,6 +40,7 @@
             @php
               $modulo_index = ($loop->iteration - 1) % 2;
               $delay = 100 + ($modulo_index * 100);
+              echo $modulo_index;
             @endphp
             <div class="col-md-6 aos-init" data-aos="fade-right" data-aos-delay="100">
               <div class="service-item">
