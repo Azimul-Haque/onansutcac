@@ -56,7 +56,7 @@
                 @forelse($products as $product)
                     <tr>
                         <td>
-                            <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a>
+                            <a href="{{ route('index.singleproduct', $product->slug) }}" target="_blank">{{ $product->title }}</a>
                             <br/>
                             {{-- <small class="text-black-50">{{ Str::limit(strip_tags($product->text), 100) }}</small> --}}
                         </td>
