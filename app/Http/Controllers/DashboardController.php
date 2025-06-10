@@ -269,7 +269,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.products');
     }
 
-    deleteProduct 
+    public function deleteProduct(Request $request, $id) 
 
 
     public function getPackages()
