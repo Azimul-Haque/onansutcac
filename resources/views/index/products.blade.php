@@ -36,6 +36,9 @@
 
         <div class="row gy-5">
 
+          @foreach($products as $product)
+
+          @endforeach
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
