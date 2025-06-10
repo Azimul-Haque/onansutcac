@@ -237,6 +237,9 @@ class DashboardController extends Controller
         }
 
         $product->delete();
+
+        Session::flash('success', 'Product deleted successfully!');
+        return redirect()->route('dashboard.products');
     }
 
 
