@@ -3,7 +3,9 @@
 
 @section('third_party_stylesheets')
   <style>
-    .content
+    .content img {
+      width: 100%;
+    }
   </style>
 @endsection
 
