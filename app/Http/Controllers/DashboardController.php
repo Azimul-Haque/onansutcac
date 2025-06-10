@@ -237,9 +237,6 @@ class DashboardController extends Controller
 
     public function update(Request $request, Product $product)
     {
-        // Validation rules for updating a product
-        // The 'slug' uniqueness rule now excludes the current product's ID ($product->id)
-        // 'image' is made 'nullable' as it's optional during an update
         $this->validate($request, [
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug,' . $product->id,
