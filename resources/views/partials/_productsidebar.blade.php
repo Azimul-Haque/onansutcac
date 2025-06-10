@@ -51,7 +51,7 @@
     <h3 class="widget-title">Recent News</h3>
     @foreach($products as $product)
     <div class="post-item">
-      <img src="{{ asset('images/products/' . $product->image) }}" alt="" class="flex-shrink-0">
+      <img src="{{ asset('images/products/' . $product->image) }}" alt="N/A" class="flex-shrink-0">
       <div>
         <h4><a href="http://localhost:8000/news/slug">Nihil blanditiis at in nihil autem</a></h4>
         <time datetime="2020-01-01">Jan 1, 2020</time>
