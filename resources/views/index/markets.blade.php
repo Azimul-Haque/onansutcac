@@ -36,7 +36,7 @@
 
         <div class="row justify-content-center g-5">
           @php
-            $biicons = ['code-slash', 'bi-palette2', 'phone-fill', 'bar-chart-line', 'cloud-check', 'shield-lock']
+            $biicons = ['code-slash', 'palette2', 'phone-fill', 'bar-chart-line', 'cloud-check', 'shield-lock']
           @endphp
           @foreach($markets as $market)
             @php
