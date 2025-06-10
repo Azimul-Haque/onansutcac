@@ -50,7 +50,7 @@
                     <h3>{{ $product->title }}</h3>
                   </a>
                   <p>
-                    {!! $product->text !!}
+                    {{ Str::limit(strip_tags($product->text), 100) }}
                   </p>
 
                   <a href="{{ route('index.singleproduct', 'single') }}" class="service-link">
