@@ -98,13 +98,11 @@ Route::get('/dashboard/components', 'DashboardController@getComponents')->name('
 
 
 Route::get('/dashboard/products', 'DashboardController@getProducts')->name('dashboard.products');
-Route::get('/dashboard/products/{search}', 'DashboardController@getProductsSearch')->name('dashboard.products.search');
 Route::post('/dashboard/products/store', 'DashboardController@storeProduct')->name('dashboard.products.store');
 Route::post('/dashboard/products/{id}/update', 'DashboardController@updateProduct')->name('dashboard.products.update');
 Route::get('/dashboard/products/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.products.delete');
 
-Route::get('/dashboard/markets', 'DashboardController@getProducts')->name('dashboard.markets');
-Route::get('/dashboard/markets/{search}', 'DashboardController@getProductsSearch')->name('dashboard.markets.search');
+Route::get('/dashboard/markets', 'DashboardController@getMarkets')->name('dashboard.markets');
 Route::post('/dashboard/markets/store', 'DashboardController@storeProduct')->name('dashboard.markets.store');
 Route::post('/dashboard/markets/{id}/update', 'DashboardController@updateProduct')->name('dashboard.markets.update');
 Route::get('/dashboard/markets/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.markets.delete');
