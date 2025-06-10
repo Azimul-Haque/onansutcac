@@ -84,7 +84,7 @@ class IndexController extends Controller
 
     public function getProducts()
     {
-        $products = Product::orderBy('id', 'desc')->paginate(10);
+        $products = Product::orderBy('id', 'desc')->get();
         return view('index.products')->withProducts($products);
     }
 
