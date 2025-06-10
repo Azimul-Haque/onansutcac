@@ -45,7 +45,7 @@
               <div class="service-item">
                 <div class="img">
                   @if($product->image)
-                      <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid" alt="">
+                      <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid">
                   @else
                       <img src="{{ asset('vendor/dewi/assets/img/services-1.jpg') }}" class="img-fluid" alt="">
                   @endif
