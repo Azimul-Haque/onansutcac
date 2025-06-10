@@ -73,111 +73,110 @@
                                 <i class="fas fa-edit"></i> Edit
                             </button>
 
-                            <!-- Edit Product Modal Code -->
-                            <div class="modal fade" id="editProductModal{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="editProductModalLabel{{ $product->id }}" aria-hidden="true" data-backdrop="static">
-                              <div class="modal-dialog modal-xl" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header bg-primary">
-                                    <h5 class="modal-title" id="editProductModalLabel{{ $product->id }}">Update Product: {{ $product->title }}</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <form method="post" action="{{ route('dashboard.products.update', $product->id) }}" enctype="multipart/form-data">
-                                        <div class="modal-body">
-                                            @csrf
-                                            @method('PUT') {{-- Use PUT method for updates --}}
-
-                                            <div class="input-group mb-3">
-                                                <input type="text"
-                                                       name="title"
-                                                       class="form-control"
-                                                       value="{{ old('title', $product->title) }}"
-                                                       placeholder="Product Title" required>
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text"><span class="fas fa-box"></span></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="input-group mb-3">
-                                                <input type="text"
-                                                       name="slug"
-                                                       class="form-control"
-                                                       value="{{ old('slug', $product->slug) }}"
-                                                       autocomplete="off"
-                                                       placeholder="Product Slug" required>
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text"><span class="fas fa-link"></span></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="productTextEdit{{ $product->id }}">Product Description/Article</label>
-                                                <textarea id="productTextEdit{{ $product->id }}" name="text" class="form-control summernote-editor">{{ old('text', $product->text) }}</textarea>
-                                                @error('text')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="productImageEdit{{ $product->id }}">Product Image: (16:9 should be ideal)</label><br>
-                                                @if($product->image)
-                                                    <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
-                                                    <br>
-                                                    <small class="text-muted">Leave blank to keep current image.</small>
-                                                @else
-                                                    <small class="text-muted">No image uploaded.</small>
-                                                @endif
-                                                <div class="custom-file mt-2">
-                                                    <input type="file" class="custom-file-input" id="productImageEdit{{ $product->id }}" name="image" accept="image/*">
-                                                    <label class="custom-file-label" for="productImageEdit{{ $product->id }}">Choose new image (optional)</label>
-                                                </div>
-                                                @error('image')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
-
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Update</button>
-                                        </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- End Edit Product Modal Code -->
-
                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteProductModal{{ $product->id }}">
                                 <i class="fas fa-trash"></i> Delete
                             </button>
+                        </td>
 
-                            <!-- Delete Product Modal Code -->
-                            <div class="modal fade" id="deleteProductModal{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteProductModalLabel{{ $product->id }}" aria-hidden="true" data-backdrop="static">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header bg-danger">
-                                    <h5 class="modal-title" id="deleteProductModalLabel{{ $product->id }}">Delete Product</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    Are you sure you want to delete this product?<br/>
-                                    <center>
-                                        <big><b>{{ $product->title }}</b></big><br/>
-                                        <small>Slug: {{ $product->slug }}</small>
-                                    </center>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <a href="{{ route('dashboard.products.delete', $product->id) }}" class="btn btn-danger">Delete</a>
-                                  </div>
-                                </div>
+                        <!-- Edit Product Modal Code -->
+                        <div class="modal fade" id="editProductModal{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="editProductModalLabel{{ $product->id }}" aria-hidden="true" data-backdrop="static">
+                          <div class="modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header bg-primary">
+                                <h5 class="modal-title" id="editProductModalLabel{{ $product->id }}">Update Product: {{ $product->title }}</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <form method="post" action="{{ route('dashboard.products.update', $product->id) }}" enctype="multipart/form-data">
+                                    <div class="modal-body">
+                                        @csrf
+                                        @method('PUT') {{-- Use PUT method for updates --}}
+
+                                        <div class="input-group mb-3">
+                                            <input type="text"
+                                                   name="title"
+                                                   class="form-control"
+                                                   value="{{ old('title', $product->title) }}"
+                                                   placeholder="Product Title" required>
+                                            <div class="input-group-append">
+                                                <div class="input-group-text"><span class="fas fa-box"></span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <input type="text"
+                                                   name="slug"
+                                                   class="form-control"
+                                                   value="{{ old('slug', $product->slug) }}"
+                                                   autocomplete="off"
+                                                   placeholder="Product Slug" required>
+                                            <div class="input-group-append">
+                                                <div class="input-group-text"><span class="fas fa-link"></span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="productTextEdit{{ $product->id }}">Product Description/Article</label>
+                                            <textarea id="productTextEdit{{ $product->id }}" name="text" class="form-control summernote-editor">{{ old('text', $product->text) }}</textarea>
+                                            @error('text')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="productImageEdit{{ $product->id }}">Product Image: (16:9 should be ideal)</label><br>
+                                            @if($product->image)
+                                                <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
+                                                <br>
+                                                <small class="text-muted">Leave blank to keep current image.</small>
+                                            @else
+                                                <small class="text-muted">No image uploaded.</small>
+                                            @endif
+                                            <div class="custom-file mt-2">
+                                                <input type="file" class="custom-file-input" id="productImageEdit{{ $product->id }}" name="image" accept="image/*">
+                                                <label class="custom-file-label" for="productImageEdit{{ $product->id }}">Choose new image (optional)</label>
+                                            </div>
+                                            @error('image')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Update</button>
+                                    </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Edit Product Modal Code -->
+                        <!-- Delete Product Modal Code -->
+                        <div class="modal fade" id="deleteProductModal{{ $product->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteProductModalLabel{{ $product->id }}" aria-hidden="true" data-backdrop="static">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header bg-danger">
+                                <h5 class="modal-title" id="deleteProductModalLabel{{ $product->id }}">Delete Product</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                Are you sure you want to delete this product?<br/>
+                                <center>
+                                    <big><b>{{ $product->title }}</b></big><br/>
+                                    <small>Slug: {{ $product->slug }}</small>
+                                </center>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <a href="{{ route('dashboard.products.delete', $product->id) }}" class="btn btn-danger">Delete</a>
                               </div>
                             </div>
-                            <!-- End Delete Product Modal Code -->
-                        </td>
+                          </div>
+                        </div>
+                        <!-- End Delete Product Modal Code -->
                     </tr>
                 @empty
                     <tr>
