@@ -40,7 +40,7 @@
         <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}<span>(USA, SG)</span></a></li>
       @endforeach
       @foreach($products as $product)
-        <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}<span>(USA, SG)</span></a></li>
+        <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
       @endforeach
     </ul>
 
