@@ -154,9 +154,9 @@ class DashboardController extends Controller
     public function getProducts(Request $request)
     {
         if($request->search) {
-            $products = Product::where('title', 'LIKE', "%$search%")
-                         ->orWhere('slug', 'LIKE', "%$search%")
-                         ->orWhere('text', 'LIKE', "%$search%")
+            $products = Product::where('title', 'LIKE', "%$request->search%")
+                         ->orWhere('slug', 'LIKE', "%$request->search%")
+                         ->orWhere('text', 'LIKE', "%$request->search%")
                          ->orderBy('id', 'desc')
                          ->paginate(10);
         } else {
