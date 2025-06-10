@@ -235,7 +235,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.products'); // Redirect back to the products listing
     }
 
-    public function updateProduct(Request $request, Product $product)
+    public function updateProduct(Request $request, $id)
     {
         $this->validate($request, [
             'title' => 'required|string|max:191',
