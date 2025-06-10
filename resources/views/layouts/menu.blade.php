@@ -1,4 +1,4 @@
- <!-- need to remove -->
+
 <li class="nav-item">
     <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard') ? 'active' : '' }}">
         <i class="nav-icon fas fa-home"></i>
@@ -24,6 +24,83 @@
     <a href="{{ route('dashboard.markets') }}" class="nav-link {{ Request::is('dashboard/markets') ? 'active' : '' }} {{ Request::is('dashboard/markets/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-chart-bar"></i>
         <p>Markets</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.team-details') }}" class="nav-link {{ Request::is('dashboard/team-details') ? 'active' : '' }} {{ Request::is('dashboard/team-details/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-users-cog"></i>
+        <p>Team Details</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.meta-data') }}" class="nav-link {{ Request::is('dashboard/meta-data') ? 'active' : '' }} {{ Request::is('dashboard/meta-data/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-info"></i>
+        <p>Meta Data</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.abouts-data') }}" class="nav-link {{ Request::is('dashboard/abouts-data') ? 'active' : '' }} {{ Request::is('dashboard/abouts-data/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-file-alt"></i>
+        <p>Abouts Data</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.news') }}" class="nav-link {{ Request::is('dashboard/news') ? 'active' : '' }} {{ Request::is('dashboard/news/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-newspaper"></i>
+        <p>News</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.events') }}" class="nav-link {{ Request::is('dashboard/events') ? 'active' : '' }} {{ Request::is('dashboard/events/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-calendar-alt"></i>
+        <p>Events</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.success-stories') }}" class="nav-link {{ Request::is('dashboard/success-stories') ? 'active' : '' }} {{ Request::is('dashboard/success-stories/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-trophy"></i>
+        <p>Success Stories</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.clients') }}" class="nav-link {{ Request::is('dashboard/clients') ? 'active' : '' }} {{ Request::is('dashboard/clients/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-handshake"></i>
+        <p>Clients</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.testimonials') }}" class="nav-link {{ Request::is('dashboard/testimonials') ? 'active' : '' }} {{ Request::is('dashboard/testimonials/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-comment-alt"></i>
+        <p>Testimonials</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.information-center') }}" class="nav-link {{ Request::is('dashboard/information-center') ? 'active' : '' }} {{ Request::is('dashboard/information-center/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-info-circle"></i>
+        <p>Information Center</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.help-center-faq') }}" class="nav-link {{ Request::is('dashboard/help-center-faq') ? 'active' : '' }} {{ Request::is('dashboard/help-center-faq/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-question-circle"></i>
+        <p>Help Center/FAQ</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('dashboard.statistics') }}" class="nav-link {{ Request::is('dashboard/statistics') ? 'active' : '' }} {{ Request::is('dashboard/statistics/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-chart-pie"></i>
+        <p>Statistics</p>
     </a>
 </li>
 
