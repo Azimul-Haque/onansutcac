@@ -226,7 +226,7 @@ class DashboardController extends Controller
             $image    = $request->file('image');
             $filename = random_string(5) . time() .'.' . "webp";
             $location = public_path('images/products/'. $filename);
-            Image::make($image)->fit(400, 355)->save($location);
+            Image::make($image)->fit(711, 400)->save($location);
             $product->image       = $filename;
         }
 
