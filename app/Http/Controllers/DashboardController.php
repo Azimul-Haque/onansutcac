@@ -206,6 +206,13 @@ class DashboardController extends Controller
         return view('dashboard.products.index')->withProducts($products);
     }
 
+    public function storeProduct()
+    {
+        $products = Product::orderBy('id', 'desc')->paginate(5);
+
+        return view('dashboard.products.index')->withProducts($products);
+    }
+
 
     public function getPackages()
     {
