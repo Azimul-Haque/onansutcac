@@ -34,8 +34,7 @@ class DashboardController extends Controller
     public function __construct()
     {
         parent::__construct();
-        $productsforfooter = Product::orderBy('id', 'desc')->get()->take(6);
-        View::share('productsforfooter', $productsforfooter);
+        
 
         $this->middleware('auth')->except('clear');
         $this->middleware(['admin'])->only('getUsers', 'storeUser', 'updateUser', 'deleteUser', 'getUser', 'getMessages', 'updateMessage', 'getNotifications');
