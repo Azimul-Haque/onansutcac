@@ -37,6 +37,12 @@
         <div class="row gy-5">
 
           @foreach($products as $product)
+              @php
+                $delay = 100 * ($loop->iteration + 1); // This will give 200, 300, 400, etc.
+                // If you always want to start exactly at 200, 300, 400 for every row of 3 items,
+                // you might use the modulo operator. Let's assume you want it to increment
+                // for every item in the loop without resetting per row for now.
+              @endphp
             <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
               <div class="service-item">
                 <div class="img">
