@@ -125,7 +125,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="productImageEdit{{ $product->id }}">Product Image: (16:9 should be ideal)</label><br>
+                                            <label for="productImageEdit{{ $product->id }}">Product Image: (16:9 should be ideal, max: 2MB)</label><br>
                                             @if($product->image)
                                                 <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
                                                 <br>
@@ -239,7 +239,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="productImageAdd">Product Image: (16:9 should be ideal)</label>
+                    <label for="productImageAdd">Product Image: (16:9 should be ideal, max: 2MB)</label>
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="productImageAdd" name="image" accept="image/*" required>
                         <label class="custom-file-label" for="productImageAdd">Choose file</label>
