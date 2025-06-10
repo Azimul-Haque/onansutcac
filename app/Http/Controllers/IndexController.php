@@ -92,6 +92,8 @@ class IndexController extends Controller
 
     public function getProduct($slug)
     {
+        $product = Product::where('slug', $slug)->first();
+        
         return view('index.singleproduct');
     }
 
