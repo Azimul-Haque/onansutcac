@@ -39,11 +39,6 @@
           @foreach($marketsforfooter as $market)
             <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></li>
           @endforeach
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 1</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 2</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 3</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 4</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', '123') }}">Market - 5</a></li>
         </ul>
       </div>
 
