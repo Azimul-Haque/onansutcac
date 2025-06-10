@@ -93,7 +93,7 @@ class IndexController extends Controller
     public function getProduct($slug)
     {
         $product = Product::where('slug', $slug)->orderBy('id', 'desc')->first();
-        $products = Product::orderBy('id', 'desc')->get();
+        $products = Product::orderBy('id', 'desc')->get()->take(6);
 
         return view('index.singleproduct')
                     ->withProduct($product);
