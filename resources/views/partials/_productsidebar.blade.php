@@ -32,7 +32,7 @@
   </div><!--/Search Widget --> --}}
 
   <!-- Categories Widget -->
-  <div class="categories-widget widget-item">
+  {{-- <div class="categories-widget widget-item">
 
     <h3 class="widget-title">Products</h3>
     <ul class="mt-3">
@@ -44,7 +44,8 @@
       @endforeach
     </ul>
 
-  </div><!--/Categories Widget -->
+  </div> --}}
+  <!--/Categories Widget -->
 
   <div class="recent-posts-widget widget-item">
 
