@@ -223,6 +223,7 @@ class DashboardController extends Controller
 
         $product->save();
 
+        Cache::forget('products_for_footer')
         Session::flash('success', 'Product updated successfully!');
         return redirect()->route('dashboard.products');
     }
