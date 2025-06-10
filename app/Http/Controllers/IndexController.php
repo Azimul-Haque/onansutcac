@@ -119,7 +119,7 @@ class IndexController extends Controller
         $products = Product::orderBy('id', 'desc')->get()->take(6);
 
         return view('index.singlemarket')
-                    ->withProduct($product)
+                    ->withMarket($market)
                     ->withMarkets($markets);
                     ->withProducts($products);
     }
