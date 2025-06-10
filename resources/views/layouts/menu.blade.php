@@ -13,25 +13,19 @@
         <p>Users</p>
     </a>
 </li>
-@endif
-
-@if(Auth::user()->role == 'admin')
 <li class="nav-item">
     <a href="{{ route('dashboard.products') }}" class="nav-link {{ Request::is('dashboard/products') ? 'active' : '' }} {{ Request::is('dashboard/products/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-list"></i>
         <p>Products</p>
     </a>
 </li>
-@endif
 
-@if(Auth::user()->role == 'admin')
 <li class="nav-item">
     <a href="{{ route('dashboard.markets') }}" class="nav-link {{ Request::is('dashboard/markets') ? 'active' : '' }} {{ Request::is('dashboard/markets/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-chart-bar"></i>
         <p>Markets</p>
     </a>
 </li>
-@endif
 
 
 @if(Auth::user()->role == 'admin')
