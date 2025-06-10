@@ -142,49 +142,6 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.users');
     }
 
-    public function getUser($id)
-    {
-        $user = User::find($id);
-
-        // dd($totaldeposit);
-
-        return view('dashboard.users.single')
-                    ->withUser($user);
-    }
-
-    public function getUserWithOtherPage($id)
-    {
-        $user = User::find($id);
-
-        // dd($totalexpense);
-
-        return view('dashboard.users.singleother')
-                    ->withUser($user);
-    }
-
-    public function updateBulkPackageDate(Request $request)
-    {
-        $this->validate($request,array(
-            'numbers'                      => 'required',
-            'packageexpirydatebulk'        => 'required',
-        ));
-
-        $numbersarray = explode(',', $request->numbers);
-
-        $counter = 0;
-        foreach($numbersarray as $number) {
-            $user = User::where('mobile', 'LIKE', '%' . $number . '%')->first();
-            if($user) {
-                $user->package_expiry_date = date('Y-m-d', strtotime($request->packageexpirydatebulk)) . ' 23:59:59';
-                $user->save();
-                $counter++;
-            }
-        }
-
-        Session::flash('success', $counter . ' Users updated successfully!');
-        return redirect()->route('dashboard.users');
-    }
-
     public function deleteUser($id)
     {
         $user = User::find($id);
