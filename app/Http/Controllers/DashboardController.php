@@ -209,15 +209,15 @@ class DashboardController extends Controller
     public function storeProduct(Request $request)
     {
         $this->validate($request, array(
-            'title' => 'required|string|max:191', // Corresponds to 'name'
-            'slug'  => 'required|string|max:300|unique:products,slug', // Corresponds to 'email'
-            'text'  => 'required', // Corresponds to 'mobile' (for article content)
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Corresponds to 'password'
+            'title' => 'required|string|max:191',
+            'slug'  => 'required|string|max:300|unique:products,slug',
+            'text'  => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ));
 
         $product = new Product;
         $product->title = $request->title;
-        $product->slug = Str::slug($request->slug); // Generate URL-friendly slug
+        $product->slug = Str::slug($request->slug);
         $product->text = Purifier::clean($request->text, 'youtube');
 
         // image upload
@@ -229,10 +229,10 @@ class DashboardController extends Controller
             $product->image       = $filename;
         }
 
-        $product->save(); // Save the new product to the database
+        $product->save();
 
-        Session::flash('success', 'Product created successfully!'); // Flash a success message
-        return redirect()->route('dashboard.products'); // Redirect back to the products listing
+        Session::flash('success', 'Product created successfully!');
+        return redirect()->route('dashboard.products');
     }
 
     public function updateProduct(Request $request, $id)
