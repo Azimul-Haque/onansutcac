@@ -28,9 +28,9 @@
         <h4>Products</h4>
         <ul>
           @foreach($productsforfooter as $product)
-
+            <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">{{ $product->title }}</a></li>
           @endforeach
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 1</a></li>
+          
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 2</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 3</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', '123') }}">Product - 4</a></li>
