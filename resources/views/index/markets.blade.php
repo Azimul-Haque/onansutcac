@@ -53,7 +53,7 @@
                 </div>
                 <div class="service-content">
                   <h3>{{ $market->title }}</h3>
-                  <p>{{ Str::limit(strip_tags($market->text), 190) }}</p>
+                  <p>{{ Str::limit(strip_tags($market->text), 200) }}</p>
                   <a href="{{ route('index.singlemarket', '1') }}" class="service-link">
                     <span>Learn More</span>
                     <i class="bi bi-arrow-right"></i>
