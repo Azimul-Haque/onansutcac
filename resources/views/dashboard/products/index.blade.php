@@ -6,7 +6,7 @@
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/select2-bootstrap4.min.css') }}" rel="stylesheet" />
     <!-- CKEditor 4 CDN for WYSIWYG editor -->
-    <script src="https://cdn.ckeditor.com/4.25.1/standard/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <style type="text/css">
       .select2-selection__choice{
           background-color: rgba(0, 123, 255) !important;
