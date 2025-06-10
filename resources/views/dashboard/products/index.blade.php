@@ -240,7 +240,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="productImageAdd">Product Image</label>
+                    <label for="productImageAdd">News Image: (16:9 should be ideal)</label>
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="productImageAdd" name="image" accept="image/*" required>
                         <label class="custom-file-label" for="productImageAdd">Choose file</label>
