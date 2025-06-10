@@ -73,27 +73,6 @@
       </div><!-- End recent post item-->
     @endforeach
     
-
-    <div class="post-item">
-      <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
-      {{-- <time datetime="2020-01-01">Jan 1, 2020</time> --}}
-    </div><!-- End recent post item-->
-
-    <div class="post-item">
-      <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a></h4>
-      {{-- <time datetime="2020-01-01">Jan 1, 2020</time> --}}
-    </div><!-- End recent post item-->
-
-    <div class="post-item">
-      <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
-      {{-- <time datetime="2020-01-01">Jan 1, 2020</time> --}}
-    </div><!-- End recent post item-->
-
-    <div class="post-item">
-      <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
-      {{-- <time datetime="2020-01-01">Jan 1, 2020</time> --}}
-    </div><!-- End recent post item-->
-
   </div><!--/Recent Posts Widget -->
 
   <!-- Tags Widget -->
