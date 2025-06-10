@@ -60,7 +60,7 @@
       <div>
         <h4><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></h4>
         {{-- <time datetime="2020-01-01">{{ date('F d, Y', strtotime($product->created_at)) }}</time> --}}
-        {{ asset('images/products/') }}
+        {{ public_path('images/products/') }}
       </div>
     </div><!-- End recent post item-->
     @endforeach
