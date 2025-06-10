@@ -48,30 +48,6 @@
 </li>
 @endif
 
-{{-- @if(Auth::user()->role == 'admin')
-<li class="nav-item">
-    <a href="{{ route('dashboard.notifications') }}" class="nav-link {{ Request::is('dashboard/notifications') ? 'active' : '' }} {{ Request::is('dashboard/notification/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-bell"></i>
-        <p>নোটিফিকেশন</p>
-    </a>
-</li>
-@endif
-
-@if(Auth::user()->role == 'admin' || Auth::user()->role == 'manager')
-<li class="nav-item">
-    <a href="{{ route('dashboard.blogs') }}" class="nav-link {{ Request::is('dashboard/blogs') ? 'active' : '' }} {{ Request::is('dashboard/blogs/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-pen-nib"></i>
-        <p>ব্লগ</p>
-    </a>
-</li>
-@endif --}}
-
-{{-- <li class="nav-item">
-    <a href="{{ route('dashboard.components') }}" class="nav-link {{ Request::is('dashboard/components') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-laptop-code"></i>
-        <p>Components</p>
-    </a>
-</li> --}}
 <li class="nav-item">
     <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link">
         <i class="nav-icon fas fa-sign-out-alt"></i>
