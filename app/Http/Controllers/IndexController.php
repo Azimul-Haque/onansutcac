@@ -100,7 +100,7 @@ class IndexController extends Controller
 
         return view('index.singleproduct')
                     ->withProduct($product)
-                    ->withMarkets($markets);
+                    ->withMarkets($markets)
                     ->withProducts($products);
     }
 
@@ -120,7 +120,7 @@ class IndexController extends Controller
 
         return view('index.singlemarket')
                     ->withMarket($market)
-                    ->withMarkets($markets);
+                    ->withMarkets($markets)
                     ->withProducts($products);
     }
 
