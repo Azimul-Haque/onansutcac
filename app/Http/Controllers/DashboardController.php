@@ -37,7 +37,7 @@ class DashboardController extends Controller
         parent::__construct();
         $unresolvedmessagecount = Message::where('status', 0)->count();
         View::share('unresolvedmessagecount', $unresolvedmessagecount);
-              
+
         $this->middleware('auth')->except('clear');
         $this->middleware(['admin'])->only('getUsers', 'storeUser', 'updateUser', 'deleteUser', 'getUser', 'getMessages', 'updateMessage', 'getNotifications');
 
@@ -189,6 +189,7 @@ class DashboardController extends Controller
 
         $product->save();
 
+        Cache::forget('products_for_footer')
         Session::flash('success', 'Product created successfully!');
         return redirect()->route('dashboard.products');
     }
