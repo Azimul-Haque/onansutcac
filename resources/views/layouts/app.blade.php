@@ -141,7 +141,7 @@
 </div>
 
 
-<script src="{{ mix('js/app.js') }}" defer></script>
+{{-- <script src="{{ mix('js/app.js') }}" defer></script> --}}
 <script src="{{ asset('js/pace.min.js') }}"></script>
 <script>
  Pace.restart();
