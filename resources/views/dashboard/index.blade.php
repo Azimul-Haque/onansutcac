@@ -85,8 +85,7 @@
               </div>
             </a>
           </div>
-
-          @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
+          
           <div class="col-md-3">
             <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-bus"></i></span>
@@ -97,9 +96,7 @@
               </div>
             </a>
           </div>
-          @endif
 
-          @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
           <div class="col-md-3">
             <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-car"></i></span>
@@ -110,7 +107,6 @@
               </div>
             </a>
           </div>
-          @endif
 
           @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
           <div class="col-md-3">
