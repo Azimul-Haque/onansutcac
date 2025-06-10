@@ -34,7 +34,7 @@
 
                 <div class="post-img">
                   @if($product->image)
-                      <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid" style="width: 100%;">
+                      <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
                   @endif
                 </div>
 
