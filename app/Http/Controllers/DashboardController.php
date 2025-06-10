@@ -233,10 +233,7 @@ class DashboardController extends Controller
             $filename = random_string(5) . time() .'.' . "webp";
             $location = public_path('images/products/'. $filename);
             Image::make($image)->fit(200, 355)->save($location);
-            $ambulanceimage              = new Ambulanceimage;
-            $product->image   = $ambulance->id;
-            $ambulanceimage->image       = $filename;
-            $ambulanceimage->save();
+            $product->image       = $filename;
         }
 
         $product->save(); // Save the new product to the database
