@@ -3,8 +3,10 @@
 
 @section('third_party_stylesheets')
   <style>
-    .blog-details .content p img {
-      width: 100%;
+    .blog-details .content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 @endsection
