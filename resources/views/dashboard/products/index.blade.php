@@ -262,6 +262,7 @@
 @section('third_party_scripts')
     <script src="{{ asset('js/select2.full.min.js') }}"></script>
     <!-- Summernote JS for WYSIWYG editor -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
     
     <script type="text/javascript">
