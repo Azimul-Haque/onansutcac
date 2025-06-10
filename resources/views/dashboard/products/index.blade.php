@@ -83,7 +83,7 @@
                                   <form method="post" action="{{ route('dashboard.products.update', $product->id) }}" enctype="multipart/form-data">
                                         <div class="modal-body">
                                             @csrf
-                                            @method('PUT') 
+                                            @method('PUT') {{-- Use PUT method for updates --}}
 
                                             <div class="input-group mb-3">
                                                 <input type="text"
@@ -267,6 +267,7 @@
     <script type="text/javascript">
         // Ensure jQuery is loaded before attempting to initialize Summernote
         // Also ensure Bootstrap 4's JavaScript is loaded in your layouts.app
+        // (e.g., <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>)
         $(document).ready(function() {
             // Check if Summernote function exists before initializing
             if ($.fn.summernote) {
