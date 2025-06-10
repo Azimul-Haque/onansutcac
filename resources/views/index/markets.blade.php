@@ -53,7 +53,7 @@
                 </div>
                 <div class="service-content">
                   <h3>{{ $market->title }}</h3>
-                  <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>{{ Str::limit(strip_tags($market->text), 190) }}</p>
                   <a href="{{ route('index.singlemarket', '1') }}" class="service-link">
                     <span>Learn More</span>
                     <i class="bi bi-arrow-right"></i>
