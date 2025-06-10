@@ -7,16 +7,9 @@ use Illuminate\Support\Str;
 
 use App\User;
 use App\Message;
-use App\Notification;
 
 use App\Product;
 use App\Market;
-
-use App\Hospital;
-use App\Doctor;
-use App\Blooddonor;
-use App\Coaching;
-use App\District;
 
 use Carbon\Carbon;
 use DB;
