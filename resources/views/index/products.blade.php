@@ -37,29 +37,29 @@
         <div class="row gy-5">
 
           @foreach($products as $product)
-
-          @endforeach
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item">
-              <div class="img">
-                <img src="{{ asset('vendor/dewi/assets/img/services-1.jpg') }}" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-activity"></i>
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="service-item">
+                <div class="img">
+                  <img src="{{ asset('vendor/dewi/assets/img/services-1.jpg') }}" class="img-fluid" alt="">
                 </div>
-                <a href="{{ route('index.singleproduct', 'single') }}" class="stretched-link">
-                  <h3>Nesciunt Mete</h3>
-                </a>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+                <div class="details position-relative">
+                  <div class="icon">
+                    <i class="bi bi-activity"></i>
+                  </div>
+                  <a href="{{ route('index.singleproduct', 'single') }}" class="stretched-link">
+                    <h3>Nesciunt Mete</h3>
+                  </a>
+                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
 
-                <a href="{{ route('index.singleproduct', 'single') }}" class="service-link">
-                  <span>Explore More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
+                  <a href="{{ route('index.singleproduct', 'single') }}" class="service-link">
+                    <span>Explore More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
               </div>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
+          @endforeach
+          
 
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
