@@ -37,7 +37,10 @@
     <h3 class="widget-title">Products</h3>
     <ul class="mt-3">
       @foreach($products as $product)
-        <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}<span>(USA, SG)</span></a></li>
+        <li>
+          <<img src="" alt="">
+          <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}<span>(USA, SG)</span></a>
+        </li>
       @endforeach
       @foreach($products as $product)
         <h4><a href="{{ route('index.singleproduct', $product->slug) }}">Nihil blanditiis at in nihil autem</a></h4>
