@@ -265,9 +265,6 @@
     <!-- Summernote JS for WYSIWYG editor -->
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
     <script type="text/javascript">
-        // Ensure jQuery is loaded before attempting to initialize Summernote
-        // Also ensure Bootstrap 4's JavaScript is loaded in your layouts.app
-        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         $(document).ready(function() {
             // Check if Summernote function exists before initializing
             if ($.fn.summernote) {
