@@ -9,16 +9,16 @@
 	@section('page-header') Dashboard @endsection
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3">
-              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
-                <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-hospital"></i></span>
+          <div class="col-md-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
+              <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-hospital"></i></span>
 
-                <div class="info-box-content">
-                  <span class="info-box-text">হাসপাতাল তালিকা</span>
-                  <small class="info-box-text" style="margin-top: 10px;">View More</small>
-                </div>
-              </a>
-            </div>
+              <div class="info-box-content">
+                <span class="info-box-text">হাসপাতাল তালিকা</span>
+                <small class="info-box-text" style="margin-top: 10px;">View More</small>
+              </div>
+            </a>
+          </div>
 
           <div class="col-md-3">
             <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
