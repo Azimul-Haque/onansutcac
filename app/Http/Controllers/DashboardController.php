@@ -201,7 +201,7 @@ class DashboardController extends Controller
 
     public function getProducts()
     {
-        $packages = Package::all();
+        $packages = Product::all();
 
         return view('dashboard.packages.index')->withPackages($packages);
     }
