@@ -49,7 +49,7 @@
   <div class="recent-posts-widget widget-item">
 
     <h3 class="widget-title">Recent News</h3>
-
+    @foreach($products as $product)
     <div class="post-item">
       <img src="http://localhost:8000/vendor/dewi/assets/img/news/blog-post-1.webp" alt="" class="flex-shrink-0">
       <div>
@@ -57,6 +57,7 @@
         <time datetime="2020-01-01">Jan 1, 2020</time>
       </div>
     </div><!-- End recent post item-->
+    @endforeach
   </div>
 
   <!-- Recent Posts Widget -->
