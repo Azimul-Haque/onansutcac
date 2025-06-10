@@ -34,7 +34,7 @@ class DashboardController extends Controller
     public function __construct()
     {
         parent::__construct();
-        $unresolvedmessagecount = Message::where('status', 0)->count();
+        $unresolvedmessagecount = Product::where('status', 0)->count();
         View::share('unresolvedmessagecount', $unresolvedmessagecount);
               
         $this->middleware('auth')->except('clear');
