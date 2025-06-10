@@ -234,7 +234,7 @@ class DashboardController extends Controller
             $location = public_path('images/products/'. $filename);
             Image::make($image)->fit(200, 355)->save($location);
             $ambulanceimage              = new Ambulanceimage;
-            $ambulanceimage->ambulance_id   = $ambulance->id;
+            $product->image   = $ambulance->id;
             $ambulanceimage->image       = $filename;
             $ambulanceimage->save();
         }
