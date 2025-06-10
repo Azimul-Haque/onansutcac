@@ -10,6 +10,7 @@ use App\Message;
 use App\Notification;
 
 use App\Product;
+use App\Market;
 
 use App\Hospital;
 use App\Doctor;
