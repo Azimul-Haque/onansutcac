@@ -54,7 +54,7 @@
                   <i class="bi bi-{{ $biicons[$loop->iteration - 1] }}"></i>
                 </div>
                 <div class="service-content">
-                  <h3><a href="{{ route('index.singlemarket', $market->slug) }}" style="color: black;">{{ $market->title }}</a></h3>
+                  <h3>{{ $market->title }}</a></h3>
                   <p>{{ Str::limit(strip_tags($market->text), 200) }}</p>
                   <a href="{{ route('index.singlemarket', $market->slug) }}" class="service-link">
                     <span>Learn More</span>
