@@ -48,7 +48,7 @@
 
   <div class="recent-posts-widget widget-item">
 
-    <h3 class="widget-title">Recent News</h3>
+    <h3 class="widget-title">Products</h3>
     @foreach($products as $product)
     <div class="post-item">
       <img src="{{ asset('images/products/' . $product->image) }}" alt="N/A" class="flex-shrink-0">
