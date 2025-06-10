@@ -103,8 +103,8 @@ Route::post('/dashboard/products/store', 'DashboardController@storeProduct')->na
 Route::post('/dashboard/products/{id}/update', 'DashboardController@updateProduct')->name('dashboard.products.update');
 Route::get('/dashboard/products/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.products.delete');
 
-Route::get('/dashboard/products', 'DashboardController@getProducts')->name('dashboard.products');
-Route::get('/dashboard/products/{search}', 'DashboardController@getProductsSearch')->name('dashboard.products.search');
-Route::post('/dashboard/products/store', 'DashboardController@storeProduct')->name('dashboard.products.store');
-Route::post('/dashboard/products/{id}/update', 'DashboardController@updateProduct')->name('dashboard.products.update');
-Route::get('/dashboard/products/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.products.delete');
+Route::get('/dashboard/markets', 'DashboardController@getProducts')->name('dashboard.products');
+Route::get('/dashboard/markets/{search}', 'DashboardController@getProductsSearch')->name('dashboard.products.search');
+Route::post('/dashboard/markets/store', 'DashboardController@storeProduct')->name('dashboard.products.store');
+Route::post('/dashboard/markets/{id}/update', 'DashboardController@updateProduct')->name('dashboard.products.update');
+Route::get('/dashboard/markets/{id}/delete', 'DashboardController@deleteProduct')->name('dashboard.products.delete');
