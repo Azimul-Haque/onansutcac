@@ -244,7 +244,7 @@ class DashboardController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        $doctor = Product::findOrFail($id);
+        $product = Product::findOrFail($id);
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
 
