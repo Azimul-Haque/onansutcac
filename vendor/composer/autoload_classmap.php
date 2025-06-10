@@ -64,6 +64,7 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Journalist' => $baseDir . '/app/Journalist.php',
     'App\\Lawyer' => $baseDir . '/app/Lawyer.php',
+    'App\\Market' => $baseDir . '/app/Market.php',
     'App\\Medicaldepartment' => $baseDir . '/app/Medicaldepartment.php',
     'App\\Medicalsymptom' => $baseDir . '/app/Medicalsymptom.php',
     'App\\Message' => $baseDir . '/app/Message.php',
