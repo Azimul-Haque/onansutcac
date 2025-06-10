@@ -8,6 +8,8 @@ use App\User;
 use App\Message;
 use App\Notification;
 
+use App\Product;
+
 use App\Hospital;
 use App\Doctor;
 use App\Blooddonor;
