@@ -141,6 +141,8 @@
 </div>
 
 @if(Request::is('dashboard/products') || Request::is('dashboard/products/*'))
+    
+@else
     <script src="{{ mix('js/app.js') }}" defer></script>
 @endif
 <script src="{{ asset('js/pace.min.js') }}"></script>
