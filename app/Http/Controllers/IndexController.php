@@ -104,7 +104,8 @@ class IndexController extends Controller
     public function getMarkets()
     {
         $markets = Market::orderBy('id', 'desc')->get();
-        return view('index.markets');
+        return view('index.markets')
+                    ->withMarkets($markets);
     }
 
     public function getMarket($id)
