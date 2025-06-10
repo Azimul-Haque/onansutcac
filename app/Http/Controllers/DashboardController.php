@@ -218,7 +218,7 @@ class DashboardController extends Controller
         $product = new Product;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug); // Generate URL-friendly slug
-        $product->text = $request->text;
+        $product->text = Purifier::clean($request->text, 'youtube');
 
         // Handle image upload
         $imagePath = null;
