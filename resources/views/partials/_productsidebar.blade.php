@@ -37,14 +37,8 @@
     <h3 class="widget-title">Products</h3>
     <ul class="mt-3">
       @foreach($products as $product)
-
+        <li><a href="#">{{ $product->title }}<span>(USA, SG)</span></a></li>
       @endforeach
-      <li><a href="#">{{ $product->title }}<span>(USA, SG)</span></a></li>
-      <li><a href="#">{{ $product->title }}<span>(USA)</span></a></li>
-      <li><a href="#">{{ $product->title }}<span>(USA)</span></a></li>
-      <li><a href="#">{{ $product->title }}<span>(USA, SG)</span></a></li>
-      <li><a href="#">{{ $product->title }}<span>(SG)</span></a></li>
-      <li><a href="#">{{ $product->title }}<span>(USA, SG)</span></a></li>
     </ul>
 
   </div><!--/Categories Widget -->
