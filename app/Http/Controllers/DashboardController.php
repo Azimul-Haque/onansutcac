@@ -235,6 +235,8 @@ class DashboardController extends Controller
         if ($product->image && file_exists(public_path('images/products/' . $product->image))) {
             unlink(public_path('images/products/' . $product->image));
         }
+
+        $product->delete();
     }
 
 
