@@ -46,7 +46,7 @@
                   <div class="icon">
                     <i class="bi bi-activity"></i>
                   </div>
-                  <a href="{{ route('index.singleproduct', 'single') }}" class="stretched-link">
+                  <a href="{{ route('index.singleproduct', $product->slug) }}" class="stretched-link">
                     <h3>{{ $product->title }}</h3>
                   </a>
                   <p>
