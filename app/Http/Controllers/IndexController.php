@@ -85,7 +85,9 @@ class IndexController extends Controller
     public function getProducts()
     {
         $products = Product::orderBy('id', 'desc')->get();
-        return view('index.products')->withProducts($products);
+        
+        return view('index.products')
+                    ->withProducts($products);
     }
 
     public function getProduct($id)
