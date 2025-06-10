@@ -120,7 +120,7 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="productImageEdit{{ $product->id }}">News Image:</label><br>
+                                                <label for="productImageEdit{{ $product->id }}">News Image: (16:9)</label><br>
                                                 @if($product->image)
                                                     <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
                                                     <br>
