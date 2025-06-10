@@ -72,7 +72,7 @@
 
     @foreach($markets as $market)
       <div class="post-item">
-        @if($product->image && file_exists(public_path('images/products/' . $product->image)))
+        @if($market->image && file_exists(public_path('images/markets/' . $market->image)))
           <img src="{{ asset('images/markets/' . $market->image) }}" alt="N/A" class="flex-shrink-0">
         @else
           <img src="https://placehold.co/100x100/8BE78B/ffffff?text=M" alt="N/A" class="flex-shrink-0">
