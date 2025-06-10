@@ -36,21 +36,25 @@
 
         <div class="row justify-content-center g-5">
 
-          <div class="col-md-6 aos-init" data-aos="fade-right" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div class="service-content">
-                <h3>Aero Defense</h3>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="{{ route('index.singlemarket', '1') }}" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
+          @foreach($markets as $market)
+            <div class="col-md-6 aos-init" data-aos="fade-right" data-aos-delay="100">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <div class="service-content">
+                  <h3>Aero Defense</h3>
+                  <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="{{ route('index.singlemarket', '1') }}" class="service-link">
+                    <span>Learn More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          @endforeach
+
+          
 
           <div class="col-md-6 aos-init" data-aos="fade-left" data-aos-delay="100">
             <div class="service-item">
