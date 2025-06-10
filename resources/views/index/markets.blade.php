@@ -39,7 +39,7 @@
           @foreach($markets as $market)
             @php
               $modulo_index = ($loop->iteration - 1) % 2;
-              $delay = 200 + ($modulo_index * 100);
+              $delay = 100 + ($modulo_index * 100);
             @endphp
             <div class="col-md-6 aos-init" data-aos="fade-right" data-aos-delay="100">
               <div class="service-item">
