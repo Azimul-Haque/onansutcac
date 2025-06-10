@@ -52,6 +52,7 @@
     <h3 class="widget-title">Products</h3>
     @foreach($products as $product)
     <div class="post-item">
+      @if($product->image && file_exists(public_path('images/products/' . $product->image)))
       <img src="{{ asset('images/products/' . $product->image) }}" alt="N/A" class="flex-shrink-0">
       <div>
         <h4><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></h4>
