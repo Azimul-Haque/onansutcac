@@ -68,7 +68,7 @@
 
     @foreach($markets as $market)
       <div class="post-item">
-        <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
+        <h4><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></h4>
         {{-- <time datetime="2020-01-01">Jan 1, 2020</time> --}}
       </div><!-- End recent post item-->
     @endforeach
