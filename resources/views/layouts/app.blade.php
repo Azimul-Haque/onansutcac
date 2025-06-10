@@ -140,8 +140,9 @@
     </footer>
 </div>
 
-
-<script src="{{ mix('js/app.js') }}" defer></script>
+@if(Request::is('dashboard/products'))
+    <script src="{{ mix('js/app.js') }}" defer></script>
+@endif
 <script src="{{ asset('js/pace.min.js') }}"></script>
 <script>
  Pace.restart();
