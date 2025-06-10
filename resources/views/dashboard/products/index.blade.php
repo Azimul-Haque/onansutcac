@@ -271,29 +271,71 @@
         // Ensure jQuery is loaded before attempting to initialize Summernote
         // Also ensure Bootstrap 4's JavaScript is loaded in your layouts.app
         
+        // Ensure jQuery and Summernote are loaded before this script runs
         $(document).ready(function() {
-            // Check if Summernote function exists before initializing
             if ($.fn.summernote) {
                 $('.summernote-editor').summernote({
                     toolbar: [
-                        ['style', ['bold', 'italic', 'strikethrough']],
-                        ['para', ['ul', 'ol', 'paragraph', 'blockquote']], // Includes paragraph format and blockquote
-                        ['insert', ['link', 'picture', 'table', 'hr']], // Link, Image, Table, Horizontal Rule
-                        ['history', ['undo', 'redo']] // Undo/Redo
+                        // Styles (Paragraph, H1-H6, Blockquote)
+                        ['style', ['style']],
+
+                        // Basic Text Formatting (Bold, Italic, Strikethrough, Underline, Clear formatting)
+                        ['font', ['bold', 'italic', 'strikethrough', 'underline', 'clear']],
+
+                        // Font Family and Font Size
+                        ['fontname', ['fontname']],
+                        ['fontsize', ['fontsize']],
+
+                        // Text Color and Background Color
+                        ['color', ['color']],
+
+                        // Paragraph Formatting (Lists, Indent/Outdent, Alignments)
+                        ['para', ['ul', 'ol', 'paragraph', 'blockquote']],
+
+                        // Insert Options (Link, Picture, Table, Horizontal Line)
+                        ['insert', ['link', 'picture', 'table', 'hr']],
+
+                        // History (Undo/Redo)
+                        ['history', ['undo', 'redo']],
+
+                        // Code View
+                        ['view', ['codeview']],
+
+                        // Fullscreen Toggle
+                        ['misc', ['fullscreen']] // Add fullscreen option for convenience
                     ],
+                    styleTags: [ // Define the styles available in the 'style' dropdown
+                        'p',
+                        'h1',
+                        'h2',
+                        'h3',
+                        'h4',
+                        'h5',
+                        'h6',
+                        'blockquote'
+                    ],
+                    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande', 'Tahoma', 'Times New Roman', 'Verdana', 'Inter'], // Example font names
+                    fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36'], // Example font sizes
                     height: 200, // Set the height of the editor area
+                    dialogsInBody: true, // Prevents modals from being cut off if inside other modals
+                    callbacks: {
+                        // You can add callbacks here for custom functionalities if needed, e.g., image upload
+                        // onImageUpload: function(files) {
+                        //     // Handle image upload logic here
+                        // }
+                    }
                 });
             } else {
-                console.error("Summernote is not loaded. Check the CDN link or if there are conflicts.");
-                console.log("Ensure Bootstrap 4 JS is included in your layouts.app before Summernote JS.");
+                console.error("Summernote is not loaded. Ensure jQuery and Bootstrap 4 JS are loaded before Summernote JS.");
             }
 
-            // Handle custom file input label update
+            // Existing custom file input label update
             $('.custom-file-input').on('change', function() {
                 let fileName = $(this).val().split('\\').pop();
                 $(this).next('.custom-file-label').addClass("selected").html(fileName);
             });
         });
+
 
         // Search functionality
         $(document).on('click', '#search-button', function() {
