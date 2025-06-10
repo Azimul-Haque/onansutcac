@@ -240,7 +240,7 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'title' => 'required|string|max:191',
-            'slug'  => 'required|string|max:300|unique:products,slug,' . $product->id,
+            'slug'  => 'required|string|max:300|unique:products,slug,' . $id,
             'text'  => 'required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
