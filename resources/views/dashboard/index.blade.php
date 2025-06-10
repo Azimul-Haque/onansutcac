@@ -11,7 +11,7 @@
         <div class="row">
           {{-- @if(Auth::user()->role == 'admin' || in_array('hospitals', Auth::user()->accessibleTables())) --}}
             <div class="col-md-3">
-              <a href="{{ route('dashboard.hospitals') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
                 <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-hospital"></i></span>
 
                 <div class="info-box-content">
@@ -24,7 +24,7 @@
 
           {{-- @if(Auth::user()->role == 'admin' || in_array('doctors', Auth::user()->accessibleTables()) || in_array('hospitals', Auth::user()->accessibleTables())) --}}
           <div class="col-md-3">
-            <a href="{{ route('dashboard.doctors') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-success elevation-1"><i class="fas fa-user-md"></i></span>
 
               <div class="info-box-content">
@@ -37,7 +37,7 @@
 
           {{-- @if(Auth::user()->role == 'admin' || in_array('blooddonors', Auth::user()->accessibleTables())) --}}
           <div class="col-md-3">
-            <a href="{{ route('dashboard.blooddonors') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-tint"></i></span>
 
               <div class="info-box-content">
@@ -50,7 +50,7 @@
 
           @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
           <div class="col-md-3">
-            <a href="{{ route('dashboard.ambulances') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-ambulance"></i></span>
 
               <div class="info-box-content">
@@ -76,7 +76,7 @@
 
           @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
           <div class="col-md-3">
-            <a href="{{ route('dashboard.lawyers') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-success elevation-1"><i class="fas fa-gavel"></i></span>
 
               <div class="info-box-content">
@@ -89,7 +89,7 @@
 
           @if(Auth::user()->role == 'admin')
           <div class="col-md-3">
-            <a href="{{ route('dashboard.coachings') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chalkboard-teacher"></i></span>
 
               <div class="info-box-content">
@@ -100,7 +100,7 @@
           </div>
           @elseif(Auth::user()->role == 'editor' || Auth::user()->role == 'manager')
           <div class="col-md-3">
-            <a href="{{ route('dashboard.coachings.singleforeditor') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chalkboard-teacher"></i></span>
 
               <div class="info-box-content">
@@ -113,7 +113,7 @@
 
           @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
           <div class="col-md-3">
-            <a href="{{ route('dashboard.buses') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-bus"></i></span>
 
               <div class="info-box-content">
@@ -126,7 +126,7 @@
 
           @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
           <div class="col-md-3">
-            <a href="{{ route('dashboard.rentacars') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-car"></i></span>
 
               <div class="info-box-content">
@@ -139,7 +139,7 @@
 
           @if(Auth::user()->role == 'admin' || Auth::user()->role == 'editor')
           <div class="col-md-3">
-            <a href="{{ route('dashboard.newspapers') }}" class="info-box mb-3">
+            <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
               <span class="info-box-icon bg-success elevation-1"><i class="fas fa-newspaper"></i></span>
 
               <div class="info-box-content">
