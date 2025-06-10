@@ -220,13 +220,6 @@ class DashboardController extends Controller
         $product->slug = Str::slug($request->slug); // Generate URL-friendly slug
         $product->text = Purifier::clean($request->text, 'youtube');
 
-        // Handle image upload
-        $imagePath = null;
-        if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('products', 'public'); // Store image in storage/app/public/products
-        }
-        $product->image = $imagePath; // Save the path to the database
-
         // image upload
         if($request->hasFile('image')) {
             $image    = $request->file('image');
