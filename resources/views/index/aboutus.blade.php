@@ -139,26 +139,20 @@
                 </div>
             </div>
             <script type="text/javascript">
-                $(document).ready(function() {
-                    // Your existing Summernote initialization and file input script here...
+                var teamDetailModal = document.getElementById('teamDetailModal{{ $team->id }}');
+                if (teamDetailModal) {
+                    teamDetailModal.addEventListener('show.bs.modal', function (event) {
+                        // Add the blur class to the body when the modal is about to show
+                        document.body.classList.add('body-blur');
 
-                    var teamDetailModal = document.getElementById('teamDetailModal{{ $team->id }}');
-                    if (teamDetailModal) {
-                        teamDetailModal.addEventListener('show.bs.modal', function (event) {
-                            // Add the blur class to the body when the modal is about to show
-                            document.body.classList.add('body-blur');
+                        
+                    });
 
-                            
-                        });
-
-                        teamDetailModal.addEventListener('hidden.bs.modal', function () {
-                            // Remove the blur class from the body when the modal is hidden
-                            document.body.classList.remove('body-blur');
-                        });
-                    }
-
-                    // Your existing search functionality script here...
-                });
+                    teamDetailModal.addEventListener('hidden.bs.modal', function () {
+                        // Remove the blur class from the body when the modal is hidden
+                        document.body.classList.remove('body-blur');
+                    });
+                }
             </script>
           @endforeach
 
