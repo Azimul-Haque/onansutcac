@@ -14,7 +14,7 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.teams') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-users-cog"></i>
         <p>Team Details</p>
     </a>
