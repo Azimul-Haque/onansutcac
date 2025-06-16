@@ -422,7 +422,6 @@ class DashboardController extends Controller
 
         $team->delete();
 
-        Cache::forget('teams_for_footer');
         Session::flash('success', 'Team member deleted successfully!');
         return redirect()->route('dashboard.teams');
     }
