@@ -376,7 +376,6 @@ class DashboardController extends Controller
 
         $team->save();
 
-        Cache::forget('teams_for_footer');
         Session::flash('success', 'Team member created successfully!');
         return redirect()->route('dashboard.teams');
     }
@@ -409,7 +408,6 @@ class DashboardController extends Controller
 
         $team->save();
 
-        Cache::forget('teams_for_footer');
         Session::flash('success', 'Team member updated successfully!');
         return redirect()->route('dashboard.teams');
     }
