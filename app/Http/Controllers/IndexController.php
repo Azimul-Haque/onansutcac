@@ -8,6 +8,7 @@ use App\User;
 use App\Message;
 use App\Product;
 use App\Market;
+use App\Team;
 
 use Carbon\Carbon;
 use DB;
