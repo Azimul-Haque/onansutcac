@@ -63,6 +63,11 @@ class IndexController extends Controller
     public function getAboutUs ()
     {
         return view('index.aboutus');
+
+        $products = Product::orderBy('id', 'desc')->get();
+
+        return view('index.aboutus')
+                    ->withProducts($products);
     }
 
     public function termsAndConditions()
