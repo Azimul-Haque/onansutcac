@@ -148,22 +148,7 @@
                             // Add the blur class to the body when the modal is about to show
                             document.body.classList.add('body-blur');
 
-                            // Populate modal content (your existing code)
-                            var button = event.relatedTarget;
-                            var name = button.getAttribute('data-name');
-                            var designation = button.getAttribute('data-designation');
-                            var image = button.getAttribute('data-image');
-                            var about = button.getAttribute('data-about');
-
-                            var modalTitle = teamDetailModal.querySelector('#modalTeamName');
-                            var modalDesignation = teamDetailModal.querySelector('#modalTeamDesignation');
-                            var modalImage = teamDetailModal.querySelector('#modalTeamImage');
-                            var modalAbout = teamDetailModal.querySelector('#modalTeamAbout');
-
-                            modalTitle.textContent = name;
-                            modalDesignation.textContent = designation;
-                            modalImage.src = image;
-                            modalAbout.innerHTML = about;
+                            
                         });
 
                         teamDetailModal.addEventListener('hidden.bs.modal', function () {
