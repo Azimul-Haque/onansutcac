@@ -93,6 +93,7 @@
                   <span>{{ $team->designation }}</span>
                   <div class="social">
                     <a href="#!"
+                        class="btn-details"
                         data-bs-toggle="modal"
                         data-bs-target="#teamDetailModal"
                         data-name="{{ $team->name }}"
