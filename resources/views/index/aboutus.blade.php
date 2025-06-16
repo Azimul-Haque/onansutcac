@@ -83,6 +83,7 @@
           @foreach($teams as $team)
             @php
               $modulo_index = ($loop->iteration - 1) % 4;
+              echo $modulo_index;
               $delay = 100 + ($modulo_index * 100);
             @endphp
             <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="{{ $delay }}">
