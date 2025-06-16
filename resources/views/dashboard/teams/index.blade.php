@@ -54,7 +54,9 @@
                 @forelse($teams as $team)
                     <tr>
                         <td>
-                            <a href="{{ route('index.singleteam', $team->id) }}" target="_blank">{{ $team->name }}</a>
+                            {{-- <a href="{{ route('index.singleteam', $team->id) }}" target="_blank"> --}}
+                                {{ $team->name }}
+                            {{-- </a> --}}
                             <br/>
                             <small class="text-black-50">{{ $team->designation }}</small>
                         </td>
