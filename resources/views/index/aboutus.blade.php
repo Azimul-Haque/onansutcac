@@ -126,7 +126,7 @@
                             </div>
                         </div>
                         <div class="modal-footer border-0 pt-0">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            {{-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> --}}
                         </div>
                     </div>
                 </div>
