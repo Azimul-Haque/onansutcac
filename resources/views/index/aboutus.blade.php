@@ -124,13 +124,16 @@
                               <h3 class="text-center mb-1" id="modalTeamName">{{ $team->name }}</h3>
                               <p class="text-center text-muted mb-4" id="modalTeamDesignation">{{ $team->designation }}</p>
                             </div>
+                            <div class="col-md-6">
+                              <div class="about-content" id="modalTeamAbout">
+                                  {!!  $team->about !!}
+                              </div>
+                            </div>
                           </div>
                             
                             
 
-                            <div class="about-content" id="modalTeamAbout">
-                                {!!  $team->about !!}
-                            </div>
+                            
                         </div>
                         <div class="modal-footer border-0 pt-0">
                             {{-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> --}}
