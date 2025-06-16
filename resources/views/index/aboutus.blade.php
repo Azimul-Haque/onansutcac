@@ -88,12 +88,12 @@
               <div class="member-info">
                 <h4>Rafiqul Islam, PhD</h4>
                 <span>CEO, CTO</span>
-                <div class="social">
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -105,12 +105,12 @@
               <div class="member-info">
                 <h4>Ron Elwood</h4>
                 <span>CPA CFO</span>
-                <div class="social">
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -122,12 +122,12 @@
               <div class="member-info">
                 <h4>Iqbal Ali, PhD</h4>
                 <span>Director of Engineering</span>
-                <div class="social">
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -139,12 +139,12 @@
               <div class="member-info">
                 <h4>Roger Spencer</h4>
                 <span>Director of Sales</span>
-                <div class="social">
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -156,12 +156,12 @@
               <div class="member-info">
                 <h4>Rafiqul Islam, PhD</h4>
                 <span>CEO, CTO</span>
-                <div class="social">
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -173,12 +173,12 @@
               <div class="member-info">
                 <h4>Ron Elwood</h4>
                 <span>CPA CFO</span>
-                <div class="social">
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -190,12 +190,12 @@
               <div class="member-info">
                 <h4>Iqbal Ali, PhD</h4>
                 <span>Director of Engineering</span>
-                <div class="social">
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -207,12 +207,12 @@
               <div class="member-info">
                 <h4>Roger Spencer</h4>
                 <span>Director of Sales</span>
-                <div class="social">
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
