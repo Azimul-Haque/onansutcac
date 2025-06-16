@@ -122,7 +122,7 @@
                             <p class="text-center text-muted mb-4" id="modalTeamDesignation">{{ $team->designation }}</p>
 
                             <div class="about-content" id="modalTeamAbout">
-                                {{-- About text will be injected here --}}
+                                {!!  $team->about !!}
                             </div>
                         </div>
                         <div class="modal-footer border-0 pt-0">
