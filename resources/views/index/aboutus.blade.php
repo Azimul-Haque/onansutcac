@@ -134,7 +134,7 @@
             <script type="text/javascript">
                 $(document).ready(function() {
                     // Listen for the modal to be shown (Bootstrap 5 uses 'shown.bs.modal')
-                    var teamDetailModal = document.getElementById('teamDetailModal');
+                    var teamDetailModal = document.getElementById('teamDetailModal{{ $team->id }}');
                     if (teamDetailModal) {
                         teamDetailModal.addEventListener('show.bs.modal', function (event) {
                             // Button that triggered the modal
