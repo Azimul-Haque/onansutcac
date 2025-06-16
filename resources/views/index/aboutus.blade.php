@@ -93,15 +93,15 @@
                   <span>{{ $team->designation }}</span>
                   <div class="social">
                     <button type="button" class="btn-details"
-                        data-bs-toggle="modal"
+                        > {{-- Ensure about text is sanitized --}}
+                        <i class="bi bi-info-circle"></i> Details
+                    </button>
+                    <a href="#!" data-bs-toggle="modal"
                         data-bs-target="#teamDetailModal"
                         data-name="{{ $team->name }}"
                         data-designation="{{ $team->designation }}"
                         data-image="{{ asset('images/teams/' . $team->image) }}"
-                        data-about="{{ Purifier::clean($team->about, 'youtube') }}"> {{-- Ensure about text is sanitized --}}
-                        <i class="bi bi-info-circle"></i> Details
-                    </button>
-                    <a href="#!"><i class="bi bi-search"></i> <small>Details</small></a>
+                        data-about="{{ Purifier::clean($team->about, 'youtube') }}"><i class="bi bi-search"></i> <small>Details</small></a>
                     {{-- <a href=""><i class="bi bi-facebook"></i></a>
                     <a href=""><i class="bi bi-instagram"></i></a>
                     <a href=""><i class="bi bi-linkedin"></i></a> --}}
