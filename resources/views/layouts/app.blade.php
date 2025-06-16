@@ -140,7 +140,7 @@
     </footer>
 </div>
 
-@if(Request::is('dashboard/products') || Request::is('dashboard/products/*') || Request::is('dashboard/markets') || Request::is('dashboard/markets/*'))
+@if(Request::is('dashboard/products') || Request::is('dashboard/products/*') || Request::is('dashboard/markets') || Request::is('dashboard/markets/*') || Request::is('dashboard/teams') || Request::is('dashboard/teams/*'))
     
 @else
     <script src="{{ mix('js/app.js') }}" defer></script>
