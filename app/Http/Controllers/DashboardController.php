@@ -337,6 +337,116 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.markets');
     }
 
+    public function getTeams(Request $request)
+    {
+        if($request->search) {
+            $teams = Team::where('name', 'LIKE', "%$request->search%")
+                             ->orWhere('designation', 'LIKE', "%$request->search%")
+                             ->orWhere('about', 'LIKE', "%$request->search%")
+                             ->orderBy('id', 'desc')
+                             ->paginate(10);
+        } else {
+            $teams = Team::orderBy('id', 'desc')->paginate(10);
+        }
+
+        return view('dashboard.teams.index')->withTeams($teams);
+    }
+
+    public function storeTeam(Request $request)
+    {
+        $this->validate($request, array(
+            'name'        => 'required|string|max:191',
+            'designation' => 'required|string|max:191',
+            'about'       => 'required',
+            'image'       => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+        ));
+
+        $team = new Team;
+        $team->name = $request->name;
+        $team->designation = $request->designation;
+        $team->about = Purifier::clean($request->about, 'youtube');
+
+        if($request->hasFile('image')) {
+            $image    = $request->file('image');
+            $filename = Str::random(5) . time() .'.' . "webp";
+            $location = public_path('images/teams/'. $filename);
+            Image::make($image)->fit(711, 400)->save($location);
+            $team->image        = $filename;
+        }
+
+        $team->save();
+
+        Cache::forget('teams_for_footer');
+        Session::flash('success', 'Team member created successfully!');
+        return redirect()->route('dashboard.teams');
+    }
+
+    public function updateTeam(Request $request, $id)
+    {
+        $this->validate($request, [
+            'name'        => 'required|string|max:191',
+            'designation' => 'required|string|max:191',
+            'about'       => 'required',
+            'image'       => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+        ]);
+
+        $team = Team::findOrFail($id);
+        $team->name = $request->name;
+        $team->designation = $request->designation;
+        $team->about = Purifier::clean($request->about, 'youtube');
+
+        if($request->hasFile('image')) {
+            if ($team->image && file_exists(public_path('images/teams/' . $team->image))) {
+                unlink(public_path('images/teams/' . $team->image));
+            }
+
+            $image    = $request->file('image');
+            $filename = Str::random(5) . time() . '.' . "webp";
+            $location = public_path('images/teams/' . $filename);
+            Image::make($image)->fit(711, 400)->save($location);
+            $team->image = $filename;
+        }
+
+        $team->save();
+
+        Cache::forget('teams_for_footer');
+        Session::flash('success', 'Team member updated successfully!');
+        return redirect()->route('dashboard.teams');
+    }
+
+    public function deleteTeam($id)
+    {
+        $team = Team::findOrFail($id);
+
+        if ($team->image && file_exists(public_path('images/teams/' . $team->image))) {
+            unlink(public_path('images/teams/' . $team->image));
+        }
+
+        $team->delete();
+
+        Cache::forget('teams_for_footer');
+        Session::flash('success', 'Team member deleted successfully!');
+        return redirect()->route('dashboard.teams');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
