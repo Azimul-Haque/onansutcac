@@ -142,7 +142,7 @@
                 $(document).ready(function() {
                     // Your existing Summernote initialization and file input script here...
 
-                    var teamDetailModal = document.getElementById('teamDetailModal');
+                    var teamDetailModal = document.getElementById('teamDetailModal{{ $team->id }}');
                     if (teamDetailModal) {
                         teamDetailModal.addEventListener('show.bs.modal', function (event) {
                             // Add the blur class to the body when the modal is about to show
