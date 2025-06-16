@@ -119,7 +119,7 @@
                             <div class="col-md-6">
                               <div class="text-center">
                                   <img src="{{ asset('images/teams/' . $team->image) }}" alt="Team Member" class="img-fluid rounded-circle border border-primary border-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 5px;">
-                              </div><br/>
+                              </div>
                               <div class="text-center ">
                                 <h3 class="text-center mb-1 mt-1" id="modalTeamName">{{ $team->name }}</h3>
                                 <p class="text-center text-muted mb-4" id="modalTeamDesignation">{{ $team->designation }}</p>
