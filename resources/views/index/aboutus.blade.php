@@ -80,7 +80,28 @@
       <div class="container">
 
         <div class="row gy-5">
-          
+          @foreach($teams as $team)
+            @php
+              $modulo_index = ($loop->iteration - 1) % 3;
+              $delay = 100 + ($modulo_index * 100);
+            @endphp
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-1.jpg') }}" class="img-fluid" alt=""></div> --}}
+                <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/7f22d3e0-5fe1-4415-a2e0-212b05bd15a4/rafi-x-3_orig.jpg?format=750w" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Rafiqul Islam, PhD</h4>
+                  <span>CEO, CTO</span>
+                  {{-- <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div> --}}
+                </div>
+              </div>
+            </div>
+          @endforeach
 
           
 
@@ -118,7 +139,7 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div> --}}
               <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/e36dfafd-a19c-4c20-b7a1-41d9a0dd1baf/iqbal.jpg?format=750w" class="img-fluid" alt=""></div>
@@ -135,7 +156,7 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-1.jpg') }}" class="img-fluid" alt=""></div> --}}
               <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/7f22d3e0-5fe1-4415-a2e0-212b05bd15a4/rafi-x-3_orig.jpg?format=750w" class="img-fluid" alt=""></div>
