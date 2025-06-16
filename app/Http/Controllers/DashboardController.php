@@ -370,7 +370,7 @@ class DashboardController extends Controller
             $image    = $request->file('image');
             $filename = Str::random(5) . time() .'.' . "webp";
             $location = public_path('images/teams/'. $filename);
-            Image::make($image)->fit(711, 400)->save($location);
+            Image::make($image)->fit(300, 300)->save($location);
             $team->image        = $filename;
         }
 
@@ -402,7 +402,7 @@ class DashboardController extends Controller
             $image    = $request->file('image');
             $filename = Str::random(5) . time() . '.' . "webp";
             $location = public_path('images/teams/' . $filename);
-            Image::make($image)->fit(711, 400)->save($location);
+            Image::make($image)->fit(300, 300)->save($location);
             $team->image = $filename;
         }
 
