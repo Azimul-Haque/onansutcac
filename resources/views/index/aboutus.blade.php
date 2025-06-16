@@ -107,6 +107,30 @@
                 </div>
               </div>
             </div>
+
+            <div class="modal fade" id="teamDetailModal" tabindex="-1" aria-labelledby="teamDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> {{-- Centered and Large modal for better display --}}
+                    <div class="modal-content">
+                        <div class="modal-header border-0 pb-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <div class="text-center mb-4">
+                                <img id="modalTeamImage" src="" alt="Team Member" class="img-fluid rounded-circle border border-primary border-3" style="width: 150px; height: 150px; object-fit: cover;">
+                            </div>
+                            <h3 class="text-center mb-1" id="modalTeamName"></h3>
+                            <p class="text-center text-muted mb-4" id="modalTeamDesignation"></p>
+
+                            <div class="about-content" id="modalTeamAbout">
+                                {{-- About text will be injected here --}}
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0 pt-0">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
           @endforeach
         </div>
 
