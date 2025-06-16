@@ -116,7 +116,7 @@
                         </div>
                         <div class="modal-body p-4">
                             <div class="text-center mb-4">
-                                <img id="modalTeamImage" src="" alt="Team Member" class="img-fluid rounded-circle border border-primary border-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                <img id="modalTeamImage" src="{{ asset('images/teams/' . $team->image) }}" alt="Team Member" class="img-fluid rounded-circle border border-primary border-3" style="width: 150px; height: 150px; object-fit: cover;">
                             </div>
                             <h3 class="text-center mb-1" id="modalTeamName"></h3>
                             <p class="text-center text-muted mb-4" id="modalTeamDesignation"></p>
@@ -131,47 +131,6 @@
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">
-                $(document).ready(function() {
-                    // Listen for the modal to be shown (Bootstrap 5 uses 'shown.bs.modal')
-                    var teamDetailModal = document.getElementById('teamDetailModal{{ $team->id }}');
-                    if (teamDetailModal) {
-                        teamDetailModal.addEventListener('show.bs.modal', function (event) {
-                            // Button that triggered the modal
-                            var button = event.relatedTarget;
-
-                            // Extract info from data-* attributes
-                            var name = button.getAttribute('data-name');
-                            var designation = button.getAttribute('data-designation');
-                            var image = button.getAttribute('data-image');
-                            var about = button.getAttribute('data-about'); // This will be the HTML string
-
-                            // Update the modal's content
-                            var modalTitle = teamDetailModal.querySelector('#modalTeamName');
-                            var modalDesignation = teamDetailModal.querySelector('#modalTeamDesignation');
-                            var modalImage = teamDetailModal.querySelector('#modalTeamImage');
-                            var modalAbout = teamDetailModal.querySelector('#modalTeamAbout');
-
-                            modalTitle.textContent = name;
-                            modalDesignation.textContent = designation;
-                            modalImage.src = image;
-
-                            // Set innerHTML for the about section to render the rich text
-                            // IMPORTANT: Since you are already using Purifier::clean in the backend,
-                            // injecting this HTML directly via innerHTML is generally safe.
-                            modalAbout.innerHTML = about;
-
-                            // Re-apply `float: left` and `shape-outside` for images potentially within the about text,
-                            // if they are not already handled by your content.css
-                            // This might be tricky if the about text also contains images that should float.
-                            // For images directly within the 'about' content, ensure your content.css handles max-width: 100%.
-                            // If you specifically want images *within* the about text to float,
-                            // you'd need to parse the `about` content and apply specific classes or styles.
-                            // For this example, the main image floats, and other images should respect max-width: 100%.
-                        });
-                    }
-                });
-            </script>
           @endforeach
 
           <style>
