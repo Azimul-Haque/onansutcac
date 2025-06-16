@@ -132,6 +132,67 @@
                 </div>
             </div>
           @endforeach
+
+          <style>
+              /* Custom styling for the details button */
+              .btn-details {
+                  background: none;
+                  border: none;
+                  color: #007bff; /* Bootstrap primary color */
+                  padding: 0;
+                  font-size: 0.9rem;
+                  cursor: pointer;
+                  display: inline-flex;
+                  align-items: center;
+                  transition: color 0.3s ease;
+              }
+
+              .btn-details:hover {
+                  color: #0056b3; /* Darker shade on hover */
+              }
+
+              .btn-details i {
+                  margin-right: 5px;
+                  font-size: 1.1rem;
+              }
+
+              /* Styles for the circular image and text wrapping inside the modal */
+              #modalTeamImage {
+                  float: left; /* Float the image to the left */
+                  margin-right: 20px; /* Space between image and text */
+                  margin-bottom: 10px; /* Space below image if text wraps tightly */
+                  /* To ensure text wraps around the circle, especially for longer descriptions */
+                  shape-outside: circle(50%); /* This helps text wrap more cleanly around the circle */
+              }
+
+              .about-content::after { /* Clear float after the content */
+                  content: "";
+                  display: table;
+                  clear: both;
+              }
+
+              /* Adjust font size and line height for about text within modal */
+              .about-content p {
+                  font-size: 1rem;
+                  line-height: 1.6;
+                  color: #555;
+              }
+
+              /* Ensure modal content scrolls if it overflows */
+              .modal-body {
+                  max-height: calc(100vh - 200px); /* Adjust max-height based on header/footer size */
+                  overflow-y: auto;
+              }
+
+              /* Small adjustment for modal close button to be on the right */
+              .modal-header .btn-close {
+                  margin-left: auto; /* Pushes close button to the right */
+                  font-size: 1.2rem;
+              }
+
+              /* Bootstrap 5 specific classes - if you're using older Bootstrap, check compatibility */
+              .rounded-circle { border-radius: 50% !important; }
+          </style>
         </div>
 
       </div>
