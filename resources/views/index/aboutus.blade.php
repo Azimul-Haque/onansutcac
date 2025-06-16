@@ -92,11 +92,8 @@
                   <h4>{{ $team->name }}</h4>
                   <span>{{ $team->designation }}</span>
                   <div class="social">
-                    <button type="button" class="btn-details"
-                        > {{-- Ensure about text is sanitized --}}
-                        <i class="bi bi-info-circle"></i> Details
-                    </button>
-                    <a href="#!" data-bs-toggle="modal"
+                    <a href="#!"
+                        data-bs-toggle="modal"
                         data-bs-target="#teamDetailModal"
                         data-name="{{ $team->name }}"
                         data-designation="{{ $team->designation }}"
