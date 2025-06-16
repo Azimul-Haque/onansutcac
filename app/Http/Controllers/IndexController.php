@@ -62,7 +62,7 @@ class IndexController extends Controller
 
     public function getAboutUs ()
     {
-        $teams = Team::orderBy('id', 'desc')->get();
+        $teams = Team::orderBy('id', 'desc')->get()->take(4);
 
         return view('index.aboutus')
                     ->withTeams($teams);
