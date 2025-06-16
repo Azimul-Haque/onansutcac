@@ -118,7 +118,7 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div> --}}
               <div class="pic"><img src="https://images.squarespace-cdn.com/content/v1/65451fe14dedd80381db3fde/e36dfafd-a19c-4c20-b7a1-41d9a0dd1baf/iqbal.jpg?format=750w" class="img-fluid" alt=""></div>
