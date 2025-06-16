@@ -142,6 +142,10 @@
 
           <style>
               /* Custom styling for the details button */
+              .modal-backdrop.show {
+                  backdrop-filter: blur(5px); /* Adjust the blur amount (e.g., 3px, 8px) as desired */
+                  background-color: rgba(0, 0, 0, 0.4); /* Optional: Adjust opacity of the background overlay */
+              }
               .btn-details {
                   background: none;
                   border: none;
