@@ -81,6 +81,10 @@
 
         <div class="row gy-5">
           @foreach($teams as $team)
+            @php
+              $modulo_index = ($loop->iteration - 1) % 3;
+              $delay = 200 + ($modulo_index * 100);
+            @endphp
             <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="member">
                 {{-- <div class="pic"><img src="{{ asset('vendor/dewi/assets/img/team/team-1.jpg') }}" class="img-fluid" alt=""></div> --}}
