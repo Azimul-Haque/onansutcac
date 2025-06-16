@@ -138,31 +138,11 @@
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">
-                var teamDetailModal = document.getElementById('teamDetailModal{{ $team->id }}');
-                if (teamDetailModal) {
-                    teamDetailModal.addEventListener('show.bs.modal', function (event) {
-                        // Add the blur class to the body when the modal is about to show
-                        document.body.classList.add('body-blur');
-
-                        
-                    });
-
-                    teamDetailModal.addEventListener('hidden.bs.modal', function () {
-                        // Remove the blur class from the body when the modal is hidden
-                        document.body.classList.remove('body-blur');
-                    });
-                }
-            </script>
           @endforeach
 
           <style>
               /* Custom styling for the details button */
-              body.body-blur {
-                      filter: blur(8px); /* Adjust blur intensity as needed */
-                      transition: filter 0.3s ease-out; /* Smooth transition for blur */
-                      pointer-events: none; /* Prevents interaction with blurred elements */
-                  }
+              
 
                   /* Important: Ensure the modal itself is NOT blurred and is on top */
                   .modal {
@@ -172,6 +152,7 @@
 
                   /* Optional: If you also want a subtle blur on the modal backdrop */
                   .modal-backdrop.show {
+                      filter: blur(8px);
                       background-color: rgba(0, 0, 0, 0.4); /* Just an overlay, no blur here if body is blurred */
                   }
               .btn-details {
