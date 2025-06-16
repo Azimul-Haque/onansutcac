@@ -77,7 +77,7 @@
                         </td>
 
                         <div class="modal fade" id="editTeamModal{{ $team->id }}" tabindex="-1" role="dialog" aria-labelledby="editTeamModalLabel{{ $team->id }}" aria-hidden="true" data-backdrop="static">
-                          <div class="modal-dialog modal-xl" role="document">
+                          <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-primary">
                                 <h5 class="modal-title" id="editTeamModalLabel{{ $team->id }}">Update Team Member: {{ $team->name }}</h5>
@@ -187,7 +187,7 @@
     </div>
 
     <div class="modal fade" id="addTeamModal" tabindex="-1" role="dialog" aria-labelledby="addTeamModalLabel" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
             <h5 class="modal-title" id="addTeamModalLabel">Add New Team Member</h5>
