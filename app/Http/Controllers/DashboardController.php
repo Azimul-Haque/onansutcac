@@ -342,7 +342,6 @@ class DashboardController extends Controller
         if($request->search) {
             $teams = Team::where('name', 'LIKE', "%$request->search%")
                              ->orWhere('designation', 'LIKE', "%$request->search%")
-                             ->orWhere('about', 'LIKE', "%$request->search%")
                              ->orderBy('id', 'desc')
                              ->paginate(10);
         } else {
