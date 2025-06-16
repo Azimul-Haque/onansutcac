@@ -284,7 +284,7 @@
                     ],
                     fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande', 'Tahoma', 'Times New Roman', 'Verdana', 'Inter'],
                     fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36'],
-                    height: 400,
+                    height: 300,
                     dialogsInBody: true
                 });
             } else {
