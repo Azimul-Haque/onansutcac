@@ -95,7 +95,7 @@
                     <a href="#!"
                         class="btn-details"
                         data-bs-toggle="modal"
-                        data-bs-target="#teamDetailModal"
+                        data-bs-target="#teamDetailModal{{ $team->id }}"
                         data-name="{{ $team->name }}"
                         data-designation="{{ $team->designation }}"
                         data-image="{{ asset('images/teams/' . $team->image) }}"
@@ -108,7 +108,7 @@
               </div>
             </div>
 
-            <div class="modal fade" id="teamDetailModal" tabindex="-1" aria-labelledby="teamDetailModalLabel" aria-hidden="true">
+            <div class="modal fade" id="teamDetailModal{{ $team->id }}" tabindex="-1" aria-labelledby="teamDetailModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg"> {{-- Centered and Large modal for better display --}}
                     <div class="modal-content">
                         <div class="modal-header border-0 pb-0">
