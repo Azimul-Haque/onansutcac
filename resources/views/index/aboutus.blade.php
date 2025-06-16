@@ -92,7 +92,7 @@
                   <h4>{{ $team->name }}</h4>
                   <span>{{ $team->designation }}</span>
                   <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i> <small>Meet</small></a>
+                    <a href=""><i class="bi bi-twitter-x"></i> <small>Details</small></a>
                     {{-- <a href=""><i class="bi bi-facebook"></i></a>
                     <a href=""><i class="bi bi-instagram"></i></a>
                     <a href=""><i class="bi bi-linkedin"></i></a> --}}
