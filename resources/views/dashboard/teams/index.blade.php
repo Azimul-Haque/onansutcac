@@ -115,7 +115,7 @@
 
                                             <div class="form-group">
                                                 <label for="teamAboutEdit{{ $team->id }}">About Team Member</label>
-                                                <textarea id="teamAboutEdit{{ $team->id }}" name="about" class="form-control summernote-editor" required>{{ old('about', $team->about) }}</textarea>
+                                                <textarea id="teamAboutEdit{{ $team->id }}" name="about" class="form-control " required>{{ old('about', $team->about) }}</textarea>
                                                 @error('about')
                                                     <span class="text-danger">{{ $message }}</span>
                                                 @enderror
@@ -224,7 +224,7 @@
 
                 <div class="form-group">
                     <label for="teamAboutAdd">About Team Member</label>
-                    <textarea id="teamAboutAdd" name="about" class="form-control summernote-editor" required>{{ old('about') }}</textarea>
+                    <textarea id="teamAboutAdd" name="about" class="form-control " required>{{ old('about') }}</textarea>
                     @error('about')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
