@@ -133,7 +133,7 @@
                                                     <small class="text-muted">No image uploaded.</small>
                                                 @endif
                                                 <div class="custom-file mt-2">
-                                                    <input type="file" class="custom-file-input" id="teamImageEdit{{ $team->id }}" name="image" accept="image/*" required>
+                                                    <input type="file" class="custom-file-input" id="teamImageEdit{{ $team->id }}" name="image" accept="image/*">
                                                     <label class="custom-file-label" for="teamImageEdit{{ $team->id }}">Choose new image (optional)</label>
                                                 </div>
                                                 @error('image')
