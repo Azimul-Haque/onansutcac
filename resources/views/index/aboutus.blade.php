@@ -141,20 +141,6 @@
           @endforeach
 
           <style>
-              /* Custom styling for the details button */
-              
-
-                  /* Important: Ensure the modal itself is NOT blurred and is on top */
-                  .modal {
-                      filter: none; /* Remove blur from the modal itself */
-                      pointer-events: auto; /* Allow interaction within the modal */
-                  }
-
-                  /* Optional: If you also want a subtle blur on the modal backdrop */
-                  .modal-backdrop.show {
-                      filter: blur(8px);
-                      background-color: rgba(0, 0, 0, 0.4); /* Just an overlay, no blur here if body is blurred */
-                  }
               .btn-details {
                   background: none;
                   border: none;
