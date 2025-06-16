@@ -138,6 +138,43 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    // Your existing Summernote initialization and file input script here...
+
+                    var teamDetailModal = document.getElementById('teamDetailModal');
+                    if (teamDetailModal) {
+                        teamDetailModal.addEventListener('show.bs.modal', function (event) {
+                            // Add the blur class to the body when the modal is about to show
+                            document.body.classList.add('body-blur');
+
+                            // Populate modal content (your existing code)
+                            var button = event.relatedTarget;
+                            var name = button.getAttribute('data-name');
+                            var designation = button.getAttribute('data-designation');
+                            var image = button.getAttribute('data-image');
+                            var about = button.getAttribute('data-about');
+
+                            var modalTitle = teamDetailModal.querySelector('#modalTeamName');
+                            var modalDesignation = teamDetailModal.querySelector('#modalTeamDesignation');
+                            var modalImage = teamDetailModal.querySelector('#modalTeamImage');
+                            var modalAbout = teamDetailModal.querySelector('#modalTeamAbout');
+
+                            modalTitle.textContent = name;
+                            modalDesignation.textContent = designation;
+                            modalImage.src = image;
+                            modalAbout.innerHTML = about;
+                        });
+
+                        teamDetailModal.addEventListener('hidden.bs.modal', function () {
+                            // Remove the blur class from the body when the modal is hidden
+                            document.body.classList.remove('body-blur');
+                        });
+                    }
+
+                    // Your existing search functionality script here...
+                });
+            </script>
           @endforeach
 
           <style>
