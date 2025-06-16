@@ -115,7 +115,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body p-4">
-                          <div class="row">
+                          
                             <div class="col-md-6">
                               <div class="text-center ">
                                   <img id="modalTeamImage" src="{{ asset('images/teams/' . $team->image) }}" alt="Team Member" class="img-fluid rounded-circle border border-primary border-3" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 5px;">
@@ -130,7 +130,6 @@
                                   {!!  $team->about !!}
                               </div>
                             </div>
-                          </div>
                         </div>
                         <div class="modal-footer border-0 pt-0">
                             {{-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> --}}
