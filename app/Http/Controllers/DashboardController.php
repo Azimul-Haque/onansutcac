@@ -532,19 +532,6 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.news');
     }
 
-    public function getNewscategories(Request $request)
-    {
-        if($request->search) {
-            $newscategories = Newscategory::where('name', 'LIKE', "%$request->search%")
-                                          ->orderBy('id', 'desc')
-                                          ->paginate(10);
-        } else {
-            $newscategories = Newscategory::orderBy('id', 'desc')->paginate(10);
-        }
-
-        return view('dashboard.newscategories.index')->withNewscategories($newscategories);
-    }
-
     public function storeNewscategory(Request $request)
     {
         $this->validate($request, [
