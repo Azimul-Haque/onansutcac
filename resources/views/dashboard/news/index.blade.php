@@ -272,7 +272,7 @@
                                                             <input type="text"
                                                                 name="name"
                                                                 class="form-control"
-                                                                value="{{ old('name', $newscategory->name) }}"
+                                                                value="{{ $newscategory->name }}"
                                                                 placeholder="Category Name" required>
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="fas fa-folder"></span></div>
