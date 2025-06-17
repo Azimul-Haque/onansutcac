@@ -224,7 +224,7 @@
                     <div class="card-header">
                         <h3 class="card-title">News Categories</h3>
                         <div class="card-tools">
-                             <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addNewscategoryModal">
+                             <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addNewscategoryModal">
                                 <i class="fas fa-plus"></i> Add
                             </button>
                         </div>
