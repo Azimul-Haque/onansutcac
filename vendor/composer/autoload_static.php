@@ -585,6 +585,8 @@ class ComposerStaticInitd99be2aa22b662638be63ef18831ea06
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Market' => __DIR__ . '/../..' . '/app/Market.php',
         'App\\Message' => __DIR__ . '/../..' . '/app/Message.php',
+        'App\\News' => __DIR__ . '/../..' . '/app/News.php',
+        'App\\Newscategory' => __DIR__ . '/../..' . '/app/Newscategory.php',
         'App\\Product' => __DIR__ . '/../..' . '/app/Product.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
