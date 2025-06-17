@@ -345,6 +345,18 @@
                 @csrf
 
                 <div class="form-group mb-3">
+                    <label for="">News Type</label>
+                    <select name="type" id="" class="form-control" required>
+                        <option value="News Article">News Article</option>
+                        <option value="External Links">External Links</option>
+                        <option value="Press Release">Press Release</option>
+                    </select>
+                    @error('type')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="form-group mb-3">
                     <label for="newsCategoryAdd">News Category</label>
                     <select class="form-control select2bs4" style="width: 100%;" id="newsCategoryAdd" name="newscategory_id" required>
                         <option value="">Select a Category</option>
@@ -366,18 +378,6 @@
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-newspaper"></span></div>
                     </div>
-                </div>
-
-                <div class="form-group mb-3">
-                    <label for="">News Type</label>
-                    <select name="type" id="" class="form-control" required>
-                        <option value="News Article">News Article</option>
-                        <option value="External Links">External Links</option>
-                        <option value="Press Release">Press Release</option>
-                    </select>
-                    @error('type')
-                        <span class="text-danger">{{ $message }}</span>
-                    @enderror
                 </div>
 
                 <div class="input-group mb-3">
