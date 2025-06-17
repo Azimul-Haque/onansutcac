@@ -548,8 +548,6 @@ class DashboardController extends Controller
 
     public function updateNewscategory(Request $request, $id)
     {
-        dd($request->all());
-        
         $this->validate($request, [
             'name' => 'required|string|max:191|unique:newscategories,name,' . $id,
         ]);
