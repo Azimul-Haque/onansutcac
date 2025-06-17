@@ -142,7 +142,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.help-center') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-question-circle"></i></span>
 
                   <div class="info-box-content">
