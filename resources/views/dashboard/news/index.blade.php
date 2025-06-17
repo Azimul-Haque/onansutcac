@@ -422,7 +422,7 @@
     <div class="modal fade" id="addNewscategoryModal" tabindex="-1" role="dialog" aria-labelledby="addNewscategoryModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header bg-success">
+          <div class="modal-header bg-warning">
             <h5 class="modal-title" id="addNewscategoryModalLabel">Add New News Category</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
