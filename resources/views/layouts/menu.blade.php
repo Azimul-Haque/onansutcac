@@ -77,14 +77,14 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.testimonials') }}" class="nav-link {{ Request::is('dashboard/testimonials') ? 'active' : '' }} {{ Request::is('dashboard/testimonials/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-comment-alt"></i>
         <p>Testimonials</p>
     </a>
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.information-center') }}" class="nav-link {{ Request::is('dashboard/information-center') ? 'active' : '' }} {{ Request::is('dashboard/information-center/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-info-circle"></i>
         <p>Information Center</p>
     </a>
