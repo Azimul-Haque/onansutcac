@@ -367,15 +367,16 @@
                     </div>
                 </div>
 
-                <div class="input-group mb-3">
-                    <input type="text"
-                           name="type"
-                           class="form-control"
-                           value="{{ old('type') }}"
-                           placeholder="News Type (Optional)">
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-tag"></span></div>
-                    </div>
+                <div class="form-group mb-3">
+                    <label for="newsTypeAdd">News Type</label>
+                    <select name="type" id="newsTypeAdd" class="form-control" required>
+                        <option value="News Article">News Article</option>
+                        <option value="External Links">External Links</option>
+                        <option value="Press Release">Press Release</option>
+                    </select>
+                    @error('type')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
                 </div>
 
                 <div class="input-group mb-3">
