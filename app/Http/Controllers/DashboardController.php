@@ -543,7 +543,7 @@ class DashboardController extends Controller
         $newscategory->save();
 
         Session::flash('success', 'News category created successfully!');
-        return redirect()->route('dashboard.newscategories');
+        return redirect()->route('dashboard.news');
     }
 
     public function updateNewscategory(Request $request, $id)
@@ -557,7 +557,7 @@ class DashboardController extends Controller
         $newscategory->save();
 
         Session::flash('success', 'News category updated successfully!');
-        return redirect()->route('dashboard.newscategories');
+        return redirect()->route('dashboard.news');
     }
 
     public function deleteNewscategory($id)
