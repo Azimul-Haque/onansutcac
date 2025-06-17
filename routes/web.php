@@ -69,9 +69,7 @@ Route::post('/dashboard/users/{id}/single/notification', 'DashboardController@se
 Route::post('/dashboard/users/{id}/single/sms', 'DashboardController@sendSingleSMS')->name('dashboard.users.singlesms');
 
 
-Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.messages');
-Route::post('/dashboard/messages/{id}/update', 'DashboardController@updateMessage')->name('dashboard.messages.update');
-Route::get('/dashboard/messages/delete/{id}', 'DashboardController@deleteMessage')->name('dashboard.messages.delete');
+
 
 
 
@@ -116,3 +114,22 @@ Route::get('/dashboard/news', 'DashboardController@getNews')->name('dashboard.ne
 Route::post('/dashboard/news/store', 'DashboardController@storeNews')->name('dashboard.news.store');
 Route::post('/dashboard/news/{id}/update', 'DashboardController@updateNews')->name('dashboard.news.update');
 Route::get('/dashboard/news/{id}/delete', 'DashboardController@deleteNews')->name('dashboard.news.delete');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.messages');
+Route::post('/dashboard/messages/{id}/update', 'DashboardController@updateMessage')->name('dashboard.messages.update');
+Route::get('/dashboard/messages/delete/{id}', 'DashboardController@deleteMessage')->name('dashboard.messages.delete');
