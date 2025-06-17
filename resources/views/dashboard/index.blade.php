@@ -98,7 +98,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.success-stories') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-trophy"></i></span>
 
                   <div class="info-box-content">
@@ -109,7 +109,7 @@
           </div>
 
           <div class="col-md-3">
-              <a href="{{ route('dashboard.products') }}" class="info-box mb-3">
+              <a href="{{ route('dashboard.clients') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-success elevation-1"><i class="fas fa-handshake"></i></span>
 
                   <div class="info-box-content">
