@@ -500,8 +500,8 @@ class DashboardController extends Controller
         $news->title = $request->title;
         $news->type = $request->type;
         $news->slug = Str::slug($request->slug);
-        if($request->text) {
-            $news->text = Purifier::clean($request->text, 'youtube');
+        if($request->newslink) {
+            $news->newslink = $request->newslink;
         }
         if($request->text) {
             $news->text = Purifier::clean($request->text, 'youtube');
