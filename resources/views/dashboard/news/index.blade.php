@@ -1,18 +1,17 @@
 @extends('layouts.app')
 
-@section('title') Market | Dashboard @endsection {{-- Changed "Products" to "Market" --}}
+@section('title') News | Dashboard @endsection
 
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/select2-bootstrap4.min.css') }}" rel="stylesheet" />
-    <!-- Summernote CSS for WYSIWYG editor -->
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
     <style type="text/css">
       .select2-selection__choice{
           background-color: rgba(0, 123, 255) !important;
       }
       .note-editor.note-frame .note-editing-area .note-editable {
-          min-height: 200px; /* Adjust height for the editor */
+          min-height: 200px;
       }
     </style>
 
@@ -21,200 +20,360 @@
 @endsection
 
 @section('content')
-    @section('page-header') Markets (Total {{ $marketsCount ?? 0 }}) @endsection {{-- Changed "Products" to "Markets", and $productsCount to $marketsCount --}}
     <div class="container-fluid">
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-title">Markets</h3> {{-- Changed "Products" to "Markets" --}}
+        <div class="row">
+            {{-- Main News Section - 10 Columns --}}
+            <div class="col-lg-10">
+                @section('page-header') News (Total {{ $allNews->total() ?? 0 }}) @endsection
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">News</h3>
+                        <div class="card-tools">
+                            <form class="form-inline form-group-lg" action="{{ route('dashboard.news') }}" method="GET">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-sm" placeholder="Search news" id="search-param" name="search" value="{{ request('search') }}" required>
+                                </div>
+                                <button type="submit" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
+                                    <i class="fas fa-search"></i> Search
+                                </button>
+                                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addNewsModal" style="margin-left: 5px;">
+                                    <i class="fas fa-plus"></i> Add New News
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Title</th>
+                                    <th>Type</th>
+                                    <th>Slug</th>
+                                    <th>Image</th>
+                                    <th style="width: 25%">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse($allNews as $news)
+                                    <tr>
+                                        <td>{{ $news->newscategory->name ?? 'N/A' }}</td>
+                                        <td>
+                                            {{ $news->title }}
+                                            <br/>
+                                            <small class="text-black-50">{{ Str::limit(strip_tags($news->text), 50) }}</small>
+                                        </td>
+                                        <td>{{ $news->type }}</td>
+                                        <td><small>{{ $news->slug }}</small></td>
+                                        <td>
+                                            @if($news->image)
+                                                <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                                            @else
+                                                <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                                            @endif
+                                        </td>
+                                        <td align="right">
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editNewsModal{{ $news->id }}">
+                                                <i class="fas fa-edit"></i> Edit
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteNewsModal{{ $news->id }}">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </button>
+                                        </td>
+                                    </tr>
 
-            <div class="card-tools">
-              <form class="form-inline form-group-lg" action="{{ route('dashboard.markets') }}" method="GET"> {{-- Changed route to dashboard.markets --}}
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-sm" placeholder="Search markets" id="search-param" name="search" value="{{ request('search') }}" required> {{-- Changed placeholder to "Search markets" --}}
+                                    {{-- Edit News Modal Code --}}
+                                    <div class="modal fade" id="editNewsModal{{ $news->id }}" tabindex="-1" role="dialog" aria-labelledby="editNewsModalLabel{{ $news->id }}" aria-hidden="true" data-backdrop="static">
+                                        <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-primary">
+                                                    <h5 class="modal-title" id="editNewsModalLabel{{ $news->id }}">Update News: {{ $news->title }}</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <form method="post" action="{{ route('dashboard.news.update', $news->id) }}" enctype="multipart/form-data">
+                                                    <div class="modal-body">
+                                                        @csrf
+                                                        @method('POST')
+
+                                                        <div class="form-group mb-3">
+                                                            <label for="newsCategoryEdit{{ $news->id }}">News Category</label>
+                                                            <select class="form-control select2bs4" style="width: 100%;" id="newsCategoryEdit{{ $news->id }}" name="newscategory_id" required>
+                                                                @foreach($newscategories as $category)
+                                                                    <option value="{{ $category->id }}" {{ $news->newscategory_id == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+                                                                @endforeach
+                                                            </select>
+                                                            @error('newscategory_id')
+                                                                <span class="text-danger">{{ $message }}</span>
+                                                            @enderror
+                                                        </div>
+
+                                                        <div class="input-group mb-3">
+                                                            <input type="text"
+                                                                name="title"
+                                                                class="form-control"
+                                                                value="{{ old('title', $news->title) }}"
+                                                                placeholder="News Title" required>
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text"><span class="fas fa-newspaper"></span></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="input-group mb-3">
+                                                            <input type="text"
+                                                                name="type"
+                                                                class="form-control"
+                                                                value="{{ old('type', $news->type) }}"
+                                                                placeholder="News Type (Optional)">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text"><span class="fas fa-tag"></span></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="input-group mb-3">
+                                                            <input type="text"
+                                                                name="slug"
+                                                                class="form-control"
+                                                                value="{{ old('slug', $news->slug) }}"
+                                                                autocomplete="off"
+                                                                placeholder="News Slug" required>
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text"><span class="fas fa-link"></span></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="newsTextEdit{{ $news->id }}">News Content</label>
+                                                            <textarea id="newsTextEdit{{ $news->id }}" name="text" class="form-control summernote-editor" required>{{ old('text', $news->text) }}</textarea>
+                                                            @error('text')
+                                                                <span class="text-danger">{{ $message }}</span>
+                                                            @enderror
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="newsImageEdit{{ $news->id }}">News Image: (16:9 should be ideal, max: 2MB)</label><br>
+                                                            @if($news->image)
+                                                                <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
+                                                                <br>
+                                                                <small class="text-muted">Leave blank to keep current image.</small>
+                                                            @else
+                                                                <small class="text-muted">No image uploaded.</small>
+                                                            @endif
+                                                            <div class="custom-file mt-2">
+                                                                <input type="file" class="custom-file-input" id="newsImageEdit{{ $news->id }}" name="image" accept="image/*">
+                                                                <label class="custom-file-label" for="newsImageEdit{{ $news->id }}">Choose new image (optional)</label>
+                                                            </div>
+                                                            @error('image')
+                                                                <span class="text-danger">{{ $message }}</span>
+                                                            @enderror
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-primary">Update</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- End Edit News Modal Code --}}
+
+                                    {{-- Delete News Modal Code --}}
+                                    <div class="modal fade" id="deleteNewsModal{{ $news->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteNewsModalLabel{{ $news->id }}" aria-hidden="true" data-backdrop="static">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-danger">
+                                                    <h5 class="modal-title" id="deleteNewsModalLabel{{ $news->id }}">Delete News</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to delete this news item?<br/>
+                                                    <center>
+                                                        <big><b>{{ $news->title }}</b></big><br/>
+                                                        <small>Category: {{ $news->newscategory->name ?? 'N/A' }}</small>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <a href="{{ route('dashboard.news.delete', $news->id) }}" class="btn btn-danger">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- End Delete News Modal Code --}}
+                                @empty
+                                    <tr>
+                                        <td colspan="6" class="text-center">No news found.</td>
+                                    </tr>
+                                @endforelse
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <button type="submit" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
-                  <i class="fas fa-search"></i> Search
-                </button>
-                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addMarketModal" style="margin-left: 5px;"> {{-- Changed target to addMarketModal --}}
-                  <i class="fas fa-plus"></i> Add New Market
-                </button>
-              </form>
+                @if(isset($allNews) && method_exists($allNews, 'links'))
+                    {{ $allNews->links() }}
+                @endif
             </div>
-          </div>
-          <!-- /.card-header -->
-          <div class="card-body p-0">
-            <table class="table">
-              <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Slug</th>
-                    <th>Image</th>
-                    <th style="width: 40%">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                @forelse($markets as $market) {{-- Changed $products to $markets --}}
-                    <tr>
-                        <td>
-                            <a href="{{ route('index.singlemarket', $market->slug) }}" target="_blank">{{ $market->title }}</a> {{-- Changed route to index.singlemarket, and variable to $market --}}
-                            <br/>
-                            {{-- <small class="text-black-50">{{ Str::limit(strip_tags($market->text), 100) }}</small> --}} {{-- Changed $product->text to $market->text --}}
-                        </td>
-                        <td><small>{{ $market->slug }}</small></td> {{-- Changed $product->slug to $market->slug --}}
-                        <td>
-                            @if($market->image) {{-- Changed $product->image to $market->image --}}
-                                <img src="{{ asset('images/markets/' . $market->image) }}" alt="{{ $market->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;"> {{-- Changed image path and alt text --}}
-                            @else
-                                <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
-                            @endif
-                        </td>
-                        <td align="right">
-                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editMarketModal{{ $market->id }}"> {{-- Changed target to editMarketModal and variable to $market->id --}}
-                                <i class="fas fa-edit"></i> Edit
+
+            {{-- News Category Section - 2 Columns --}}
+            <div class="col-lg-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">News Categories</h3>
+                        <div class="card-tools">
+                             <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addNewscategoryModal">
+                                <i class="fas fa-plus"></i> Add
                             </button>
-
-                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteMarketModal{{ $market->id }}"> {{-- Changed target to deleteMarketModal and variable to $market->id --}}
-                                <i class="fas fa-trash"></i> Delete
-                            </button>
-                        </td>
-
-                        <!-- Edit Market Modal Code -->
-                        <div class="modal fade" id="editMarketModal{{ $market->id }}" tabindex="-1" role="dialog" aria-labelledby="editMarketModalLabel{{ $market->id }}" aria-hidden="true" data-backdrop="static"> {{-- Changed ID and label --}}
-                          <div class="modal-dialog modal-xl" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header bg-primary">
-                                <h5 class="modal-title" id="editMarketModalLabel{{ $market->id }}">Update Market: {{ $market->title }}</h5> {{-- Changed title and variable --}}
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <form method="post" action="{{ route('dashboard.markets.update', $market->id) }}" enctype="multipart/form-data"> {{-- Changed route to dashboard.markets.update and variable --}}
-                                        <div class="modal-body">
-                                            @csrf
-                                            @method('POST')
-
-                                            <div class="input-group mb-3">
-                                                <input type="text"
-                                                       name="title"
-                                                       class="form-control"
-                                                       value="{{ old('title', $market->title) }}" {{-- Changed variable to $market->title --}}
-                                                       placeholder="Market Title" required> {{-- Changed placeholder --}}
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text"><span class="fas fa-box"></span></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="input-group mb-3">
-                                                <input type="text"
-                                                       name="slug"
-                                                       class="form-control"
-                                                       value="{{ old('slug', $market->slug) }}" {{-- Changed variable to $market->slug --}}
-                                                       autocomplete="off"
-                                                       placeholder="Market Slug" required> {{-- Changed placeholder --}}
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text"><span class="fas fa-link"></span></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="marketTextEdit{{ $market->id }}">Market Description/Article</label> {{-- Changed label and for attribute --}}
-                                                <textarea id="marketTextEdit{{ $market->id }}" name="text" class="form-control summernote-editor" required>{{ old('text', $market->text) }}</textarea> {{-- Changed ID and variable --}}
-                                                @error('text')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="marketImageEdit{{ $market->id }}">Market Image: (16:9 should be ideal, max: 2MB)</label><br> {{-- Changed label and for attribute --}}
-                                                @if($market->image) {{-- Changed variable --}}
-                                                    <img src="{{ asset('images/markets/' . $market->image) }}" alt="{{ $market->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;"> {{-- Changed image path and alt --}}
-                                                    <br>
-                                                    <small class="text-muted">Leave blank to keep current image.</small>
-                                                @else
-                                                    <small class="text-muted">No image uploaded.</small>
-                                                @endif
-                                                <div class="custom-file mt-2">
-                                                    <input type="file" class="custom-file-input" id="marketImageEdit{{ $market->id }}" name="image" accept="image/*"> {{-- Changed ID --}}
-                                                    <label class="custom-file-label" for="marketImageEdit{{ $market->id }}">Choose new image (optional)</label> {{-- Changed for attribute --}}
-                                                </div>
-                                                @error('image')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
-
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Update</button>
-                                        </div>
-                              </form>
-                            </div>
-                          </div>
                         </div>
-                        <!-- End Edit Market Modal Code -->
-                        <!-- Delete Market Modal Code -->
-                        <div class="modal fade" id="deleteMarketModal{{ $market->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteMarketModalLabel{{ $market->id }}" aria-hidden="true" data-backdrop="static"> {{-- Changed ID and label --}}
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deleteMarketModalLabel{{ $market->id }}">Delete Market</h5> {{-- Changed title and label --}}
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                Are you sure you want to delete this market?<br/> {{-- Changed text --}}
-                                <center>
-                                    <big><b>{{ $market->title }}</b></big><br/> {{-- Changed variable --}}
-                                    <small>Slug: {{ $market->slug }}</small> {{-- Changed variable --}}
-                                </center>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="{{ route('dashboard.markets.delete', $market->id) }}" class="btn btn-danger">Delete</a> {{-- Changed route and variable --}}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Delete Market Modal Code -->
-                    </tr>
-                @empty
-                    <tr>
-                        <td colspan="4" class="text-center">No markets found.</td> {{-- Changed text --}}
-                    </tr>
-                @endforelse
-              </tbody>
-            </table>
-          </div>
-          <!-- /.card-body -->
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th style="width: 30%">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse($newscategories as $newscategory)
+                                    <tr>
+                                        <td>{{ $newscategory->name }}</td>
+                                        <td align="right">
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editNewscategoryModal{{ $newscategory->id }}">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteNewscategoryModal{{ $newscategory->id }}">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    {{-- Edit News Category Modal Code --}}
+                                    <div class="modal fade" id="editNewscategoryModal{{ $newscategory->id }}" tabindex="-1" role="dialog" aria-labelledby="editNewscategoryModalLabel{{ $newscategory->id }}" aria-hidden="true" data-backdrop="static">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-primary">
+                                                    <h5 class="modal-title" id="editNewscategoryModalLabel{{ $newscategory->id }}">Update Category: {{ $newscategory->name }}</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <form method="post" action="{{ route('dashboard.newscategories.update', $newscategory->id) }}">
+                                                    <div class="modal-body">
+                                                        @csrf
+                                                        @method('POST')
+
+                                                        <div class="input-group mb-3">
+                                                            <input type="text"
+                                                                name="name"
+                                                                class="form-control"
+                                                                value="{{ old('name', $newscategory->name) }}"
+                                                                placeholder="Category Name" required>
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text"><span class="fas fa-folder"></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-primary">Update</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- End Edit News Category Modal Code --}}
+
+                                    {{-- Delete News Category Modal Code --}}
+                                    <div class="modal fade" id="deleteNewscategoryModal{{ $newscategory->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteNewscategoryModalLabel{{ $newscategory->id }}" aria-hidden="true" data-backdrop="static">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-danger">
+                                                    <h5 class="modal-title" id="deleteNewscategoryModalLabel{{ $newscategory->id }}">Delete News Category</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to delete this news category?<br/>
+                                                    <center>
+                                                        <big><b>{{ $newscategory->name }}</b></big>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <a href="{{ route('dashboard.newscategories.delete', $newscategory->id) }}" class="btn btn-danger">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- End Delete News Category Modal Code --}}
+                                @empty
+                                    <tr>
+                                        <td colspan="2" class="text-center">No categories found.</td>
+                                    </tr>
+                                @endforelse
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                @if(isset($newscategories) && method_exists($newscategories, 'links'))
+                    {{ $newscategories->links() }}
+                @endif
+            </div>
         </div>
-        @if(isset($markets) && method_exists($markets, 'links')) {{-- Changed $products to $markets --}}
-            {{ $markets->links() }} {{-- Changed $products to $markets --}}
-        @endif
     </div>
 
-    <!-- Add Market Modal Code -->
-    <div class="modal fade" id="addMarketModal" tabindex="-1" role="dialog" aria-labelledby="addMarketModalLabel" aria-hidden="true" data-backdrop="static"> {{-- Changed ID and label --}}
+    {{-- Add News Modal Code --}}
+    <div class="modal fade" id="addNewsModal" tabindex="-1" role="dialog" aria-labelledby="addNewsModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addMarketModalLabel">Add New Market</h5> {{-- Changed title and label --}}
+            <h5 class="modal-title" id="addNewsModalLabel">Add New News</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form method="post" action="{{ route('dashboard.markets.store') }}" enctype="multipart/form-data"> {{-- Changed route to dashboard.markets.store --}}
+          <form method="post" action="{{ route('dashboard.news.store') }}" enctype="multipart/form-data">
               <div class="modal-body">
                 @csrf
+
+                <div class="form-group mb-3">
+                    <label for="newsCategoryAdd">News Category</label>
+                    <select class="form-control select2bs4" style="width: 100%;" id="newsCategoryAdd" name="newscategory_id" required>
+                        <option value="">Select a Category</option>
+                        @foreach($newscategories as $category)
+                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        @endforeach
+                    </select>
+                    @error('newscategory_id')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
 
                 <div class="input-group mb-3">
                     <input type="text"
                            name="title"
                            class="form-control"
                            value="{{ old('title') }}"
-                           placeholder="Market Title" required> {{-- Changed placeholder --}}
+                           placeholder="News Title" required>
                     <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-box"></span></div>
+                        <div class="input-group-text"><span class="fas fa-newspaper"></span></div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text"
+                           name="type"
+                           class="form-control"
+                           value="{{ old('type') }}"
+                           placeholder="News Type (Optional)">
+                    <div class="input-group-append">
+                        <div class="input-group-text"><span class="fas fa-tag"></span></div>
                     </div>
                 </div>
 
@@ -224,25 +383,25 @@
                            class="form-control"
                            value="{{ old('slug') }}"
                            autocomplete="off"
-                           placeholder="Market Slug (e.g., my-awesome-market)" required> {{-- Changed placeholder --}}
+                           placeholder="News Slug (e.g., latest-company-update)" required>
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-link"></span></div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="marketTextAdd">Market Description/Article</label> {{-- Changed label and for attribute --}}
-                    <textarea id="marketTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea> {{-- Changed ID --}}
+                    <label for="newsTextAdd">News Content</label>
+                    <textarea id="newsTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea>
                     @error('text')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
 
                 <div class="form-group">
-                    <label for="marketImageAdd">Market Image: (16:9 should be ideal, max: 2MB)</label> {{-- Changed label --}}
+                    <label for="newsImageAdd">News Image: (16:9 should be ideal, max: 2MB)</label>
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="marketImageAdd" name="image" accept="image/*" required> {{-- Changed ID --}}
-                        <label class="custom-file-label" for="marketImageAdd">Choose file</label> {{-- Changed for attribute --}}
+                        <input type="file" class="custom-file-input" id="newsImageAdd" name="image" accept="image/*" required>
+                        <label class="custom-file-label" for="newsImageAdd">Choose file</label>
                     </div>
                     @error('image')
                         <span class="text-danger">{{ $message }}</span>
@@ -258,12 +417,46 @@
         </div>
       </div>
     </div>
-    <!-- End Add Market Modal Code -->
+    {{-- End Add News Modal Code --}}
+
+    {{-- Add News Category Modal Code --}}
+    <div class="modal fade" id="addNewscategoryModal" tabindex="-1" role="dialog" aria-labelledby="addNewscategoryModalLabel" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-success">
+            <h5 class="modal-title" id="addNewscategoryModalLabel">Add New News Category</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form method="post" action="{{ route('dashboard.newscategories.store') }}">
+              <div class="modal-body">
+                @csrf
+
+                <div class="input-group mb-3">
+                    <input type="text"
+                           name="name"
+                           class="form-control"
+                           value="{{ old('name') }}"
+                           placeholder="Category Name" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text"><span class="fas fa-folder-open"></span></div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-success">Save</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    {{-- End Add News Category Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
     <script src="{{ asset('js/select2.full.min.js') }}"></script>
-    <!-- Summernote JS for WYSIWYG editor -->
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
     <script type="text/javascript">
@@ -294,7 +487,7 @@
                     ],
                     fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande', 'Tahoma', 'Times New Roman', 'Verdana', 'Inter'],
                     fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36'],
-                    height: 400, // Set the height of the editor area for extra large modal
+                    height: 400,
                     dialogsInBody: true
                 });
             } else {
@@ -302,14 +495,18 @@
                 console.log("Ensure Bootstrap 4 JS is included in your layouts.app before Summernote JS.");
             }
 
-            // Handle custom file input label update
             $('.custom-file-input').on('change', function() {
                 let fileName = $(this).val().split('\\').pop();
                 $(this).next('.custom-file-label').addClass("selected").html(fileName);
             });
+
+            // Initialize Select2 for newscategory dropdowns
+            $('.select2bs4').select2({
+                theme: 'bootstrap4',
+                dropdownParent: $('#addNewsModal, #editNewsModal{{ $news->id ?? '' }}') // Ensure dropdown is visible within modal
+            });
         });
 
-        // Search functionality
         $(document).on('click', '#search-button', function() {
             if($('#search-param').val() != '') {
                 $(this).closest('form').submit();
