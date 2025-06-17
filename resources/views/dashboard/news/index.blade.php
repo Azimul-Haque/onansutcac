@@ -119,15 +119,16 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="input-group mb-3">
-                                                            <input type="text"
-                                                                name="type"
-                                                                class="form-control"
-                                                                value="{{ old('type', $news->type) }}"
-                                                                placeholder="News Type (Optional)">
-                                                            <div class="input-group-append">
-                                                                <div class="input-group-text"><span class="fas fa-tag"></span></div>
-                                                            </div>
+                                                        <div class="form-group mb-3">
+                                                            <label for="newsTypeEdit{{ $news->id }}">News Type</label>
+                                                            <select name="type" id="newsTypeEdit{{ $news->id }}" class="form-control" required>
+                                                                <option value="News Article" {{ old('type', $news->type) == 'News Article' ? 'selected' : '' }}>News Article</option>
+                                                                <option value="External Links" {{ old('type', $news->type) == 'External Links' ? 'selected' : '' }}>External Links</option>
+                                                                <option value="Press Release" {{ old('type', $news->type) == 'Press Release' ? 'selected' : '' }}>Press Release</option>
+                                                            </select>
+                                                            @error('type')
+                                                                <span class="text-danger">{{ $message }}</span>
+                                                            @enderror
                                                         </div>
 
                                                         <div class="input-group mb-3">
