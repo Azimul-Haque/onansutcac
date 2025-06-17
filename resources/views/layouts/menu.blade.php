@@ -49,7 +49,7 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.news') }}" class="nav-link {{ Request::is('dashboard/news') ? 'active' : '' }} {{ Request::is('dashboard/news/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-newspaper"></i>
         <p>News</p>
     </a>
