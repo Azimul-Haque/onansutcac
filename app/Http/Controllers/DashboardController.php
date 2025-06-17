@@ -443,7 +443,7 @@ class DashboardController extends Controller
         }
 
         return view('dashboard.news.index')
-               ->withNews($allNews)
+               ->withAllNews($allNews)
                ->withNewscategories($newscategories);
     }
 
