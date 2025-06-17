@@ -501,6 +501,10 @@ class DashboardController extends Controller
         $news->type = $request->type;
         $news->slug = Str::slug($request->slug);
         $news->text = Purifier::clean($request->text, 'youtube');
+        if($request->text) {
+            $news->text = Purifier::clean($request->text, 'youtube');
+        }
+
 
         if($request->hasFile('image')) {
             if ($news->image && file_exists(public_path('images/news/' . $news->image))) {
