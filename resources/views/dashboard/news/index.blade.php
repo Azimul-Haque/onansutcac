@@ -22,8 +22,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            {{-- Main News Section - 10 Columns --}}
-            <div class="col-lg-10">
+            <div class="col-lg-9">
                 @section('page-header') News (Total {{ $allNews->total() ?? 0 }}) @endsection
                 <div class="card">
                     <div class="card-header">
@@ -220,7 +219,7 @@
             </div>
 
             {{-- News Category Section - 2 Columns --}}
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <div class="card">
                     <div class="card-header">
                         <h3 class="card-title">News Categories</h3>
