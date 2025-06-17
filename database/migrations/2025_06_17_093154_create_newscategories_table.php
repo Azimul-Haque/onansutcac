@@ -15,7 +15,7 @@ class CreateNewscategoriesTable extends Migration
     {
         Schema::create('newscategories', function (Blueprint $table) {
             $table->id();
-            $table->string('title'); 
+            $table->string('title')->unique();
         });
     }
 
