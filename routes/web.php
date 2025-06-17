@@ -115,7 +115,7 @@ Route::post('/dashboard/news/store', 'DashboardController@storeNews')->name('das
 Route::post('/dashboard/news/{id}/update', 'DashboardController@updateNews')->name('dashboard.news.update');
 Route::get('/dashboard/news/{id}/delete', 'DashboardController@deleteNews')->name('dashboard.news.delete');
 Route::post('/dashboard/news/category/store', 'DashboardController@storeNewsCategory')->name('dashboard.newscategories.store');
-Route::post('/dashboard/news/category/update', 'DashboardController@updateNewsCategory')->name('dashboard.newscategories.update');
+Route::post('/dashboard/news/category/{id}/update', 'DashboardController@updateNewsCategory')->name('dashboard.newscategories.update');
 Route::get('/dashboard/news/category/{id}/delete', 'DashboardController@deleteNewsCategory')->name('dashboard.newscategories.delete');
 
 // --- Events Routes ---
