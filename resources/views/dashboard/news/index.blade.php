@@ -218,7 +218,7 @@
                 @endif
             </div>
 
-            {{-- News Category Section - 2 Columns --}}
+            {{-- News Category Section --}}
             <div class="col-lg-3">
                 <div class="card">
                     <div class="card-header">
