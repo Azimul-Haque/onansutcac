@@ -454,8 +454,8 @@ class DashboardController extends Controller
             'title'           => 'required|string|max:191',
             'type'            => 'nullable|string|max:191',
             'slug'            => 'required|string|max:300|unique:news,slug',
-            'newslink'            => 'required|string|max:300|unique:news,slug',
-            'text'            => 'required',
+            'newslink'            => 'sometimes|string|max:300|unique:news,slug',
+            'text'            => 'sometimes',
             'image'           => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
 
