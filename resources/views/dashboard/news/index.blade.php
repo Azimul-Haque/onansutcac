@@ -122,7 +122,7 @@
                                                         <div class="form-group mb-3">
                                                             <label for="">News Type</label>
                                                             <select name="type" id="" class="form-control" required>
-                                                                <option selected disabled>Select Type</option>
+                                                                <option selected disabled>Select News Type</option>
                                                                 <option value="News Article" {{ old('type', $news->type) == 'News Article' ? 'selected' : '' }}>News Article</option>
                                                                 <option value="External Links" {{ old('type', $news->type) == 'External Links' ? 'selected' : '' }}>External Links</option>
                                                                 <option value="Press Release" {{ old('type', $news->type) == 'Press Release' ? 'selected' : '' }}>Press Release</option>
@@ -348,7 +348,7 @@
                 <div class="form-group mb-3">
                     <label for="">News Type</label>
                     <select name="type" id="" class="form-control" required>
-                        <option selected disabled>Select Type</option>
+                        <option selected disabled>Select News Type</option>
                         <option value="News Article">News Article</option>
                         <option value="External Links">External Links</option>
                         <option value="Press Release">Press Release</option>
