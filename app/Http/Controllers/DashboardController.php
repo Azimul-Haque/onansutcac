@@ -427,7 +427,178 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.teams');
     }
 
-    
+    PHP
+
+    <?php
+
+    namespace App\Http\Controllers\Dashboard;
+
+    use App\Http\Controllers\Controller;
+    use App\News;
+    use App\Newscategory;
+    use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\Session;
+    use Illuminate\Support\Facades\Cache;
+    use Illuminate\Support\Str;
+    use Image;
+    use Purifier;
+
+    class NewsController extends Controller
+    {
+        public function getNews(Request $request)
+        {
+            $newscategories = Newscategory::orderBy('name', 'asc')->get();
+
+            if($request->search) {
+                $allNews = News::where('title', 'LIKE', "%$request->search%")
+                                 ->orWhere('type', 'LIKE', "%$request->search%")
+                                 ->orWhere('slug', 'LIKE', "%$request->search%")
+                                 ->orWhere('text', 'LIKE', "%$request->search%")
+                                 ->orderBy('id', 'desc')
+                                 ->paginate(10);
+            } else {
+                $allNews = News::orderBy('id', 'desc')->paginate(10);
+            }
+
+            return view('dashboard.news.index')
+                   ->withNews($allNews)
+                   ->withNewscategories($newscategories);
+        }
+
+        public function storeNews(Request $request)
+        {
+            $this->validate($request, [
+                'newscategory_id' => 'required|integer|exists:newscategories,id',
+                'title'           => 'required|string|max:191',
+                'type'            => 'nullable|string|max:191',
+                'slug'            => 'required|string|max:300|unique:news,slug',
+                'text'            => 'required',
+                'image'           => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+            ]);
+
+            $news = new News;
+            $news->newscategory_id = $request->newscategory_id;
+            $news->title = $request->title;
+            $news->type = $request->type;
+            $news->slug = Str::slug($request->slug);
+            $news->text = Purifier::clean($request->text, 'youtube');
+
+            if($request->hasFile('image')) {
+                $image    = $request->file('image');
+                $filename = Str::random(5) . time() .'.' . "webp";
+                $location = public_path('images/news/'. $filename);
+                Image::make($image)->fit(711, 400)->save($location);
+                $news->image = $filename;
+            }
+
+            $news->save();
+
+            Cache::forget('news_for_footer');
+            Session::flash('success', 'News created successfully!');
+            return redirect()->route('dashboard.news');
+        }
+
+        public function updateNews(Request $request, $id)
+        {
+            $this->validate($request, [
+                'newscategory_id' => 'required|integer|exists:newscategories,id',
+                'title'           => 'required|string|max:191',
+                'type'            => 'nullable|string|max:191',
+                'slug'            => 'required|string|max:300|unique:news,slug,' . $id,
+                'text'            => 'required',
+                'image'           => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+            ]);
+
+            $news = News::findOrFail($id);
+            $news->newscategory_id = $request->newscategory_id;
+            $news->title = $request->title;
+            $news->type = $request->type;
+            $news->slug = Str::slug($request->slug);
+            $news->text = Purifier::clean($request->text, 'youtube');
+
+            if($request->hasFile('image')) {
+                if ($news->image && file_exists(public_path('images/news/' . $news->image))) {
+                    unlink(public_path('images/news/' . $news->image));
+                }
+
+                $image    = $request->file('image');
+                $filename = Str::random(5) . time() . '.' . "webp";
+                $location = public_path('images/news/' . $filename);
+                Image::make($image)->fit(711, 400)->save($location);
+                $news->image = $filename;
+            }
+
+            $news->save();
+
+            Cache::forget('news_for_footer');
+            Session::flash('success', 'News updated successfully!');
+            return redirect()->route('dashboard.news');
+        }
+
+        public function deleteNews($id)
+        {
+            $news = News::findOrFail($id);
+
+            if ($news->image && file_exists(public_path('images/news/' . $news->image))) {
+                unlink(public_path('images/news/' . $news->image));
+            }
+
+            $news->delete();
+
+            Cache::forget('news_for_footer');
+            Session::flash('success', 'News deleted successfully!');
+            return redirect()->route('dashboard.news');
+        }
+
+        public function getNewscategories(Request $request)
+        {
+            if($request->search) {
+                $newscategories = Newscategory::where('name', 'LIKE', "%$request->search%")
+                                              ->orderBy('id', 'desc')
+                                              ->paginate(10);
+            } else {
+                $newscategories = Newscategory::orderBy('id', 'desc')->paginate(10);
+            }
+
+            return view('dashboard.newscategories.index')->withNewscategories($newscategories);
+        }
+
+        public function storeNewscategory(Request $request)
+        {
+            $this->validate($request, [
+                'name' => 'required|string|max:191|unique:newscategories,name',
+            ]);
+
+            $newscategory = new Newscategory;
+            $newscategory->name = $request->name;
+            $newscategory->save();
+
+            Session::flash('success', 'News category created successfully!');
+            return redirect()->route('dashboard.newscategories');
+        }
+
+        public function updateNewscategory(Request $request, $id)
+        {
+            $this->validate($request, [
+                'name' => 'required|string|max:191|unique:newscategories,name,' . $id,
+            ]);
+
+            $newscategory = Newscategory::findOrFail($id);
+            $newscategory->name = $request->name;
+            $newscategory->save();
+
+            Session::flash('success', 'News category updated successfully!');
+            return redirect()->route('dashboard.newscategories');
+        }
+
+        public function deleteNewscategory($id)
+        {
+            $newscategory = Newscategory::findOrFail($id);
+            $newscategory->delete();
+
+            Session::flash('success', 'News category deleted successfully!');
+            return redirect()->route('dashboard.newscategories');
+        }
 
 
 
