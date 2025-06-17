@@ -120,8 +120,8 @@
                                                         </div>
 
                                                         <div class="form-group mb-3">
-                                                            <label for="newsTypeEdit{{ $news->id }}">News Type</label>
-                                                            <select name="type" id="newsTypeEdit{{ $news->id }}" class="form-control" required>
+                                                            <label for="">News Type</label>
+                                                            <select name="type" id="" class="form-control" required>
                                                                 <option value="News Article" {{ old('type', $news->type) == 'News Article' ? 'selected' : '' }}>News Article</option>
                                                                 <option value="External Links" {{ old('type', $news->type) == 'External Links' ? 'selected' : '' }}>External Links</option>
                                                                 <option value="Press Release" {{ old('type', $news->type) == 'Press Release' ? 'selected' : '' }}>Press Release</option>
