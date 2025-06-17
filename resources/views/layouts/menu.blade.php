@@ -91,14 +91,14 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.help-center') }}" class="nav-link {{ Request::is('dashboard/help-center') ? 'active' : '' }} {{ Request::is('dashboard/help-center/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-question-circle"></i>
         <p>Help Center/FAQ</p>
     </a>
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.statistics') }}" class="nav-link {{ Request::is('dashboard/statistics') ? 'active' : '' }} {{ Request::is('dashboard/statistics/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-chart-pie"></i>
         <p>Statistics</p>
     </a>
