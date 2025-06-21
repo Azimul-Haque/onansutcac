@@ -397,9 +397,7 @@
                 <div id="textFieldWrapper" class="form-group">
                     <label for="newsTextAdd">News Content</label>
                     <textarea id="newsTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea>
-                    @error('text')
-                        <span class="text-danger">{{ $message }}</span>
-                    @enderror
+                    
                 </div>
 
                 <div id="newsLinkWrapper" class="input-group mb-3" style="display: none;">
