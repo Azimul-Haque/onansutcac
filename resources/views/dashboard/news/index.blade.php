@@ -382,7 +382,7 @@
                     </div>
                 </div>
 
-                <div class="input-group mb-3">
+                <div id="slugFieldWrapper" class="input-group mb-3">
                     <input type="text"
                            name="slug"
                            class="form-control"
@@ -394,7 +394,7 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div id="textFieldWrapper" class="form-group">
                     <label for="newsTextAdd">News Content</label>
                     <textarea id="newsTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea>
                     @error('text')
