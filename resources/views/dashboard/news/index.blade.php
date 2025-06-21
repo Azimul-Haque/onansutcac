@@ -560,6 +560,28 @@
             }
         });
 
+        $('.news-type-select').on('change', function () {
+            const typeValue = $(this).val();
+            const newsId = $(this).data('news-id');
+
+            if (typeValue == 3) {
+                // Show link input, hide slug and text
+                $('.slug-group-' + newsId).hide();
+                $('.text-group-' + newsId).hide();
+                $('.newslink-group-' + newsId).show();
+            } else {
+                // Show slug and text, hide link input
+                $('.slug-group-' + newsId).show();
+                $('.text-group-' + newsId).show();
+                $('.newslink-group-' + newsId).hide();
+            }
+        });
+
+        // Trigger change manually on page load to handle pre-selected values
+        $('.news-type-select').each(function () {
+            $(this).trigger('change');
+        });
+
         $(document).on('click', '#search-button', function() {
             if($('#search-param').val() != '') {
                 $(this).closest('form').submit();
