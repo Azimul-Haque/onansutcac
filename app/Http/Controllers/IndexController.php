@@ -9,6 +9,7 @@ use App\Message;
 use App\Product;
 use App\Market;
 use App\Team;
+use App\News;
 
 use Carbon\Carbon;
 use DB;
@@ -50,8 +51,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        // return redirect()->route('dashboard.index');
-
+        $newsforhomepage =  
         return view('index.index');
     }
 
