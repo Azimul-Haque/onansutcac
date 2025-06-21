@@ -42,7 +42,7 @@
                 <div class="meta-top">
                   <ul>
                     <li class="d-flex align-items-center"><i class="bi bi-megaphone"></i><a href="#!">{{ news_type($news->type) }}</a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news->created_at)) }}</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#!"><time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news->created_at)) }}</time></a></li>
                     {{-- <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li> --}}
                   </ul>
                 </div><!-- End meta top -->
