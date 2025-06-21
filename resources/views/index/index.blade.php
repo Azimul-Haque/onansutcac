@@ -585,7 +585,7 @@
 
         <div class="row gy-4">
 
-          @foreach()
+          @foreach($newsforhomepage as $news)
 
           @endforeach
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
