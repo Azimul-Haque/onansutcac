@@ -33,7 +33,7 @@
         <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="flex-shrink-0">
         <div>
           <h4><a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" @if($news->type == 3) target="_blank" @endif>{{ $news->title }}</a></h4>
-          <time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news->created_at)) }}</time>
+           s <time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news->created_at)) }}</time>
         </div>
       </div>
     @endforeach
