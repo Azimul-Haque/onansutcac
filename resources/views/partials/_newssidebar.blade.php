@@ -37,39 +37,6 @@
         </div>
       </div>
     @endforeach
-
-    <div class="post-item">
-      <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="flex-shrink-0">
-      <div>
-        <h4><a href="{{ route('index.single-news', 'slug') }}">Quidem autem et impedit</a></h4>
-        <time datetime="2020-01-01">Jan 1, 2020</time>
-      </div>
-    </div><!-- End recent post item-->
-
-    <div class="post-item">
-      <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="flex-shrink-0">
-      <div>
-        <h4><a href="{{ route('index.single-news', 'slug') }}">Id quia et et ut maxime similique occaecati ut</a></h4>
-        <time datetime="2020-01-01">Jan 1, 2020</time>
-      </div>
-    </div><!-- End recent post item-->
-
-    <div class="post-item">
-      <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="flex-shrink-0">
-      <div>
-        <h4><a href="{{ route('index.single-news', 'slug') }}">Laborum corporis quo dara net para</a></h4>
-        <time datetime="2020-01-01">Jan 1, 2020</time>
-      </div>
-    </div><!-- End recent post item-->
-
-    <div class="post-item">
-      <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="flex-shrink-0">
-      <div>
-        <h4><a href="{{ route('index.single-news', 'slug') }}">Et dolores corrupti quae illo quod dolor</a></h4>
-        <time datetime="2020-01-01">Jan 1, 2020</time>
-      </div>
-    </div><!-- End recent post item-->
-
   </div><!--/Recent Posts Widget -->
 
   <!-- Recent Success Stories Widget -->
