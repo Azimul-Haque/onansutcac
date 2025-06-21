@@ -147,7 +147,7 @@ class IndexController extends Controller
     {
         $news = News::orderBy('slug', $slug)->first();
 
-        return view('index.single-news');
+        return view('index.single-news')->withNews($news);
     }
 
     public function getEvents()
