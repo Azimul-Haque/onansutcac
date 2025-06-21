@@ -47,7 +47,7 @@
                                 <tr>
                                     <th>Title</th>
                                     <th>Type</th>
-                                    <th>Slug</th>
+                                    <th>Slug/Link</th>
                                     <th>Image</th>
                                     <th style="width: 25%">Actions</th>
                                 </tr>
