@@ -402,6 +402,7 @@
                 <div id="newsLinkWrapper" class="input-group mb-3" style="display: none;">
                     <input type="url"
                            name="newslink"
+                           id="newsLink"
                            class="form-control"
                            value="{{ old('newslink') }}"
                            placeholder="Paste the External News Link (e.g., https://example.com/article)" required>
