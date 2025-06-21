@@ -522,7 +522,7 @@
             // Initialize Select2 for newscategory dropdowns
             $('.select2bs4').select2({
                 theme: 'bootstrap4',
-                dropdownParent: $('#addNewsModal, #editNewsModal{{ $news->id ?? '' }}') // Ensure dropdown is visible within modal
+                dropdownParent: $('#addNewsModal, .editNewsModal') // Ensure dropdown is visible within modal
             });
         });
 
