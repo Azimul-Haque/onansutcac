@@ -529,6 +529,7 @@
                 $('#newsLinkWrapper').show();
                 $('#newsSlug').prop('required', false);
                 $('#newsTextAdd').prop('required', false);
+                $('#newsLink').prop('required', true);
             } else {
                 // Normal news types
                 $('#slugFieldWrapper').show();
