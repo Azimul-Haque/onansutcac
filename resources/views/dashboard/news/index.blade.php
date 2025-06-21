@@ -349,9 +349,9 @@
                     <label for="">News Type</label>
                     <select name="type" id="" class="form-control" required>
                         <option selected disabled>Select News Type</option>
-                        <option value="News Article">News Article</option>
-                        <option value="Press Release">Press Release</option>
-                        <option value="External Links">External Links</option>
+                        <option value="1">News Article</option>
+                        <option value="2">Press Release</option>
+                        <option value="3">External Links</option>
                     </select>
                     @error('type')
                         <span class="text-danger">{{ $message }}</span>
