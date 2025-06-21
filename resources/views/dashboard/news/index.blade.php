@@ -142,6 +142,7 @@
                                                         <div class="input-group mb-3 slug-group slug-group-{{ $news->id }}">
                                                             <input type="text"
                                                                 name="slug"
+                                                                id="slugEdit{{ $news->id }}" 
                                                                 class="form-control"
                                                                 value="{{ $news->slug }}"
                                                                 autocomplete="off"
