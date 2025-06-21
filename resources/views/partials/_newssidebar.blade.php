@@ -28,13 +28,16 @@
 
     <h3 class="widget-title">Recent News</h3>
 
-    <div class="post-item">
-      <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="flex-shrink-0">
-      <div>
-        <h4><a href="{{ route('index.single-news', 'slug') }}">Nihil blanditiis at in nihil autem</a></h4>
-        <time datetime="2020-01-01">Jan 1, 2020</time>
+    @foreach($recentnews as $news)
+      <div class="post-item">
+        <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="flex-shrink-0">
+        <div>
+          <h4><a href="{{ route('index.single-news', 'slug') }}">Nihil blanditiis at in nihil autem</a></h4>
+          <time datetime="2020-01-01">Jan 1, 2020</time>
+        </div>
       </div>
-    </div><!-- End recent post item-->
+    @endforeach
+    <!-- End recent post item-->
 
     <div class="post-item">
       <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="flex-shrink-0">
