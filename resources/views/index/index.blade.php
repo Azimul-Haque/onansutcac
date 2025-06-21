@@ -605,7 +605,7 @@
 
                 <div class="d-flex align-items-center">
                   <div class="post-meta">
-                    <p class="post-author">Phoenix Business Journal</p>
+                    <p class="post-author">{{ news_type($news->type) }}</p>
                     <p class="post-date">
                       <time datetime="2022-01-01">Jan 1, 2022</time>
                     </p>
