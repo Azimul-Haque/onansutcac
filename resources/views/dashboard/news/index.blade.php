@@ -417,9 +417,7 @@
                         <input type="file" class="custom-file-input" id="newsImageAdd" name="image" accept="image/*" required>
                         <label class="custom-file-label" for="newsImageAdd">Choose file</label>
                     </div>
-                    @error('image')
-                        <span class="text-danger">{{ $message }}</span>
-                    @enderror
+                    
                 </div>
 
               </div>
