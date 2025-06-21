@@ -36,7 +36,7 @@
 
         <div class="row gy-4">
 
-          @foreach($newsforhomepage as $news)
+          @foreach($allNews as $news)
             @php
               $modulo_index = ($loop->iteration - 1) % 3;
               $delay = 200 + ($modulo_index * 100);
@@ -67,7 +67,7 @@
               </article>
             </div>
           @endforeach
-          
+
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <article>
 
