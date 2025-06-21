@@ -45,7 +45,7 @@
               <article>
 
                 <div class="post-img">
-                  <a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" @if($news->type == 3) target="_blank" @endif><img src="{{ asset('images/news/' . $news->image) }}" alt="" class="img-fluid"></a>
+                  <a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" @if($news->type == 3) target="_blank" @endif><img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-fluid"></a>
                 </div>
 
                 <p class="post-category">{{ $news->newscategory->name }}</p>
