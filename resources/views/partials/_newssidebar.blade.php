@@ -33,7 +33,7 @@
         <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="flex-shrink-0">
         <div>
           <h4><a href="{{ route('index.single-news', 'slug') }}">{{ $news->title }}</a></h4>
-          <time datetime="{{ $news->created_at }}">Jan 1, 2020</time>
+          <time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news)) }}</time>
         </div>
       </div>
     @endforeach
