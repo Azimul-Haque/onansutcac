@@ -49,7 +49,6 @@
       <div>
         <h4><a href="{{ route('index.single-news', 'slug') }}">Id quia et et ut maxime similique occaecati ut</a></h4>
         <time datetime="2020-01-01">Jan 1, 2020</time>
-        <small>da s</small>
       </div>
     </div><!-- End recent post item-->
 
