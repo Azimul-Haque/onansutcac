@@ -526,7 +526,7 @@
                 $('#slugFieldWrapper').hide();
                 $('#textFieldWrapper').hide();
                 $('#newsLinkWrapper').show();
-                $('#newsTextAdd').prop('required', false);
+                $('#newsSlug').prop('required', false);
                 $('#newsTextAdd').prop('required', false);
             } else {
                 // Normal news types
