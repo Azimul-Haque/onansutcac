@@ -579,6 +579,9 @@
                 $('.slug-group-' + newsId).show();
                 $('.text-group-' + newsId).show();
                 $('.newslink-group-' + newsId).hide();
+                $('#slugEdit' + newsId).prop('required', true);
+                $('#newsTextEdit' + newsId).prop('required', true);
+                $('#newsLinkEdit' + newsId).prop('required', false);
             }
         });
 
