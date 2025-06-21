@@ -101,13 +101,14 @@
                                                         @csrf
                                                         @method('POST')
 
+                                                        <!-- News Type -->
                                                         <div class="form-group mb-3">
-                                                            <label for="">News Type</label>
-                                                            <select name="type" id="" class="form-control" required>
+                                                            <label for="newsTypeEdit{{ $news->id }}">News Type</label>
+                                                            <select name="type" id="newsTypeEdit{{ $news->id }}" class="form-control news-type-select" data-news-id="{{ $news->id }}" required>
                                                                 <option selected disabled>Select News Type</option>
-                                                                <option value="News Article" {{ old('type', $news->type) == 1 ? 'selected' : '' }}>News Article</option>
-                                                                <option value="Press Release" {{ old('type', $news->type) == 2 ? 'selected' : '' }}>Press Release</option>
-                                                                <option value="External Links" {{ old('type', $news->type) == 3 ? 'selected' : '' }}>External Links</option>
+                                                                <option value="1" {{ old('type', $news->type) == 1 ? 'selected' : '' }}>News Article</option>
+                                                                <option value="2" {{ old('type', $news->type) == 2 ? 'selected' : '' }}>Press Release</option>
+                                                                <option value="3" {{ old('type', $news->type) == 3 ? 'selected' : '' }}>External Links</option>
                                                             </select>
                                                             @error('type')
                                                                 <span class="text-danger">{{ $message }}</span>
