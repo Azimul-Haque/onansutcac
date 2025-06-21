@@ -13,6 +13,12 @@
       .note-editor.note-frame .note-editing-area .note-editable {
           min-height: 200px;
       }
+      /* Initially hide the newslink field, will be managed by JS */
+      .newslink-field {
+          display: none;
+      }
+      /* Initially hide the newslink field, will be managed by JS for edit modals */
+      /* No need for newslink-field-edit-{{ $news->id }} specific style here as JS will handle per-modal */
     </style>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -48,7 +54,7 @@
                                     <th>Category</th>
                                     <th>Title</th>
                                     <th>Type</th>
-                                    <th>Slug</th>
+                                    <th>Slug/Link</th>
                                     <th>Image</th>
                                     <th style="width: 25%">Actions</th>
                                 </tr>
@@ -63,7 +69,13 @@
                                             <small class="text-black-50">{{ Str::limit(strip_tags($news->text), 50) }}</small>
                                         </td>
                                         <td>{{ $news->type }}</td>
-                                        <td><small>{{ $news->slug }}</small></td>
+                                        <td>
+                                            @if($news->type == 'External Links')
+                                                <small><a href="{{ $news->slug }}" target="_blank">Link</a></small> {{-- Assuming slug stores the external link --}}
+                                            @else
+                                                <small>{{ $news->slug }}</small>
+                                            @endif
+                                        </td>
                                         <td>
                                             @if($news->image)
                                                 <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
@@ -120,33 +132,45 @@
                                                         </div>
 
                                                         <div class="form-group mb-3">
-                                                            <label for="">News Type</label>
-                                                            <select name="type" id="" class="form-control" required>
-                                                                <option selected disabled>Select News Type</option>
-                                                                <option value="News Article" {{ old('type', $news->type) == 1 ? 'selected' : '' }}>News Article</option>
-                                                                <option value="Press Release" {{ old('type', $news->type) == 2 ? 'selected' : '' }}>Press Release</option>
-                                                                <option value="External Links" {{ old('type', $news->type) == 3 ? 'selected' : '' }}>External Links</option>
+                                                            <label for="newsTypeEdit{{ $news->id }}">News Type</label>
+                                                            <select name="type" id="newsTypeEdit{{ $news->id }}" class="form-control news-type-select" required>
+                                                                <option value="News Article" {{ old('type', $news->type) == 'News Article' ? 'selected' : '' }}>News Article</option>
+                                                                <option value="Press Release" {{ old('type', $news->type) == 'Press Release' ? 'selected' : '' }}>Press Release</option>
+                                                                <option value="External Links" {{ old('type', $news->type) == 'External Links' ? 'selected' : '' }}>External Links</option>
                                                             </select>
                                                             @error('type')
                                                                 <span class="text-danger">{{ $message }}</span>
                                                             @enderror
                                                         </div>
 
-                                                        <div class="input-group mb-3">
+                                                        <div class="input-group mb-3 slug-field-edit" data-news-id="{{ $news->id }}" style="display: {{ old('type', $news->type) == 'External Links' ? 'none' : 'flex' }};">
                                                             <input type="text"
                                                                 name="slug"
                                                                 class="form-control"
-                                                                value="{{ old('slug', $news->slug) }}"
+                                                                value="{{ old('slug', $news->type != 'External Links' ? $news->slug : '') }}"
                                                                 autocomplete="off"
-                                                                placeholder="News Slug" required>
+                                                                placeholder="News Slug" {{ old('type', $news->type) == 'External Links' ? '' : 'required' }}>
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="fas fa-link"></span></div>
                                                             </div>
                                                         </div>
 
-                                                        <div class="form-group">
+                                                        <div class="form-group newslink-field-edit" data-news-id="{{ $news->id }}" style="display: {{ old('type', $news->type) == 'External Links' ? 'block' : 'none' }};">
+                                                            <label for="newsLinkEdit{{ $news->id }}">News Link</label>
+                                                            <input type="url"
+                                                                name="newslink"
+                                                                class="form-control"
+                                                                id="newsLinkEdit{{ $news->id }}"
+                                                                value="{{ old('newslink', $news->type == 'External Links' ? $news->slug : '') }}"
+                                                                placeholder="https://example.com/news-article" {{ old('type', $news->type) == 'External Links' ? 'required' : '' }}>
+                                                            @error('newslink')
+                                                                <span class="text-danger">{{ $message }}</span>
+                                                            @enderror
+                                                        </div>
+
+                                                        <div class="form-group text-field-edit" data-news-id="{{ $news->id }}" style="display: {{ old('type', $news->type) == 'External Links' ? 'none' : 'block' }};">
                                                             <label for="newsTextEdit{{ $news->id }}">News Content</label>
-                                                            <textarea id="newsTextEdit{{ $news->id }}" name="text" class="form-control summernote-editor" required>{{ old('text', $news->text) }}</textarea>
+                                                            <textarea id="newsTextEdit{{ $news->id }}" name="text" class="form-control summernote-editor" {{ old('type', $news->type) == 'External Links' ? '' : 'required' }}>{{ old('text', $news->text) }}</textarea>
                                                             @error('text')
                                                                 <span class="text-danger">{{ $message }}</span>
                                                             @enderror
@@ -220,9 +244,7 @@
                 @endif
             </div>
 
-            {{-- News Category Section --}}
-            {{-- News Category Section --}}
-            {{-- News Category Section --}}
+            {{-- News Category Section - 3 Columns --}}
             <div class="col-lg-3">
                 <div class="card">
                     <div class="card-header">
@@ -249,7 +271,7 @@
                                             <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editNewscategoryModal{{ $newscategory->id }}">
                                                 <i class="fas fa-edit"></i>
                                             </button>
-                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteNewscategoryModal{{ $newscategory->id }}" disabled="">
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteNewscategoryModal{{ $newscategory->id }}">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </td>
@@ -274,7 +296,7 @@
                                                             <input type="text"
                                                                 name="name"
                                                                 class="form-control"
-                                                                value="{{ $newscategory->name }}"
+                                                                value="{{ old('name', $newscategory->name) }}"
                                                                 placeholder="Category Name" required>
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="fas fa-folder"></span></div>
@@ -346,19 +368,6 @@
                 @csrf
 
                 <div class="form-group mb-3">
-                    <label for="">News Type</label>
-                    <select name="type" id="" class="form-control" required>
-                        <option selected disabled>Select News Type</option>
-                        <option value="1">News Article</option>
-                        <option value="2">Press Release</option>
-                        <option value="3">External Links</option>
-                    </select>
-                    @error('type')
-                        <span class="text-danger">{{ $message }}</span>
-                    @enderror
-                </div>
-
-                <div class="form-group mb-3">
                     <label for="newsCategoryAdd">News Category</label>
                     <select class="form-control select2bs4" style="width: 100%;" id="newsCategoryAdd" name="newscategory_id" required>
                         <option value="">Select a Category</option>
@@ -382,25 +391,55 @@
                     </div>
                 </div>
 
-                <div class="input-group mb-3">
-                    <input type="text"
-                           name="slug"
-                           class="form-control"
-                           value="{{ old('slug') }}"
-                           autocomplete="off"
-                           placeholder="News Slug (e.g., latest-company-update)" required>
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-link"></span></div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="newsTextAdd">News Content</label>
-                    <textarea id="newsTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea>
-                    @error('text')
+                <div class="form-group mb-3">
+                    <label for="newsTypeAdd">News Type</label>
+                    <select name="type" id="newsTypeAdd" class="form-control news-type-select" required>
+                        <option value="">Select News Type</option>
+                        <option value="News Article" {{ old('type') == 'News Article' ? 'selected' : '' }}>News Article</option>
+                        <option value="Press Release" {{ old('type') == 'Press Release' ? 'selected' : '' }}>Press Release</option>
+                        <option value="External Links" {{ old('type') == 'External Links' ? 'selected' : '' }}>External Links</option>
+                    </select>
+                    @error('type')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
+
+                {{-- Fields controlled by News Type selection for Add Modal --}}
+                <div class="news-fields-container-add">
+                    <div class="input-group mb-3 slug-field-add">
+                        <input type="text"
+                            name="slug"
+                            class="form-control"
+                            value="{{ old('slug') }}"
+                            autocomplete="off"
+                            placeholder="News Slug (e.g., latest-company-update)" required>
+                        <div class="input-group-append">
+                            <div class="input-group-text"><span class="fas fa-link"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group newslink-field-add">
+                        <label for="newsLinkAdd">News Link</label>
+                        <input type="url"
+                            name="newslink"
+                            class="form-control"
+                            id="newsLinkAdd"
+                            value="{{ old('newslink') }}"
+                            placeholder="https://example.com/news-article">
+                        @error('newslink')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+
+                    <div class="form-group text-field-add">
+                        <label for="newsTextAdd">News Content</label>
+                        <textarea id="newsTextAdd" name="text" class="form-control summernote-editor">{{ old('text') }}</textarea>
+                        @error('text')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+                </div>
+                {{-- End Fields controlled by News Type selection for Add Modal --}}
 
                 <div class="form-group">
                     <label for="newsImageAdd">News Image: (16:9 should be ideal, max: 2MB)</label>
@@ -428,7 +467,7 @@
     <div class="modal fade" id="addNewscategoryModal" tabindex="-1" role="dialog" aria-labelledby="addNewscategoryModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header bg-warning">
+          <div class="modal-header bg-success">
             <h5 class="modal-title" id="addNewscategoryModalLabel">Add New News Category</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -451,7 +490,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-warning">Save</button>
+                <button type="submit" class="btn btn-success">Save</button>
               </div>
           </form>
         </div>
@@ -466,73 +505,192 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
+            // Function to handle visibility of fields based on news type
+            function toggleNewsFields(modalContext, selectedType) {
+                const slugField = $(modalContext).find('.slug-field, .slug-field-edit');
+                const textField = $(modalContext).find('.text-field, .text-field-edit');
+                const newslinkField = $(modalContext).find('.newslink-field, .newslink-field-edit');
+                const newslinkInput = newslinkField.find('input[name="newslink"]');
+                const slugInput = slugField.find('input[name="slug"]');
+                const textSummernote = textField.find('.summernote-editor');
+
+                if (selectedType === 'External Links') {
+                    slugField.hide();
+                    textField.hide();
+                    newslinkField.show();
+
+                    newslinkInput.prop('required', true);
+                    slugInput.prop('required', false);
+                    textSummernote.prop('required', false);
+
+                    if (textSummernote.data('summernote')) {
+                        textSummernote.summernote('destroy');
+                    }
+                } else {
+                    slugField.show();
+                    textField.show();
+                    newslinkField.hide();
+
+                    newslinkInput.prop('required', false);
+                    slugInput.prop('required', true);
+                    textSummernote.prop('required', true);
+
+
+                    if (!textSummernote.data('summernote')) {
+                         textSummernote.summernote({
+                            toolbar: [
+                                ['style', ['style']],
+                                ['font', ['bold', 'italic', 'strikethrough', 'underline', 'clear']],
+                                ['fontname', ['fontname']],
+                                ['fontsize', ['fontsize']],
+                                ['color', ['color']],
+                                ['para', ['ul', 'ol', 'paragraph', 'blockquote']],
+                                ['insert', ['link', 'picture', 'table', 'hr']],
+                                ['history', ['undo', 'redo']],
+                                ['view', ['codeview']],
+                                ['misc', ['fullscreen']]
+                            ],
+                            styleTags: [
+                                'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote'
+                            ],
+                            fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande', 'Tahoma', 'Times New Roman', 'Verdana', 'Inter'],
+                            fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36'],
+                            height: 400,
+                            dialogsInBody: true
+                        });
+                    }
+                }
+            }
+
+            // Initialize Summernote for new/edit modals (initial load for non-external links)
             if ($.fn.summernote) {
-                $('.summernote-editor').summernote({
-                    toolbar: [
-                        ['style', ['style']],
-                        ['font', ['bold', 'italic', 'strikethrough', 'underline', 'clear']],
-                        ['fontname', ['fontname']],
-                        ['fontsize', ['fontsize']],
-                        ['color', ['color']],
-                        ['para', ['ul', 'ol', 'paragraph', 'blockquote']],
-                        ['insert', ['link', 'picture', 'table', 'hr']],
-                        ['history', ['undo', 'redo']],
-                        ['view', ['codeview']],
-                        ['misc', ['fullscreen']]
-                    ],
-                    styleTags: [
-                        'p',
-                        'h1',
-                        'h2',
-                        'h3',
-                        'h4',
-                        'h5',
-                        'h6',
-                        'blockquote'
-                    ],
-                    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande', 'Tahoma', 'Times New Roman', 'Verdana', 'Inter'],
-                    fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36'],
-                    height: 400,
-                    dialogsInBody: true
+                // Initialize Summernote on all applicable textareas initially
+                $('.summernote-editor').not('[data-initialized]').each(function() {
+                    $(this).summernote({
+                        toolbar: [
+                            ['style', ['style']],
+                            ['font', ['bold', 'italic', 'strikethrough', 'underline', 'clear']],
+                            ['fontname', ['fontname']],
+                            ['fontsize', ['fontsize']],
+                            ['color', ['color']],
+                            ['para', ['ul', 'ol', 'paragraph', 'blockquote']],
+                            ['insert', ['link', 'picture', 'table', 'hr']],
+                            ['history', ['undo', 'redo']],
+                            ['view', ['codeview']],
+                            ['misc', ['fullscreen']]
+                        ],
+                        styleTags: [
+                            'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote'
+                        ],
+                        fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande', 'Tahoma', 'Times New Roman', 'Verdana', 'Inter'],
+                        fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36'],
+                        height: 400,
+                        dialogsInBody: true
+                    }).attr('data-initialized', 'true');
                 });
             } else {
                 console.error("Summernote is not loaded. Ensure jQuery and Bootstrap 4 JS are loaded before Summernote JS.");
                 console.log("Ensure Bootstrap 4 JS is included in your layouts.app before Summernote JS.");
             }
 
+            // Handle custom file input label update
             $('.custom-file-input').on('change', function() {
                 let fileName = $(this).val().split('\\').pop();
                 $(this).next('.custom-file-label').addClass("selected").html(fileName);
             });
 
-            // Initialize Select2 for newscategory dropdowns
-            $('.select2bs4').select2({
+            // Initialize Select2 for newscategory dropdowns in Add modal
+            $('#newsCategoryAdd').select2({
                 theme: 'bootstrap4',
-                dropdownParent: $('#addNewsModal, #editNewsModal{{ $news->id ?? '' }}') // Ensure dropdown is visible within modal
+                dropdownParent: $('#addNewsModal')
+            });
+
+            // Handle News Type change for Add Modal
+            $('#newsTypeAdd').on('change', function() {
+                toggleNewsFields('#addNewsModal', $(this).val());
+            });
+
+            // Set initial state for Add News Modal on load
+            // This is crucial for when the page first loads and an old('type') value might exist
+            toggleNewsFields('#addNewsModal', $('#newsTypeAdd').val());
+
+
+            // For dynamic modals (Edit Modals)
+            $('div[id^="editNewsModal"]').on('shown.bs.modal', function() {
+                const modalContext = this; // 'this' refers to the modal DOM element
+                const newsTypeId = $(modalContext).find('.news-type-select');
+
+                // Initialize Select2 for the specific modal's category dropdown
+                $(modalContext).find('.select2bs4').select2({
+                    theme: 'bootstrap4',
+                    dropdownParent: $(modalContext)
+                });
+
+                // Set initial state for Edit News Modal when shown
+                toggleNewsFields(modalContext, newsTypeId.val());
+
+                // Handle News Type change for this specific Edit Modal
+                newsTypeId.off('change').on('change', function() {
+                    toggleNewsFields(modalContext, $(this).val());
+                });
+            });
+
+            // When an edit modal is hidden, ensure Summernote is re-initialized for it if it was destroyed
+            // This ensures Summernote functions correctly if the modal is reopened with a different type
+            $('div[id^="editNewsModal"]').on('hidden.bs.modal', function () {
+                const modalContext = this;
+                const textSummernote = $(modalContext).find('.summernote-editor');
+                const newsTypeSelect = $(modalContext).find('.news-type-select');
+
+                // Re-initialize Summernote if it's currently hidden and the type is not "External Links"
+                // Or if it was destroyed because the type *was* external links
+                if (!textSummernote.data('summernote') && newsTypeSelect.val() !== 'External Links') {
+                     textSummernote.summernote({
+                        toolbar: [
+                            ['style', ['style']],
+                            ['font', ['bold', 'italic', 'strikethrough', 'underline', 'clear']],
+                            ['fontname', ['fontname']],
+                            ['fontsize', ['fontsize']],
+                            ['color', ['color']],
+                            ['para', ['ul', 'ol', 'paragraph', 'blockquote']],
+                            ['insert', ['link', 'picture', 'table', 'hr']],
+                            ['history', ['undo', 'redo']],
+                            ['view', ['codeview']],
+                            ['misc', ['fullscreen']]
+                        ],
+                        styleTags: [
+                            'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote'
+                        ],
+                        fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande', 'Tahoma', 'Times New Roman', 'Verdana', 'Inter'],
+                        fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36'],
+                        height: 400,
+                        dialogsInBody: true
+                    }).attr('data-initialized', 'true');
+                }
+            });
+
+
+            $(document).on('click', '#search-button', function() {
+                if($('#search-param').val() != '') {
+                    $(this).closest('form').submit();
+                } else {
+                    $('#search-param').css({ "border": '#FF0000 2px solid'});
+                    if (typeof Toast !== 'undefined') {
+                        Toast.fire({
+                            icon: 'warning',
+                            title: 'Write something!'
+                        });
+                    } else {
+                        console.warn('Toast.fire function is not defined. Please include SweetAlert2.');
+                    }
+                }
+            });
+
+            $("#search-param").keyup(function(e) {
+                if(e.which == 13) {
+                    e.preventDefault();
+                    $('#search-button').click();
+                }
             });
         });
-
-        $(document).on('click', '#search-button', function() {
-            if($('#search-param').val() != '') {
-                $(this).closest('form').submit();
-            } else {
-                $('#search-param').css({ "border": '#FF0000 2px solid'});
-                if (typeof Toast !== 'undefined') {
-                    Toast.fire({
-                        icon: 'warning',
-                        title: 'Write something!'
-                    });
-                } else {
-                    console.warn('Toast.fire function is not defined. Please include SweetAlert2.');
-                }
-            }
-        });
-
-        $("#search-param").keyup(function(e) {
-            if(e.which == 13) {
-                e.preventDefault();
-                $('#search-button').click();
-            }
-        });
     </script>
-@endsection
