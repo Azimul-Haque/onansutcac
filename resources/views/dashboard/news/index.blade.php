@@ -55,7 +55,6 @@
                             <tbody>
                                 @forelse($allNews as $news)
                                     <tr>
-                                        <td>{{ $news->newscategory->name ?? 'N/A' }}</td>
                                         <td>
                                             {{ $news->title }}
                                             <br/>
