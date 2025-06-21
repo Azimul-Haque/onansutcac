@@ -594,7 +594,7 @@
               <article>
 
                 <div class="post-img">
-                  <a href="#!" target=""><img src="{{ asset('images/news/' . $news->image) }}" alt="" class="img-fluid"></a>
+                  <a href="@if($news->type == 3) $news->newslink @endif" target=""><img src="{{ asset('images/news/' . $news->image) }}" alt="" class="img-fluid"></a>
                 </div>
 
                 <p class="post-category">{{ $news->newscategory->name }}</p>
@@ -611,7 +611,7 @@
                     </p>
                   </div>
                 </div>
-                <a href="#!" class="newsroom-item-link" target="">Read more</a>
+                <a href="@if($news->type == 3) $news->newslink @endif" class="newsroom-item-link" target="">Read more</a>
 
               </article>
             </div>
