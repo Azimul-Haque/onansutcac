@@ -135,9 +135,7 @@
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="fas fa-newspaper"></span></div>
                                                             </div>
-                                                        </div>
-
-                                                        
+                                                        </div>                                                        
 
                                                         <div class="input-group mb-3">
                                                             <input type="text"
