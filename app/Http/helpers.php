@@ -136,7 +136,7 @@
         $text = "News Article";
       } elseif($type == 2) {
         $text = "Press Release";
-      } elseif($type == =3) {
+      } elseif($type == 3) {
         $text = "External Link";
       }
       return $text;
