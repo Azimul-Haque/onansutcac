@@ -77,8 +77,7 @@
                                             @endif
                                         </td>
                                         <td align="right">
-                                            <button type="button" class="btn btn-primary btn-sm editNewsModal
-editNewsModal" data-toggle="modal" data-target="#editNewsModal{{ $news->id }}">
+                                            <button type="button" class="btn btn-primary btn-sm editNewsModal" data-toggle="modal" data-target="#editNewsModal{{ $news->id }}">
                                                 <i class="fas fa-edit"></i> Edit
                                             </button>
                                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteNewsModal{{ $news->id }}">
