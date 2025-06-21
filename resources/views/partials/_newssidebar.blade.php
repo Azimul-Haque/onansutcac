@@ -30,7 +30,7 @@
 
     @foreach($recentnews as $news)
       <div class="post-item">
-        <img src="{{ asset('images/news' . $news->image) }}" alt="{{ $news->title }}" class="flex-shrink-0">
+        <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="flex-shrink-0">
         <div>
           <h4><a href="{{ route('index.single-news', 'slug') }}">{{ $news->title }}</a></h4>
           <time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news->created_at)) }}</time>
