@@ -571,7 +571,7 @@
                 $('.slug-group-' + newsId).hide();
                 $('.text-group-' + newsId).hide();
                 $('.newslink-group-' + newsId).show();
-                $('#newsSlug').prop('required', false);
+                $('#slugEdit' + newsId).prop('required', false);
                 $('#newsTextAdd').prop('required', false);
                 $('#newsLink').prop('required', true);
             } else {
