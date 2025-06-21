@@ -132,11 +132,11 @@
 
   function news_type($type) {
       $text = '';
-      if ($type == 'admin') {
-        $text = "এডমিন";
-      } elseif($type == 'editor') {
+      if ($type == 1) {
+        $text = "News Article";
+      } elseif($type == 2) {
         $text = "জেলা এডমিন";
-      } elseif($type == 'manager') {
+      } elseif($type == =3) {
         $text = "প্রতিষ্ঠান ম্যানেজার";
       }
       return $text;
