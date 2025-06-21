@@ -63,9 +63,9 @@
                                         <td>{{ news_type($news->type) }}</td>
                                         <td width="20%">
                                             @if($news->type == 3)
-                                                <small>{{ $news->newslink }}</small>
+                                                <small class="text-black-50">{{ $news->newslink }}</small>
                                             @else
-                                                <small>{{ $news->slug }}</small>
+                                                <small class="text-black-50">{{ $news->slug }}</small>
                                             @endif
                                             
                                         </td>
