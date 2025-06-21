@@ -586,33 +586,33 @@
         <div class="row gy-4">
 
           @foreach($newsforhomepage as $news)
+            <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
+              <article>
 
-          @endforeach
-          <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
-            <article>
-
-              <div class="post-img">
-                <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid"></a>
-              </div>
-
-              <p class="post-category">AI Photonics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <div class="post-meta">
-                  <p class="post-author">Phoenix Business Journal</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
+                <div class="post-img">
+                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid"></a>
                 </div>
-              </div>
-              <a href="#!" class="newsroom-item-link" target="">Read more</a>
 
-            </article>
-          </div>
+                <p class="post-category">AI Photonics</p>
+
+                <h2 class="title">
+                  <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                </h2>
+
+                <div class="d-flex align-items-center">
+                  <div class="post-meta">
+                    <p class="post-author">Phoenix Business Journal</p>
+                    <p class="post-date">
+                      <time datetime="2022-01-01">Jan 1, 2022</time>
+                    </p>
+                  </div>
+                </div>
+                <a href="#!" class="newsroom-item-link" target="">Read more</a>
+
+              </article>
+            </div>
+          @endforeach
+          
 
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="300">
             <article>
