@@ -597,7 +597,7 @@
                   <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid"></a>
                 </div>
 
-                <p class="post-category">AI Photonics</p>
+                <p class="post-category">{{ $news->newscategory }}</p>
 
                 <h2 class="title">
                   <a href="blog-details.html">{{ $news->title }}</a>
