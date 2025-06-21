@@ -147,7 +147,7 @@ class IndexController extends Controller
     public function getSingleNews($slug)
     {
         $news = News::where('slug', $slug)->first();
-        $recentnews = News::orderBy('id', 'desc')->take(5);
+        $recentnews = News::orderBy('id', 'desc')->get()->take(5);
         $newscategories = Newscategory::orderBy('name', 'asc')->get();
 
         return view('index.single-news')
