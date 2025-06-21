@@ -18,7 +18,7 @@ class CreateNewsTable extends Migration
             $table->integer('newscategory_id')->unsigned();             
             $table->string('title');             
             $table->string('type');             
-            $table->text('slug');            
+            $table->text('slug')->nullable();         
             $table->text('newslink')->nullable();                  
             $table->longText('text')->nullable();      
             $table->string('image')->nullable();           
