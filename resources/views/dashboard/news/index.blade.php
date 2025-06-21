@@ -402,6 +402,17 @@
                     @enderror
                 </div>
 
+                <div id="newsLinkWrapper" class="input-group mb-3" style="display: none;">
+                    <input type="url"
+                           name="newslink"
+                           class="form-control"
+                           value="{{ old('newslink') }}"
+                           placeholder="Paste the External News Link (e.g., https://example.com/article)">
+                    <div class="input-group-append">
+                        <div class="input-group-text"><span class="fas fa-external-link-alt"></span></div>
+                    </div>
+                </div>
+
                 <div class="form-group">
                     <label for="newsImageAdd">News Image: (16:9 should be ideal, max: 2MB)</label>
                     <div class="custom-file">
