@@ -138,7 +138,7 @@ class IndexController extends Controller
 
     public function getNews()
     {
-        $allNews = News::orderBy('id', 'desc')->paginate(3);
+        $allNews = News::orderBy('id', 'desc')->paginate(6);
 
         return view('index.news')->withAllNews($allNews);
     }
