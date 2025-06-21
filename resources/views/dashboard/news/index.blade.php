@@ -138,7 +138,8 @@
                                                             </div>
                                                         </div>                                                        
 
-                                                        <div class="input-group mb-3">
+                                                        <!-- News Slug -->
+                                                        <div class="input-group mb-3 slug-group slug-group-{{ $news->id }}">
                                                             <input type="text"
                                                                 name="slug"
                                                                 class="form-control"
@@ -150,12 +151,25 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="form-group">
+                                                        <!-- News Content -->
+                                                        <div class="form-group text-group text-group-{{ $news->id }}">
                                                             <label for="newsTextEdit{{ $news->id }}">News Content</label>
                                                             <textarea id="newsTextEdit{{ $news->id }}" name="text" class="form-control summernote-editor" required>{{ old('text', $news->text) }}</textarea>
                                                             @error('text')
                                                                 <span class="text-danger">{{ $message }}</span>
                                                             @enderror
+                                                        </div>
+
+                                                        <!-- News Link (only for external links) -->
+                                                        <div class="input-group mb-3 newslink-group newslink-group-{{ $news->id }}" style="display: none;">
+                                                            <input type="url"
+                                                                   name="newslink"
+                                                                   class="form-control"
+                                                                   value="{{ old('newslink', $news->newslink ?? '') }}"
+                                                                   placeholder="External News Link (e.g., https://example.com)">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text"><span class="fas fa-external-link-alt"></span></div>
+                                                            </div>
                                                         </div>
 
                                                         <div class="form-group">
