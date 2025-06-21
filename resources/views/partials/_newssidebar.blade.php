@@ -37,7 +37,6 @@
         </div>
       </div>
     @endforeach
-    <!-- End recent post item-->
 
     <div class="post-item">
       <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="flex-shrink-0">
