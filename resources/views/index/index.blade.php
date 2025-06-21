@@ -589,13 +589,8 @@
             @php
               $modulo_index = ($loop->iteration - 1) % 3;
               $delay = 200 + ($modulo_index * 100);
-              if($modulo_index == 0) {
-                $datadirection = 'fade-right';
-              } else {
-                $datadirection = 'fade-left';
-              }
             @endphp
-            <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="{{ $delay }}">
               <article>
 
                 <div class="post-img">
