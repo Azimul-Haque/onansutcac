@@ -584,6 +584,10 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
+
+          @foreach()
+
+          @endforeach
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <article>
 
