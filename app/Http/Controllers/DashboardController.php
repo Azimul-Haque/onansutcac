@@ -454,7 +454,7 @@ class DashboardController extends Controller
             'title'           => 'required|string|max:191',
             'type'            => 'nullable|string|max:191',
             'slug'            => 'required|string|max:300|unique:news,slug',
-            'newslink'        => 'sometimes|string',
+            'newslink'        => 'sometimes',
             'text'            => 'sometimes',
             'image'           => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
@@ -490,7 +490,7 @@ class DashboardController extends Controller
             'title'           => 'required|string|max:191',
             'type'            => 'nullable|string|max:191',
             'slug'            => 'required|string|max:300|unique:news,slug,' . $id,
-            'newslink'        => 'sometimes|string',
+            'newslink'        => 'sometimes',
             'text'            => 'sometimes',
             'image'           => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
