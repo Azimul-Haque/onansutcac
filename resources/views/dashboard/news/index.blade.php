@@ -17,8 +17,6 @@
       .newslink-field {
           display: none;
       }
-      /* Initially hide the newslink field, will be managed by JS for edit modals */
-      /* No need for newslink-field-edit-{{ $news->id }} specific style here as JS will handle per-modal */
     </style>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
