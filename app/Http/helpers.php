@@ -135,7 +135,7 @@
       if ($type == 1) {
         $text = "News Article";
       } elseif($type == 2) {
-        $text = "জেলা এডমিন";
+        $text = "Press Release";
       } elseif($type == =3) {
         $text = "প্রতিষ্ঠান ম্যানেজার";
       }
