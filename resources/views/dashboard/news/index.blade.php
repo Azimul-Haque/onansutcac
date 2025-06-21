@@ -143,7 +143,7 @@
                                                             <input type="text"
                                                                 name="slug"
                                                                 class="form-control"
-                                                                value="{{ 'slug', $news->slug }}"
+                                                                value="{{ $news->slug }}"
                                                                 autocomplete="off"
                                                                 placeholder="News Slug" required>
                                                             <div class="input-group-append">
@@ -154,7 +154,7 @@
                                                         <!-- News Content -->
                                                         <div class="form-group text-group text-group-{{ $news->id }}">
                                                             <label for="newsTextEdit{{ $news->id }}">News Content</label>
-                                                            <textarea id="newsTextEdit{{ $news->id }}" name="text" class="form-control summernote-editor" required>{{ 'text', $news->text }}</textarea>
+                                                            <textarea id="newsTextEdit{{ $news->id }}" name="text" class="form-control summernote-editor" required>{{ $news->text }}</textarea>
                                                         </div>
 
                                                         <!-- News Link (only for external links) -->
