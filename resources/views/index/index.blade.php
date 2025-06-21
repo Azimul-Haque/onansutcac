@@ -594,13 +594,13 @@
               <article>
 
                 <div class="post-img">
-                  <a href="@if($news->type == 3) {{ $news->newslink }} @endif" target=""><img src="{{ asset('images/news/' . $news->image) }}" alt="" class="img-fluid"></a>
+                  <a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" target=""><img src="{{ asset('images/news/' . $news->image) }}" alt="" class="img-fluid"></a>
                 </div>
 
                 <p class="post-category">{{ $news->newscategory->name }}</p>
 
                 <h2 class="title">
-                  <a href="@if($news->type == 3) {{ $news->newslink }} @endif">{{ $news->title }}</a>
+                  <a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif">{{ $news->title }}</a>
                 </h2>
 
                 <div class="d-flex align-items-center">
@@ -611,7 +611,7 @@
                     </p>
                   </div>
                 </div>
-                <a href="@if($news->type == 3) {{ $news->newslink }} @endif" class="newsroom-item-link" target="">Read more</a>
+                <a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" class="newsroom-item-link" target="">Read more</a>
 
               </article>
             </div>
