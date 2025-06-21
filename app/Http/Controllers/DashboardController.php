@@ -453,7 +453,7 @@ class DashboardController extends Controller
             'newscategory_id' => 'required|integer|exists:newscategories,id',
             'title'           => 'required|string|max:191',
             'type'            => 'nullable|string|max:191',
-            'slug'            => 'required|string|max:300|unique:news,slug',
+            'slug'            => 'sometimes|max:300|unique:news,slug',
             'newslink'        => 'sometimes',
             'text'            => 'sometimes',
             'image'           => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
