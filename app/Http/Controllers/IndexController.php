@@ -51,7 +51,8 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $newsforhomepage =  
+        $newsforhomepage = News::orderBy('id', 'desc')->get()->take(3);
+        
         return view('index.index');
     }
 
