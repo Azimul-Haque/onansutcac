@@ -405,7 +405,7 @@
                            name="newslink"
                            class="form-control"
                            value="{{ old('newslink') }}"
-                           placeholder="Paste the External News Link (e.g., https://example.com/article)">
+                           placeholder="Paste the External News Link (e.g., https://example.com/article)" required>
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-external-link-alt"></span></div>
                     </div>
