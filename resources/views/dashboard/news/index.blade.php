@@ -102,6 +102,19 @@
                                                         @method('POST')
 
                                                         <div class="form-group mb-3">
+                                                            <label for="">News Type</label>
+                                                            <select name="type" id="" class="form-control" required>
+                                                                <option selected disabled>Select News Type</option>
+                                                                <option value="News Article" {{ old('type', $news->type) == 1 ? 'selected' : '' }}>News Article</option>
+                                                                <option value="Press Release" {{ old('type', $news->type) == 2 ? 'selected' : '' }}>Press Release</option>
+                                                                <option value="External Links" {{ old('type', $news->type) == 3 ? 'selected' : '' }}>External Links</option>
+                                                            </select>
+                                                            @error('type')
+                                                                <span class="text-danger">{{ $message }}</span>
+                                                            @enderror
+                                                        </div>
+
+                                                        <div class="form-group mb-3">
                                                             <label for="newsCategoryEdit{{ $news->id }}">News Category</label>
                                                             <select class="form-control select2bs4" style="width: 100%;" id="newsCategoryEdit{{ $news->id }}" name="newscategory_id" required>
                                                                 @foreach($newscategories as $category)
@@ -124,18 +137,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="form-group mb-3">
-                                                            <label for="">News Type</label>
-                                                            <select name="type" id="" class="form-control" required>
-                                                                <option selected disabled>Select News Type</option>
-                                                                <option value="News Article" {{ old('type', $news->type) == 1 ? 'selected' : '' }}>News Article</option>
-                                                                <option value="Press Release" {{ old('type', $news->type) == 2 ? 'selected' : '' }}>Press Release</option>
-                                                                <option value="External Links" {{ old('type', $news->type) == 3 ? 'selected' : '' }}>External Links</option>
-                                                            </select>
-                                                            @error('type')
-                                                                <span class="text-danger">{{ $message }}</span>
-                                                            @enderror
-                                                        </div>
+                                                        
 
                                                         <div class="input-group mb-3">
                                                             <input type="text"
