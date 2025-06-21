@@ -148,7 +148,9 @@ class IndexController extends Controller
         $news = News::where('slug', $slug)->first();
         $newscategories = Newscategory::orderBy('name', 'asc')->get();
 
-        return view('index.single-news')->withNews($news);
+        return view('index.single-news')
+                    ->withNews($news)
+                    ->withNewscategories($newscategories);
     }
 
     public function getEvents()
