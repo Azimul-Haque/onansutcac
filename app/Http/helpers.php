@@ -130,6 +130,18 @@
       return $text;
   }
 
+  function news_type($type) {
+      $text = '';
+      if ($type == 'admin') {
+        $text = "এডমিন";
+      } elseif($type == 'editor') {
+        $text = "জেলা এডমিন";
+      } elseif($type == 'manager') {
+        $text = "প্রতিষ্ঠান ম্যানেজার";
+      }
+      return $text;
+  }
+
   function local_currency($num) {
     $explrestunits = "" ;
     if(strlen($num)>3) {
