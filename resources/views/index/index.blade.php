@@ -608,7 +608,7 @@
               <a href="#!" class="newsroom-item-link" target="">Read more</a>
 
             </article>
-          </div><!-- End post list item -->
+          </div>
 
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="300">
             <article>
