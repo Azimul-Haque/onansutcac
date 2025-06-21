@@ -535,7 +535,9 @@
                 $('#slugFieldWrapper').show();
                 $('#textFieldWrapper').show();
                 $('#newsLinkWrapper').hide();
+                $('#newsSlug').prop('required', true);
                 $('#newsTextAdd').prop('required', true);
+                $('#newsLink').prop('required', false);
             }
         });
 
