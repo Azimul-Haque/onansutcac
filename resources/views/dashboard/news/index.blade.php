@@ -383,6 +383,7 @@
                 <div id="slugFieldWrapper" class="input-group mb-3">
                     <input type="text"
                            name="slug"
+                           id="newsSlug"
                            class="form-control"
                            value="{{ old('slug') }}"
                            autocomplete="off"
@@ -525,6 +526,7 @@
                 $('#slugFieldWrapper').hide();
                 $('#textFieldWrapper').hide();
                 $('#newsLinkWrapper').show();
+                $('#newsTextAdd').prop('required', false);
                 $('#newsTextAdd').prop('required', false);
             } else {
                 // Normal news types
