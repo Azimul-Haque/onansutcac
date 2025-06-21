@@ -60,7 +60,7 @@
                                             <br/>
                                             <small class="text-black-50">{{ $news->newscategory->name ?? 'N/A' }}</small>
                                         </td>
-                                        <td>{{ $news->type }}</td>
+                                        <td>{{ news_type($news->type) }}</td>
                                         <td><small>{{ $news->slug }}</small></td>
                                         <td>
                                             @if($news->image)
