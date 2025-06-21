@@ -532,10 +532,10 @@
             });
 
             // Initialize Select2 for newscategory dropdowns
-            $('.select2bs4...').select2({
+            {{-- $('.select2bs4').select2({
                 theme: 'bootstrap4',
                 dropdownParent: $('#addNewsModal, .editNewsModal') // Ensure dropdown is visible within modal
-            });
+            }); --}}
         });
 
          $('#newsType').on('change', function () {
