@@ -145,7 +145,7 @@ class IndexController extends Controller
 
     public function getSingleNews($slug)
     {
-        $news = News::orderBy('id', 'desc')->paginate(6);
+        $news = News::orderBy('slug', $slug)->first();
 
         return view('index.single-news');
     }
