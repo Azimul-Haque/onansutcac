@@ -523,6 +523,24 @@
             });
         });
 
+         $('#newsType').on('change', function () {
+            var selectedType = $(this).val();
+
+            if (selectedType == '3') {
+                // External link selected
+                $('#slugFieldWrapper').hide();
+                $('#textFieldWrapper').hide();
+                $('#newsLinkWrapper').show();
+                $('#newsTextAdd').prop('required', false);
+            } else {
+                // Normal news types
+                $('#slugFieldWrapper').show();
+                $('#textFieldWrapper').show();
+                $('#newsLinkWrapper').hide();
+                $('#newsTextAdd').prop('required', true);
+            }
+        });
+
         $(document).on('click', '#search-button', function() {
             if($('#search-param').val() != '') {
                 $(this).closest('form').submit();
