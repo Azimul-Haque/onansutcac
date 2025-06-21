@@ -162,7 +162,7 @@
                                                             <input type="url"
                                                                    name="newslink"
                                                                    class="form-control"
-                                                                   value="{{ 'newslink', $news->newslink ?? '' }}"
+                                                                   value="{{ $news->newslink ?? '' }}"
                                                                    placeholder="External News Link (e.g., https://example.com)">
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="fas fa-external-link-alt"></span></div>
