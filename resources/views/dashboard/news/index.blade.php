@@ -346,9 +346,6 @@
                         </table>
                     </div>
                 </div>
-                @if(isset($newscategories) && method_exists($newscategories, 'links'))
-                    {{ $newscategories->links() }}
-                @endif
             </div>
         </div>
     </div>
