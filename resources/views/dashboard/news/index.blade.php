@@ -155,9 +155,6 @@
                                                         <div class="form-group text-group text-group-{{ $news->id }}">
                                                             <label for="newsTextEdit{{ $news->id }}">News Content</label>
                                                             <textarea id="newsTextEdit{{ $news->id }}" name="text" class="form-control summernote-editor" required>{{ old('text', $news->text) }}</textarea>
-                                                            @error('text')
-                                                                <span class="text-danger">{{ $message }}</span>
-                                                            @enderror
                                                         </div>
 
                                                         <!-- News Link (only for external links) -->
