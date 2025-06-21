@@ -37,7 +37,7 @@
                   <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid">
                 </div>
 
-                <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
+                <h2 class="title">{{ $news->title }}</h2>
 
                 <div class="meta-top">
                   <ul>
