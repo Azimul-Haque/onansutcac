@@ -162,6 +162,7 @@
                                                         <div class="input-group mb-3 newslink-group newslink-group-{{ $news->id }}" style="display: none;">
                                                             <input type="url"
                                                                    name="newslink"
+                                                                   id="newsLinkEdit{{ $news->id }}" 
                                                                    class="form-control"
                                                                    value="{{ $news->newslink ?? '' }}"
                                                                    placeholder="External News Link (e.g., https://example.com)">
