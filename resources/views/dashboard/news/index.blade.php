@@ -63,7 +63,7 @@
                                         <td>{{ news_type($news->type) }}</td>
                                         <td>
                                             @if($news->type == 3)
-                                                <small>{{ $news->slug }}</small>
+                                                <small>{{ $news->newslink }}</small>
                                             @else
                                                 <small>{{ $news->slug }}</small>
                                             @endif
