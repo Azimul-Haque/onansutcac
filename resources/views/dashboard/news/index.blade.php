@@ -58,7 +58,7 @@
                                         <td>
                                             {{ $news->title }}
                                             <br/>
-                                            <small class="text-black-50">{{ Str::limit(strip_tags($news->text), 50) }}</small>
+                                            <small class="text-black-50">{{ $news->newscategory->name ?? 'N/A' }}</small>
                                         </td>
                                         <td>{{ $news->type }}</td>
                                         <td><small>{{ $news->slug }}</small></td>
