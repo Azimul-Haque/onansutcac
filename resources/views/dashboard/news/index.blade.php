@@ -60,10 +60,10 @@
                                             <br/>
                                             <small class="text-black-50">{{ $news->newscategory->name ?? 'N/A' }}</small>
                                         </td>
-                                        <td>{{ news_type($news->type) }}</td>
+                                        <td></td>
                                         <td>
-                                            @if($news->image)
-                                                <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                                            @if($news->type == 3)
+                                                {{ news_type($news->type) }}
                                             @else
                                                 <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                                             @endif
