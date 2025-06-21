@@ -600,7 +600,7 @@
                 <p class="post-category">AI Photonics</p>
 
                 <h2 class="title">
-                  <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                  <a href="blog-details.html">{{ $news->title }}</a>
                 </h2>
 
                 <div class="d-flex align-items-center">
