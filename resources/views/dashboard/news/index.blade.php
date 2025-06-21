@@ -124,8 +124,8 @@
                                                             <select name="type" id="" class="form-control" required>
                                                                 <option selected disabled>Select News Type</option>
                                                                 <option value="News Article" {{ old('type', $news->type) == 'News Article' ? 'selected' : '' }}>News Article</option>
-                                                                <option value="External Links" {{ old('type', $news->type) == 'External Links' ? 'selected' : '' }}>External Links</option>
                                                                 <option value="Press Release" {{ old('type', $news->type) == 'Press Release' ? 'selected' : '' }}>Press Release</option>
+                                                                <option value="External Links" {{ old('type', $news->type) == 'External Links' ? 'selected' : '' }}>External Links</option>
                                                             </select>
                                                             @error('type')
                                                                 <span class="text-danger">{{ $message }}</span>
