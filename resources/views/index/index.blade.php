@@ -587,7 +587,7 @@
 
           @foreach($newsforhomepage as $news)
             @php
-              $modulo_index = ($loop->iteration - 1) % 2;
+              $modulo_index = ($loop->iteration - 1) % 3;
               $delay = 200 + ($modulo_index * 100);
               if($modulo_index == 0) {
                 $datadirection = 'fade-right';
