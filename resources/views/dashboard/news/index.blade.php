@@ -45,7 +45,6 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Category</th>
                                     <th>Title</th>
                                     <th>Type</th>
                                     <th>Slug</th>
