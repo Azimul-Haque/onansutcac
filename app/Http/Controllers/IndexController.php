@@ -152,6 +152,7 @@ class IndexController extends Controller
 
         return view('index.single-news')
                     ->withNews($news)
+                    ->withRecentnews($recentnews)
                     ->withNewscategories($newscategories);
     }
 
