@@ -65,7 +65,7 @@
                                             @if($news->type == 3)
                                                 {{ news_type($news->type) }}
                                             @else
-                                                <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                                                {{ news_type($news->type) }}
                                             @endif
                                             <small>{{ $news->slug }}</small>
                                         </td>
