@@ -594,7 +594,7 @@
               <article>
 
                 <div class="post-img">
-                  <a href="#!" target=""><img src="" alt="" class="img-fluid"></a>
+                  <a href="#!" target=""><img src="{{ asset('images/news/' . $news->image) }}" alt="" class="img-fluid"></a>
                 </div>
 
                 <p class="post-category">{{ $news->newscategory->name }}</p>
