@@ -149,7 +149,8 @@ class IndexController extends Controller
         $newscategory = Newscategory::where('name', $name)->firstOrFail();
 
         $allNews = News::where('newscategory_id', $newscategory->id)
-                       ->orderBy('id', 'desc')->paginate(6);
+                       ->orderBy('id', 'desc')
+                       ->paginate(6);
 
         return view('index.news')->withAllNews($allNews);
     }
