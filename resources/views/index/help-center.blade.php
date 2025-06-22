@@ -99,7 +99,7 @@
                       @if($faq->type == 2)
                         <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="{{ $delay }}">
                             <h3>
-                                <span class="num">{{ $faq->id }}</span>
+                                <span class="num">➤</span>
                                 <span class="question">{{ $faq->question }}</span>
                                 <i class="bi bi-plus-lg faq-toggle"></i>
                             </h3>
@@ -123,7 +123,7 @@
                       @if($faq->type == 3)
                         <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="{{ $delay }}">
                             <h3>
-                                <span class="num">{{ $faq->id }}</span>
+                                <span class="num">➤</span>
                                 <span class="question">{{ $faq->question }}</span>
                                 <i class="bi bi-plus-lg faq-toggle"></i>
                             </h3>
