@@ -158,6 +158,22 @@
       return $text;
   }
 
+  function faq_type($type) {
+      $text = '';
+      $pill_type = '';
+      if ($type == 1) {
+        $text = "General";
+        $pill_type = "primary";
+      } elseif($type == 2) {
+        $text = "Technical";
+        $pill_type = "success";
+      } elseif($type == 3) {
+        $text = "Support";
+        $pill_type = "warning";
+      }
+      return $text;
+  }
+
   function unslug($slug)
   {
       $text = str_replace(['-', '_'], ' ', $slug);
