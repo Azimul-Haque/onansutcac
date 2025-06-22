@@ -147,9 +147,9 @@
       if ($type == 1) {
         $text = "General";
       } elseif($type == 2) {
-        $text = "Press Release";
+        $text = "Technical";
       } elseif($type == 3) {
-        $text = "External Link";
+        $text = "Support";
       }
       return $text;
   }
