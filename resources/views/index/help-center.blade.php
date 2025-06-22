@@ -86,32 +86,6 @@
                         </div>
                       @endif
                     @endforeach
-                    
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
-                      <h3>
-                        <span class="num">2</span>
-                        <span class="question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.</p>
-                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
-                      <h3>
-                        <span class="num">3</span>
-                        <span class="question">Dolor sit amet consectetur adipiscing elit pellentesque?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.</p>
-                        <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
                   </div>
                 </div>
 
