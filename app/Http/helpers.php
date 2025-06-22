@@ -144,10 +144,8 @@
 
   function unslug($slug)
   {
-      // Reponit hyphenes cum spatiīs
       $text = str_replace(['-', '_'], ' ', $slug);
 
-      // Optionālis: Capitulat primam litteram cuiusque verbī
       $text = ucwords($text);
 
       return $text;
