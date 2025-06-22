@@ -144,12 +144,16 @@
 
   function faq_type($type) {
       $text = '';
+      $pill_type = '';
       if ($type == 1) {
         $text = "General";
+        $pill_type = "primary";
       } elseif($type == 2) {
         $text = "Technical";
+        $pill_type = "primary";
       } elseif($type == 3) {
         $text = "Support";
+        $pill_type = "primary";
       }
       return $text;
   }
