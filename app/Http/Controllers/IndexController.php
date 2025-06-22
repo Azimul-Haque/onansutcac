@@ -144,6 +144,13 @@ class IndexController extends Controller
         return view('index.news')->withAllNews($allNews);
     }
 
+    public function getCategoryWiseNews()
+    {
+        $allNews = News::orderBy('id', 'desc')->paginate(6);
+
+        return view('index.news')->withAllNews($allNews);
+    }
+
     public function getSingleNews($slug)
     {
         $news = News::where('slug', $slug)->first();
