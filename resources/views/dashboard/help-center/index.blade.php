@@ -181,6 +181,7 @@
                 </div>
 
                 <div class="input-group mb-3">
+                    <label for="faqQstnEdit{{ $faq->id }}">Answer</label>
                     <input type="text"
                            name="question"
                            class="form-control"
