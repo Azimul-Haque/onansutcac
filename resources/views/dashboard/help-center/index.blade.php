@@ -212,6 +212,7 @@
 @section('third_party_scripts')
 
     <script type="text/javascript">
+
         $(document).on('click', '#search-button', function() {
             if($('#search-param').val() != '') {
                 $(this).closest('form').submit();
