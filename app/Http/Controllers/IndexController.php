@@ -198,7 +198,8 @@ class IndexController extends Controller
     public function getHelpCenter()
     {
         $faqs = Faq::orderBy('id', 'desc')->get();
-        return view('index.help-center');
+        
+        return view('index.help-center')->withFaqs($faqs);
     }
 
     // clear configs, routes and serve
