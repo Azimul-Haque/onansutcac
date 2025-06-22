@@ -210,51 +210,8 @@
 @endsection
 
 @section('third_party_scripts')
-    <script src="{{ asset('js/select2.full.min.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            if ($.fn.summernote) {
-                $('.summernote-editor').summernote({
-                    toolbar: [
-                        ['style', ['style']],
-                        ['font', ['bold', 'italic', 'strikethrough', 'underline', 'clear']],
-                        ['fontname', ['fontname']],
-                        ['fontsize', ['fontsize']],
-                        ['color', ['color']],
-                        ['para', ['ul', 'ol', 'paragraph', 'blockquote']],
-                        ['insert', ['link', 'picture', 'table', 'hr']],
-                        ['history', ['undo', 'redo']],
-                        ['view', ['codeview']],
-                        ['misc', ['fullscreen']]
-                    ],
-                    styleTags: [
-                        'p',
-                        'h1',
-                        'h2',
-                        'h3',
-                        'h4',
-                        'h5',
-                        'h6',
-                        'blockquote'
-                    ],
-                    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande', 'Tahoma', 'Times New Roman', 'Verdana', 'Inter'],
-                    fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '24', '36'],
-                    height: 300,
-                    dialogsInBody: true
-                });
-            } else {
-                console.error("Summernote is not loaded. Ensure jQuery and Bootstrap 4 JS are loaded before Summernote JS.");
-                console.log("Ensure Bootstrap 4 JS is included in your layouts.app before Summernote JS.");
-            }
-
-            $('.custom-file-input').on('change', function() {
-                let fileName = $(this).val().split('\\').pop();
-                $(this).next('.custom-file-label').addClass("selected").html(fileName);
-            });
-        });
-
         $(document).on('click', '#search-button', function() {
             if($('#search-param').val() != '') {
                 $(this).closest('form').submit();
