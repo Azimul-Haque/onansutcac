@@ -68,6 +68,9 @@
                 <div class="tab-pane fade active show" id="faq-general" role="tabpanel" aria-labelledby="general-tab">
                   <div class="faq-list">
 
+                    @foreach($faqs as $faq)
+
+                    @endforeach
                     <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
                       <h3>
                         <span class="num">1</span>
