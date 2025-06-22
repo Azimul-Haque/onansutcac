@@ -144,7 +144,7 @@ class IndexController extends Controller
         return view('index.news')->withAllNews($allNews);
     }
 
-    public function getCategoryWiseNews()
+    public function getCategoryWiseNews($name)
     {
         $allNews = News::orderBy('id', 'desc')->paginate(6);
 
