@@ -72,7 +72,7 @@
                       @if($faq->type == '1')
                         <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
                             <h3>
-                                <span class="num">{{ $faq->id }}</span> {{-- Potes uti FAQ ID pro numero, vel simpliciter ponere 1 --}}
+                                <span class="num">{{ $faq->id }}</span>
                                 <span class="question">{{ $faq->question }}</span>
                                 <i class="bi bi-plus-lg faq-toggle"></i>
                             </h3>
