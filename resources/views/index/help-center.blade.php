@@ -67,7 +67,6 @@
                 <!-- General FAQs -->
                 <div class="tab-pane fade active show" id="faq-general" role="tabpanel" aria-labelledby="general-tab">
                   <div class="faq-list">
-
                     @foreach($faqs as $faq)
                       @php
                         $modulo_index = ($loop->iteration - 1) % 3;
