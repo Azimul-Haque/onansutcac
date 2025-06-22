@@ -11,6 +11,7 @@ use App\Market;
 use App\Team;
 use App\News;
 use App\Newscategory;
+use App\Faq;
 
 use Carbon\Carbon;
 use DB;
@@ -196,6 +197,7 @@ class IndexController extends Controller
 
     public function getHelpCenter()
     {
+        $faqs = Faq::get();
         return view('index.help-center');
     }
 
