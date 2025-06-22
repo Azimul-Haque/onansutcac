@@ -26,6 +26,7 @@ Route::get('/regional-offices', 'IndexController@getRegionalOffices')->name('ind
 Route::get('/regional-offices/{id}', 'IndexController@getRegionalOffice')->name('index.single-regional-office');
 Route::get('/news', 'IndexController@getNews')->name('index.news');
 Route::get('/news/{slug}', 'IndexController@getSingleNews')->name('index.single-news');
+Route::get('/news/category/{name}', 'IndexController@getSingleNews')->name('index.single-news');
 Route::get('/help-center', 'IndexController@getHelpCenter')->name('index.help-center');
 Route::get('/sitemap', 'IndexController@getSitemap')->name('index.sitemap');
 
