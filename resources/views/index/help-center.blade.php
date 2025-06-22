@@ -69,6 +69,7 @@
                   <div class="faq-list">
 
                     @foreach($faqs as $faq)
+                      
                       @if($faq->type == '1')
                         <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
                             <h3>
