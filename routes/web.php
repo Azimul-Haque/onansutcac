@@ -120,59 +120,58 @@ Route::post('/dashboard/news/category/{id}/update', 'DashboardController@updateN
 Route::get('/dashboard/news/category/{id}/delete', 'DashboardController@deleteNewsCategory')->name('dashboard.newscategories.delete');
 
 // --- Events Routes ---
-Route::get('/dashboard/events', [DashboardController::class, 'getEvents'])->name('dashboard.events');
-Route::post('/dashboard/events/store', [DashboardController::class, 'storeEvent'])->name('dashboard.events.store');
-Route::post('/dashboard/events/{id}/update', [DashboardController::class, 'updateEvent'])->name('dashboard.events.update');
-Route::get('/dashboard/events/{id}/delete', [DashboardController::class, 'deleteEvent'])->name('dashboard.events.delete');
+Route::get('/dashboard/events', 'DashboardController@getEvents')->name('dashboard.events');
+Route::post('/dashboard/events/store', 'DashboardController@storeEvent')->name('dashboard.events.store');
+Route::post('/dashboard/events/{id}/update', 'DashboardController@updateEvent')->name('dashboard.events.update');
+Route::get('/dashboard/events/{id}/delete', 'DashboardController@deleteEvent')->name('dashboard.events.delete');
 
 // --- Success Stories Routes ---
-Route::get('/dashboard/success-stories', [DashboardController::class, 'getSuccessStories'])->name('dashboard.success-stories');
-Route::post('/dashboard/success-stories/store', [DashboardController::class, 'storeSuccessStory'])->name('dashboard.success-stories.store');
-Route::post('/dashboard/success-stories/{id}/update', [DashboardController::class, 'updateSuccessStory'])->name('dashboard.success-stories.update');
-Route::get('/dashboard/success-stories/{id}/delete', [DashboardController::class, 'deleteSuccessStory'])->name('dashboard.success-stories.delete');
+Route::get('/dashboard/success-stories', 'DashboardController@getSuccessStories')->name('dashboard.success-stories');
+Route::post('/dashboard/success-stories/store', 'DashboardController@storeSuccessStory')->name('dashboard.success-stories.store');
+Route::post('/dashboard/success-stories/{id}/update', 'DashboardController@updateSuccessStory')->name('dashboard.success-stories.update');
+Route::get('/dashboard/success-stories/{id}/delete', 'DashboardController@deleteSuccessStory')->name('dashboard.success-stories.delete');
 
 // --- Clients Routes ---
-Route::get('/dashboard/clients', [DashboardController::class, 'getClients'])->name('dashboard.clients');
-Route::post('/dashboard/clients/store', [DashboardController::class, 'storeClient'])->name('dashboard.clients.store');
-Route::post('/dashboard/clients/{id}/update', [DashboardController::class, 'updateClient'])->name('dashboard.clients.update');
-Route::get('/dashboard/clients/{id}/delete', [DashboardController::class, 'deleteClient'])->name('dashboard.clients.delete');
+Route::get('/dashboard/clients', 'DashboardController@getClients')->name('dashboard.clients');
+Route::post('/dashboard/clients/store', 'DashboardController@storeClient')->name('dashboard.clients.store');
+Route::post('/dashboard/clients/{id}/update', 'DashboardController@updateClient')->name('dashboard.clients.update');
+Route::get('/dashboard/clients/{id}/delete', 'DashboardController@deleteClient')->name('dashboard.clients.delete');
 
 // --- Testimonials Routes ---
-Route::get('/dashboard/testimonials', [DashboardController::class, 'getTestimonials'])->name('dashboard.testimonials');
-Route::post('/dashboard/testimonials/store', [DashboardController::class, 'storeTestimonial'])->name('dashboard.testimonials.store');
-Route::post('/dashboard/testimonials/{id}/update', [DashboardController::class, 'updateTestimonial'])->name('dashboard.testimonials.update');
-Route::get('/dashboard/testimonials/{id}/delete', [DashboardController::class, 'deleteTestimonial'])->name('dashboard.testimonials.delete');
+Route::get('/dashboard/testimonials', 'DashboardController@getTestimonials')->name('dashboard.testimonials');
+Route::post('/dashboard/testimonials/store', 'DashboardController@storeTestimonial')->name('dashboard.testimonials.store');
+Route::post('/dashboard/testimonials/{id}/update', 'DashboardController@updateTestimonial')->name('dashboard.testimonials.update');
+Route::get('/dashboard/testimonials/{id}/delete', 'DashboardController@deleteTestimonial')->name('dashboard.testimonials.delete');
 
 // --- Information Center Routes ---
-Route::get('/dashboard/information-center', [DashboardController::class, 'getInformationCenter'])->name('dashboard.information-center');
-Route::post('/dashboard/information-center/store', [DashboardController::class, 'storeInformationCenter'])->name('dashboard.information-center.store');
-Route::post('/dashboard/information-center/{id}/update', [DashboardController::class, 'updateInformationCenter'])->name('dashboard.information-center.update');
-Route::get('/dashboard/information-center/{id}/delete', [DashboardController::class, 'deleteInformationCenter'])->name('dashboard.information-center.delete');
+Route::get('/dashboard/information-center', 'DashboardController@getInformationCenter')->name('dashboard.information-center');
+Route::post('/dashboard/information-center/store', 'DashboardController@storeInformationCenter')->name('dashboard.information-center.store');
+Route::post('/dashboard/information-center/{id}/update', 'DashboardController@updateInformationCenter')->name('dashboard.information-center.update');
+Route::get('/dashboard/information-center/{id}/delete', 'DashboardController@deleteInformationCenter')->name('dashboard.information-center.delete');
 
 // --- Help Center Routes ---
-Route::get('/dashboard/help-center', [DashboardController::class, 'getHelpCenter'])->name('dashboard.help-center');
-Route::post('/dashboard/help-center/store', [DashboardController::class, 'storeHelpCenter'])->name('dashboard.help-center.store');
-Route::post('/dashboard/help-center/{id}/update', [DashboardController::class, 'updateHelpCenter'])->name('dashboard.help-center.update');
-Route::get('/dashboard/help-center/{id}/delete', [DashboardController::class, 'deleteHelpCenter'])->name('dashboard.help-center.delete');
+Route::get('/dashboard/help-center', 'DashboardController@getHelpCenter')->name('dashboard.help-center');
+Route::post('/dashboard/help-center/store', 'DashboardController@storeHelpCenter')->name('dashboard.help-center.store');
+Route::post('/dashboard/help-center/{id}/update', 'DashboardController@updateHelpCenter')->name('dashboard.help-center.update');
+Route::get('/dashboard/help-center/{id}/delete', 'DashboardController@deleteHelpCenter')->name('dashboard.help-center.delete');
 
 // --- Statistics Routes ---
-Route::get('/dashboard/statistics', [DashboardController::class, 'getStatistics'])->name('dashboard.statistics');
-Route::post('/dashboard/statistics/store', [DashboardController::class, 'storeStatistic'])->name('dashboard.statistics.store');
-Route::post('/dashboard/statistics/{id}/update', [DashboardController::class, 'updateStatistic'])->name('dashboard.statistics.update');
-Route::get('/dashboard/statistics/{id}/delete', [DashboardController::class, 'deleteStatistic'])->name('dashboard.statistics.delete');
+Route::get('/dashboard/statistics', 'DashboardController@getStatistics')->name('dashboard.statistics');
+Route::post('/dashboard/statistics/store', 'DashboardController@storeStatistic')->name('dashboard.statistics.store');
+Route::post('/dashboard/statistics/{id}/update', 'DashboardController@updateStatistic')->name('dashboard.statistics.update');
+Route::get('/dashboard/statistics/{id}/delete', 'DashboardController@deleteStatistic')->name('dashboard.statistics.delete');
 
 // --- Meta Data Routes ---
-Route::get('/dashboard/meta-data', [DashboardController::class, 'getMetaData'])->name('dashboard.meta-data');
-Route::post('/dashboard/meta-data/store', [DashboardController::class, 'storeMetaData'])->name('dashboard.meta-data.store');
-Route::post('/dashboard/meta-data/{id}/update', [DashboardController::class, 'updateMetaData'])->name('dashboard.meta-data.update');
-Route::get('/dashboard/meta-data/{id}/delete', [DashboardController::class, 'deleteMetaData'])->name('dashboard.meta-data.delete');
+Route::get('/dashboard/meta-data', 'DashboardController@getMetaData')->name('dashboard.meta-data');
+Route::post('/dashboard/meta-data/store', 'DashboardController@storeMetaData')->name('dashboard.meta-data.store');
+Route::post('/dashboard/meta-data/{id}/update', 'DashboardController@updateMetaData')->name('dashboard.meta-data.update');
+Route::get('/dashboard/meta-data/{id}/delete', 'DashboardController@deleteMetaData')->name('dashboard.meta-data.delete');
 
 // --- About Data Routes ---
-Route::get('/dashboard/about-data', [DashboardController::class, 'getAboutData'])->name('dashboard.about-data');
-Route::post('/dashboard/about-data/store', [DashboardController::class, 'storeAboutData'])->name('dashboard.about-data.store');
-Route::post('/dashboard/about-data/{id}/update', [DashboardController::class, 'updateAboutData'])->name('dashboard.about-data.update');
-Route::get('/dashboard/about-data/{id}/delete', [DashboardController::class, 'deleteAboutData'])->name('dashboard.about-data.delete');
-
+Route::get('/dashboard/about-data', 'DashboardController@getAboutData')->name('dashboard.about-data');
+Route::post('/dashboard/about-data/store', 'DashboardController@storeAboutData')->name('dashboard.about-data.store');
+Route::post('/dashboard/about-data/{id}/update', 'DashboardController@updateAboutData')->name('dashboard.about-data.update');
+Route::get('/dashboard/about-data/{id}/delete', 'DashboardController@deleteAboutData')->name('dashboard.about-data.delete');
 
 
 
