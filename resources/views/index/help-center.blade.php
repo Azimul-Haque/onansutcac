@@ -69,7 +69,10 @@
                   <div class="faq-list">
 
                     @foreach($faqs as $faq)
-                      
+                      @php
+                        $modulo_index = ($loop->iteration - 1) % 3;
+                        $delay = 200 + ($modulo_index * 100);
+                      @endphp
                       @if($faq->type == '1')
                         <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
                             <h3>
