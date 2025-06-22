@@ -184,7 +184,6 @@
                         <option value="">Select Type</option>
                         <option value="General">General</option>
                         <option value="Technical">Technical</option>
-                        <option value="Billing">Billing</option>
                         <option value="Support">Support</option>
                     </select>
                     @error('type')
