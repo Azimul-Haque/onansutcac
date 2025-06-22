@@ -89,7 +89,6 @@
                                             <select name="type" id="faqTypeEdit{{ $faq->id }}" class="form-control" required>
                                                 <option value="General" {{ old('type', $faq->type) == 'General' ? 'selected' : '' }}>General</option>
                                                 <option value="Technical" {{ old('type', $faq->type) == 'Technical' ? 'selected' : '' }}>Technical</option>
-                                                <option value="Billing" {{ old('type', $faq->type) == 'Billing' ? 'selected' : '' }}>Billing</option>
                                                 <option value="Support" {{ old('type', $faq->type) == 'Support' ? 'selected' : '' }}>Support</option>
                                             </select>
                                             @error('type')
