@@ -17,7 +17,7 @@
     <h3 class="widget-title">Categories</h3>
     <ul class="mt-3">
       @foreach($newscategories as $newscategory)
-        <li><a href="{{ route('index.categories.news', $newscategory->name) }}">{{ $newscategory->name }} <span>({{ $newscategory->news->count() }})</span></a></li>
+        <li><a href="{{ route('index.categories.news', Str::slug($newscategory->name)) }}">{{ $newscategory->name }} <span>({{ $newscategory->news->count() }})</span></a></li>
       @endforeach
     </ul>
 
