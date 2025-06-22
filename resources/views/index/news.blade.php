@@ -28,7 +28,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>@empty($newscategory) News & Updates @else {{ $newscategory->name }} @endif</h2>
+        <h2>{{ $newscategory->name }}</h2>
         <p>The Latest from CactusNano<br></p>
       </div><!-- End Section Title -->
 
