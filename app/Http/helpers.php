@@ -142,6 +142,18 @@
       return $text;
   }
 
+  function faq_type($type) {
+      $text = '';
+      if ($type == 1) {
+        $text = "News Article";
+      } elseif($type == 2) {
+        $text = "Press Release";
+      } elseif($type == 3) {
+        $text = "External Link";
+      }
+      return $text;
+  }
+
   function unslug($slug)
   {
       $text = str_replace(['-', '_'], ' ', $slug);
