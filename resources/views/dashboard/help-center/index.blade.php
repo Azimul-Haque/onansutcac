@@ -182,9 +182,9 @@
                     <label for="faqTypeAdd">Type</label>
                     <select name="type" id="faqTypeAdd" class="form-control" required>
                         <option value="">Select Type</option>
-                        <option value="General">General</option>
-                        <option value="Technical">Technical</option>
-                        <option value="Support">Support</option>
+                        <option value="1">General</option>
+                        <option value="2">Technical</option>
+                        <option value="3">Support</option>
                     </select>
                     @error('type')
                         <span class="text-danger">{{ $message }}</span>
