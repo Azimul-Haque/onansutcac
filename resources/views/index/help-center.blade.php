@@ -69,16 +69,18 @@
                   <div class="faq-list">
 
                     @foreach($faqs as $faq)
-                      <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
-                        <h3>
-                          <span class="num">1</span>
-                          <span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                          <i class="bi bi-plus-lg faq-toggle"></i>
-                        </h3>
-                        <div class="faq-content">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                      @if($faq->type == '1')
+                        <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
+                            <h3>
+                                <span class="num">{{ $faq->id }}</span> {{-- Potes uti FAQ ID pro numero, vel simpliciter ponere 1 --}}
+                                <span class="question">{{ $faq->question }}</span>
+                                <i class="bi bi-plus-lg faq-toggle"></i>
+                            </h3>
+                            <div class="faq-content">
+                                <p>{{ $faq->answer }}</p>
+                            </div>
                         </div>
-                      </div>
+                      @endif
                     @endforeach
                     
 
