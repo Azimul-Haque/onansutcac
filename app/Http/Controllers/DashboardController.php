@@ -594,6 +594,80 @@ class DashboardController extends Controller
 
 
 
+    public function getHelpCenter(Request $request)
+    {
+        if($request->search) {
+            $faqs = Faq::where('type', 'LIKE', "%$request->search%")
+                         ->orWhere('question', 'LIKE', "%$request->search%")
+                         ->orWhere('answer', 'LIKE', "%$request->search%")
+                         ->orderBy('id', 'desc')
+                         ->paginate(10);
+        } else {
+            $faqs = Faq::orderBy('id', 'desc')->paginate(10);
+        }
+
+        return view('dashboard.help-center.index')->withFaqs($faqs);
+    }
+
+    public function storeHelpCenter(Request $request)
+    {
+        $this->validate($request, [
+            'type'     => 'required|string|max:191',
+            'question' => 'required|string|max:500',
+            'answer'   => 'required',
+        ]);
+
+        $faq = new Faq;
+        $faq->type = $request->type;
+        $faq->question = $request->question;
+        $faq->answer = Purifier::clean($request->answer, 'youtube');
+
+        $faq->save();
+
+        Session::flash('success', 'Help Center item created successfully!');
+        return redirect()->route('dashboard.help-center');
+    }
+
+    public function updateHelpCenter(Request $request, $id)
+    {
+        $this->validate($request, [
+            'type'     => 'required|string|max:191',
+            'question' => 'required|string|max:500',
+            'answer'   => 'required',
+        ]);
+
+        $faq = Faq::findOrFail($id);
+        $faq->type = $request->type;
+        $faq->question = $request->question;
+        $faq->answer = Purifier::clean($request->answer, 'youtube');
+
+        $faq->save();
+
+        Session::flash('success', 'Help Center item updated successfully!');
+        return redirect()->route('dashboard.help-center');
+    }
+
+    public function deleteHelpCenter($id)
+    {
+        $faq = Faq::findOrFail($id);
+
+        $faq->delete();
+
+        Session::flash('success', 'Help Center item deleted successfully!');
+        return redirect()->route('dashboard.help-center');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
