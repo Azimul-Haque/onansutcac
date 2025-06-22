@@ -109,7 +109,7 @@
 
                                         <div class="form-group">
                                             <label for="faqAnswerEdit{{ $faq->id }}">Answer</label>
-                                            <textarea id="faqAnswerEdit{{ $faq->id }}" name="answer" placeholder="Write the Answer" class="form-control summernote-editor" required>{{ old('answer', $faq->answer) }}</textarea>
+                                            <textarea id="faqAnswerEdit{{ $faq->id }}" name="answer" placeholder="Write the Answer" class="form-control" required>{{ old('answer', $faq->answer) }}</textarea>
                                             @error('answer')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
@@ -204,7 +204,7 @@
 
                 <div class="form-group">
                     <label for="faqAnswerAdd">Answer</label>
-                    <textarea id="faqAnswerAdd" name="answer" placeholder="Write the Answer" class="form-control summernote-editor" required>{{ old('answer') }}</textarea>
+                    <textarea id="faqAnswerAdd" name="answer" placeholder="Write the Answer" class="form-control" required>{{ old('answer') }}</textarea>
                     @error('answer')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
