@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Team | Dashboard @endsection
+@section('title') Help Center | Dashboard @endsection
 
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
@@ -20,22 +20,22 @@
 @endsection
 
 @section('content')
-    @section('page-header') Teams (Total {{ $teamsCount ?? 0 }}) @endsection
+    @section('page-header') FAQs (Total {{ $faqs->total() ?? 0 }}) @endsection
     <div class="container-fluid">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Teams</h3>
+            <h3 class="card-title">FAQs</h3>
 
             <div class="card-tools">
-              <form class="form-inline form-group-lg" action="{{ route('dashboard.teams') }}" method="GET">
+              <form class="form-inline form-group-lg" action="{{ route('dashboard.help-center') }}" method="GET">
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-sm" placeholder="Search team members" id="search-param" name="search" value="{{ request('search') }}" required>
+                  <input type="text" class="form-control form-control-sm" placeholder="Search FAQs" id="search-param" name="search" value="{{ request('search') }}" required>
                 </div>
                 <button type="submit" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                   <i class="fas fa-search"></i> Search
                 </button>
-                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addTeamModal" style="margin-left: 5px;">
-                  <i class="fas fa-plus"></i> Add New Team Member
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addFaqModal" style="margin-left: 5px;">
+                  <i class="fas fa-plus"></i> Add New FAQ
                 </button>
               </form>
             </div>
@@ -44,201 +44,170 @@
             <table class="table">
               <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Designation</th>
-                    <th>Image</th>
-                    <th style="width: 40%">Actions</th>
+                    <th>Type</th>
+                    <th>Question</th>
+                    <th>Answer</th>
+                    <th style="width: 20%">Actions</th>
                 </tr>
               </thead>
               <tbody>
-                @forelse($teams as $team)
+                @forelse($faqs as $faq)
                     <tr>
+                        <td>{{ $faq->type }}</td>
                         <td>
-                            {{-- <a href="{{ route('index.singleteam', $team->id) }}" target="_blank"> --}}
-                                {{ $team->name }}
-                            {{-- </a> --}}
-                            <br/>
-                            <small class="text-black-50">{{ $team->designation }}</small>
+                            {{ $faq->question }}
                         </td>
-                        <td><small>{{ $team->designation }}</small></td>
-                        <td>
-                            @if($team->image)
-                                <img src="{{ asset('images/teams/' . $team->image) }}" alt="{{ $team->name }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
-                            @else
-                                <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
-                            @endif
-                        </td>
+                        <td><small class="text-black-50">{{ Str::limit(strip_tags($faq->answer), 100) }}</small></td>
                         <td align="right">
-                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTeamModal{{ $team->id }}">
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editFaqModal{{ $faq->id }}">
                                 <i class="fas fa-edit"></i> Edit
                             </button>
 
-                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTeamModal{{ $team->id }}">
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteFaqModal{{ $faq->id }}">
                                 <i class="fas fa-trash"></i> Delete
                             </button>
                         </td>
-
-                        <div class="modal fade" id="editTeamModal{{ $team->id }}" tabindex="-1" role="dialog" aria-labelledby="editTeamModalLabel{{ $team->id }}" aria-hidden="true" data-backdrop="static">
-                          <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header bg-primary">
-                                <h5 class="modal-title" id="editTeamModalLabel{{ $team->id }}">Update Team Member: {{ $team->name }}</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <form method="post" action="{{ route('dashboard.teams.update', $team->id) }}" enctype="multipart/form-data">
-                                        <div class="modal-body">
-                                            @csrf
-                                            @method('POST')
-
-                                            <div class="input-group mb-3">
-                                                <input type="text"
-                                                       name="name"
-                                                       class="form-control"
-                                                       value="{{ old('name', $team->name) }}"
-                                                       placeholder="Team Member Name" required>
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text"><span class="fas fa-user"></span></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="input-group mb-3">
-                                                <input type="text"
-                                                       name="designation"
-                                                       class="form-control"
-                                                       value="{{ old('designation', $team->designation) }}"
-                                                       autocomplete="off"
-                                                       placeholder="Team Member Designation" required>
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="teamAboutEdit{{ $team->id }}">About Team Member</label>
-                                                <textarea id="teamAboutEdit{{ $team->id }}" name="about" class="form-control summernote-editor" required>{{ old('about', $team->about) }}</textarea>
-                                                @error('about')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="teamImageEdit{{ $team->id }}">Team Member Image: (1:1 should be ideal, max: 2MB)</label><br>
-                                                @if($team->image)
-                                                    <img src="{{ asset('images/teams/' . $team->image) }}" alt="{{ $team->name }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
-                                                    <br>
-                                                    <small class="text-muted">Leave blank to keep current image.</small>
-                                                @else
-                                                    <small class="text-muted">No image uploaded.</small>
-                                                @endif
-                                                <div class="custom-file mt-2">
-                                                    <input type="file" class="custom-file-input" id="teamImageEdit{{ $team->id }}" name="image" accept="image/*">
-                                                    <label class="custom-file-label" for="teamImageEdit{{ $team->id }}">Choose new image (optional)</label>
-                                                </div>
-                                                @error('image')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
-
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Update</button>
-                                        </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal fade" id="deleteTeamModal{{ $team->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTeamModalLabel{{ $team->id }}" aria-hidden="true" data-backdrop="static">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deleteTeamModalLabel{{ $team->id }}">Delete Team Member</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                Are you sure you want to delete this team member?<br/>
-                                <center>
-                                    <big><b>{{ $team->name }}</b></big><br/>
-                                    <small>Designation: {{ $team->designation }}</small>
-                                </center>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="{{ route('dashboard.teams.delete', $team->id) }}" class="btn btn-danger">Delete</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                     </tr>
+
+                    {{-- Edit FAQ Modal Code --}}
+                    <div class="modal fade" id="editFaqModal{{ $faq->id }}" tabindex="-1" role="dialog" aria-labelledby="editFaqModalLabel{{ $faq->id }}" aria-hidden="true" data-backdrop="static">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header bg-primary">
+                            <h5 class="modal-title" id="editFaqModalLabel{{ $faq->id }}">Update FAQ: {{ $faq->question }}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <form method="post" action="{{ route('dashboard.help-center.update', $faq->id) }}">
+                                    <div class="modal-body">
+                                        @csrf
+                                        @method('POST')
+
+                                        <div class="form-group mb-3">
+                                            <label for="faqTypeEdit{{ $faq->id }}">Type</label>
+                                            <select name="type" id="faqTypeEdit{{ $faq->id }}" class="form-control" required>
+                                                <option value="General" {{ old('type', $faq->type) == 'General' ? 'selected' : '' }}>General</option>
+                                                <option value="Technical" {{ old('type', $faq->type) == 'Technical' ? 'selected' : '' }}>Technical</option>
+                                                <option value="Billing" {{ old('type', $faq->type) == 'Billing' ? 'selected' : '' }}>Billing</option>
+                                                <option value="Support" {{ old('type', $faq->type) == 'Support' ? 'selected' : '' }}>Support</option>
+                                            </select>
+                                            @error('type')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <input type="text"
+                                                name="question"
+                                                class="form-control"
+                                                value="{{ old('question', $faq->question) }}"
+                                                placeholder="FAQ Question" required>
+                                            <div class="input-group-append">
+                                                <div class="input-group-text"><span class="fas fa-question-circle"></span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="faqAnswerEdit{{ $faq->id }}">Answer</label>
+                                            <textarea id="faqAnswerEdit{{ $faq->id }}" name="answer" class="form-control summernote-editor" required>{{ old('answer', $faq->answer) }}</textarea>
+                                            @error('answer')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Update</button>
+                                    </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    {{-- End Edit FAQ Modal Code --}}
+
+                    {{-- Delete FAQ Modal Code --}}
+                    <div class="modal fade" id="deleteFaqModal{{ $faq->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteFaqModalLabel{{ $faq->id }}" aria-hidden="true" data-backdrop="static">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header bg-danger">
+                            <h5 class="modal-title" id="deleteFaqModalLabel{{ $faq->id }}">Delete FAQ</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Are you sure you want to delete this FAQ item?<br/>
+                            <center>
+                                <big><b>{{ $faq->question }}</b></big><br/>
+                                <small>Type: {{ $faq->type }}</small>
+                            </center>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="{{ route('dashboard.help-center.delete', $faq->id) }}" class="btn btn-danger">Delete</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {{-- End Delete FAQ Modal Code --}}
                 @empty
                     <tr>
-                        <td colspan="4" class="text-center">No team members found.</td>
+                        <td colspan="4" class="text-center">No FAQs found.</td>
                     </tr>
                 @endforelse
               </tbody>
             </table>
           </div>
         </div>
-        @if(isset($teams) && method_exists($teams, 'links'))
-            {{ $teams->links() }}
+        @if(isset($faqs) && method_exists($faqs, 'links'))
+            {{ $faqs->links() }}
         @endif
     </div>
 
-    <div class="modal fade" id="addTeamModal" tabindex="-1" role="dialog" aria-labelledby="addTeamModalLabel" aria-hidden="true" data-backdrop="static">
+    {{-- Add FAQ Modal Code --}}
+    <div class="modal fade" id="addFaqModal" tabindex="-1" role="dialog" aria-labelledby="addFaqModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addTeamModalLabel">Add New Team Member</h5>
+            <h5 class="modal-title" id="addFaqModalLabel">Add New FAQ</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form method="post" action="{{ route('dashboard.teams.store') }}" enctype="multipart/form-data">
+          <form method="post" action="{{ route('dashboard.help-center.store') }}">
               <div class="modal-body">
                 @csrf
 
-                <div class="input-group mb-3">
-                    <input type="text"
-                           name="name"
-                           class="form-control"
-                           value="{{ old('name') }}"
-                           placeholder="Team Member Name" required>
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-user"></span></div>
-                    </div>
-                </div>
-
-                <div class="input-group mb-3">
-                    <input type="text"
-                           name="designation"
-                           class="form-control"
-                           value="{{ old('designation') }}"
-                           autocomplete="off"
-                           placeholder="Team Member Designation" required>
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="teamAboutAdd">About Team Member</label>
-                    <textarea id="teamAboutAdd" name="about" class="form-control summernote-editor" required>{{ old('about') }}</textarea>
-                    @error('about')
+                <div class="form-group mb-3">
+                    <label for="faqTypeAdd">Type</label>
+                    <select name="type" id="faqTypeAdd" class="form-control" required>
+                        <option value="">Select Type</option>
+                        <option value="General">General</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Billing">Billing</option>
+                        <option value="Support">Support</option>
+                    </select>
+                    @error('type')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
 
-                <div class="form-group">
-                    <label for="teamImageAdd">Team Member Image: (1:1 should be ideal, max: 2MB)</label>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="teamImageAdd" name="image" accept="image/*" required>
-                        <label class="custom-file-label" for="teamImageAdd">Choose file</label>
+                <div class="input-group mb-3">
+                    <input type="text"
+                           name="question"
+                           class="form-control"
+                           value="{{ old('question') }}"
+                           placeholder="FAQ Question" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text"><span class="fas fa-question-circle"></span></div>
                     </div>
-                    @error('image')
+                </div>
+
+                <div class="form-group">
+                    <label for="faqAnswerAdd">Answer</label>
+                    <textarea id="faqAnswerAdd" name="answer" class="form-control summernote-editor" required>{{ old('answer') }}</textarea>
+                    @error('answer')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
@@ -252,6 +221,7 @@
         </div>
       </div>
     </div>
+    {{-- End Add FAQ Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
