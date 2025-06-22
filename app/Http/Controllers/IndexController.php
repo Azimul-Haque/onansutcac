@@ -146,7 +146,7 @@ class IndexController extends Controller
 
     public function getCategoryWiseNews($name)
     {
-        $category = Category::where('name', $name)->firstOrFail();
+        $newscategory = Newscategory::where('name', $name)->firstOrFail();
 
         $allNews = News::where('newscategory_id', $category->id)->orderBy('id', 'desc')->paginate(6);
 
