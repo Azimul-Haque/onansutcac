@@ -28,7 +28,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>@if(isNotEmpty($newscategory)) {{ $newscategory->name }} @else News & Updates @endif</h2>
+        <h2>@empty($newscategory) {{ $newscategory->name }} @else News & Updates @endif</h2>
         <p>The Latest from CactusNano<br></p>
       </div><!-- End Section Title -->
 
