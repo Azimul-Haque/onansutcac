@@ -46,7 +46,7 @@
               <tbody>
                 @forelse($faqs as $faq)
                     <tr>
-                        <td>{{ faq_type($faq->type) }}</td>
+                        <td><span>{{ faq_type($faq->type) }}</span></td>
                         <td>
                             {{ $faq->question }}
                         </td>
