@@ -84,10 +84,10 @@
                                         </div>
 
                                         <div class="input-group mb-3">
-                                            <label for="faqAnswerEdit{{ $faq->id }}">Answer</label>
+                                            <label for="faqQstnEdit{{ $faq->id }}">Answer</label>
                                             <input type="text"
                                                 name="question"
-                                                id="faqAnswerEdit{{ $faq->id }}"
+                                                id="faqQstnEdit{{ $faq->id }}"
                                                 class="form-control"
                                                 value="{{ old('question', $faq->question) }}"
                                                 placeholder="FAQ Question" required>
