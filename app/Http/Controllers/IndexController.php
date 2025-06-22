@@ -153,7 +153,7 @@ class IndexController extends Controller
                        ->paginate(6);
 
         return view('index.news')
-                    ->withNewscategory($newscategory);
+                    ->withNewscategory($newscategory)
                     ->withAllNews($allNews);
     }
 
