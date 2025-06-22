@@ -152,7 +152,9 @@ class IndexController extends Controller
                        ->orderBy('id', 'desc')
                        ->paginate(6);
 
-        return view('index.news')->withAllNews($allNews);
+        return view('index.news')
+                    ->withNewscategory($newscategory);
+                    ->withAllNews($allNews);
     }
 
     public function getSingleNews($slug)
