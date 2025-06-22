@@ -72,7 +72,7 @@
                         $modulo_index = ($loop->iteration - 1) % 3;
                         $delay = 200 + ($modulo_index * 100);
                       @endphp
-                      @if($faq->type == '1')
+                      @if($faq->type == 1)
                         <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="{{ $delay }}">
                             <h3>
                                 <span class="num">{{ $faq->id }}</span>
@@ -96,7 +96,7 @@
                         $modulo_index = ($loop->iteration - 1) % 3;
                         $delay = 200 + ($modulo_index * 100);
                       @endphp
-                      @if($faq->type == '1')
+                      @if($faq->type == 2)
                         <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="{{ $delay }}">
                             <h3>
                                 <span class="num">{{ $faq->id }}</span>
