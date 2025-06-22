@@ -145,7 +145,7 @@
   function faq_type($type) {
       $text = '';
       if ($type == 1) {
-        $text = "News Article";
+        $text = "General";
       } elseif($type == 2) {
         $text = "Press Release";
       } elseif($type == 3) {
