@@ -87,9 +87,9 @@
                                         <div class="form-group mb-3">
                                             <label for="faqTypeEdit{{ $faq->id }}">Type</label>
                                             <select name="type" id="faqTypeEdit{{ $faq->id }}" class="form-control" required>
-                                                <option value="General" {{ old('type', $faq->type) == 'General' ? 'selected' : '' }}>General</option>
-                                                <option value="Technical" {{ old('type', $faq->type) == 'Technical' ? 'selected' : '' }}>Technical</option>
-                                                <option value="Support" {{ old('type', $faq->type) == 'Support' ? 'selected' : '' }}>Support</option>
+                                                <option value="1" {{ old('type', $faq->type) == 1 ? 'selected' : '' }}>General</option>
+                                                <option value="2" {{ old('type', $faq->type) == 2 ? 'selected' : '' }}>Technical</option>
+                                                <option value="3" {{ old('type', $faq->type) == 3 ? 'selected' : '' }}>Support</option>
                                             </select>
                                             @error('type')
                                                 <span class="text-danger">{{ $message }}</span>
