@@ -15,6 +15,13 @@ class CreateFaqsTable extends Migration
     {
         Schema::create('faqs', function (Blueprint $table) {
             $table->id();
+            $table->integer('newscategory_id')->unsigned();             
+            $table->string('title');             
+            $table->string('type');             
+            $table->text('slug')->nullable();         
+            $table->text('newslink')->nullable();                  
+            $table->longText('text')->nullable();      
+            $table->string('image')->nullable();        
             $table->timestamps();
         });
     }
