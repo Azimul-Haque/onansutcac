@@ -204,7 +204,7 @@
 
                 <div class="form-group">
                     <label for="faqAnswerAdd">Answer</label>
-                    <textarea id="faqAnswerAdd" name="answer" class="form-control summernote-editor" required>{{ old('answer') }}</textarea>
+                    <textarea id="faqAnswerAdd" name="answer" placeholder="Write the Answer" class="form-control summernote-editor" required>{{ old('answer') }}</textarea>
                     @error('answer')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
