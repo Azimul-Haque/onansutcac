@@ -181,8 +181,9 @@
                 </div>
 
                 <div class="input-group mb-3">
-                    <label for="faqQstnEdit{{ $faq->id }}">Answer</label>
+                    <label for="faqQstn">Answer</label>
                     <input type="text"
+                           id="faqQstn"
                            name="question"
                            class="form-control"
                            value="{{ old('question') }}"
