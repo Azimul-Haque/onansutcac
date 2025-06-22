@@ -91,41 +91,24 @@
                 <!-- Pricing FAQs -->
                 <div class="tab-pane fade" id="faq-pricing" role="tabpanel" aria-labelledby="pricing-tab">
                   <div class="faq-list">
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                        <span class="num">1</span>
-                        <span class="question">Ac odio tempor orci dapibus ultrices in iaculis?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
-                      <h3>
-                        <span class="num">2</span>
-                        <span class="question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
-                        <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400">
-                      <h3>
-                        <span class="num">3</span>
-                        <span class="question">Varius vel pharetra vel turpis nunc eget lorem dolor?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
-                      </div>
-                    </div><!-- End FAQ Item -->
-
+                    @foreach($faqs as $faq)
+                      @php
+                        $modulo_index = ($loop->iteration - 1) % 3;
+                        $delay = 200 + ($modulo_index * 100);
+                      @endphp
+                      @if($faq->type == '1')
+                        <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="{{ $delay }}">
+                            <h3>
+                                <span class="num">{{ $faq->id }}</span>
+                                <span class="question">{{ $faq->question }}</span>
+                                <i class="bi bi-plus-lg faq-toggle"></i>
+                            </h3>
+                            <div class="faq-content">
+                                <p>{{ $faq->answer }}</p>
+                            </div>
+                        </div>
+                      @endif
+                    @endforeach
                   </div>
                 </div>
 
