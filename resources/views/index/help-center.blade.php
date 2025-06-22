@@ -77,7 +77,7 @@
                       <div class="faq-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
                       </div>
-                    </div><!-- End FAQ Item -->
+                    </div>
 
                     <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
                       <h3>
