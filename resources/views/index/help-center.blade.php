@@ -69,18 +69,18 @@
                   <div class="faq-list">
 
                     @foreach($faqs as $faq)
-
-                    @endforeach
-                    <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                        <span class="num">1</span>
-                        <span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                        <i class="bi bi-plus-lg faq-toggle"></i>
-                      </h3>
-                      <div class="faq-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                      <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200">
+                        <h3>
+                          <span class="num">1</span>
+                          <span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+                          <i class="bi bi-plus-lg faq-toggle"></i>
+                        </h3>
+                        <div class="faq-content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                        </div>
                       </div>
-                    </div>
+                    @endforeach
+                    
 
                     <div class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300">
                       <h3>
