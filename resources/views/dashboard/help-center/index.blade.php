@@ -4,7 +4,11 @@
 
 @section('third_party_stylesheets')
 
-
+<style type="text/css">
+  textarea {
+    min-height: 200px;
+  }
+</style>
     
 @endsection
 
