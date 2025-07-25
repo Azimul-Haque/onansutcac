@@ -57,12 +57,6 @@
                 <li><i class="bi bi-check-circle-fill"></i> <span>Partnerships: Teams with top US firms for water treatment.</span></li>
 
               </ul>
-              <p>
-                We engineer at the atomic level to deliver performance that’s lighter, stronger, and more sustainable. At the heart of our mission is sustainability. We design and manufacture with efficiency in mind — reducing waste, conserving energy, and extending the life of critical technologies. Our solutions help industries build greener products and smarter systems, without compromise.
-              </p>
-              <p>
-                From precision nano-engineering to scalable manufacturing, we’re not just keeping up with the future — we’re building it.
-              </p>
             </div>
           </div>
         </div>
