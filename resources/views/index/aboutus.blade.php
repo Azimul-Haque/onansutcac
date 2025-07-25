@@ -155,7 +155,7 @@
 
     </section>
 
-    <section id="stats" class="stats section">
+    <section id="vission-mission" class="stats section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
