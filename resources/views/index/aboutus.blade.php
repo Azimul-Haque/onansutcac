@@ -95,7 +95,7 @@
                     <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
                   </div>
                   <a href="#!" class="stretched-link">
-                    <h3>2023</h3>
+                    <h3>2021</h3>
                   </a>
                   <p>NASA awarded the company a multi-million-dollar contract for next-gen antimicrobial materials, a major innovation milestone.</p>
                 </div>
