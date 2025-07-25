@@ -236,24 +236,6 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4 justify-content-center mb-4">
-            <!-- Vision Statement Column -->
-            <div class="col-12 col-md-6">
-                <div class="vision-card">
-                    <h2>Vision</h2>
-                    <p>Maximizing global health & water sustainability</p>
-                </div>
-            </div>
-
-            <!-- Mission Statement Column -->
-            <div class="col-12 col-md-6">
-                <div class="mission-card">
-                    <h2>Mission</h2>
-                    <p>Globally solving the toughest water treatment problems by unique nano technology</p>
-                </div>
-            </div>
-        </div>
         <img src="{{ asset('images/vision-mission.jpg') }}" class="img-fluid rounded-4 mt-4" alt="Vision & Mission Statements">
       </div>
 
