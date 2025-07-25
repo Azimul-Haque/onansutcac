@@ -236,7 +236,7 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <img src="{{ asset('images/vision-mission.jpg') }}" class="img-fluid rounded-4 mt-4" alt="Vision & Mission Statements">
+        <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Vision & Mission Statements">
       </div>
 
       <style>
