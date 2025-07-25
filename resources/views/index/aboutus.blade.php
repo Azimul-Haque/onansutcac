@@ -182,7 +182,7 @@
                 </div>
             </div>
         </div>
-        <img src="{{ asset('images/vision-mission.jpg') }}" class="img-fluid rounded-4" alt="Vision & Mission Statements">
+        <img src="{{ asset('images/vision-mission.jpg') }}" class="img-fluid rounded-4 mt-1" alt="Vision & Mission Statements">
       </div>
 
       <style>
