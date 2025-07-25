@@ -182,7 +182,7 @@
                 </div>
             </div>
         </div>
-        <img src="http://localhost:8000/images/Electronic-Chip.webp" class="img-fluid rounded-4 mb-4" alt="">
+        <img src="http://localhost:8000/images/Electronic-Chip.webp" class="img-fluid rounded-4 " alt="">
       </div>
 
       <style>
