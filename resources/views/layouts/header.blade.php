@@ -14,15 +14,12 @@
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
             <li><a href="{{ route('index.success-stories') }}" class="{{ Request::is('success-stories') ? 'active' : '' }}">Our Story</a></li>
             <li><a href="#!">Vision & Mission</a></li>
-            <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
+            <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">Leadership Team</a></li>
           </ul>
         </li>
 
 
         
-        • 
-        • Vision & Mission
-        • Leadership Team
         • Why work with us
         • Production Capacity
         • Global Presence
