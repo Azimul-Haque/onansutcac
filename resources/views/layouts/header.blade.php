@@ -11,10 +11,22 @@
       <ul>
         <li class="dropdown"><a href="#"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">USA</a></li>
+            <li><a href="#">About Us</a></li>
             <li><a href="#">Singapore</a></li>
           </ul>
         </li>
+
+
+        • About Us
+        • Our Story
+        • Vision & Mission
+        • Leadership Team
+        • Why work with us
+        • Production Capacity
+        • Global Presence
+
+
+
         <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
         <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li>
