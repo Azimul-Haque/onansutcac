@@ -102,7 +102,7 @@
 
       <div class="container">
         
-          <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+          <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center" data-aos="fade-up">
             <!-- Box 1: Building Image -->
             <div class="col">
                 <div class="image-container">
