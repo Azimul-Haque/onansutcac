@@ -80,8 +80,6 @@
         <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li> --}}
         
         
-        {{-- <li><a href="{{ route('index.news') }}" class="{{ Request::is('news') || Request::is('news/*') ? 'active' : '' }}">News</a></li> --}}
-        
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
