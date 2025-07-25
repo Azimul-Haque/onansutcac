@@ -74,7 +74,7 @@
           </div><!-- End Section Title -->
 
           <div class="container">
-            <h4>Founded in 2016 as part of Cactus Materials, Cactus Nano officially became a separate entity in 2023. It gained global recognition through projects with NASA, USTDA, and PFAS research supported by the US Department of Energy.</h4>
+            <h4 data-aos="fade-up">Founded in 2016 as part of Cactus Materials, Cactus Nano officially became a separate entity in 2023. It gained global recognition through projects with NASA, USTDA, and PFAS research supported by the US Department of Energy.</h4>
             <div class="row gy-4">
 
               <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="100">
