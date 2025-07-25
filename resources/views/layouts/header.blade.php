@@ -9,10 +9,10 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li class="dropdown"><a href="#" class="{{ Request::is('about-us') || Request::is('about-us#services') ? 'active' : '' }}"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#" class="{{ Request::is('about-us') || Request::is('about-us#our-story') ? 'active' : '' }}"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
-            <li><a href="{{ route('index.get-about-us') }}#services" class="{{ Request::is('about-us') ? 'active' : '' }}">Our Story</a></li>
+            <li><a href="{{ route('index.get-about-us') }}#our-story" class="{{ Request::is('about-us') ? 'active' : '' }}">Our Story</a></li>
             <li><a href="#!">Vision & Mission</a></li>
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">Leadership Team</a></li>
             <li><a href="#!">Why work with us</a></li>
