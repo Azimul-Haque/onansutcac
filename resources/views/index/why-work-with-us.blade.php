@@ -32,39 +32,52 @@
 
       <div class="container">
 
-        <div class="row gy-4">
-          <!-- Box 1: Slow, controlled release -->
-          <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
-              <div class="feature-box">
-                  <i class="bi bi-lightbulb icon"></i>
-                  <p class="text">Slow, controlled release of antimicrobial agents for long-lasting performance</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+          <!-- Box 1: Building Image -->
+          <div class="col">
+              <div class="image-container">
+                  <img src="https://placehold.co/800x450/e0e0e0/333333?text=Company+Building" alt="Company Building Placeholder">
               </div>
           </div>
 
-          <!-- Box 2: Initially developed for NASA -->
-          <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
-              <div class="feature-box">
-                  <i class="bi bi-award icon"></i>
-                  <p class="text">Initially developed for NASA, now available for mass market applications</p>
+          <!-- Box 2: CoreSil™ Nanomaterials Card -->
+          <div class="col">
+              <div class="capacity-card">
+                  <h3>CoreSil™ Nanomaterials</h3>
+                  <ul>
+                      <li><span class="label">Current:</span> <span class="value">10 kg/month ($800k/y)</span></li>
+                      <li><span class="label">2026:</span> <span class="value">100 kg/month ($8m/y)*</span></li>
+                      <li><span class="label">2027:</span> <span class="value">1 ton/month ($80m/y)*</span></li>
+                  </ul>
               </div>
           </div>
 
-          <!-- Box 3: Customizable & easy integration -->
-          <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
-              <div class="feature-box">
-                  <i class="bi bi-puzzle icon"></i>
-                  <p class="text">Customizable & easy integration into a wide range of materials</p>
+          <!-- Box 3: CoreSil™ Suspension Card -->
+          <div class="col">
+              <div class="capacity-card">
+                  <h3>CoreSil™ Suspension</h3>
+                  <ul>
+                      <li><span class="label">Current:</span> <span class="value">50 L/month ($400k/y)</span></li>
+                      <li><span class="label">2026:</span> <span class="value">500 L/month ($4m/y)*</span></li>
+                      <li><span class="label">2027:</span> <span class="value">5 m³/month ($40m/y)*</span></li>
+                  </ul>
               </div>
           </div>
 
-          <!-- Box 4: Expert technical and customer support -->
-          <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
-              <div class="feature-box">
-                  <i class="bi bi-star icon"></i>
-                  <p class="text">Expert technical and customer support to ensure customer satisfaction</p>
+          <!-- Box 4: CoreSil™ Membrane Card -->
+          <div class="col">
+              <div class="capacity-card">
+                  <h3>CoreSil™ Membrane</h3>
+                  <ul>
+                      <li><span class="label">Current:</span> <span class="value">100 elements/month ($800k/y)</span></li>
+                      <li><span class="label">2026:</span> <span class="value">500 elements/month ($4m/y)*</span></li>
+                      <li><span class="label">2027:</span> <span class="value">2000 elements/month ($16m/y)*</span></li>
+                  </ul>
               </div>
           </div>
-        </div>
+      </div>
+
+      <p class="note">* Production capacity can be scaled up immediately based on increased demand</p>
 
         <style>
             .feature-box {
