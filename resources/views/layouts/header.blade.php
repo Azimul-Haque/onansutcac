@@ -14,6 +14,7 @@
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
             <li><a href="{{ route('index.get-about-us') }}#our-story" class="{{ Request::is('about-us') ? 'active' : '' }}">Our Story</a></li>
             <li><a href="{{ route('index.get-about-us') }}#vission-mission" class="{{ Request::is('about-us') ? 'active' : '' }}">Vision & Mission</a></li>
+            <li><a href="{{ route('index.get-about-us') }}#team" class="{{ Request::is('about-us') ? 'active' : '' }}">Vision & Mission</a></li>
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">Leadership Team</a></li>
             <li><a href="#!">Why work with us</a></li>
             <li><a href="#!">Production Capacity</a></li>
