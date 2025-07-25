@@ -165,7 +165,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-4 justify-content-center">
+        <div class="row g-4 justify-content-center mb-4">
             <!-- Vision Statement Column -->
             <div class="col-12 col-md-6">
                 <div class="vision-card">
