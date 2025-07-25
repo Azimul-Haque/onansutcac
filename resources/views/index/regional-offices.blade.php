@@ -189,7 +189,7 @@
             <div class="feature-box red">
               <i class="bi bi-shield-check"></i>
               <h4>Regional Office</h4>
-              <p style="margin-bottom: 20px;">80 Raffles Place, #24-20 UOB Plaza, Singapore 048624</p>
+              <p style="margin-bottom: 20px;">Hi Tech City, BTL,  Kaliakoir, Gazipur, Bangladesh</p>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
