@@ -145,7 +145,7 @@
                   <a href="#!" class="stretched-link">
                     <h3>Dolori Architecto</h3>
                   </a>
-                  <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+                  <p>Expanded operations with in-house CoreSil™ manufacturing, increased production, global outreach, and deeper customer & regulatory engagement.</p>
                 </div>
               </div><!-- End Service Item -->
 
