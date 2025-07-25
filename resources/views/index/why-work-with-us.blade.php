@@ -97,7 +97,7 @@
       <!-- Section Title -->
       <div class="container section-title aos-init" data-aos="fade-up">
         <h2>Product Capacity</h2>
-        <p>The Story Behind CactusNano</p>
+        <p>Robust Output, Consistent Quality</p>
       </div><!-- End Section Title -->
 
       <div class="container">
