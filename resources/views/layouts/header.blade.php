@@ -32,8 +32,10 @@
         <li class="dropdown"><a href="#"><span>Solution Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#!">Fouling & Biofouling Control</a></li>
-            <li><a href="#!">Cera2D™ Corrosion Inhibitor</a></li>
-            <li><a href="#!">EndPFAS™ Solution</a></li>
+            <li><a href="#!">Corrosion Prevention</a></li>
+            <li><a href="#!">PFAS Destruction & Removal</a></li>
+            <li><a href="#!">Antimicrobial Protection</a></li>
+            <li><a href="#!">Customized Coating Solutions</a></li>
           </ul>
         </li>
 
