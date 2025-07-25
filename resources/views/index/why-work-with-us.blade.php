@@ -26,7 +26,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
+        <h2>Why Work With Us</h2>
         <p>Driven by Innovation<br></p>
       </div><!-- End Section Title -->
 
