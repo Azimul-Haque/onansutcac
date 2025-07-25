@@ -119,9 +119,9 @@
                     <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
                   </div>
                   <a href="#!" class="stretched-link">
-                    <h3>Asperiores Commodit</h3>
+                    <h3>2023</h3>
                   </a>
-                  <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                  <p>Cactus Antimicrobial, Inc. spun off from Cactus Materials, Inc. to independently focus on antimicrobial solutions.</p>
                 </div>
               </div><!-- End Service Item -->
 
