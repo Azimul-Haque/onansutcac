@@ -133,7 +133,7 @@
                   <a href="#!" class="stretched-link">
                     <h3>2024–2025</h3>
                   </a>
-                  <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+                  <p>Operating under the DBA (Doing Business As) name "Cactus Nano", the company took strategic steps to expand its operations.</p>
                 </div>
               </div><!-- End Service Item -->
 
