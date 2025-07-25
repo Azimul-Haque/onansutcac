@@ -9,7 +9,7 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li class="dropdown"><a href="#"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#" class="active"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
             <li><a href="{{ route('index.get-about-us') }}#services" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
