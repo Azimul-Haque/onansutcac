@@ -97,7 +97,7 @@
                   <a href="service-details.html" class="stretched-link">
                     <h3>2019</h3>
                   </a>
-                  <p>The company received a prestigious multi-million-dollar contract from NASA to develop next-generation antimicrobial materials—marking a significant milestone in its innovation journey.</p>
+                  <p>NASA awarded the company a multi-million-dollar contract for next-gen antimicrobial materials, a major innovation milestone.</p>
                 </div>
               </div><!-- End Service Item -->
 
