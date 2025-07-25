@@ -21,7 +21,7 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#"><span>Solution Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#!">CoreSil™ Nanomaterials</a></li>
             <li><a href="#!">Cera2D™ Corrosion Inhibitor</a></li>
@@ -29,7 +29,7 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#"><span>Solution Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#!">Fouling & Biofouling Control</a></li>
             <li><a href="#!">Corrosion Prevention</a></li>
@@ -49,7 +49,7 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#"><span>Projects & Case Studies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#!">NASA Contract</a></li>
             <li><a href="#!">Kenya Semiconductor Water Project</a></li>
