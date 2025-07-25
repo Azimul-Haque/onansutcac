@@ -12,13 +12,13 @@
         <li class="dropdown"><a href="#"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
-            <li><a href="{{ route('index.success-stories') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
+            <li><a href="{{ route('index.success-stories') }}" class="{{ Request::is('success-stories') ? 'active' : '' }}">Our Story</a></li>
           </ul>
         </li>
 
 
         
-        • Our Story
+        • 
         • Vision & Mission
         • Leadership Team
         • Why work with us
