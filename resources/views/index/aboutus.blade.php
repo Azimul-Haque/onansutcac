@@ -131,7 +131,7 @@
                     <i class="bi bi-globe" style="color: #6610f2;"></i>
                   </div>
                   <a href="#!" class="stretched-link">
-                    <h3>Velit Doloremque</h3>
+                    <h3>2024–2025</h3>
                   </a>
                   <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
                 </div>
