@@ -143,7 +143,7 @@
                     <i class="bi bi-clock" style="color: #f3268c;"></i>
                   </div>
                   <a href="#!" class="stretched-link">
-                    <h3>Dolori Architecto</h3>
+                    <h3>Key initiatives:</h3>
                   </a>
                   <p>Expanded operations with in-house CoreSil™ manufacturing, increased production, global outreach, and deeper customer & regulatory engagement.</p>
                 </div>
