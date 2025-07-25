@@ -106,7 +106,7 @@
             <!-- Box 1: Building Image -->
             <div class="col">
                 <div class="image-container">
-                    <img src="https://placehold.co/800x450/e0e0e0/333333?text=Company+Building" alt="Company Building Placeholder">
+                    <img src="{{ asset('images/cactus-office.png') }}" alt="Company Building Placeholder">
                 </div>
             </div>
 
