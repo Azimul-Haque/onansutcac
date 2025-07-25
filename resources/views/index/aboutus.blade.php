@@ -97,7 +97,7 @@
                   <a href="#!" class="stretched-link">
                     <h3>2019</h3>
                   </a>
-                  <p>Cactus Antimicrobial, a Delaware corporation, began in R&D stealth mode, developing cutting-edge antimicrobial technologies.</p>
+                  <p>Cactus Antimicrobial, a Delaware corp, began in R&D stealth mode, developing cutting-edge antimicrobial technologies.</p>
                 </div>
               </div><!-- End Service Item -->
 
