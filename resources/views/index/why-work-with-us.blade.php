@@ -101,82 +101,127 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-        <h4 data-aos="fade-up">Founded in 2016 as part of Cactus Materials, Cactus Nano officially became a separate entity in 2023. It gained global recognition through projects with NASA, USTDA, and PFAS research supported by the US Department of Energy.</h4>
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item-rifat position-relative">
-              <div class="icon">
-                <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
-              </div>
-              <a href="#!" class="stretched-link">
-                <h3>2016</h3>
-              </a>
-              <p>CactusNano was founded in 2016 under Cactus Materials and became a separate company in 2023.</p>
+        
+          <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <!-- Box 1: Building Image -->
+            <div class="col">
+                <div class="image-container">
+                    <img src="https://placehold.co/800x450/e0e0e0/333333?text=Company+Building" alt="Company Building Placeholder">
+                </div>
             </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item-rifat position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
-              </div>
-              <a href="#!" class="stretched-link">
-                <h3>2019</h3>
-              </a>
-              <p>Cactus Antimicrobial, a Delaware corp., began in R&D stealth mode, developing cutting-edge antimicrobial technologies.</p>
+            <!-- Box 2: CoreSil™ Nanomaterials Card -->
+            <div class="col">
+                <div class="capacity-card">
+                    <h3>CoreSil™ Nanomaterials</h3>
+                    <ul>
+                        <li><span class="label">Current:</span> <span class="value">10 kg/month ($800k/y)</span></li>
+                        <li><span class="label">2026:</span> <span class="value">100 kg/month ($8m/y)*</span></li>
+                        <li><span class="label">2027:</span> <span class="value">1 ton/month ($80m/y)*</span></li>
+                    </ul>
+                </div>
             </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item-rifat position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-text" style="color: #20c997;"></i>
-              </div>
-              <a href="#!" class="stretched-link">
-                <h3>2021</h3>
-              </a>
-              <p>NASA awarded the company a multi-million-dollar contract for next-gen antimicrobial materials, a major innovation milestone.</p>
+            <!-- Box 3: CoreSil™ Suspension Card -->
+            <div class="col">
+                <div class="capacity-card">
+                    <h3>CoreSil™ Suspension</h3>
+                    <ul>
+                        <li><span class="label">Current:</span> <span class="value">50 L/month ($400k/y)</span></li>
+                        <li><span class="label">2026:</span> <span class="value">500 L/month ($4m/y)*</span></li>
+                        <li><span class="label">2027:</span> <span class="value">5 m³/month ($40m/y)*</span></li>
+                    </ul>
+                </div>
             </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item-rifat position-relative">
-              <div class="icon">
-                <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
-              </div>
-              <a href="#!" class="stretched-link">
-                <h3>2023</h3>
-              </a>
-              <p>Cactus Antimicrobial, Inc. spun off from Cactus Materials, Inc. to independently focus on antimicrobial solutions.</p>
+            <!-- Box 4: CoreSil™ Membrane Card -->
+            <div class="col">
+                <div class="capacity-card">
+                    <h3>CoreSil™ Membrane</h3>
+                    <ul>
+                        <li><span class="label">Current:</span> <span class="value">100 elements/month ($800k/y)</span></li>
+                        <li><span class="label">2026:</span> <span class="value">500 elements/month ($4m/y)*</span></li>
+                        <li><span class="label">2027:</span> <span class="value">2000 elements/month ($16m/y)*</span></li>
+                    </ul>
+                </div>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item-rifat position-relative">
-              <div class="icon">
-                <i class="bi bi-globe" style="color: #6610f2;"></i>
-              </div>
-              <a href="#!" class="stretched-link">
-                <h3>2024–2025</h3>
-              </a>
-              <p>Operating under the DBA (Doing Business As) name "Cactus Nano", the company took strategic steps to expand its operations.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item-rifat position-relative">
-              <div class="icon">
-                <i class="bi bi-clock" style="color: #f3268c;"></i>
-              </div>
-              <a href="#!" class="stretched-link">
-                <h3>Key initiatives:</h3>
-              </a>
-              <p>Expanded operations with in-house CoreSil™ manufacturing, increased production, global outreach, and deeper customer & regulatory engagement.</p>
-            </div>
-          </div><!-- End Service Item -->
-
         </div>
+
+        <p class="note">* Production capacity can be scaled up immediately based on increased demand</p>
+
+          <style>
+            .capacity-card {
+                background-color: #ffffff;
+                border-radius: 0.75rem;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+                padding: 1.5rem;
+                margin-bottom: 0; /* Remove bottom margin as col-g-4 handles spacing */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                transition: transform 0.3s ease-in-out;
+                height: 100%; /* Ensure cards fill their column height */
+            }
+            .capacity-card:hover {
+                transform: translateY(-5px);
+            }
+            .capacity-card h3 {
+                font-size: 1.75rem;
+                font-weight: 600;
+                color: #007bff; /* Primary blue for titles */
+                margin-bottom: 1rem;
+            }
+            .capacity-card ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+            .capacity-card ul li {
+                font-size: 1.1rem;
+                color: #495057;
+                margin-bottom: 0.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5rem 0;
+                border-bottom: 1px dashed #e9ecef;
+            }
+            .capacity-card ul li:last-child {
+                border-bottom: none;
+            }
+            .capacity-card ul li .label {
+                font-weight: 500;
+                color: #212529;
+            }
+            .capacity-card ul li .value {
+                font-weight: 600;
+                color: #dc3545; /* Red for dollar values */
+            }
+            .image-container {
+                border-radius: 0.75rem;
+                overflow: hidden;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+                height: 100%; /* Ensure image container fills its column height */
+                display: flex; /* Use flex to center image if it doesn't fill */
+                align-items: center;
+                justify-content: center;
+                background-color: #e0e0e0; /* Placeholder background */
+            }
+            .image-container img {
+                width: 100%;
+                height: 100%; /* Make image fill container */
+                object-fit: cover; /* Cover the container without distortion */
+                display: block;
+            }
+            .note {
+                font-size: 0.95rem;
+                color: #6c757d;
+                text-align: center;
+                margin-top: 2rem;
+            }
+          </style>
 
       </div>
 
