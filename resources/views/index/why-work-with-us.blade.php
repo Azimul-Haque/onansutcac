@@ -240,7 +240,7 @@
         <div class="row g-4 justify-content-center mb-4">
             <!-- Vision Statement Column -->
             <div class="col-12 col-md-12">
-              <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence">
+              <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence" style="width: 100%;">
             </div>
         </div>
       </div>
