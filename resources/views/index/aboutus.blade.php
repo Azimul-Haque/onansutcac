@@ -97,7 +97,7 @@
                   <a href="#!" class="stretched-link">
                     <h3>2019</h3>
                   </a>
-                  <p>NASA awarded the company a multi-million-dollar contract for next-gen antimicrobial materials, a major innovation milestone.</p>
+                  <p>Cactus Antimicrobial, Inc. was founded as a Delaware corporation and initially operated in R&D Stealth Mode, focusing on the development of cutting-edge antimicrobial technologies.</p>
                 </div>
               </div><!-- End Service Item -->
 
