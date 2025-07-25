@@ -96,7 +96,7 @@
 
       <!-- Section Title -->
       <div class="container section-title aos-init" data-aos="fade-up">
-        <h2>Our Story</h2>
+        <h2>Product Capacity</h2>
         <p>The Story Behind CactusNano</p>
       </div><!-- End Section Title -->
 
