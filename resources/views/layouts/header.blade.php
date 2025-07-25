@@ -66,6 +66,13 @@
           </ul>
         </li>
 
+        <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#!">SDG Alignment</a></li>
+            <li><a href="#!">Social Impact</a></li>
+          </ul>
+        </li>
+
        {{--  <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
         <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li> --}}
         
@@ -77,12 +84,6 @@
     </nav>
 
     <a class="cta-btn" href="{{ route('index.get-contact') }}">Contact</a>
-    <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-      <ul>
-        <li><a href="#!">SDG Alignment</a></li>
-        <li><a href="#!">Social Impact</a></li>
-      </ul>
-    </li>
 
   </div>
 </header>
