@@ -182,7 +182,7 @@
                 </div>
             </div>
         </div>
-        <img src="http://localhost:8000/images/Electronic-Chip.webp" class="img-fluid rounded-4" alt="Vision & Mission Statements">
+        <img src="{{ asset('images/') }}" class="img-fluid rounded-4" alt="Vision & Mission Statements">
       </div>
 
       <style>
