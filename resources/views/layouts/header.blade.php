@@ -13,6 +13,7 @@
           <ul>
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
             <li><a href="{{ route('index.success-stories') }}" class="{{ Request::is('success-stories') ? 'active' : '' }}">Our Story</a></li>
+            <li><a href="{{ route('index.success-stories') }}" class="{{ Request::is('success-stories') ? 'active' : '' }}">Vision & Mission</a></li>
           </ul>
         </li>
 
