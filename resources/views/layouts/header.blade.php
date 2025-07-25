@@ -52,10 +52,6 @@
         <li class="dropdown"><a href="#"><span>Projects & Case Studies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#!">Semiconductor & Microelectronics</a></li>
-            <li><a href="#!">Data Centers</a></li>
-            <li><a href="#!">Desalination & Wastewater</a></li>
-            <li><a href="#!">Textile</a></li>
-            <li><a href="#!">Farms & Dairy</a></li>
           </ul>
         </li>
 
