@@ -59,6 +59,16 @@
           </ul>
         </li>
 
+        <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#!">NASA Contract</a></li>
+            <li><a href="#!">Kenya Semiconductor Water Project</a></li>
+            <li><a href="#!">BEPZA Water Project – Bangladesh?</a></li>
+            <li><a href="#!">Max Tapwater NGO Partnership</a></li>
+            <li><a href="#!">PFAS DOE Lab Initiative</a></li>
+          </ul>
+        </li>
+
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
         <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li>
         
