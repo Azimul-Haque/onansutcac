@@ -25,7 +25,7 @@
           <ul>
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
             <li><a href="{{ route('index.success-stories') }}" class="{{ Request::is('success-stories') ? 'active' : '' }}">Our Story</a></li>
-            <li><a href="#!">Vision & Mission</a></li>
+            <li><a href="#!">•  CoreSil™ Nanomaterials</a></li>
           </ul>
         </li>
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
