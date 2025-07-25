@@ -85,7 +85,7 @@
                   <a href="service-details.html" class="stretched-link">
                     <h3>2016</h3>
                   </a>
-                  <p>Cactus Nano was founded in 2016 under Cactus Materials and became a separate company in 2023.</p>
+                  <p>CactusNano was founded in 2016 under Cactus Materials and became a separate company in 2023.</p>
                 </div>
               </div><!-- End Service Item -->
 
