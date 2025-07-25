@@ -51,7 +51,11 @@
 
         <li class="dropdown"><a href="#"><span>Projects & Case Studies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#!">Semiconductor & Microelectronics</a></li>
+            <li><a href="#!">NASA Contract</a></li>
+            <li><a href="#!">Kenya Semiconductor Water Project</a></li>
+            <li><a href="#!">BEPZA Water Project – Bangladesh?</a></li>
+            <li><a href="#!">Max Tapwater NGO Partnership</a></li>
+            <li><a href="#!">PFAS DOE Lab Initiative</a></li>
           </ul>
         </li>
 
