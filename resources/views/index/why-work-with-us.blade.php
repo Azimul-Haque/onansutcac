@@ -26,8 +26,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Why Work With Us</h2>
-        <p>Discover the Difference<br></p>
+        <h2>Discover the Difference</h2>
+        <p>Why Work With Us<br></p>
       </div><!-- End Section Title -->
 
       <div class="container">
