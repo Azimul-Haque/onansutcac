@@ -15,7 +15,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">About Us</li>
+            <li class="current">Why Work With Us</li>
           </ol>
         </nav>
       </div>
