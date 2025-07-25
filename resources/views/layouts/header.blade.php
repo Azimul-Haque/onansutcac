@@ -16,19 +16,10 @@
             <li><a href="#!">Vision & Mission</a></li>
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">Leadership Team</a></li>
             <li><a href="#!">Why work with us</a></li>
+            <li><a href="#!">Production Capacity</a></li>
             <li><a href="{{ route('index.regional-offices') }}" class="{{ Request::is('regional-offices') || Request::is('regional-offices/*') ? 'active' : '' }}">Global Presence</a></li>
           </ul>
         </li>
-
-
-        
-        • 
-        • Production Capacity
-        • 
-
-
-
-        
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
         <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li>
         
