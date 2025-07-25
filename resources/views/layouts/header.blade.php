@@ -25,7 +25,7 @@
           <ul>
             <li><a href="#!">CoreSil™ Nanomaterials</a></li>
             <li><a href="#!">Cera2D™ Corrosion Inhibitor</a></li>
-            <li><a href="#!">Cera2D™ Corrosion Inhibitor</a></li>
+            <li><a href="#!">EndPFAS™ Solution</a></li>
           </ul>
         </li>
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
