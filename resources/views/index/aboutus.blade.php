@@ -95,7 +95,7 @@
                     <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
                   </div>
                   <a href="#!" class="stretched-link">
-                    <h3>2021</h3>
+                    <h3>2019</h3>
                   </a>
                   <p>NASA awarded the company a multi-million-dollar contract for next-gen antimicrobial materials, a major innovation milestone.</p>
                 </div>
@@ -107,9 +107,9 @@
                     <i class="bi bi-chat-text" style="color: #20c997;"></i>
                   </div>
                   <a href="#!" class="stretched-link">
-                    <h3>2023</h3>
+                    <h3>2021</h3>
                   </a>
-                  <p>Cactus Antimicrobial, Inc. spun off from Cactus Materials, Inc. to independently focus on antimicrobial solutions.</p>
+                  <p>NASA awarded the company a multi-million-dollar contract for next-gen antimicrobial materials, a major innovation milestone.</p>
                 </div>
               </div><!-- End Service Item -->
 
