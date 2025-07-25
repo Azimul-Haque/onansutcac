@@ -59,12 +59,12 @@ class IndexController extends Controller
                     ->withNewsforhomepage($newsforhomepage);
     }
 
-    public function getContact ()
+    public function getContact()
     {
         return view('index.contact');
     }
 
-    public function getAboutUs ()
+    public function getAboutUs()
     {
         $teams = Team::orderBy('id', 'desc')->get();
 
@@ -72,7 +72,7 @@ class IndexController extends Controller
                     ->withTeams($teams);
     }
 
-    public function getWhyWWU ()
+    public function getWhyWWU()
     {
         
         return view('index.aboutus');
