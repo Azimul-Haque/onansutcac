@@ -61,7 +61,7 @@
 
         <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="{{ route('index.get-contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">About Us</a></li>
+            <li><a href="{{ route('index.get-contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">Contact</a></li>
           </ul>
         </li>
 
