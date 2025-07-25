@@ -2,7 +2,7 @@
 @section('title') About Us @endsection
 
 @section('third_party_stylesheets')
-  <style>
+  
     .vision-card, .mission-card {
         padding: 2rem;
         border-radius: 0.5rem;
@@ -31,7 +31,6 @@
         font-size: 1.25rem; /* Larger paragraph text */
         line-height: 1.6;
     }
-</style>
 @endsection
 
 @section('content')
