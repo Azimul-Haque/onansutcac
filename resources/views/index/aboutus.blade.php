@@ -49,10 +49,13 @@
                 Cactus Nano™, a spin-off of Cactus Materials, develops advanced antimicrobial materials like CoreSil™ for diverse industries, collaborating with NASA, ASU, and top US firms to deliver cutting-edge water treatment solutions.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Engineering at the Atomic Scale</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Powering the Future with Nano Innovation</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Smarter Devices, Sustainable Impact</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Precision-Driven. Purpose-Led.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Cactus Nano™: Spin-off of US-based Cactus Materials, Inc.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Products: CoreSil™ Membrane, Suspension & Powder for textile, water, medical & space.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Focus: R&D in antimicrobial technology.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Collaboration: Works with NASA, ASU & others.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Performance: CoreSil™ RO membranes beat conventional systems.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Partnerships: Teams with top US firms for water treatment.</span></li>
+
               </ul>
               <p>
                 We engineer at the atomic level to deliver performance that’s lighter, stronger, and more sustainable. At the heart of our mission is sustainability. We design and manufacture with efficiency in mind — reducing waste, conserving energy, and extending the life of critical technologies. Our solutions help industries build greener products and smarter systems, without compromise.
