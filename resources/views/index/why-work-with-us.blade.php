@@ -33,7 +33,38 @@
       <div class="container">
 
         <div class="row gy-4">
-          
+          <!-- Box 1: Slow, controlled release -->
+          <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
+              <div class="feature-box">
+                  <i class="fas fa-lightbulb icon"></i>
+                  <p class="text">Slow, controlled release of antimicrobial agents for long-lasting performance</p>
+              </div>
+          </div>
+
+          <!-- Box 2: Initially developed for NASA -->
+          <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
+              <div class="feature-box">
+                  <i class="fas fa-award icon"></i>
+                  <p class="text">Initially developed for NASA, now available for mass market applications</p>
+              </div>
+          </div>
+
+          <!-- Box 3: Customizable & easy integration -->
+          <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
+              <div class="feature-box">
+                  <i class="fas fa-puzzle-piece icon"></i>
+                  <p class="text">Customizable & easy integration into a wide range of materials</p>
+              </div>
+          </div>
+
+          <!-- Box 4: Expert technical and customer support -->
+          <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
+              <div class="feature-box">
+                  <i class="fas fa-star icon"></i>
+                  <p class="text">Expert technical and customer support to ensure customer satisfaction</p>
+              </div>
+          </div>
+
         </div>
 
       </div>
