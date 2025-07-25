@@ -61,11 +61,8 @@
 
         <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#!">NASA Contract</a></li>
-            <li><a href="#!">Kenya Semiconductor Water Project</a></li>
-            <li><a href="#!">BEPZA Water Project – Bangladesh?</a></li>
-            <li><a href="#!">Max Tapwater NGO Partnership</a></li>
-            <li><a href="#!">PFAS DOE Lab Initiative</a></li>
+            <li><a href="#!">SDG Alignment</a></li>
+            <li><a href="#!">Social Impact</a></li>
           </ul>
         </li>
 
