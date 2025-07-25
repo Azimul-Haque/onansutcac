@@ -85,7 +85,7 @@
                   <a href="service-details.html" class="stretched-link">
                     <h3>2016</h3>
                   </a>
-                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                  <p>Cactus Nano was founded in 2016 under Cactus Materials and became a separate company in 2023.</p>
                 </div>
               </div><!-- End Service Item -->
 
