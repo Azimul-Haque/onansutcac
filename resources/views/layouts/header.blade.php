@@ -11,11 +11,11 @@
       <ul>
         <li class="dropdown"><a href="#" class="{{ Request::is('about-us') || Request::is('about-us#our-story') || Request::is('about-us#vission-mission') || Request::is('about-us#team') || Request::is('about-us#our-story') ? 'active' : '' }}"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
-            <li><a href="{{ route('index.get-about-us') }}#our-story" class="{{ Request::is('about-us') ? 'active' : '' }}">Our Story</a></li>
-            <li><a href="{{ route('index.get-about-us') }}#vission-mission" class="{{ Request::is('about-us') ? 'active' : '' }}">Vision & Mission</a></li>
-            <li><a href="{{ route('index.get-about-us') }}#team" class="{{ Request::is('about-us') ? 'active' : '' }}">Leadership Team</a></li>
-            <li><a href="{{ route('index.get-why-work-with-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">Leadership Team</a></li>
+            <li><a href="{{ route('index.get-about-us') }}">About Us</a></li>
+            <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
+            <li><a href="{{ route('index.get-about-us') }}#vission-mission">Vision & Mission</a></li>
+            <li><a href="{{ route('index.get-about-us') }}#team">Leadership Team</a></li>
+            <li><a href="{{ route('index.get-why-work-with-us') }}">Leadership Team</a></li>
             <li><a href="#!">Why work with us</a></li>
             <li><a href="#!">Production Capacity</a></li>
             <li><a href="{{ route('index.regional-offices') }}" class="{{ Request::is('regional-offices') || Request::is('regional-offices/*') ? 'active' : '' }}">Global Presence</a></li>
