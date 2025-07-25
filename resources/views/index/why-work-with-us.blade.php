@@ -242,9 +242,7 @@
             <div class="col-12 col-md-12">
               <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence">
             </div>
-
         </div>
-        <img src="{{ asset('images/vision-mission.jpg') }}" class="img-fluid rounded-4 mt-4" alt="Vision & Mission Statements">
       </div>
 
       <style>
