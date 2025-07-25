@@ -72,6 +72,14 @@ class IndexController extends Controller
                     ->withTeams($teams);
     }
 
+    public function getWhyWWU ()
+    {
+        $teams = Team::orderBy('id', 'desc')->get();
+
+        return view('index.aboutus')
+                    ->withTeams($teams);
+    }
+
     public function termsAndConditions()
     {
         return view('index.termsandconditions');
