@@ -67,10 +67,6 @@
         </div>
 
         <style>
-            body {
-                font-family: 'Inter', sans-serif;
-                background-color: #ffffff; /* White background */
-            }
             .feature-box {
                 background-color: #fff;
                 border-radius: 0.75rem; /* Rounded corners */
