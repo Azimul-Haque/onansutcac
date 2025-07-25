@@ -95,7 +95,7 @@
                     <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
                   </div>
                   <a href="service-details.html" class="stretched-link">
-                    <h3>Eosle Commodi</h3>
+                    <h3>2019</h3>
                   </a>
                   <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
                 </div>
