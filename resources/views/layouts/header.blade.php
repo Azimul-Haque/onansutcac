@@ -61,8 +61,7 @@
 
         <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#!">SDG Alignment</a></li>
-            <li><a href="#!">Social Impact</a></li>
+            <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
           </ul>
         </li>
 
