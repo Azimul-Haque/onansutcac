@@ -39,6 +39,16 @@
           </ul>
         </li>
 
+        <li class="dropdown"><a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#!">Fouling & Biofouling Control</a></li>
+            <li><a href="#!">Corrosion Prevention</a></li>
+            <li><a href="#!">PFAS Destruction & Removal</a></li>
+            <li><a href="#!">Antimicrobial Protection</a></li>
+            <li><a href="#!">Customized Coating Solutions</a></li>
+          </ul>
+        </li>
+
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
         <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li>
         
