@@ -68,7 +68,7 @@
 
         <li class="dropdown"><a href="#"><span>Contact</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="{{ route('index.get-contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">Contact</a></li>
+            <li><a href="{{ route('index.get-contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">Get in Touch</a></li>
             <li><a href="{{ route('index.get-contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">Contact</a></li>
           </ul>
         </li>
