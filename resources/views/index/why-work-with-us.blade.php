@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title') About Us @endsection
+@section('title') Why work with us @endsection
 
 @section('third_party_stylesheets')
   
