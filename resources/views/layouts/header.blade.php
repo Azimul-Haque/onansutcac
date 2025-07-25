@@ -72,7 +72,7 @@
             <li><a href="{{ route('index.get-contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">Global Offices</a></li>
             <li><a href="{{ route('index.news') }}" class="{{ Request::is('news') || Request::is('news/*') ? 'active' : '' }}">Media & Press</a></li>
             <li><a href="{{ route('index.events') }}" class="{{ Request::is('events') || Request::is('events/*') ? 'active' : '' }}">Events</a></li>
-            <li><a href="{{ route('index.get-contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">Request a Proposal</a></li>
+            <li><a href="#!">Request a Proposal</a></li>
           </ul>
         </li>
 
