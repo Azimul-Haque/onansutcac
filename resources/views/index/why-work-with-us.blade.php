@@ -30,7 +30,7 @@
         <p>Why Work With Us</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="row gy-4" data-aos="fade-up">
           <!-- Box 1: Slow, controlled release -->
