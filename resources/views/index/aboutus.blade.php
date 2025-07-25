@@ -225,7 +225,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
+        <h2>Leadership Team</h2>
         <p>CHECK OUR TEAM</p>
         <h5>Meet the minds shaping the nanoscale future — visionaries, engineers, and innovators pushing the boundaries of what's possible.</h5>
       </div><!-- End Section Title -->
