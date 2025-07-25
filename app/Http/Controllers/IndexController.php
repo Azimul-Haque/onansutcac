@@ -75,7 +75,7 @@ class IndexController extends Controller
     public function getWhyWWU()
     {
         
-        return view('index.aboutus');
+        return view('index.why-work-with-us');
     }
 
     public function termsAndConditions()
