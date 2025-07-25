@@ -26,10 +26,6 @@
             <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
             <li><a href="{{ route('index.success-stories') }}" class="{{ Request::is('success-stories') ? 'active' : '' }}">Our Story</a></li>
             <li><a href="#!">Vision & Mission</a></li>
-            <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">Leadership Team</a></li>
-            <li><a href="#!">Why work with us</a></li>
-            <li><a href="#!">Production Capacity</a></li>
-            <li><a href="{{ route('index.regional-offices') }}" class="{{ Request::is('regional-offices') || Request::is('regional-offices/*') ? 'active' : '' }}">Global Presence</a></li>
           </ul>
         </li>
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
