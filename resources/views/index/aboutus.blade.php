@@ -67,93 +67,193 @@
 
     <section id="our-story" class="services section light-background">
 
-          <!-- Section Title -->
-          <div class="container section-title aos-init" data-aos="fade-up">
-            <h2>Our Story</h2>
-            <p>The Story Behind CactusNano</p>
-          </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title aos-init" data-aos="fade-up">
+        <h2>Our Story</h2>
+        <p>The Story Behind CactusNano</p>
+      </div><!-- End Section Title -->
 
-          <div class="container">
-            <h4 data-aos="fade-up">Founded in 2016 as part of Cactus Materials, Cactus Nano officially became a separate entity in 2023. It gained global recognition through projects with NASA, USTDA, and PFAS research supported by the US Department of Energy.</h4>
-            <div class="row gy-4">
+      <div class="container">
+        <h4 data-aos="fade-up">Founded in 2016 as part of Cactus Materials, Cactus Nano officially became a separate entity in 2023. It gained global recognition through projects with NASA, USTDA, and PFAS research supported by the US Department of Energy.</h4>
+        <div class="row gy-4">
 
-              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>2016</h3>
-                  </a>
-                  <p>CactusNano was founded in 2016 under Cactus Materials and became a separate company in 2023.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>2019</h3>
-                  </a>
-                  <p>Cactus Antimicrobial, a Delaware corp., began in R&D stealth mode, developing cutting-edge antimicrobial technologies.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-chat-text" style="color: #20c997;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>2021</h3>
-                  </a>
-                  <p>NASA awarded the company a multi-million-dollar contract for next-gen antimicrobial materials, a major innovation milestone.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>2023</h3>
-                  </a>
-                  <p>Cactus Antimicrobial, Inc. spun off from Cactus Materials, Inc. to independently focus on antimicrobial solutions.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-globe" style="color: #6610f2;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>2024–2025</h3>
-                  </a>
-                  <p>Operating under the DBA (Doing Business As) name "Cactus Nano", the company took strategic steps to expand its operations.</p>
-                </div>
-              </div><!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="600">
-                <div class="service-item-rifat position-relative">
-                  <div class="icon">
-                    <i class="bi bi-clock" style="color: #f3268c;"></i>
-                  </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>Key initiatives:</h3>
-                  </a>
-                  <p>Expanded operations with in-house CoreSil™ manufacturing, increased production, global outreach, and deeper customer & regulatory engagement.</p>
-                </div>
-              </div><!-- End Service Item -->
-
+          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item-rifat position-relative">
+              <div class="icon">
+                <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
+              </div>
+              <a href="#!" class="stretched-link">
+                <h3>2016</h3>
+              </a>
+              <p>CactusNano was founded in 2016 under Cactus Materials and became a separate company in 2023.</p>
             </div>
+          </div><!-- End Service Item -->
 
-          </div>
+          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item-rifat position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
+              </div>
+              <a href="#!" class="stretched-link">
+                <h3>2019</h3>
+              </a>
+              <p>Cactus Antimicrobial, a Delaware corp., began in R&D stealth mode, developing cutting-edge antimicrobial technologies.</p>
+            </div>
+          </div><!-- End Service Item -->
 
-        </section>
+          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item-rifat position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-text" style="color: #20c997;"></i>
+              </div>
+              <a href="#!" class="stretched-link">
+                <h3>2021</h3>
+              </a>
+              <p>NASA awarded the company a multi-million-dollar contract for next-gen antimicrobial materials, a major innovation milestone.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item-rifat position-relative">
+              <div class="icon">
+                <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
+              </div>
+              <a href="#!" class="stretched-link">
+                <h3>2023</h3>
+              </a>
+              <p>Cactus Antimicrobial, Inc. spun off from Cactus Materials, Inc. to independently focus on antimicrobial solutions.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item-rifat position-relative">
+              <div class="icon">
+                <i class="bi bi-globe" style="color: #6610f2;"></i>
+              </div>
+              <a href="#!" class="stretched-link">
+                <h3>2024–2025</h3>
+              </a>
+              <p>Operating under the DBA (Doing Business As) name "Cactus Nano", the company took strategic steps to expand its operations.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item-rifat position-relative">
+              <div class="icon">
+                <i class="bi bi-clock" style="color: #f3268c;"></i>
+              </div>
+              <a href="#!" class="stretched-link">
+                <h3>Key initiatives:</h3>
+              </a>
+              <p>Expanded operations with in-house CoreSil™ manufacturing, increased production, global outreach, and deeper customer & regulatory engagement.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="stats" class="stats section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Stats</h2>
+        <p>A Legacy of Progress</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Years of Hard Work</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Engineers & Scientists</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-headset color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Nationalities</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Hard Workers</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Industry Awards</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Global Offices</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-headset color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Nationalities</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Hard Workers</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
 
     <!-- Team Section -->
     <section id="team" class="team section light-background">
