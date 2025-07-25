@@ -82,7 +82,7 @@
                   <div class="icon">
                     <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
                   </div>
-                  <a href="service-details.html" class="stretched-link">
+                  <a href="#!" class="stretched-link">
                     <h3>2016</h3>
                   </a>
                   <p>CactusNano was founded in 2016 under Cactus Materials and became a separate company in 2023.</p>
@@ -94,7 +94,7 @@
                   <div class="icon">
                     <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
                   </div>
-                  <a href="service-details.html" class="stretched-link">
+                  <a href="#!" class="stretched-link">
                     <h3>2023</h3>
                   </a>
                   <p>NASA awarded the company a multi-million-dollar contract for next-gen antimicrobial materials, a major innovation milestone.</p>
@@ -106,7 +106,7 @@
                   <div class="icon">
                     <i class="bi bi-chat-text" style="color: #20c997;"></i>
                   </div>
-                  <a href="service-details.html" class="stretched-link">
+                  <a href="#!" class="stretched-link">
                     <h3>Ledo Markt</h3>
                   </a>
                   <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
@@ -118,7 +118,7 @@
                   <div class="icon">
                     <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
                   </div>
-                  <a href="service-details.html" class="stretched-link">
+                  <a href="#!" class="stretched-link">
                     <h3>Asperiores Commodit</h3>
                   </a>
                   <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
@@ -130,7 +130,7 @@
                   <div class="icon">
                     <i class="bi bi-globe" style="color: #6610f2;"></i>
                   </div>
-                  <a href="service-details.html" class="stretched-link">
+                  <a href="#!" class="stretched-link">
                     <h3>Velit Doloremque</h3>
                   </a>
                   <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
@@ -142,7 +142,7 @@
                   <div class="icon">
                     <i class="bi bi-clock" style="color: #f3268c;"></i>
                   </div>
-                  <a href="service-details.html" class="stretched-link">
+                  <a href="#!" class="stretched-link">
                     <h3>Dolori Architecto</h3>
                   </a>
                   <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
