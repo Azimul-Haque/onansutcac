@@ -97,7 +97,7 @@
                   <a href="service-details.html" class="stretched-link">
                     <h3>2019</h3>
                   </a>
-                  <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                  <p>The company received a prestigious multi-million-dollar contract from NASA to develop next-generation antimicrobial materials—marking a significant milestone in its innovation journey.</p>
                 </div>
               </div><!-- End Service Item -->
 
