@@ -9,8 +9,6 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-
-        {{-- <li><a href="#hero" class="active">Home</a></li> --}}
         <li class="dropdown"><a href="#"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">USA</a></li>
