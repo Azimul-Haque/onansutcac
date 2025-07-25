@@ -109,7 +109,7 @@
                   <a href="#!" class="stretched-link">
                     <h3>2023</h3>
                   </a>
-                  <p>Cactus Antimicrobial, Inc. spun off from Cactus Materials, Inc. (a semiconductor chip manufacturer) to independently focus on antimicrobial solutions.</p>
+                  <p>Cactus Antimicrobial spun off from Cactus Materials (a semiconductor chip manufacturer) to independently focus on antimicrobial solutions.</p>
                 </div>
               </div><!-- End Service Item -->
 
