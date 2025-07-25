@@ -17,7 +17,7 @@
             <li><a href="{{ route('index.get-about-us') }}#team">Leadership Team</a></li>
             <li><a href="{{ route('index.get-why-work-with-us') }}">Why work with us</a></li>
             <li><a href="{{ route('index.get-why-work-with-us') }}#product-capacity">Production Capacity</a></li>
-            <li><a href="{{ route('index.regional-offices') }}" class="{{ Request::is('regional-offices') || Request::is('regional-offices/*') ? 'active' : '' }}">Global Presence</a></li>
+            <li><a href="{{ route('index.get-why-work-with-us') }}#product-capacity">Global Presence</a></li>
           </ul>
         </li>
 
