@@ -169,7 +169,7 @@
             <div class="feature-box blue">
               <i class="bi bi-patch-check"></i>
               <h4>Corporate Office</h4>
-              <p style="margin-bottom: 20px;">221B Baker Street, London, NW1 6XE, UK</p>
+              <p style="margin-bottom: 20px;">Kenya Offcie: ???</p>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
