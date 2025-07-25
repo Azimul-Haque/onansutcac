@@ -30,9 +30,9 @@
         <p>Why Work With Us</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4">
+        <div class="row gy-4" data-aos="fade-up">
           <!-- Box 1: Slow, controlled release -->
           <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
               <div class="feature-box">
