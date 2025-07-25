@@ -30,9 +30,6 @@
         <p>Discover the Difference<br></p>
       </div><!-- End Section Title -->
 
-      {{-- <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
-      </div> --}}
       <div class="container">
 
         <div class="row gy-4">
