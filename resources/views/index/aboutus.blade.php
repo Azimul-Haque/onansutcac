@@ -159,7 +159,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Stats</h2>
+        <h2>Vision & Mission Statements</h2>
         <p>A Legacy of Progress</p>
       </div><!-- End Section Title -->
 
