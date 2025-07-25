@@ -46,7 +46,7 @@
             <div class="content ps-0 ps-lg-5">
               <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style="font-size:19px;line-height:107%;">Cactus Nano <sup>TM</sup></span></strong><span style="font-size:19px;line-height:107%;">, a spin-off from <strong>Cactus Materials, Inc.</strong> (a US-based semiconductor and advanced materials company), focuses on innovative products like <strong>CoreSil&trade; Membrane, Suspension, and Powder</strong> for textile, water, medical, and space industries. As a research-driven firm, Cactus collaborates with academia and national agencies, including <strong>NASA</strong> and <strong>Arizona State University</strong>, to develop advanced materials&mdash;particularly its <strong>antimicrobial technology</strong>, the core of its materials division. CoreSil&trade; RO membranes outperform conventional systems in wastewater, surface water, and seawater treatment. Cactus also partners with top US firms to provide integrated water treatment solutions.</span></p>
               <p class="fst-italic">
-                Our advanced nano-devices, semiconductors, and power technologies power the innovations of tomorrow — from clean energy to smart electronics.
+                Cactus Nano™, a spin-off of Cactus Materials, develops advanced antimicrobial materials like CoreSil™ for diverse industries, collaborating with NASA, ASU, and top US firms to deliver cutting-edge water treatment solutions.
               </p>
               <ul>
                 <li><i class="bi bi-check-circle-fill"></i> <span>Engineering at the Atomic Scale</span></li>
