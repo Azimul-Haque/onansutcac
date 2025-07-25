@@ -28,6 +28,15 @@
             <li><a href="#!">EndPFAS™ Solution</a></li>
           </ul>
         </li>
+
+        <li class="dropdown"><a href="#"><span>Solution Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#!">CoreSil™ Nanomaterials</a></li>
+            <li><a href="#!">Cera2D™ Corrosion Inhibitor</a></li>
+            <li><a href="#!">EndPFAS™ Solution</a></li>
+          </ul>
+        </li>
+        
         <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') || Request::is('products/*') ? 'active' : '' }}">Products</a></li>
         <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li>
         
