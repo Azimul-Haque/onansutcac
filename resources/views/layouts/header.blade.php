@@ -66,7 +66,7 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><span>Contact</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#!">SDG Alignment</a></li>
             <li><a href="#!">Social Impact</a></li>
@@ -83,7 +83,7 @@
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
 
-    <a class="cta-btn" href="{{ route('index.get-contact') }}">Contact</a>
+    {{-- <a class="cta-btn" href="{{ route('index.get-contact') }}">Contact</a> --}}
 
   </div>
 </header>
