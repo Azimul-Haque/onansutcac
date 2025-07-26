@@ -753,12 +753,16 @@ class DashboardController extends Controller
         }
 
         $imageName = null;
+        if ($request->hasFile('image')) {
+            $imageName = time() . '.' . $request->file('image')->extension();
+            $request->file('image')->storeAs('public/images/success-stories', $imageName);
+        }
         if($request->hasFile('image')) {
             $image    = $request->file('image');
-            $filename = Str::random(5) . time() .'.' . "webp";
-            $location = public_path('images/success-stories/'. $filename);
+            $imageName = Str::random(5) . time() .'.' . "webp";
+            $location = public_path('images/success-stories/'. $imageName);
             Image::make($image)->fit(711, 400)->save($location);
-            $event->image = $filename;
+            $event->image = $imageName;
         }
 
         $fileName = null;
