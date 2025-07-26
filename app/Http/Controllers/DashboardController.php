@@ -752,7 +752,7 @@ class DashboardController extends Controller
             $finalType = $validatedData['custom_type'];
         }
 
-        $successstory = new successstory;
+        $successstory = new Successstory;
         $successstory->title = $request->title;
         $successstory->type = $request->type;
         if($request->text) {
