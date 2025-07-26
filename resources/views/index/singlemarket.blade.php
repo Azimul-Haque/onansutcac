@@ -113,7 +113,7 @@
               <div class="tab-content w-100" id="v-pills-tabContent">
                 @foreach($marketsforfooter as $key => $market)
                 <div class="tab-pane fade show {{ $key == 0 ? 'active' : '' }}" id="v-pills-{{ $market->id }}" role="tabpanel" aria-labelledby="v-pills-tab-{{ $market->id }}" tabindex="0">
-                  <span class="badge bg-primary position-absolute top-0 end-0 m-2" style="font-size: 0.75em; padding: 0.3em 0.75em; border-radius: 0.4rem;">
+                  <span class="badge bg-primary position-absolute top-0 end-0 m-2" style="font-size: 0.85em; padding: 0.3em 0.75em; border-radius: 0.5rem;">
                       {{ ind_type($market->type) ?? 'Product Type' }} <!-- Replace $product->type with your actual variable -->
                   </span>
                   <p>{{ Str::limit(strip_tags($market->text), 300) }}</p>
