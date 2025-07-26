@@ -105,7 +105,7 @@
             <div class="col-md-4">
               <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 @foreach($marketsforfooter as $market)
-                  <a class="nav-link custom-nav-link active" id="v-pills-tab-{{ $market->id }}" data-bs-toggle="pill" data-bs-target="#v-pills-{{ $market->id }}" type="button" role="tab" aria-controls="v-pills-{{ $market->id }}" aria-selected="true">Market - 1</a>
+                  <a class="nav-link custom-nav-link active" id="v-pills-tab-{{ $market->id }}" data-bs-toggle="pill" data-bs-target="#v-pills-{{ $market->id }}" type="button" role="tab" aria-controls="v-pills-{{ $market->id }}" aria-selected="true">{{ $market->title }}</a>
                 @endforeach
                 
                 <a class="nav-link custom-nav-link" id="v-pills-bio-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bio" type="button" role="tab" aria-controls="v-pills-bio" aria-selected="false">Market - 2</a>
