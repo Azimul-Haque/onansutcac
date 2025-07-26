@@ -10,7 +10,7 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>Products</h1>
+        <h1>Products/Technologies</h1>
         <p>Discover Solutions Designed for You</p>
         <nav class="breadcrumbs">
           <ol>
