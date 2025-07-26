@@ -226,9 +226,6 @@
                         <option value="1">Product</option>
                         <option value="2">Technology</option>
                     </select>
-                    @error('type')
-                        <span class="text-danger">{{ $message }}</span>
-                    @enderror
                 </div>
 
                 <div class="input-group mb-3">
