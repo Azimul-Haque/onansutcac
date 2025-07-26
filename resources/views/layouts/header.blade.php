@@ -32,6 +32,9 @@
         <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             @foreach($productsforfooter as $product)
+              @if($product->type == 1)
+
+              @endif
               <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
             @endforeach
             <li><a href="#!">Fouling & Biofouling Control</a></li>
