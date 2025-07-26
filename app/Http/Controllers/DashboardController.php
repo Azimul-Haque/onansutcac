@@ -14,6 +14,7 @@ use App\Team;
 use App\News;
 use App\Newscategory;
 use App\Event;
+use App\Successstory;
 use App\Faq;
 
 use Carbon\Carbon;
