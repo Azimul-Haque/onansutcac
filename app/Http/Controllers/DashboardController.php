@@ -269,6 +269,7 @@ class DashboardController extends Controller
     public function storeMarket(Request $request)
     {
         $this->validate($request, array(
+            'type' => 'required',
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:markets,slug',
             'text'  => 'required',
@@ -276,6 +277,7 @@ class DashboardController extends Controller
         ));
 
         $market = new Market;
+        $market->type = $request->type;
         $market->title = $request->title;
         $market->slug = Str::slug($request->slug);
         $market->text = Purifier::clean($request->text, 'youtube');
