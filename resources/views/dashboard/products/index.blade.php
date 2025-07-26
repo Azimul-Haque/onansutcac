@@ -172,7 +172,7 @@
                                 </button>
                               </div>
                               <div class="modal-body">
-                                Are you sure you want to delete this product?<br/>
+                                Are you sure you want to delete this Product/Technology?<br/>
                                 <center>
                                     <big><b>{{ $product->title }}</b></big><br/>
                                     <small>Slug: {{ $product->slug }}</small>
