@@ -731,7 +731,7 @@ class DashboardController extends Controller
 
         $allSuccessStories = $query->latest()->paginate(10);
 
-        return view('dashboard.success_stories.index', compact('allSuccessStories'));
+        return view('dashboard.success-stories.index', compact('allSuccessStories'));
     }
 
     public function storeSuccessStory(Request $request)
@@ -761,7 +761,7 @@ class DashboardController extends Controller
         $fileName = null;
         if ($request->hasFile('file')) {
             $fileName = time() . '_file.' . $request->file('file')->extension();
-            $request->file('file')->storeAs('public/files/success_stories', $fileName);
+            $request->file('file')->storeAs('public/files/success-stories', $fileName);
         }
 
         Successstory::create([
@@ -772,7 +772,7 @@ class DashboardController extends Controller
             'file' => $fileName,
         ]);
 
-        return redirect()->route('dashboard.success_stories')->with('success', 'Success story added successfully!');
+        return redirect()->route('dashboard.success-stories')->with('success', 'Success story added successfully!');
     }
 
     public function updateSuccessStory(Request $request, Successstory $successStory)
@@ -814,7 +814,7 @@ class DashboardController extends Controller
                 Storage::delete('public/files/success-stories/' . $successStory->file);
             }
             $fileName = time() . '_file.' . $request->file('file')->extension();
-            $request->file('file')->storeAs('public/files/success_stories', $fileName);
+            $request->file('file')->storeAs('public/files/success-stories', $fileName);
             $successStory->file = $fileName;
         }
 
@@ -827,7 +827,7 @@ class DashboardController extends Controller
             'file' => $successStory->file,   // Ensure file is updated if new one was uploaded
         ]);
 
-        return redirect()->route('dashboard.success_stories')->with('success', 'Success story updated successfully!');
+        return redirect()->route('dashboard.success-stories')->with('success', 'Success story updated successfully!');
     }
 
     public function deleteSuccessStory(Successstory $successStory)
@@ -842,7 +842,7 @@ class DashboardController extends Controller
 
         $successStory->delete();
 
-        return redirect()->route('dashboard.success_stories')->with('success', 'Success story deleted successfully!');
+        return redirect()->route('dashboard.success-stories')->with('success', 'Success story deleted successfully!');
     }
 
 
