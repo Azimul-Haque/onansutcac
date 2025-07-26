@@ -264,7 +264,9 @@ class DashboardController extends Controller
             $markets = Market::orderBy('id', 'desc')->paginate(10);
         }
 
-        return view('dashboard.markets.index')->withMarkets($markets);
+        return view('dashboard.markets.index')
+                            ->withMarkets($markets)
+                            ->withTotalmarkets($totalmarkets);
     }
 
     public function storeMarket(Request $request)
