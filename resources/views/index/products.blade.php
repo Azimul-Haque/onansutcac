@@ -43,13 +43,13 @@
               @endphp
             <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="{{ $delay }}">
               <div class="service-item">
-                <div class="img">
+                {{-- <div class="img">
                   @if($product->image)
                       <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid">
                   @else
                       <img src="{{ asset('vendor/dewi/assets/img/services-1.jpg') }}" class="img-fluid" alt="">
                   @endif
-                </div>
+                </div> --}}
                 <div class="img position-relative"> <!-- Added position-relative here -->
                     @if($product->image)
                         <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid">
