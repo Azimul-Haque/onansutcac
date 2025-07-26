@@ -77,8 +77,7 @@
         @else
           <img src="https://placehold.co/100x100/8BE78B/ffffff?text=M" alt="N/A" class="flex-shrink-0">
         @endif
-        <h4><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a><small class="text-black-50">({{ prod_type($        <h4><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a><small class="text-black-50">({{ prod_type($product->type) }})</small></h4>
-->type) }})</small></h4>
+        <h4><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a><small class="text-black-50">({{ ind_type($market->type) }})</small></h4>
         {{-- <time datetime="2020-01-01">Jan 1, 2020</time> --}}
       </div><!-- End recent post item-->
     @endforeach
