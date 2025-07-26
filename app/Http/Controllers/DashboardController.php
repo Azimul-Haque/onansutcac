@@ -600,7 +600,7 @@ class DashboardController extends Controller
         if($request->search) {
             $allEvents = Event::where('title', 'LIKE', "%$request->search%")
                              ->orWhere('type', 'LIKE', "%$request->search%")
-                             ->orWhere('slug', 'LIKE', "%$request->search%")
+                             ->orWhere('reg_url', 'LIKE', "%$request->search%")
                              ->orWhere('text', 'LIKE', "%$request->search%")
                              ->orderBy('id', 'desc')
                              ->paginate(10);
