@@ -55,7 +55,7 @@
                   </div>
                   <div class="portfolio2-content">
                     <span class="category">{{ $event->type }}</span>
-                    <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>AI & Sustainable Water Futures Summit</h3></a>
+                    <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>{{ $event->title }}</h3></a>
                     <p class="text-muted fst-italic mb-1">
                       <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
                     </p>
