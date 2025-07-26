@@ -497,7 +497,6 @@ class DashboardController extends Controller
 
         $news->save();
 
-        Cache::forget('news_for_footer');
         Session::flash('success', 'News created successfully!');
         return redirect()->route('dashboard.news');
     }
@@ -541,7 +540,6 @@ class DashboardController extends Controller
 
         $news->save();
 
-        Cache::forget('news_for_footer');
         Session::flash('success', 'News updated successfully!');
         return redirect()->route('dashboard.news');
     }
@@ -556,7 +554,6 @@ class DashboardController extends Controller
 
         $news->delete();
 
-        Cache::forget('news_for_footer');
         Session::flash('success', 'News deleted successfully!');
         return redirect()->route('dashboard.news');
     }
@@ -653,7 +650,6 @@ class DashboardController extends Controller
 
         $event->save();
 
-        Cache::forget('news_for_footer');
         Session::flash('success', 'News created successfully!');
         return redirect()->route('dashboard.news');
 
