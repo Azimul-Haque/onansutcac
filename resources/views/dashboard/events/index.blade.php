@@ -40,7 +40,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($events as $key => $event)
+            @foreach ($allEvents as $key => $event)
                 <tr>
                     <td>{{ $key + 1 }}</td>
                     <td>{{ $event->title }}</td>
