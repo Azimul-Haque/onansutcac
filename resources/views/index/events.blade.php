@@ -90,7 +90,7 @@
                       </div>
                     </div>
                     <div class="modal-footer border-0 pt-0">
-                      <a href="#" class="btn btn-primary shadow-sm">Register Now</a>
+                      <a href="{{ $event->address }}" class="btn btn-primary shadow-sm">Register Now</a>
                       <button type="button" class="btn btn-outline-secondary shadow-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                   </div>
