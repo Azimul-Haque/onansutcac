@@ -17,8 +17,7 @@ class CreateEventsTable extends Migration
             $table->id();                              
             $table->string('title');         
             $table->string('type');             
-            $table->text('reg_url')->nullable();         
-            $table->text('newslink')->nullable();                  
+            $table->text('reg_url')->nullable();                 
             $table->longText('text')->nullable();      
             $table->string('image')->nullable();           
             $table->timestamps();
