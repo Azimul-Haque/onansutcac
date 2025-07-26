@@ -185,6 +185,16 @@
       return $text;
   }
 
+  function ind_type($type) {
+      $text = '';
+      if ($type == 1) {
+        $text = "Product";
+      } elseif($type == 2) {
+        $text = "Technology";
+      }
+      return $text;
+  }
+
   function local_currency($num) {
     $explrestunits = "" ;
     if(strlen($num)>3) {
