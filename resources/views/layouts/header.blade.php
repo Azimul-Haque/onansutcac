@@ -54,7 +54,7 @@
         <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             @foreach($marketsforfooter as $market)
-              @if($market->type == 1)
+              @if($market->type == 2)
                  <li><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></li>
               @endif
             @endforeach
