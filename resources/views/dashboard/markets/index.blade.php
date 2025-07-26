@@ -93,6 +93,15 @@
                                             @csrf
                                             @method('POST')
 
+                                            <div class="form-group mb-3">
+                                            <label for="">Select Type</label>
+                                            <select name="type" id="type" class="form-control" required>
+                                                <option selected disabled>Select Type</option>
+                                                <option value="1" @if($product->type == 1) selected @endif>Product</option>
+                                                <option value="2" @if($product->type == 2) selected @endif>Technology</option>
+                                            </select>
+                                        </div>
+
                                             <div class="input-group mb-3">
                                                 <input type="text"
                                                        name="title"
