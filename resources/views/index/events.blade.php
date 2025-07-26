@@ -45,7 +45,7 @@
               <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Webinar" style="position: absolute; left: 0px; top: 0px;">
                 <div class="portfolio2-card">
                   <div class="portfolio2-image">
-                    <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid" alt="AI & Sustainable Water Futures Summit" loading="lazy">
+                    <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid" alt="{{ $event->title }}" loading="lazy">
                     <div class="portfolio2-overlay">
                       <div class="portfolio2-actions">
                         <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-eye"></i></a>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="modal-body pt-0">
                       <div class="text-center mb-4">
-                        <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid rounded shadow-sm mb-4" alt="AI & Sustainable Water Futures Summit" style="max-height: 350px; object-fit: cover; width: 100%;">
+                        <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ $event->title }}" style="max-height: 350px; object-fit: cover; width: 100%;">
                         <h3 class="modal-title fw-bold mb-2" id="eventModalLabel">AI & Sustainable Water Futures Summit</h3>
                         <p class="text-muted fst-italic mb-1">
                           <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
