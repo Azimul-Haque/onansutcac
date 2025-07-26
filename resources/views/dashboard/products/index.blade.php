@@ -30,7 +30,7 @@
             <div class="card-tools">
               <form class="form-inline form-group-lg" action="{{ route('dashboard.products') }}" method="GET">
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-sm" placeholder="Search products" id="search-param" name="search" value="{{ request('search') }}" required>
+                  <input type="text" class="form-control form-control-sm" placeholder="Search products/technologies" id="search-param" name="search" value="{{ request('search') }}" required>
                 </div>
                 <button type="submit" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                   <i class="fas fa-search"></i> Search
