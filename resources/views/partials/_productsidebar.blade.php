@@ -58,7 +58,7 @@
         <img src="https://placehold.co/100x100/40b0e0/ffffff?text=P" alt="N/A" class="flex-shrink-0">
       @endif
       <div>
-        <h4><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }} ASD ASd345 345 34 34 5345345 5345 3453455 534</a></h4>
+        <h4><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }} <small></small></a></h4>
         {{-- <time datetime="2020-01-01">{{ date('F d, Y', strtotime($product->created_at)) }}</time> --}}
       </div>
     </div><!-- End recent post item-->
