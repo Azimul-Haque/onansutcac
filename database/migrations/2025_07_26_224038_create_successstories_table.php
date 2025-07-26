@@ -15,6 +15,14 @@ class CreateSuccessstoriesTable extends Migration
     {
         Schema::create('successstories', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('type');
+            $table->date('event_date');
+            $table->string('from_to');
+            $table->string('address');
+            $table->text('reg_url')->nullable();
+            $table->longText('text')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
