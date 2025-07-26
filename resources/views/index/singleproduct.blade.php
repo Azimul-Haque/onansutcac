@@ -20,11 +20,11 @@
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
         <h1>{{ $product->title }}</h1>
-        <p>Product</p>
+        <p>{{ prod_type($product->type) }}</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">Product Details</li>
+            <li class="current">{{ prod_type($product->type) }} Details</li>
           </ol>
         </nav>
       </div>
