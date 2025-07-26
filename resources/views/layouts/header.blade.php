@@ -43,16 +43,11 @@
 
         <li class="dropdown"><a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            @foreach($productsforfooter as $product)
-              @if($product->type == 2)
-                 <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
+            @foreach($marketsforfooter as $market)
+              @if($market->type == 2)
+                 <li><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></li>
               @endif
             @endforeach
-            <li><a href="#!">Semiconductor & Microelectronics</a></li>
-            <li><a href="#!">Data Centers</a></li>
-            <li><a href="#!">Desalination & Wastewater</a></li>
-            <li><a href="#!">Textile</a></li>
-            <li><a href="#!">Farms & Dairy</a></li>
           </ul>
         </li>
 
