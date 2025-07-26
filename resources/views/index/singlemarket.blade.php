@@ -122,6 +122,82 @@
           </div>
         </div>
       </div>
+
+      <style>
+        /* --- Custom CSS for the Widget --- */
+
+        .relevant-technologies-widget {
+          background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+          backdrop-filter: blur(10px); /* Frosted glass effect */
+          border-radius: 15px; /* Rounded corners for the widget */
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+          padding: 30px; /* Internal padding */
+          min-height: 400px; /* Ensure a decent height for the widget */
+          display: flex; /* Use flexbox to center content vertically if needed */
+          align-items: center; /* Vertically center content */
+        }
+
+        /* Styling for the left navigation links */
+        .custom-nav-link {
+          color: #6a1aed; /* Your desired text color for inactive links */
+          font-weight: 500;
+          padding: 10px 20px;
+          margin-bottom: 8px; /* Space between links */
+          border-radius: 0; /* Remove default pill rounding */
+          transition: all 0.3s ease; /* Smooth transition for hover/active */
+          position: relative; /* For the active line */
+          background-color: transparent; /* Ensure no default grey background */
+        }
+
+        .custom-nav-link:hover {
+          color: #4a00af; /* Darker hover color */
+          background-color: rgba(255, 255, 255, 0.3); /* Slightly brighter hover background */
+        }
+
+        .custom-nav-link.active {
+          color: #000; /* Text color for active link */
+          font-weight: 600;
+          background-color: transparent; /* No background fill, just the border */
+          position: relative; /* For the line */
+        }
+
+        .custom-nav-link.active::before {
+          content: '';
+          position: absolute;
+          left: 0; /* Align to the left edge */
+          top: 50%;
+          transform: translateY(-50%);
+          width: 5px; /* Thickness of the active line */
+          height: 80%; /* Height of the active line */
+          background: linear-gradient(to bottom, #8a2be2, #4a00af); /* Gradient for the active line */
+          border-radius: 2px; /* Slightly rounded ends for the line */
+        }
+
+        /* Styling for the Discover More button */
+        .discover-more-btn {
+          background: linear-gradient(to right, #8a2be2, #4a00af); /* Your desired gradient */
+          border: none;
+          color: white;
+          padding: 10px 25px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          font-weight: bold;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .discover-more-btn:hover {
+          transform: translateY(-2px); /* Slight lift on hover */
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          color: white; /* Ensure text color remains white on hover */
+        }
+
+        /* Adjustments for text in content area */
+        .tab-content p {
+          color: #333; /* Darker text for readability */
+          line-height: 1.8;
+        }
+      </style>
+      
     </section>
 
     <style>
