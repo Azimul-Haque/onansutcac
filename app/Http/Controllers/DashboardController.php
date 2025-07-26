@@ -672,17 +672,40 @@ class DashboardController extends Controller
             'image'      => 'nullable|image|max:2048',
         ]);
 
-        $event->fill($request->except('image'));
-
-        if ($request->hasFile('image')) {
-            if ($event->image && Storage::disk('public')->exists($event->image)) {
-                Storage::disk('public')->delete($event->image);
-            }
-            $event->image = $request->file('image')->store('events', 'public');
+        $news = News::findOrFail($id);
+        $news->newscategory_id = $request->newscategory_id;
+        $news->title = $request->title;
+        $news->type = $request->type;
+        $news->slug = Str::slug($request->slug);
+        if($request->newslink) {
+            $news->newslink = $request->newslink;
+        }
+        if($request->text) {
+            $news->text = Purifier::clean($request->text, 'youtube');
         }
 
+
+        if($request->hasFile('image')) {
+            if ($news->image && file_exists(public_path('images/news/' . $news->image))) {
+                unlink(public_path('images/news/' . $news->image));
+            }
+
+            $image    = $request->file('image');
+            $filename = Str::random(5) . time() . '.' . "webp";
+            $location = public_path('images/news/' . $filename);
+            Image::make($image)->fit(711, 400)->save($location);
+            $news->image = $filename;
+        }
+
+        $news->save();
+
+        Session::flash('success', 'News created successfully!');
+        return redirect()->route('dashboard.news');
+
         $event->save();
-        return redirect()->back()->with('success', 'Event updated successfully.');
+        return redirect()->back()->with('success', 'Event created successfully.');
+
+
     }
 
     // Delete
