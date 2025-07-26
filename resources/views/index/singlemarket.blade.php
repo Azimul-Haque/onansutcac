@@ -117,7 +117,7 @@
                       {{ ind_type($market->type) ?? 'Product Type' }} <!-- Replace $product->type with your actual variable -->
                   </span>
                   <p>{{ Str::limit(strip_tags($market->text), 300) }}</p>
-                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
+                  <a href="{{ route('index.singlemarket', $market->slug) }}" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
                 </div>
                 @endforeach
               </div>
