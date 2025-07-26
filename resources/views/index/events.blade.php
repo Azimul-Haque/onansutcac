@@ -73,7 +73,7 @@
                     </div>
                     <div class="modal-body pt-0">
                       <div class="text-center mb-4">
-                        <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="img-fluid rounded shadow-sm mb-4" alt="AI & Sustainable Water Futures Summit" style="max-height: 350px; object-fit: cover; width: 100%;">
+                        <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid rounded shadow-sm mb-4" alt="AI & Sustainable Water Futures Summit" style="max-height: 350px; object-fit: cover; width: 100%;">
                         <h3 class="modal-title fw-bold mb-2" id="eventModalLabel">AI & Sustainable Water Futures Summit</h3>
                         <p class="text-muted fst-italic mb-1">
                           <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
