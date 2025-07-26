@@ -13,6 +13,7 @@ use App\Market;
 use App\Team;
 use App\News;
 use App\Newscategory;
+use App\Event;
 use App\Faq;
 
 use Carbon\Carbon;
@@ -596,6 +597,86 @@ class DashboardController extends Controller
         Session::flash('success', 'News category deleted successfully!');
         return redirect()->route('dashboard.newscategories');
     }
+
+    public function index()
+    {
+        $events = Event::latest()->get();
+        return view('admin.events.index', compact('events'));
+    }
+
+    // Store
+    public function store(Request $request)
+    {
+        $request->validate([
+            'title'      => 'required|string|max:191',
+            'type'       => 'nullable|string|max:100',
+            'event_date' => 'nullable|date',
+            'from_to'    => 'nullable|string|max:100',
+            'address'    => 'nullable|string|max:255',
+            'reg_url'    => 'nullable|url',
+            'text'       => 'nullable|string',
+            'image'      => 'nullable|image|max:2048',
+        ]);
+
+        $event = new Event($request->except('image'));
+
+        if ($request->hasFile('image')) {
+            $event->image = $request->file('image')->store('events', 'public');
+        }
+
+        $event->save();
+        return redirect()->back()->with('success', 'Event created successfully.');
+    }
+
+    // Edit (for modal)
+    public function edit($id)
+    {
+        $event = Event::findOrFail($id);
+        return response()->json($event);
+    }
+
+    // Update
+    public function update(Request $request, $id)
+    {
+        $event = Event::findOrFail($id);
+
+        $request->validate([
+            'title'      => 'required|string|max:191',
+            'type'       => 'nullable|string|max:100',
+            'event_date' => 'nullable|date',
+            'from_to'    => 'nullable|string|max:100',
+            'address'    => 'nullable|string|max:255',
+            'reg_url'    => 'nullable|url',
+            'text'       => 'nullable|string',
+            'image'      => 'nullable|image|max:2048',
+        ]);
+
+        $event->fill($request->except('image'));
+
+        if ($request->hasFile('image')) {
+            if ($event->image && Storage::disk('public')->exists($event->image)) {
+                Storage::disk('public')->delete($event->image);
+            }
+            $event->image = $request->file('image')->store('events', 'public');
+        }
+
+        $event->save();
+        return redirect()->back()->with('success', 'Event updated successfully.');
+    }
+
+    // Delete
+    public function destroy($id)
+    {
+        $event = Event::findOrFail($id);
+
+        if ($event->image && Storage::disk('public')->exists($event->image)) {
+            Storage::disk('public')->delete($event->image);
+        }
+
+        $event->delete();
+        return redirect()->back()->with('success', 'Event deleted successfully.');
+    }
+}
 
 
 
