@@ -759,11 +759,6 @@ class DashboardController extends Controller
             $event->text = Purifier::clean($request->text, 'youtube');
         }
 
-
-        $successstory->successstory_date = $request->successstory_date;
-        $successstory->from_to = $request->from_to;
-        $successstory->address = $request->address;
-
         $imageName = null;
         if($request->hasFile('image')) {
             $image    = $request->file('image');
