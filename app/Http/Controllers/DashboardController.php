@@ -670,15 +670,16 @@ class DashboardController extends Controller
         ]);
 
         $event = Event::findOrFail($id);
-        $news->newscategory_id = $request->newscategory_id;
-        $news->title = $request->title;
-        $news->type = $request->type;
-        $news->slug = Str::slug($request->slug);
-        if($request->newslink) {
-            $news->newslink = $request->newslink;
+        $event->title = $request->title;
+        $event->type = $request->type;
+        $event->event_date = $request->event_date;
+        $event->from_to = $request->from_to;
+        $event->address = $request->address;
+        if($request->reg_url) {
+            $event->reg_url = $request->reg_url;
         }
         if($request->text) {
-            $news->text = Purifier::clean($request->text, 'youtube');
+            $event->text = Purifier::clean($request->text, 'youtube');
         }
 
 
