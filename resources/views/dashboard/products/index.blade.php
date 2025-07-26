@@ -208,7 +208,7 @@
                 @csrf
 
                 <div class="form-group mb-3">
-                    <label for="">News Type</label>
+                    <label for="">Select Type</label>
                     <select name="type" id="newsType" class="form-control" required>
                         <option selected disabled>Select News Type</option>
                         <option value="1">News Article</option>
