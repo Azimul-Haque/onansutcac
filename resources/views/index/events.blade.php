@@ -79,7 +79,7 @@
                           <i class="bi bi-calendar-event me-2"></i> **{{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}** | {{ $event->from_to }}
                         </p>
                         <p class="text-muted fst-italic mb-0">
-                          <i class="bi bi-geo-alt me-2"></i> **{{ $event->from_to }}**
+                          <i class="bi bi-geo-alt me-2"></i> **{{ $event->address }}**
                         </p>
                       </div>
 
