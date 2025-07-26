@@ -62,7 +62,7 @@
                 {{-- Edit Modal --}}
                 <div class="modal fade" id="editModal{{ $event->id }}" tabindex="-1" role="dialog">
                     <div class="modal-dialog" role="document">
-                        <form action="{{ route('events.update', $event->id) }}" method="POST">
+                        <form action="{{ route('dashboard.events.update', $event->id) }}" method="POST">
                             @csrf
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -99,7 +99,7 @@
 <!-- Add Modal -->
 <div class="modal fade" id="addModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-        <form action="{{ route('events.store') }}" method="POST">
+        <form action="{{ route('dashboard.events.store') }}" method="POST">
             @csrf
             <div class="modal-content">
                 <div class="modal-header">
