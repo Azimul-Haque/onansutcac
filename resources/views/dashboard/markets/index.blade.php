@@ -107,7 +107,7 @@
                                                        name="title"
                                                        class="form-control"
                                                        value="{{ old('title', $market->title) }}" {{-- Changed variable to $market->title --}}
-                                                       placeholder="Market Title" required> {{-- Changed placeholder --}}
+                                                       placeholder="Industry/Market Title" required> {{-- Changed placeholder --}}
                                                 <div class="input-group-append">
                                                     <div class="input-group-text"><span class="fas fa-box"></span></div>
                                                 </div>
