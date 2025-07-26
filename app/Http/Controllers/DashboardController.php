@@ -731,7 +731,7 @@ class DashboardController extends Controller
 
         $allSuccessStories = $query->latest()->paginate(10);
 
-        return view('dashboard.success-stories.index', compact('allSuccessStories'));
+        return view('dashboard.successstories.index', compact('allSuccessStories'));
     }
 
     public function storeSuccessStory(Request $request)
