@@ -17,6 +17,7 @@ class CreateEventsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('type');
+            $table->date('event_date');
             $table->string('from_to');
             $table->string('address');
             $table->text('reg_url')->nullable();
