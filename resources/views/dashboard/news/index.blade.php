@@ -367,7 +367,7 @@
                 <div class="form-group mb-3">
                     <label for="">News Type</label>
                     <select name="type" id="newsType" class="form-control" required>
-                        <option selected disabled>Select News Type</option>
+                        <option selected disabled value="">Select News Type</option>
                         <option value="1">News Article</option>
                         <option value="2">Press Release</option>
                         <option value="3">External Links</option>
