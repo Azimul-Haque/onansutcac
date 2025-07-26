@@ -126,7 +126,7 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="marketTextEdit{{ $market->id }}">Market Description/Article</label> {{-- Changed label and for attribute --}}
+                                                <label for="marketTextEdit{{ $market->id }}">Industry/Project Description/Article</label> {{-- Changed label and for attribute --}}
                                                 <textarea id="marketTextEdit{{ $market->id }}" name="text" class="form-control summernote-editor" required>{{ old('text', $market->text) }}</textarea> {{-- Changed ID and variable --}}
                                                 @error('text')
                                                     <span class="text-danger">{{ $message }}</span>
@@ -134,7 +134,7 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="marketImageEdit{{ $market->id }}">Market Image: (16:9 should be ideal, max: 2MB)</label><br> {{-- Changed label and for attribute --}}
+                                                <label for="marketImageEdit{{ $market->id }}">Industry/Project Image: (16:9 should be ideal, max: 2MB)</label><br> {{-- Changed label and for attribute --}}
                                                 @if($market->image) {{-- Changed variable --}}
                                                     <img src="{{ asset('images/markets/' . $market->image) }}" alt="{{ $market->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;"> {{-- Changed image path and alt --}}
                                                     <br>
