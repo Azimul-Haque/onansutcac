@@ -21,7 +21,7 @@
 @endsection
 
 @section('content')
-    @section('page-header') Products/Technologies (Total {{ $productsCount ?? 0 }}) @endsection {{-- Use $productsCount from controller --}}
+    @section('page-header') Products/Technologies (Total {{ $totalproducts ?? 0 }}) @endsection {{-- Use $totalproducts from controller --}}
     <div class="container-fluid">
         <div class="card">
           <div class="card-header">
