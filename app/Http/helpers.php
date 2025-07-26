@@ -188,9 +188,9 @@
   function ind_type($type) {
       $text = '';
       if ($type == 1) {
-        $text = "Product";
+        $text = "Industry";
       } elseif($type == 2) {
-        $text = "Technology";
+        $text = "Project";
       }
       return $text;
   }
