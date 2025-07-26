@@ -155,6 +155,7 @@ class DashboardController extends Controller
 
     public function getProducts(Request $request)
     {
+        $totalproducts = Product::count();
         if($request->search) {
             $products = Product::where('title', 'LIKE', "%$request->search%")
                          ->orWhere('slug', 'LIKE', "%$request->search%")
@@ -254,6 +255,7 @@ class DashboardController extends Controller
     public function getMarkets(Request $request)
     {
         $totalmarkets = Market::count();
+
         if($request->search) {
             $markets = Market::where('title', 'LIKE', "%$request->search%")
                              ->orWhere('slug', 'LIKE', "%$request->search%")
