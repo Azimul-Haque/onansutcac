@@ -14,14 +14,14 @@ class CreateEventsTable extends Migration
     public function up()
     {
         Schema::create('news', function (Blueprint $table) {
-            $table->id();                              
-            $table->string('title');         
-            $table->string('type');             
-            $table->string('from_to');             
-            $table->string('address');             
-            $table->text('reg_url')->nullable();                 
-            $table->longText('text')->nullable();      
-            $table->string('image')->nullable();           
+            $table->id();
+            $table->string('title');
+            $table->string('type');
+            $table->string('from_to');
+            $table->string('address');
+            $table->text('reg_url')->nullable();
+            $table->longText('text')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
