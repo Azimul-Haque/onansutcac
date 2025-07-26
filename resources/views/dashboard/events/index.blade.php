@@ -169,7 +169,7 @@
                                                                    id="regUrlEdit{{ $event->id }}"
                                                                    class="form-control"
                                                                    value="{{ old('reg_url', $event->reg_url ?? '') }}"
-                                                                   placeholder="Registration URL (optional, e.g., https://example.com/register)">
+                                                                   placeholder="Registration URL (OPTIONAL, e.g., https://example.com/register)">
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="fas fa-external-link-alt"></span></div>
                                                             </div>
@@ -192,7 +192,7 @@
                                                             @endif
                                                             <div class="custom-file mt-2">
                                                                 <input type="file" class="custom-file-input" id="eventImageEdit{{ $event->id }}" name="image" accept="image/*">
-                                                                <label class="custom-file-label" for="eventImageEdit{{ $event->id }}">Choose new image (optional)</label>
+                                                                <label class="custom-file-label" for="eventImageEdit{{ $event->id }}">Choose new image (OPTIONAL)</label>
                                                             </div>
                                                             @error('image')
                                                                 <span class="text-danger">{{ $message }}</span>
@@ -330,7 +330,7 @@
                            id="regUrlAdd"
                            class="form-control"
                            value="{{ old('reg_url') }}"
-                           placeholder="Registration URL (optional, e.g., https://example.com/register)">
+                           placeholder="Registration URL (OPTIONAL, e.g., https://example.com/register)">
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-external-link-alt"></span></div>
                     </div>
