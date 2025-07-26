@@ -778,7 +778,7 @@ class DashboardController extends Controller
         if($request->hasFile('file')) {
             $newfile = $request->file('file');
             $fileName   = 'file_'.time() .'.' . $newfile->getClientOriginalExtension();
-            $location   = public_path('/files/');
+            $location   = public_path('files/success-stories');
             $newfile->move($location, $filename);
             $notice->attachment = $filename;
         }
