@@ -105,12 +105,14 @@
                                                         <!-- Event Type -->
                                                         <div class="form-group mb-3">
                                                             <label for="eventTypeEdit{{ $event->id }}">Event Type</label>
-                                                            <input type="text"
-                                                                name="type"
-                                                                id="eventTypeEdit{{ $event->id }}"
-                                                                class="form-control"
-                                                                value="{{ old('type', $event->type) }}"
-                                                                placeholder="Event Type (e.g., Webinar, Conference)" required>
+                                                            <select name="type" id="eventTypeEdit{{ $event->id }}" class="form-control" required>
+                                                                <option selected disabled value="">Select Event Type</option>
+                                                                <option value="Webinar" {{ old('type', $event->type) == 'Webinar' ? 'selected' : '' }}>Webinar</option>
+                                                                <option value="Conference" {{ old('type', $event->type) == 'Conference' ? 'selected' : '' }}>Conference</option>
+                                                                <option value="Workshop" {{ old('type', $event->type) == 'Workshop' ? 'selected' : '' }}>Workshop</option>
+                                                                <option value="Seminar" {{ old('type', $event->type) == 'Seminar' ? 'selected' : '' }}>Seminar</option>
+                                                                <option value="Other" {{ old('type', $event->type) == 'Other' ? 'selected' : '' }}>Other</option>
+                                                            </select>
                                                             @error('type')
                                                                 <span class="text-danger">{{ $message }}</span>
                                                             @enderror
@@ -265,12 +267,14 @@
 
                 <div class="form-group mb-3">
                     <label for="eventTypeAdd">Event Type</label>
-                    <input type="text"
-                           name="type"
-                           id="eventTypeAdd"
-                           class="form-control"
-                           value="{{ old('type') }}"
-                           placeholder="Event Type (e.g., Webinar, Conference)" required>
+                    <select name="type" id="eventTypeAdd" class="form-control" required>
+                        <option selected disabled value="">Select Event Type</option>
+                        <option value="Webinar">Webinar</option>
+                        <option value="Conference">Conference</option>
+                        <option value="Workshop">Workshop</option>
+                        <option value="Seminar">Seminar</option>
+                        <option value="Other">Other</option>
+                    </select>
                     @error('type')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
