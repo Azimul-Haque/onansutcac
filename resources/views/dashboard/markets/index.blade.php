@@ -21,7 +21,7 @@
 @endsection
 
 @section('content')
-    @section('page-header') Industries (Total {{ $marketsCount ?? 0 }}) @endsection {{-- Changed "Products" to "Markets", and $productsCount to $marketsCount --}}
+    @section('page-header') Industries (Total {{ $totalmarkets ?? 0 }}) @endsection {{-- Changed "Products" to "Markets", and $productsCount to $totalmarkets --}}
     <div class="container-fluid">
         <div class="card">
           <div class="card-header">
