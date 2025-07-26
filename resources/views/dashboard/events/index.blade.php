@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title') News | Dashboard @endsection
+
 @section('content')
 <div class="container">
     <h4 class="mb-3">Events List</h4>
