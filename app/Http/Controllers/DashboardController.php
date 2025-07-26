@@ -651,9 +651,6 @@ class DashboardController extends Controller
 
         Session::flash('success', 'Events created successfully!');
         return redirect()->route('dashboard.events');
-
-        $event->save();
-        return redirect()->back()->with('success', 'Event created successfully.');
     }
 
     // Update
