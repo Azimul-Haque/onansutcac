@@ -59,7 +59,7 @@
                     <p class="text-muted fst-italic mb-1">
                       <i class="bi bi-calendar-event me-2"></i> **{{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}** | {{ $event->from_to }}
                     </p>
-                    <p>Explore cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions. </p>
+                    <p>{{ Str::limit(strip_tags($event->text), 100) }}</p>
                   </div>
                 </div>
               </div>
