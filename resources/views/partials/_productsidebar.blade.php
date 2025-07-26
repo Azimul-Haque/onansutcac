@@ -68,7 +68,7 @@
   <!-- Recent Posts Widget -->
   <div class="recent-posts-widget widget-item">
 
-    <h3 class="widget-title">Markets</h3>
+    <h3 class="widget-title">Industries & Projects</h3>
 
     @foreach($markets as $market)
       <div class="post-item">
