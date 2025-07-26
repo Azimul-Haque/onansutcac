@@ -755,7 +755,7 @@ class DashboardController extends Controller
         $imageName = null;
         if ($request->hasFile('image')) {
             $imageName = time() . '.' . $request->file('image')->extension();
-            $request->file('image')->storeAs('public/images/success_stories', $imageName);
+            $request->file('image')->storeAs('public/images/success-stories', $imageName);
         }
 
         $fileName = null;
@@ -800,10 +800,10 @@ class DashboardController extends Controller
         if ($request->hasFile('image')) {
             // Delete old image if it exists
             if ($successStory->image) {
-                Storage::delete('public/images/success_stories/' . $successStory->image);
+                Storage::delete('public/images/success-stories/' . $successStory->image);
             }
             $imageName = time() . '.' . $request->file('image')->extension();
-            $request->file('image')->storeAs('public/images/success_stories', $imageName);
+            $request->file('image')->storeAs('public/images/success-stories', $imageName);
             $successStory->image = $imageName;
         }
 
@@ -811,7 +811,7 @@ class DashboardController extends Controller
         if ($request->hasFile('file')) {
             // Delete old file if it exists
             if ($successStory->file) {
-                Storage::delete('public/files/success_stories/' . $successStory->file);
+                Storage::delete('public/files/success-stories/' . $successStory->file);
             }
             $fileName = time() . '_file.' . $request->file('file')->extension();
             $request->file('file')->storeAs('public/files/success_stories', $fileName);
@@ -834,10 +834,10 @@ class DashboardController extends Controller
     {
         // Delete associated image and file from storage
         if ($successStory->image) {
-            Storage::delete('public/images/success_stories/' . $successStory->image);
+            Storage::delete('public/images/success-stories/' . $successStory->image);
         }
         if ($successStory->file) {
-            Storage::delete('public/files/success_stories/' . $successStory->file);
+            Storage::delete('public/files/success-stories/' . $successStory->file);
         }
 
         $successStory->delete();
