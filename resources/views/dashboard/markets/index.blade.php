@@ -221,7 +221,7 @@
                            name="title"
                            class="form-control"
                            value="{{ old('title') }}"
-                           placeholder="Industry Title" required> {{-- Changed placeholder --}}
+                           placeholder="Industry/Project Title" required> {{-- Changed placeholder --}}
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-box"></span></div>
                     </div>
@@ -233,14 +233,14 @@
                            class="form-control"
                            value="{{ old('slug') }}"
                            autocomplete="off"
-                           placeholder="Industry Slug (e.g., my-awesome-market)" required> {{-- Changed placeholder --}}
+                           placeholder="Industry/Project Slug (e.g., my-awesome-market)" required> {{-- Changed placeholder --}}
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-link"></span></div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="marketTextAdd">Industry Description/Article</label> {{-- Changed label and for attribute --}}
+                    <label for="marketTextAdd">Industry/Project Description/Article</label> {{-- Changed label and for attribute --}}
                     <textarea id="marketTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea> {{-- Changed ID --}}
                     @error('text')
                         <span class="text-danger">{{ $message }}</span>
@@ -248,7 +248,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="marketImageAdd">Industry Image: (16:9 should be ideal, max: 2MB)</label> {{-- Changed label --}}
+                    <label for="marketImageAdd">Industry/Project Image: (16:9 should be ideal, max: 2MB)</label> {{-- Changed label --}}
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="marketImageAdd" name="image" accept="image/*" required> {{-- Changed ID --}}
                         <label class="custom-file-label" for="marketImageAdd">Choose file</label> {{-- Changed for attribute --}}
