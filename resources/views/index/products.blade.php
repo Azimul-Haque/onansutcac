@@ -59,7 +59,7 @@
 
                     <!-- Product Type Tag -->
                     <span class="badge bg-primary position-absolute top-0 end-0 m-2" style="font-size: 0.85em; padding: 0.5em 0.75em; border-radius: 0.3rem;">
-                        {{ $product->type ?? 'Product Type' }} <!-- Replace $product->type with your actual variable -->
+                        {{ prod_type($product->type) ?? 'Product Type' }} <!-- Replace $product->type with your actual variable -->
                     </span>
                 </div>
                 <div class="details position-relative">
