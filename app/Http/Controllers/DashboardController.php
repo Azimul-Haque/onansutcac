@@ -794,7 +794,7 @@ class DashboardController extends Controller
             'file' => 'nullable|file|mimes:pdf,doc,docx,xls,xlsx|max:3072',
         ];
 
-        $successStory = SuccessStory::findOrFail($successStory);
+        $successStory = SuccessStory::findOrFail($id);
         $validatedData = $request->validate($rules);
 
         $finalType = $validatedData['type'];
