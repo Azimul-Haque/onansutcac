@@ -179,8 +179,8 @@ class IndexController extends Controller
 
     public function getEvents()
     {
-        $allEvent = News::orderBy('id', 'desc')->get();
-        return view('index.events')->withAllEvent($allEvent);
+        $allEvents = Events::orderBy('id', 'desc')->get();
+        return view('index.events')->withAllEvents($allEvents);
     }
 
     public function getSuccessStories()
