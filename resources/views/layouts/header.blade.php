@@ -33,9 +33,8 @@
           <ul>
             @foreach($productsforfooter as $product)
               @if($product->type == 1)
-
+                 <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
               @endif
-              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
             @endforeach
             <li><a href="#!">Fouling & Biofouling Control</a></li>
             <li><a href="#!">Corrosion Prevention</a></li>
