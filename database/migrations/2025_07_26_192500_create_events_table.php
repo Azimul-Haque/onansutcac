@@ -14,8 +14,7 @@ class CreateEventsTable extends Migration
     public function up()
     {
         Schema::create('news', function (Blueprint $table) {
-            $table->id();                     
-            $table->integer('newscategory_id')->unsigned();             
+            $table->id();                              
             $table->string('title');             
             $table->string('type');             
             $table->text('slug')->nullable();         
