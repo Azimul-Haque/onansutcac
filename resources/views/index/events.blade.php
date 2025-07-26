@@ -42,29 +42,29 @@
 
           <div class="row g-4 isotope-container aos-init" data-aos="fade-up" data-aos-delay="300" style="position: relative; height: 1551.75px;">
             @foreach($allEvents as $event)
-
-            @endforeach
-            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Webinar" style="position: absolute; left: 0px; top: 0px;">
-              <div class="portfolio2-card">
-                <div class="portfolio2-image">
-                  <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="AI & Sustainable Water Futures Summit" loading="lazy">
-                  <div class="portfolio2-overlay">
-                    <div class="portfolio2-actions">
-                      <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-eye"></i></a>
-                      {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
+              <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Webinar" style="position: absolute; left: 0px; top: 0px;">
+                <div class="portfolio2-card">
+                  <div class="portfolio2-image">
+                    <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="AI & Sustainable Water Futures Summit" loading="lazy">
+                    <div class="portfolio2-overlay">
+                      <div class="portfolio2-actions">
+                        <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-eye"></i></a>
+                        {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="portfolio2-content">
-                  <span class="category">AI & Water Solutions</span>
-                  <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>AI & Sustainable Water Futures Summit</h3></a>
-                  <p class="text-muted fst-italic mb-1">
-                    <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
-                  </p>
-                  <p>Explore cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions. </p>
+                  <div class="portfolio2-content">
+                    <span class="category">AI & Water Solutions</span>
+                    <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>AI & Sustainable Water Futures Summit</h3></a>
+                    <p class="text-muted fst-italic mb-1">
+                      <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
+                    </p>
+                    <p>Explore cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions. </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            @endforeach
+            
 
             <!-- Modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
