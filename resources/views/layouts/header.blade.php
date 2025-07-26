@@ -36,11 +36,6 @@
                  <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
               @endif
             @endforeach
-            <li><a href="#!">Fouling & Biofouling Control</a></li>
-            <li><a href="#!">Corrosion Prevention</a></li>
-            <li><a href="#!">PFAS Destruction & Removal</a></li>
-            <li><a href="#!">Antimicrobial Protection</a></li>
-            <li><a href="#!">Customized Coating Solutions</a></li>
           </ul>
         </li>
 
