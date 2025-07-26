@@ -760,7 +760,7 @@ class DashboardController extends Controller
         if($request->hasFile('image')) {
             $image    = $request->file('image');
             $filename = Str::random(5) . time() .'.' . "webp";
-            $location = public_path('images/events/'. $filename);
+            $location = public_path('images/success-stories/'. $filename);
             Image::make($image)->fit(711, 400)->save($location);
             $event->image = $filename;
         }
