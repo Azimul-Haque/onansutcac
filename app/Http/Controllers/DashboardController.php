@@ -633,7 +633,7 @@ class DashboardController extends Controller
         $event->eventcategory_id = $request->eventcategory_id;
         $event->title = $request->title;
         $event->type = $request->type;
-        $event->slug = Str::slug($request->slug);
+        $event->event_date = Str::slug($request->slug);
         if($request->eventlink) {
             $event->eventlink = $request->eventlink;
         }
