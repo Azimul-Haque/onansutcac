@@ -179,6 +179,7 @@ class DashboardController extends Controller
         ));
 
         $product = new Product;
+        $product->type = $request->type;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
         $product->text = Purifier::clean($request->text, 'youtube');
