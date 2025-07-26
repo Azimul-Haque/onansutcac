@@ -44,7 +44,7 @@
 <li class="nav-item">
     <a href="{{ route('dashboard.markets') }}" class="nav-link {{ Request::is('dashboard/markets') ? 'active' : '' }} {{ Request::is('dashboard/markets/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-chart-bar"></i>
-        <p>Markets</p>
+        <p>Industries & Projects</p>
     </a>
 </li>
 
