@@ -44,7 +44,7 @@
         <li class="dropdown"><a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             @foreach($marketsforfooter as $market)
-              @if($market->type == 2)
+              @if($market->type == 1)
                  <li><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></li>
               @endif
             @endforeach
@@ -53,11 +53,11 @@
 
         <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#!">NASA Contract</a></li>
-            <li><a href="#!">Kenya Semiconductor Water Project</a></li>
-            <li><a href="#!">BEPZA Water Project – Bangladesh?</a></li>
-            <li><a href="#!">Max Tapwater NGO Partnership</a></li>
-            <li><a href="#!">PFAS DOE Lab Initiative</a></li>
+            @foreach($marketsforfooter as $market)
+              @if($market->type == 1)
+                 <li><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></li>
+              @endif
+            @endforeach
           </ul>
         </li>
 
