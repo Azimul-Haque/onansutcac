@@ -193,12 +193,12 @@
         @endif
     </div>
 
-    <!-- Add Market Modal Code -->
+    <!-- Add Industry Modal Code -->
     <div class="modal fade" id="addMarketModal" tabindex="-1" role="dialog" aria-labelledby="addMarketModalLabel" aria-hidden="true" data-backdrop="static"> {{-- Changed ID and label --}}
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addMarketModalLabel">Add New Market</h5> {{-- Changed title and label --}}
+            <h5 class="modal-title" id="addMarketModalLabel">Add New Industry</h5> {{-- Changed title and label --}}
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
