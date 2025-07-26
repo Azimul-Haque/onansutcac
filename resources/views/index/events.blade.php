@@ -90,7 +90,7 @@
                       </div>
                     </div>
                     <div class="modal-footer border-0 pt-0">
-                      @notEmpty($event->reg_url)<a href="{{ $event->reg_url }}" class="btn btn-primary shadow-sm">Register Now</a>@endif
+                      @if(!empty($event->reg_url))<a href="{{ $event->reg_url }}" class="btn btn-primary shadow-sm">Register Now</a>@endif
                       <button type="button" class="btn btn-outline-secondary shadow-sm" data-bs-dismiss="modal">Close</button>
                     </div>
                   </div>
