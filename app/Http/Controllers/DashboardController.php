@@ -203,6 +203,7 @@ class DashboardController extends Controller
     public function updateProduct(Request $request, $id)
     {
         $this->validate($request, [
+            'type' => 'required',
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug,' . $id,
             'text'  => 'required',
