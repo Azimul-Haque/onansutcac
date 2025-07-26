@@ -636,8 +636,8 @@ class DashboardController extends Controller
         $event->event_date = $request->event_date;
         $event->from_to = $request->from_to;
         $event->address = $request->address;
-        if($request->eventlink) {
-            $event->eventlink = $request->eventlink;
+        if($request->reg_url) {
+            $event->reg_url = $request->reg_url;
         }
         if($request->text) {
             $event->text = Purifier::clean($request->text, 'youtube');
