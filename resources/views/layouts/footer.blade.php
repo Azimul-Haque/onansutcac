@@ -34,7 +34,7 @@
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Markets</h4>
+        <h4>Industries & Projects</h4>
         <ul>
           @foreach($marketsforfooter as $market)
             <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></li>
