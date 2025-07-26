@@ -60,7 +60,7 @@
                                         <td>{{ $successStory->type }}</td>
                                         <td>
                                             @if($successStory->file)
-                                                <a href="{{ Storage::url('files/success-stories/' . $successStory->file) }}" target="_blank" class="text-primary"><i class="fas fa-file"></i> View File</a>
+                                                <a href="{{ asset('files/success-stories/' . $successStory->file) }}" target="_blank" class="text-primary"><i class="fas fa-file"></i> View File</a>
                                             @else
                                                 N/A
                                             @endif
