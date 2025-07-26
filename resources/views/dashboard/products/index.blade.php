@@ -98,7 +98,7 @@
                                             <select name="type" id="type" class="form-control" required>
                                                 <option selected disabled>Select Type</option>
                                                 <option value="1" @if($product->type == 1) selected @endif>Product</option>
-                                                <option value="2">Technology</option>
+                                                <option value="2" @if($product->type == 2) selected @endif>Technology</option>
                                             </select>
                                             @error('type')
                                                 <span class="text-danger">{{ $message }}</span>
