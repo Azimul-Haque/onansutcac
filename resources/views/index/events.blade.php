@@ -42,7 +42,7 @@
 
           <div class="row g-4 isotope-container aos-init" data-aos="fade-up" data-aos-delay="300" style="position: relative; height: 1551.75px;">
             @foreach($allEvents as $event)
-              <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Webinar" style="position: absolute; left: 0px; top: 0px;">
+              <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-{{ $event->type }}" style="position: absolute; left: 0px; top: 0px;">
                 <div class="portfolio2-card">
                   <div class="portfolio2-image">
                     <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid" alt="{{ $event->title }}" loading="lazy">
