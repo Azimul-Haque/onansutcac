@@ -596,6 +596,7 @@ class ComposerStaticInitd99be2aa22b662638be63ef18831ea06
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Repositories\\UserRepository' => __DIR__ . '/../..' . '/app/Repositories/UserRepository.php',
+        'App\\Successstory' => __DIR__ . '/../..' . '/app/Successstory.php',
         'App\\Team' => __DIR__ . '/../..' . '/app/Team.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
