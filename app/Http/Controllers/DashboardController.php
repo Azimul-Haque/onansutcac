@@ -602,6 +602,7 @@ class DashboardController extends Controller
                              ->orWhere('type', 'LIKE', "%$request->search%")
                              ->orWhere('event_date', 'LIKE', "%$request->search%")
                              ->orWhere('reg_url', 'LIKE', "%$request->search%")
+                             ->orWhere('address', 'LIKE', "%$request->search%")
                              ->orWhere('text', 'LIKE', "%$request->search%")
                              ->orderBy('id', 'desc')
                              ->paginate(10);
