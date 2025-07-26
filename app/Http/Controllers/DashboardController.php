@@ -764,7 +764,7 @@ class DashboardController extends Controller
             $request->file('file')->storeAs('public/files/success_stories', $fileName);
         }
 
-        SuccessStory::create([
+        Successstory::create([
             'title' => $validatedData['title'],
             'type' => $finalType,
             'text' => $validatedData['text'],
