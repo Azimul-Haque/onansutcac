@@ -783,9 +783,8 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.success-stories');
     }
 
-    public function updateSuccessStory(Request $request, Successstory $successStory)
+    public function updateSuccessStory(Request $request, SuccessStory $successStory)
     {
-        // Define validation rules
         $rules = [
             'title' => 'required|string|max:191',
             'type' => 'required|string|max:191',
@@ -795,47 +794,50 @@ class DashboardController extends Controller
             'file' => 'nullable|file|mimes:pdf,doc,docx,xls,xlsx|max:3072',
         ];
 
-        // Validate the request data
         $validatedData = $request->validate($rules);
 
-        // Determine the final type to save
         $finalType = $validatedData['type'];
         if ($finalType === 'Other' && !empty($validatedData['custom_type'])) {
             $finalType = $validatedData['custom_type'];
         }
 
+        $successStory->title = $validatedData['title'];
+        $successStory->type = $finalType;
+        if (isset($validatedData['text'])) {
+            $successStory->text = Purifier::clean($validatedData['text'], 'youtube');
+        } else {
+            $successStory->text = null;
+        }
+
         // Handle image update
         if ($request->hasFile('image')) {
             // Delete old image if it exists
-            if ($successStory->image) {
-                Storage::delete('public/images/success-stories/' . $successStory->image);
+            if ($successStory->image && File::exists(public_path('images/success_stories/' . $successStory->image))) {
+                File::delete(public_path('images/success_stories/' . $successStory->image));
             }
-            $imageName = time() . '.' . $request->file('image')->extension();
-            $request->file('image')->storeAs('public/images/success-stories', $imageName);
+            $image = $request->file('image');
+            $imageName = Str::random(5) . time() .'.' . "webp";
+            $location = public_path('images/success_stories/'. $imageName);
+            Image::make($image)->fit(711, 400)->save($location);
             $successStory->image = $imageName;
         }
 
         // Handle file update
         if ($request->hasFile('file')) {
             // Delete old file if it exists
-            if ($successStory->file) {
-                Storage::delete('public/files/success-stories/' . $successStory->file);
+            if ($successStory->file && File::exists(public_path('files/success_stories/' . $successStory->file))) {
+                File::delete(public_path('files/success_stories/' . $successStory->file));
             }
-            $fileName = time() . '_file.' . $request->file('file')->extension();
-            $request->file('file')->storeAs('public/files/success-stories', $fileName);
+            $newfile = $request->file('file');
+            $fileName = 'file_'.time() .'.' . $newfile->getClientOriginalExtension();
+            $location = public_path('files/success_stories');
+            $newfile->move($location, $fileName);
             $successStory->file = $fileName;
         }
 
-        // Update the success story
-        $successStory->update([
-            'title' => $validatedData['title'],
-            'type' => $finalType,
-            'text' => $validatedData['text'],
-            'image' => $successStory->image, // Ensure image is updated if new one was uploaded
-            'file' => $successStory->file,   // Ensure file is updated if new one was uploaded
-        ]);
+        $successStory->save();
 
-        return redirect()->route('dashboard.success-stories')->with('success', 'Success story updated successfully!');
+        return redirect()->route('dashboard.success_stories')->with('success', 'Success story updated successfully!');
     }
 
     public function deleteSuccessStory(Successstory $successStory)
