@@ -107,12 +107,6 @@
                 @foreach($marketsforfooter as $market)
                   <a class="nav-link custom-nav-link active" id="v-pills-tab-{{ $market->id }}" data-bs-toggle="pill" data-bs-target="#v-pills-{{ $market->id }}" type="button" role="tab" aria-controls="v-pills-{{ $market->id }}" aria-selected="true">{{ $market->title }}</a>
                 @endforeach
-                
-                <a class="nav-link custom-nav-link" id="v-pills-bio-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bio" type="button" role="tab" aria-controls="v-pills-bio" aria-selected="false">Market - 2</a>
-                <a class="nav-link custom-nav-link" id="v-pills-smartops-tab" data-bs-toggle="pill" data-bs-target="#v-pills-smartops" type="button" role="tab" aria-controls="v-pills-smartops" aria-selected="false">Market - 3</a>
-                <a class="nav-link custom-nav-link" id="v-pills-sce-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sce" type="button" role="tab" aria-controls="v-pills-sce" aria-selected="false">Market - 4</a>
-                <a class="nav-link custom-nav-link" id="v-pills-cge-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cge" type="button" role="tab" aria-controls="v-pills-cge" aria-selected="false">Market - 5</a>
-                <a class="nav-link custom-nav-link" id="v-pills-fro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fro" type="button" role="tab" aria-controls="v-pills-fro" aria-selected="false">Market - 6</a>
               </div>
             </div>
             <div class="col-md-8 d-flex align-items-center">
