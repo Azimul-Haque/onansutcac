@@ -102,7 +102,7 @@
                 <div class="meta-bottom">
                   <i class="bi bi-folder"></i>
                   <ul class="cats">
-                    <li><a href="#" class="badge bg-info" style="color: #FFFFFF;">Business</a></li>
+                    <li><a href="#" class="badge bg-info" style="color: #FFFFFF;">{{ prod_type($product->type) }}</a></li>
                   </ul>
 
                   {{-- <i class="bi bi-tags"></i>
