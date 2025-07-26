@@ -117,7 +117,7 @@
             </div>
             <div class="col-md-8 d-flex align-items-center">
               <div class="tab-content w-100" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-ro" role="tabpanel" aria-labelledby="v-pills-ro-tab" tabindex="0">
+                <div class="tab-pane fade show active" id="v-pills-ro" role="tabpanel" aria-labelledby="v-pills-tab-{{ $market->id }}" tabindex="0">
                   <p>Combining physical and chemical technologies to target a wide range of difficult-to-remove contaminants at varying loads. Works synergistically with other Gradiant technologies to achieve exacting treatment objectives.</p>
                   <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
                 </div>
