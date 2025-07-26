@@ -93,6 +93,18 @@
                                         @csrf
                                         @method('POST') {{-- Use PUT method for updates --}}
 
+                                        <div class="form-group mb-3">
+                                            <label for="">Select Type</label>
+                                            <select name="type" id="type" class="form-control" required>
+                                                <option selected disabled>Select Type</option>
+                                                <option value="1">Product</option>
+                                                <option value="2">Technology</option>
+                                            </select>
+                                            @error('type')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+
                                         <div class="input-group mb-3">
                                             <input type="text"
                                                    name="title"
