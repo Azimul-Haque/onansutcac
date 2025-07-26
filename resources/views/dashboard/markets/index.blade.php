@@ -97,8 +97,8 @@
                                             <label for="">Select Type</label>
                                             <select name="type" id="type" class="form-control" required>
                                                 <option selected disabled>Select Type</option>
-                                                <option value="1" @if($product->type == 1) selected @endif>Product</option>
-                                                <option value="2" @if($product->type == 2) selected @endif>Technology</option>
+                                                <option value="1" @if($market->type == 1) selected @endif>Industry</option>
+                                                <option value="2" @if($market->type == 2) selected @endif>Project</option>
                                             </select>
                                         </div>
 
