@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Market/Project | Dashboard @endsection {{-- Changed "Products" to "Market" --}}
+@section('title') Markets/Projects | Dashboard @endsection {{-- Changed "Products" to "Market" --}}
 
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
