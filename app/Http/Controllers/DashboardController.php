@@ -844,12 +844,12 @@ class DashboardController extends Controller
     public function deleteSuccessStory(Successstory $successStory)
     {
         // Delete associated image and file from storage
-        if ($successStory->image) {
-            Storage::delete('public/images/success-stories/' . $successStory->image);
+        if ($successStory->image && File::exists(public_path('images/success-stories/' . $successStory->image))) {
+            File::delete(public_path('images/success-stories/' . $successStory->image));
         }
         if ($successStory->file && File::exists(public_path('files/success-stories/' . $successStory->file))) {
-                File::delete(public_path('files/success-stories/' . $successStory->file));
-            }
+            File::delete(public_path('files/success-stories/' . $successStory->file));
+        }
 
         $successStory->delete();
 
