@@ -634,6 +634,8 @@ class DashboardController extends Controller
         $event->title = $request->title;
         $event->type = $request->type;
         $event->event_date = $request->event_date;
+        $event->from_to = $request->from_to;
+        $event->address = $request->address;
         if($request->eventlink) {
             $event->eventlink = $request->eventlink;
         }
