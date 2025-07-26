@@ -21,11 +21,11 @@
 @endsection
 
 @section('content')
-    @section('page-header') Industries (Total {{ $totalmarkets ?? 0 }}) @endsection {{-- Changed "Products" to "Markets", and $productsCount to $totalmarkets --}}
+    @section('page-header') Industries/Projects (Total {{ $totalmarkets ?? 0 }}) @endsection {{-- Changed "Products" to "Markets", and $productsCount to $totalmarkets --}}
     <div class="container-fluid">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Industries</h3> {{-- Changed "Products" to "Markets" --}}
+            <h3 class="card-title">Industries/Projects</h3> {{-- Changed "Products" to "Markets" --}}
 
             <div class="card-tools">
               <form class="form-inline form-group-lg" action="{{ route('dashboard.markets') }}" method="GET"> {{-- Changed route to dashboard.markets --}}
