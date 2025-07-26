@@ -629,11 +629,31 @@ class DashboardController extends Controller
             'image'      => 'nullable|image|max:2048',
         ]);
 
-        $event = new Event($request->except('image'));
-
-        if ($request->hasFile('image')) {
-            $event->image = $request->file('image')->store('events', 'public');
+        $news = new News;
+        $news->newscategory_id = $request->newscategory_id;
+        $news->title = $request->title;
+        $news->type = $request->type;
+        $news->slug = Str::slug($request->slug);
+        if($request->newslink) {
+            $news->newslink = $request->newslink;
         }
+        if($request->text) {
+            $news->text = Purifier::clean($request->text, 'youtube');
+        }
+
+        if($request->hasFile('image')) {
+            $image    = $request->file('image');
+            $filename = Str::random(5) . time() .'.' . "webp";
+            $location = public_path('images/news/'. $filename);
+            Image::make($image)->fit(711, 400)->save($location);
+            $news->image = $filename;
+        }
+
+        $news->save();
+
+        Cache::forget('news_for_footer');
+        Session::flash('success', 'News created successfully!');
+        return redirect()->route('dashboard.news');
 
         $event->save();
         return redirect()->back()->with('success', 'Event created successfully.');
