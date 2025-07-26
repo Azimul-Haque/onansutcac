@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Products | Dashboard @endsection
+@section('title') Products/Technologies | Dashboard @endsection
 
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
@@ -21,11 +21,11 @@
 @endsection
 
 @section('content')
-    @section('page-header') Products (Total {{ $productsCount ?? 0 }}) @endsection {{-- Use $productsCount from controller --}}
+    @section('page-header') Products/Technologies (Total {{ $productsCount ?? 0 }}) @endsection {{-- Use $productsCount from controller --}}
     <div class="container-fluid">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Products</h3>
+            <h3 class="card-title">Products/Technologies</h3>
 
             <div class="card-tools">
               <form class="form-inline form-group-lg" action="{{ route('dashboard.products') }}" method="GET">
