@@ -769,18 +769,12 @@ class DashboardController extends Controller
         }
 
         $fileName = null;
-        if ($request->hasFile('file')) {
-            $fileName = time() . '_file.' . $request->file('file')->extension();
-            $request->file('file')->public_path('files/success-stories', $fileName);
-            $successstory->file = $fileName;
-        }
-
         if($request->hasFile('file')) {
             $newfile = $request->file('file');
             $fileName   = 'file_'.time() .'.' . $newfile->getClientOriginalExtension();
             $location   = public_path('files/success-stories');
-            $newfile->move($location, $filename);
-            $notice->attachment = $filename;
+            $newfile->move($location, $fileName);
+            $successstory->file = $fileName;
         }
 
         $successstory->save();
