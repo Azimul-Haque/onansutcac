@@ -777,9 +777,8 @@ class DashboardController extends Controller
 
         $event->save();
 
-        Session::flash('success', 'Event created successfully!');
+        Session::flash('success', 'Success story created successfully!');
         return redirect()->route('dashboard.success-stories');
-        return redirect()->route('dashboard.success-stories')->with('success', 'Success story added successfully!');
     }
 
     public function updateSuccessStory(Request $request, Successstory $successStory)
