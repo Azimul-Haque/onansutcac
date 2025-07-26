@@ -14,7 +14,8 @@ class CreateMarketsTable extends Migration
     public function up()
     {
         Schema::create('markets', function (Blueprint $table) {
-            $table->id();                     
+            $table->id();
+            $table->integer('type')->nullable();              
             $table->string('title');               
             $table->text('slug');               
             $table->longText('text');      
