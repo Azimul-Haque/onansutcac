@@ -628,13 +628,6 @@ class DashboardController extends Controller
         return redirect()->back()->with('success', 'Event created successfully.');
     }
 
-    // Edit (for modal)
-    public function edit($id)
-    {
-        $event = Event::findOrFail($id);
-        return response()->json($event);
-    }
-
     // Update
     public function updateEvent(Request $request, $id)
     {
@@ -665,7 +658,7 @@ class DashboardController extends Controller
     }
 
     // Delete
-    public function destroy($id)
+    public function deleteEvent($id)
     {
         $event = Event::findOrFail($id);
 
