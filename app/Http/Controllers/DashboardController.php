@@ -307,6 +307,7 @@ class DashboardController extends Controller
         ]);
 
         $market = Market::findOrFail($id);
+        $market->type = $request->type;
         $market->title = $request->title;
         $market->slug = Str::slug($request->slug);
 
