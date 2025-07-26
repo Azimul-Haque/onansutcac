@@ -32,10 +32,11 @@
           <div class="portfolio2-filters-container aos-init" data-aos="fade-up" data-aos-delay="200">
             <ul class="portfolio2-filters isotope-filters">
               <li data-filter="*" class="filter-active">All Events</li>
-              <li data-filter=".filter-web" class="">USA</li>
-              <li data-filter=".filter-graphics" class="">Singapore</li>
-              <li data-filter=".filter-motion" class="">Global</li>
-              <li data-filter=".filter-brand" class="">Regional</li>
+              <li data-filter=".filter-web" class="">Webinar</li>
+              <li data-filter=".filter-graphics" class="">Conference</li>
+              <li data-filter=".filter-motion" class="">Workshop</li>
+              <li data-filter=".filter-brand" class="">Seminar</li>
+              <li data-filter=".filter-brand" class="">Other</li>
             </ul>
           </div>
 
