@@ -19,7 +19,7 @@ class CreateSuccessstoriesTable extends Migration
             $table->string('type');
             $table->longText('text')->nullable();
             $table->string('image')->nullable();
-            $table->string('type')->nullable();
+            $table->string('file')->nullable();
             $table->timestamps();
         });
     }
