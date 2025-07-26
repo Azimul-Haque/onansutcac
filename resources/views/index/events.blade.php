@@ -48,14 +48,14 @@
                     <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid" alt="{{ $event->title }}" loading="lazy">
                     <div class="portfolio2-overlay">
                       <div class="portfolio2-actions">
-                        <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-eye"></i></a>
+                        <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#eventModal{{ $event->id }}"><i class="bi bi-eye"></i></a>
                         {{-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> --}}
                       </div>
                     </div>
                   </div>
                   <div class="portfolio2-content">
                     <span class="category">{{ $event->type }}</span>
-                    <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><h3>{{ $event->title }}</h3></a>
+                    <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#eventModal{{ $event->id }}"><h3>{{ $event->title }}</h3></a>
                     <p class="text-muted fst-italic mb-1">
                       <i class="bi bi-calendar-event me-2"></i> **{{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}** | {{ $event->from_to }}
                     </p>
@@ -65,7 +65,7 @@
               </div>
 
               <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal fade" id="eventModal{{ $event->id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header border-0 pb-0">
