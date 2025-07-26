@@ -94,7 +94,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Relevant Markets</h2>
+        <h2>Relevant Industry/Project</h2>
         <p>See Where We Make an Impact<br></p>
       </div><!-- End Section Title -->
 
