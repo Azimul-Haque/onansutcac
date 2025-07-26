@@ -171,6 +171,7 @@ class DashboardController extends Controller
     public function storeProduct(Request $request)
     {
         $this->validate($request, array(
+            'type' => 'required',
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug',
             'text'  => 'required',
