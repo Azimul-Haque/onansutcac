@@ -627,7 +627,6 @@ class DashboardController extends Controller
         ]);
 
         $event = new Event;
-        $event->eventcategory_id = $request->eventcategory_id;
         $event->title = $request->title;
         $event->type = $request->type;
         $event->event_date = $request->event_date;
