@@ -209,11 +209,10 @@
 
                 <div class="form-group mb-3">
                     <label for="">Select Type</label>
-                    <select name="type" id="newsType" class="form-control" required>
-                        <option selected disabled>Select News Type</option>
-                        <option value="1">News Article</option>
-                        <option value="2">Press Release</option>
-                        <option value="3">External Links</option>
+                    <select name="type" id="type" class="form-control" required>
+                        <option selected disabled>Select Type</option>
+                        <option value="1">Product</option>
+                        <option value="2">Technology</option>
                     </select>
                     @error('type')
                         <span class="text-danger">{{ $message }}</span>
