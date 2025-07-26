@@ -104,14 +104,14 @@
           <div class="row">
             <div class="col-md-4">
               <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                @foreach($marketsforfooter as $market)
+                @foreach($marketsforfooter as $key => $market)
                   <a class="nav-link custom-nav-link {{ $key == 0 ? 'active' : '' }}" id="v-pills-tab-{{ $market->id }}" data-bs-toggle="pill" data-bs-target="#v-pills-{{ $market->id }}" type="button" role="tab" aria-controls="v-pills-{{ $market->id }}" aria-selected="true">{{ $market->title }}</a>
                 @endforeach
               </div>
             </div>
             <div class="col-md-8 d-flex align-items-center">
               <div class="tab-content w-100" id="v-pills-tabContent">
-                @foreach($marketsforfooter as $market)
+                @foreach($marketsforfooter as $key => $market)
                 <div class="tab-pane fade show {{ $key == 0 ? 'active' : '' }}" id="v-pills-{{ $market->id }}" role="tabpanel" aria-labelledby="v-pills-tab-{{ $market->id }}" tabindex="0">
                   <p>{{ Str::limit(strip_tags($market->text), 200) }}</p>
                   <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
