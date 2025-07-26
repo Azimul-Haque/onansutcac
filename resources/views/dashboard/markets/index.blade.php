@@ -58,7 +58,7 @@
                         <td>
                             <a href="{{ route('index.singlemarket', $market->slug) }}" target="_blank">{{ $market->title }}</a> {{-- Changed route to index.singlemarket, and variable to $market --}}
                             <br/>
-                            <small class="badge rounded-pill bg-{{ pill_type($market->type) }}">{{ prod_type($product->type) }}</small>
+                            <small class="badge rounded-pill bg-{{ pill_type($market->type) }}">{{ ind_type($market->type) }}</small>
                         </td>
                         <td><small>{{ $market->slug }}</small></td> {{-- Changed $product->slug to $market->slug --}}
                         <td>
