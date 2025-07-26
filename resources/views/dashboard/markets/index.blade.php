@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Markets/Projects | Dashboard @endsection {{-- Changed "Products" to "Market" --}}
+@section('title') Industries/Projects | Dashboard @endsection {{-- Changed "Products" to "Market" --}}
 
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
@@ -21,11 +21,11 @@
 @endsection
 
 @section('content')
-    @section('page-header') Markets (Total {{ $marketsCount ?? 0 }}) @endsection {{-- Changed "Products" to "Markets", and $productsCount to $marketsCount --}}
+    @section('page-header') Industries (Total {{ $marketsCount ?? 0 }}) @endsection {{-- Changed "Products" to "Markets", and $productsCount to $marketsCount --}}
     <div class="container-fluid">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Markets</h3> {{-- Changed "Products" to "Markets" --}}
+            <h3 class="card-title">Industries</h3> {{-- Changed "Products" to "Markets" --}}
 
             <div class="card-tools">
               <form class="form-inline form-group-lg" action="{{ route('dashboard.markets') }}" method="GET"> {{-- Changed route to dashboard.markets --}}
