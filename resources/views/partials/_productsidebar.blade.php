@@ -49,7 +49,7 @@
 
   <div class="recent-posts-widget widget-item">
 
-    <h3 class="widget-title">Products</h3>
+    <h3 class="widget-title">Products & Technologies</h3>
     @foreach($products as $product)
     <div class="post-item">
       @if($product->image && file_exists(public_path('images/products/' . $product->image)))
