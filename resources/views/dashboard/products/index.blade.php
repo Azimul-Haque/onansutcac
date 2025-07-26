@@ -100,9 +100,6 @@
                                                 <option value="1" @if($product->type == 1) selected @endif>Product</option>
                                                 <option value="2" @if($product->type == 2) selected @endif>Technology</option>
                                             </select>
-                                            @error('type')
-                                                <span class="text-danger">{{ $message }}</span>
-                                            @enderror
                                         </div>
 
                                         <div class="input-group mb-3">
