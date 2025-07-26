@@ -764,7 +764,7 @@ class DashboardController extends Controller
         $fileName = null;
         if ($request->hasFile('file')) {
             $fileName = time() . '_file.' . $request->file('file')->extension();
-            $request->file('file')->storeAs('public/files/success-stories', $fileName);
+            $request->file('file')->public_path('files/success-stories', $fileName);
         }
 
         Successstory::create([
