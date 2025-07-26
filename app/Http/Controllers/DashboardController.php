@@ -772,6 +772,7 @@ class DashboardController extends Controller
         if ($request->hasFile('file')) {
             $fileName = time() . '_file.' . $request->file('file')->extension();
             $request->file('file')->public_path('files/success-stories', $fileName);
+            $successstory->image = $imageName;
         }
 
         Successstory::create([
