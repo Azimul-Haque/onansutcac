@@ -17,7 +17,7 @@ class CreateSuccessstoriesTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('type');
-            $table->text('reg_url')->nullable();
+            $table->string('type')->nullable();
             $table->longText('text')->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
