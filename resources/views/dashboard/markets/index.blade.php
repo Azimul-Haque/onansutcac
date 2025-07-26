@@ -172,7 +172,7 @@
                                 </button>
                               </div>
                               <div class="modal-body">
-                                Are you sure you want to delete this market?<br/> {{-- Changed text --}}
+                                Are you sure you want to delete this Industry/Project?<br/> {{-- Changed text --}}
                                 <center>
                                     <big><b>{{ $market->title }}</b></big><br/> {{-- Changed variable --}}
                                     <small>Slug: {{ $market->slug }}</small> {{-- Changed variable --}}
