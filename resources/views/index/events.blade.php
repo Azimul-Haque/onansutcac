@@ -34,7 +34,7 @@
               <li data-filter="*" class="filter-active">All Events</li>
               <li data-filter=".filter-Webinar" class="">Webinar</li>
               <li data-filter=".filter-Conference" class="">Conference</li>
-              <li data-filter=".filter-motion" class="">Workshop</li>
+              <li data-filter=".filter-Workshop" class="">Workshop</li>
               <li data-filter=".filter-brand" class="">Seminar</li>
               <li data-filter=".filter-brand" class="">Other</li>
             </ul>
@@ -132,7 +132,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-motion" style="position: absolute; left: 570px; top: 509.25px;">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Workshop" style="position: absolute; left: 570px; top: 509.25px;">
               <div class="portfolio2-card">
                 <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-7.webp') }}" class="img-fluid" alt="The Tech-Driven Water Economy Conference 2025" loading="lazy">
