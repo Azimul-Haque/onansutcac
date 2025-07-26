@@ -752,6 +752,13 @@ class DashboardController extends Controller
             $finalType = $validatedData['custom_type'];
         }
 
+        $event = new Event;
+        $event->title = $request->title;
+        $event->type = $request->type;
+        $event->event_date = $request->event_date;
+        $event->from_to = $request->from_to;
+        $event->address = $request->address;
+
         $imageName = null;
         if($request->hasFile('image')) {
             $image    = $request->file('image');
