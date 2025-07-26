@@ -107,7 +107,7 @@
                                                        name="title"
                                                        class="form-control"
                                                        value="{{ old('title', $market->title) }}" {{-- Changed variable to $market->title --}}
-                                                       placeholder="Industry/Market Title" required> {{-- Changed placeholder --}}
+                                                       placeholder="Industry/Project Title" required> {{-- Changed placeholder --}}
                                                 <div class="input-group-append">
                                                     <div class="input-group-text"><span class="fas fa-box"></span></div>
                                                 </div>
@@ -119,7 +119,7 @@
                                                        class="form-control"
                                                        value="{{ old('slug', $market->slug) }}" {{-- Changed variable to $market->slug --}}
                                                        autocomplete="off"
-                                                       placeholder="Market Slug" required> {{-- Changed placeholder --}}
+                                                       placeholder="Industry/Project Slug" required> {{-- Changed placeholder --}}
                                                 <div class="input-group-append">
                                                     <div class="input-group-text"><span class="fas fa-link"></span></div>
                                                 </div>
