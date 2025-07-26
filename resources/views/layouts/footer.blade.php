@@ -25,7 +25,7 @@
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Products</h4>
+        <h4>Products & Technologies</h4>
         <ul>
           @foreach($productsforfooter as $product)
             <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
