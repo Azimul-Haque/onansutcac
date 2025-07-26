@@ -601,7 +601,7 @@ class DashboardController extends Controller
     public function getEvents()
     {
         $events = Event::latest()->get();
-        return view('admin.events.index', compact('events'));
+        return view('dashboard.events.index', compact('events'));
 
         if($request->search) {
             $allEvents = Event::where('title', 'LIKE', "%$request->search%")
