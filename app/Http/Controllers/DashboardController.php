@@ -649,7 +649,7 @@ class DashboardController extends Controller
 
         $event->save();
 
-        Session::flash('success', 'Events created successfully!');
+        Session::flash('success', 'Event created successfully!');
         return redirect()->route('dashboard.events');
     }
 
@@ -696,8 +696,8 @@ class DashboardController extends Controller
 
         $news->save();
 
-        Session::flash('success', 'News created successfully!');
-        return redirect()->route('dashboard.news');
+        Session::flash('success', 'Event created successfully!');
+        return redirect()->route('dashboard.events');
 
         $event->save();
         return redirect()->back()->with('success', 'Event created successfully.');
