@@ -605,7 +605,7 @@ class DashboardController extends Controller
     }
 
     // Store
-    public function store(Request $request)
+    public function storeEvent(Request $request)
     {
         $request->validate([
             'title'      => 'required|string|max:191',
@@ -636,7 +636,7 @@ class DashboardController extends Controller
     }
 
     // Update
-    public function update(Request $request, $id)
+    public function updateEvent(Request $request, $id)
     {
         $event = Event::findOrFail($id);
 
