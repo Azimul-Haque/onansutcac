@@ -847,9 +847,9 @@ class DashboardController extends Controller
         if ($successStory->image) {
             Storage::delete('public/images/success-stories/' . $successStory->image);
         }
-        if ($successStory->file) {
-            Storage::delete('public/files/success-stories/' . $successStory->file);
-        }
+        if ($successStory->file && File::exists(public_path('files/success-stories/' . $successStory->file))) {
+                File::delete(public_path('files/success-stories/' . $successStory->file));
+            }
 
         $successStory->delete();
 
