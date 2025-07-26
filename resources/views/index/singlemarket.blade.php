@@ -105,7 +105,7 @@
             <div class="col-md-4">
               <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 @foreach($marketsforfooter as $market)
-                  <a class="nav-link custom-nav-link active" id="v-pills-tab-{{ $market->id }}" data-bs-toggle="pill" data-bs-target="#v-pills-{{ $market->id }}" type="button" role="tab" aria-controls="v-pills-{{ $market->id }}" aria-selected="true">{{ $market->title }}</a>
+                  <a class="nav-link custom-nav-link " id="v-pills-tab-{{ $market->id }}" data-bs-toggle="pill" data-bs-target="#v-pills-{{ $market->id }}" type="button" role="tab" aria-controls="v-pills-{{ $market->id }}" aria-selected="true">{{ $market->title }}</a>
                 @endforeach
                 <a class="nav-link custom-nav-link" id="v-pills-bio-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bio" type="button" role="tab" aria-controls="v-pills-bio" aria-selected="false">Market - 2</a>
                 <a class="nav-link custom-nav-link" id="v-pills-smartops-tab" data-bs-toggle="pill" data-bs-target="#v-pills-smartops" type="button" role="tab" aria-controls="v-pills-smartops" aria-selected="false">Market - 3</a>
@@ -117,7 +117,7 @@
             <div class="col-md-8 d-flex align-items-center">
               <div class="tab-content w-100" id="v-pills-tabContent">
                 @foreach($marketsforfooter as $market)
-                <div class="tab-pane fade show active" id="v-pills-{{ $market->id }}" role="tabpanel" aria-labelledby="v-pills-tab-{{ $market->id }}" tabindex="0">
+                <div class="tab-pane fade show " id="v-pills-{{ $market->id }}" role="tabpanel" aria-labelledby="v-pills-tab-{{ $market->id }}" tabindex="0">
                   <p>Combining physical and chemical technologies to target a wide range of difficult-to-remove contaminants at varying loads. Works synergistically with other Gradiant technologies to achieve exacting treatment objectives.</p>
                   <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
                 </div>
