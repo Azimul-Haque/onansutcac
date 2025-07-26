@@ -684,18 +684,18 @@ class DashboardController extends Controller
 
 
         if($request->hasFile('image')) {
-            if ($news->image && file_exists(public_path('images/news/' . $news->image))) {
-                unlink(public_path('images/news/' . $news->image));
+            if ($event->image && file_exists(public_path('images/event/' . $event->image))) {
+                unlink(public_path('images/events/' . $event->image));
             }
 
             $image    = $request->file('image');
             $filename = Str::random(5) . time() . '.' . "webp";
-            $location = public_path('images/news/' . $filename);
+            $location = public_path('images/events/' . $filename);
             Image::make($image)->fit(711, 400)->save($location);
-            $news->image = $filename;
+            $event->image = $filename;
         }
 
-        $news->save();
+        $event->save();
 
         Session::flash('success', 'Event created successfully!');
         return redirect()->route('dashboard.events');
