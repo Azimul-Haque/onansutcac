@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Events | Dashboard @endsection
+@section('title') News | Dashboard @endsection
 
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
@@ -22,21 +22,21 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12"> {{-- Changed to col-lg-12 as there's no category section --}}
-                @section('page-header') Events (Total {{ $allEvents->total() ?? 0 }}) @endsection
+            <div class="col-lg-9">
+                @section('page-header') News (Total {{ $allNews->total() ?? 0 }}) @endsection
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Events</h3>
+                        <h3 class="card-title">News</h3>
                         <div class="card-tools">
-                            <form class="form-inline form-group-lg" action="{{ route('dashboard.events') }}" method="GET">
+                            <form class="form-inline form-group-lg" action="{{ route('dashboard.news') }}" method="GET">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-sm" placeholder="Search events" id="search-param" name="search" value="{{ request('search') }}" required>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Search news" id="search-param" name="search" value="{{ request('search') }}" required>
                                 </div>
                                 <button type="submit" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                                     <i class="fas fa-search"></i> Search
                                 </button>
-                                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addEventModal" style="margin-left: 5px;">
-                                    <i class="fas fa-plus"></i> Add New Event
+                                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addNewsModal" style="margin-left: 5px;">
+                                    <i class="fas fa-plus"></i> Add New News
                                 </button>
                             </form>
                         </div>
@@ -47,71 +47,82 @@
                                 <tr>
                                     <th>Title</th>
                                     <th>Type</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                    <th>Address</th>
-                                    <th>Registration Link</th>
+                                    <th>Slug/Link</th>
                                     <th>Image</th>
-                                    <th style="width: 15%">Actions</th>
+                                    <th style="width: 25%">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse($allEvents as $event)
+                                @forelse($allNews as $news)
                                     <tr>
-                                        <td>{{ $event->title }}</td>
-                                        <td>{{ $event->type }}</td> {{-- Assuming 'type' is a string directly --}}
-                                        <td>{{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}</td>
-                                        <td>{{ $event->from_to }}</td>
-                                        <td>{{ $event->address }}</td>
                                         <td>
-                                            @if($event->reg_url)
-                                                <a href="{{ $event->reg_url }}" target="_blank" class="text-primary"><i class="fas fa-external-link-alt"></i> Link</a>
+                                            {{ $news->title }}
+                                            <br/>
+                                            <small class="text-black-50">{{ $news->newscategory->name ?? 'N/A' }}</small>
+                                        </td>
+                                        <td>{{ news_type($news->type) }}</td>
+                                        <td width="20%">
+                                            @if($news->type == 3)
+                                                <small class="text-black-50">{{ $news->newslink }}</small>
                                             @else
-                                                N/A
+                                                <small class="text-black-50">{{ $news->slug }}</small>
                                             @endif
+                                            
                                         </td>
                                         <td>
-                                            @if($event->image)
-                                                <img src="{{ asset('images/events/' . $event->image) }}" alt="{{ $event->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                                            @if($news->image)
+                                                <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                                             @else
                                                 <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                                             @endif
                                         </td>
                                         <td align="right">
-                                            <button type="button" class="btn btn-primary btn-sm editEventModal" data-toggle="modal" data-target="#editEventModal{{ $event->id }}">
+                                            <button type="button" class="btn btn-primary btn-sm editNewsModal" data-toggle="modal" data-target="#editNewsModal{{ $news->id }}">
                                                 <i class="fas fa-edit"></i> Edit
                                             </button>
-                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteEventModal{{ $event->id }}">
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteNewsModal{{ $news->id }}">
                                                 <i class="fas fa-trash"></i> Delete
                                             </button>
                                         </td>
                                     </tr>
 
-                                    {{-- Edit Event Modal Code --}}
-                                    <div class="modal fade" id="editEventModal{{ $event->id }}" tabindex="-1" role="dialog" aria-labelledby="editEventModalLabel{{ $event->id }}" aria-hidden="true" data-backdrop="static">
+                                    {{-- Edit News Modal Code --}}
+                                    <div class="modal fade" id="editNewsModal{{ $news->id }}" tabindex="-1" role="dialog" aria-labelledby="editNewsModalLabel{{ $news->id }}" aria-hidden="true" data-backdrop="static">
                                         <div class="modal-dialog modal-xl" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header bg-primary">
-                                                    <h5 class="modal-title" id="editEventModalLabel{{ $event->id }}">Update Event: {{ $event->title }}</h5>
+                                                    <h5 class="modal-title" id="editNewsModalLabel{{ $news->id }}">Update News: {{ $news->title }}</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                <form method="post" action="{{ route('dashboard.events.update', $event->id) }}" enctype="multipart/form-data">
+                                                <form method="post" action="{{ route('dashboard.news.update', $news->id) }}" enctype="multipart/form-data">
                                                     <div class="modal-body">
                                                         @csrf
                                                         @method('POST')
 
-                                                        <!-- Event Type -->
+                                                        <!-- News Type -->
                                                         <div class="form-group mb-3">
-                                                            <label for="eventTypeEdit{{ $event->id }}">Event Type</label>
-                                                            <input type="text"
-                                                                name="type"
-                                                                id="eventTypeEdit{{ $event->id }}"
-                                                                class="form-control"
-                                                                value="{{ old('type', $event->type) }}"
-                                                                placeholder="Event Type (e.g., Webinar, Conference)" required>
+                                                            <label for="newsTypeEdit{{ $news->id }}">News Type</label>
+                                                            <select name="type" id="newsTypeEdit{{ $news->id }}" class="form-control news-type-select" data-news-id="{{ $news->id }}" required>
+                                                                <option selected disabled>Select News Type</option>
+                                                                <option value="1" {{ old('type', $news->type) == 1 ? 'selected' : '' }}>News Article</option>
+                                                                <option value="2" {{ old('type', $news->type) == 2 ? 'selected' : '' }}>Press Release</option>
+                                                                <option value="3" {{ old('type', $news->type) == 3 ? 'selected' : '' }}>External Links</option>
+                                                            </select>
                                                             @error('type')
+                                                                <span class="text-danger">{{ $message }}</span>
+                                                            @enderror
+                                                        </div>
+
+                                                        <div class="form-group mb-3">
+                                                            <label for="newsCategoryEdit{{ $news->id }}">News Category</label>
+                                                            <select class="form-control select2bs4" style="width: 100%;" id="newsCategoryEdit{{ $news->id }}" name="newscategory_id" required>
+                                                                @foreach($newscategories as $category)
+                                                                    <option value="{{ $category->id }}" {{ $news->newscategory_id == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+                                                                @endforeach
+                                                            </select>
+                                                            @error('newscategory_id')
                                                                 <span class="text-danger">{{ $message }}</span>
                                                             @enderror
                                                         </div>
@@ -120,77 +131,58 @@
                                                             <input type="text"
                                                                 name="title"
                                                                 class="form-control"
-                                                                value="{{ old('title', $event->title) }}"
-                                                                placeholder="Event Title" required>
+                                                                value="{{ old('title', $news->title) }}"
+                                                                placeholder="News Title" required>
                                                             <div class="input-group-append">
-                                                                <div class="input-group-text"><span class="fas fa-calendar-alt"></span></div>
+                                                                <div class="input-group-text"><span class="fas fa-newspaper"></span></div>
                                                             </div>
-                                                        </div>
+                                                        </div>                                                        
 
-                                                        <div class="input-group mb-3">
-                                                            <input type="date"
-                                                                name="event_date"
-                                                                class="form-control"
-                                                                value="{{ old('event_date', $event->event_date) }}"
-                                                                placeholder="Event Date" required>
-                                                            <div class="input-group-append">
-                                                                <div class="input-group-text"><span class="fas fa-calendar-day"></span></div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="input-group mb-3">
+                                                        <!-- News Slug -->
+                                                        <div class="input-group mb-3 slug-group slug-group-{{ $news->id }}">
                                                             <input type="text"
-                                                                name="from_to"
+                                                                name="slug"
+                                                                id="slugEdit{{ $news->id }}" 
                                                                 class="form-control"
-                                                                value="{{ old('from_to', $event->from_to) }}"
-                                                                placeholder="Event Time (e.g., 9:00 AM - 5:00 PM EST)" required>
+                                                                value="{{ $news->slug }}"
+                                                                autocomplete="off"
+                                                                placeholder="News Slug" required>
                                                             <div class="input-group-append">
-                                                                <div class="input-group-text"><span class="fas fa-clock"></span></div>
+                                                                <div class="input-group-text"><span class="fas fa-link"></span></div>
                                                             </div>
                                                         </div>
 
-                                                        <div class="input-group mb-3">
-                                                            <input type="text"
-                                                                name="address"
-                                                                class="form-control"
-                                                                value="{{ old('address', $event->address) }}"
-                                                                placeholder="Event Address (e.g., Online, New York, NY)" required>
-                                                            <div class="input-group-append">
-                                                                <div class="input-group-text"><span class="fas fa-map-marker-alt"></span></div>
-                                                            </div>
+                                                        <!-- News Content -->
+                                                        <div class="form-group text-group text-group-{{ $news->id }}">
+                                                            <label for="newsTextEdit{{ $news->id }}">News Content</label>
+                                                            <textarea id="newsTextEdit{{ $news->id }}" name="text" class="form-control summernote-editor" required>{{ $news->text }}</textarea>
                                                         </div>
 
-                                                        <!-- Registration URL -->
-                                                        <div class="input-group mb-3">
+                                                        <!-- News Link (only for external links) -->
+                                                        <div class="input-group mb-3 newslink-group newslink-group-{{ $news->id }}" style="display: none;">
                                                             <input type="url"
-                                                                   name="reg_url"
-                                                                   id="regUrlEdit{{ $event->id }}"
+                                                                   name="newslink"
+                                                                   id="newsLinkEdit{{ $news->id }}" 
                                                                    class="form-control"
-                                                                   value="{{ old('reg_url', $event->reg_url ?? '') }}"
-                                                                   placeholder="Registration URL (optional, e.g., https://example.com/register)">
+                                                                   value="{{ $news->newslink ?? '' }}"
+                                                                   placeholder="External News Link (e.g., https://example.com)">
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="fas fa-external-link-alt"></span></div>
                                                             </div>
                                                         </div>
 
-                                                        <!-- Event Content -->
-                                                        <div class="form-group text-group text-group-{{ $event->id }}">
-                                                            <label for="eventTextEdit{{ $event->id }}">Event Details</label>
-                                                            <textarea id="eventTextEdit{{ $event->id }}" name="text" class="form-control summernote-editor">{{ $event->text }}</textarea>
-                                                        </div>
-
                                                         <div class="form-group">
-                                                            <label for="eventImageEdit{{ $event->id }}">Event Image: (16:9 should be ideal, max: 2MB)</label><br>
-                                                            @if($event->image)
-                                                                <img src="{{ asset('images/events/' . $event->image) }}" alt="{{ $event->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
+                                                            <label for="newsImageEdit{{ $news->id }}">News Image: (16:9 should be ideal, max: 2MB)</label><br>
+                                                            @if($news->image)
+                                                                <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
                                                                 <br>
                                                                 <small class="text-muted">Leave blank to keep current image.</small>
                                                             @else
                                                                 <small class="text-muted">No image uploaded.</small>
                                                             @endif
                                                             <div class="custom-file mt-2">
-                                                                <input type="file" class="custom-file-input" id="eventImageEdit{{ $event->id }}" name="image" accept="image/*">
-                                                                <label class="custom-file-label" for="eventImageEdit{{ $event->id }}">Choose new image (optional)</label>
+                                                                <input type="file" class="custom-file-input" id="newsImageEdit{{ $news->id }}" name="image" accept="image/*">
+                                                                <label class="custom-file-label" for="newsImageEdit{{ $news->id }}">Choose new image (optional)</label>
                                                             </div>
                                                             @error('image')
                                                                 <span class="text-danger">{{ $message }}</span>
@@ -206,72 +198,194 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- End Edit Event Modal Code --}}
+                                    {{-- End Edit News Modal Code --}}
 
-                                    {{-- Delete Event Modal Code --}}
-                                    <div class="modal fade" id="deleteEventModal{{ $event->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteEventModalLabel{{ $event->id }}" aria-hidden="true" data-backdrop="static">
+                                    {{-- Delete News Modal Code --}}
+                                    <div class="modal fade" id="deleteNewsModal{{ $news->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteNewsModalLabel{{ $news->id }}" aria-hidden="true" data-backdrop="static">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header bg-danger">
-                                                    <h5 class="modal-title" id="deleteEventModalLabel{{ $event->id }}">Delete Event</h5>
+                                                    <h5 class="modal-title" id="deleteNewsModalLabel{{ $news->id }}">Delete News</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    Are you sure you want to delete this event?<br/>
+                                                    Are you sure you want to delete this news item?<br/>
                                                     <center>
-                                                        <big><b>{{ $event->title }}</b></big><br/>
-                                                        <small>Date: {{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}</small>
+                                                        <big><b>{{ $news->title }}</b></big><br/>
+                                                        <small>Category: {{ $news->newscategory->name ?? 'N/A' }}</small>
                                                     </center>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    <a href="{{ route('dashboard.events.delete', $event->id) }}" class="btn btn-danger">Delete</a>
+                                                    <a href="{{ route('dashboard.news.delete', $news->id) }}" class="btn btn-danger">Delete</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- End Delete Event Modal Code --}}
+                                    {{-- End Delete News Modal Code --}}
                                 @empty
                                     <tr>
-                                        <td colspan="8" class="text-center">No events found.</td>
+                                        <td colspan="6" class="text-center">No news found.</td>
                                     </tr>
                                 @endforelse
                             </tbody>
                         </table>
                     </div>
                 </div>
-                @if(isset($allEvents) && method_exists($allEvents, 'links'))
-                    {{ $allEvents->links() }}
+                @if(isset($allNews) && method_exists($allNews, 'links'))
+                    {{ $allNews->links() }}
+                @endif
+            </div>
+
+            {{-- News Category Section --}}
+            {{-- News Category Section --}}
+            {{-- News Category Section --}}
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">News Categories</h3>
+                        <div class="card-tools">
+                             <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#addNewscategoryModal">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th style="width: 30%">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse($newscategories as $newscategory)
+                                    <tr>
+                                        <td>{{ $newscategory->name }}</td>
+                                        <td align="right">
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editNewscategoryModal{{ $newscategory->id }}">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteNewscategoryModal{{ $newscategory->id }}" disabled="">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    {{-- Edit News Category Modal Code --}}
+                                    <div class="modal fade" id="editNewscategoryModal{{ $newscategory->id }}" tabindex="-1" role="dialog" aria-labelledby="editNewscategoryModalLabel{{ $newscategory->id }}" aria-hidden="true" data-backdrop="static">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-primary">
+                                                    <h5 class="modal-title" id="editNewscategoryModalLabel{{ $newscategory->id }}">Update Category: {{ $newscategory->name }}</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <form method="post" action="{{ route('dashboard.newscategories.update', $newscategory->id) }}">
+                                                    <div class="modal-body">
+                                                        @csrf
+                                                        @method('POST')
+
+                                                        <div class="input-group mb-3">
+                                                            <input type="text"
+                                                                name="name"
+                                                                class="form-control"
+                                                                value="{{ $newscategory->name }}"
+                                                                placeholder="Category Name" required>
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text"><span class="fas fa-folder"></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-primary">Update</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- End Edit News Category Modal Code --}}
+
+                                    {{-- Delete News Category Modal Code --}}
+                                    <div class="modal fade" id="deleteNewscategoryModal{{ $newscategory->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteNewscategoryModalLabel{{ $newscategory->id }}" aria-hidden="true" data-backdrop="static">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-danger">
+                                                    <h5 class="modal-title" id="deleteNewscategoryModalLabel{{ $newscategory->id }}">Delete News Category</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to delete this news category?<br/>
+                                                    <center>
+                                                        <big><b>{{ $newscategory->name }}</b></big>
+                                                    </center>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <a href="{{ route('dashboard.newscategories.delete', $newscategory->id) }}" class="btn btn-danger">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- End Delete News Category Modal Code --}}
+                                @empty
+                                    <tr>
+                                        <td colspan="2" class="text-center">No categories found.</td>
+                                    </tr>
+                                @endforelse
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                @if(isset($newscategories) && method_exists($newscategories, 'links'))
+                    {{ $newscategories->links() }}
                 @endif
             </div>
         </div>
     </div>
 
-    {{-- Add Event Modal Code --}}
-    <div class="modal fade" id="addEventModal" tabindex="-1" role="dialog" aria-labelledby="addEventModalLabel" aria-hidden="true" data-backdrop="static">
+    {{-- Add News Modal Code --}}
+    <div class="modal fade" id="addNewsModal" tabindex="-1" role="dialog" aria-labelledby="addNewsModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addEventModalLabel">Add New Event</h5>
+            <h5 class="modal-title" id="addNewsModalLabel">Add New News</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form method="post" action="{{ route('dashboard.events.store') }}" enctype="multipart/form-data">
+          <form method="post" action="{{ route('dashboard.news.store') }}" enctype="multipart/form-data">
               <div class="modal-body">
                 @csrf
 
                 <div class="form-group mb-3">
-                    <label for="eventTypeAdd">Event Type</label>
-                    <input type="text"
-                           name="type"
-                           id="eventTypeAdd"
-                           class="form-control"
-                           value="{{ old('type') }}"
-                           placeholder="Event Type (e.g., Webinar, Conference)" required>
+                    <label for="">News Type</label>
+                    <select name="type" id="newsType" class="form-control" required>
+                        <option selected disabled value="">Select News Type</option>
+                        <option value="1">News Article</option>
+                        <option value="2">Press Release</option>
+                        <option value="3">External Links</option>
+                    </select>
                     @error('type')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="newsCategoryAdd">News Category</label>
+                    <select class="form-control select2bs4" style="width: 100%;" id="newsCategoryAdd" name="newscategory_id" required>
+                        <option value="">Select a Category</option>
+                        @foreach($newscategories as $category)
+                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        @endforeach
+                    </select>
+                    @error('newscategory_id')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
@@ -281,68 +395,50 @@
                            name="title"
                            class="form-control"
                            value="{{ old('title') }}"
-                           placeholder="Event Title" required>
+                           placeholder="News Title" required>
                     <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-calendar-alt"></span></div>
+                        <div class="input-group-text"><span class="fas fa-newspaper"></span></div>
                     </div>
                 </div>
 
-                <div class="input-group mb-3">
-                    <input type="date"
-                           name="event_date"
-                           class="form-control"
-                           value="{{ old('event_date') }}"
-                           placeholder="Event Date" required>
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-calendar-day"></span></div>
-                    </div>
-                </div>
-
-                <div class="input-group mb-3">
+                <div id="slugFieldWrapper" class="input-group mb-3">
                     <input type="text"
-                           name="from_to"
+                           name="slug"
+                           id="newsSlug"
                            class="form-control"
-                           value="{{ old('from_to') }}"
-                           placeholder="Event Time (e.g., 9:00 AM - 5:00 PM EST)" required>
+                           value="{{ old('slug') }}"
+                           autocomplete="off"
+                           placeholder="News Slug (e.g., latest-company-update)" required>
                     <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-clock"></span></div>
+                        <div class="input-group-text"><span class="fas fa-link"></span></div>
                     </div>
                 </div>
 
-                <div class="input-group mb-3">
-                    <input type="text"
-                           name="address"
-                           class="form-control"
-                           value="{{ old('address') }}"
-                           placeholder="Event Address (e.g., Online, New York, NY)" required>
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-map-marker-alt"></span></div>
-                    </div>
+                <div id="textFieldWrapper" class="form-group">
+                    <label for="newsTextAdd">News Content</label>
+                    <textarea id="newsTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea>
+                    
                 </div>
 
-                <div class="input-group mb-3">
+                <div id="newsLinkWrapper" class="input-group mb-3" style="display: none;">
                     <input type="url"
-                           name="reg_url"
-                           id="regUrlAdd"
+                           name="newslink"
+                           id="newsLink"
                            class="form-control"
-                           value="{{ old('reg_url') }}"
-                           placeholder="Registration URL (optional, e.g., https://example.com/register)">
+                           value="{{ old('newslink') }}"
+                           placeholder="Paste the External News Link (e.g., https://example.com/article)" required>
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-external-link-alt"></span></div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="eventTextAdd">Event Details</label>
-                    <textarea id="eventTextAdd" name="text" class="form-control summernote-editor">{{ old('text') }}</textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="eventImageAdd">Event Image: (16:9 should be ideal, max: 2MB)</label>
+                    <label for="newsImageAdd">News Image: (16:9 should be ideal, max: 2MB)</label>
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="eventImageAdd" name="image" accept="image/*" required>
-                        <label class="custom-file-label" for="eventImageAdd">Choose file</label>
+                        <input type="file" class="custom-file-input" id="newsImageAdd" name="image" accept="image/*" required>
+                        <label class="custom-file-label" for="newsImageAdd">Choose file</label>
                     </div>
+                    
                 </div>
 
               </div>
@@ -354,8 +450,42 @@
         </div>
       </div>
     </div>
-    {{-- End Add Event Modal Code --}}
+    {{-- End Add News Modal Code --}}
 
+    {{-- Add News Category Modal Code --}}
+    <div class="modal fade" id="addNewscategoryModal" tabindex="-1" role="dialog" aria-labelledby="addNewscategoryModalLabel" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="addNewscategoryModalLabel">Add New News Category</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form method="post" action="{{ route('dashboard.newscategories.store') }}">
+              <div class="modal-body">
+                @csrf
+
+                <div class="input-group mb-3">
+                    <input type="text"
+                           name="name"
+                           class="form-control"
+                           value="{{ old('name') }}"
+                           placeholder="Category Name" required>
+                    <div class="input-group-append">
+                        <div class="input-group-text"><span class="fas fa-folder-open"></span></div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-warning">Save</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    {{-- End Add News Category Modal Code --}}
 @endsection
 
 @section('third_party_scripts')
@@ -402,6 +532,62 @@
                 let fileName = $(this).val().split('\\').pop();
                 $(this).next('.custom-file-label').addClass("selected").html(fileName);
             });
+
+            // Initialize Select2 for newscategory dropdowns
+            {{-- $('.select2bs4').select2({
+                theme: 'bootstrap4',
+                dropdownParent: $('#addNewsModal, .editNewsModal') // Ensure dropdown is visible within modal
+            }); --}}
+        });
+
+         $('#newsType').on('change', function () {
+            var selectedType = $(this).val();
+
+            if (selectedType == '3') {
+                // External link selected
+                $('#slugFieldWrapper').hide();
+                $('#textFieldWrapper').hide();
+                $('#newsLinkWrapper').show();
+                $('#newsSlug').prop('required', false);
+                $('#newsTextAdd').prop('required', false);
+                $('#newsLink').prop('required', true);
+            } else {
+                // Normal news types
+                $('#slugFieldWrapper').show();
+                $('#textFieldWrapper').show();
+                $('#newsLinkWrapper').hide();
+                $('#newsSlug').prop('required', true);
+                $('#newsTextAdd').prop('required', true);
+                $('#newsLink').prop('required', false);
+            }
+        });
+
+        $('.news-type-select').on('change', function () {
+            const typeValue = $(this).val();
+            const newsId = $(this).data('news-id');
+
+            if (typeValue == 3) {
+                // Show link input, hide slug and text
+                $('.slug-group-' + newsId).hide();
+                $('.text-group-' + newsId).hide();
+                $('.newslink-group-' + newsId).show();
+                $('#slugEdit' + newsId).prop('required', false);
+                $('#newsTextEdit' + newsId).prop('required', false);
+                $('#newsLinkEdit' + newsId).prop('required', true);
+            } else {
+                // Show slug and text, hide link input
+                $('.slug-group-' + newsId).show();
+                $('.text-group-' + newsId).show();
+                $('.newslink-group-' + newsId).hide();
+                $('#slugEdit' + newsId).prop('required', true);
+                $('#newsTextEdit' + newsId).prop('required', true);
+                $('#newsLinkEdit' + newsId).prop('required', false);
+            }
+        });
+
+        // Trigger change manually on page load to handle pre-selected values
+        $('.news-type-select').each(function () {
+            $(this).trigger('change');
         });
 
         $(document).on('click', '#search-button', function() {
