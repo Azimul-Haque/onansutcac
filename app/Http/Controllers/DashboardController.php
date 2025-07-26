@@ -604,17 +604,17 @@ class DashboardController extends Controller
         return view('admin.events.index', compact('events'));
 
         if($request->search) {
-            $allNews = News::where('title', 'LIKE', "%$request->search%")
+            $allNews = Event::where('title', 'LIKE', "%$request->search%")
                              ->orWhere('type', 'LIKE', "%$request->search%")
                              ->orWhere('slug', 'LIKE', "%$request->search%")
                              ->orWhere('text', 'LIKE', "%$request->search%")
                              ->orderBy('id', 'desc')
                              ->paginate(10);
         } else {
-            $allNews = News::orderBy('id', 'desc')->paginate(10);
+            $allNews = Event::orderBy('id', 'desc')->paginate(10);
         }
 
-        return view('dashboard.news.index')
+        return view('dashboard.news.events')
                ->withAllNews($allNews)
                ->withNewscategories($newscategories);
     }
