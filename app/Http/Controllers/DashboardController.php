@@ -737,9 +737,9 @@ class DashboardController extends Controller
     public function storeSuccessStory(Request $request)
     {
         $rules = [
-            'title' => 'required|string|max:255',
-            'type' => 'required|string|max:255',
-            'custom_type' => 'nullable|string|max:255|required_if:type,Other',
+            'title' => 'required|string|max:191',
+            'type' => 'required|string|max:191',
+            'custom_type' => 'nullable|string|max:191|required_if:type,Other',
             'text' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'file' => 'nullable|file|mimes:pdf,doc,docx,xls,xlsx|max:3072',
@@ -779,9 +779,9 @@ class DashboardController extends Controller
     {
         // Define validation rules
         $rules = [
-            'title' => 'required|string|max:255',
-            'type' => 'required|string|max:255',
-            'custom_type' => 'nullable|string|max:255|required_if:type,Other',
+            'title' => 'required|string|max:191',
+            'type' => 'required|string|max:191',
+            'custom_type' => 'nullable|string|max:191|required_if:type,Other',
             'text' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'file' => 'nullable|file|mimes:pdf,doc,docx,xls,xlsx|max:3072',
