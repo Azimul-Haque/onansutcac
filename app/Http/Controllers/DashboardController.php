@@ -721,7 +721,7 @@ class DashboardController extends Controller
 
     public function getSuccessStories(Request $request)
     {
-        $query = SuccessStory::query();
+        $query = Successstory::query();
 
         if ($search = $request->input('search')) {
             $query->where('title', 'like', '%' . $search . '%')
