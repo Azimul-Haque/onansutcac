@@ -775,14 +775,6 @@ class DashboardController extends Controller
             $successstory->file = $fileName;
         }
 
-        Successstory::create([
-            'title' => $validatedData['title'],
-            'type' => $finalType,
-            'text' => $validatedData['text'],
-            'image' => $imageName,
-            'file' => $fileName,
-        ]);
-
         return redirect()->route('dashboard.success-stories')->with('success', 'Success story added successfully!');
     }
 
