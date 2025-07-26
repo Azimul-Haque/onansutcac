@@ -783,7 +783,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.success-stories');
     }
 
-    public function updateSuccessStory(Request $request, Successstory $successStory)
+    public function updateSuccessStory(Request $request, $id)
     {
         $rules = [
             'title' => 'required|string|max:191',
