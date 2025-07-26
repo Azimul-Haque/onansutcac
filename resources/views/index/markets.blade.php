@@ -54,7 +54,7 @@
                   <i class="bi bi-{{ $biicons[$loop->iteration - 1] }}"></i>
                 </div>
                 <div class="service-content">
-                  <span class="badge bg-primary position-absolute top-0 end-0 m-2" style="font-size: 0.75em; padding: 0.3em 0.75em; border-radius: 0.3rem;">
+                  <span class="badge bg-primary position-absolute top-0 end-0 m-2" style="font-size: 0.75em; padding: 0.3em 0.75em; border-radius: 0.4rem;">
                       {{ ind_type($market->type) ?? 'Product Type' }} <!-- Replace $product->type with your actual variable -->
                   </span>
                   <h3><a href="{{ route('index.singlemarket', $market->slug) }}" style="color: var(--heading-color);">{{ $market->title }}</a></h3>
