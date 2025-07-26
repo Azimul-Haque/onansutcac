@@ -775,13 +775,13 @@ class DashboardController extends Controller
             $successstory->file = $fileName;
         }
 
-        if($request->hasFile('attachment')) {
-                    $newfile = $request->file('attachment');
-                    $filename   = 'file_'.time() .'.' . $newfile->getClientOriginalExtension();
-                    $location   = public_path('/files/');
-                    $newfile->move($location, $filename);
-                    $notice->attachment = $filename;
-                }
+        if($request->hasFile('file')) {
+            $newfile = $request->file('file');
+            $filename   = 'file_'.time() .'.' . $newfile->getClientOriginalExtension();
+            $location   = public_path('/files/');
+            $newfile->move($location, $filename);
+            $notice->attachment = $filename;
+        }
 
         $successstory->save();
 
