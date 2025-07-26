@@ -753,10 +753,6 @@ class DashboardController extends Controller
         }
 
         $imageName = null;
-        if ($request->hasFile('image')) {
-            $imageName = time() . '.' . $request->file('image')->extension();
-            $request->file('image')->storeAs('public/images/success-stories', $imageName);
-        }
         if($request->hasFile('image')) {
             $image    = $request->file('image');
             $filename = Str::random(5) . time() .'.' . "webp";
