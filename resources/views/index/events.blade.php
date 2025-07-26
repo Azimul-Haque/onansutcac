@@ -32,7 +32,7 @@
           <div class="portfolio2-filters-container aos-init" data-aos="fade-up" data-aos-delay="200">
             <ul class="portfolio2-filters isotope-filters">
               <li data-filter="*" class="filter-active">All Events</li>
-              <li data-filter=".filter-web" class="">Webinar</li>
+              <li data-filter=".filter-Webinar" class="">Webinar</li>
               <li data-filter=".filter-graphics" class="">Conference</li>
               <li data-filter=".filter-motion" class="">Workshop</li>
               <li data-filter=".filter-brand" class="">Seminar</li>
@@ -42,7 +42,7 @@
 
           <div class="row g-4 isotope-container aos-init" data-aos="fade-up" data-aos-delay="300" style="position: relative; height: 1551.75px;">
             
-            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-web" style="position: absolute; left: 0px; top: 0px;">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Webinar" style="position: absolute; left: 0px; top: 0px;">
               <div class="portfolio2-card">
                 <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="AI & Sustainable Water Futures Summit" loading="lazy">
@@ -176,7 +176,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-web" style="position: absolute; left: 570px; top: 1018.5px;">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Webinar" style="position: absolute; left: 570px; top: 1018.5px;">
               <div class="portfolio2-card">
                 <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-2.webp') }}" class="img-fluid" alt="Nano-Filtration Breakthroughs: Addressing Emerging Contaminants" loading="lazy">
