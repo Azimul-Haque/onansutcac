@@ -111,30 +111,12 @@
             </div>
             <div class="col-md-8 d-flex align-items-center">
               <div class="tab-content w-100" id="v-pills-tabContent">
+                @foreach($marketsforfooter as $market)
                 <div class="tab-pane fade show active" id="v-pills-{{ $market->id }}" role="tabpanel" aria-labelledby="v-pills-tab-{{ $market->id }}" tabindex="0">
                   <p>Combining physical and chemical technologies to target a wide range of difficult-to-remove contaminants at varying loads. Works synergistically with other Gradiant technologies to achieve exacting treatment objectives.</p>
                   <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
                 </div>
-                <div class="tab-pane fade" id="v-pills-bio" role="tabpanel" aria-labelledby="v-pills-bio-tab" tabindex="0">
-                  <p>Leveraging advanced biological processes for efficient and sustainable wastewater treatment, focusing on nutrient removal and organic degradation. Ideal for various industrial and municipal applications.</p>
-                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
-                </div>
-                <div class="tab-pane fade" id="v-pills-smartops" role="tabpanel" aria-labelledby="v-pills-smartops-tab" tabindex="0">
-                  <p>Utilizing artificial intelligence and machine learning to optimize operational efficiency, predict maintenance needs, and enhance decision-making in complex water treatment systems.</p>
-                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
-                </div>
-                <div class="tab-pane fade" id="v-pills-sce" role="tabpanel" aria-labelledby="v-pills-sce-tab" tabindex="0">
-                  <p>Specialized technology for precision removal of specific contaminants, ensuring targeted treatment with minimal impact on overall water quality. Highly effective for challenging waste streams.</p>
-                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
-                </div>
-                <div class="tab-pane fade" id="v-pills-cge" role="tabpanel" aria-labelledby="v-pills-cge-tab" tabindex="0">
-                  <p>Innovative solution for efficient removal of volatile organic compounds (VOCs) and other gaseous contaminants from liquid streams, often used in industrial wastewater purification.</p>
-                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
-                </div>
-                <div class="tab-pane fade" id="v-pills-fro" role="tabpanel" aria-labelledby="v-pills-fro-tab" tabindex="0">
-                  <p>An advanced oxidation process generating highly reactive free radicals to break down persistent organic pollutants, effectively treating even the most refractory compounds in water.</p>
-                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
-                </div>
+                @endforeach
               </div>
             </div>
           </div>
