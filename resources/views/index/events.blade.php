@@ -45,7 +45,7 @@
               <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Webinar" style="position: absolute; left: 0px; top: 0px;">
                 <div class="portfolio2-card">
                   <div class="portfolio2-image">
-                    <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="AI & Sustainable Water Futures Summit" loading="lazy">
+                    <img src="{{ asset('images/events/') }}" class="img-fluid" alt="AI & Sustainable Water Futures Summit" loading="lazy">
                     <div class="portfolio2-overlay">
                       <div class="portfolio2-actions">
                         <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-eye"></i></a>
