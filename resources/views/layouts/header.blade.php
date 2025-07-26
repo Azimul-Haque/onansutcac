@@ -23,9 +23,11 @@
 
         <li class="dropdown"><a href="#"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#!">CoreSil™ Nanomaterials</a></li>
-            <li><a href="#!">Cera2D™ Corrosion Inhibitor</a></li>
-            <li><a href="#!">EndPFAS™ Solution</a></li>
+            @foreach($productsforfooter as $product)
+              @if($product->type == 2)
+                 <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
+              @endif
+            @endforeach
           </ul>
         </li>
 
