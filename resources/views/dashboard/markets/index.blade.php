@@ -83,7 +83,7 @@
                           <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-primary">
-                                <h5 class="modal-title" id="editMarketModalLabel{{ $market->id }}">Update Market: {{ $market->title }}</h5> {{-- Changed title and variable --}}
+                                <h5 class="modal-title" id="editMarketModalLabel{{ $market->id }}">Update Industry/Market: {{ $market->title }}</h5> {{-- Changed title and variable --}}
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
