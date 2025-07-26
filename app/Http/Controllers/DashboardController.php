@@ -756,7 +756,7 @@ class DashboardController extends Controller
         $successstory->title = $request->title;
         $successstory->type = $request->type;
         if($request->text) {
-            $event->text = Purifier::clean($request->text, 'youtube');
+            $successstory->text = Purifier::clean($request->text, 'youtube');
         }
 
         $imageName = null;
