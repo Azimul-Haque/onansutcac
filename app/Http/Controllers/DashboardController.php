@@ -775,7 +775,7 @@ class DashboardController extends Controller
             $successstory->file = $fileName;
         }
 
-        $event->save();
+        $successstory->save();
 
         Session::flash('success', 'Success story created successfully!');
         return redirect()->route('dashboard.success-stories');
