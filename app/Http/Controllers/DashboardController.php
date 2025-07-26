@@ -669,7 +669,7 @@ class DashboardController extends Controller
             'image'      => 'nullable|image|max:2048',
         ]);
 
-        $news = News::findOrFail($id);
+        $event = Event::findOrFail($id);
         $news->newscategory_id = $request->newscategory_id;
         $news->title = $request->title;
         $news->type = $request->type;
