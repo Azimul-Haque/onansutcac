@@ -33,7 +33,7 @@
             <ul class="portfolio2-filters isotope-filters">
               <li data-filter="*" class="filter-active">All Events</li>
               <li data-filter=".filter-Webinar" class="">Webinar</li>
-              <li data-filter=".filter-graphics" class="">Conference</li>
+              <li data-filter=".filter-Conference" class="">Conference</li>
               <li data-filter=".filter-motion" class="">Workshop</li>
               <li data-filter=".filter-brand" class="">Seminar</li>
               <li data-filter=".filter-brand" class="">Other</li>
@@ -110,7 +110,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-graphics" style="position: absolute; left: 570px; top: 0px;">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Conference" style="position: absolute; left: 570px; top: 0px;">
               <div class="portfolio2-card">
                 <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-10.webp') }}" class="img-fluid" alt="Nanotech Innovations for Clean Water: A Global Forum" loading="lazy">
@@ -198,7 +198,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-graphics" style="position: absolute; left: 0px; top: 1042.5px;">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Conference" style="position: absolute; left: 0px; top: 1042.5px;">
               <div class="portfolio2-card">
                 <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-11.webp') }}" class="img-fluid" alt="Smart Cities & Water: IoT's Role in Urban Sustainability" loading="lazy">
