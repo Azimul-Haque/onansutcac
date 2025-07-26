@@ -189,7 +189,7 @@
                     </tr>
                 @empty
                     <tr>
-                        <td colspan="4" class="text-center">No markets found.</td> {{-- Changed text --}}
+                        <td colspan="4" class="text-center">No Industry/Project found.</td> {{-- Changed text --}}
                     </tr>
                 @endforelse
               </tbody>
@@ -207,7 +207,7 @@
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addMarketModalLabel">Add New Industry</h5> {{-- Changed title and label --}}
+            <h5 class="modal-title" id="addMarketModalLabel">Add New Industry/Project</h5> {{-- Changed title and label --}}
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
