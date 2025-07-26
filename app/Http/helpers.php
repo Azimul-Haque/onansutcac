@@ -175,6 +175,18 @@
       return $text;
   }
 
+  function prod_type($type) {
+      $text = '';
+      if ($type == 1) {
+        $text = "Product";
+      } elseif($type == 2) {
+        $text = "Technology";
+      } elseif($type == 3) {
+        $text = "External Link";
+      }
+      return $text;
+  }
+
   function local_currency($num) {
     $explrestunits = "" ;
     if(strlen($num)>3) {
