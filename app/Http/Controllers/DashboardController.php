@@ -758,7 +758,7 @@ class DashboardController extends Controller
             $imageName = Str::random(5) . time() .'.' . "webp";
             $location = public_path('images/success-stories/'. $imageName);
             Image::make($image)->fit(711, 400)->save($location);
-            $event->image = $imageName;
+            $successstory->image = $imageName;
         }
 
         $fileName = null;
