@@ -211,6 +211,7 @@ class DashboardController extends Controller
         ]);
 
         $product = Product::findOrFail($id);
+        $product->type = $request->type;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
 
