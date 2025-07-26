@@ -118,7 +118,7 @@
               <div class="tab-content w-100" id="v-pills-tabContent">
                 @foreach($marketsforfooter as $market)
                 <div class="tab-pane fade show " id="v-pills-{{ $market->id }}" role="tabpanel" aria-labelledby="v-pills-tab-{{ $market->id }}" tabindex="0">
-                  <p>Combining physical and chemical technologies to target a wide range of difficult-to-remove contaminants at varying loads. Works synergistically with other Gradiant technologies to achieve exacting treatment objectives.</p>
+                  <p>{{ Str::limit(strip_tags($market->text), 200) }}</p>
                   <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
                 </div>
                 @endforeach
