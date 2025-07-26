@@ -28,7 +28,7 @@
                     <div class="card-header">
                         <h3 class="card-title">Success Stories</h3>
                         <div class="card-tools">
-                            <form class="form-inline form-group-lg" action="{{ route('dashboard.success_stories') }}" method="GET">
+                            <form class="form-inline form-group-lg" action="{{ route('dashboard.success-stories') }}" method="GET">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-sm" placeholder="Search stories" id="search-param" name="search" value="{{ request('search') }}" required>
                                 </div>
@@ -60,14 +60,14 @@
                                         <td>{{ $successStory->type }}</td>
                                         <td>
                                             @if($successStory->file)
-                                                <a href="{{ Storage::url('files/success_stories/' . $successStory->file) }}" target="_blank" class="text-primary"><i class="fas fa-file"></i> View File</a>
+                                                <a href="{{ Storage::url('files/success-stories/' . $successStory->file) }}" target="_blank" class="text-primary"><i class="fas fa-file"></i> View File</a>
                                             @else
                                                 N/A
                                             @endif
                                         </td>
                                         <td>
                                             @if($successStory->image)
-                                                <img src="{{ asset('images/success_stories/' . $successStory->image) }}" alt="{{ $successStory->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                                                <img src="{{ asset('images/success-stories/' . $successStory->image) }}" alt="{{ $successStory->title }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                                             @else
                                                 <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                                             @endif
@@ -93,7 +93,7 @@
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                <form method="post" action="{{ route('dashboard.success_stories.update', $successStory->id) }}" enctype="multipart/form-data">
+                                                <form method="post" action="{{ route('dashboard.success-stories.update', $successStory->id) }}" enctype="multipart/form-data">
                                                     <div class="modal-body">
                                                         @csrf
                                                         @method('POST')
@@ -145,7 +145,7 @@
                                                         <div class="form-group mb-3">
                                                             <label for="successStoryFileEdit{{ $successStory->id }}">Associated File (Optional - PDF, Word, Excel; max 3MB)</label><br>
                                                             @if($successStory->file)
-                                                                <p class="mb-1">Current File: <a href="{{ Storage::url('files/success_stories/' . $successStory->file) }}" target="_blank">{{ $successStory->file }}</a></p>
+                                                                <p class="mb-1">Current File: <a href="{{ Storage::url('files/success-stories/' . $successStory->file) }}" target="_blank">{{ $successStory->file }}</a></p>
                                                                 <small class="text-muted">Leave blank to keep current file.</small>
                                                             @else
                                                                 <small class="text-muted">No file uploaded.</small>
@@ -162,7 +162,7 @@
                                                         <div class="form-group">
                                                             <label for="successStoryImageEdit{{ $successStory->id }}">Image (Optional - 16:9 ideal, max 2MB)</label><br>
                                                             @if($successStory->image)
-                                                                <img src="{{ asset('images/success_stories/' . $successStory->image) }}" alt="{{ $successStory->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
+                                                                <img src="{{ asset('images/success-stories/' . $successStory->image) }}" alt="{{ $successStory->title }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
                                                                 <br>
                                                                 <small class="text-muted">Leave blank to keep current image.</small>
                                                             @else
@@ -213,7 +213,7 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    <a href="{{ route('dashboard.success_stories.delete', $successStory->id) }}" class="btn btn-danger">Delete</a>
+                                                    <a href="{{ route('dashboard.success-stories.delete', $successStory->id) }}" class="btn btn-danger">Delete</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -245,7 +245,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form method="post" action="{{ route('dashboard.success_stories.store') }}" enctype="multipart/form-data">
+          <form method="post" action="{{ route('dashboard.success-stories.store') }}" enctype="multipart/form-data">
               <div class="modal-body">
                 @csrf
 
