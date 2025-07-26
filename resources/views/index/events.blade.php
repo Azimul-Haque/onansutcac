@@ -35,8 +35,8 @@
               <li data-filter=".filter-Webinar" class="">Webinar</li>
               <li data-filter=".filter-Conference" class="">Conference</li>
               <li data-filter=".filter-Workshop" class="">Workshop</li>
-              <li data-filter=".filter-brand" class="">Seminar</li>
-              <li data-filter=".filter-brand" class="">Other</li>
+              <li data-filter=".filter-Seminar" class="">Seminar</li>
+              <li data-filter=".filter-Other" class="">Other</li>
             </ul>
           </div>
 
@@ -154,7 +154,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-brand" style="position: absolute; left: 0px; top: 533.25px;">
+            <div class="col-lg-4 col-md-6 portfolio2-item isotope-item filter-Seminar" style="position: absolute; left: 0px; top: 533.25px;">
               <div class="portfolio2-card">
                 <div class="portfolio2-image">
                   <img src="{{ asset('vendor/dewi/assets/img/portfolio/portfolio-4.webp') }}" class="img-fluid" alt="Aqua-AI & Robotics: Enhancing Water Infrastructure Resilience" loading="lazy">
