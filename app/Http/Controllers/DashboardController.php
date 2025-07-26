@@ -812,12 +812,12 @@ class DashboardController extends Controller
         // Handle image update
         if ($request->hasFile('image')) {
             // Delete old image if it exists
-            if ($successStory->image && File::exists(public_path('images/success_stories/' . $successStory->image))) {
-                File::delete(public_path('images/success_stories/' . $successStory->image));
+            if ($successStory->image && File::exists(public_path('images/success-stories/' . $successStory->image))) {
+                File::delete(public_path('images/success-stories/' . $successStory->image));
             }
             $image = $request->file('image');
             $imageName = Str::random(5) . time() .'.' . "webp";
-            $location = public_path('images/success_stories/'. $imageName);
+            $location = public_path('images/success-stories/'. $imageName);
             Image::make($image)->fit(711, 400)->save($location);
             $successStory->image = $imageName;
         }
@@ -825,19 +825,19 @@ class DashboardController extends Controller
         // Handle file update
         if ($request->hasFile('file')) {
             // Delete old file if it exists
-            if ($successStory->file && File::exists(public_path('files/success_stories/' . $successStory->file))) {
-                File::delete(public_path('files/success_stories/' . $successStory->file));
+            if ($successStory->file && File::exists(public_path('files/success-stories/' . $successStory->file))) {
+                File::delete(public_path('files/success-stories/' . $successStory->file));
             }
             $newfile = $request->file('file');
             $fileName = 'file_'.time() .'.' . $newfile->getClientOriginalExtension();
-            $location = public_path('files/success_stories');
+            $location = public_path('files/success-stories');
             $newfile->move($location, $fileName);
             $successStory->file = $fileName;
         }
 
         $successStory->save();
 
-        return redirect()->route('dashboard.success_stories')->with('success', 'Success story updated successfully!');
+        return redirect()->route('dashboard.success-stories')->with('success', 'Success story updated successfully!');
     }
 
     public function deleteSuccessStory(Successstory $successStory)
