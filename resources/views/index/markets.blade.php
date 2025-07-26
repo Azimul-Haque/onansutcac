@@ -55,7 +55,7 @@
                 </div>
                 <div class="service-content">
                   <span class="badge bg-primary position-absolute top-0 end-0 m-2" style="font-size: 0.85em; padding: 0.5em 0.75em; border-radius: 0.3rem;">
-                      {{ prod_type($product->type) ?? 'Product Type' }} <!-- Replace $product->type with your actual variable -->
+                      {{ ind_type($market->type) ?? 'Product Type' }} <!-- Replace $product->type with your actual variable -->
                   </span>
                   <h3><a href="{{ route('index.singlemarket', $market->slug) }}" style="color: var(--heading-color);">{{ $market->title }}</a></h3>
                   <p>{{ Str::limit(strip_tags($market->text), 200) }}</p>
