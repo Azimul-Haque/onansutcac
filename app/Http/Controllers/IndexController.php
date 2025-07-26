@@ -179,7 +179,7 @@ class IndexController extends Controller
 
     public function getEvents()
     {
-        $allEvents = Events::orderBy('id', 'desc')->get();
+        $allEvents = Event::orderBy('id', 'desc')->get();
         return view('index.events')->withAllEvents($allEvents);
     }
 
