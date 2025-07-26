@@ -107,6 +107,11 @@
                 @foreach($marketsforfooter as $market)
                   <a class="nav-link custom-nav-link active" id="v-pills-tab-{{ $market->id }}" data-bs-toggle="pill" data-bs-target="#v-pills-{{ $market->id }}" type="button" role="tab" aria-controls="v-pills-{{ $market->id }}" aria-selected="true">{{ $market->title }}</a>
                 @endforeach
+                <a class="nav-link custom-nav-link" id="v-pills-bio-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bio" type="button" role="tab" aria-controls="v-pills-bio" aria-selected="false">Market - 2</a>
+                <a class="nav-link custom-nav-link" id="v-pills-smartops-tab" data-bs-toggle="pill" data-bs-target="#v-pills-smartops" type="button" role="tab" aria-controls="v-pills-smartops" aria-selected="false">Market - 3</a>
+                <a class="nav-link custom-nav-link" id="v-pills-sce-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sce" type="button" role="tab" aria-controls="v-pills-sce" aria-selected="false">Market - 4</a>
+                <a class="nav-link custom-nav-link" id="v-pills-cge-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cge" type="button" role="tab" aria-controls="v-pills-cge" aria-selected="false">Market - 5</a>
+                <a class="nav-link custom-nav-link" id="v-pills-fro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fro" type="button" role="tab" aria-controls="v-pills-fro" aria-selected="false">Market - 6</a>
               </div>
             </div>
             <div class="col-md-8 d-flex align-items-center">
@@ -117,6 +122,26 @@
                   <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
                 </div>
                 @endforeach
+                <div class="tab-pane fade" id="v-pills-bio" role="tabpanel" aria-labelledby="v-pills-bio-tab" tabindex="0">
+                  <p>Leveraging advanced biological processes for efficient and sustainable wastewater treatment, focusing on nutrient removal and organic degradation. Ideal for various industrial and municipal applications.</p>
+                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
+                </div>
+                <div class="tab-pane fade" id="v-pills-smartops" role="tabpanel" aria-labelledby="v-pills-smartops-tab" tabindex="0">
+                  <p>Utilizing artificial intelligence and machine learning to optimize operational efficiency, predict maintenance needs, and enhance decision-making in complex water treatment systems.</p>
+                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
+                </div>
+                <div class="tab-pane fade" id="v-pills-sce" role="tabpanel" aria-labelledby="v-pills-sce-tab" tabindex="0">
+                  <p>Specialized technology for precision removal of specific contaminants, ensuring targeted treatment with minimal impact on overall water quality. Highly effective for challenging waste streams.</p>
+                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
+                </div>
+                <div class="tab-pane fade" id="v-pills-cge" role="tabpanel" aria-labelledby="v-pills-cge-tab" tabindex="0">
+                  <p>Innovative solution for efficient removal of volatile organic compounds (VOCs) and other gaseous contaminants from liquid streams, often used in industrial wastewater purification.</p>
+                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
+                </div>
+                <div class="tab-pane fade" id="v-pills-fro" role="tabpanel" aria-labelledby="v-pills-fro-tab" tabindex="0">
+                  <p>An advanced oxidation process generating highly reactive free radicals to break down persistent organic pollutants, effectively treating even the most refractory compounds in water.</p>
+                  <a href="#" class="btn btn-primary discover-more-btn mt-3">DISCOVER MORE</a>
+                </div>
               </div>
             </div>
           </div>
