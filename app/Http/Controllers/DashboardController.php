@@ -830,7 +830,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.success_stories')->with('success', 'Success story updated successfully!');
     }
 
-    public function deleteSuccessStory(SuccessStory $successStory)
+    public function deleteSuccessStory(Successstory $successStory)
     {
         // Delete associated image and file from storage
         if ($successStory->image) {
