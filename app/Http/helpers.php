@@ -181,8 +181,6 @@
         $text = "Product";
       } elseif($type == 2) {
         $text = "Technology";
-      } elseif($type == 3) {
-        $text = "External Link";
       }
       return $text;
   }
