@@ -36,7 +36,7 @@
                   <i class="fas fa-search"></i> Search
                 </button>
                 <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addMarketModal" style="margin-left: 5px;"> {{-- Changed target to addMarketModal --}}
-                  <i class="fas fa-plus"></i> Add New Market
+                  <i class="fas fa-plus"></i> Add New Industry/Project
                 </button>
               </form>
             </div>
