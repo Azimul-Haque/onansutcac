@@ -74,9 +74,9 @@
                     <div class="modal-body pt-0">
                       <div class="text-center mb-4">
                         <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ $event->title }}" style="max-height: 350px; object-fit: cover; width: 100%;">
-                        <h3 class="modal-title fw-bold mb-2" id="eventModalLabel">AI & Sustainable Water Futures Summit</h3>
+                        <h3 class="modal-title fw-bold mb-2" id="eventModalLabel">{{ $event->title }}</h3>
                         <p class="text-muted fst-italic mb-1">
-                          <i class="bi bi-calendar-event me-2"></i> **July 15, 2025** | 9:00 AM - 4:00 PM (GMT+6)
+                          <i class="bi bi-calendar-event me-2"></i> **{{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}** | 9:00 AM - 4:00 PM (GMT+6)
                         </p>
                         <p class="text-muted fst-italic mb-0">
                           <i class="bi bi-geo-alt me-2"></i> **Grand Ballroom, International Convention City Bashundhara (ICCB), Dhaka**
