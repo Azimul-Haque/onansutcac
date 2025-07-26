@@ -86,20 +86,7 @@
                       <hr class="my-4">
 
                       <div class="px-4">
-                        <p class="lead text-dark">
-                          Join industry leaders and innovators at the **AI & Sustainable Water Futures Summit**, a pivotal event exploring cutting-edge AI applications for optimizing water treatment, distribution, and scarcity solutions.
-                        </p>
-                        <p>
-                          This summit is designed to foster collaboration and knowledge exchange, bringing together leading experts, policymakers, and technologists. Attendees will gain invaluable insights into the latest advancements in smart water infrastructure, predictive analytics for resource management, and data-driven strategies crucial for a sustainable water future.
-                        </p>
-                        <p>
-                          Engage in dynamic discussions, network with pioneers in the field, and discover scalable solutions impacting communities globally. Don't miss this opportunity to be part of the conversation shaping the next generation of water technology.
-                        </p>
-                        <ul class="list-unstyled mt-4 text-start">
-                          <li><i class="bi bi-check-circle-fill text-success me-2"></i> **Keynote Speakers:** Featuring renowned experts from academia and industry.</li>
-                          <li><i class="bi bi-check-circle-fill text-success me-2"></i> **Interactive Panels:** Deep dives into practical AI implementation challenges and successes.</li>
-                          <li><i class="bi bi-check-circle-fill text-success me-2"></i> **Networking Sessions:** Opportunities to connect with peers and potential collaborators.</li>
-                        </ul>
+                        {!! $event->text !!}
                       </div>
                     </div>
                     <div class="modal-footer border-0 pt-0">
