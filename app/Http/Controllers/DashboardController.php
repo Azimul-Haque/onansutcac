@@ -775,7 +775,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.success_stories')->with('success', 'Success story added successfully!');
     }
 
-    public function updateSuccessStory(Request $request, SuccessStory $successStory)
+    public function updateSuccessStory(Request $request, Successstory $successStory)
     {
         // Define validation rules
         $rules = [
