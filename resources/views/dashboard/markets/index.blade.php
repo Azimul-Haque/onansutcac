@@ -30,7 +30,7 @@
             <div class="card-tools">
               <form class="form-inline form-group-lg" action="{{ route('dashboard.markets') }}" method="GET"> {{-- Changed route to dashboard.markets --}}
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-sm" placeholder="Search markets" id="search-param" name="search" value="{{ request('search') }}" required> {{-- Changed placeholder to "Search markets" --}}
+                  <input type="text" class="form-control form-control-sm" placeholder="Search markets/projects" id="search-param" name="search" value="{{ request('search') }}" required> {{-- Changed placeholder to "Search markets" --}}
                 </div>
                 <button type="submit" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                   <i class="fas fa-search"></i> Search
