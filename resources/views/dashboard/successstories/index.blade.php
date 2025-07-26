@@ -145,7 +145,7 @@
                                                         <div class="form-group mb-3">
                                                             <label for="successStoryFileEdit{{ $successStory->id }}">Associated File (Optional - PDF, Word, Excel; max 3MB)</label><br>
                                                             @if($successStory->file)
-                                                                <p class="mb-1">Current File: <a href="{{ Storage::url('files/success-stories/' . $successStory->file) }}" target="_blank">{{ $successStory->file }}</a></p>
+                                                                <p class="mb-1">Current File: <a href="{{ asset('files/success-stories/' . $successStory->file) }}" target="_blank">{{ $successStory->file }}</a></p>
                                                                 <small class="text-muted">Leave blank to keep current file.</small>
                                                             @else
                                                                 <small class="text-muted">No file uploaded.</small>
