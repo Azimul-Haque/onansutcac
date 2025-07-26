@@ -611,7 +611,7 @@ class DashboardController extends Controller
             $allEvents = Event::orderBy('id', 'desc')->paginate(10);
         }
 
-        return view('dashboard.events')
+        return view('dashboard.events.index')
                ->withAllEvents($allEvents);
     }
 
