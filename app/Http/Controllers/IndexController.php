@@ -11,6 +11,7 @@ use App\Market;
 use App\Team;
 use App\News;
 use App\Newscategory;
+use App\Event;
 use App\Faq;
 
 use Carbon\Carbon;
