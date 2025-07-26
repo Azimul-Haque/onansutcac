@@ -36,7 +36,7 @@
                   <i class="fas fa-search"></i> Search
                 </button>
                 <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addProductModal" style="margin-left: 5px;">
-                  <i class="fas fa-plus"></i> Add New Product
+                  <i class="fas fa-plus"></i> Add New Product/Technology
                 </button>
               </form>
             </div>
