@@ -15,7 +15,7 @@ class CreateEventsTable extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();                              
-            $table->string('title');             
+            $table->string('title');         
             $table->string('type');             
             $table->text('slug')->nullable();         
             $table->text('newslink')->nullable();                  
