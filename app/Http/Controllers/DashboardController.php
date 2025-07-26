@@ -598,7 +598,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.newscategories');
     }
 
-    public function getEvents()
+    public function getEvents(Request $request)
     {
         if($request->search) {
             $allEvents = Event::where('title', 'LIKE', "%$request->search%")
