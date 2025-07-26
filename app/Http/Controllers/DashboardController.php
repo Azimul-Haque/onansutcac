@@ -598,7 +598,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.newscategories');
     }
 
-    public function index()
+    public function getEvents()
     {
         $events = Event::latest()->get();
         return view('admin.events.index', compact('events'));
