@@ -35,16 +35,6 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            @foreach($productsforfooter as $product)
-              @if($product->type == 1)
-                 <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
-              @endif
-            @endforeach
-          </ul>
-        </li>
-
         <li class="dropdown"><a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             @foreach($marketsforfooter as $market)
