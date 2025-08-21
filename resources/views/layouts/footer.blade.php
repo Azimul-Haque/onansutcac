@@ -68,6 +68,17 @@
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Careers</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.events') }}">Events</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">News & Updates</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.information-center') }}">Information Center</a></li>
+          {{-- <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.testimonials') }}">Client Testimonials</a></li> --}}
+        </ul>
+
+
         <h4>Materials & Media</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.events') }}">Events</a></li>
