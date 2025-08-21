@@ -330,7 +330,7 @@
           <li class="nav-item col-3">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
               <i class="bi bi-binoculars"></i>
-              <h4 class="d-none d-lg-block">Event 1: Ttitle</h4>
+              <h4 class="d-none d-lg-block">Event 1: {{ $event->title }}</h4>
             </a>
           </li>
           @endforeach
