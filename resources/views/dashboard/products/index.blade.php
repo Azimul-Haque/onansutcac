@@ -102,6 +102,29 @@
                                             </select>
                                         </div>
 
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-3">
+                                                    <label for="">Select Type</label>
+                                                    <select name="type" id="type" class="form-control" required>
+                                                        <option value="" selected disabled>Select Type</option>
+                                                        <option value="1">Product</option>
+                                                        <option value="2">Technology</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-3">
+                                                    <label for="">Select Featured or not</label>
+                                                    <select name="type" id="type" class="form-control" required>
+                                                        <option value="" selected disabled>Featured or not</option>
+                                                        <option value="1">Featured</option>
+                                                        <option value="0">Not featured</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="input-group mb-3">
                                             <input type="text"
                                                    name="title"
