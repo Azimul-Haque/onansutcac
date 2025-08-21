@@ -35,7 +35,7 @@
 
         <div class="row gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
+            <h3>Science at the Nanoscale. Impact at the Global Scale</h3>
             {{-- <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" class="img-fluid rounded-4 mb-4" alt=""> --}}
             <img src="{{ asset('images/Electronic-Chip.webp') }}" class="img-fluid rounded-4 mb-4" alt="">
             <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
