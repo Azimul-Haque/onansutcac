@@ -575,7 +575,7 @@
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                       <p>
-                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        {{ $testimonial->text }}
                       </p>
                       <div class="profile mt-auto">
                         <img src="{{ asset('images/testimonials/' . $testimonial->image) }}" class="testimonial-img" alt="{{ $testimonial->name }}">
