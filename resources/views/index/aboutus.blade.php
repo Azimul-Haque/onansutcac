@@ -36,6 +36,7 @@
       <div class="container">
 
         <div class="row gy-4">
+          {{ $aboutpagetop->content }}
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3>Science at the Nanoscale. Impact at the Global Scale.</h3>
             <img src="{{ asset('images/about-us-page.gif') }}" class="img-fluid rounded-4 mb-4" alt="">
