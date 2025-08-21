@@ -262,7 +262,8 @@
               text-align: center;
           }
           .mission-card {
-              background-color: #ffffff;
+              background-color: #e8f5e9; /* Light green */
+              color: #2e7d32; /* Darker green for text */
               border: 1px solid #e9ecef;
           }
           .statement-title {
