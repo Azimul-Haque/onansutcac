@@ -60,7 +60,8 @@
         <h4>Resources</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Product Datasheets</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Product Datasheets</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Testing Standards (EPA, ISO)</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Testing Standards (EPA, ISO)</a></li>
 
           
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
