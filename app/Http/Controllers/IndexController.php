@@ -60,7 +60,6 @@ class IndexController extends Controller
      */
     public function index()
     {
-        dd(url('/'));
         $featuredprodandtechs = Product::where('isfeatured', 1)->get()->take(3);
         $featuredevents = Event::orderBy('id', 'desc')->get()->take(4);
         $newsforhomepage = News::orderBy('id', 'desc')->get()->take(3);
