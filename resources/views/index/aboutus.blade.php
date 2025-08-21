@@ -260,6 +260,7 @@
               background-color: #e0f7fa; /* Light blue */
               color: #00796b; /* Darker teal for text */
               text-align: center;
+              border: 1px solid #e9ecef;
           }
           .mission-card {
               background-color: #e8f5e9; /* Light green */
