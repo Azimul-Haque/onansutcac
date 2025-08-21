@@ -178,7 +178,7 @@
             <div class="col-12 col-md-6">
                 <div class="mission-card">
                     <h2>Mission</h2>
-                    <p>Globally solving the toughest water treatment problems by unique nano technology</p>
+                    <p>Water sustainability by developing monopoly of technologies and their manufacturing for secure water world</p>
                 </div>
             </div>
         </div>
