@@ -355,7 +355,7 @@
         </ul><!-- End Tab Nav -->
 
         <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          @foreach($featuredevents as $event)
+          @foreach($featuredevents as $key => $event)
           <div class="tab-pane fade active show" id="features-{{ $event->id }}">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
