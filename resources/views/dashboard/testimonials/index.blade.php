@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Team | Dashboard @endsection
+@section('title') Testimonials | Dashboard @endsection
 
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
@@ -20,22 +20,22 @@
 @endsection
 
 @section('content')
-    @section('page-header') Teams (Total {{ $teamsCount ?? 0 }}) @endsection
+    @section('page-header') Testimonials (Total {{ $testimonialsCount ?? 0 }}) @endsection
     <div class="container-fluid">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Teams</h3>
+            <h3 class="card-title">Testimonials</h3>
 
             <div class="card-tools">
-              <form class="form-inline form-group-lg" action="{{ route('dashboard.teams') }}" method="GET">
+              <form class="form-inline form-group-lg" action="{{ route('dashboard.testimonials') }}" method="GET">
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-sm" placeholder="Search team members" id="search-param" name="search" value="{{ request('search') }}" required>
+                  <input type="text" class="form-control form-control-sm" placeholder="Search testimonials" id="search-param" name="search" value="{{ request('search') }}" required>
                 </div>
                 <button type="submit" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                   <i class="fas fa-search"></i> Search
                 </button>
-                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addTeamModal" style="margin-left: 5px;">
-                  <i class="fas fa-plus"></i> Add New Team Member
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addTestimonialModal" style="margin-left: 5px;">
+                  <i class="fas fa-plus"></i> Add New Testimonial
                 </button>
               </form>
             </div>
@@ -46,148 +46,148 @@
                 <tr>
                     <th>Name</th>
                     <th>Designation</th>
-                    <th>Serial</th>
+                    <th>Rating</th>
+                    <th>Text</th>
                     <th>Image</th>
                     <th style="width: 40%">Actions</th>
                 </tr>
               </thead>
               <tbody>
-                @forelse($teams as $team)
+                @forelse($testimonials as $testimonial)
                     <tr>
                         <td>
-                            {{-- <a href="{{ route('index.singleteam', $team->id) }}" target="_blank"> --}}
-                                {{ $team->name }}
-                            {{-- </a> --}}
+                                {{ $testimonial->name }}
                             <br/>
-                            <small class="text-black-50">{{ $team->designation }}</small>
+                            <small class="text-black-50">{{ $testimonial->designation }}</small>
                         </td>
-                        <td><small>{{ $team->designation }}</small></td>
-                        <td><big>{{ $team->serial }}</big></td>
+                        <td><small>{{ $testimonial->designation }}</small></td>
+                        <td><big>{{ $testimonial->rating }}</big></td>
+                        <td><small>{{ Str::limit(strip_tags($testimonial->text), 50) }}</small></td>
                         <td>
-                            @if($team->image)
-                                <img src="{{ asset('images/teams/' . $team->image) }}" alt="{{ $team->name }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                            @if($testimonial->image)
+                                <img src="{{ asset('images/testimonials/' . $testimonial->image) }}" alt="{{ $testimonial->name }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                             @else
                                 <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                             @endif
                         </td>
                         <td align="right">
-                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTeamModal{{ $team->id }}">
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTestimonialModal{{ $testimonial->id }}">
                                 <i class="fas fa-edit"></i> Edit
                             </button>
 
-                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTeamModal{{ $team->id }}">
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTestimonialModal{{ $testimonial->id }}">
                                 <i class="fas fa-trash"></i> Delete
                             </button>
                         </td>
 
-                        <div class="modal fade" id="editTeamModal{{ $team->id }}" tabindex="-1" role="dialog" aria-labelledby="editTeamModalLabel{{ $team->id }}" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="editTestimonialModal{{ $testimonial->id }}" tabindex="-1" role="dialog" aria-labelledby="editTestimonialModalLabel{{ $testimonial->id }}" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-primary">
-                                <h5 class="modal-title" id="editTeamModalLabel{{ $team->id }}">Update Team Member: {{ $team->name }}</h5>
+                                <h5 class="modal-title" id="editTestimonialModalLabel{{ $testimonial->id }}">Update Testimonial: {{ $testimonial->name }}</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
-                              <form method="post" action="{{ route('dashboard.teams.update', $team->id) }}" enctype="multipart/form-data">
-                                        <div class="modal-body">
-                                            @csrf
-                                            @method('POST')
+                              <form method="post" action="{{ route('dashboard.testimonials.update', $testimonial->id) }}" enctype="multipart/form-data">
+                                         <div class="modal-body">
+                                             @csrf
+                                             @method('POST')
 
-                                            <div class="input-group mb-3">
-                                                <input type="text"
-                                                       name="name"
-                                                       class="form-control"
-                                                       value="{{ old('name', $team->name) }}"
-                                                       placeholder="Team Member Name" required>
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text"><span class="fas fa-user"></span></div>
-                                                </div>
-                                            </div>
+                                             <div class="input-group mb-3">
+                                                 <input type="text"
+                                                            name="name"
+                                                            class="form-control"
+                                                            value="{{ old('name', $testimonial->name) }}"
+                                                            placeholder="Testimonial Name" required>
+                                                 <div class="input-group-append">
+                                                     <div class="input-group-text"><span class="fas fa-user"></span></div>
+                                                 </div>
+                                             </div>
 
-                                            <div class="row">
-                                                <div class="col-md-6">
+                                             <div class="row">
+                                                 <div class="col-md-6">
+                                                     <div class="input-group mb-3">
+                                                         <input type="text"
+                                                                    name="designation"
+                                                                    class="form-control"
+                                                                    value="{{ old('designation', $testimonial->designation) }}"
+                                                                    autocomplete="off"
+                                                                    placeholder="Testimonial Designation" required>
+                                                         <div class="input-group-append">
+                                                             <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <div class="col-md-6">
                                                     <div class="input-group mb-3">
-                                                        <input type="text"
-                                                               name="designation"
-                                                               class="form-control"
-                                                               value="{{ old('designation', $team->designation) }}"
-                                                               autocomplete="off"
-                                                               placeholder="Team Member Designation" required>
+                                                        <select class="form-control" name="rating">
+                                                            <option value="" disabled>Select Rating</option>
+                                                            @for ($i = 1; $i <= 5; $i++)
+                                                                <option value="{{ $i }}" {{ $testimonial->rating == $i ? 'selected' : '' }}>{{ $i }} Star</option>
+                                                            @endfor
+                                                        </select>
                                                         <div class="input-group-append">
-                                                            <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
-                                                        </div>
+                                                             <div class="input-group-text"><span class="fas fa-star"></span></div>
+                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="input-group mb-3">
-                                                        <input type="number"
-                                                               name="serial"
-                                                               class="form-control"
-                                                               value="{{ old('designation', $team->serial) }}"
-                                                               autocomplete="off"
-                                                               placeholder="Team Member Serial (1, 2, 3, etc.)" required>
-                                                        <div class="input-group-append">
-                                                            <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                 </div>
+                                             </div>
 
-                                            <div class="form-group">
-                                                <label for="teamAboutEdit{{ $team->id }}">About Team Member</label>
-                                                <textarea id="teamAboutEdit{{ $team->id }}" name="about" class="form-control summernote-editor" required>{{ old('about', $team->about) }}</textarea>
-                                                @error('about')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
+                                             <div class="form-group">
+                                                 <label for="testimonialTextEdit{{ $testimonial->id }}">Testimonial Text</label>
+                                                 <textarea id="testimonialTextEdit{{ $testimonial->id }}" name="text" class="form-control summernote-editor" required>{{ old('text', $testimonial->text) }}</textarea>
+                                                 @error('text')
+                                                     <span class="text-danger">{{ $message }}</span>
+                                                 @enderror
+                                             </div>
 
-                                            <div class="form-group">
-                                                <label for="teamImageEdit{{ $team->id }}">Team Member Image: (1:1 should be ideal, max: 2MB)</label><br>
-                                                @if($team->image)
-                                                    <img src="{{ asset('images/teams/' . $team->image) }}" alt="{{ $team->name }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
-                                                    <br>
-                                                    <small class="text-muted">Leave blank to keep current image.</small>
-                                                @else
-                                                    <small class="text-muted">No image uploaded.</small>
-                                                @endif
-                                                <div class="custom-file mt-2">
-                                                    <input type="file" class="custom-file-input" id="teamImageEdit{{ $team->id }}" name="image" accept="image/*">
-                                                    <label class="custom-file-label" for="teamImageEdit{{ $team->id }}">Choose new image (optional)</label>
-                                                </div>
-                                                @error('image')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                @enderror
-                                            </div>
+                                             <div class="form-group">
+                                                 <label for="testimonialImageEdit{{ $testimonial->id }}">Testimonial Image: (1:1 should be ideal, max: 300KB)</label><br>
+                                                 @if($testimonial->image)
+                                                     <img src="{{ asset('images/testimonials/' . $testimonial->image) }}" alt="{{ $testimonial->name }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
+                                                     <br>
+                                                     <small class="text-muted">Leave blank to keep current image.</small>
+                                                 @else
+                                                     <small class="text-muted">No image uploaded.</small>
+                                                 @endif
+                                                 <div class="custom-file mt-2">
+                                                     <input type="file" class="custom-file-input" id="testimonialImageEdit{{ $testimonial->id }}" name="image" accept="image/*">
+                                                     <label class="custom-file-label" for="testimonialImageEdit{{ $testimonial->id }}">Choose new image (optional)</label>
+                                                 </div>
+                                                 @error('image')
+                                                     <span class="text-danger">{{ $message }}</span>
+                                                 @enderror
+                                             </div>
 
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Update</button>
-                                        </div>
+                                         </div>
+                                         <div class="modal-footer">
+                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                             <button type="submit" class="btn btn-primary">Update</button>
+                                         </div>
                               </form>
                             </div>
                           </div>
                         </div>
-                        <div class="modal fade" id="deleteTeamModal{{ $team->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTeamModalLabel{{ $team->id }}" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="deleteTestimonialModal{{ $testimonial->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTestimonialModalLabel{{ $testimonial->id }}" aria-hidden="true" data-backdrop="static">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
-                                <h5 class="modal-title" id="deleteTeamModalLabel{{ $team->id }}">Delete Team Member</h5>
+                                <h5 class="modal-title" id="deleteTestimonialModalLabel{{ $testimonial->id }}">Delete Testimonial</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
                               <div class="modal-body">
-                                Are you sure you want to delete this team member?<br/>
+                                Are you sure you want to delete this testimonial?<br/>
                                 <center>
-                                    <big><b>{{ $team->name }}</b></big><br/>
-                                    <small>Designation: {{ $team->designation }}</small>
+                                    <big><b>{{ $testimonial->name }}</b></big><br/>
+                                    <small>Designation: {{ $testimonial->designation }}</small>
                                 </center>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="{{ route('dashboard.teams.delete', $team->id) }}" class="btn btn-danger">Delete</a>
+                                <a href="{{ route('dashboard.testimonials.delete', $testimonial->id) }}" class="btn btn-danger">Delete</a>
                               </div>
                             </div>
                           </div>
@@ -195,37 +195,37 @@
                     </tr>
                 @empty
                     <tr>
-                        <td colspan="4" class="text-center">No team members found.</td>
+                        <td colspan="6" class="text-center">No testimonials found.</td>
                     </tr>
                 @endforelse
               </tbody>
             </table>
           </div>
         </div>
-        @if(isset($teams) && method_exists($teams, 'links'))
-            {{ $teams->links() }}
+        @if(isset($testimonials) && method_exists($testimonials, 'links'))
+            {{ $testimonials->links() }}
         @endif
     </div>
 
-    <div class="modal fade" id="addTeamModal" tabindex="-1" role="dialog" aria-labelledby="addTeamModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="addTestimonialModal" tabindex="-1" role="dialog" aria-labelledby="addTestimonialModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addTeamModalLabel">Add New Team Member</h5>
+            <h5 class="modal-title" id="addTestimonialModalLabel">Add New Testimonial</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form method="post" action="{{ route('dashboard.teams.store') }}" enctype="multipart/form-data">
+          <form method="post" action="{{ route('dashboard.testimonials.store') }}" enctype="multipart/form-data">
               <div class="modal-body">
                 @csrf
 
                 <div class="input-group mb-3">
                     <input type="text"
-                           name="name"
-                           class="form-control"
-                           value="{{ old('name') }}"
-                           placeholder="Team Member Name" required>
+                               name="name"
+                               class="form-control"
+                               value="{{ old('name') }}"
+                               placeholder="Testimonial Name" required>
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-user"></span></div>
                     </div>
@@ -235,11 +235,11 @@
                     <div class="col-md-6">
                         <div class="input-group mb-3">
                             <input type="text"
-                                   name="designation"
-                                   class="form-control"
-                                   value="{{ old('designation') }}"
-                                   autocomplete="off"
-                                   placeholder="Team Member Designation" required>
+                                       name="designation"
+                                       class="form-control"
+                                       value="{{ old('designation') }}"
+                                       autocomplete="off"
+                                       placeholder="Testimonial Designation" required>
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
                             </div>
@@ -247,32 +247,34 @@
                     </div>
                     <div class="col-md-6">
                         <div class="input-group mb-3">
-                            <input type="number"
-                                   name="serial"
-                                   class="form-control"
-                                   value="{{ old('serial') }}"
-                                   autocomplete="off"
-                                   placeholder="Team Member Serial (1, 2, 3, etc.)" required>
-                            <div class="input-group-append">
-                                <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
-                            </div>
+                            <select class="form-control" name="rating" required>
+                                <option value="" selected disabled>Select Rating</option>
+                                <option value="1">1 Star</option>
+                                <option value="2">2 Star</option>
+                                <option value="3">3 Star</option>
+                                <option value="4">4 Star</option>
+                                <option value="5">5 Star</option>
+                            </select>
+                             <div class="input-group-append">
+                                 <div class="input-group-text"><span class="fas fa-star"></span></div>
+                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="teamAboutAdd">About Team Member</label>
-                    <textarea id="teamAboutAdd" name="about" class="form-control summernote-editor" required>{{ old('about') }}</textarea>
-                    @error('about')
+                    <label for="testimonialTextAdd">Testimonial Text</label>
+                    <textarea id="testimonialTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea>
+                    @error('text')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
 
                 <div class="form-group">
-                    <label for="teamImageAdd">Team Member Image: (1:1 should be ideal, max: 2MB)</label>
+                    <label for="testimonialImageAdd">Testimonial Image: (1:1 should be ideal, max: 300KB)</label>
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="teamImageAdd" name="image" accept="image/*" required>
-                        <label class="custom-file-label" for="teamImageAdd">Choose file</label>
+                        <input type="file" class="custom-file-input" id="testimonialImageAdd" name="image" accept="image/*" required>
+                        <label class="custom-file-label" for="testimonialImageAdd">Choose file</label>
                     </div>
                     @error('image')
                         <span class="text-danger">{{ $message }}</span>
