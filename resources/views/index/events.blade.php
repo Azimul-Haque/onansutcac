@@ -142,7 +142,7 @@
                   </h3>
                   <div class="post-meta">
                     <span class="read-time">2 mins read</span>
-                    <span class="post-date">6 April 2026</span>
+                    <span class="post-date">{{ date('F d, Y', strtotime($news->created_at)) }}</span>
                   </div>
                 </div>
               </article>
