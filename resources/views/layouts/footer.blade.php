@@ -73,10 +73,10 @@
           <li><i class="bi bi-chevron-right"></i> <a href="#">Open Positions</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Work Culture</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Internship & Research Opportunities</a></li>
-        </ul>
+        </ul><br/>
 
 
-        <h4>Materials & Media</h4>
+        <h4>Contact</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.events') }}">Events</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
