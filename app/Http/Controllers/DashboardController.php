@@ -1012,7 +1012,7 @@ class DashboardController extends Controller
     public function getMessages(Request $request)
     {
         if($request->search) {
-            $faqs = Faq::where('type', 'LIKE', "%$request->search%")
+            $faqs = Faq::where('name', 'LIKE', "%$request->search%")
                          ->orWhere('question', 'LIKE', "%$request->search%")
                          ->orWhere('answer', 'LIKE', "%$request->search%")
                          ->orderBy('id', 'desc')
