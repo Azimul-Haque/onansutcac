@@ -324,6 +324,13 @@ class IndexController extends Controller
         return view('index.help-center')->withFaqs($faqs);
     }
 
+    public function getSitemap()
+    {
+        $faqs = Faq::orderBy('id', 'desc')->get();
+        
+        return view('index.help-center')->withFaqs($faqs);
+    }
+
     // clear configs, routes and serve
     public function clear()
     {
