@@ -139,7 +139,7 @@
                                              </div>
 
                                              <div class="form-group">
-                                                 <label for="testimonialTextEdit{{ $testimonial->id }}">Testimonial Text</label>
+                                                 <label for="testimonialTextEdit{{ $testimonial->id }}">Testimonial Text (Max: 200 Character)</label>
                                                  <textarea id="testimonialTextEdit{{ $testimonial->id }}" name="text" class="form-control summernote-editor" required>{{ old('text', $testimonial->text) }}</textarea>
                                                  @error('text')
                                                      <span class="text-danger">{{ $message }}</span>
@@ -267,7 +267,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="testimonialTextAdd">Testimonial Text</label>
+                    <label for="testimonialTextAdd">Testimonial Text (Max: 200 Character)</label>
                     <textarea id="testimonialTextAdd" name="text" class="form-control summernote-editor" required>{{ old('text') }}</textarea>
                     @error('text')
                         <span class="text-danger">{{ $message }}</span>
