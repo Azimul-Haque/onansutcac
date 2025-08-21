@@ -225,7 +225,7 @@
                                name="name"
                                class="form-control"
                                value="{{ old('name') }}"
-                               placeholder="Testimonial Name" required>
+                               placeholder="Testifier Name" required>
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-user"></span></div>
                     </div>
@@ -239,7 +239,7 @@
                                        class="form-control"
                                        value="{{ old('designation') }}"
                                        autocomplete="off"
-                                       placeholder="Testimonial Designation" required>
+                                       placeholder="Testifier Designation" required>
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
                             </div>
@@ -271,7 +271,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="testimonialImageAdd">Testimonial Image: (1:1 should be ideal, max: 300KB)</label>
+                    <label for="testimonialImageAdd">Testifier  Image: (1:1 should be ideal, max: 300KB)</label>
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="testimonialImageAdd" name="image" accept="image/*" required>
                         <label class="custom-file-label" for="testimonialImageAdd">Choose file</label>
