@@ -239,211 +239,56 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="infographic-container">
+            <!-- The half arc -->
+            <div class="infographic-arc"></div>
 
-        <div class="infographic-wrapper">
-            <div class="infographic-circle">
-                <!-- Connectors - these are a visual guide only, not functional pointers -->
-                <div class="connector-line top-to-center"></div>
-                <div class="connector-line bottom-to-center"></div>
-                <div class="connector-line left-to-center"></div>
-                <!-- Center Circle -->
-                <div class="center-circle">
-                    <span class="center-title">INFOGRAPHIC</span>
-                    <span class="center-subtitle">Water Treatment Challenges</span>
+            <!-- Step 1 - Biofouling -->
+            <div class="step biofouling">
+                <div class="step-icon orange">
+                    <i class="bi bi-bug"></i>
                 </div>
+                <div class="connector-line"></div>
+                <h5 class="step-title text-warning">Biofouling</h5>
+                <ul class="step-description">
+                    <li>Microbial growth clogs filters and membranes.</li>
+                    <li>Causes higher energy use and frequent cleaning.</li>
+                    <li>Huge impact in desalination, wastewater, semiconductors.</li>
+                </ul>
             </div>
 
-            <!-- Biofouling Block -->
-            <div class="challenge-block biofouling">
-                <div class="icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.75c-3.141 0-5.94-1.272-7.942-3.308-2.001-2.035-3.003-4.78-3.003-7.617a9.006 9.006 0 011.83-5.462c1.037-1.325 2.585-2.052 4.316-2.052h.001a4.5 4.5 0 013.784 1.956c1.64 1.996 4.346 3.003 7.632 3.003h.001c3.286 0 5.992-1.007 7.632-3.003a4.5 4.5 0 013.784-1.956h.001c1.731 0 3.279.727 4.316 2.052a9.006 9.006 0 011.83 5.462c0 2.837-1.002 5.582-3.003 7.617C17.94 20.478 15.141 21.75 12 21.75zM12 21.75a9 9 0 005.15-2.484M12 21.75a9 9 0 01-5.15-2.484" />
-                        <circle cx="12" cy="12" r="3" fill="#ffffff" />
-                    </svg>
+            <!-- Step 2 - Corrosion -->
+            <div class="step corrosion">
+                <div class="step-icon blue">
+                    <i class="bi bi-droplet-half"></i>
                 </div>
-                <h2 class="challenge-title">Biofouling</h2>
-                <p class="challenge-description">Microbial growth clogs filters and membranes, increasing energy use and maintenance.</p>
+                <div class="connector-line"></div>
+                <h5 class="step-title text-primary">Corrosion</h5>
+                <ul class="step-description">
+                    <li>Deteriorates pipes, tanks, and water systems.</li>
+                    <li>Leads to system failure and contamination risks.</li>
+                    <li>Especially costly in industrial water infrastructure.</li>
+                </ul>
             </div>
 
-            <!-- Corrosion Block -->
-            <div class="challenge-block corrosion">
-                <div class="icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 22.5c-3.103 0-5.756-1.125-7.585-3.131C2.585 17.581 1.5 15.161 1.5 12c0-3.161 1.085-5.581 2.915-7.369C6.244 2.125 8.897 1.5 12 1.5c3.103 0 5.756 1.125 7.585 3.131C21.415 6.419 22.5 8.839 22.5 12c0 3.161-1.085 5.581-2.915 7.369C17.756 21.375 15.103 22.5 12 22.5zM12 1.5v21" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 1.5l-3.375 1.5m-1.5 12.75l1.5-1.5m3.75 1.5l-1.5-1.5m-3.75-6.75l-1.5 1.5m-3.75-1.5l1.5-1.5" />
-                    </svg>
+            <!-- Step 3 - PFAS -->
+            <div class="step pfas">
+                <div class="step-icon green">
+                    <i class="bi bi-exclamation-triangle"></i>
                 </div>
-                <h2 class="challenge-title">Corrosion</h2>
-                <p class="challenge-description">Deterioration of pipes and systems leads to failure, costly repairs, and contamination risks.</p>
-            </div>
-
-            <!-- PFAS Block -->
-            <div class="challenge-block pfas">
-                <div class="icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5c-3.103 0-5.756-1.125-7.585-3.131C2.585 15.581 1.5 13.161 1.5 10c0-3.161 1.085-5.581 2.915-7.369C6.244 1.125 8.897.5 12 .5c3.103 0 5.756 1.125 7.585 3.131C21.415 5.581 22.5 8.161 22.5 10c0 3.161-1.085 5.581-2.915 7.369C17.756 18.375 15.103 19.5 12 19.5z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v2m-3-12h6m-9 3h3" />
-                    </svg>
-                </div>
-                <h2 class="challenge-title">PFAS (Forever Chemicals)</h2>
-                <p class="challenge-description">Toxic chemicals that are difficult to destroy, posing environmental and health risks.</p>
+                <div class="connector-line"></div>
+                <h5 class="step-title text-success">PFAS (Forever Chemicals)</h5>
+                <ul class="step-description">
+                    <li>Toxic and hazardous to environment, hard to destroy.</li>
+                    <li>Found in drinking water, environment, industrial discharge.</li>
+                    <li>Regulations are becoming more stringent worldwide.</li>
+                </ul>
             </div>
         </div>
       </div>
 
       <style>
-        .infographic-wrapper {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 600px; /* Adjusted height for a more compact design */
-            width: 100%;
-        }
-        .infographic-circle {
-            position: relative;
-            width: 450px; /* Reduced the size of the white circle */
-            height: 450px; /* Reduced the size of the white circle */
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 50px rgba(0,0,0,0.05);
-            background-color: #fff;
-        }
-        .center-circle {
-            background-color: #007bff;
-            color: #ffffff;
-            border-radius: 50%;
-            width: 200px; /* Reduced the size of the blue circle */
-            height: 200px; /* Reduced the size of the blue circle */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
-            z-index: 1;
-        }
-        .center-title {
-            font-size: 1.3rem; /* Adjusted font size for new circle size */
-            font-weight: 700;
-            line-height: 1.2;
-        }
-        .center-subtitle {
-            font-size: 0.8rem; /* Adjusted font size for new circle size */
-            opacity: 0.8;
-            margin-top: 0.5rem;
-        }
-        .challenge-block {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            width: 220px; /* Reduced width for better fit */
-            transition: transform 0.5s ease;
-        }
-        /* Positioning and rotation for each block */
-        .challenge-block.biofouling {
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%) translateY(-70px); /* Adjusted position */
-        }
-        .challenge-block.corrosion {
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%) translateY(70px); /* Adjusted position */
-        }
-        .challenge-block.pfas {
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%) translateX(-70px); /* Adjusted position */
-        }
-        .challenge-block .icon-wrapper {
-            background: linear-gradient(45deg, #007bff, #0056b3);
-            border-radius: 50%;
-            padding: 1rem;
-            display: inline-flex;
-            margin-bottom: 0.8rem;
-            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
-            position: relative;
-            z-index: 1;
-        }
-        .challenge-block .icon-wrapper svg {
-            color: #ffffff;
-            width: 2.5rem; /* Reduced icon size */
-            height: 2.5rem;
-        }
-        .challenge-block .challenge-title {
-            font-size: 1.1rem; /* Adjusted font size */
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-            color: #212529;
-        }
-        .challenge-block .challenge-description {
-            font-size: 0.8rem; /* Adjusted font size */
-            line-height: 1.4;
-            color: #555;
-        }
-        /* Connectors */
-        .connector-line {
-            position: absolute;
-            background-color: #007bff;
-            z-index: 0;
-        }
-        .connector-line.top-to-center {
-            width: 2px;
-            height: 70px; /* Adjusted height */
-            top: 0;
-        }
-        .connector-line.bottom-to-center {
-            width: 2px;
-            height: 70px; /* Adjusted height */
-            bottom: 0;
-        }
-        .connector-line.left-to-center {
-            height: 2px;
-            width: 70px; /* Adjusted width */
-            left: 0;
-        }
-        .connector-line.right-to-center {
-            height: 2px;
-            width: 70px; /* Adjusted width */
-            right: 0;
-        }
-
-        /* Responsive stacking on mobile */
-        @media (max-width: 767.98px) {
-            .infographic-wrapper {
-                height: auto;
-                flex-direction: column;
-            }
-            .infographic-circle {
-                width: 300px;
-                height: 300px;
-            }
-            .center-circle {
-                width: 150px;
-                height: 150px;
-                margin-bottom: 2rem;
-            }
-            .center-title {
-                font-size: 1.2rem;
-            }
-            .center-subtitle {
-                font-size: 0.8rem;
-            }
-            .challenge-block {
-                position: static;
-                transform: none;
-                margin-bottom: 2rem;
-            }
-            .connector-line {
-                display: none; /* Hide connectors on mobile */
-            }
-        }
+        
       </style>
 
     </section>
