@@ -53,13 +53,6 @@
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="#">SDG Alignment</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Social Impact</a></li>
-          
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">News & Updates</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.information-center') }}">Information Center</a></li>
-          {{-- <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.testimonials') }}">Client Testimonials</a></li> --}}
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.help-center') }}">Help Center</a></li>
         </ul>
       </div>
 
