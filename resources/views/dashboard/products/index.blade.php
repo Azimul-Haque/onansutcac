@@ -115,7 +115,7 @@
                                                     <select name="isfeatured" id="isfeatured" class="form-control" required>
                                                         <option selected disabled>Featured or not</option>
                                                         <option value="1" @if($product->isfeatured == 1) selected @endif>Featured</option>
-                                                        <option value="0" @if($product->isfeatured == 1) selected @endif>Not featured</option>
+                                                        <option value="0" @if($product->isfeatured == 0) selected @endif>Not featured</option>
                                                     </select>
                                                 </div>
                                             </div>
