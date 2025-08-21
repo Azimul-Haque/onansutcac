@@ -403,6 +403,7 @@ class DashboardController extends Controller
         $this->validate($request, [
             'name'        => 'required|string|max:191',
             'designation' => 'required|string|max:191',
+            'designation' => 'serial|string|max:191',
             'about'       => 'required',
             'image'       => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
