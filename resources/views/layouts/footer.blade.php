@@ -63,9 +63,9 @@
           <li><i class="bi bi-chevron-right"></i> <a href="#">Testing Standards (EPA, ISO)</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Technical Whitepapers</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Regulatory Updates (EPA, DOE)</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.help-center') }}">Help Center</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.help-center') }}">FAQ</a></li>
 
-          
+
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">News & Updates</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
