@@ -334,24 +334,6 @@
             </a>
           </li>
           @endforeach
-          {{-- <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-              <i class="bi bi-box-seam"></i>
-              <h4 class="d-none d-lg-block">Event 2: Ttitle</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-              <i class="bi bi-brightness-high"></i>
-              <h4 class="d-none d-lg-block">Event 3: Ttitle</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-              <i class="bi bi-command"></i>
-              <h4 class="d-none d-lg-block">Event 4: Ttitle</h4>
-            </a>
-          </li> --}}
         </ul><!-- End Tab Nav -->
 
         <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
