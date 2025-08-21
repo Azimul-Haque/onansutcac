@@ -182,21 +182,7 @@ Route::post('/dashboard/about-data/store', 'DashboardController@storeAboutData')
 Route::post('/dashboard/about-data/{id}/update', 'DashboardController@updateAboutData')->name('dashboard.about-data.update');
 Route::get('/dashboard/about-data/{id}/delete', 'DashboardController@deleteAboutData')->name('dashboard.about-data.delete');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Messages
 Route::get('/dashboard/messages', 'DashboardController@getMessages')->name('dashboard.messages');
 Route::post('/dashboard/messages/{id}/update', 'DashboardController@updateMessage')->name('dashboard.messages.update');
 Route::get('/dashboard/messages/delete/{id}', 'DashboardController@deleteMessage')->name('dashboard.messages.delete');
