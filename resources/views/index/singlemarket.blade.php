@@ -52,7 +52,7 @@
                   <ul>
                     {{-- <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{ route('index.singlemarket', $market->slug) }}">John Doe</a></li> --}}
                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ route('index.singlemarket', $market->slug) }}"><time datetime="{{ $market->created_at }}">{{ date('d F, Y', strtotime($market->created_at)) }}</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-book"></i> {{ estimatedReadingTime($successstory->text) }} mins read</li>
+                    <li class="d-flex align-items-center"><i class="bi bi-book"></i> {{ estimatedReadingTime($market->text) }} mins read</li>
                   </ul>
                 </div><!-- End meta top -->
 
