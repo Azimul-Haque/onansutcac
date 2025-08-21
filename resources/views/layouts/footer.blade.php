@@ -82,10 +82,6 @@
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.regional-offices') }}">Global Offices</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">Media & Press</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
-
-
-          <li><a href="{{ route('index.news') }}" class="{{ Request::is('news') || Request::is('news/*') ? 'active' : '' }}">Media & Press</a></li>
-          <li><a href="{{ route('index.events') }}" class="{{ Request::is('events') || Request::is('events/*') ? 'active' : '' }}">Events</a></li>
           <li><a href="#!">Request a Proposal</a></li>
         </ul>
       </div>
