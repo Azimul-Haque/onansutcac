@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" value="{{ old("subject") }}" required="">
                 </div>
 
                 <div class="col-md-12">
