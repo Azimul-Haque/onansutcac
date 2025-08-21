@@ -829,6 +829,7 @@ class DashboardController extends Controller
         $successstory = new Successstory;
         $successstory->title = $request->title;
         $successstory->type = $request->type;
+        $successstory->slug = $request->slug;
         if($request->text) {
             $successstory->text = Purifier::clean($request->text, 'youtube');
         }
