@@ -1009,6 +1009,21 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.help-center');
     }
 
+    public function getMessages(Request $request)
+    {
+        if($request->search) {
+            $faqs = Faq::where('type', 'LIKE', "%$request->search%")
+                         ->orWhere('question', 'LIKE', "%$request->search%")
+                         ->orWhere('answer', 'LIKE', "%$request->search%")
+                         ->orderBy('id', 'desc')
+                         ->paginate(10);
+        } else {
+            $faqs = Faq::orderBy('id', 'desc')->paginate(10);
+        }
+
+        return view('dashboard.help-center.index')->withFaqs($faqs);
+    }
+
 
 
 
