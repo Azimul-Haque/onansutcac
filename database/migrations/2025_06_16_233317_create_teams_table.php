@@ -17,7 +17,7 @@ class CreateTeamsTable extends Migration
             $table->id();                     
             $table->string('name');               
             $table->string('designation');           
-            $table->int('serial');           
+            $table->integer('serial');           
             $table->Text('about');      
             $table->string('image')->nullable();           
             $table->timestamps();      
