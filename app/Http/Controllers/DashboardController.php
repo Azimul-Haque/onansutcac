@@ -76,7 +76,7 @@ class DashboardController extends Controller
         // Artisan::call('optimize');
         // Artisan::call('cache:clear');
         // Artisan::call('view:clear');
-        // Artisan::call('key:generate');
+        Artisan::call('key:generate');
         // Artisan::call('config:clear');
         Artisan::call('sitemap:generate');
         Session::flash('success', 'All query caches have been cleared & Sitemap generated!');
