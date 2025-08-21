@@ -44,6 +44,7 @@ class IndexController extends Controller
      */
     public function __construct()
     {
+        dd(config('app.url'));
         View::share('productsforfooter', Cache::remember('products_for_footer', 60 * 24 * 30, function () {
             return Product::orderBy('id', 'desc')->get()->take(6);
         }));
