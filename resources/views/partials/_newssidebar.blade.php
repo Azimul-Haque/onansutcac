@@ -49,7 +49,7 @@
       <img src="{{ asset('images/success-stories/' . $story->image) }}" alt="{{ $story->title }}" class="flex-shrink-0">
       <div>
         <h4><a href="{{ route('index.single-success-story', 'slug') }}">{{ $story->title }}</a></h4>
-        <time datetime="2020-01-01">Jan 1, 2020</time>
+        <time datetime="2020-01-01">{{ date('F d, Y', strtotime($successstory->created_at)) }}</time>
       </div>
     </div>
     @endforeach
