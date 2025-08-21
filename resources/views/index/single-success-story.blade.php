@@ -48,8 +48,7 @@
                 </div><!-- End meta top -->
 
                 <div class="content">
-                  
-
+                  {!! $news->text !!}
                 </div><!-- End post content -->
 
                 <div class="meta-bottom">
