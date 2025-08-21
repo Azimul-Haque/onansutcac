@@ -99,7 +99,7 @@ Route::get('/dashboard/components', 'DashboardController@getComponents')->name('
 
 Route::get('/dashboard/abouts', 'DashboardController@getAbouts')->name('dashboard.abouts');
 Route::post('/dashboard/abouts/store', 'DashboardController@storeAbout')->name('dashboard.teams.store');
-Route::post('/dashboard/abouts/{id}/update', 'DashboardController@updateTeam')->name('dashboard.teams.update');
+Route::post('/dashboard/abouts/{id}/update', 'DashboardController@updateAbout')->name('dashboard.teams.update');
 Route::get('/dashboard/abouts/{id}/delete', 'DashboardController@deleteTeam')->name('dashboard.teams.delete');
 
 
