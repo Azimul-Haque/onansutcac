@@ -34,9 +34,11 @@
                 <button type="submit" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                   <i class="fas fa-search"></i> Search
                 </button>
-                {{-- <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addAboutModal" style="margin-left: 5px;">
+                @if(Auth::user()->email == "orbachinujbuk@gmail.com")
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addAboutModal" style="margin-left: 5px;">
                   <i class="fas fa-plus"></i> Add New About Entry
-                </button> --}}
+                </button>
+                @endif
               </form>
             </div>
           </div>
