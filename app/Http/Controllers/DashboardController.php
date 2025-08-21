@@ -383,6 +383,7 @@ class DashboardController extends Controller
         $team = new Team;
         $team->name = $request->name;
         $team->designation = $request->designation;
+        $team->serial = $request->serial;
         $team->about = Purifier::clean($request->about, 'youtube');
 
         if($request->hasFile('image')) {
@@ -412,6 +413,7 @@ class DashboardController extends Controller
         $team = Team::findOrFail($id);
         $team->name = $request->name;
         $team->designation = $request->designation;
+        $team->serial = $request->serial;
         $team->about = Purifier::clean($request->about, 'youtube');
 
         if($request->hasFile('image')) {
