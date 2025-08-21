@@ -386,6 +386,7 @@
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 {{-- <img src="{{ asset('vendor/dewi/assets/img/working-1.jpg') }}" alt="" class="img-fluid"> --}}
                 <img src="{{ asset('images/ElectNano-Gif-compressed.webp') }}" alt="" class="img-fluid">
+                <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid" alt="{{ $event->title }}" loading="lazy">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
