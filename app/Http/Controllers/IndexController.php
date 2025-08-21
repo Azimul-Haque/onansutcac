@@ -372,6 +372,6 @@ class IndexController extends Controller
         Artisan::call('config:clear');
         Artisan::call('sitemap:generate');
         Session::flush();
-        return 'Config and Route Cached. All Cache Cleared & Sitemap generated!';
+        return 'Config and Route Cached. All Cache Cleared.';
     }
 }
