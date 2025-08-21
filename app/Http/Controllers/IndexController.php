@@ -166,6 +166,7 @@ class IndexController extends Controller
 
     public function getCategoryWiseNews($name)
     {
+        $unslugged_item = unslug($name);
         $newscategory = Newscategory::where('name', 'LIKE', "%unslug($name)%")->firstOrFail();
 
         $allNews = News::where('newscategory_id', $newscategory->id)
