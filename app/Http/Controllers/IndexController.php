@@ -64,7 +64,7 @@ class IndexController extends Controller
         $featuredevents = Event::orderBy('id', 'desc')->get()->take(4);
         $newsforhomepage = News::orderBy('id', 'desc')->get()->take(3);
         $clientsforhomepage = Client::orderBy('id', 'desc')->get();
-        $testimonials = Client::orderBy('id', 'desc')->get();
+        $testimonials = Testimonial::orderBy('id', 'desc')->get(6);
 
         return view('index.index')
                     ->withNewsforhomepage($newsforhomepage)
