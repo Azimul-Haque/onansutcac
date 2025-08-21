@@ -97,6 +97,12 @@ Route::post('/dashboard/blogs/category/{id}/update', 'DashboardController@update
 Route::get('/dashboard/components', 'DashboardController@getComponents')->name('dashboard.components');
 
 
+Route::get('/dashboard/abouts', 'DashboardController@getAbouts')->name('dashboard.teams');
+Route::post('/dashboard/abouts/store', 'DashboardController@storeTeam')->name('dashboard.teams.store');
+Route::post('/dashboard/abouts/{id}/update', 'DashboardController@updateTeam')->name('dashboard.teams.update');
+Route::get('/dashboard/abouts/{id}/delete', 'DashboardController@deleteTeam')->name('dashboard.teams.delete');
+
+
 Route::get('/dashboard/teams', 'DashboardController@getTeams')->name('dashboard.teams');
 Route::post('/dashboard/teams/store', 'DashboardController@storeTeam')->name('dashboard.teams.store');
 Route::post('/dashboard/teams/{id}/update', 'DashboardController@updateTeam')->name('dashboard.teams.update');
