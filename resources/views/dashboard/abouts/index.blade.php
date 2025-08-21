@@ -147,7 +147,7 @@
     </div>
 
     <div class="modal fade" id="addAboutModal" tabindex="-1" role="dialog" aria-labelledby="addAboutModalLabel" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
             <h5 class="modal-title" id="addAboutModalLabel">Add New About Entry</h5>
