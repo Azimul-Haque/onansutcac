@@ -97,7 +97,7 @@ class IndexController extends Controller
         $imagedata = ob_get_clean();
         imagedestroy($image);
 
-        return view('index.contact');
+        return view('index.contact')->withImagedata($imagedata);
     }
 
     public function getAboutUs()
