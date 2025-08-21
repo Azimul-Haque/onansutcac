@@ -17,6 +17,7 @@ use App\Newscategory;
 use App\Event;
 use App\Successstory;
 use App\Faq;
+use App\Contact;
 
 use Carbon\Carbon;
 use DB;
