@@ -389,7 +389,7 @@
             .infographic-container {
                 height: auto;
                 flex-direction: column;
-                padding-top: 50px; /* Adjusted padding for better spacing */
+                padding-top: 100px;
             }
             .infographic-arc, .connector-line {
                 display: none; /* Hide the arc and lines on small screens */
@@ -397,8 +397,8 @@
             .step {
                 position: static;
                 transform: none;
-                margin-bottom: 2rem; /* Adjusted margin for better spacing */
-                width: 90%; /* Adjusted width for better fit on mobile */
+                margin-bottom: 3rem;
+                width: 100%;
             }
             .step-description {
                 text-align: center;
@@ -410,7 +410,6 @@
                 display: none;
             }
         }
-        
       </style>
 
     </section>
