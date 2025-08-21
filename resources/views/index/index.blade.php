@@ -17,7 +17,18 @@
       </video>
 
       <div class="container d-flex flex-column align-items-center text-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">Transforming Industries with Nano-Innovation</h2>
+        <h2 data-aos="fade-up" data-aos-delay="100">Transforming Industries with Nano-Innovation
+          <div class="transparent-box p-5 rounded-3 shadow-lg">
+              <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                  <h1 class="fs-1 fw-bold text-dark mb-2">
+                      Transforming Industries
+                  </h1>
+                  <h2 class="fs-1 fw-bold text-teal-600">
+                      with Nano-Innovation
+                  </h2>
+              </div>
+          </div>
+        </h2>
         <p data-aos="fade-up" data-aos-delay="200"><small>CactusNano is at the forefront of nanotechnology solutions that redefine performance, safety, and sustainability across industries. From advanced antimicrobials and smart textiles to semiconductor materials and water purification, we enable businesses to lead with innovation and responsibility.</small></p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           {{-- <a href="#about" class="btn-get-started">Get Started</a>
