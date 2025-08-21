@@ -69,6 +69,8 @@
             <form action="{{ route('index.store-contact') }}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
 
+                @csrf
+
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
