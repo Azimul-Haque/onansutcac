@@ -288,7 +288,128 @@
       </div>
 
       <style>
-        
+        .infographic-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 600px;
+            margin: auto;
+            max-width: 1000px;
+        }
+        .infographic-arc {
+            position: absolute;
+            bottom: 100px;
+            width: 80%;
+            height: 100px;
+            border-bottom: 5px solid #ddd;
+            border-bottom-left-radius: 400px;
+            border-bottom-right-radius: 400px;
+        }
+        .step {
+            position: absolute;
+            text-align: center;
+            width: 250px;
+        }
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .step-description {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #555;
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        .step-description li {
+            position: relative;
+            padding-left: 1.5em;
+        }
+        .step-description li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333;
+            font-weight: bold;
+        }
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            font-size: 30px;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .orange { background: #f39c12; }
+        .blue { background: #3498db; }
+        .green { background: #27ae60; }
+        .connector-line {
+            position: absolute;
+            background-color: #777;
+            width: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        /* Positioning the three steps along the arc and adding pointers */
+        .step.biofouling {
+            top: 25%;
+            left: 10%;
+        }
+        .step.biofouling .connector-line {
+            top: 100%;
+            height: 80px;
+        }
+        .step.corrosion {
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .step.corrosion .connector-line {
+            top: 100%;
+            height: 140px;
+        }
+        .step.pfas {
+            top: 25%;
+            right: 10%;
+        }
+        .step.pfas .connector-line {
+            top: 100%;
+            height: 80px;
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 768px) {
+            .infographic-container {
+                height: auto;
+                flex-direction: column;
+                padding-top: 100px;
+            }
+            .infographic-arc, .connector-line {
+                display: none; /* Hide the arc and lines on small screens */
+            }
+            .step {
+                position: static;
+                transform: none;
+                margin-bottom: 3rem;
+                width: 100%;
+            }
+            .step-description {
+                text-align: center;
+            }
+            .step-description li {
+                padding-left: 0;
+            }
+            .step-description li:before {
+                display: none;
+            }
+        }
       </style>
 
     </section>
