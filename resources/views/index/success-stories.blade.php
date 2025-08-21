@@ -34,7 +34,7 @@
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
-          @foreach($successstoroes as $story)
+          @foreach($successstories as $story)
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
               @if($story->image)
@@ -57,7 +57,7 @@
 
       <div class="container">
         <div class="d-flex justify-content-center">
-          {{ $successstoroes->links() }}
+          {{ $successstories->links() }}
           <ul>
             <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
             <li><a href="#">1</a></li>
