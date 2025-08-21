@@ -326,12 +326,14 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+          @foreach($featuredevents as $event)
           <li class="nav-item col-3">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
               <i class="bi bi-binoculars"></i>
               <h4 class="d-none d-lg-block">Event 1: Ttitle</h4>
             </a>
           </li>
+          @endforeach
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
               <i class="bi bi-box-seam"></i>
