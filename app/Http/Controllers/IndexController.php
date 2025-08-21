@@ -72,7 +72,8 @@ class IndexController extends Controller
         $teams = Team::orderBy('serial', 'asc')->get();
 
         return view('index.aboutus')
-                    ->withTeams($teams);
+                    ->withTeams($teams)
+                    ->withAboutpagetop($aboutpagetop);
     }
 
     public function getWhyWWU()
