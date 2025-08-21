@@ -121,7 +121,7 @@
                                                         <input type="text"
                                                                name="designation"
                                                                class="form-control"
-                                                               value="{{ old('designation') }}"
+                                                               value="{{ old('designation', $team->designation) }}"
                                                                autocomplete="off"
                                                                placeholder="Team Member Designation" required>
                                                         <div class="input-group-append">
@@ -134,7 +134,7 @@
                                                         <input type="number"
                                                                name="serial"
                                                                class="form-control"
-                                                               value="{{ old('serial') }}"
+                                                               value="{{ old('designation', $team->serial) }}"
                                                                autocomplete="off"
                                                                placeholder="Team Member Serial (1, 2, 3, etc.)" required>
                                                         <div class="input-group-append">
