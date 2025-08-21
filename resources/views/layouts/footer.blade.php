@@ -47,7 +47,7 @@
           @foreach($marketsforfooter as $market)
             <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></li>
           @endforeach
-        </ul>
+        </ul><br/>
 
         <h4>Sustainability</h4>
         <ul>
