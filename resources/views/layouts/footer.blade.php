@@ -49,7 +49,7 @@
           @endforeach
         </ul>
 
-        <h4>Materials & Media</h4>
+        <h4>Sustainability</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.events') }}">Events</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
