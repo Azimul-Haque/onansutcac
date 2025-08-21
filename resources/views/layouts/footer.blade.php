@@ -17,12 +17,11 @@
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-about-us') }}">About us</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
-
-          <li><a href="{{ route('index.get-about-us') }}#vission-mission">Vision & Mission</a></li>
-          <li><a href="{{ route('index.get-about-us') }}#team">Leadership Team</a></li>
-          <li><a href="{{ route('index.get-why-work-with-us') }}">Why work with us</a></li>
-          <li><a href="{{ route('index.get-why-work-with-us') }}#product-capacity">Production Capacity</a></li>
-          <li><a href="{{ route('index.get-why-work-with-us') }}#global-presence">Global Presence</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-about-us') }}#vission-mission">Vision & Mission</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-about-us') }}#team">Leadership Team</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-why-work-with-us') }}">Why work with us</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-why-work-with-us') }}#product-capacity">Production Capacity</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-why-work-with-us') }}#global-presence">Global Presence</a></li>
 
 
           <li><i class="bi bi-chevron-right"></i> <a href="https://cactusmaterials.com/" target="_blank">Cactus Materials</a></li>
