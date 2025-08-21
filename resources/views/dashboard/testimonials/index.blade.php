@@ -124,7 +124,11 @@
                                                         <select class="form-control" name="rating">
                                                             <option value="" disabled>Select Rating</option>
                                                             @for ($i = 1; $i <= 5; $i++)
-                                                                <option value="{{ $i }}" {{ $testimonial->rating == $i ? 'selected' : '' }}>{{ $i }} Star</option>
+                                                                @php
+                                                                    // Generate a string of stars based on the loop counter
+                                                                    $stars = str_repeat('★', $i);
+                                                                @endphp
+                                                                <option value="{{ $i }}" {{ $testimonial->rating == $i ? 'selected' : '' }}>{{ $stars }}</option>
                                                             @endfor
                                                         </select>
                                                         <div class="input-group-append">
