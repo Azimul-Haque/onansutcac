@@ -209,6 +209,10 @@
                   </div>
                   <a href="#!" class="stretched-link">
                     <h3>Nesciunt Mete</h3>
+
+                  </a>
+                  <a href="{{ route('index.singleproduct', $product->slug) }}" class="stretched-link">
+                    <h3>{{ $product->title }}</h3>
                   </a>
                   <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
                 </div>
