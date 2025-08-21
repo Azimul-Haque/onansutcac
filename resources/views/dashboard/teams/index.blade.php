@@ -46,6 +46,7 @@
                 <tr>
                     <th>Name</th>
                     <th>Designation</th>
+                    <th>Serial</th>
                     <th>Image</th>
                     <th style="width: 40%">Actions</th>
                 </tr>
