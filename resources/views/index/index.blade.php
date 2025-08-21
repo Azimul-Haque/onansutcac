@@ -17,7 +17,7 @@
       </video>
 
       <div class="container d-flex flex-column align-items-center text-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">Transforming Industries with Nano-Innovation
+        <h2 data-aos="fade-up" data-aos-delay="100">
           <div class="transparent-box p-5 rounded-3 shadow-lg">
               <div class="d-flex flex-column align-items-center justify-content-center text-center">
                   <h1 class="fs-1 fw-bold text-teal-200 mb-2">
