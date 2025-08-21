@@ -1025,6 +1025,16 @@ class DashboardController extends Controller
         return view('dashboard.contacts.index')->withMessages($messages);
     }
 
+    public function deleteMessage($id)
+    {
+        $faq = Faq::findOrFail($id);
+
+        $faq->delete();
+
+        Session::flash('success', 'Help Center item deleted successfully!');
+        return redirect()->route('dashboard.help-center');
+    }
+
 
 
 
