@@ -347,7 +347,7 @@
                     <h6 class="card-subtitle mb-2 text-muted">Event Details</h6>
                     <div class="meta-item d-flex align-items-center mb-1">
                       <i class="bi bi-clock me-2"></i>
-                      <span>01:00 PM - 07:00 PM</span>
+                      <span>{{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}** | {{ $event->from_to }}</span>
                     </div>
                     <div class="meta-item d-flex align-items-center">
                       <i class="bi bi-geo-alt me-2"></i>
