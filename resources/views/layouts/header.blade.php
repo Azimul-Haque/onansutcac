@@ -43,6 +43,8 @@
           </ul>
         </li>
 
+        <li><a href="{{ route('index.get-why-work-with-us') }}" class="{{ Request::is('why-work-with-us') ? 'active' : '' }}">Why work with us</a></li>
+
         
 
         {{-- <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
