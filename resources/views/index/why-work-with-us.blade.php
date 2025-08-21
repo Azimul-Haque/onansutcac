@@ -234,7 +234,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Connecting Across Continents</h2>
+        <h2>Key Challenges</h2>
         <p>What are the challenges of water treatment</p>
       </div><!-- End Section Title -->
 
