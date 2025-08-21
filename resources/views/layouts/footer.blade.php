@@ -78,7 +78,7 @@
 
         <h4>Contact</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">Get in Touch</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-contact') }}">Get in Touch</a></li>
           <li><a href="{{ route('index.regional-offices') }}" class="{{ Request::is('regional-offices') || Request::is('regional-offices/*') ? 'active' : '' }}">Global Offices</a></li>
 
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
