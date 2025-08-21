@@ -17,7 +17,7 @@ class CreateAboutsTable extends Migration
             $table->id();                     
             $table->string('title');               
             $table->string('designation');           
-            $table->Text('about');      
+            $table->Text('content');      
             $table->string('image')->nullable();           
             $table->timestamps();      
         });
