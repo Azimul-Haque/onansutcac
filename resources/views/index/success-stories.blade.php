@@ -38,6 +38,9 @@
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
               <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
+              @if($product->image)
+                  <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
+              @endif
               <div class="blog-post-content">
                 
                 <h2><a href="{{ route('index.single-success-story', 'slug') }}">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h2>
