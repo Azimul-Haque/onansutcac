@@ -325,7 +325,39 @@ class IndexController extends Controller
     }
 
     public function getSitemap()
-    {   
+    {
+        // Define an array to hold the sitemap URLs.
+        $sitemapLinks = [];
+
+        // Here we'll generate the sitemap dynamically. You can add any URLs you want.
+        // For demonstration, we'll add some static pages and a dynamic one.
+        $sitemap = SitemapGenerator::create(URL::to('/'))
+            ->getSitemap();
+
+        // Add some custom URLs to the sitemap.
+        // You can use a loop to add all your routes or models.
+        $sitemap->add(URL::to('/about'));
+        $sitemap->add(URL::to('/contact'));
+
+        // You could also add URLs from your database, for example:
+        // $posts = Post::all();
+        // foreach ($posts as $post) {
+        //     $sitemap->add(URL::to('/posts/' . $post->slug));
+        // }
+
+        // Get all the URLs from the generated sitemap.
+        // The sitemap object doesn't have a simple method to get all URLs,
+        // so we'll simulate it for the view. In a real-world scenario, you might
+        // generate a file and then read it, but for a user-facing view, this works.
+        // Here's a simplified way to get a list of URLs.
+        $sitemapLinks = [
+            'Home' => url('/'),
+            'About Us' => url('/about'),
+            'Contact Us' => url('/contact'),
+            // Add more links as needed
+        ];
+
+           
         return view('index.sitemap');
     }
 
