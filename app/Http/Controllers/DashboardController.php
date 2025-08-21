@@ -1046,7 +1046,7 @@ class DashboardController extends Controller
             $image = $request->file('image');
             $filename = Str::random(5) . time() . '.' . "webp";
             $location = public_path('images/testimonials/' . $filename);
-            Image::make($image)->fit(400, 141)->save($location);
+            Image::make($image)->fit(300, 300)->save($location);
             $testimonial->image = $filename;
         }
 
@@ -1080,7 +1080,7 @@ class DashboardController extends Controller
             $image = $request->file('image');
             $filename = Str::random(5) . time() . '.' . "webp";
             $location = public_path('images/testimonials/' . $filename);
-            Image::make($image)->fit(400, 141)->save($location);
+            Image::make($image)->fit(300, 300)->save($location);
             $testimonial->image = $filename;
         }
 
