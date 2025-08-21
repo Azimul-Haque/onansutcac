@@ -35,7 +35,7 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><span>Industries & Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             @foreach($marketsforfooter as $market)
               @if($market->type == 1)
