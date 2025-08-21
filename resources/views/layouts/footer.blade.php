@@ -64,7 +64,7 @@
           <li><i class="bi bi-chevron-right"></i> <a href="#">Technical Whitepapers</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Regulatory Updates (EPA, DOE)</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.help-center') }}">FAQ</a></li>
-        </ul>
+        </ul><br/>
 
         <h4>Careers</h4>
         <ul>
@@ -74,11 +74,7 @@
         </ul>
       </div>
 
-      <div class="col-lg-2 col-md-3 footer-links">
-        <br/>
-
-
-        <h4>Contact</h4>
+      <div class="col-lg-2 col-md-3 footer-links"><h4>Contact</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-contact') }}">Get in Touch</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.regional-offices') }}">Global Offices</a></li>
