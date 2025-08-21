@@ -59,8 +59,9 @@
                             <a href="{{ route('index.singleproduct', $product->slug) }}" target="_blank">{{ $product->title }}</a>
                             <br/>
                             <small class="badge rounded-pill bg-{{ pill_type($product->type) }}">{{ prod_type($product->type) }}</small>
-                            @if($product->isfeatured)
-                            <small class="badge rounded-pill bg-warning">Featured</small>
+                            @if($product->isfeatured == 1)
+                                <small class="badge rounded-pill bg-warning">Featured</small>
+                            @endif
                         </td>
                         <td><small>{{ $product->slug }}</small></td>
                         <td>
