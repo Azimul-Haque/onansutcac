@@ -62,6 +62,7 @@ class IndexController extends Controller
         $featuredprodandtechs = Product::where('isfeatured', 1)->get()->take(3);
         $featuredevents = Event::orderBy('id', 'desc')->get()->take(4);
         $newsforhomepage = News::orderBy('id', 'desc')->get()->take(3);
+        $clientsforhomepage = Client::orderBy('id', 'desc')->get()->take(3);
 
         return view('index.index')
                     ->withNewsforhomepage($newsforhomepage)
