@@ -27,7 +27,7 @@
           </ul>
         </li> --}}
 
-        <li class="dropdown"><a href="#"><span>Solutions and Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><span>Products & Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             @foreach($productsforfooter as $product)
               <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
