@@ -46,6 +46,7 @@
 
     @foreach($recentsuccessstories as $story)
     <div class="post-item">
+      <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="flex-shrink-0">
       <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="flex-shrink-0">
       <div>
         <h4><a href="{{ route('index.single-success-story', 'slug') }}">Nihil blanditiis at in nihil autem</a></h4>
