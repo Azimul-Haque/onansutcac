@@ -351,7 +351,7 @@
                     </div>
                     <div class="meta-item d-flex align-items-center">
                       <i class="bi bi-geo-alt me-2"></i>
-                      <span>Various Classrooms</span>
+                      <span>{{ $event->address }}</span>
                     </div>
                   </div>
                 </div>
