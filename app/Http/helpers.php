@@ -195,6 +195,14 @@
       return $text;
   }
 
+  function estimatedReadingTime($text, $wpm = 200)
+  {
+      $wordCount = str_word_count(strip_tags($text));
+      $minutes = ceil($wordCount / $wpm);
+
+      return (int) $minutes;
+  }
+
   function local_currency($num) {
     $explrestunits = "" ;
     if(strlen($num)>3) {
