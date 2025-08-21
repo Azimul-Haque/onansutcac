@@ -20,8 +20,8 @@
         <h2 data-aos="fade-up" data-aos-delay="100">Transforming Industries with Nano-Innovation</h2>
         <p data-aos="fade-up" data-aos-delay="200">CactusNano is at the forefront of nanotechnology solutions that redefine performance, safety, and sustainability across industries. From advanced antimicrobials and smart textiles to semiconductor materials and water purification, we enable businesses to lead with innovation and responsibility.</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="#about" class="btn-get-started">Get Started</a>
-          <a href="https://www.youtube.com/watch?v=U6fC4Ij608A" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          {{-- <a href="#about" class="btn-get-started">Get Started</a>
+          <a href="https://www.youtube.com/watch?v=U6fC4Ij608A" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> --}}
         </div>
       </div>
 
