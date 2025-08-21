@@ -11,6 +11,7 @@ use App\Market;
 use App\About;
 use App\Team;
 use App\News;
+use App\Successstory;
 use App\Newscategory;
 use App\Event;
 use App\Faq;
