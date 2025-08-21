@@ -210,7 +210,7 @@
                   <a href="{{ route('index.singleproduct', $product->slug) }}" class="stretched-link">
                     <h3>{{ $product->title }}</h3>
                   </a>
-                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+                  <p>{{ Str::limit(strip_tags($product->text), 100) }}</p>
                 </div>
               </div>
             </div>
