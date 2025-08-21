@@ -51,9 +51,9 @@
 
                 <div class="meta-top">
                   <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">John Doe</a></li>
+                    {{-- <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">John Doe</a></li> --}}
                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ route('index.singleproduct', $product->slug) }}"><time datetime="{{ $product->created_at }}">{{ date('d F, Y', strtotime($product->created_at)) }}</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">12 Comments</a></li>
+                    {{-- <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">12 Comments</a></li> --}}
                   </ul>
                 </div><!-- End meta top -->
 
