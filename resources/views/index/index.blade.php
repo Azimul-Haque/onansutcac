@@ -576,9 +576,8 @@
                                 // Generate a string of stars based on the loop counter
                                 $stars = str_repeat('★', $i);
                             @endphp
-                            <option value="{{ $i }}" {{ $testimonial->rating == $i ? 'selected' : '' }}>{{ $stars }}</option>
+                            <i class="bi bi-star-fill"></i>
                         @endfor
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                       <p>
                         {{ $testimonial->text }}
