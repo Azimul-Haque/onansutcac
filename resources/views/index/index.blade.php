@@ -38,7 +38,7 @@
             <h3>Science at the Nanoscale. Impact at the Global Scale</h3>
             {{-- <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" class="img-fluid rounded-4 mb-4" alt=""> --}}
             <img src="{{ asset('images/Electronic-Chip.webp') }}" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
+            <p>CactusNano is a materials science and nanotechnology company dedicated to solving some of the world’s most pressing challenges in health, environment, and technology. Cactus Nano TM, a spin-off from Cactus Materials, Inc. (a US-based semiconductor and advanced materials company), focuses on innovative products like CoreSil™ Membrane, Suspension, and Powder for textile, water, medical, and space industries.</p>
             <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
