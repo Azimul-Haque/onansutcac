@@ -240,12 +240,55 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-4 justify-content-center mb-4">
-            <!-- Vision Statement Column -->
-            <div class="col-12 col-md-12">
-              <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence" style="width: 100%;">
+        <div class="infographic-wrapper">
+        <div class="infographic-circle">
+            <!-- Connectors - these are a visual guide only, not functional pointers -->
+            <div class="connector-line top-to-center"></div>
+            <div class="connector-line bottom-to-center"></div>
+            <div class="connector-line left-to-center"></div>
+            <!-- Center Circle -->
+            <div class="center-circle">
+                <span class="center-title">INFOGRAPHIC</span>
+                <span class="center-subtitle">Water Treatment Challenges</span>
             </div>
         </div>
+
+        <!-- Biofouling Block -->
+        <div class="challenge-block biofouling">
+            <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.75c-3.141 0-5.94-1.272-7.942-3.308-2.001-2.035-3.003-4.78-3.003-7.617a9.006 9.006 0 011.83-5.462c1.037-1.325 2.585-2.052 4.316-2.052h.001a4.5 4.5 0 013.784 1.956c1.64 1.996 4.346 3.003 7.632 3.003h.001c3.286 0 5.992-1.007 7.632-3.003a4.5 4.5 0 013.784-1.956h.001c1.731 0 3.279.727 4.316 2.052a9.006 9.006 0 011.83 5.462c0 2.837-1.002 5.582-3.003 7.617C17.94 20.478 15.141 21.75 12 21.75zM12 21.75a9 9 0 005.15-2.484M12 21.75a9 9 0 01-5.15-2.484" />
+                    <circle cx="12" cy="12" r="3" fill="#ffffff" />
+                </svg>
+            </div>
+            <h2 class="challenge-title">Biofouling</h2>
+            <p class="challenge-description">Microbial growth clogs filters and membranes, increasing energy use and maintenance.</p>
+        </div>
+
+        <!-- Corrosion Block -->
+        <div class="challenge-block corrosion">
+            <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 22.5c-3.103 0-5.756-1.125-7.585-3.131C2.585 17.581 1.5 15.161 1.5 12c0-3.161 1.085-5.581 2.915-7.369C6.244 2.125 8.897 1.5 12 1.5c3.103 0 5.756 1.125 7.585 3.131C21.415 6.419 22.5 8.839 22.5 12c0 3.161-1.085 5.581-2.915 7.369C17.756 21.375 15.103 22.5 12 22.5zM12 1.5v21" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 1.5l-3.375 1.5m-1.5 12.75l1.5-1.5m3.75 1.5l-1.5-1.5m-3.75-6.75l-1.5 1.5m-3.75-1.5l1.5-1.5" />
+                </svg>
+            </div>
+            <h2 class="challenge-title">Corrosion</h2>
+            <p class="challenge-description">Deterioration of pipes and systems leads to failure, costly repairs, and contamination risks.</p>
+        </div>
+
+        <!-- PFAS Block -->
+        <div class="challenge-block pfas">
+            <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5c-3.103 0-5.756-1.125-7.585-3.131C2.585 15.581 1.5 13.161 1.5 10c0-3.161 1.085-5.581 2.915-7.369C6.244 1.125 8.897.5 12 .5c3.103 0 5.756 1.125 7.585 3.131C21.415 5.581 22.5 8.161 22.5 10c0 3.161-1.085 5.581-2.915 7.369C17.756 18.375 15.103 19.5 12 19.5z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v2m-3-12h6m-9 3h3" />
+                </svg>
+            </div>
+            <h2 class="challenge-title">PFAS (Forever Chemicals)</h2>
+            <p class="challenge-description">Toxic chemicals that are difficult to destroy, posing environmental and health risks.</p>
+        </div>
+    </div>
       </div>
 
     </section>
