@@ -120,14 +120,6 @@
         <!-- List Posts -->
         <div class="row">
           @foreach($recentnews as $news)
-            <div class="post-item">
-              <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="flex-shrink-0">
-              <div>
-                <h4><a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" @if($news->type == 3) target="_blank" @endif>{{ $news->title }}</a></h4>
-                <time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news->created_at)) }} | {{ news_type($news->type) }}</time>
-              </div>
-            </div>
-
             <div class="col-xl-4 col-lg-6">
               <article class="list-post">
                 <div class="post-img">
