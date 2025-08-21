@@ -193,7 +193,7 @@ class IndexController extends Controller
 
     public function getSuccessStories()
     {
-        $successstories = Successstory::orderBy('id', 'desc')->paginate(2);
+        $successstories = Successstory::orderBy('id', 'desc')->paginate(6);
 
         return view('index.success-stories')
                         ->withSuccessstories($successstories);
