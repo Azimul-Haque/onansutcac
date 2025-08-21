@@ -42,7 +42,7 @@
               @endif
               <div class="blog-post-content">
                 <h2><a href="{{ route('index.single-success-story', $story->slug) }}">{{ $story->title }}</a></h2>
-                <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
+                <p>{{ Str::limit(strip_tags($product->text), 100) }}</p>
                 <a href="{{ route('index.single-success-story', $story->slug) }}" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
