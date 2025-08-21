@@ -93,25 +93,7 @@
     </section><!-- /Starter Section Section -->
 
 
-    <section id="global-presence" class="stats section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Connecting Across Continents</h2>
-        <p>Global Presence</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4 justify-content-center mb-4">
-            <!-- Vision Statement Column -->
-            <div class="col-12 col-md-12">
-              <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence" style="width: 100%;">
-            </div>
-        </div>
-      </div>
-
-    </section>
+    
 
     <section id="product-capacity" class="services section">
 
@@ -244,6 +226,26 @@
             }
           </style>
 
+      </div>
+
+    </section>
+
+    <section id="global-presence" class="stats section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Connecting Across Continents</h2>
+        <p>Global Presence</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 justify-content-center mb-4">
+            <!-- Vision Statement Column -->
+            <div class="col-12 col-md-12">
+              <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence" style="width: 100%;">
+            </div>
+        </div>
       </div>
 
     </section>
