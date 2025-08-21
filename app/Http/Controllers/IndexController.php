@@ -14,6 +14,7 @@ use App\Team;
 use App\News;
 use App\Successstory;
 use App\Client;
+use App\Testimonial;
 use App\Newscategory;
 use App\Event;
 use App\Faq;
@@ -63,6 +64,7 @@ class IndexController extends Controller
         $featuredevents = Event::orderBy('id', 'desc')->get()->take(4);
         $newsforhomepage = News::orderBy('id', 'desc')->get()->take(3);
         $clientsforhomepage = Client::orderBy('id', 'desc')->get();
+        $testimonials = Client::orderBy('id', 'desc')->get();
 
         return view('index.index')
                     ->withNewsforhomepage($newsforhomepage)
