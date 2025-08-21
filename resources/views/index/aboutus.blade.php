@@ -245,7 +245,7 @@
               font-size: 1.25rem; /* Larger paragraph text */
               line-height: 1.6;
           }
-          
+
           .box-card {
               background-color: #ffffff;
               border-radius: 1rem;
@@ -257,8 +257,8 @@
               justify-content: center;
           }
           .vision-card {
-              background: linear-gradient(135deg, #a8e0f4, #c8e8f8);
-              color: #1a1a1a;
+              background-color: #e0f7fa; /* Light blue */
+              color: #00796b; /* Darker teal for text */
               text-align: center;
           }
           .mission-card {
