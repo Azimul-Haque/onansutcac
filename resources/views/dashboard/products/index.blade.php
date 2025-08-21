@@ -246,7 +246,7 @@
                     <div class="col-md-6">
                         <div class="form-group mb-3">
                             <label for="">Select Featured or not</label>
-                            <select name="type" id="type" class="form-control" required>
+                            <select name="isfeatured" id="isfeatured" class="form-control" required>
                                 <option value="" selected disabled>Featured or not</option>
                                 <option value="1">Featured</option>
                                 <option value="0">Not featured</option>
