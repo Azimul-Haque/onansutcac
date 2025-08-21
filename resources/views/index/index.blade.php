@@ -571,8 +571,7 @@
                   <div class="swiper-slide" style="width: 371.333px; min-height: 370px; margin-right: 1px;" role="group" aria-label="{{ $key + 1 }} / 6" data-swiper-slide-index="0">
                     <div class="testimonial-item">
                       <div class="stars">
-                        $foreach($testimonial->rating)
-                        @for ($i = 1; $i <= 5; $i++)
+                        @for ($i = 1; $i <= $testimonial->rating; $i++)
                             @php
                                 // Generate a string of stars based on the loop counter
                                 $stars = str_repeat('★', $i);
