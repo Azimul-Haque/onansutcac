@@ -227,7 +227,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <select name="type" id="type" class="form-control" required>
+                        <select name="serial" id="serial" class="form-control" required>
                             <option value="" selected disabled>Select Type</option>
                             <option value="1">Product</option>
                             <option value="2">Technology</option>
