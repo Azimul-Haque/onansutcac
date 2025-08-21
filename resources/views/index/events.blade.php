@@ -127,10 +127,12 @@
                 <time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news->created_at)) }} | {{ news_type($news->type) }}</time>
               </div>
             </div>
+
             <div class="col-xl-4 col-lg-6">
               <article class="list-post">
                 <div class="post-img">
                   <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid" loading="lazy">
+                  <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="flex-shrink-0">
                 </div>
                 <div class="post-content">
                   <div class="category-meta">
