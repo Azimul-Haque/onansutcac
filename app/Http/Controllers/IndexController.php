@@ -126,6 +126,17 @@ class IndexController extends Controller
                 // If the CAPTCHA is incorrect, redirect back with an error.
                 return redirect()->back()->withErrors(['captcha' => 'The entered CAPTCHA is incorrect.']);
             }
+
+            try {
+                $message = new Message();
+                $message->name = $request->input('name');
+                $message->email = $request->input('email');
+                $message->message = $request->input('message');
+                $message->save();
+            } catch (\Exception $e) {
+                // Handle any database saving errors
+                return redirect()->back()->with('error', 'There was an issue sending your message. Please try again.');
+            }
             return redirect()->back()->with('success', 'Your message has been sent successfully!');
         }
 
