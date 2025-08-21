@@ -194,6 +194,11 @@
               <div class="service-item">
                 <div class="img">
                   <img src="{{ asset('vendor/dewi/assets/img/services-1.jpg') }}" class="img-fluid" alt="">
+                  @if($product->image)
+                      <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}" class="img-fluid">
+                  @else
+                      <img src="{{ asset('vendor/dewi/assets/img/services-1.jpg') }}" class="img-fluid" alt="">
+                  @endif
                 </div>
                 <div class="details position-relative">
                   <div class="icon">
