@@ -74,9 +74,9 @@ class DashboardController extends Controller
         Cache::flush();
         // Artisan::call('route:clear');
         // Artisan::call('optimize');
-        Artisan::call('cache:clear');
+        // Artisan::call('cache:clear');
         // Artisan::call('view:clear');
-        Artisan::call('key:generate');
+        // Artisan::call('key:generate');
         // Artisan::call('config:clear');
         Artisan::call('sitemap:generate');
         Session::flash('success', 'All query caches have been cleared & Sitemap generated!');
