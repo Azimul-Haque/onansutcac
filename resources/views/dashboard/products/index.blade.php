@@ -229,7 +229,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group mb-3">
-                            <label for="">Select Type</label>
+                            <label for="">Select Featured or not</label>
                             <select name="type" id="type" class="form-control" required>
                                 <option value="" selected disabled>Select Type</option>
                                 <option value="1">Product</option>
