@@ -110,9 +110,9 @@
                                                 <div class="form-group mb-3">
                                                     <label for="">Select Featured or not</label>
                                                     <select name="type" id="type" class="form-control" required>
-                                                        <option value="" selected disabled>Featured or not</option>
-                                                        <option value="1">Featured</option>
-                                                        <option value="0">Not featured</option>
+                                                        <option selected disabled>Featured or not</option>
+                                                        <option value="1" @if($product->type == 1) selected @endif>Featured</option>
+                                                        <option value="0" @if($product->type == 1) selected @endif>Not featured</option>
                                                     </select>
                                                 </div>
                                             </div>
