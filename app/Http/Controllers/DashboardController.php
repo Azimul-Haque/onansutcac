@@ -812,7 +812,7 @@ class DashboardController extends Controller
         $rules = [
             'title' => 'required|string|max:191',
             'type' => 'required|string|max:191',
-            'type' => 'slug|string|max:191',
+            'slug' => 'slug',
             'custom_type' => 'nullable|string|max:191|required_if:type,Other',
             'text' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
