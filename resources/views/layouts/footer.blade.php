@@ -80,9 +80,8 @@
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.get-contact') }}">Get in Touch</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.regional-offices') }}">Global Offices</a></li>
-
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">Media & Press</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">News & Updates</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
 
 
