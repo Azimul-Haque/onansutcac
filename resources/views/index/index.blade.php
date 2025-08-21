@@ -182,7 +182,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Products</h2>
+        <h2>Products & Industries</h2>
         <p>Featured Products<br></p>
       </div><!-- End Section Title -->
 
