@@ -94,9 +94,9 @@ class IndexController extends Controller
         // Set the content type header and output the image
         ob_start();
         imagepng($image);
-        $imageData = ob_get_clean();
+        $imagedata = ob_get_clean();
         imagedestroy($image);
-        
+
         return view('index.contact');
     }
 
