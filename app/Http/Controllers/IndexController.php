@@ -201,7 +201,12 @@ class IndexController extends Controller
 
     public function getSingleSuccessStory($slug)
     {
-        return view('index.single-success-story');
+        $recentnews = News::orderBy('id', 'desc')->get()->take(5);
+        $newscategories = Newscategory::orderBy('name', 'asc')->get();
+
+        return view('index.single-success-story')
+                        ->withRecentnews($recentnews)
+                        ->withNewscategories($newscategories)
     }
 
     public function getAcademia()
