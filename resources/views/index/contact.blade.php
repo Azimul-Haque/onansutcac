@@ -72,7 +72,7 @@
                 @csrf
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" value="{{ old("name") }}" required="">
                 </div>
 
                 <div class="col-md-6 ">
