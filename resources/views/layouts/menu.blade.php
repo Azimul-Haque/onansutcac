@@ -78,7 +78,8 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.testimonials') }}" class="nav-link {{ Request::is('dashboard/testimonials') ? 'active' : '' }} {{ Request::is('dashboard/testimonials/*') ? 'active' : '' }}">
+    <a href="#!" class="nav-link {{ Request::is('dashboard/testimonials') ? 'active' : '' }} {{ Request::is('dashboard/testimonials/*') ? 'active' : '' }}">
+    {{-- <a href="{{ route('dashboard.testimonials') }}" class="nav-link {{ Request::is('dashboard/testimonials') ? 'active' : '' }} {{ Request::is('dashboard/testimonials/*') ? 'active' : '' }}"> --}}
         <i class="nav-icon fas fa-comment-alt"></i>
         <p>Testimonials</p>
     </a>
