@@ -558,6 +558,7 @@ class ComposerStaticInitd99be2aa22b662638be63ef18831ea06
 
     public static $classMap = array (
         'App\\About' => __DIR__ . '/../..' . '/app/About.php',
+        'App\\Client' => __DIR__ . '/../..' . '/app/Client.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Contact' => __DIR__ . '/../..' . '/app/Contact.php',
         'App\\Event' => __DIR__ . '/../..' . '/app/Event.php',
@@ -600,6 +601,7 @@ class ComposerStaticInitd99be2aa22b662638be63ef18831ea06
         'App\\Repositories\\UserRepository' => __DIR__ . '/../..' . '/app/Repositories/UserRepository.php',
         'App\\Successstory' => __DIR__ . '/../..' . '/app/Successstory.php',
         'App\\Team' => __DIR__ . '/../..' . '/app/Team.php',
+        'App\\Testimonial' => __DIR__ . '/../..' . '/app/Testimonial.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
