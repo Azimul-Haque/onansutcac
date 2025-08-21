@@ -232,8 +232,8 @@
                             <label for="">Select Featured or not</label>
                             <select name="type" id="type" class="form-control" required>
                                 <option value="" selected disabled>Featured or not</option>
-                                <option value="1">Product</option>
-                                <option value="0">Technology</option>
+                                <option value="1">Featured</option>
+                                <option value="0">Not featured</option>
                             </select>
                         </div>
                     </div>
