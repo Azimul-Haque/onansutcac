@@ -37,7 +37,7 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><span>Solutions and Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             @foreach($productsforfooter as $product)
               @if($product->type == 1)
