@@ -61,7 +61,8 @@ class IndexController extends Controller
 
         return view('index.index')
                     ->withNewsforhomepage($newsforhomepage)
-                    ->withFeaturedprodandtechs($featuredprodandtechs);
+                    ->withFeaturedprodandtechs($featuredprodandtechs)
+                    ->withFeaturedevents($featuredevents);
     }
 
     public function getContact()
