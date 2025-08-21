@@ -119,25 +119,36 @@
   
         <!-- List Posts -->
         <div class="row">
-          <div class="col-xl-4 col-lg-6">
-            <article class="list-post">
-              <div class="post-img">
-                <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid" loading="lazy">
+          @foreach($recentnews as $news)
+            <div class="post-item">
+              <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="flex-shrink-0">
+              <div>
+                <h4><a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" @if($news->type == 3) target="_blank" @endif>{{ $news->title }}</a></h4>
+                <time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news->created_at)) }} | {{ news_type($news->type) }}</time>
               </div>
-              <div class="post-content">
-                <div class="category-meta">
-                  <span class="post-category">AI Photonics</span>
+            </div>
+            <div class="col-xl-4 col-lg-6">
+              <article class="list-post">
+                <div class="post-img">
+                  <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="img-fluid" loading="lazy">
                 </div>
-                <h3 class="title">
-                  <a href="{{ route('index.single-news', 'slug') }}">Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
-                </h3>
-                <div class="post-meta">
-                  <span class="read-time">2 mins read</span>
-                  <span class="post-date">6 April 2026</span>
+                <div class="post-content">
+                  <div class="category-meta">
+                    <span class="post-category">AI Photonics</span>
+                  </div>
+                  <h3 class="title">
+                    <a href="{{ route('index.single-news', 'slug') }}">Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
+                  </h3>
+                  <div class="post-meta">
+                    <span class="read-time">2 mins read</span>
+                    <span class="post-date">6 April 2026</span>
+                  </div>
                 </div>
-              </div>
-            </article>
-          </div>
+              </article>
+            </div>
+          @endforeach
+
+          
 
           <div class="col-xl-4 col-lg-6">
             <article class="list-post">
