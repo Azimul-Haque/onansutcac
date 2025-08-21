@@ -180,12 +180,6 @@
                     <h2>Mission</h2>
                     <p>
                       Water sustainability by developing monopoly of technologies and their manufacturing for secure water world
-
-                      • Deliver cutting-edge nano-materials that outperform conventional alternatives.
-                      • Drive sustainability and safety in manufacturing and consumer use.
-                      • Build strong partnerships with academia, industries, and governments worldwide.
-
-
                     </p>
                 </div>
             </div>
