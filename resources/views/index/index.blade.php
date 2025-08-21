@@ -572,6 +572,13 @@
                     <div class="testimonial-item">
                       <div class="stars">
                         $foreach($testimonial->rating)
+                        @for ($i = 1; $i <= 5; $i++)
+                            @php
+                                // Generate a string of stars based on the loop counter
+                                $stars = str_repeat('★', $i);
+                            @endphp
+                            <option value="{{ $i }}" {{ $testimonial->rating == $i ? 'selected' : '' }}>{{ $stars }}</option>
+                        @endfor
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                       <p>
