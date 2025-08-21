@@ -40,7 +40,7 @@
             <img src="{{ asset('images/Electronic-Chip.webp') }}" class="img-fluid rounded-4 mb-4" alt="">
             <p>CactusNano is a materials science and nanotechnology company dedicated to solving some of the world’s most pressing challenges in health, environment, and technology. Cactus Nano TM, a spin-off from Cactus Materials, Inc. (a US-based semiconductor and advanced materials company), focuses on innovative products like CoreSil™ Membrane, Suspension, and Powder for textile, water, medical, and space industries.</p>
             
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+            <p>With research-driven innovation and partnerships across textiles, electronics, water treatment, and consumer products, we design nanoscale solutions that integrate seamlessly into everyday life while enhancing durability, efficiency, and sustainability. Cactus collaborates with academia and national agencies, including NASA and Arizona State University, to develop advanced materials—particularly its antimicrobial technology, the core of its materials division. CoreSil™ RO membranes outperform conventional systems in wastewater, surface water, and seawater treatment. Cactus also partners with top US firms to provide integrated water treatment solutions</p>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
