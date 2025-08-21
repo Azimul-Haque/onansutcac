@@ -34,7 +34,7 @@
               <article class="article">
 
                 <div class="post-img">
-                  <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-2.webp') }}" alt="" class="img-fluid">
+                  <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
                 </div>
 
                 <h2 class="title">{{ $successstory->title }}</h2>
