@@ -147,7 +147,7 @@
                                                                    class="form-control"
                                                                    value="{{ old('slug', $successStory->slug) }}"
                                                                    autocomplete="off"
-                                                                   placeholder="Product Slug" required>
+                                                                   placeholder="Story Slug" required>
                                                             <div class="input-group-append">
                                                                 <div class="input-group-text"><span class="fas fa-link"></span></div>
                                                             </div>
