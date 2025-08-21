@@ -99,6 +99,14 @@
     </a>
 </li>
 
+{{-- <li class="nav-item">
+    <a href="#!" class="nav-link {{ Request::is('dashboard/statistics') ? 'active' : '' }} {{ Request::is('dashboard/statistics/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.statistics') }}" class="nav-link {{ Request::is('dashboard/statistics') ? 'active' : '' }} {{ Request::is('dashboard/statistics/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-chart-pie"></i>
+        <p>Statistics</p>
+    </a>
+</li> --}}
+
 
 @if(Auth::user()->role == 'admin')
 <li class="nav-item">
