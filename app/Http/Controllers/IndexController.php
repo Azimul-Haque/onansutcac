@@ -89,7 +89,7 @@ class IndexController extends Controller
         imagefilledrectangle($image, 0, 0, $width, $height, $white);
 
         // Generate a random string for the CAPTCHA
-        $captchaText = substr(str_shuffle('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'), 0, 6);
+        $captchaText = substr(str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'), 0, 6);
 
         // Store the captcha in the session
         Session::put('captcha', $captchaText);
