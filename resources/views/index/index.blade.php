@@ -29,6 +29,16 @@
               </div>
           </div>
         </h2>
+        <style>
+          .transparent-box {
+              background-color: rgba(59, 130, 246, 0.5); /* Matching the blue-300 with 50% opacity */
+              backdrop-filter: blur(5px); /* Simulating backdrop-blur */
+              transition: transform 0.3s ease-in-out;
+          }
+          .transparent-box:hover {
+              transform: scale(1.05);
+          }
+        </style>
         <p data-aos="fade-up" data-aos-delay="200"><small>CactusNano is at the forefront of nanotechnology solutions that redefine performance, safety, and sustainability across industries. From advanced antimicrobials and smart textiles to semiconductor materials and water purification, we enable businesses to lead with innovation and responsibility.</small></p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           {{-- <a href="#about" class="btn-get-started">Get Started</a>
