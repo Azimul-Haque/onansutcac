@@ -69,7 +69,20 @@
         </ul>
       </div>
 
-      <div class="col-lg-4 col-md-12 footer-about footer-newsletter">
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Materials & Media</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.events') }}">Events</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">News & Updates</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.information-center') }}">Information Center</a></li>
+          {{-- <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.testimonials') }}">Client Testimonials</a></li> --}}
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.help-center') }}">Help Center</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-12 footer-about footer-newsletter">
         <a href="{{ route('index.index') }}" class="logo d-flex align-items-center">
           <img src="{{ asset('images/logo.png') }}" alt="">
           <span class="sitename"><span style="color: #70BE42;">Cactus</span><span style="color: #08AAE9;">NANO</span></span>
