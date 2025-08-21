@@ -71,6 +71,7 @@
 
 <li class="nav-item">
     <a href="{{ route('dashboard.clients') }}" class="nav-link {{ Request::is('dashboard/clients') ? 'active' : '' }} {{ Request::is('dashboard/clients/*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-handshake"></i>
         <p>Clients</p>
     </a>
 </li>
