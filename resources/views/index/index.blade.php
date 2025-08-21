@@ -326,7 +326,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
-          @foreach($featuredevents as $event)
+          @foreach($featuredevents as $key => $event)
           <li class="nav-item col-3">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-{{ $event->id }}">
               <i class="bi bi-binoculars"></i>
