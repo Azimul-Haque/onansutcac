@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Response;
 
 use App\User;
 use App\Message;
@@ -25,7 +27,6 @@ use File;
 use Session;
 use Artisan;
 use Cache;
-use Response;
 // use Redirect;
 // use OneSignal;
 // use PDF;
