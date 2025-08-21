@@ -34,21 +34,19 @@
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
+          @foreach($successstoroes as $story)
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
               <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               <div class="blog-post-content">
-                <div class="post-meta">
-                  <span><i class="bi bi-person"></i> Mark Wilson</span>
-                  <span><i class="bi bi-clock"></i> Jan 18, 2025</span>
-                  <span><i class="bi bi-chat-dots"></i> 6 Comments</span>
-                </div>
+                
                 <h2><a href="{{ route('index.single-success-story', 'slug') }}">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h2>
                 <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
                 <a href="{{ route('index.single-success-story', 'slug') }}" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
+          @endforeach
 
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
