@@ -580,7 +580,7 @@
                       <div class="profile mt-auto">
                         <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
                         <h3>{{ $testimonial->name }}</h3>
-                        <h4>Ceo &amp; Founder</h4>
+                        <h4>{{ $testimonial->designation }}</h4>
                       </div>
                     </div>
                   </div>
