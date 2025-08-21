@@ -138,7 +138,7 @@
                     <span class="post-category">AI Photonics</span>
                   </div>
                   <h3 class="title">
-                    <a href="{{ route('index.single-news', 'slug') }}">Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
+                    <a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" @if($news->type == 3) target="_blank" @endif>{{ $news->title }}</a>
                   </h3>
                   <div class="post-meta">
                     <span class="read-time">2 mins read</span>
