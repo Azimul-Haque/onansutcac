@@ -38,7 +38,7 @@
           <div class="col-xl-4 col-md-6 aos-init" data-aos="zoom-in" data-aos-delay="200">
             <div class="blog-post-item">
               @if($story->image)
-                  <img src="{{ asset('images/success-storoes/' . $story->image) }}" alt="{{ $story->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
+                  <img src="{{ asset('images/success-stories/' . $story->image) }}" alt="{{ $story->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
               @endif
               <div class="blog-post-content">
                 <h2><a href="{{ route('index.single-success-story', $story->slug) }}">{{ $story->title }}</a></h2>
