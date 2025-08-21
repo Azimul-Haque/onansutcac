@@ -207,10 +207,6 @@
                   <div class="icon">
                     <i class="bi bi-activity"></i>
                   </div>
-                  <a href="#!" class="stretched-link">
-                    <h3>Nesciunt Mete</h3>
-
-                  </a>
                   <a href="{{ route('index.singleproduct', $product->slug) }}" class="stretched-link">
                     <h3>{{ $product->title }}</h3>
                   </a>
