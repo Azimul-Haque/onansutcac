@@ -1012,14 +1012,14 @@ class DashboardController extends Controller
     public function getMessages(Request $request)
     {
         if($request->search) {
-            $faqs = Faq::where('name', 'LIKE', "%$request->search%")
+            $faqs = Contact::where('name', 'LIKE', "%$request->search%")
                          ->orWhere('email', 'LIKE', "%$request->search%")
                          ->orWhere('subject', 'LIKE', "%$request->search%")
                          ->orWhere('message', 'LIKE', "%$request->search%")
                          ->orderBy('id', 'desc')
                          ->paginate(10);
         } else {
-            $faqs = Faq::orderBy('id', 'desc')->paginate(10);
+            $faqs = Contact::orderBy('id', 'desc')->paginate(10);
         }
 
         return view('dashboard.help-center.index')->withFaqs($faqs);
