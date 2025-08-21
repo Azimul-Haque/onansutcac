@@ -176,8 +176,6 @@
 
             <!-- Mission Statement Column -->
             <div class="col-12 col-md-7">
-                
-
                 <div class="box-card mission-card">
                   <h2 class="statement-title">Mission</h2>
                   <p class="statement-text">Water sustainability by developing monopoly of technologies and their manufacturing for secure water world</p>
