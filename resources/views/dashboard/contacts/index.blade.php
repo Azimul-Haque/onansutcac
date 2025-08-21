@@ -68,7 +68,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <a href="{{ route('dashboard.contact-messages.delete', $message->id) }}" class="btn btn-danger">Delete</a>
+                                            <a href="{{ route('dashboard.messages.delete', $message->id) }}" class="btn btn-danger">Delete</a>
                                         </div>
                                     </div>
                                 </div>
