@@ -85,7 +85,7 @@
                   <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
                 </div>
 
-                <img src="{{ route('captcha.image') }}" alt="Captcha Text">
+                <img src="{{ route('captcha.image') }}" alt="Captcha Text" height="120">
 
                 <div class="col-md-12 text-center">
 
