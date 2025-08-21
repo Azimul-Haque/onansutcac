@@ -79,7 +79,6 @@ class DashboardController extends Controller
         Artisan::call('key:generate');
         Artisan::call('config:clear');
         Artisan::call('sitemap:generate');
-        Session::flush();
         Session::flash('success', 'All query caches have been cleared!');
         return redirect()->route('dashboard.index');
     }
