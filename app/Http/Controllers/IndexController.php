@@ -8,6 +8,7 @@ use App\User;
 use App\Message;
 use App\Product;
 use App\Market;
+use App\About;
 use App\Team;
 use App\News;
 use App\Newscategory;
