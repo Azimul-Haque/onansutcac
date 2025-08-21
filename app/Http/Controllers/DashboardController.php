@@ -1022,7 +1022,7 @@ class DashboardController extends Controller
             $faqs = Contact::orderBy('id', 'desc')->paginate(10);
         }
 
-        return view('dashboard.help-center.index')->withFaqs($faqs);
+        return view('dashboard.contacts.index')->withFaqs($faqs);
     }
 
 
