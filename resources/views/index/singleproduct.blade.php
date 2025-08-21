@@ -284,6 +284,7 @@
           <div class="swiper-wrapper" id="swiper-wrapper-9c7a64342fe292c6" aria-live="off" >
             {{-- style="transition-duration: 0ms; transform: translate3d(-744.667px, 0px, 0px); transition-delay: 0ms;" --}}
 
+            @foreach($recentnews as $news)
             <div class="swiper-slide" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
               <div class="testimonial-item">
                 <div class="post-img">
@@ -297,6 +298,7 @@
               </div>
             </div>
             <!-- End testimonial item -->
+            @endforeach
 
             <div class="swiper-slide swiper-slide-prev" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
               <div class="testimonial-item">
