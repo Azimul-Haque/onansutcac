@@ -65,15 +65,17 @@
           <li><i class="bi bi-chevron-right"></i> <a href="#">Regulatory Updates (EPA, DOE)</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.help-center') }}">FAQ</a></li>
         </ul>
-      </div>
 
-      <div class="col-lg-2 col-md-3 footer-links">
         <h4>Careers</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Open Positions</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Work Culture</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Internship & Research Opportunities</a></li>
-        </ul><br/>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <br/>
 
 
         <h4>Contact</h4>
