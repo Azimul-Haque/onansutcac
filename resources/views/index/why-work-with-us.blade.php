@@ -277,6 +277,57 @@
       </style>
 
     </section>
+
+    <section id="global-presence" class="stats section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Connecting Across Continents</h2>
+        <p>Global Presence</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 justify-content-center mb-4">
+            <!-- Vision Statement Column -->
+            <div class="col-12 col-md-12">
+              <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence" style="width: 100%;">
+            </div>
+        </div>
+      </div>
+
+      <style>
+          .vision-card, .mission-card {
+              padding: 2rem;
+              border-radius: 0.5rem;
+              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+              height: 100%; /* Ensure cards have equal height */
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+          }
+          .vision-card {
+              background-color: #e0f7fa; /* Light blue */
+              color: #00796b; /* Darker teal for text */
+          }
+          .mission-card {
+              background-color: #e8f5e9; /* Light green */
+              color: #2e7d32; /* Darker green for text */
+          }
+          .vision-card h2, .mission-card h2 {
+              font-size: 2.5rem; /* Larger title */
+              margin-bottom: 1rem;
+              font-weight: 700;
+          }
+          .vision-card p, .mission-card p {
+              font-size: 1.25rem; /* Larger paragraph text */
+              line-height: 1.6;
+          }
+      </style>
+
+    </section>
     
 
 @endsection
