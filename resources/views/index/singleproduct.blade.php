@@ -292,9 +292,9 @@
                 </div>
 
                 <h2 class="title">
-                  <a href="{{ route('index.single-success-story', 'slug') }}">{{ $story->title }}</a>
+                  <a href="{{ route('index.single-success-story', $story->slug) }}">{{ $story->title }}</a>
                 </h2>
-                <a href="{{ route('index.single-success-story', 'slug') }}" class="newsroom-item-link" target="">Read more</a>
+                <a href="{{ route('index.single-success-story', $story->slug) }}" class="newsroom-item-link" target="">Read more</a>
               </div>
             </div>
             <!-- End testimonial item -->
