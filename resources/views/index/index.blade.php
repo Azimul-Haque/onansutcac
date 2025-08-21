@@ -16,7 +16,7 @@
         Your browser does not support the video tag.
       </video>
 
-      <div class="container d-flex flex-column align-items-center">
+      <div class="container d-flex flex-column align-items-center text-center">
         <h2 data-aos="fade-up" data-aos-delay="100">Transforming Industries with Nano-Innovation</h2>
         <p data-aos="fade-up" data-aos-delay="200"><small>CactusNano is at the forefront of nanotechnology solutions that redefine performance, safety, and sustainability across industries. From advanced antimicrobials and smart textiles to semiconductor materials and water purification, we enable businesses to lead with innovation and responsibility.</small></p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
@@ -44,7 +44,7 @@
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic text-center">
+              <p class="fst-italic">
                 CactusNano is a nanotechnology company developing innovative, sustainable materials like CoreSil™ for water treatment, medical, and textile industries.
               </p>
               <ul>
