@@ -135,7 +135,7 @@
                 </div>
                 <div class="post-content">
                   <div class="category-meta">
-                    <span class="post-category">AI Photonics</span>
+                    <span class="post-category">{{ news_type($news->type) }}</span>
                   </div>
                   <h3 class="title">
                     <a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" @if($news->type == 3) target="_blank" @endif>{{ $news->title }}</a>
