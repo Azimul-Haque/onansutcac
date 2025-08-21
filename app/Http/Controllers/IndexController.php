@@ -194,7 +194,9 @@ class IndexController extends Controller
     public function getSuccessStories()
     {
         $successstoroes = Event::orderBy('id', 'desc')->get();
-        return view('index.success-stories');
+
+        return view('index.success-stories')
+                        ->withSuccessstoroes($successstoroes);
     }
 
     public function getSingleSuccessStory($slug)
