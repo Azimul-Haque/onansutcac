@@ -14,7 +14,7 @@
                 <h3 class="card-title">Contact Messages</h3>
 
                 <div class="card-tools">
-                    <form class="form-inline form-group-lg" action="{{ route('dashboard.contact-messages') }}" method="GET">
+                    <form class="form-inline form-group-lg" action="{{ route('dashboard.messages') }}" method="GET">
                         <div class="form-group">
                             <input type="text" class="form-control form-control-sm" placeholder="Search Messages" id="search-param" name="search" value="{{ request('search') }}" required>
                         </div>
