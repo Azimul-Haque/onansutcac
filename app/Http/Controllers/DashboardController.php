@@ -489,14 +489,6 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.abouts');
     }
 
-    /**
-     * Update the specified 'abouts' resource in storage.
-     * This method is analogous to the updateTeam method, without image handling.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\RedirectResponse
-     */
     public function updateAbout(Request $request, $id)
     {
         // Validate the incoming request data
