@@ -11,7 +11,7 @@
       <ul>
 
         <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
-        
+
         <li><a href="{{ route('index.get-why-work-with-us') }}" class="{{ Request::is('why-work-with-us') ? 'active' : '' }}">Why work with us</a></li>
 
 
@@ -30,9 +30,7 @@
         <li class="dropdown"><a href="#"><span>Solutions and Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             @foreach($productsforfooter as $product)
-              @if($product->type == 2)
-                 <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
-              @endif
+              <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
             @endforeach
           </ul>
         </li>
