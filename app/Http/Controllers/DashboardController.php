@@ -952,7 +952,7 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'name' => 'required|string|max:191',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:300',
         ]);
 
         $client = new Client;
@@ -976,7 +976,7 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'name' => 'required|string|max:191',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:300',
         ]);
 
         $client = Client::findOrFail($id);
