@@ -12,7 +12,7 @@
 
         <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
         
-        <li><a href="{{ route('index.get-why-work-with-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">About Us</a></li>
+        <li><a href="{{ route('index.get-why-work-with-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">Why work with us</a></li>
 
 
         {{-- <li class="dropdown"><a href="#" class="{{ Request::is('about-us') || Request::is('about-us#our-story') || Request::is('about-us#vission-mission') || Request::is('about-us#team') || Request::is('about-us#our-story') ? 'active' : '' }}"><span>Company</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
