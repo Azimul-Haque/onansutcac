@@ -160,8 +160,11 @@ class IndexController extends Controller
     public function getNews()
     {
         $allNews = News::orderBy('id', 'desc')->paginate(6);
+        $recentsuccessstories = Successstory::orderBy('id', 'desc')->get()->take(5);
 
-        return view('index.news')->withAllNews($allNews);
+        return view('index.news')
+                    ->withAllNews($allNews)
+                    ->withRecentsuccessstories($recentsuccessstories);
     }
 
     public function getCategoryWiseNews($name)
