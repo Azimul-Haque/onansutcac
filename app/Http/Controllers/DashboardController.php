@@ -1013,8 +1013,9 @@ class DashboardController extends Controller
     {
         if($request->search) {
             $faqs = Faq::where('name', 'LIKE', "%$request->search%")
-                         ->orWhere('question', 'LIKE', "%$request->search%")
-                         ->orWhere('answer', 'LIKE', "%$request->search%")
+                         ->orWhere('email', 'LIKE', "%$request->search%")
+                         ->orWhere('subject', 'LIKE', "%$request->search%")
+                         ->orWhere('message', 'LIKE', "%$request->search%")
                          ->orderBy('id', 'desc')
                          ->paginate(10);
         } else {
