@@ -43,22 +43,14 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            @foreach($marketsforfooter as $market)
-              @if($market->type == 2)
-                 <li><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></li>
-              @endif
-            @endforeach
-          </ul>
-        </li>
+        
 
-        <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        {{-- <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#!">SDG Alignment</a></li>
             <li><a href="#!">Social Impact</a></li>
           </ul>
-        </li>
+        </li> --}}
 
         {{-- <li class="dropdown"><a href="#"><span>Contact</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
