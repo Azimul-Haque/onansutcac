@@ -56,6 +56,7 @@ class IndexController extends Controller
     public function index()
     {
         $featuredprodandtechs = Product::where('isfeatured', 1)->get()->take(3);
+        $featuredevents = Events::where('isfeatured', 1)->get()->take(3);
         $newsforhomepage = News::orderBy('id', 'desc')->get()->take(3);
 
         return view('index.index')
