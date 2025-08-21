@@ -44,7 +44,7 @@
 
     <h3 class="widget-title">Recent Success Stories</h3>
 
-    @foreach($recentnews as $news)
+    @foreach($recentsuccessstories as $story)
     <div class="post-item">
       <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="" class="flex-shrink-0">
       <div>
