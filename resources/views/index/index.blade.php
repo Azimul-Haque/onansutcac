@@ -233,10 +233,12 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
-
+          @foreach($clientsforhomepage as $client)
           <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="{{ asset('vendor/dewi/assets/img/clients/client-1.png') }}" class="img-fluid" alt="">
           </div><!-- End Client Item -->
+          @endforeach
+          
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="{{ asset('vendor/dewi/assets/img/clients/client-2.png') }}" class="img-fluid" alt="">
