@@ -937,6 +937,83 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.success-stories')->with('success', 'Success story deleted successfully!');
     }
 
+    public function getClients(Request $request)
+    {
+        if ($request->search) {
+            $clients = Client::where('name', 'LIKE', "%$request->search%")->orderBy('id', 'desc')->paginate(10);
+        } else {
+            $clients = Client::orderBy('id', 'desc')->paginate(10);
+        }
+
+        return view('dashboard.clients.index')->withClients($clients);
+    }
+
+    public function storeClient(Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required|string|max:191',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+        ]);
+
+        $client = new Client;
+        $client->name = $request->name;
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $filename = Str::random(5) . time() . '.' . "webp";
+            $location = public_path('images/clients/' . $filename);
+            Image::make($image)->fit(400, 141)->save($location);
+            $client->image = $filename;
+        }
+
+        $client->save();
+
+        Session::flash('success', 'Client created successfully!');
+        return redirect()->route('dashboard.clients');
+    }
+
+    public function updateClient(Request $request, $id)
+    {
+        $this->validate($request, [
+            'name' => 'required|string|max:191',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+        ]);
+
+        $client = Client::findOrFail($id);
+        $client->name = $request->name;
+
+        if ($request->hasFile('image')) {
+            if ($client->image && File::exists(public_path('images/clients/' . $client->image))) {
+                File::delete(public_path('images/clients/' . $client->image));
+            }
+
+            $image = $request->file('image');
+            $filename = Str::random(5) . time() . '.' . "webp";
+            $location = public_path('images/clients/' . $filename);
+            Image::make($image)->fit(400, 141)->save($location);
+            $client->image = $filename;
+        }
+
+        $client->save();
+
+        Session::flash('success', 'Client updated successfully!');
+        return redirect()->route('dashboard.clients');
+    }
+
+    public function deleteClient($id)
+    {
+        $client = Client::findOrFail($id);
+
+        if ($client->image && File::exists(public_path('images/clients/' . $client->image))) {
+            File::delete(public_path('images/clients/' . $client->image));
+        }
+
+        $client->delete();
+
+        Session::flash('success', 'Client deleted successfully!');
+        return redirect()->route('dashboard.clients');
+    }
+
 
 
 
