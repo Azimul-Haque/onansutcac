@@ -335,7 +335,7 @@
 
     </section><!-- /Stats Section -->
 
-    <section id="services" class="services section light-background">
+{{--     <section id="services" class="services section light-background">
       <!-- Section Title -->
       <div class="container section-title aos-init" data-aos="fade-up">
         <h2>Services</h2>
@@ -422,7 +422,7 @@
 
       </div>
 
-    </section>
+    </section> --}}
 
 
 @endsection
