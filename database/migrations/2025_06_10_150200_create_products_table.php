@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->integer('type')->nullable();               
             $table->integer('isfeatured');              
             $table->string('title');               
-            $table->text('slug');               
+            $table->text('slug');
             $table->longText('text');      
             $table->string('image')->nullable();           
             $table->timestamps();                
