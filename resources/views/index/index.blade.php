@@ -572,10 +572,6 @@
                     <div class="testimonial-item">
                       <div class="stars">
                         @for ($i = 1; $i <= $testimonial->rating; $i++)
-                            @php
-                                // Generate a string of stars based on the loop counter
-                                $stars = str_repeat('★', $i);
-                            @endphp
                             <i class="bi bi-star-fill"></i>
                         @endfor
                       </div>
