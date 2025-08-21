@@ -568,7 +568,7 @@
                 </script>
                 <div class="swiper-wrapper" id="swiper-wrapper-9c7a64342fe292c6" aria-live="off" >
                   @foreach($testimonials as $key => $testimonial)
-                  <div class="swiper-slide" style="width: 371.333px; min-height: 370px; margin-right: 1px;" role="group" aria-label="1 / 6" data-swiper-slide-index="0">
+                  <div class="swiper-slide" style="width: 371.333px; min-height: 370px; margin-right: 1px;" role="group" aria-label="{{ $key + 1 }} / 6" data-swiper-slide-index="0">
                     <div class="testimonial-item">
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
