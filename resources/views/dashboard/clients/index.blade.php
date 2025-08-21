@@ -86,7 +86,7 @@
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="clientImageEdit{{ $client->id }}">Client Image: (1:1 should be ideal, max: 2MB)</label><br>
+                                                        <label for="clientImageEdit{{ $client->id }}">Client Image: (400px : 141px should be ideal, max: 300KB)</label><br>
                                                         @if($client->image)
                                                             <img src="{{ asset('images/clients/' . $client->image) }}" alt="{{ $client->name }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
                                                             <br>
@@ -176,7 +176,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="clientImageAdd">Client Image: (1:1 should be ideal, max: 2MB)</label>
+                            <label for="clientImageAdd">Client Image: (400px : 141px should be ideal, max: 300KB)</label>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" id="clientImageAdd" name="image" accept="image/*" required>
                                 <label class="custom-file-label" for="clientImageAdd">Choose file</label>
