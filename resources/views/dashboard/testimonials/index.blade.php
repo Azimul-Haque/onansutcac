@@ -99,7 +99,7 @@
                                                             name="name"
                                                             class="form-control"
                                                             value="{{ old('name', $testimonial->name) }}"
-                                                            placeholder="Testimonial Name" required>
+                                                            placeholder="Testifier Name" required>
                                                  <div class="input-group-append">
                                                      <div class="input-group-text"><span class="fas fa-user"></span></div>
                                                  </div>
@@ -113,7 +113,7 @@
                                                                     class="form-control"
                                                                     value="{{ old('designation', $testimonial->designation) }}"
                                                                     autocomplete="off"
-                                                                    placeholder="Testimonial Designation" required>
+                                                                    placeholder="Testifier Designation" required>
                                                          <div class="input-group-append">
                                                              <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
                                                          </div>
@@ -143,7 +143,7 @@
                                              </div>
 
                                              <div class="form-group">
-                                                 <label for="testimonialImageEdit{{ $testimonial->id }}">Testimonial Image: (1:1 should be ideal, max: 300KB)</label><br>
+                                                 <label for="testimonialImageEdit{{ $testimonial->id }}">Testifier Image: (1:1 should be ideal, max: 300KB)</label><br>
                                                  @if($testimonial->image)
                                                      <img src="{{ asset('images/testimonials/' . $testimonial->image) }}" alt="{{ $testimonial->name }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
                                                      <br>
