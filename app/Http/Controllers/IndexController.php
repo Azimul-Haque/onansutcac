@@ -138,11 +138,13 @@ class IndexController extends Controller
         
         $markets = Market::orderBy('id', 'desc')->get()->take(6);
         $products = Product::orderBy('id', 'desc')->get()->take(6);
+        $recentsuccessstories = Successstory::orderBy('id', 'desc')->get()->take(5);
 
         return view('index.singlemarket')
                     ->withMarket($market)
                     ->withMarkets($markets)
-                    ->withProducts($products);
+                    ->withProducts($products)
+                    ->withRecentsuccessstories($recentsuccessstories);
     }
 
     public function getRegionalOffices()
