@@ -92,7 +92,7 @@
           <span class="sitename"><span style="color: #70BE42;">Cactus</span><span style="color: #08AAE9;">NANO</span></span>
         </a>
         <h5>Our Newsletter</h5>
-        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+        <p>Subscribe to our newsletter for product and service news.</p>
         <form action="" method="post" class="php-email-form">
           @csrf
           <div class="newsletter-form"><input type="email" name="email" required><input type="submit" value="Subscribe"></div>
