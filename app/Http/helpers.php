@@ -197,7 +197,13 @@
 
   function estimatedReadingTime($text, $wpm = 200)
   {
-      $wordCount = str_word_count(strip_tags($text));
+      // Strip out all HTML and PHP tags to get a clean text string.
+      $cleanText = strip_tags($text);
+      
+      // Count the words in the clean text.
+      $wordCount = str_word_count($cleanText);
+      
+      // Calculate the estimated minutes.
       $minutes = ceil($wordCount / $wpm);
 
       return (int) $minutes;
