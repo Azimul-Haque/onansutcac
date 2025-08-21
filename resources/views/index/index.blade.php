@@ -578,7 +578,7 @@
                         Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                       </p>
                       <div class="profile mt-auto">
-                        <img src="{{ asset('images/testimonials/' . $testimonial->image) }}" class="testimonial-img" alt="">
+                        <img src="{{ asset('images/testimonials/' . $testimonial->image) }}" class="testimonial-img" alt="{{ $testimonial->name }}">
                         <h3>{{ $testimonial->name }}</h3>
                         <h4>{{ $testimonial->designation }}</h4>
                       </div>
