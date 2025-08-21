@@ -371,8 +371,8 @@
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid" alt="{{ $event->title }}" loading="lazy">
               </div>
-              @if(!empty($event->reg_url))<a href="{{ $event->reg_url }}" class="btn btn-primary">Register Now</a>@endif
             </div>
+            @if(!empty($event->reg_url))<a href="{{ $event->reg_url }}" class="btn btn-primary shadow-sm">Register Now</a>@endif
           </div><!-- End Tab Content Item -->
           @endforeach
 
