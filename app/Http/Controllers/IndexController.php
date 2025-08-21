@@ -357,7 +357,7 @@ class IndexController extends Controller
             // Add more links as needed
         ];
 
-           
+
         return view('index.sitemap');
     }
 
@@ -372,6 +372,6 @@ class IndexController extends Controller
         Artisan::call('config:clear');
         Artisan::call('sitemap:generate');
         Session::flush();
-        return 'Config and Route Cached. All Cache Cleared';
+        return 'Config and Route Cached. All Cache Cleared & Sitemap generated!';
     }
 }
