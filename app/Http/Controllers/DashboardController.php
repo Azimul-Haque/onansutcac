@@ -448,6 +448,85 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.teams');
     }
 
+    public function getAbouts(Request $request)
+    {
+        // Check if a search query is present in the request
+        if ($request->search) {
+            // If a search query is present, search by page-location and content
+            $abouts = About::where('page_location', 'LIKE', "%{$request->search}%")
+                            ->orWhere('content', 'LIKE', "%{$request->search}%")
+                            ->orderBy('id', 'desc')
+                            ->paginate(10);
+        } else {
+            // Otherwise, get all abouts records with pagination
+            $abouts = About::orderBy('id', 'desc')->paginate(10);
+        }
+
+        // Return the view with the paginated abouts data
+        return view('dashboard.abouts.index')->with('abouts', $abouts);
+    }
+
+    /**
+     * Store a newly created 'abouts' resource in storage.
+     * This method is analogous to the storeTeam method, but without image handling.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function storeAbout(Request $request)
+    {
+        // Validate the incoming request data
+        $this->validate($request, [
+            'page_location' => 'required|string|max:191|unique:abouts',
+            'content'       => 'required',
+        ]);
+
+        // Create a new About model instance
+        $about = new About;
+        $about->page_location = $request->page_location;
+        $about->content = Purifier::clean($request->content, 'youtube');
+
+        // Save the new record to the database
+        $about->save();
+
+        // Flash a success message to the session
+        Session::flash('success', 'About page content created successfully!');
+
+        // Redirect to the abouts index page
+        return redirect()->route('dashboard.abouts');
+    }
+
+    /**
+     * Update the specified 'abouts' resource in storage.
+     * This method is analogous to the updateTeam method, without image handling.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function updateAbout(Request $request, $id)
+    {
+        // Validate the incoming request data
+        $this->validate($request, [
+            'page_location' => 'required|string|max:191|unique:abouts,page_location,' . $id,
+            'content'       => 'required',
+        ]);
+
+        // Find the record by its ID or fail
+        $about = About::findOrFail($id);
+        $about->page_location = $request->page_location;
+        $about->content = Purifier::clean($request->content, 'youtube');
+
+        // Save the updated record to the database
+        $about->save();
+
+        // Flash a success message to the session
+        Session::flash('success', 'About page content updated successfully!');
+
+        // Redirect to the abouts index page
+        return redirect()->route('dashboard.abouts');
+    }
+
     public function getNews(Request $request)
     {
         $newscategories = Newscategory::orderBy('name', 'asc')->get();
