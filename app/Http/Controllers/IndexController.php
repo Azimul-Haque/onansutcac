@@ -171,6 +171,7 @@ class IndexController extends Controller
     {
         $unslugged_item = unslug($name);
         $newscategory = Newscategory::where('name', 'LIKE', "%$unslugged_item%")->firstOrFail();
+        $recentsuccessstories = Successstory::orderBy('id', 'desc')->get()->take(5);
 
         $allNews = News::where('newscategory_id', $newscategory->id)
                        ->orderBy('id', 'desc')
@@ -178,7 +179,8 @@ class IndexController extends Controller
 
         return view('index.news')
                     ->withNewscategory($newscategory)
-                    ->withAllNews($allNews);
+                    ->withAllNews($allNews)
+                    ->withRecentsuccessstories($recentsuccessstories);
     }
 
     public function getSingleNews($slug)
