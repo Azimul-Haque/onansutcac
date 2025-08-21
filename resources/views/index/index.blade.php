@@ -199,7 +199,7 @@
                       <img src="{{ asset('vendor/dewi/assets/img/services-1.jpg') }}" class="img-fluid" alt="">
                   @endif
                   <!-- Product Type Tag -->
-                  <span class="badge bg-primary position-absolute top-0 end-0 m-2" style="font-size: 0.85em; padding: 0.5em 0.75em; border-radius: 0.3rem;">
+                  <span class="badge bg-primary position-absolute top-0 end-0 m-2" style="font-size: 0.85em; padding: 0.3em 0.6em; border-radius: 0.3rem;">
                       {{ prod_type($product->type) ?? 'Product Type' }} <!-- Replace $product->type with your actual variable -->
                   </span>
                 </div>
