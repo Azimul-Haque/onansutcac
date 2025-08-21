@@ -39,7 +39,7 @@
             {{-- <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" class="img-fluid rounded-4 mb-4" alt=""> --}}
             <img src="{{ asset('images/Electronic-Chip.webp') }}" class="img-fluid rounded-4 mb-4" alt="">
             <p>CactusNano is a materials science and nanotechnology company dedicated to solving some of the world’s most pressing challenges in health, environment, and technology. Cactus Nano TM, a spin-off from Cactus Materials, Inc. (a US-based semiconductor and advanced materials company), focuses on innovative products like CoreSil™ Membrane, Suspension, and Powder for textile, water, medical, and space industries.</p>
-            
+
             <p>With research-driven innovation and partnerships across textiles, electronics, water treatment, and consumer products, we design nanoscale solutions that integrate seamlessly into everyday life while enhancing durability, efficiency, and sustainability. Cactus collaborates with academia and national agencies, including NASA and Arizona State University, to develop advanced materials—particularly its antimicrobial technology, the core of its materials division. CoreSil™ RO membranes outperform conventional systems in wastewater, surface water, and seawater treatment. Cactus also partners with top US firms to provide integrated water treatment solutions</p>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
@@ -48,9 +48,9 @@
                 CactusNano is a nanotechnology company developing innovative, sustainable materials like CoreSil™ for water treatment, medical, and textile industries.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>CoreSil™ Technology: Innovative nanoscale material used for water and textile applications.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Strategic Partnerships: Collaborates with organizations like NASA and Arizona State University.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Sustainable Focus: Aims to improve the efficiency and durability of products for a more sustainable world.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><b>CoreSil™ Technology:</b> Innovative nanoscale material used for water and textile applications.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><b>Strategic Partnerships:</b> Collaborates with organizations like NASA and Arizona State University.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><b>Sustainable Focus:</b> Aims to improve the efficiency and durability of products for a more sustainable world.</span></li>
               </ul>
               <p>
                 Founded in 2016 as part of Cactus Materials, Cactus Nano officially became a separate entity in 2023. It gained global recognition through projects with NASA, USTDA, and PFAS research supported by the US Department of Energy.
