@@ -57,6 +57,7 @@
 
       <div class="container">
         <div class="d-flex justify-content-center">
+          {{ $successstoroes->links() }}
           <ul>
             <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
             <li><a href="#">1</a></li>
