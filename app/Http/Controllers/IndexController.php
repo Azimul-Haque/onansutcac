@@ -107,6 +107,35 @@ class IndexController extends Controller
         return Response::make($imageData, 200, ['Content-Type' => 'image/png']);
     }
 
+    public function storeContact(Request $request)
+        {
+            // First, validate other form fields
+            $request->validate([
+                'name'    => 'required|string|max:255',
+                'email'   => 'required|email|max:255',
+                'message' => 'required|string',
+                'captcha' => 'required|string', // The user's captcha input
+            ]);
+
+            // Retrieve the CAPTCHA text from the session
+            $sessionCaptcha = Session::get('captcha');
+
+            // Check if the user's input matches the session value.
+            // We use strtolower() to make the comparison case-insensitive.
+            if (strtolower($request->input('captcha')) != strtolower($sessionCaptcha)) {
+                // If the CAPTCHA is incorrect, redirect back with an error.
+                return redirect()->back()->withErrors(['captcha' => 'The entered CAPTCHA is incorrect.']);
+            }
+
+            // If the validation passes, you can proceed with your form logic.
+            // For example, saving the message to the database, sending an email, etc.
+
+            // ... Your application logic here ...
+
+            // After successful processing, redirect with a success message.
+            return redirect()->back()->with('success', 'Your message has been sent successfully!');
+        }
+
     public function getAboutUs()
     {
         $aboutpagetop = About::where('id', 1)->first();
