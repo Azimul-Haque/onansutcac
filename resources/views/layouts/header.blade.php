@@ -43,7 +43,9 @@
           </ul>
         </li>
 
-        <li><a href="{{ route('index.get-why-work-with-us') }}" class="{{ Request::is('why-work-with-us') ? 'active' : '' }}">Why work with us</a></li>
+        <li><a href="{{ route('index.get-why-work-with-us') }}" class="{{ Request::is('why-work-with-us') ? 'active' : '' }}">News</a></li>
+
+        <li><a href="{{ route('index.get-why-work-with-us') }}" class="{{ Request::is('why-work-with-us') ? 'active' : '' }}">Events</a></li>
 
         
 
