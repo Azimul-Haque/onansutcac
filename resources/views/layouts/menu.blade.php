@@ -70,9 +70,7 @@
 </li>
 
 <li class="nav-item">
-    {{-- <a href="{{ route('dashboard.clients') }}" class="nav-link {{ Request::is('dashboard/clients') ? 'active' : '' }} {{ Request::is('dashboard/clients/*') ? 'active' : '' }}"> --}}
-    <a href="#!" class="nav-link {{ Request::is('dashboard/clients') ? 'active' : '' }} {{ Request::is('dashboard/clients/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-handshake"></i>
+    <a href="{{ route('dashboard.clients') }}" class="nav-link {{ Request::is('dashboard/clients') ? 'active' : '' }} {{ Request::is('dashboard/clients/*') ? 'active' : '' }}">
         <p>Clients</p>
     </a>
 </li>
