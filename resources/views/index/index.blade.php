@@ -53,8 +53,7 @@
                 <li><i class="bi bi-check-circle-fill"></i> <span>Sustainable Focus: Aims to improve the efficiency and durability of products for a more sustainable world.</span></li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                Founded in 2016 as part of Cactus Materials, Cactus Nano officially became a separate entity in 2023. It gained global recognition through projects with NASA, USTDA, and PFAS research supported by the US Department of Energy.
               </p>
 
               <div class="position-relative mt-4">
