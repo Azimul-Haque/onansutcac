@@ -43,9 +43,9 @@
           </ul>
         </li>
 
-        <li><a href="{{ route('index.news') }}" class="{{ Request::is('why-work-with-us') ? 'active' : '' }}">News</a></li>
+        <li><a href="{{ route('index.news') }}" class="{{ Request::is('news') ? 'active' : '' }}">News</a></li>
 
-        <li><a href="{{ route('index.events') }}" class="{{ Request::is('why-work-with-us') ? 'active' : '' }}">Events</a></li>
+        <li><a href="{{ route('index.events') }}" class="{{ Request::is('events') ? 'active' : '' }}">Events</a></li>
 
         
 
