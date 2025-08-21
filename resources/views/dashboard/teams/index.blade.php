@@ -228,7 +228,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="input-group mb-3">
-                            <input type="text"
+                            <input type="number"
                                    name="serial"
                                    class="form-control"
                                    value="{{ old('serial') }}"
