@@ -206,7 +206,7 @@ class IndexController extends Controller
 
         return view('index.single-success-story')
                         ->withRecentnews($recentnews)
-                        ->withNewscategories($newscategories)
+                        ->withNewscategories($newscategories);
     }
 
     public function getAcademia()
