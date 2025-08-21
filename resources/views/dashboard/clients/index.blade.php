@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Clients | Dashboard @endsection
+@section('title') Clients & Collaborators | Dashboard @endsection
 
 @section('third_party_stylesheets')
     {{-- No specific stylesheets needed for the remaining fields --}}
