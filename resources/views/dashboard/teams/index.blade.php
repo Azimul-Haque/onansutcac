@@ -233,7 +233,7 @@
                                    class="form-control"
                                    value="{{ old('serial') }}"
                                    autocomplete="off"
-                                   placeholder="Team Member Designation" required>
+                                   placeholder="Team Member Serial (1, 2, 3, etc.)" required>
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
                             </div>
