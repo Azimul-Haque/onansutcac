@@ -235,7 +235,7 @@
         <div class="row gy-4">
           @foreach($clientsforhomepage as $client)
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="{{ asset('images/clients/' . $client->image) }}" class="img-fluid" alt="">
+            <img src="{{ asset('images/clients/' . $client->image) }}" class="img-fluid" alt="{{ $client->name }}" title="{{ $client->name }}">
           </div><!-- End Client Item -->
           @endforeach
           
