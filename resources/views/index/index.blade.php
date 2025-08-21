@@ -31,8 +31,8 @@
         </h2>
         <style>
           .transparent-box {
-              background-color: rgba(255, 255, 255, 0.1); /* Matching the blue-300 with 50% opacity */
-              backdrop-filter: blur(5px); /* Simulating backdrop-blur */
+              background-color: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(5px);
               transition: transform 0.3s ease-in-out;
           }
           .transparent-box:hover {
