@@ -167,7 +167,7 @@
 
         <div class="row g-4 justify-content-center mb-4">
             <!-- Vision Statement Column -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-5">
                 <div class="vision-card">
                     <h2>Vision</h2>
                     <p>Maximizing global health & water sustainability</p>
@@ -175,7 +175,7 @@
             </div>
 
             <!-- Mission Statement Column -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-7">
                 <div class="mission-card">
                     <h2>Mission</h2>
                     <p>
