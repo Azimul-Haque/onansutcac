@@ -20,7 +20,7 @@
         <h2 data-aos="fade-up" data-aos-delay="100">Transforming Industries with Nano-Innovation
           <div class="transparent-box p-5 rounded-3 shadow-lg">
               <div class="d-flex flex-column align-items-center justify-content-center text-center">
-                  <h1 class="fs-1 fw-bold text-teal-400 mb-2">
+                  <h1 class="fs-1 fw-bold text-teal-200 mb-2">
                       Transforming Industries
                   </h1>
                   <h2 class="fs-1 fw-bold text-teal-600">
