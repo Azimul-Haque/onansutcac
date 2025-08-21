@@ -60,7 +60,7 @@
                             <br/>
                             <small class="badge rounded-pill bg-{{ pill_type($product->type) }}">{{ prod_type($product->type) }}</small>
                             @if($product->isfeatured == 1)
-                                <small class="badge rounded-pill bg-warning"><i class="bi bi-patch-check-fill"></i> <i class="bi bi-check-circle-fill"></i> Featured</small>
+                                <small class="badge rounded-pill bg-warning"><i class="fas fa-check"></i> Featured</small>
                             @endif
                         </td>
                         <td><small>{{ $product->slug }}</small></td>
