@@ -466,13 +466,6 @@ class DashboardController extends Controller
         return view('dashboard.abouts.index')->with('abouts', $abouts);
     }
 
-    /**
-     * Store a newly created 'abouts' resource in storage.
-     * This method is analogous to the storeTeam method, but without image handling.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
     public function storeAbout(Request $request)
     {
         // Validate the incoming request data
