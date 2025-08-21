@@ -25,6 +25,7 @@ use File;
 use Session;
 use Artisan;
 use Cache;
+use Response;
 // use Redirect;
 // use OneSignal;
 // use PDF;
