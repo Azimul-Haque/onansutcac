@@ -34,7 +34,7 @@
               <article class="article">
 
                 <div class="post-img">
-                  <img src="{{ asset('images/success-story/' . $successstory->image) }}" alt="{{ $news->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
+                  <img src="{{ asset('images/success-stories/' . $successstory->image) }}" alt="{{ $news->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
                 </div>
 
                 <h2 class="title">{{ $successstory->title }}</h2>
