@@ -189,7 +189,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-5">
-          @foreach($featuredprodandtechs as $products)
+          @foreach($featuredprodandtechs as $product)
             <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
               <div class="service-item">
                 <div class="img">
