@@ -212,6 +212,7 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'type' => 'required',
+            'isfeatured' => 'required',
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug,' . $id,
             'text'  => 'required',
@@ -220,6 +221,7 @@ class DashboardController extends Controller
 
         $product = Product::findOrFail($id);
         $product->type = $request->type;
+        $product->isfeatured = $request->isfeatured;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
 
