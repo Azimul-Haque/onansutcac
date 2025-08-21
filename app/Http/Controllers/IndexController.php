@@ -68,6 +68,35 @@ class IndexController extends Controller
 
     public function getContact()
     {
+        // Define image dimensions
+        $width = 120;
+        $height = 35;
+
+        // Create a new image
+        $image = imagecreatetruecolor($width, $height);
+
+        // Define colors
+        $white = imagecolorallocate($image, 255, 255, 255);
+        $black = imagecolorallocate($image, 0, 0, 0);
+
+        // Fill the background with white
+        imagefilledrectangle($image, 0, 0, $width, $height, $white);
+
+        // Generate a random string for the CAPTCHA
+        $captchaText = substr(str_shuffle('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'), 0, 6);
+
+        // Store the captcha in the session
+        Session::put('captcha', $captchaText);
+
+        // Draw the text on the image
+        imagestring($image, 5, 30, 10, $captchaText, $black);
+
+        // Set the content type header and output the image
+        ob_start();
+        imagepng($image);
+        $imageData = ob_get_clean();
+        imagedestroy($image);
+        
         return view('index.contact');
     }
 
