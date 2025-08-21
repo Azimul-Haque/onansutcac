@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="4" placeholder="Message" value="{{ old("message") }}" required=""></textarea>
                 </div>
 
                 <div class="col-md-6 ">
