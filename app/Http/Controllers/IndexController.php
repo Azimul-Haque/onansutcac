@@ -126,13 +126,6 @@ class IndexController extends Controller
                 // If the CAPTCHA is incorrect, redirect back with an error.
                 return redirect()->back()->withErrors(['captcha' => 'The entered CAPTCHA is incorrect.']);
             }
-
-            // If the validation passes, you can proceed with your form logic.
-            // For example, saving the message to the database, sending an email, etc.
-
-            // ... Your application logic here ...
-
-            // After successful processing, redirect with a success message.
             return redirect()->back()->with('success', 'Your message has been sent successfully!');
         }
 
