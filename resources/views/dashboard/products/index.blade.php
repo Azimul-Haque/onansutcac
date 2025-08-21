@@ -217,7 +217,17 @@
                 @csrf
 
                 <div class="row">
-                    <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="">Select Type</label>
+                            <select name="type" id="type" class="form-control" required>
+                                <option value="" selected disabled>Select Type</option>
+                                <option value="1">Product</option>
+                                <option value="2">Technology</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="form-group mb-3">
                             <label for="">Select Type</label>
                             <select name="type" id="type" class="form-control" required>
