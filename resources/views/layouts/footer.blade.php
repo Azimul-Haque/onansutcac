@@ -82,7 +82,7 @@
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">Media & Press</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Success Stories</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.academia') }}">Academia</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.sitemap') }}">Sitemap</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.index') }}/sitemap.xml">Sitemap</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#!">Request a Proposal</a></li>
         </ul>
       </div>
