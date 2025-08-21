@@ -134,59 +134,21 @@
           </script>
           <div class="swiper-wrapper" id="swiper-wrapper-9c7a64342fe292c6" aria-live="off" >
             {{-- style="transition-duration: 0ms; transform: translate3d(-744.667px, 0px, 0px); transition-delay: 0ms;" --}}
-
+            @foreach($recentsuccessstories as $story)
             <div class="swiper-slide" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
               <div class="testimonial-item">
                 <div class="post-img">
-                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
+                  <a href="{{ route('index.single-success-story', $story->slug) }}" target=""><img src="{{ asset('images/success-stories/' . $story->image) }}" alt="{{ $story->title }}" class="img-fluid"></a>
                 </div>
 
                 <h2 class="title">
-                  <a href="{{ route('index.single-success-story', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                  <a href="{{ route('index.single-success-story', $story->slug) }}">{{ $story->title }}</a>
                 </h2>
-                <a href="#!" class="newsroom-item-link" target="">Read more</a>
+                <a href="{{ route('index.single-success-story', $story->slug) }}" class="newsroom-item-link" target="">Read more</a>
               </div>
             </div>
             <!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-prev" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
-              <div class="testimonial-item">
-                <div class="post-img">
-                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
-                </div>
-
-                <h2 class="title">
-                  <a href="{{ route('index.single-success-story', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-                </h2>
-                <a href="#!" class="newsroom-item-link" target="">Read more</a>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-active" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
-              <div class="testimonial-item">
-                <div class="post-img">
-                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
-                </div>
-
-                <h2 class="title">
-                  <a href="{{ route('index.single-success-story', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-                </h2>
-                <a href="#!" class="newsroom-item-link" target="">Read more</a>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-active" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
-              <div class="testimonial-item">
-                <div class="post-img">
-                  <a href="#!" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
-                </div>
-
-                <h2 class="title">
-                  <a href="{{ route('index.single-success-story', 'slug-2123') }}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-                </h2>
-                <a href="#!" class="newsroom-item-link" target="">Read more</a>
-              </div>
-            </div><!-- End testimonial item -->
+            @endforeach
           </div>
           <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
