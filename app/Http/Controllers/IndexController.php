@@ -128,7 +128,7 @@ class IndexController extends Controller
             }
 
             try {
-                $message = new Message();
+                $message = new Contact();
                 $message->name = $request->input('name');
                 $message->email = $request->input('email');
                 $message->message = $request->input('message');
