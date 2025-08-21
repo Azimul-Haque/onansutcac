@@ -70,7 +70,8 @@ class IndexController extends Controller
                     ->withNewsforhomepage($newsforhomepage)
                     ->withFeaturedprodandtechs($featuredprodandtechs)
                     ->withFeaturedevents($featuredevents)
-                    ->withClientsforhomepage($clientsforhomepage);
+                    ->withClientsforhomepage($clientsforhomepage)
+                    ->withTestimonials($testimonials);
     }
 
     public function getContact()
