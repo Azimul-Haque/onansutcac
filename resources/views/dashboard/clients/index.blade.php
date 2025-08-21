@@ -1,28 +1,28 @@
 @extends('layouts.app')
 
-@section('title') Team | Dashboard @endsection
+@section('title') Clients | Dashboard @endsection
 
 @section('third_party_stylesheets')
     {{-- No specific stylesheets needed for the remaining fields --}}
 @endsection
 
 @section('content')
-    @section('page-header') Teams (Total {{ $teamsCount ?? 0 }}) @endsection
+    @section('page-header') Clients (Total {{ $clientsCount ?? 0 }}) @endsection
     <div class="container-fluid">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Teams</h3>
+                <h3 class="card-title">Clients</h3>
 
                 <div class="card-tools">
-                    <form class="form-inline form-group-lg" action="{{ route('dashboard.teams') }}" method="GET">
+                    <form class="form-inline form-group-lg" action="{{ route('dashboard.clients') }}" method="GET">
                         <div class="form-group">
-                            <input type="text" class="form-control form-control-sm" placeholder="Search teams" id="search-param" name="search" value="{{ request('search') }}" required>
+                            <input type="text" class="form-control form-control-sm" placeholder="Search clients" id="search-param" name="search" value="{{ request('search') }}" required>
                         </div>
                         <button type="submit" id="search-button" class="btn btn-default btn-sm" style="margin-left: 5px;">
                             <i class="fas fa-search"></i> Search
                         </button>
-                        <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addTeamModal" style="margin-left: 5px;">
-                            <i class="fas fa-plus"></i> Add New Team Member
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addClientModal" style="margin-left: 5px;">
+                            <i class="fas fa-plus"></i> Add New Client
                         </button>
                     </form>
                 </div>
@@ -37,67 +37,66 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse($teams as $team)
+                        @forelse($clients as $client)
                             <tr>
                                 <td>
-                                    {{-- <a href="{{ route('index.singleteam', $team->id) }}" target="_blank"> --}}
-                                        {{ $team->name }}
-                                    {{-- </a> --}}
+                                    {{ $client->name }}
                                 </td>
                                 <td>
-                                    @if($team->image)
-                                        <img src="{{ asset('images/teams/' . $team->image) }}" alt="{{ $team->name }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
+                                    @if($client->image)
+                                        <img src="{{ asset('images/clients/' . $client->image) }}" alt="{{ $client->name }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                                     @else
                                         <img src="https://placehold.co/50x50/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
                                     @endif
                                 </td>
                                 <td align="right">
-                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editTeamModal{{ $team->id }}">
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editClientModal{{ $client->id }}">
                                         <i class="fas fa-edit"></i> Edit
                                     </button>
 
-                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteTeamModal{{ $team->id }}">
+                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteClientModal{{ $client->id }}">
                                         <i class="fas fa-trash"></i> Delete
                                     </button>
                                 </td>
 
-                                <div class="modal fade" id="editTeamModal{{ $team->id }}" tabindex="-1" role="dialog" aria-labelledby="editTeamModalLabel{{ $team->id }}" aria-hidden="true" data-backdrop="static">
+                                {{-- Edit Modal for each client --}}
+                                <div class="modal fade" id="editClientModal{{ $client->id }}" tabindex="-1" role="dialog" aria-labelledby="editClientModalLabel{{ $client->id }}" aria-hidden="true" data-backdrop="static">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header bg-primary">
-                                                <h5 class="modal-title" id="editTeamModalLabel{{ $team->id }}">Update Team Member: {{ $team->name }}</h5>
+                                                <h5 class="modal-title" id="editClientModalLabel{{ $client->id }}">Update Client: {{ $client->name }}</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
-                                            <form method="post" action="{{ route('dashboard.teams.update', $team->id) }}" enctype="multipart/form-data">
+                                            <form method="post" action="{{ route('dashboard.clients.update', $client->id) }}" enctype="multipart/form-data">
                                                 <div class="modal-body">
                                                     @csrf
                                                     @method('POST')
 
                                                     <div class="input-group mb-3">
                                                         <input type="text"
-                                                                name="name"
-                                                                class="form-control"
-                                                                value="{{ old('name', $team->name) }}"
-                                                                placeholder="Team Member Name" required>
+                                                            name="name"
+                                                            class="form-control"
+                                                            value="{{ old('name', $client->name) }}"
+                                                            placeholder="Client Name" required>
                                                         <div class="input-group-append">
                                                             <div class="input-group-text"><span class="fas fa-user"></span></div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="teamImageEdit{{ $team->id }}">Team Member Image: (1:1 should be ideal, max: 2MB)</label><br>
-                                                        @if($team->image)
-                                                            <img src="{{ asset('images/teams/' . $team->image) }}" alt="{{ $team->name }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
+                                                        <label for="clientImageEdit{{ $client->id }}">Client Image: (1:1 should be ideal, max: 2MB)</label><br>
+                                                        @if($client->image)
+                                                            <img src="{{ asset('images/clients/' . $client->image) }}" alt="{{ $client->name }}" class="img-thumbnail" style="max-width: 100px; height: auto;">
                                                             <br>
                                                             <small class="text-muted">Leave blank to keep current image.</small>
                                                         @else
                                                             <small class="text-muted">No image uploaded.</small>
                                                         @endif
                                                         <div class="custom-file mt-2">
-                                                            <input type="file" class="custom-file-input" id="teamImageEdit{{ $team->id }}" name="image" accept="image/*">
-                                                            <label class="custom-file-label" for="teamImageEdit{{ $team->id }}">Choose new image (optional)</label>
+                                                            <input type="file" class="custom-file-input" id="clientImageEdit{{ $client->id }}" name="image" accept="image/*">
+                                                            <label class="custom-file-label" for="clientImageEdit{{ $client->id }}">Choose new image (optional)</label>
                                                         </div>
                                                         @error('image')
                                                             <span class="text-danger">{{ $message }}</span>
@@ -113,24 +112,25 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="modal fade" id="deleteTeamModal{{ $team->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteTeamModalLabel{{ $team->id }}" aria-hidden="true" data-backdrop="static">
+                                {{-- Delete Modal for each client --}}
+                                <div class="modal fade" id="deleteClientModal{{ $client->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteClientModalLabel{{ $client->id }}" aria-hidden="true" data-backdrop="static">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header bg-danger">
-                                                <h5 class="modal-title" id="deleteTeamModalLabel{{ $team->id }}">Delete Team Member</h5>
+                                                <h5 class="modal-title" id="deleteClientModalLabel{{ $client->id }}">Delete Client</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                Are you sure you want to delete this team member?<br/>
+                                                Are you sure you want to delete this client?<br/>
                                                 <center>
-                                                    <big><b>{{ $team->name }}</b></big><br/>
+                                                    <big><b>{{ $client->name }}</b></big><br/>
                                                 </center>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <a href="{{ route('dashboard.teams.delete', $team->id) }}" class="btn btn-danger">Delete</a>
+                                                <a href="{{ route('dashboard.clients.delete', $client->id) }}" class="btn btn-danger">Delete</a>
                                             </div>
                                         </div>
                                     </div>
@@ -138,28 +138,29 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="3" class="text-center">No team members found.</td>
+                                <td colspan="3" class="text-center">No clients found.</td>
                             </tr>
                         @endforelse
                     </tbody>
                 </table>
             </div>
         </div>
-        @if(isset($teams) && method_exists($teams, 'links'))
-            {{ $teams->links() }}
+        @if(isset($clients) && method_exists($clients, 'links'))
+            {{ $clients->links() }}
         @endif
     </div>
 
-    <div class="modal fade" id="addTeamModal" tabindex="-1" role="dialog" aria-labelledby="addTeamModalLabel" aria-hidden="true" data-backdrop="static">
+    {{-- Add Modal for new clients --}}
+    <div class="modal fade" id="addClientModal" tabindex="-1" role="dialog" aria-labelledby="addClientModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-success">
-                    <h5 class="modal-title" id="addTeamModalLabel">Add New Team Member</h5>
+                    <h5 class="modal-title" id="addClientModalLabel">Add New Client</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form method="post" action="{{ route('dashboard.teams.store') }}" enctype="multipart/form-data">
+                <form method="post" action="{{ route('dashboard.clients.store') }}" enctype="multipart/form-data">
                     <div class="modal-body">
                         @csrf
 
@@ -168,17 +169,17 @@
                                     name="name"
                                     class="form-control"
                                     value="{{ old('name') }}"
-                                    placeholder="Team Member Name" required>
+                                    placeholder="Client Name" required>
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="fas fa-user"></span></div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="teamImageAdd">Team Member Image: (1:1 should be ideal, max: 2MB)</label>
+                            <label for="clientImageAdd">Client Image: (1:1 should be ideal, max: 2MB)</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="teamImageAdd" name="image" accept="image/*" required>
-                                <label class="custom-file-label" for="teamImageAdd">Choose file</label>
+                                <input type="file" class="custom-file-input" id="clientImageAdd" name="image" accept="image/*" required>
+                                <label class="custom-file-label" for="clientImageAdd">Choose file</label>
                             </div>
                             @error('image')
                                 <span class="text-danger">{{ $message }}</span>
