@@ -342,7 +342,7 @@
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>{{ $event->title }}</h3>
-                <div class="card mb-3" style="max-width: 300px;">
+                <div class="card mb-3" style="max-width: 400px;">
                   <div class="card-body py-2">
                     <h6 class="card-subtitle mb-2 text-muted">Event Details</h6>
                     <div class="meta-item d-flex align-items-center mb-1">
