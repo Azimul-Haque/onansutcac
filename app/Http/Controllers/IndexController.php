@@ -114,7 +114,7 @@ class IndexController extends Controller
             $request->validate([
                 'name'    => 'required|string|max:255',
                 'email'   => 'required|email|max:255',
-                'subject'   => 'required|email|max:255',
+                'subject' => 'required|email|max:255',
                 'message' => 'required|string',
                 'captcha' => 'required|string', // The user's captcha input
             ]);
@@ -133,6 +133,7 @@ class IndexController extends Controller
                 $message = new Contact();
                 $message->name = $request->input('name');
                 $message->email = $request->input('email');
+                $message->subject = $request->input('subject');
                 $message->message = $request->input('message');
                 $message->save();
             } catch (\Exception $e) {
