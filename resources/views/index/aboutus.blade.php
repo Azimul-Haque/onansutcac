@@ -176,12 +176,43 @@
 
             <!-- Mission Statement Column -->
             <div class="col-12 col-md-7">
-                <div class="mission-card">
-                    <h2>Mission</h2>
-                    <p>
-                      Water sustainability by developing monopoly of technologies and their manufacturing for secure water world
-                    </p>
-                </div>
+                
+
+                <div class="box-card mission-card">
+                  <h2 class="statement-title">Mission</h2>
+                  <p class="statement-text">Water sustainability by developing monopoly of technologies and their manufacturing for secure water world</p>
+                  <div class="mission-points">
+                      <!-- Point 1: Nano-materials -->
+                      <div class="point-item">
+                          <!-- SVG Icon for Nano-materials -->
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75c-.476 0-.936.178-1.284.498-.348.32-.544.757-.544 1.21V6a.75.75 0 01-1.5 0V5.457a3.004 3.004 0 012.012-2.885c.801-.24 1.636-.24 2.437 0a3.004 3.004 0 012.012 2.885V6a.75.75 0 01-1.5 0V5.457c0-.453-.196-.89-.544-1.21-.348-.32-.808-.498-1.284-.498zM12 9a3 3 0 100 6 3 3 0 000-6zM5.25 10.5a.75.75 0 011.5 0V11.5a.75.75 0 01-1.5 0V10.5zM17.25 10.5a.75.75 0 011.5 0V11.5a.75.75 0 01-1.5 0V10.5zM6.75 19.5a.75.75 0 011.5 0V20.5a.75.75 0 01-1.5 0V19.5zM15.75 19.5a.75.75 0 011.5 0V20.5a.75.75 0 01-1.5 0V19.5z" />
+                          </svg>
+                          <h5>Deliver cutting-edge nano-materials that outperform conventional alternatives.</h5>
+                      </div>
+
+                      <!-- Point 2: Sustainability & Safety -->
+                      <div class="point-item">
+                          <!-- SVG Icon for Sustainability -->
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.75a9.75 9.75 0 009.75-9.75H21A9.75 9.75 0 0012 2.25c-5.385 0-9.75 4.365-9.75 9.75S6.615 21.75 12 21.75z" />
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 7.5a.75.75 0 011.5 0V9a1.5 1.5 0 001.5 1.5h.75a.75.75 0 010 1.5h-.75a3 3 0 01-3-3V7.5z" />
+                          </svg>
+                          <h5>Drive sustainability and safety in manufacturing and consumer use.</h5>
+                      </div>
+
+                      <!-- Point 3: Partnerships -->
+                      <div class="point-item">
+                          <!-- SVG Icon for Partnerships -->
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75a.75.75 0 01-.75-.75V8.25a.75.75 0 01.75-.75h2.25l.75-1.5a.75.75 0 011.5 0l.75 1.5h2.25a.75.75 0 01.75.75v6a.75.75 0 01-.75.75H2.25z" />
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 15.75a.75.75 0 01-.75-.75V8.25a.75.75 0 01.75-.75h2.25l.75-1.5a.75.75 0 011.5 0l.75 1.5h2.25a.75.75 0 01.75.75v6a.75.75 0 01-.75.75H18.75z" />
+                          </svg>
+                          <h5>Build strong partnerships with academia, industries, and governments worldwide.</h5>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
         {{-- <img src="{{ asset('images/vision-mission.jpg') }}" class="img-fluid rounded-4 mt-4" alt="Vision & Mission Statements"> --}}
