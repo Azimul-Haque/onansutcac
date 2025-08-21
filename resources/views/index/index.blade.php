@@ -579,7 +579,7 @@
                       </p>
                       <div class="profile mt-auto">
                         <img src="{{ asset('vendor/dewi/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-                        <h3>Saul Goodman</h3>
+                        <h3>{{ $testimonial->name }}</h3>
                         <h4>Ceo &amp; Founder</h4>
                       </div>
                     </div>
