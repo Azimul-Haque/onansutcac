@@ -16,6 +16,7 @@ use App\News;
 use App\Newscategory;
 use App\Event;
 use App\Successstory;
+use App\Client;
 use App\Faq;
 use App\Contact;
 
