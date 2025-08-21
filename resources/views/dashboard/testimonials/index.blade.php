@@ -249,11 +249,11 @@
                         <div class="input-group mb-3">
                             <select class="form-control" name="rating" required>
                                 <option value="" selected disabled>Select Rating</option>
-                                <option value="1">1 Star</option>
-                                <option value="2">2 Star</option>
-                                <option value="3">3 Star</option>
-                                <option value="4">4 Star</option>
-                                <option value="5">5 Star</option>
+                                <option value="1">★</option>
+                                <option value="2">★★</option>
+                                <option value="3">★★★</option>
+                                <option value="4">★★★★</option>
+                                <option value="5">★★★★★</option>
                             </select>
                              <div class="input-group-append">
                                  <div class="input-group-text"><span class="fas fa-star"></span></div>
