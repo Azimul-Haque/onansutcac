@@ -227,13 +227,6 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <select name="serial" id="serial" class="form-control" required>
-                            <option value="" selected disabled>Select Type</option>
-                            <option value="1">Product</option>
-                            <option value="2">Technology</option>
-                        </select>
-
-
                         <div class="input-group mb-3">
                             <input type="text"
                                    name="serial"
