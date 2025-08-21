@@ -325,10 +325,8 @@ class IndexController extends Controller
     }
 
     public function getSitemap()
-    {
-        $faqs = Faq::orderBy('id', 'desc')->get();
-        
-        return view('index.sitemap')->withFaqs($faqs);
+    {   
+        return view('index.sitemap');
     }
 
     // clear configs, routes and serve
