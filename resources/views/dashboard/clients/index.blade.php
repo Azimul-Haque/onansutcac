@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    @section('page-header') Clients (Total {{ $clientsCount ?? 0 }}) @endsection
+    @section('page-header') Clients & Collaborators (Total {{ $clientsCount ?? 0 }}) @endsection
     <div class="container-fluid">
         <div class="card">
             <div class="card-header">
