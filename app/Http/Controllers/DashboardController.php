@@ -72,6 +72,14 @@ class DashboardController extends Controller
     public function clearQueryCache()
     {
         Cache::flush();
+        Artisan::call('route:clear');
+        // Artisan::call('optimize');
+        Artisan::call('cache:clear');
+        Artisan::call('view:clear');
+        Artisan::call('key:generate');
+        Artisan::call('config:clear');
+        Artisan::call('sitemap:generate');
+        Session::flush();
         Session::flash('success', 'All query caches have been cleared!');
         return redirect()->route('dashboard.index');
     }
