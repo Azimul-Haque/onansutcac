@@ -82,7 +82,7 @@
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.regional-offices') }}">Global Offices</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.news') }}">Media & Press</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.success-stories') }}">Case Study</a></li>
-          <li><a href="#!">Request a Proposal</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#!">Request a Proposal</a></li>
         </ul>
       </div>
 
