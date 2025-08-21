@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'IndexController@index')->name('index.index');
 Route::get('/contact', 'IndexController@getContact')->name('index.get-contact');
-Route::get('/captcha ', 'IndexController@getContact')->name('captcha.image');
+Route::get('/captcha ', 'IndexController@generateCaptcha')->name('captcha.image');
 Route::post('/contact/store', 'IndexController@storeContact')->name('index.store-contact');
 Route::get('/about-us', 'IndexController@getAboutUs')->name('index.get-about-us');
 Route::get('/why-work-with-us', 'IndexController@getWhyWWU')->name('index.get-why-work-with-us');
