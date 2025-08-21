@@ -46,7 +46,7 @@
                                     @if($client->image)
                                         <img src="{{ asset('images/clients/' . $client->image) }}" alt="{{ $client->name }}" class="img-thumbnail" style="width: 200px; height: 70px; object-fit: cover;">
                                     @else
-                                        <img src="https://placehold.co/200x70/cccccc/333333?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 200px; height: 70px; object-fit: cover;">
+                                        <img src="https://placehold.co/200x70/cccccc/3223313?text=No+Image" alt="No Image" class="img-thumbnail" style="width: 200px; height: 70px; object-fit: cover;">
                                     @endif
                                 </td>
                                 <td align="right">
