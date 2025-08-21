@@ -1027,11 +1027,11 @@ class DashboardController extends Controller
 
     public function deleteMessage($id)
     {
-        $faq = Faq::findOrFail($id);
+        $messages = Contact::findOrFail($id);
 
-        $faq->delete();
+        $messages->delete();
 
-        Session::flash('success', 'Help Center item deleted successfully!');
+        Session::flash('success', 'Message item deleted successfully!');
         return redirect()->route('dashboard.help-center');
     }
 
