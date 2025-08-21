@@ -863,6 +863,7 @@ class DashboardController extends Controller
         $rules = [
             'title' => 'required|string|max:191',
             'type' => 'required|string|max:191',
+            'slug' => 'required|string|max:191',
             'custom_type' => 'nullable|string|max:191|required_if:type,Other',
             'text' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -879,6 +880,7 @@ class DashboardController extends Controller
 
         $successStory->title = $validatedData['title'];
         $successStory->type = $finalType;
+        $successstory->slug = Str::slug($request->slug);
         if (isset($validatedData['text'])) {
             $successStory->text = Purifier::clean($validatedData['text'], 'youtube');
         } else {
