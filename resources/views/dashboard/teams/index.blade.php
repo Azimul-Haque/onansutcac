@@ -62,6 +62,7 @@
                             <small class="text-black-50">{{ $team->designation }}</small>
                         </td>
                         <td><small>{{ $team->designation }}</small></td>
+                        <td><small>{{ $team->serial }}</small></td>
                         <td>
                             @if($team->image)
                                 <img src="{{ asset('images/teams/' . $team->image) }}" alt="{{ $team->name }}" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover;">
