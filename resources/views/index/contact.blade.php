@@ -90,7 +90,7 @@
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="text" class="form-control" name="captcha" placeholder="Your Email" required="">
+                  <input type="text" class="form-control" name="captcha" placeholder="Write the Captcha" required="">
                 </div>
                 
 
