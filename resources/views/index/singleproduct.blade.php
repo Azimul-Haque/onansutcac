@@ -288,7 +288,7 @@
             <div class="swiper-slide" style="width: 371.333px; margin-right: 1px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
               <div class="testimonial-item">
                 <div class="post-img">
-                  <a href="{{ route('index.single-success-story', $story->slug) }}" target=""><img src="{{ asset('vendor/dewi/assets/img/news/blog-post-3.webp') }}" alt="" class="img-fluid"></a>
+                  <a href="{{ route('index.single-success-story', $story->slug) }}" target=""><img src="{{ asset('images/success-stories/' . $story->image) }}" alt="{{ $story->title }}" class="img-fluid"></a>
                 </div>
 
                 <h2 class="title">
