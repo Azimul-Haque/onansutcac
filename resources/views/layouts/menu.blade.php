@@ -28,7 +28,7 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('dashboard.index') }}" class="nav-link {{ Request::is('dashboard/index') ? 'active' : '' }} {{ Request::is('dashboard/index/*') ? 'active' : '' }}">
+    <a href="{{ route('dashboard.abouts') }}" class="nav-link {{ Request::is('dashboard/abouts') ? 'active' : '' }} {{ Request::is('dashboard/abouts/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-file-alt"></i>
         <p>Abouts Data</p>
     </a>
