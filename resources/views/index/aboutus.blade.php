@@ -245,6 +245,76 @@
               font-size: 1.25rem; /* Larger paragraph text */
               line-height: 1.6;
           }
+          
+          .box-card {
+              background-color: #ffffff;
+              border-radius: 1rem;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              padding: 2.5rem;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+          }
+          .vision-card {
+              background: linear-gradient(135deg, #a8e0f4, #c8e8f8);
+              color: #1a1a1a;
+              text-align: center;
+          }
+          .mission-card {
+              background-color: #ffffff;
+              border: 1px solid #e9ecef;
+          }
+          .statement-title {
+              font-size: 2.2rem;
+              font-weight: 700;
+              margin-bottom: 1rem;
+              color: #007bff;
+          }
+          .statement-text {
+              font-size: 1.1rem;
+              font-weight: 500;
+              line-height: 1.6;
+          }
+          .mission-points {
+              margin-top: 2rem;
+              padding-top: 1.5rem;
+              border-top: 1px solid #e9ecef;
+          }
+          .point-item {
+              display: flex;
+              align-items: center;
+              text-align: left;
+              padding: 1rem 0;
+              border-bottom: 1px solid #e9ecef;
+          }
+          .point-item:last-child {
+              border-bottom: none;
+          }
+          .point-item svg {
+              color: #007bff;
+              margin-right: 1.5rem;
+              height: 3rem;
+              width: 3rem;
+              min-width: 3rem;
+          }
+          .point-item h5 {
+              font-size: 1.25rem;
+              font-weight: 600;
+              margin: 0;
+              line-height: 1.4;
+          }
+          .point-item p {
+              font-size: 0.95rem;
+              color: #6c757d;
+          }
+          .separator {
+              width: 100%;
+              height: 1px;
+              background-color: #e9ecef;
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+          }
       </style>
 
     </section>
