@@ -68,6 +68,7 @@ class IndexController extends Controller
 
     public function getAboutUs()
     {
+        $aboutpagetop = About::where('id', 1)->first();
         $teams = Team::orderBy('serial', 'asc')->get();
 
         return view('index.aboutus')
