@@ -41,7 +41,7 @@
                   <img src="{{ asset('images/success-storoes/' . $story->image) }}" alt="{{ $story->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
               @endif
               <div class="blog-post-content">
-                <h2><a href="{{ route('index.single-success-story', 'slug') }}">{{ $story->title }}</a></h2>
+                <h2><a href="{{ route('index.single-success-story', $story->slug) }}">{{ $story->title }}</a></h2>
                 <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
                 <a href="{{ route('index.single-success-story', 'slug') }}" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
