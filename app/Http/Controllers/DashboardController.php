@@ -1014,6 +1014,96 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.clients');
     }
 
+    public function getTestimonials(Request $request)
+    {
+        if ($request->search) {
+            $testimonials = Testimonial::where('name', 'LIKE', "%$request->search%")->orderBy('id', 'desc')->paginate(10);
+        } else {
+            $testimonials = Testimonial::orderBy('id', 'desc')->paginate(10);
+        }
+
+        return view('dashboard.testimonials.index')->withTestimonials($testimonials);
+    }
+
+    public function storeTestimonial(Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required|string|max:191',
+            'designation' => 'nullable|string|max:191',
+            'rating' => 'nullable|integer|between:1,5',
+            'text' => 'nullable|string',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:300',
+        ]);
+
+        $testimonial = new Testimonial;
+        $testimonial->name = $request->name;
+        $testimonial->designation = $request->designation;
+        $testimonial->rating = $request->rating;
+        $testimonial->text = $request->text;
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $filename = Str::random(5) . time() . '.' . "webp";
+            $location = public_path('images/testimonials/' . $filename);
+            Image::make($image)->fit(400, 141)->save($location);
+            $testimonial->image = $filename;
+        }
+
+        $testimonial->save();
+
+        Session::flash('success', 'Testimonial created successfully!');
+        return redirect()->route('dashboard.testimonials');
+    }
+
+    public function updateTestimonial(Request $request, $id)
+    {
+        $this->validate($request, [
+            'name' => 'required|string|max:191',
+            'designation' => 'nullable|string|max:191',
+            'rating' => 'nullable|integer|between:1,5',
+            'text' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:300',
+        ]);
+
+        $testimonial = Testimonial::findOrFail($id);
+        $testimonial->name = $request->name;
+        $testimonial->designation = $request->designation;
+        $testimonial->rating = $request->rating;
+        $testimonial->text = $request->text;
+
+        if ($request->hasFile('image')) {
+            if ($testimonial->image && File::exists(public_path('images/testimonials/' . $testimonial->image))) {
+                File::delete(public_path('images/testimonials/' . $testimonial->image));
+            }
+
+            $image = $request->file('image');
+            $filename = Str::random(5) . time() . '.' . "webp";
+            $location = public_path('images/testimonials/' . $filename);
+            Image::make($image)->fit(400, 141)->save($location);
+            $testimonial->image = $filename;
+        }
+
+        $testimonial->save();
+
+        Session::flash('success', 'Testimonial updated successfully!');
+        return redirect()->route('dashboard.testimonials');
+    }
+
+    public function deleteTestimonial($id)
+    {
+        $testimonial = Testimonial::findOrFail($id);
+
+        if ($testimonial->image && File::exists(public_path('images/testimonials/' . $testimonial->image))) {
+            File::delete(public_path('images/testimonials/' . $testimonial->image));
+        }
+
+        $testimonial->delete();
+
+        Session::flash('success', 'Testimonial deleted successfully!');
+        return redirect()->route('dashboard.testimonials');
+    }
+
+
 
 
 
