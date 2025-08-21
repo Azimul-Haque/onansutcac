@@ -13,6 +13,7 @@ use App\About;
 use App\Team;
 use App\News;
 use App\Successstory;
+use App\Client;
 use App\Newscategory;
 use App\Event;
 use App\Faq;
