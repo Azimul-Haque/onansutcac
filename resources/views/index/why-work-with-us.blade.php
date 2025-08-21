@@ -247,7 +247,7 @@
 
     </section>
 
-    <section id="global-presence" class="stats section">
+    <section id="global-presence" class="stats section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
