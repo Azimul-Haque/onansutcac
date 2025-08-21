@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <<img src="{{ $imagedata }}" alt="Captcha Text">
+                  <img src="{{ $imagedata }}" alt="Captcha Text">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
