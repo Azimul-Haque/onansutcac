@@ -133,7 +133,7 @@
                     <a href="@if($news->type == 3) {{ $news->newslink }} @else {{ route('index.single-news', $news->slug) }} @endif" @if($news->type == 3) target="_blank" @endif>{{ $news->title }}</a>
                   </h3>
                   <div class="post-meta">
-                    <span class="read-time">2 mins read</span>
+                    <span class="read-time">{{ estimatedReadingTime($news->body) }} mins read</span>
                     <span class="post-date">{{ date('F d, Y', strtotime($news->created_at)) }}</span>
                   </div>
                 </div>
