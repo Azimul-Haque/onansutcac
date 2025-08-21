@@ -178,6 +178,7 @@ class DashboardController extends Controller
     {
         $this->validate($request, array(
             'type' => 'required',
+            'isfeatured' => 'required',
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug',
             'text'  => 'required',
@@ -186,6 +187,7 @@ class DashboardController extends Controller
 
         $product = new Product;
         $product->type = $request->type;
+        $product->isfeatured = $request->isfeatured;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
         $product->text = Purifier::clean($request->text, 'youtube');
