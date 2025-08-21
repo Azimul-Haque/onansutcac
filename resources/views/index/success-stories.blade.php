@@ -39,7 +39,7 @@
             <div class="blog-post-item">
               <img src="{{ asset('vendor/dewi/assets/img/news/blog-post-1.webp') }}" alt="Blog Image">
               @if($story->image)
-                  <img src="{{ asset('images/successstoroes/' . $story->image) }}" alt="{{ $story->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
+                  <img src="{{ asset('images/success-storoes/' . $story->image) }}" alt="{{ $story->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
               @endif
               <div class="blog-post-content">
                 
