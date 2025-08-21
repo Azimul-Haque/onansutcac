@@ -63,9 +63,9 @@
                                 <i class="fas fa-edit"></i> Edit
                             </button>
 
-                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteAboutModal{{ $about->id }}">
+                            {{-- <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteAboutModal{{ $about->id }}">
                                 <i class="fas fa-trash"></i> Delete
-                            </button>
+                            </button> --}}
                         </td>
 
                         <div class="modal fade" id="editAboutModal{{ $about->id }}" tabindex="-1" role="dialog" aria-labelledby="editAboutModalLabel{{ $about->id }}" aria-hidden="true" data-backdrop="static">
