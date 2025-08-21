@@ -213,9 +213,19 @@
                 </div>
 
                 <div class="row">
-                <div class="col-md-6">
-                </div>
-                    
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <input type="text"
+                                   name="designation"
+                                   class="form-control"
+                                   value="{{ old('designation') }}"
+                                   autocomplete="off"
+                                   placeholder="Team Member Designation" required>
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="form-group">
