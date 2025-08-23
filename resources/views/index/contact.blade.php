@@ -42,7 +42,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>2502 West Huntington Drive Tempe, AZ 85282, USA</p>
+                  <p>{{ $contactdata }}</p>
                 </div>
               </div><!-- End Info Item -->
 
