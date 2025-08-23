@@ -323,8 +323,11 @@ class IndexController extends Controller
     public function getHelpCenter()
     {
         $faqs = Faq::orderBy('id', 'desc')->get();
+        $contactdata = About::where('id', "!=", 1)->get();
         
-        return view('index.help-center')->withFaqs($faqs);
+        return view('index.help-center')
+                                ->withFaqs($faqs)
+                                ->withContactdata($contactdata);
     }
 
     public function getSitemap()

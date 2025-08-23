@@ -146,7 +146,7 @@
                           <i class="bi bi-geo-alt fs-5"></i>
                         </span>
                         <h6 class="mb-2 fw-bold">Address</h6>
-                        <p class="small text-muted">A108 Adam Street, New York, NY 535022</p>
+                        <p class="small text-muted">{{ strip_tags($contactdata[0]->content) }}</p>
                       </div>
                     </div>
 
@@ -156,7 +156,7 @@
                           <i class="bi bi-envelope fs-5"></i>
                         </span>
                         <h6 class="mb-2 fw-bold">Email Us</h6>
-                        <p class="small text-muted"><a href="mailto:info@example.com" class="text-decoration-none text-dark">info@example.com</a></p>
+                        <p class="small text-muted"><a href="mailto:{{ strip_tags($contactdata[1]->content) }}" class="text-decoration-none text-dark">{{ strip_tags($contactdata[1]->content) }}</a></p>
                       </div>
                     </div>
 
@@ -166,7 +166,7 @@
                           <i class="bi bi-phone fs-5"></i>
                         </span>
                         <h6 class="mb-2 fw-bold">Call Us</h6>
-                        <p class="small text-muted"><a href="tel:+155895548855" class="text-decoration-none text-dark">+1 5589 55488 55</a></p>
+                        <p class="small text-muted"><a href="tel:{{ strip_tags($contactdata[2]->content) }}" class="text-decoration-none text-dark">{{ strip_tags($contactdata[2]->content) }}</a></p>
                       </div>
                     </div>
 
