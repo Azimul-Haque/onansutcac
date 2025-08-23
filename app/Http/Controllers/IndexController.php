@@ -76,6 +76,7 @@ class IndexController extends Controller
 
     public function getContact()
     {
+        $contactdata = About::where('id', "!=", 1)->get();
         return view('index.contact');
     }
 
