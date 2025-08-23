@@ -32,8 +32,7 @@
           </div>
 
           <div class="col-md-3">
-              {{-- <a href="{{ route('dashboard.meta-data') }}" class="info-box mb-3"> --}}
-              <a href="#" class="info-box mb-3">
+              <a href="{{ route('dashboard.about-data') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-info-circle"></i></span>
 
                   <div class="info-box-content">
@@ -44,8 +43,7 @@
           </div>
 
           <div class="col-md-3">
-              {{-- <a href="{{ route('dashboard.about-data') }}" class="info-box mb-3"> --}}
-                <a href="#" class="info-box mb-3">
+              <a href="{{ route('dashboard.about-data') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-info elevation-1"><i class="fas fa-address-card"></i></span>
 
                   <div class="info-box-content">
