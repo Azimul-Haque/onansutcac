@@ -58,7 +58,7 @@
                   <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-cube"></i></span>
 
                   <div class="info-box-content">
-                      <span class="info-box-text">Products</span>
+                      <span class="info-box-text">Products & Technologies</span>
                       <small class="info-box-text" style="margin-top: 10px;">View More</small>
                   </div>
               </a>
