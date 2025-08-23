@@ -69,7 +69,7 @@
                   <span class="info-box-icon bg-success elevation-1"><i class="fas fa-chart-line"></i></span>
 
                   <div class="info-box-content">
-                      <span class="info-box-text">Markets</span>
+                      <span class="info-box-text">Industries & Projects</span>
                       <small class="info-box-text" style="margin-top: 10px;">View More</small>
                   </div>
               </a>
