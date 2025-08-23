@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Abouts | Dashboard @endsection
+@section('title') Abouts & Meta Data | Dashboard @endsection
 
 @section('third_party_stylesheets')
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
@@ -20,11 +20,11 @@
 @endsection
 
 @section('content')
-    @section('page-header') Abouts (Total {{ $aboutsCount ?? 0 }}) @endsection
+    @section('page-header') Abouts & Meta Data (Total {{ $aboutsCount ?? 0 }}) @endsection
     <div class="container-fluid">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Abouts</h3>
+            <h3 class="card-title">Abouts & Meta Data</h3>
 
             <div class="card-tools">
               <form class="form-inline form-group-lg" action="{{ route('dashboard.abouts') }}" method="GET">
