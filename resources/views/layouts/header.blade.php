@@ -45,8 +45,8 @@
 
         <li class="dropdown"><a href="#"><span>Products & Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="{{ route('index.products') }}" class="{{ Request::is('news') ? 'active' : '' }}">Products</a></li>
-            <li><a href="{{ route('index.Industries') }}" class="{{ Request::is('events') ? 'active' : '' }}">Industries</a></li>
+            <li><a href="{{ route('index.products') }}" class="{{ Request::is('products') ? 'active' : '' }}">Products</a></li>
+            <li><a href="{{ route('index.Industries') }}" class="{{ Request::is('products') ? 'active' : '' }}">Industries</a></li>
           </ul>
         </li>
 
