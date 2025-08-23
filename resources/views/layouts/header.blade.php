@@ -27,7 +27,7 @@
           </ul>
         </li> --}}
 
-        <li class="dropdown"><a href="#"><span>Products & Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        {{-- <li class="dropdown"><a href="#"><span>Products & Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             @foreach($productsforfooter as $product)
               <li><a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
@@ -41,12 +41,12 @@
               <li><a href="{{ route('index.singlemarket', $market->slug) }}">{{ $market->title }}</a></li>
             @endforeach
           </ul>
-        </li>
+        </li> --}}
 
         <li class="dropdown"><a href="#"><span>Products & Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="{{ route('index.products') }}" class="{{ Request::is('news') ? 'active' : '' }}">Products</a></li>
-            <li><a href="{{ route('index.events') }}" class="{{ Request::is('events') ? 'active' : '' }}">Industries</a></li>
+            <li><a href="{{ route('index.Industries') }}" class="{{ Request::is('events') ? 'active' : '' }}">Industries</a></li>
           </ul>
         </li>
 
