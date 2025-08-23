@@ -492,7 +492,7 @@ class DashboardController extends Controller
         // Create a new About model instance
         $about = new About;
         $about->page_location = $request->page_location;
-        $about->content = Purifier::clean($request->content, 'youtube');
+        $about->content = $request->content;
 
         // Save the new record to the database
         $about->save();
