@@ -46,7 +46,12 @@
         <li><a href="{{ route('index.news') }}" class="{{ Request::is('news') ? 'active' : '' }}">News</a></li>
 
         <li><a href="{{ route('index.events') }}" class="{{ Request::is('events') ? 'active' : '' }}">Events</a></li>
-
+        <li class="dropdown"><a href="#"><span>News & Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#!">SDG Alignment</a></li>
+            <li><a href="#!">Social Impact</a></li>
+          </ul>
+        </li>
         
 
         {{-- <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
