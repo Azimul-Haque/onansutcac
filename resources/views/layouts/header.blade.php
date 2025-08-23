@@ -78,7 +78,7 @@
         
         {{-- <li><a href="{{ route('index.markets') }}" class="{{ Request::is('markets') || Request::is('markets/*') ? 'active' : '' }}">Markets</a></li> --}}
 
-        <li><a href="{{ route('index.get-about-us') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">Contact Us</a></li>
+        <li><a href="{{ route('index.get-contact') }}" class="{{ Request::is('about-us') ? 'active' : '' }}">Contact Us</a></li>
         
         
       </ul>
