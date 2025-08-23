@@ -152,7 +152,7 @@
               </a>
           </div>
 
-          <div class="col-md-3">
+          {{-- <div class="col-md-3">
               <a href="{{ route('dashboard.statistics') }}" class="info-box mb-3">
                   <span class="info-box-icon bg-success elevation-1"><i class="fas fa-chart-pie"></i></span>
 
@@ -161,7 +161,7 @@
                       <small class="info-box-text" style="margin-top: 10px;">View More</small>
                   </div>
               </a>
-          </div>
+          </div> --}}
         </div>
 
         @if(Auth::user()->role == 'admin')
