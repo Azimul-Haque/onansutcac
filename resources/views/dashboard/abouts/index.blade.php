@@ -150,7 +150,7 @@
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header bg-success">
-            <h5 class="modal-title" id="addAboutModalLabel">Add New About Entry</h5>
+            <h5 class="modal-title" id="addAboutModalLabel">Add New About/Meta Entry</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
