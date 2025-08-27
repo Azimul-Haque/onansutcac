@@ -23,8 +23,8 @@ Route::get('/terms-and-conditions', 'IndexController@termsAndConditions')->name(
 Route::get('/privacy-policy', 'IndexController@privacyPolicy')->name('index.privacy-policy');
 Route::get('/products', 'IndexController@getProducts')->name('index.products');
 Route::get('/products/{id}', 'IndexController@getProduct')->name('index.singleproduct');
-Route::get('/markets', 'IndexController@getMarkets')->name('index.markets');
-Route::get('/markets/{id}', 'IndexController@getMarket')->name('index.singlemarket');
+Route::get('/industries', 'IndexController@getMarkets')->name('index.markets');
+Route::get('/industries/{id}', 'IndexController@getMarket')->name('index.singlemarket');
 Route::get('/regional-offices', 'IndexController@getRegionalOffices')->name('index.regional-offices');
 Route::get('/regional-offices/{id}', 'IndexController@getRegionalOffice')->name('index.single-regional-office');
 Route::get('/news', 'IndexController@getNews')->name('index.news');
