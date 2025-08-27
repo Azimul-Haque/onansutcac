@@ -119,7 +119,7 @@
                                                        class="form-control"
                                                        value="{{ old('slug', $market->slug) }}" {{-- Changed variable to $market->slug --}}
                                                        autocomplete="off"
-                                                       placeholder="Industry/Project Slug" required> {{-- Changed placeholder --}}
+                                                       placeholder="Industry/Project Slug" required>
                                                 <div class="input-group-append">
                                                     <div class="input-group-text"><span class="fas fa-link"></span></div>
                                                 </div>
