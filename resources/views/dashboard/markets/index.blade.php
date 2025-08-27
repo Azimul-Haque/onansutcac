@@ -113,17 +113,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="input-group mb-3">
-                                                <input type="text"
-                                                       name="slug"
-                                                       class="form-control"
-                                                       value="{{ old('slug', $market->slug) }}"
-                                                       autocomplete="off"
-                                                       placeholder="Industry/Project Slug" required>
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text"><span class="fas fa-link"></span></div>
-                                                </div>
-                                            </div>
+                                            
 
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -131,9 +121,9 @@
                                                         <input type="text"
                                                                name="slug"
                                                                class="form-control"
-                                                               value="{{ old('slug') }}"
+                                                               value="{{ old('slug', $market->slug) }}"
                                                                autocomplete="off"
-                                                               placeholder="Industry/Project Slug (e.g., my-awesome-market)" required> {{-- Changed placeholder --}}
+                                                               placeholder="Industry/Project Slug" required>
                                                         <div class="input-group-append">
                                                             <div class="input-group-text"><span class="fas fa-link"></span></div>
                                                         </div>
