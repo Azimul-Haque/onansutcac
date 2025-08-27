@@ -10,16 +10,16 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>About Us</h1>
-        <p>Innovating from Concept to Creation as a Global Integrated Device Manufacturer</p>
+        <!-- <h1>About Us</h1>
+        <p>Innovating from Concept to Creation as a Global Integrated Device Manufacturer</p> -->
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">About Us</li>
+            <!-- <li><a href="{{ route('index.index') }}">Home</a></li>
+            <li class="current">About Us</li> -->
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
     <!-- Starter Section Section -->
     <section id="starter-section" class="starter-section about section">
