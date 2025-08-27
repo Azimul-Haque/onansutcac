@@ -115,7 +115,6 @@
                 </div> -->
 
                 <article class="article">
-
                   <div class="post-img">
                     @if($market->image)
                         <img src="{{ asset('images/markets/' . $market->image) }}" alt="{{ $market->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
