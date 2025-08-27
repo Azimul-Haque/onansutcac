@@ -33,7 +33,9 @@
       <div class="container">
 
         <div class="row gy-4" data-aos="fade-up">
+            
           {!! $aboutpagetop->content !!}
+
           <!-- <div class="col-12 col-md-6">
               <div class="feature-box">
                   <i class="bi bi-lightbulb icon"></i>
