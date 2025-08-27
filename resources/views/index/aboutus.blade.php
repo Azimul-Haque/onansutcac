@@ -36,7 +36,7 @@
       <div class="container">
 
         <div class="row gy-4">
-          {!! $aboutpagetop->content !!}
+          {!! $wwwutop->content !!}
           
         </div>
 
