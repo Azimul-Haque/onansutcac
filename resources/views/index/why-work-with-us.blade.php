@@ -10,8 +10,8 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>Why Work With Us</h1>
-        <p>Discover the unique advantages of collaborating with us</p>
+        <!-- <h1>Why Work With Us</h1>
+        <p>Discover the unique advantages of collaborating with us</p> -->
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
