@@ -14,8 +14,8 @@
         <p>Discover the unique advantages of collaborating with us</p> -->
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">Why Work With Us</li>
+            <!-- <li><a href="{{ route('index.index') }}">Home</a></li>
+            <li class="current">Why Work With Us</li> -->
           </ol>
         </nav>
       </div>
