@@ -14,8 +14,7 @@
         <p>Innovating from Concept to Creation as a Global Integrated Device Manufacturer</p> -->
         <nav class="breadcrumbs">
           <ol>
-            <!-- <li><a href="{{ route('index.index') }}">Home</a></li>
-            <li class="current">About Us</li> -->
+            <!--  -->
           </ol>
         </nav>
       </div>
