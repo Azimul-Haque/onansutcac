@@ -53,7 +53,7 @@
                     @endif
                   </div>
 
-                  <h2 class="title">{{ $market->title }}</h2>
+                  <a href="{{ route('index.singlemarket', $market->slug) }}"><h2 class="title">{{ $market->title }}</h2></a>
 
                   <div class="meta-top">
                     <ul>
