@@ -213,7 +213,9 @@ class IndexController extends Controller
         $products = Product::orderBy('id', 'desc')->get()->take(6);
         $recentsuccessstories = Successstory::orderBy('id', 'desc')->get()->take(5);
         return view('index.markets')
-                    ->withMarkets($markets);
+                    ->withMarkets($markets)
+                    ->withProducts($products)
+                    ->withRecentsuccessstories($recentsuccessstories);
     }
 
     public function getMarket($slug)
