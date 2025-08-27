@@ -47,7 +47,9 @@
                 <article class="article">
                   <div class="post-img">
                     @if($market->image)
-                        <a href="{{ route('index.singlemarket', $market->slug) }}" style="color: var(--heading-color);"><img src="{{ asset('images/markets/' . $market->image) }}" alt="{{ $market->title }}" class="img-fluid" style="width: 100%; heigh: auto;"></a>
+                        <a href="{{ route('index.singlemarket', $market->slug) }}" style="color: var(--heading-color);">
+                          <img src="{{ asset('images/markets/' . $market->image) }}" alt="{{ $market->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
+                        </a>
                     @endif
                   </div>
 
