@@ -33,8 +33,8 @@
       <div class="container">
 
         <div class="row gy-4" data-aos="fade-up">
-          
-          <div class="col-12 col-md-6">
+          {!! $aboutpagetop->content !!}
+          <!-- <div class="col-12 col-md-6">
               <div class="feature-box">
                   <i class="bi bi-lightbulb icon"></i>
                   <p class="text">Slow, controlled release of antimicrobial agents for long-lasting performance</p>
@@ -60,7 +60,7 @@
                   <i class="bi bi-star icon"></i>
                   <p class="text">Expert technical and customer support to ensure customer satisfaction</p>
               </div>
-          </div>
+          </div> -->
         </div>
 
         <style>
