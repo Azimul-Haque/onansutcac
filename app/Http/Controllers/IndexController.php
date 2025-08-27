@@ -209,7 +209,7 @@ class IndexController extends Controller
 
     public function getMarkets()
     {
-        $markets = Market::orderBy('serial', 'desc')->get();
+        $markets = Market::orderBy('serial', 'asc')->get();
         return view('index.markets')
                     ->withMarkets($markets);
     }
