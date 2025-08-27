@@ -113,44 +113,46 @@
                     </div>
                   </div>
                 </div> -->
+
+                <article class="article">
+
+                  <div class="post-img">
+                    @if($market->image)
+                        <img src="{{ asset('images/markets/' . $market->image) }}" alt="{{ $market->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
+                    @endif
+                  </div>
+
+                  <h2 class="title">{{ $market->title }}</h2>
+
+                  <div class="meta-top">
+                    <ul>
+                      {{-- <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{ route('index.singlemarket', $market->slug) }}">John Doe</a></li> --}}
+                      <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ route('index.singlemarket', $market->slug) }}"><time datetime="{{ $market->created_at }}">{{ date('d F, Y', strtotime($market->created_at)) }}</time></a></li>
+                      <li class="d-flex align-items-center"><i class="bi bi-book"></i> {{ estimatedReadingTime($market->text) }} mins read</li>
+                    </ul>
+                  </div><!-- End meta top -->
+
+                  <div class="content">
+                    {!! $market->text !!}
+                  </div><!-- End post content -->
+
+                  <div class="meta-bottom">
+                    <i class="bi bi-folder"></i>
+                    <ul class="cats">
+                      <li><a href="#" class="badge bg-info" style="color: #FFFFFF;">{{ ind_type($market->type) }}</a></li>
+                    </ul>
+
+                    {{-- <i class="bi bi-tags"></i>
+                    <ul class="tags">
+                      <li><a href="#" class="badge bg-primary" style="color: #FFFFFF;">Creative</a></li>
+                      <li><a href="#" class="badge bg-primary" style="color: #FFFFFF;">Tips</a></li>
+                      <li><a href="#" class="badge bg-primary" style="color: #FFFFFF;">Marketing</a></li>
+                    </ul> --}}
+                  </div><!-- End meta bottom -->
+                </article>
+                
               @endforeach
-              <article class="article">
-
-                <div class="post-img">
-                  @if($market->image)
-                      <img src="{{ asset('images/markets/' . $market->image) }}" alt="{{ $market->title }}" class="img-fluid" style="width: 100%; heigh: auto;">
-                  @endif
-                </div>
-
-                <h2 class="title">{{ $market->title }}</h2>
-
-                <div class="meta-top">
-                  <ul>
-                    {{-- <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{ route('index.singlemarket', $market->slug) }}">John Doe</a></li> --}}
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ route('index.singlemarket', $market->slug) }}"><time datetime="{{ $market->created_at }}">{{ date('d F, Y', strtotime($market->created_at)) }}</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-book"></i> {{ estimatedReadingTime($market->text) }} mins read</li>
-                  </ul>
-                </div><!-- End meta top -->
-
-                <div class="content">
-                  {!! $market->text !!}
-                </div><!-- End post content -->
-
-                <div class="meta-bottom">
-                  <i class="bi bi-folder"></i>
-                  <ul class="cats">
-                    <li><a href="#" class="badge bg-info" style="color: #FFFFFF;">{{ ind_type($market->type) }}</a></li>
-                  </ul>
-
-                  {{-- <i class="bi bi-tags"></i>
-                  <ul class="tags">
-                    <li><a href="#" class="badge bg-primary" style="color: #FFFFFF;">Creative</a></li>
-                    <li><a href="#" class="badge bg-primary" style="color: #FFFFFF;">Tips</a></li>
-                    <li><a href="#" class="badge bg-primary" style="color: #FFFFFF;">Marketing</a></li>
-                  </ul> --}}
-                </div><!-- End meta bottom -->
-
-              </article>
+              
 
             </div>
           </section><!-- /Blog Details Section -->
