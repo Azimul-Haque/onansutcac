@@ -327,6 +327,7 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'title' => 'required|string|max:191',
+            'serial' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:markets,slug,' . $id,
             'text'  => 'required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
@@ -335,6 +336,7 @@ class DashboardController extends Controller
         $market = Market::findOrFail($id);
         $market->type = $request->type;
         $market->title = $request->title;
+        $market->serial = $request->serial;
         $market->slug = Str::slug($request->slug);
 
         $market->text = Purifier::clean($request->text, 'youtube');
