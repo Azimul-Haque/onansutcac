@@ -135,7 +135,7 @@
                                                         <input type="number"
                                                                name="serial"
                                                                class="form-control"
-                                                               value="{{ old('serial') }}"
+                                                               value="{{ old('serial', $market->serial) }}"
                                                                autocomplete="off"
                                                                placeholder="Industry/Project Serial (1, 2, 3, etc.)" required>
                                                         <div class="input-group-append">
