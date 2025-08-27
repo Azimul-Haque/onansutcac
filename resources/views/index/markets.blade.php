@@ -82,7 +82,38 @@
           <!-- Blog Details Section -->
           <section id="blog-details" class="blog-details section">
             <div class="container">
-
+              @php
+                $biicons = ['code-slash', 'palette2', 'phone-fill', 'bar-chart-line', 'cloud-check', 'shield-lock']
+              @endphp
+              @foreach($markets as $market)
+                @php
+                  $modulo_index = ($loop->iteration - 1) % 2;
+                  $delay = 100 + ($modulo_index * 100);
+                  if($modulo_index == 0) {
+                    $datadirection = 'fade-right';
+                  } else {
+                    $datadirection = 'fade-left';
+                  }
+                @endphp
+                <div class="col-md-6 aos-init" data-aos="{{ $datadirection }}" data-aos-delay="{{ $delay }}">
+                  <div class="service-item">
+                    <div class="service-icon">
+                      <i class="bi bi-{{ $biicons[$loop->iteration - 1] }}"></i>
+                    </div>
+                    <div class="service-content">
+                      <span class="badge bg-primary position-absolute top-0 end-0 m-2" style="font-size: 0.75em; padding: 0.3em 0.75em; border-radius: 0.4rem;">
+                          {{ ind_type($market->type) ?? 'Product Type' }} <!-- Replace $product->type with your actual variable -->
+                      </span>
+                      <h3><a href="{{ route('index.singlemarket', $market->slug) }}" style="color: var(--heading-color);">{{ $market->title }}</a></h3>
+                      <p>{{ Str::limit(strip_tags($market->text), 200) }}</p>
+                      <a href="{{ route('index.singlemarket', $market->slug) }}" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              @endforeach
               <article class="article">
 
                 <div class="post-img">
