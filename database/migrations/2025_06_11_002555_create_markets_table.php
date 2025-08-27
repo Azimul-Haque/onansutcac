@@ -17,6 +17,7 @@ class CreateMarketsTable extends Migration
             $table->id();
             $table->integer('type')->nullable();              
             $table->string('title');               
+            $table->integer('serial');               
             $table->text('slug');               
             $table->longText('text');      
             $table->string('image')->nullable();           
