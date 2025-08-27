@@ -794,9 +794,6 @@ class DashboardController extends Controller
     {
         $event = Event::findOrFail($id);
 
-        if ($event->image && Storage::disk('public')->exists($event->image)) {
-            Storage::disk('public')->delete($event->image);
-        }
         if ($event->image && file_exists(public_path('images/event/' . $event->image))) {
             unlink(public_path('images/events/' . $event->image));
         }
