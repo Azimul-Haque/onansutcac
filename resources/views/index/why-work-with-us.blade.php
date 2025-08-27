@@ -33,7 +33,7 @@
       <div class="container">
 
         <div class="row gy-4" data-aos="fade-up">
-          <!-- Box 1: Slow, controlled release -->
+          
           <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
               <div class="feature-box">
                   <i class="bi bi-lightbulb icon"></i>
@@ -41,7 +41,6 @@
               </div>
           </div>
 
-          <!-- Box 2: Initially developed for NASA -->
           <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
               <div class="feature-box">
                   <i class="bi bi-award icon"></i>
@@ -49,7 +48,6 @@
               </div>
           </div>
 
-          <!-- Box 3: Customizable & easy integration -->
           <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
               <div class="feature-box">
                   <i class="bi bi-puzzle icon"></i>
@@ -57,8 +55,7 @@
               </div>
           </div>
 
-          <!-- Box 4: Expert technical and customer support -->
-          <div class="col-12 col-md-6"> <!-- Bootstrap column for responsive layout -->
+          <div class="col-12 col-md-6"> 
               <div class="feature-box">
                   <i class="bi bi-star icon"></i>
                   <p class="text">Expert technical and customer support to ensure customer satisfaction</p>
