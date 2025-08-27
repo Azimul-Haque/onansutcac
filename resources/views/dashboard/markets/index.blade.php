@@ -244,7 +244,7 @@
                                    class="form-control"
                                    value="{{ old('slug') }}"
                                    autocomplete="off"
-                                   placeholder="Industry/Project Slug (e.g., my-awesome-market)" required> {{-- Changed placeholder --}}
+                                   placeholder="Industry/Project Slug (e.g., my-awesome-market)" required>
                             <div class="input-group-append">
                                 <div class="input-group-text"><span class="fas fa-link"></span></div>
                             </div>
