@@ -164,8 +164,9 @@ class IndexController extends Controller
 
     public function getWhyWWU()
     {
-        
-        return view('index.why-work-with-us');
+        $aboutpagetop = About::where('id', 5)->first();
+                    
+        return view('index.why-work-with-us')->withAboutpagetop($aboutpagetop);
     }
 
     public function termsAndConditions()
