@@ -148,7 +148,7 @@
                       <li><a href="#" class="badge bg-primary" style="color: #FFFFFF;">Marketing</a></li>
                     </ul> --}}
                   </div><!-- End meta bottom -->
-                </article><br/>
+                </article><br/><br/>
 
               @endforeach
               
