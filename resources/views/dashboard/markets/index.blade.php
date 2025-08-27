@@ -236,28 +236,32 @@
                     </div>
                 </div>
 
-                <div class="input-group mb-3">
-                    <input type="text"
-                           name="slug"
-                           class="form-control"
-                           value="{{ old('slug') }}"
-                           autocomplete="off"
-                           placeholder="Industry/Project Slug (e.g., my-awesome-market)" required> {{-- Changed placeholder --}}
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-link"></span></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <input type="text"
+                                   name="slug"
+                                   class="form-control"
+                                   value="{{ old('slug') }}"
+                                   autocomplete="off"
+                                   placeholder="Industry/Project Slug (e.g., my-awesome-market)" required> {{-- Changed placeholder --}}
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fas fa-link"></span></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-6">
-                    <div class="input-group mb-3">
-                        <input type="number"
-                               name="serial"
-                               class="form-control"
-                               value="{{ old('serial') }}"
-                               autocomplete="off"
-                               placeholder="Team Member Serial (1, 2, 3, etc.)" required>
-                        <div class="input-group-append">
-                            <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <input type="number"
+                                   name="serial"
+                                   class="form-control"
+                                   value="{{ old('serial') }}"
+                                   autocomplete="off"
+                                   placeholder="Team Member Serial (1, 2, 3, etc.)" required>
+                            <div class="input-group-append">
+                                <div class="input-group-text"><span class="fas fa-briefcase"></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
