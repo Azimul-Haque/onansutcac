@@ -315,13 +315,13 @@
 
         // Add markers with custom icons
         L.marker([1.3521, 103.8198], {icon: customIcon}).addTo(map)
-        .bindPopup('<b>Singapore</b>').openPopUp();
+        .bindPopup('<b>Singapore</b>').openPopup();
 
         L.marker([40.7128, -74.0060], {icon: customIcon}).addTo(map)
-        .bindPopup('<b>New York, USA</b>').openPopUp();
+        .bindPopup('<b>New York, USA</b>').openPopup();
 
         L.marker([51.5074, -0.1278], {icon: customIcon}).addTo(map)
-        .bindPopup('<b>London, UK</b>').openPopUp();
+        .bindPopup('<b>London, UK</b>').openPopup();
       </script>
 
 @endsection
