@@ -47,6 +47,7 @@
               </div><!-- End Info Item -->
               @endif
 
+              @if($contactdata[0]->content != '')
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
@@ -54,7 +55,9 @@
                   <p>{{ strip_tags($contactdata[1]->content) }}</p>
                 </div>
               </div><!-- End Info Item -->
+              @endif
 
+              @if($contactdata[0]->content != '')
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
@@ -62,6 +65,7 @@
                   <p>{{ strip_tags($contactdata[2]->content) }}</p>
                 </div>
               </div><!-- End Info Item -->
+              @endif
 
             </div>
           </div>
