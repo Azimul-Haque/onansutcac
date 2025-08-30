@@ -10,14 +10,14 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>Success Story</h1>
+        {{-- <h1>Success Story</h1>
         <p>{{ $successstory->title }}</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
             <li class="current">Success Story</li>
           </ol>
-        </nav>
+        </nav> --}}
       </div>
     </div><!-- End Page Title -->
 
