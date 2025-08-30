@@ -66,7 +66,7 @@ class IndexController extends Controller
         $newsforhomepage = News::orderBy('id', 'desc')->get()->take(3);
         $clientsforhomepage = Client::orderBy('id', 'desc')->get();
         $testimonials = Testimonial::orderBy('id', 'desc')->get()->take(6);
-        $contactdata = About::where('id', "!=", 1)->get();
+        $metadata = About::get();
 
         return view('index.index')
                     ->withNewsforhomepage($newsforhomepage)
