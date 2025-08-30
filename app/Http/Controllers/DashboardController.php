@@ -558,7 +558,7 @@ class DashboardController extends Controller
 
         $about = About::findOrFail($id);
         $about->page_location = $request->page_location;
-        $about->content = Purifier::clean($request->content, 'youtube');
+        $about->content = $request->content;
 
         // Save the updated record to the database
         $about->save();
