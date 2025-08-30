@@ -301,8 +301,8 @@
 
         // Load OpenStreetMap tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-          autoClose: false,
+          {{-- attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors', --}}
+          attributionControl: false
         }).addTo(map);
 
         // Define custom icon (blue pin)
