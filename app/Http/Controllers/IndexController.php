@@ -155,11 +155,13 @@ class IndexController extends Controller
     public function getAboutUs()
     {
         $aboutpagetop = About::where('id', 1)->first();
+        $ourhistory = About::where('id', 8)->first();
         $teams = Team::orderBy('serial', 'asc')->get();
 
         return view('index.aboutus')
                     ->withTeams($teams)
-                    ->withAboutpagetop($aboutpagetop);
+                    ->withAboutpagetop($aboutpagetop)
+                    ->withOurhistory($ourhistory);
     }
 
     public function getWhyWWU()
