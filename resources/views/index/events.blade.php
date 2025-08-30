@@ -120,7 +120,7 @@
         <!-- List Posts -->
         <div class="row">
           @foreach($recentnews as $news)
-            <div class="col-xl-4 col-lg-6">
+            <div class="col-xl-4 col-lg-6 card">
               <article class="list-post">
                 <div class="post-img">
                   <img src="{{ asset('images/news/' . $news->image) }}" alt="{{ $news->title }}" class="img-fluid" loading="lazy">
