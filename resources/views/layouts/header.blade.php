@@ -50,8 +50,6 @@
                 @foreach($productsforfooter as $prodsformenu)
                   <li><a href="{{ route('index.singleproduct', $prodsformenu->id) }}">{{ $prodsformenu->title }}</a></li>
                 @endforeach
-                
-                <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
               </ul>
             </li>
             <li class="dropdown"><a href="{{ route('index.markets') }}">Industries <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -59,8 +57,6 @@
                 @foreach($marketsforfooter as $marketformenu)
                   <li><a href="{{ route('index.singlemarket', $marketformenu->id) }}">{{ $marketformenu->title }}</a></li>
                 @endforeach
-                
-                <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
               </ul>
             </li>
           </ul>
