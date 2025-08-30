@@ -21,7 +21,7 @@
           <div class="transparent-box p-5 rounded-3 shadow-lg">
               <div class="d-flex flex-column align-items-center justify-content-center text-center">
                   <h1 class="fs-1 fw-bold text-teal-200 mb-2">
-                      {{ strptags($metadata[8]->content) }}
+                      {{ strip_tags($metadata[8]->content) }}
                   </h2>
               </div>
           </div>
@@ -36,7 +36,7 @@
               transform: scale(1.05);
           }
         </style>
-        <p data-aos="fade-up" data-aos-delay="200"><small>{{ strptags($metadata[9]->content) }}</small></p>
+        <p data-aos="fade-up" data-aos-delay="200"><small>{{ strip_tags($metadata[9]->content) }}</small></p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           {{-- <a href="#about" class="btn-get-started">Get Started</a>
           <a href="https://www.youtube.com/watch?v=U6fC4Ij608A" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> --}}
