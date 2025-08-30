@@ -27,8 +27,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Success Stories</h2>
-        <p>Explore Our Range of Quality Offerings<br></p>
+        <h2>Explore Our Range of Quality Offerings</h2>
+        <p>Success Stories<br></p>
       </div><!-- End Section Title -->
 
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
