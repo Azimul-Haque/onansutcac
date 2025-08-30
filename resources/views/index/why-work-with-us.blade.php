@@ -309,10 +309,10 @@
           .bindPopup("<b>New York, USA</b>").openPopup();
 
         L.marker([1.3521, 103.8198]).addTo(map) // Singapore
-          .bindPopup("<b>Singapore</b>");
+          .bindPopup("<b>Singapore</b>").openPopup();
 
         L.marker([51.5074, -0.1278]).addTo(map) // London
-          .bindPopup("<b>London, UK</b>");
+          .bindPopup("<b>London, UK</b>").openPopup();
       </script>
 
 @endsection
