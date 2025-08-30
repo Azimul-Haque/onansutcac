@@ -110,7 +110,7 @@
                           </div>
                         </div>
                         <div class="modal fade" id="deleteAboutModal{{ $about->id }}" tabindex="-1" role="dialog" aria-labelledby="deleteAboutModalLabel{{ $about->id }}" aria-hidden="true" data-backdrop="static">
-                          <div class="modal-dialog" role="document">
+                          <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
                               <div class="modal-header bg-danger">
                                 <h5 class="modal-title" id="deleteAboutModalLabel{{ $about->id }}">Delete About Entry</h5>
