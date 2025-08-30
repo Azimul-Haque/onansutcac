@@ -434,7 +434,7 @@ class DashboardController extends Controller
         $team->name = $request->name;
         $team->designation = $request->designation;
         $team->serial = $request->serial;
-        $team->about = Purifier::clean($request->about, 'youtube');
+        $team->about = $request->about;
 
         if($request->hasFile('image')) {
             if ($team->image && file_exists(public_path('images/teams/' . $team->image))) {
