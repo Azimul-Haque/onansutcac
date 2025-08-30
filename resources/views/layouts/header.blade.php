@@ -54,10 +54,10 @@
                 <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
               </ul>
             </li>
-            <li><a href="{{ route('index.markets') }}">Industries <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="{{ route('index.markets') }}">Industries <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                @foreach($marketsforfooter as $marketsformenu)
-                  <li><a href="{{ route('index.singlemarket', $marketsformenu->id) }}">{{ $marketsformenu->title }}</a></li>
+                @foreach($marketsforfooter as $marketformenu)
+                  <li><a href="{{ route('index.singlemarket', $marketformenu->id) }}">{{ $marketformenu->title }}</a></li>
                 @endforeach
                 
                 <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
