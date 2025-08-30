@@ -271,7 +271,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-12">
-            <div id="map" class="shadow-md rounded-md"></div>
+            <div id="map" class="shadow-lg rounded-lg"></div>
           </div>
         </div>
       </div>
