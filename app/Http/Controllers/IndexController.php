@@ -339,7 +339,7 @@ class IndexController extends Controller
     {
         $sdgdata = About::where('id', 6)->first();
                     
-        return view('index.why-work-with-us')->withWwwutop($wwwutop);
+        return view('index.why-work-with-us')->withSdgdata($sdgdata);
     }
 
 
