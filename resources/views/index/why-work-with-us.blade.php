@@ -431,6 +431,7 @@
         <p>Global Presence</p>
       </div><!-- End Section Title -->
 
+      <div class="row justify-content-center">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-10">
         <div id="map"></div>
