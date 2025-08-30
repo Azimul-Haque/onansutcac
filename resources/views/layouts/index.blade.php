@@ -43,6 +43,7 @@
 
   <!-- Main CSS File -->
   <link href="{{ asset('vendor/dewi/assets/css/main.css') }}" rel="stylesheet">
+  @yield('third_party_stylesheets')
   
 </head>
 
