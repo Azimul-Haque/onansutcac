@@ -79,7 +79,7 @@
 <li class="nav-item">
     <a href="#!" class="nav-link {{ Request::is('dashboard/global-presence') ? 'active' : '' }}">
         <i class="nav-icon fas fa-info-circle"></i>
-        <p>Information Center</p>
+        <p>Global Presences</p>
     </a>
 </li>
 
