@@ -52,6 +52,7 @@
       <div class="container">
 
         <div class="row gy-4">
+          {!! $metadata[10]->content !!}
           {{-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3>Science at the Nanoscale. Impact at the Global Scale</h3>
             <img src="{{ asset('images/Electronic-Chip.webp') }}" class="img-fluid rounded-4 mb-4" alt="">
