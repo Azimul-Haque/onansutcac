@@ -53,6 +53,7 @@
       </div><!-- End Section Title -->
 
       <div class="container">
+        {!! $ourhistory->content !!}
         
 
       </div>
