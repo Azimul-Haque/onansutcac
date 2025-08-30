@@ -1146,7 +1146,7 @@ class DashboardController extends Controller
         $faq = new Faq;
         $faq->type = $request->type;
         $faq->question = $request->question;
-        $faq->answer = Purifier::clean($request->answer, 'youtube');
+        $faq->answer = $request->answer
 
         $faq->save();
 
@@ -1165,7 +1165,7 @@ class DashboardController extends Controller
         $faq = Faq::findOrFail($id);
         $faq->type = $request->type;
         $faq->question = $request->question;
-        $faq->answer = Purifier::clean($request->answer, 'youtube');
+        $faq->answer = $request->answer
 
         $faq->save();
 
