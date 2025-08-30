@@ -165,7 +165,8 @@ class IndexController extends Controller
         return view('index.aboutus')
                     ->withTeams($teams)
                     ->withAboutpagetop($aboutpagetop)
-                    ->withOurhistory($ourhistory);
+                    ->withOurhistory($ourhistory)
+                    ->withMissionvission($missionvission);
     }
 
     public function getWhyWWU()
