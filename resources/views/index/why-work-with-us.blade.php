@@ -329,7 +329,7 @@
             if (globalpresence.lat && globalpresence.lng) {
                 L.marker([globalpresence.lat, globalpresence.lng])
                     .addTo(map)
-                    .bindPopup("<b>" + globalpresence.title + "</b><br>" + globalpresence.address);
+                    .bindPopup("<b>" + globalpresence.placename + "</b><br>" + globalpresence.address);
             }
         });
       </script>
