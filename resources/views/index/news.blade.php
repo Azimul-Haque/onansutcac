@@ -28,8 +28,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>The Latest from CactusNano@empty($newscategory) News & Updates @else {{ $newscategory->name }} @endif</h2>
-        <p><br></p>
+        <h2>@empty($newscategory) News & Updates @else {{ $newscategory->name }} @endif</h2>
+        <p>The Latest from CactusNano<br></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
