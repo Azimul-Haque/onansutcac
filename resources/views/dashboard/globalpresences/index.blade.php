@@ -13,7 +13,7 @@ min-height: 200px;
 @endsection
 
 @section('content')
-@section('page-header') Global Presences (Total {{ $globalPresences->total() ?? 0 }}) @endsection
+@section('page-header') Global Presences (Total {{ $globalpresences->total() ?? 0 }}) @endsection
 <div class="container-fluid">
 <div class="card">
 <div class="card-header">
