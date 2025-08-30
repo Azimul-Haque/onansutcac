@@ -305,15 +305,21 @@
           autoClose: false,
         }).addTo(map);
 
-        // Add markers
-        L.marker([40.7128, -74.0060]).addTo(map) // New York
-          .bindPopup("<b>New York, USA</b>").openPopup();
+         var customIcon = L.icon({
+            iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png', // pin image
+            iconSize: [32, 32], // size of the icon
+            iconAnchor: [16, 32], // point of the icon at marker's location
+            popupAnchor: [0, -32] // position of popup relative to icon
+          });
 
-        L.marker([1.3521, 103.8198]).addTo(map) // Singapore
-          .bindPopup("<b>Singapore</b>").openPopup();
+          // Add markers with custom icons
+          L.marker([1.3521, 103.8198], {icon: customIcon}).addTo(map)
+            .bindPopup('<b>Singapore</b>');
 
-        L.marker([51.5074, -0.1278]).addTo(map) // London
-          .bindPopup("<b>London, UK</b>").openPopup();
-      </script>
+          L.marker([40.7128, -74.0060], {icon: customIcon}).addTo(map)
+            .bindPopup('<b>New York, USA</b>');
+
+          L.marker([51.5074, -0.1278], {icon: customIcon}).addTo(map)
+            .bindPopup('<b>London, UK</b>');
 
 @endsection
