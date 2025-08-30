@@ -34,7 +34,7 @@
 
         <div class="row gy-4" data-aos="fade-up">
             
-          {!! $wwwutop->content !!}
+          {!! $sdgdata->content !!}
 
           <!-- <div class="col-12 col-md-6">
               <div class="feature-box">
