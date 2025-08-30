@@ -493,7 +493,7 @@ class DashboardController extends Controller
             'content'       => 'required',
         ]);
 
-        // Create a new About model instance
+        dd($request->all());
         $about = new About;
         $about->page_location = $request->page_location;
         $about->content = $request->content;
