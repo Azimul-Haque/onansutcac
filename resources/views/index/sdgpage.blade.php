@@ -65,27 +65,7 @@
           </div> -->
         </div>
 
-        <style>
-            .feature-box {
-                background-color: #fff;
-                border-radius: 0.75rem; /* Rounded corners */
-                padding: 1.5rem;
-                display: flex;
-                align-items: flex-start; /* Align icon and text at the top */
-                gap: 1rem; /* Space between icon and text */
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Subtle shadow */
-            }
-            .feature-box .icon {
-                font-size: 2.5rem; /* Large icon size */
-                color: #f97316; /* Orange color for icons */
-                flex-shrink: 0; /* Prevent icon from shrinking */
-            }
-            .feature-box .text {
-                font-size: 1.125rem; /* Slightly larger text */
-                color: #374151; /* Darker gray text */
-                line-height: 1.6;
-            }
-        </style>
+        
 
       </div>
 
