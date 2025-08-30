@@ -51,8 +51,8 @@
 
         <h4>Sustainability</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">SDG Alignment</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Social Impact</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.sdg-alignment') }}">SDG Alignment</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.sdg-impact') }}">Social Impact</a></li>
         </ul>
       </div>
 
