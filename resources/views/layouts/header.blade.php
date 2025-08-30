@@ -48,7 +48,7 @@
             <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 @foreach($productsforfooter as $prodsformenu)
-                  <li><a href="{{ route('index.products', $prodsformenu->id) }}">{{ $prodsformenu->title }}</a></li>
+                  <li><a href="{{ route('index.singleproduct', $prodsformenu->id) }}">{{ $prodsformenu->title }}</a></li>
                 @endforeach
                 
                 <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
