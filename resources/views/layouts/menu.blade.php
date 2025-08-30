@@ -78,7 +78,7 @@
 
 <li class="nav-item">
     <a href="{{ route('dashboard.global-presence') }}" class="nav-link {{ Request::is('dashboard/global-presence') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-map-outlined"></i>
+        <i class="nav-icon fas fa-map"></i>
         <p>Global Presences</p>
     </a>
 </li>
