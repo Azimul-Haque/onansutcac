@@ -335,6 +335,13 @@ class IndexController extends Controller
                                 ->withContactdata($contactdata);
     }
 
+    public function getWhyWWU()
+    {
+        $wwwutop = About::where('id', 5)->first();
+                    
+        return view('index.why-work-with-us')->withWwwutop($wwwutop);
+    }
+
     public function getSitemap()
     {
         // Define an array to hold the sitemap URLs.
