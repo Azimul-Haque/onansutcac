@@ -20,7 +20,7 @@
         <h2 data-aos="fade-up" data-aos-delay="100">
           <div class="transparent-box p-5 rounded-3 shadow-lg">
               <div class="d-flex flex-column align-items-center justify-content-center text-center">
-                  <h1 class="fs-1 fw-bold text-teal-200 mb-2">
+                  <h1 class="fs-1 fw-bold text-teal-200 mb-2" style="max-width: 700px;">
                       {{ strip_tags($metadata[8]->content) }}
                   </h2>
               </div>
