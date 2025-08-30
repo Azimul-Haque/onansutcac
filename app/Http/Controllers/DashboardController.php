@@ -511,51 +511,6 @@ class DashboardController extends Controller
             'content'       => 'required',
         ]);
 
-            // Get the content from the request. This variable will be modified.
-            $content = $request->input('content');
-
-            // 2. Find and process all Base64 images within the content.
-            // This regular expression finds all <img> tags with a base64 data URI.
-            // It captures the entire src attribute content and the image data.
-            preg_match_all('/<img[^>]+src="data:image\/(.*?);base64,([^"]+)"[^>]*>/', $content, $matches);
-
-            // Loop through each matched image found in the content.
-            foreach ($matches[0] as $key => $imageTag) {
-            $imageType = $matches[1][$key]; // e.g., 'png', 'jpeg'
-            $base64Data = $matches[2][$key]; // The base64 data itself
-
-            // 3. Decode the Base64 data to get the raw image content.
-            $decodedImage = base64_decode($base64Data);
-
-            // Check if decoding was successful and the image data is not empty.
-            if ($decodedImage === false || empty($decodedImage)) {
-                // If the image is invalid, we skip it and move to the next.
-                continue;
-            }
-
-            // 4. Create a unique filename and define the storage path.
-            // Using a UUID ensures a truly unique filename.
-            $filename = (string) Str::uuid() . '.' . $imageType;
-            $filePath = 'abouts/' . $filename;
-
-            // 5. Save the image to the public storage disk.
-            try {
-                // The Storage facade handles saving the binary data as a file.
-                Storage::disk('public')->put($filePath, $decodedImage);
-            } catch (\Exception $e) {
-                // In a real application, you would log this error.
-                // For now, we'll just skip and not replace the image.
-                continue;
-            }
-
-            // 6. Generate the public URL for the saved image.
-            $url = Storage::url($filePath);
-
-            // 7. Replace the original Base64 image tag with the new URL.
-            $newImageTag = str_replace($matches[0][$key], '<img src="' . $url . '" alt="Content Image">', $imageTag);
-            $content = str_replace($imageTag, $newImageTag, $content);
-        }
-
         $about = About::findOrFail($id);
         $about->page_location = $request->page_location;
         $about->content = $request->content;
