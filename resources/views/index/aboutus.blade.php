@@ -80,7 +80,7 @@
                 </div>
             </div>
 
-            <!-- Mission Statement Column -->
+            {!! $missionvission->content !!}
             {{-- <div class="col-12 col-md-7">
                 <div class="box-card mission-card">
                   <h2 class="statement-title">Mission</h2>
