@@ -128,7 +128,7 @@
         With research-driven innovation and partnerships across textiles, electronics, water treatment, and consumer products, we design nanoscale solutions that integrate seamlessly into everyday life while enhancing durability, efficiency, and sustainability. Cactus collaborates with academia and national agencies, including NASA and Arizona State University, to develop advanced materials—particularly its antimicrobial technology, the core of its materials division. CoreSil™ RO membranes outperform conventional systems in wastewater, surface water, and seawater treatment. Cactus also partners with top US firms to provide integrated water treatment solutions
       </div>
       <div class="col-md-8">
-        
+        <img src="" />
       </div>
     </div>
 
