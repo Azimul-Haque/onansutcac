@@ -1118,7 +1118,71 @@ class DashboardController extends Controller
 
 
 
-    
+    public function getGlobalPresences(Request $request)
+    {
+        if ($request->search) {
+            $globalPresences = Globalpresence::where('placename', 'LIKE', "%$request->search%")
+                                             ->orWhere('locationurl', 'LIKE', "%$request->search%")
+                                             ->orderBy('id', 'desc')
+                                             ->paginate(10);
+        } else {
+            $globalPresences = Globalpresence::orderBy('id', 'desc')->paginate(10);
+        }
+
+        return view('dashboard.global-presence.index')->withGlobalpresences($globalPresences);
+    }
+
+    public function storeGlobalPresence(Request $request)
+    {
+        $this->validate($request, [
+            'placename'    => 'required|string|max:191',
+            'locationurl'  => 'required|string|max:500',
+            'lat'          => 'required|numeric',
+            'lng'          => 'required|numeric',
+        ]);
+
+        $globalPresence = new Globalpresence;
+        $globalPresence->placename = $request->placename;
+        $globalPresence->locationurl = $request->locationurl;
+        $globalPresence->lat = $request->lat;
+        $globalPresence->lng = $request->lng;
+
+        $globalPresence->save();
+
+        Session::flash('success', 'Global Presence item created successfully!');
+        return redirect()->route('dashboard.global-presence');
+    }
+
+    public function updateGlobalPresence(Request $request, $id)
+    {
+        $this->validate($request, [
+            'placename'    => 'required|string|max:191',
+            'locationurl'  => 'required|string|max:500',
+            'lat'          => 'required|numeric',
+            'lng'          => 'required|numeric',
+        ]);
+
+        $globalPresence = Globalpresence::findOrFail($id);
+        $globalPresence->placename = $request->placename;
+        $globalPresence->locationurl = $request->locationurl;
+        $globalPresence->lat = $request->lat;
+        $globalPresence->lng = $request->lng;
+
+        $globalPresence->save();
+
+        Session::flash('success', 'Global Presence item updated successfully!');
+        return redirect()->route('dashboard.global-presence');
+    }
+
+    public function deleteGlobalPresence($id)
+    {
+        $globalPresence = Globalpresence::findOrFail($id);
+
+        $globalPresence->delete();
+
+        Session::flash('success', 'Global Presence item deleted successfully!');
+        return redirect()->route('dashboard.global-presence');
+    }
 
 
     public function getHelpCenter(Request $request)
