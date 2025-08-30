@@ -73,15 +73,14 @@
 
         <div class="row g-4 justify-content-center mb-4">
             <!-- Vision Statement Column -->
-            <div class="col-12 col-md-5">
-                <div class="box-card vision-card">
-                    <h2>Vision</h2>
-                    <p>Maximizing global health & water sustainability</p>
-                </div>
-            </div>
-
             {!! $missionvission->content !!}
-            {{-- <div class="col-12 col-md-7">
+            {{-- <div class="col-12 col-md-5">
+                  <div class="box-card vision-card">
+                      <h2>Vision</h2>
+                      <p>Maximizing global health & water sustainability</p>
+                  </div>
+              </div>
+              <div class="col-12 col-md-7">
                 <div class="box-card mission-card">
                   <h2 class="statement-title">Mission</h2>
                   <p class="statement-text">Water sustainability by developing monopoly of technologies and their manufacturing for secure water world</p>
