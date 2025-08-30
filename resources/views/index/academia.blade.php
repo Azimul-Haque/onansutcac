@@ -12,14 +12,14 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>Academia</h1>
+        {{-- <h1>Academia</h1>
         <p>Exploring Knowledge, Driving Discovery</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
             <li class="current">Academia</li>
           </ol>
-        </nav>
+        </nav> --}}
       </div>
     </div><!-- End Page Title -->
 
