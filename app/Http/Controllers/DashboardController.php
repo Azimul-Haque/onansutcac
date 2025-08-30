@@ -1140,15 +1140,15 @@ class DashboardController extends Controller
     public function getGlobalPresences(Request $request)
     {
         if ($request->search) {
-            $globalPresences = Globalpresence::where('placename', 'LIKE', "%$request->search%")
+            $globalpresences = Globalpresence::where('placename', 'LIKE', "%$request->search%")
                                              ->orWhere('locationurl', 'LIKE', "%$request->search%")
                                              ->orderBy('id', 'desc')
                                              ->paginate(10);
         } else {
-            $globalPresences = Globalpresence::orderBy('id', 'desc')->paginate(10);
+            $globalpresences = Globalpresence::orderBy('id', 'desc')->paginate(10);
         }
 
-        return view('dashboard.globalpresences.index')->withGlobalpresences($globalPresences);
+        return view('dashboard.globalpresences.index')->withGlobalpresences($globalpresences);
     }
 
     public function storeGlobalPresence(Request $request)
@@ -1189,7 +1189,7 @@ class DashboardController extends Controller
         $globalPresence = Globalpresence::findOrFail($id);
         $globalPresence->placename = $request->placename;
         $globalPresence->locationurl = $request->locationurl;
-        
+
         // Extract lat/long if Google Maps URL is given
         if (!empty($request->locationurl)) {
             $coords = $this->extractLatLong($request->locationurl);
