@@ -18,14 +18,14 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/other-pages-header-background.gif') }}');">
       <div class="container position-relative">
-        <h1>{{ $market->title }}</h1>
+        {{-- <h1>{{ $market->title }}</h1>
         <p>{{ ind_type($market->type) }}</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
             <li class="current">{{ ind_type($market->type) }} Details</li>
           </ol>
-        </nav>
+        </nav> --}}
       </div>
     </div><!-- End Page Title -->
 
