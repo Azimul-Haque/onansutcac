@@ -170,7 +170,9 @@ class IndexController extends Controller
         $wwwutop = About::where('id', 5)->first();
         $globalpresences = Globalpresence::orderBy('id', 'desc')->get();
                     
-        return view('index.why-work-with-us')->withWwwutop($wwwutop);
+        return view('index.why-work-with-us')
+                            ->withWwwutop($wwwutop)
+                            ->withGlobalpresences($globalpresences);
     }
 
     public function termsAndConditions()
