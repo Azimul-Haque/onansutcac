@@ -337,7 +337,7 @@ class IndexController extends Controller
 
     public function getSDGAlignment()
     {
-        $wwwutop = About::where('id', 5)->first();
+        $sdgdata = About::where('id', 6)->first();
                     
         return view('index.why-work-with-us')->withWwwutop($wwwutop);
     }
@@ -352,7 +352,7 @@ class IndexController extends Controller
 
 
 
-    
+
 
     public function getSitemap()
     {
