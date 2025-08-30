@@ -49,11 +49,6 @@
               <ul>
                 <li><a href="{{ route('index.get-about-us') }}">About Us</a></li>
                 <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
-                <li><a href="{{ route('index.get-about-us') }}#vission-mission">Vision & Mission</a></li>
-                <li><a href="{{ route('index.get-about-us') }}#team">Leadership Team</a></li>
-                <li><a href="{{ route('index.get-why-work-with-us') }}">Why work with us</a></li>
-                <li><a href="{{ route('index.get-why-work-with-us') }}#product-capacity">Production Capacity</a></li>
-                <li><a href="{{ route('index.get-why-work-with-us') }}#global-presence">Global Presence</a></li>
               </ul>
             </li>
             <li><a href="{{ route('index.markets') }}">Industries</a></li>
