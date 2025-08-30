@@ -90,7 +90,7 @@
 
     </section><!-- /About Section -->
 
-    <section id="stats" class="team section light-background">
+    {{-- <section id="stats" class="team section light-background">
 
       <div class="container">
         <div class="row gy-4 justify-content-center">
@@ -122,7 +122,7 @@
         </div>
       </div>
 
-    </section>
+    </section> --}}
 
     <!-- Stats Section -->
     {{-- <section id="stats" class="stats section light-background">
