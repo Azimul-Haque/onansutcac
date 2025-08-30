@@ -168,7 +168,7 @@ class IndexController extends Controller
     public function getWhyWWU()
     {
         $wwwutop = About::where('id', 5)->first();
-        $globalpresences = Globalpresence::orderBy('id', 'desc')->paginate(10);
+        $globalpresences = Globalpresence::orderBy('id', 'desc')->get();
                     
         return view('index.why-work-with-us')->withWwwutop($wwwutop);
     }
