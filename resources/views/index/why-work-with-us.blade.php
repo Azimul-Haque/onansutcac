@@ -322,6 +322,16 @@
 
         L.marker([51.5074, -0.1278], {icon: customIcon}).addTo(map)
         .bindPopup('<b>London, UK</b>').bindTooltip('<b>London, UK</b>').openTooltip();
+
+        var globalpresences = @json($globalpresences);
+
+        globalpresences.forEach(function(event) {
+            if (event.lat && event.lng) {
+                L.marker([event.lat, event.lng])
+                    .addTo(map)
+                    .bindPopup("<b>" + event.title + "</b><br>" + event.address);
+            }
+        });
       </script>
 
 @endsection
