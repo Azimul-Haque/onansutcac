@@ -314,20 +314,20 @@
         });
 
         // Add markers with custom icons
-        L.marker([1.3521, 103.8198], {icon: customIcon}).addTo(map)
+{{--         L.marker([1.3521, 103.8198], {icon: customIcon}).addTo(map)
         .bindPopup('<b>Singapore</b>').bindTooltip('<b>Singapore</b>').openTooltip();
 
         L.marker([40.7128, -74.0060], {icon: customIcon}).addTo(map)
         .bindPopup('<b>New York, USA</b>').bindTooltip('<b>New York, USA</b>').openTooltip();
 
         L.marker([51.5074, -0.1278], {icon: customIcon}).addTo(map)
-        .bindPopup('<b>London, UK</b>').bindTooltip('<b>London, UK</b>').openTooltip();
+        .bindPopup('<b>London, UK</b>').bindTooltip('<b>London, UK</b>').openTooltip(); --}}
 
         var globalpresences = @json($globalpresences);
 
         globalpresences.forEach(function(globalpresence) {
             if (globalpresence.lat && globalpresence.lng) {
-                L.marker([globalpresence.lat, globalpresence.lng])
+                L.marker([globalpresence.lat, globalpresence.lng], {icon: customIcon})
                     .addTo(map)
                     .bindPopup("<b>" + globalpresence.placename + "</b>")
                     .bindTooltip("<b>" + globalpresence.placename + "</b>")
