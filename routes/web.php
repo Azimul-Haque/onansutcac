@@ -39,6 +39,8 @@ Route::get('/success-stories/{slug}', 'IndexController@getSingleSuccessStory')->
 Route::get('/academia', 'IndexController@getAcademia')->name('index.academia');
 Route::get('/information-center', 'IndexController@getInformationCenter')->name('index.information-center');
 Route::get('/testimonials', 'IndexController@getTestimonials')->name('index.testimonials');
+Route::get('/sdg-alignment', 'IndexController@getSDGAlignment')->name('index.sdg-alignment');
+Route::get('/sdg-impact', 'IndexController@getSDGimpact')->name('index.sdg-impact');
 
 // blog
 Route::get('/blogs', 'BlogController@index')->name('blogs.index');
