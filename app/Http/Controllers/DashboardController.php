@@ -1116,8 +1116,26 @@ class DashboardController extends Controller
 
 
 
+    public function extractLatLong($url)
+    {
+        // Try to match @lat,long in URL
+        if (preg_match('/@([-0-9.]+),([-0-9.]+)/', $url, $matches)) {
+            return [
+                'lat' => $matches[1],
+                'lng' => $matches[2]
+            ];
+        }
 
+        // Sometimes URLs have "q=lat,long"
+        if (preg_match('/q=([-0-9.]+),([-0-9.]+)/', $url, $matches)) {
+            return [
+                'lat' => $matches[1],
+                'lng' => $matches[2]
+            ];
+        }
 
+        return null; // No coordinates found
+    }
 
     public function getGlobalPresences(Request $request)
     {
