@@ -449,26 +449,33 @@
 
 @section('third_party_scripts')
 
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-      // Initialize the map
-      var map = L.map('map').setView([20, 0], 2); // [lat, lng], zoom level
+      // Initialize map
+      var map = L.map('map').setView([20, 0], 2);
 
-      // Add OpenStreetMap tiles
+      // Add tiles
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '© OpenStreetMap'
       }).addTo(map);
 
-      // Add markers for different locations
-      L.marker([1.3521, 103.8198]).addTo(map) // Singapore
-        .bindPopup('<b>Singapore</b>').openPopup();
+      // Define custom icon (blue pin)
+      var customIcon = L.icon({
+        iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png', // pin image
+        iconSize: [32, 32], // size of the icon
+        iconAnchor: [16, 32], // point of the icon at marker's location
+        popupAnchor: [0, -32] // position of popup relative to icon
+      });
 
-      L.marker([40.7128, -74.0060]).addTo(map) // New York, USA
+      // Add markers with custom icons
+      L.marker([1.3521, 103.8198], {icon: customIcon}).addTo(map)
+        .bindPopup('<b>Singapore</b>');
+
+      L.marker([40.7128, -74.0060], {icon: customIcon}).addTo(map)
         .bindPopup('<b>New York, USA</b>');
 
-      L.marker([51.5074, -0.1278]).addTo(map) // London, UK
+      L.marker([51.5074, -0.1278], {icon: customIcon}).addTo(map)
         .bindPopup('<b>London, UK</b>');
     </script>
 
