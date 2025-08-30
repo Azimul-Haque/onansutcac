@@ -176,21 +176,21 @@ min-height: 200px;
 
 @section('third_party_scripts')
 <script type="text/javascript">
-(document).on('click', '\#search-button', function() {
-if (('#search-param').val() != '') {
-$(this).closest('form').submit();
-} else {
-$('#search-param').css({ "border": '#FF0000 2px solid' });
-if (typeof Toast !== 'undefined') {
-Toast.fire({
-icon: 'warning',
-title: 'Write something!'
-});
-} else {
-console.warn('Toast.fire function is not defined. Please include SweetAlert2.');
-}
-}
-});
+    (document).on('click', '\#search-button', function() {
+        if (('#search-param').val() != '') {
+        $(this).closest('form').submit();
+        } else {
+        $('#search-param').css({ "border": '#FF0000 2px solid' });
+        if (typeof Toast !== 'undefined') {
+        Toast.fire({
+        icon: 'warning',
+        title: 'Write something!'
+        });
+        } else {
+        console.warn('Toast.fire function is not defined. Please include SweetAlert2.');
+        }
+        }
+    });
 
     $("#search-param").keyup(function(e) {
         if (e.which == 13) {
