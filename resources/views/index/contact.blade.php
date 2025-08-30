@@ -47,7 +47,7 @@
               </div><!-- End Info Item -->
               @endif
 
-              @if($contactdata[0]->content != '')
+              @if($contactdata[1]->content != '')
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
@@ -57,7 +57,7 @@
               </div><!-- End Info Item -->
               @endif
 
-              @if($contactdata[0]->content != '')
+              @if($contactdata[2]->content != '')
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
