@@ -342,6 +342,13 @@ class IndexController extends Controller
         return view('index.sdgpage')->withSdgdata($sdgdata);
     }
 
+    public function getSDGAlignment()
+    {
+        $sdgdata = About::where('id', 6)->first();
+                    
+        return view('index.sdgpage')->withSdgdata($sdgdata);
+    }
+
 
 
 
