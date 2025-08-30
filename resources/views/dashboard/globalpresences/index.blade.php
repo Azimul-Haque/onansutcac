@@ -37,7 +37,7 @@ min-height: 200px;
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Placename</th>
+                        <th>Place Name</th>
                         <th>Location URL</th>
                         <th>Latitude</th>
                         <th>Longitude</th>
@@ -77,7 +77,7 @@ min-height: 200px;
                                             @method('POST')
 
                                             <div class="form-group mb-3">
-                                                <label for="placenameEdit{{ $globalPresence->id }}">Placename</label>
+                                                <label for="placenameEdit{{ $globalPresence->id }}">Place Name</label>
                                                 <input type="text" name="placename" id="placenameEdit{{ $globalPresence->id }}" class="form-control" value="{{ old('placename', $globalPresence->placename) }}" placeholder="Placename" required>
                                                 @error('placename')
                                                     <span class="text-danger">{{ $message }}</span>
@@ -148,7 +148,7 @@ min-height: 200px;
                 <div class="modal-body">
                     @csrf
                     <div class="form-group mb-3">
-                        <label for="placenameAdd">Placename</label>
+                        <label for="placenameAdd">Place Name</label>
                         <input type="text" name="placename" id="placenameAdd" class="form-control" value="{{ old('placename') }}" placeholder="Placename" required>
                         @error('placename')
                             <span class="text-danger">{{ $message }}</span>
