@@ -335,7 +335,7 @@ class IndexController extends Controller
                                 ->withContactdata($contactdata);
     }
 
-    public function getWhyWWU()
+    public function getSDGAlignment()
     {
         $wwwutop = About::where('id', 5)->first();
                     
