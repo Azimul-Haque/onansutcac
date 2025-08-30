@@ -21,6 +21,7 @@ use App\Client;
 use App\Testimonial;
 use App\Faq;
 use App\Contact;
+use App\Globalpresence;
 
 use Carbon\Carbon;
 use DB;
