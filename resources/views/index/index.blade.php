@@ -316,7 +316,7 @@
     </section><!-- /Features Section -->
 
     <!-- Clients Section -->
-    <section id="clients" class="recent-news section light-background">
+    <section id="clients" class="recent-news section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
