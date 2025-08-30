@@ -10,14 +10,14 @@
     {{-- <div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset('vendor/dewi/assets/img/page-title-bg.webp') }});"> --}}
     <div class="page-title dark-background" data-aos="fade" style="background-image: url('{{ asset('images/news-page-background.gif') }}');">
       <div class="container position-relative">
-        <h1>@empty($newscategory) News & Updates @else {{ $newscategory->name }} @endif</h1>
+        {{-- <h1>@empty($newscategory) News & Updates @else {{ $newscategory->name }} @endif</h1>
         <p>Your Source for What's New</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="{{ route('index.index') }}">Home</a></li>
             <li class="current">News & Updates</li>
           </ol>
-        </nav>
+        </nav> --}}
       </div>
     </div><!-- End Page Title -->
 
