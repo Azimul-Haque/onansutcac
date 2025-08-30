@@ -200,7 +200,7 @@
     </section><!-- /services Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
+    {{-- <section id="stats" class="stats section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -296,7 +296,8 @@
 
       </div>
 
-    </section><!-- /Stats Section -->
+    </section> --}}
+    
 
     {{-- <section id="services" class="services section light-background">
       <!-- Section Title -->
