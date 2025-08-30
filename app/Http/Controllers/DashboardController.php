@@ -477,10 +477,10 @@ class DashboardController extends Controller
             $abouts = About::where('page_location', 'LIKE', "%{$request->search}%")
                             ->orWhere('content', 'LIKE', "%{$request->search}%")
                             ->orderBy('id', 'desc')
-                            ->paginate(10);
+                            ->paginate(15);
         } else {
             // Otherwise, get all abouts records with pagination
-            $abouts = About::orderBy('id', 'desc')->paginate(10);
+            $abouts = About::orderBy('id', 'desc')->paginate(15);
         }
 
         // Return the view with the paginated abouts data
