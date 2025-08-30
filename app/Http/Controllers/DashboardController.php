@@ -1130,7 +1130,7 @@ class DashboardController extends Controller
             $globalPresences = Globalpresence::orderBy('id', 'desc')->paginate(10);
         }
 
-        return view('dashboard.global-presence.index')->withGlobalpresences($globalPresences);
+        return view('dashboard.globalpresences.index')->withGlobalpresences($globalPresences);
     }
 
     public function storeGlobalPresence(Request $request)
