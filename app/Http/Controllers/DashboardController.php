@@ -1185,7 +1185,6 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.global-presence');
     }
 
-
     public function getHelpCenter(Request $request)
     {
         if($request->search) {
