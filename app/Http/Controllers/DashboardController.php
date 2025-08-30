@@ -487,7 +487,6 @@ class DashboardController extends Controller
 
     public function storeAbout(Request $request)
     {
-        // Validate the incoming request data
         $this->validate($request, [
             'page_location' => 'required|string|max:191|unique:abouts',
             'content'       => 'required',
@@ -497,13 +496,9 @@ class DashboardController extends Controller
         $about->page_location = $request->page_location;
         $about->content = $request->content;
 
-        // Save the new record to the database
         $about->save();
 
-        // Flash a success message to the session
         Session::flash('success', 'About page content created successfully!');
-
-        // Redirect to the abouts index page
         return redirect()->route('dashboard.abouts');
     }
 
