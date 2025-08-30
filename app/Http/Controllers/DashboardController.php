@@ -1156,8 +1156,6 @@ class DashboardController extends Controller
         $this->validate($request, [
             'placename'    => 'required|string|max:191',
             'locationurl'  => 'required|string|max:500',
-            'lat'          => 'required|numeric',
-            'lng'          => 'required|numeric',
         ]);
 
         $globalPresence = new Globalpresence;
