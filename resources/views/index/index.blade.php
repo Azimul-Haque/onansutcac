@@ -52,9 +52,8 @@
       <div class="container">
 
         <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          {{-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3>Science at the Nanoscale. Impact at the Global Scale</h3>
-            {{-- <img src="{{ asset('vendor/dewi/assets/img/about.jpg') }}" class="img-fluid rounded-4 mb-4" alt=""> --}}
             <img src="{{ asset('images/Electronic-Chip.webp') }}" class="img-fluid rounded-4 mb-4" alt="">
             <p>CactusNano is a materials science and nanotechnology company dedicated to solving some of the world’s most pressing challenges in health, environment, and technology. Cactus Nano TM, a spin-off from Cactus Materials, Inc. (a US-based semiconductor and advanced materials company), focuses on innovative products like CoreSil™ Membrane, Suspension, and Powder for textile, water, medical, and space industries.</p>
 
@@ -75,12 +74,11 @@
               </p>
 
               <div class="position-relative mt-4">
-                {{-- <img src="{{ asset('vendor/dewi/assets/img/about-2.jpg') }}" class="img-fluid rounded-4" alt=""> --}}
                 <img src="{{ asset('images/AI-Photonics.png') }}" class="img-fluid rounded-4" alt="">
                 <a href="https://www.youtube.com/watch?v=U6fC4Ij608A" class="glightbox pulsating-play-btn"></a>
               </div>
             </div>
-          </div>
+          </div> --}}
         </div>
 
       </div>
