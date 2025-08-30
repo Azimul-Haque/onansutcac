@@ -56,7 +56,7 @@
             </li>
             <li><a href="{{ route('index.markets') }}">Industries <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                @foreach($productsforfooter as $prodsformenu)
+                @foreach($marketsforfooter as $marketsformenu)
                   <li><a href="{{ route('index.singleproduct', $prodsformenu->id) }}">{{ $prodsformenu->title }}</a></li>
                 @endforeach
                 
