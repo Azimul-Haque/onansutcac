@@ -449,4 +449,27 @@
 
 @section('third_party_scripts')
 
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      // Initialize the map
+      var map = L.map('map').setView([20, 0], 2); // [lat, lng], zoom level
+
+      // Add OpenStreetMap tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+      }).addTo(map);
+
+      // Add markers for different locations
+      L.marker([1.3521, 103.8198]).addTo(map) // Singapore
+        .bindPopup('<b>Singapore</b>').openPopup();
+
+      L.marker([40.7128, -74.0060]).addTo(map) // New York, USA
+        .bindPopup('<b>New York, USA</b>');
+
+      L.marker([51.5074, -0.1278]).addTo(map) // London, UK
+        .bindPopup('<b>London, UK</b>');
+    </script>
+
 @endsection
