@@ -304,6 +304,7 @@
           {{-- attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors', --}}
           attributionControl: false
         }).addTo(map);
+        map.attributionControl.setPrefix(''); // Removes the "Leaflet" prefix
 
         // Define custom icon (blue pin)
         var customIcon = L.icon({
