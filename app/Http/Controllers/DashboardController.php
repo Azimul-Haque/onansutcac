@@ -890,7 +890,7 @@ class DashboardController extends Controller
         $successStory->type = $finalType;
         $successStory->slug = Str::slug($request->slug);
         if (isset($validatedData['text'])) {
-            $successStory->text = Purifier::clean($validatedData['text'], 'youtube');
+            $successStory->text = $validatedData['text'];
         } else {
             $successStory->text = null;
         }
