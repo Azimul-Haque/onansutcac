@@ -28,8 +28,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Regional Offices</h2>
-        <p>Find the Office Nearest You<br></p>
+        <h2>Find the Office Nearest You</h2>
+        <p>Regional Offices<br></p>
       </div><!-- End Section Title -->
 
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
