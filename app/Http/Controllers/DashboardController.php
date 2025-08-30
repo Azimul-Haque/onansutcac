@@ -566,7 +566,7 @@ class DashboardController extends Controller
             $news->newslink = $request->newslink;
         }
         if($request->text) {
-            $news->text = Purifier::clean($request->text, 'youtube');
+            $news->text = $request->text;
         }
 
         if($request->hasFile('image')) {
