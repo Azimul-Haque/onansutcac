@@ -57,7 +57,7 @@
               </div><!-- End Info Item -->
               @endif
 
-              @if($contactdata[2]->content != '' || $contactdata[2]->content != null)
+              @if($contactdata[2] != '' || $contactdata[2] != null)
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
