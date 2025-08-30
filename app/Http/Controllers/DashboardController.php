@@ -493,7 +493,6 @@ class DashboardController extends Controller
             'content'       => 'required',
         ]);
 
-        dd($request->all());
         $about = new About;
         $about->page_location = $request->page_location;
         $about->content = $request->content;
@@ -516,7 +515,7 @@ class DashboardController extends Controller
             'content'       => 'required',
         ]);
 
-        // Find the record by its ID or fail
+        dd($request->all());
         $about = About::findOrFail($id);
         $about->page_location = $request->page_location;
         $about->content = Purifier::clean($request->content, 'youtube');
