@@ -763,7 +763,7 @@ class DashboardController extends Controller
             $event->reg_url = $request->reg_url;
         }
         if($request->text) {
-            $event->text = Purifier::clean($request->text, 'youtube');
+            $event->text = $request->text;
         }
 
 
