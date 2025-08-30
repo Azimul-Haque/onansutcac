@@ -42,36 +42,9 @@
       <div class="container">
 
         <div class="row gy-4" data-aos="fade-up">
-            
+
           {!! $wwwutop->content !!}
-
-          <!-- <div class="col-12 col-md-6">
-              <div class="feature-box">
-                  <i class="bi bi-lightbulb icon"></i>
-                  <p class="text">Slow, controlled release of antimicrobial agents for long-lasting performance</p>
-              </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-              <div class="feature-box">
-                  <i class="bi bi-award icon"></i>
-                  <p class="text">Initially developed for NASA, now available for mass market applications</p>
-              </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-              <div class="feature-box">
-                  <i class="bi bi-puzzle icon"></i>
-                  <p class="text">Customizable & easy integration into a wide range of materials</p>
-              </div>
-          </div>
-
-          <div class="col-12 col-md-6"> 
-              <div class="feature-box">
-                  <i class="bi bi-star icon"></i>
-                  <p class="text">Expert technical and customer support to ensure customer satisfaction</p>
-              </div>
-          </div> -->
+          
         </div>
 
         <style>
