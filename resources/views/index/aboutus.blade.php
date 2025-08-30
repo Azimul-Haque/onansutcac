@@ -36,6 +36,7 @@
       <div class="container">
 
         <div class="row gy-4">
+
           {!! $aboutpagetop->content !!}
           
         </div>
@@ -53,9 +54,9 @@
       </div><!-- End Section Title -->
 
       <div class="container">
+        
         {!! $ourhistory->content !!}
         
-
       </div>
 
     </section>
