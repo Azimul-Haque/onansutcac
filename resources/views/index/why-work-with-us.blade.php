@@ -439,13 +439,13 @@
           </div>
         </div>
       </div>
-        {{-- <div class="row g-4 justify-content-center mb-4">
+        <div class="row g-4 justify-content-center mb-4">
             
             <div class="col-12 col-md-12">
               <div id="map"></div>
               <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence" style="width: 100%;">
             </div>
-        </div> --}}
+        </div>
       </div>
 
     </section>
