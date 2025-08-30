@@ -329,7 +329,9 @@
             if (globalpresence.lat && globalpresence.lng) {
                 L.marker([globalpresence.lat, globalpresence.lng])
                     .addTo(map)
-                    .bindPopup("<b>" + globalpresence.placename + "</b><br>" + globalpresence.placename);
+                    .bindPopup("<b>" + globalpresence.placename + "</b><br>" + globalpresence.placename)
+                    .bindTooltip('<b>London, UK</b>')
+                    .openTooltip();
             }
         });
       </script>
