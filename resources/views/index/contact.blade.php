@@ -37,7 +37,7 @@
         <div class="row gy-4">
           <div class="col-lg-6 ">
             <div class="row gy-4">
-              @if(strlen( strip_tags($contactdata[0]->content)) > 0)
+              @if(strlen(strip_tags($contactdata[0]->content)) > 0)
               <div class="col-lg-12">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
@@ -47,7 +47,7 @@
               </div><!-- End Info Item -->
               @endif
 
-              @if($contactdata[1]->content != '')
+              @if(strlen(strip_tags($contactdata[1]->content)) > 0)
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
@@ -57,7 +57,7 @@
               </div><!-- End Info Item -->
               @endif
 
-              @if($contactdata[2]->content != '')
+              @if(strlen(strip_tags($contactdata[2]->content)) > 0)
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
