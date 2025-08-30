@@ -318,10 +318,10 @@
         .bindPopup('<b>Singapore</b>').openPopUp();
 
         L.marker([40.7128, -74.0060], {icon: customIcon}).addTo(map)
-        .bindPopup('<b>New York, USA</b>');
+        .bindPopup('<b>New York, USA</b>').openPopUp();
 
         L.marker([51.5074, -0.1278], {icon: customIcon}).addTo(map)
-        .bindPopup('<b>London, UK</b>');
+        .bindPopup('<b>London, UK</b>').openPopUp();
       </script>
 
 @endsection
