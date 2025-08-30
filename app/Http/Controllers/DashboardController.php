@@ -1163,6 +1163,14 @@ class DashboardController extends Controller
         $globalPresence = new Globalpresence;
         $globalPresence->placename = $request->placename;
         $globalPresence->locationurl = $request->locationurl;
+        // Extract lat/long if Google Maps URL is given
+        if (!empty($data['map_url'])) {
+            $coords = $this->extractLatLong($data['map_url']);
+            if ($coords) {
+                $data['lat'] = $coords['lat'];
+                $data['lng'] = $coords['lng'];
+            }
+        }
         $globalPresence->lat = $request->lat;
         $globalPresence->lng = $request->lng;
 
