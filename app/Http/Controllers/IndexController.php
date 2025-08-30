@@ -342,7 +342,7 @@ class IndexController extends Controller
         return view('index.sdgpage')->withSdgdata($sdgdata);
     }
 
-    public function getSDGimpact()
+    public function getSocialimpact()
     {
         $sdgdata = About::where('id', 7)->first();
                     
