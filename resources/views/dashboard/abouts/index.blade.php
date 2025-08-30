@@ -77,7 +77,7 @@
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
-                              <form method="post" action="{{ route('dashboard.abouts.update', $about->id) }}">
+                              <form method="post" action="{{ route('dashboard.abouts.update', $about->id) }}" accept-charset="">
                                       <div class="modal-body">
                                           @csrf
                                           @method('POST')
