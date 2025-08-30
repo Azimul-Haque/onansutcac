@@ -159,6 +159,7 @@ class IndexController extends Controller
     {
         $aboutpagetop = About::where('id', 1)->first();
         $ourhistory = About::where('id', 8)->first();
+        $missionvission = About::where('id', 12)->first();
         $teams = Team::orderBy('serial', 'asc')->get();
 
         return view('index.aboutus')
