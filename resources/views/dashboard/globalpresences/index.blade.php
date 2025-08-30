@@ -45,7 +45,7 @@ min-height: 200px;
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse($globalPresences as $globalPresence)
+                    @forelse($globalpresences as $globalPresence)
                         <tr>
                             <td>{{ $globalPresence->placename }}</td>
                             <td><a href="{{ $globalPresence->locationurl }}" target="_blank">{{ Str::limit($globalPresence->locationurl, 50) }}</a></td>
@@ -132,9 +132,7 @@ min-height: 200px;
             </table>
         </div>
     </div>
-    @if(isset($globalPresences) && method_exists($globalPresences, 'links'))
-        {{ $globalPresences->links() }}
-    @endif
+    {{ $globalpresences->links() }}
 </div>
 
 <div class="modal fade" id="addGlobalPresenceModal" tabindex="-1" role="dialog" aria-labelledby="addGlobalPresenceModalLabel" aria-hidden="true" data-backdrop="static">
