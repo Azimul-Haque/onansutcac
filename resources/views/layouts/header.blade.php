@@ -47,10 +47,10 @@
           <ul>
             <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                @foreach($productsforfooter)
-
+                @foreach($productsforfooter as $prodsformenu)
+                  <li><a href="{{ route('index.get-about-us') }}">{{ $prodsformenu->title }}</a></li>
                 @endforeach
-                <li><a href="{{ route('index.get-about-us') }}">About Us</a></li>
+                
                 <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
               </ul>
             </li>
