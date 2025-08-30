@@ -19,6 +19,7 @@ use App\Newscategory;
 use App\Event;
 use App\Faq;
 use App\Contact;
+use App\Globalpresence;
 
 use Carbon\Carbon;
 use DB;
