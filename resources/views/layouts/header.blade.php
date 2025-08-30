@@ -45,7 +45,7 @@
 
         <li class="dropdown"><a href="#"><span>Products & Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown dropdown-right"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="{{ route('index.get-about-us') }}">About Us</a></li>
                 <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
