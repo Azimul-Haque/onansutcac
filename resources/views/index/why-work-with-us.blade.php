@@ -2,6 +2,14 @@
 @section('title') Why work with us @endsection
 
 @section('third_party_stylesheets')
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <style>
+    #map {
+      height: 500px; /* adjust height */
+      width: 100%;
+    }
+    </style>
   
 @endsection
 
