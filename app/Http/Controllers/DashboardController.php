@@ -1166,8 +1166,8 @@ class DashboardController extends Controller
         if (!empty($request->locationurl)) {
             $coords = $this->extractLatLong($request->locationurl);
             if ($coords) {
-                $data['lat'] = $coords['lat'];
-                $data['lng'] = $coords['lng'];
+                $request['lat'] = $coords['lat'];
+                $request['lng'] = $coords['lng'];
             }
         }
         $globalPresence->lat = $request->lat;
