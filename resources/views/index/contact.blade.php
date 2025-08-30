@@ -57,12 +57,12 @@
               </div><!-- End Info Item -->
               @endif
 
-              @if($contactdata[2] != '' || $contactdata[2] != null)
+              @if($contactdata[2]->content != '')
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>{{ strip_tags($contactdata[2]) }}</p>
+                  <p>{{ strip_tags($contactdata[2]->content) }}</p>
                 </div>
               </div><!-- End Info Item -->
               @endif
