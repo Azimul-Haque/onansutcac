@@ -155,10 +155,10 @@ Route::post('/dashboard/testimonials/{id}/update', 'DashboardController@updateTe
 Route::get('/dashboard/testimonials/{id}/delete', 'DashboardController@deleteTestimonial')->name('dashboard.testimonials.delete');
 
 // --- Global Presence Routes ---
-Route::get('/dashboard/global-presence', 'DashboardController@getGlobal-Presence')->name('dashboard.global-presence');
-Route::post('/dashboard/global-presence/store', 'DashboardController@storeGlobal-Presence')->name('dashboard.global-presence.store');
-Route::post('/dashboard/global-presence/{id}/update', 'DashboardController@updateGlobal-Presence')->name('dashboard.global-presence.update');
-Route::get('/dashboard/global-presence/{id}/delete', 'DashboardController@deleteGlobal-Presence')->name('dashboard.global-presence.delete');
+Route::get('/dashboard/global-presence', 'DashboardController@getGlobalPresence')->name('dashboard.global-presence');
+Route::post('/dashboard/global-presence/store', 'DashboardController@storeGlobalPresence')->name('dashboard.global-presence.store');
+Route::post('/dashboard/global-presence/{id}/update', 'DashboardController@updateGlobalPresence')->name('dashboard.global-presence.update');
+Route::get('/dashboard/global-presence/{id}/delete', 'DashboardController@deleteGlobalPresence')->name('dashboard.global-presence.delete');
 
 // --- Information Center Routes ---
 Route::get('/dashboard/information-center', 'DashboardController@getInformationCenter')->name('dashboard.information-center');
