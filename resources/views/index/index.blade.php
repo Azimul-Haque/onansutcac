@@ -36,7 +36,7 @@
               transform: scale(1.05);
           }
         </style>
-        <p data-aos="fade-up" data-aos-delay="200"><small>{{ $metadata[9]->content }}CactusNano is at the forefront of nanotechnology solutions that redefine performance, safety, and sustainability across industries. From advanced antimicrobials and smart textiles to semiconductor materials and water purification, we enable businesses to lead with innovation and responsibility.</small></p>
+        <p data-aos="fade-up" data-aos-delay="200"><small>{{ $metadata[9]->content }}</small></p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           {{-- <a href="#about" class="btn-get-started">Get Started</a>
           <a href="https://www.youtube.com/watch?v=U6fC4Ij608A" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> --}}
