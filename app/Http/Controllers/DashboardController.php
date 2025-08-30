@@ -201,7 +201,7 @@ class DashboardController extends Controller
         $product->isfeatured = $request->isfeatured;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
-        $product->text = Purifier::clean($request->text, 'youtube');
+        $product->text = $request->text;
 
         // image upload
         if($request->hasFile('image')) {
@@ -236,7 +236,7 @@ class DashboardController extends Controller
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
 
-        $product->text = Purifier::clean($request->text, 'youtube');
+        $product->text = $request->text;
 
         if($request->hasFile('image')) {
             if ($product->image && file_exists(public_path('images/products/' . $product->image))) {
@@ -307,7 +307,7 @@ class DashboardController extends Controller
         $market->title = $request->title;
         $market->serial = $request->serial;
         $market->slug = Str::slug($request->slug);
-        $market->text = Purifier::clean($request->text, 'youtube');
+        $market->text = $request->text;
 
         if($request->hasFile('image')) {
             $image    = $request->file('image');
@@ -340,7 +340,7 @@ class DashboardController extends Controller
         $market->serial = $request->serial;
         $market->slug = Str::slug($request->slug);
 
-        $market->text = Purifier::clean($request->text, 'youtube');
+        $market->text = $request->text;
 
         if($request->hasFile('image')) {
             if ($market->image && file_exists(public_path('images/markets/' . $market->image))) {
@@ -839,7 +839,7 @@ class DashboardController extends Controller
         $successstory->type = $request->type;
         $successstory->slug = Str::slug($request->slug);
         if($request->text) {
-            $successstory->text = Purifier::clean($request->text, 'youtube');
+            $successstory->text = $request->text;
         }
 
         $imageName = null;
