@@ -1164,7 +1164,7 @@ class DashboardController extends Controller
         
         // Extract lat/long if Google Maps URL is given
         if (!empty($request->locationurl)) {
-            $coords = $this->extractLatLong($data['map_url']);
+            $coords = $this->extractLatLong($request->locationurl);
             if ($coords) {
                 $data['lat'] = $coords['lat'];
                 $data['lng'] = $coords['lng'];
