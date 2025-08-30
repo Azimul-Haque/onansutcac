@@ -325,11 +325,11 @@
 
         var globalpresences = @json($globalpresences);
 
-        globalpresences.forEach(function(event) {
-            if (event.lat && event.lng) {
-                L.marker([event.lat, event.lng])
+        globalpresences.forEach(function(globalpresence) {
+            if (globalpresence.lat && globalpresence.lng) {
+                L.marker([globalpresence.lat, globalpresence.lng])
                     .addTo(map)
-                    .bindPopup("<b>" + event.title + "</b><br>" + event.address);
+                    .bindPopup("<b>" + globalpresence.title + "</b><br>" + globalpresence.address);
             }
         });
       </script>
