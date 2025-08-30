@@ -54,7 +54,15 @@
                 <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
               </ul>
             </li>
-            <li><a href="{{ route('index.markets') }}">Industries</a></li>
+            <li><a href="{{ route('index.markets') }}">Industries</a>
+              <ul>
+                @foreach($productsforfooter as $prodsformenu)
+                  <li><a href="{{ route('index.singleproduct', $prodsformenu->id) }}">{{ $prodsformenu->title }}</a></li>
+                @endforeach
+                
+                <li><a href="{{ route('index.get-about-us') }}#our-story">Our Story</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
 
