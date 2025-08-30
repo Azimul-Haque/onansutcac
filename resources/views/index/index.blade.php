@@ -21,7 +21,7 @@
           <div class="transparent-box p-5 rounded-3 shadow-lg">
               <div class="d-flex flex-column align-items-center justify-content-center text-center">
                   <h1 class="fs-1 fw-bold text-teal-200 mb-2">
-                      {{ $metadata[8]->content }}
+                      {{ strptags($metadata[8]->content) }}
                   </h2>
               </div>
           </div>
