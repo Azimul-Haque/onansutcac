@@ -206,8 +206,8 @@ class IndexController extends Controller
     {
         $product = Product::where('slug', $slug)->orderBy('id', 'desc')->firstOrFail();
 
-        $markets = Market::orderBy('id', 'desc')->get()->take(6);
-        $products = Product::orderBy('id', 'desc')->get()->take(6);
+        $markets = Market::orderBy('serial', 'asc')->get()->take(6);
+        $products = Product::orderBy('serial', 'asc')->get()->take(6);
         $recentsuccessstories = Successstory::orderBy('id', 'desc')->get()->take(5);
 
         return view('index.singleproduct')
