@@ -172,17 +172,17 @@ min-height: 200px;
 
                     <div class="form-group mb-3">
                         <label for="address">Address</label>
-                        <input type="text" name="address" id="address" class="form-control" value="{{ old('address') }}" placeholder="Address" required>
+                        <input type="text" name="address" id="address" class="form-control" value="{{ old('address') }}" placeholder="Address (OPTIONAL)">
                     </div>
 
                     <div class="form-group mb-3">
                         <label for="phone">Place Name</label>
-                        <input type="text" name="phone" id="phone" class="form-control" value="{{ old('phone') }}" placeholder="Phone Number" required>
+                        <input type="text" name="phone" id="phone" class="form-control" value="{{ old('phone') }}" placeholder="Phone Number (OPTIONAL)">
                     </div>
 
                     <div class="form-group mb-3">
                         <label for="email">Place Name</label>
-                        <input type="text" name="email" id="email" class="form-control" value="{{ old('email') }}" placeholder="Email Address" required>
+                        <input type="text" name="email" id="email" class="form-control" value="{{ old('email') }}" placeholder="Email Address (OPTIONAL)">
                     </div>
 
                     <div class="form-group mb-3">
