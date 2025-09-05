@@ -1176,8 +1176,6 @@ class DashboardController extends Controller
             $globalPresence->email = $request->email;
         }
         
-        $globalPresence->phone = $request->phone;
-        $globalPresence->email = $request->email;
         $globalPresence->locationurl = $request->locationurl;
 
         // Extract lat/long if Google Maps URL is given
@@ -1209,9 +1207,15 @@ class DashboardController extends Controller
 
         $globalPresence = Globalpresence::findOrFail($id);
         $globalPresence->placename = $request->placename;
-        $globalPresence->address = $request->address;
-        $globalPresence->phone = $request->phone;
-        $globalPresence->email = $request->email;
+        if (!empty($request->address)) {
+            $globalPresence->address = $request->address;
+        }
+        if (!empty($request->phone)) {
+            $globalPresence->phone = $request->phone;
+        }
+        if (!empty($request->email)) {
+            $globalPresence->email = $request->email;
+        }
         $globalPresence->locationurl = $request->locationurl;
 
         // Extract lat/long if Google Maps URL is given
