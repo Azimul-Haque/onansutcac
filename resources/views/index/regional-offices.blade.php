@@ -64,7 +64,7 @@
             <div class="feature-box orange">
               <i class="bi bi-award"></i>
               <h4>Head Office</h4>
-              <p style="margin-bottom: 20px;">@if(!empty($contactdata)) {{ $contactdata-> }} @endif</p>
+              <p style="margin-bottom: 20px;">@if(!empty($contactdata)) {{ $contactdata[0]->content }} @endif</p>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
