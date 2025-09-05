@@ -192,8 +192,8 @@ class DashboardController extends Controller
             'type' => 'required',
             'isfeatured' => 'required',
             'title' => 'required|string|max:191',
-            'serial' => 'required',
             'slug'  => 'required|string|max:300|unique:products,slug',
+            'serial' => 'required',
             'text'  => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ));
@@ -203,6 +203,7 @@ class DashboardController extends Controller
         $product->isfeatured = $request->isfeatured;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
+        $product-> = $request->            'serial' => 'required',;
         $product->text = $request->text;
 
         // image upload
