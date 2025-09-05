@@ -1169,6 +1169,12 @@ class DashboardController extends Controller
         if (!empty($request->address)) {
             $globalPresence->address = $request->address;
         }
+        if (!empty($request->phone)) {
+            $globalPresence->phone = $request->phone;
+        }
+        if (!empty($request->email)) {
+            $globalPresence->email = $request->email;
+        }
         
         $globalPresence->phone = $request->phone;
         $globalPresence->email = $request->email;
