@@ -61,7 +61,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $featuredprodandtechs = Product::where('isfeatured', 1)->get()->take(3);
+        $featuredprodandtechs = Product::where('isfeatured', 1)->orderBy('serial', 'asc')->get()->take(3);
         $featuredevents = Event::orderBy('id', 'desc')->get()->take(4);
         $newsforhomepage = News::orderBy('id', 'desc')->get()->take(3);
         $clientsforhomepage = Client::orderBy('id', 'desc')->get();
