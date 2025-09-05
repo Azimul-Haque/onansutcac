@@ -156,8 +156,8 @@ min-height: 200px;
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="placenameAdd">Place Name</label>
-                        <input type="text" name="placename" id="placenameAdd" class="form-control" value="{{ old('placename') }}" placeholder="Placename" required>
+                        <label for="address">Place Name</label>
+                        <input type="text" name="address" id="address" class="form-control" value="{{ old('address') }}" placeholder="Placename" required>
                     </div>
 
                     <div class="form-group mb-3">
