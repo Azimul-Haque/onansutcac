@@ -247,6 +247,8 @@ class IndexController extends Controller
     {
         $contactdata = About::where('id', "!=", 1)->get();
         $globalpresences = Globalpresence::orderBy('id', 'desc')->get();
+
+        dd($globalpresences);
                     
         return view('index.regional-offices')
                     ->withGlobalpresences($globalpresences)
