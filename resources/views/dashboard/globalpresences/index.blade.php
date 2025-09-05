@@ -77,8 +77,8 @@ min-height: 200px;
                                             @method('POST')
 
                                             <div class="form-group mb-3">
-                                                <label for="">Place Name</label>
-                                                <input type="text" name="placename" id="" class="form-control" value="{{ old('placename', $globalPresence->placename) }}" placeholder="Placename" required>
+                                                <label for="placenameEdit{{ $globalPresence->id }}">Place Name</label>
+                                                <input type="text" name="placename" id="placenameEdit{{ $globalPresence->id }}" class="form-control" value="{{ old('placename', $globalPresence->placename) }}" placeholder="Placename" required>
                                                 @error('placename')
                                                     <span class="text-danger">{{ $message }}</span>
                                                 @enderror
