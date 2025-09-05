@@ -21,16 +21,6 @@
       </div>
     </div><!-- End Page Title -->
 
-    
-    <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Find the Office Nearest You</h2>
-        <p>Regional Offices<br></p>
-      </div><!-- End Section Title -->
-    </section>
-
     <section id="global-presence" class="stats section light-background">
 
       <!-- Section Title -->
