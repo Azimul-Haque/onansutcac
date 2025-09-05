@@ -22,8 +22,6 @@
     </div><!-- End Page Title -->
 
     
-
-    <!-- services Section -->
     <section id="services" class="services section light-background">
 
       <!-- Section Title -->
@@ -31,11 +29,33 @@
         <h2>Find the Office Nearest You</h2>
         <p>Regional Offices<br></p>
       </div><!-- End Section Title -->
+    </section>
 
-      
+    <section id="global-presence" class="stats section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Connecting Across Continents</h2>
+        <p>Global Presence</p>
+      </div><!-- End Section Title -->
 
 
-    </section><!-- /services Section -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div id="map" class="shadow-lg rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+        {{-- <div class="row g-4 justify-content-center mb-4">
+            
+            <div class="col-12 col-md-12">
+              <div id="map"></div>
+              <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence" style="width: 100%;">
+            </div>
+        </div> --}}
+
+    </section>
 
     <section id="features-cards" class="features-cards section">
 
