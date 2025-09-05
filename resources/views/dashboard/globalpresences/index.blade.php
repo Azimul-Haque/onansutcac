@@ -91,12 +91,12 @@ min-height: 200px;
 
                                             <div class="form-group mb-3">
                                                 <label for="phone">Place Name</label>
-                                                <input type="text" name="phone" id="phone" class="form-control" value="{{ old('placename', $globalPresence->placename) }}" placeholder="Phone Number" required>
+                                                <input type="text" name="phone" id="phone" class="form-control" value="{{ old('placename', $globalPresence->phone) }}" placeholder="Phone Number" required>
                                             </div>
 
                                             <div class="form-group mb-3">
                                                 <label for="email">Place Name</label>
-                                                <input type="text" name="email" id="email" class="form-control" value="{{ old('placename', $globalPresence->placename) }}" placeholder="email Address" required>
+                                                <input type="text" name="email" id="email" class="form-control" value="{{ old('email', $globalPresence->email) }}" placeholder="Email Address" required>
                                             </div>
 
                                             <div class="form-group mb-3">
