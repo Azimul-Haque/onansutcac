@@ -203,7 +203,7 @@ class DashboardController extends Controller
         $product->isfeatured = $request->isfeatured;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
-        $product-> = $request->            'serial' => 'required',;
+        $product->serial = $request->serial;
         $product->text = $request->text;
 
         // image upload
