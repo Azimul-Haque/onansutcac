@@ -35,8 +35,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Connecting Across Continents</h2>
-        <p>Global Presence</p>
+        <h2>Find the Office Nearest You</h2>
+        <p>Regional Offices<br></p>
       </div><!-- End Section Title -->
 
 
