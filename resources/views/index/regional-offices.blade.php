@@ -60,7 +60,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-6 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
             <div class="feature-box orange">
               <i class="bi bi-award"></i>
               <h4>Head Office</h4>
@@ -68,9 +68,9 @@
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($contactdata[1]->content))) Tel: {{ strip_tags($contactdata[1]->content) }} @endif</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($contactdata[2]->content))) Email: {{ strip_tags($contactdata[2]->content) }} @endif</span>
             </div>
-          </div><!-- End Feature Borx-->
+          </div>
 
-          <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+          {{-- <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
             <div class="feature-box blue">
               <i class="bi bi-patch-check"></i>
               <h4>Corporate Office</h4>
@@ -78,7 +78,7 @@
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
-          </div><!-- End Feature Borx-->
+          </div> --}}
 
           <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
             <div class="feature-box green">
@@ -88,7 +88,7 @@
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
-          </div><!-- End Feature Borx-->
+          </div>
 
           <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400">
             <div class="feature-box red">
@@ -98,7 +98,7 @@
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
-          </div><!-- End Feature Borx-->
+          </div>
 
         </div>
 
