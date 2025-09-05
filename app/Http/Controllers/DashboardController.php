@@ -192,6 +192,7 @@ class DashboardController extends Controller
             'type' => 'required',
             'isfeatured' => 'required',
             'title' => 'required|string|max:191',
+            'serial' => 'required',
             'slug'  => 'required|string|max:300|unique:products,slug',
             'text'  => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
