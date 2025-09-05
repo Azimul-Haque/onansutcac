@@ -94,9 +94,9 @@
             <div class="feature-box red">
               <i class="bi bi-shield-check"></i>
               <h4>Regional Office</h4>
-              <p style="margin-bottom: 20px;">Hi Tech City, BTL,  Kaliakoir, Gazipur, Bangladesh</p>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
+              <p style="margin-bottom: 20px;">@if(!empty(strip_tags($globalpresences[0]->address))) {{ strip_tags($globalpresences[0]->address) }} @endif</p>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($globalpresences[0]->phone))) Tel: {{ strip_tags($globalpresences[0]->phone) }} @endif</span><br/>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($globalpresences[0]->email))) Email: {{ strip_tags($globalpresences[0]->email) }} @endif</span>
             </div>
           </div>
 
