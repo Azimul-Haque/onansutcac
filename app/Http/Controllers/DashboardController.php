@@ -1166,7 +1166,10 @@ class DashboardController extends Controller
 
         $globalPresence = new Globalpresence;
         $globalPresence->placename = $request->placename;
-        $globalPresence->address = $request->address;
+        if (!empty($request->address)) {
+            $globalPresence->address = $request->address;
+        }
+        
         $globalPresence->phone = $request->phone;
         $globalPresence->email = $request->email;
         $globalPresence->locationurl = $request->locationurl;
