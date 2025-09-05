@@ -229,6 +229,7 @@ class DashboardController extends Controller
             'isfeatured' => 'required',
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug,' . $id,
+            'serial'  => 'required',
             'text'  => 'required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
