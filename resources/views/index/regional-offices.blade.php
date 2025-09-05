@@ -64,7 +64,7 @@
             <div class="feature-box orange">
               <i class="bi bi-award"></i>
               <h4>Head Office</h4>
-              <p style="margin-bottom: 20px;">@if(!empty(strip_tags($contactdata[0]->content))) {{ strip_tags($contactdata[0]->content) }} @endif</p>
+              <p style="margin-bottom: 20px;">@if(!empty(strip_tags($contactdata[1]->content))) {{ strip_tags($contactdata[0]->content) }} @endif</p>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($contactdata[1]->content))) Tel: {{ strip_tags($contactdata[1]->content) }} @endif</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($contactdata[2]->content))) Email: {{ strip_tags($contactdata[2]->content) }} @endif</span>
             </div>
@@ -84,7 +84,7 @@
             <div class="feature-box green">
               <i class="bi bi-sunrise"></i>
               <h4>Regional Office</h4>
-              <p style="margin-bottom: 20px;">@if(!empty(strip_tags($globalpresences->content))) {{ strip_tags($globalpresences->content) }} @endif</p>
+              <p style="margin-bottom: 20px;">@if(!empty(strip_tags($globalpresences[0]->content))) {{ strip_tags($globalpresences[0]->content) }} @endif</p>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
