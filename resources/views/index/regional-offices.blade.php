@@ -66,7 +66,7 @@
               <h4>Head Office</h4>
               <p style="margin-bottom: 20px;">@if(!empty(strip_tags($contactdata[1]->content))) {{ strip_tags($contactdata[0]->content) }} @endif</p>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($contactdata[1]->content))) Tel: {{ strip_tags($contactdata[1]->content) }} @endif</span><br/>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($contactdata[2]->content))) Tel: {{ strip_tags($contactdata[2]->content) }} @endif</span>
             </div>
           </div><!-- End Feature Borx-->
 
