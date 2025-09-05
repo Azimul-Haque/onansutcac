@@ -287,6 +287,7 @@
                     </div>
                 </div>
 
+                <div class="col-md-6">
                 <div class="input-group mb-3">
                     <input type="text"
                            name="slug"
@@ -297,6 +298,7 @@
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-link"></span></div>
                     </div>
+                </div>
                 </div>
 
                 <div class="col-md-6">
