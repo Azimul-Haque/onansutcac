@@ -220,7 +220,7 @@ class IndexController extends Controller
     public function getMarkets()
     {
         $markets = Market::orderBy('serial', 'asc')->get();
-        $products = Product::orderBy('id', 'desc')->get()->take(6);
+        $products = Product::orderBy('serial', 'asc')->get()->take(6);
         $recentsuccessstories = Successstory::orderBy('id', 'desc')->get()->take(5);
         return view('index.markets')
                     ->withMarkets($markets)
