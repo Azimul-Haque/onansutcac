@@ -2,7 +2,14 @@
 @section('title') Regional Offices @endsection
 
 @section('third_party_stylesheets')
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <style>
+  #map {
+    height: 500px;  /* Required for Leaflet to display */
+    width: 100%;
+    border-radius: 10px; /* Optional: smooth edges */
+  }
+  </style>
 @endsection
 
 @section('content')
