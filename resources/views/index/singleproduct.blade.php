@@ -131,7 +131,7 @@
       </div>
     </div>
 
-    <section id="relevant-technologies" class="section light-background">
+    {{-- <section id="relevant-technologies" class="section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -242,7 +242,7 @@
         }
       </style>
 
-    </section>
+    </section> --}}
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
