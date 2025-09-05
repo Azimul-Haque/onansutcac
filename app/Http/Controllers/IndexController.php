@@ -247,9 +247,7 @@ class IndexController extends Controller
     {
         $globalpresences = Globalpresence::orderBy('id', 'desc')->get();
                     
-        return view('index.regional-offices')
-                            ->withWwwutop($wwwutop)
-                            ->withGlobalpresences($globalpresences);
+        return view('index.regional-offices')->withGlobalpresences($globalpresences);
     }
 
     public function getRegionalOffice()
