@@ -239,7 +239,7 @@ class DashboardController extends Controller
         $product->isfeatured = $request->isfeatured;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
-
+        $product->serial = $request->serial;
         $product->text = $request->text;
 
         if($request->hasFile('image')) {
