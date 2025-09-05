@@ -65,7 +65,7 @@
               <i class="bi bi-award"></i>
               <h4>Head Office</h4>
               <p style="margin-bottom: 20px;">@if(!empty($contactdata[0]->content)) {{ strip_tags($contactdata[0]->content) }} @endif</p>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty($contactdata[0]->content)) Tel: {{ strip_tags($contactdata[0]->content) }} @endif</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
           </div><!-- End Feature Borx-->
