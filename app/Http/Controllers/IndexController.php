@@ -196,7 +196,7 @@ class IndexController extends Controller
 
     public function getProducts()
     {
-        $products = Product::orderBy('serial', 'desc')->get();
+        $products = Product::orderBy('serial', 'asc')->get();
 
         return view('index.products')
                     ->withProducts($products);
