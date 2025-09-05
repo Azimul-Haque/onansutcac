@@ -156,6 +156,11 @@ min-height: 200px;
                     </div>
 
                     <div class="form-group mb-3">
+                        <label for="placenameAdd">Place Name</label>
+                        <input type="text" name="placename" id="placenameAdd" class="form-control" value="{{ old('placename') }}" placeholder="Placename" required>
+                    </div>
+
+                    <div class="form-group mb-3">
                         <label for="locationurlAdd">Location URL</label>
                         <input type="url" name="locationurl" id="locationurlAdd" class="form-control" value="{{ old('locationurl') }}" placeholder="Google Maps URL" required>
                         @error('locationurl')
