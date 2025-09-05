@@ -149,7 +149,7 @@ min-height: 200px;
                     @csrf
                     <div class="form-group mb-3">
                         <label for="placenameAdd">Place Name</label>
-                        <input type="text" name="placename" id="placenameAdd" class="form-control" value="{{ old('placename') }}" placeholder="Placename" required>
+                        <input type="text" name="placename" id="placenameAdd" class="form-control" value="{{ old('placename') }}" placeholder="Placename (e.g. DHAKA, BANGLADESH)" required>
                         @error('placename')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
