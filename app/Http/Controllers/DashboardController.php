@@ -1158,9 +1158,9 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'placename'    => 'required|string|max:191',
-            'address'    => 'required|string|max:191',
-            'phone'    => 'required|string|max:191',
-            'email'    => 'required|string|max:191',
+            'address'    => 'sometimes',
+            'phone'    => 'sometimes',
+            'email'    => 'sometimes',
             'locationurl'  => 'required|string',
         ]);
 
@@ -1192,9 +1192,9 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'placename'    => 'required|string|max:191',
-            'address'    => 'required|string|max:191',
-            'phone'    => 'required|string|max:191',
-            'email'    => 'required|string|max:191',
+            'address'    => 'sometimes',
+            'phone'    => 'sometimes',
+            'email'    => 'sometimes',
             'locationurl'  => 'required|string',
         ]);
 
