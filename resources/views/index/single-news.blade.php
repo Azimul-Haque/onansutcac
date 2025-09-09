@@ -43,7 +43,7 @@
                   <ul>
                     <li class="d-flex align-items-center"><i class="bi bi-megaphone"></i><a href="#!">{{ news_type($news->type) }}</a></li>
                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#!"><time datetime="{{ $news->created_at }}">{{ date('F d, Y', strtotime($news->created_at)) }}</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-book"></i> {{ estimatedReadingTime($news->text) }} mins read</li>
+                    <!-- <li class="d-flex align-items-center"><i class="bi bi-book"></i> {{ estimatedReadingTime($news->text) }} mins read</li> -->
                   </ul>
                 </div><!-- End meta top -->
 
