@@ -52,7 +52,7 @@
                 <div class="meta-top">
                   <ul>
                     {{-- <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">John Doe</a></li> --}}
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ route('index.singleproduct', $product->slug) }}"><time datetime="{{ $product->created_at }}">{{ date('d F, Y', strtotime($product->created_at)) }}</time></a></li>
+                    {{-- <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ route('index.singleproduct', $product->slug) }}"><time datetime="{{ $product->created_at }}">{{ date('d F, Y', strtotime($product->created_at)) }}</time></a></li> --}}
                     <li class="d-flex align-items-center"><i class="bi bi-book"></i> {{ estimatedReadingTime($product->text) }} mins read</li>
                   </ul>
                 </div><!-- End meta top -->
@@ -131,7 +131,7 @@
       </div>
     </div>
 
-    <section id="relevant-technologies" class="section light-background">
+    {{-- <section id="relevant-technologies" class="section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -242,7 +242,7 @@
         }
       </style>
 
-    </section>
+    </section> --}}
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">

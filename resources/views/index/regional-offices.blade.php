@@ -2,7 +2,14 @@
 @section('title') Regional Offices @endsection
 
 @section('third_party_stylesheets')
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <style>
+  #map {
+    height: 500px;  /* Required for Leaflet to display */
+    width: 100%;
+    border-radius: 10px; /* Optional: smooth edges */
+  }
+  </style>
 @endsection
 
 @section('content')
@@ -21,10 +28,7 @@
       </div>
     </div><!-- End Page Title -->
 
-    
-
-    <!-- services Section -->
-    <section id="services" class="services section light-background">
+    <section id="global-presence" class="stats section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -32,122 +36,23 @@
         <p>Regional Offices<br></p>
       </div><!-- End Section Title -->
 
-      <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
-        
 
-        <div class="map-container">
-          <!-- Example Pins -->
-          <div class="pin" style="top: 38%; left: 22%;">
-            <div class="tooltip">
-              USA Office<br>
-              <span>Head Office</span><br>
-              <a href="#features-cards">Details</a>
-            </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div id="map" class="shadow-lg rounded-lg"></div>
           </div>
-
-          <div class="pin" style="top: 62%; left: 75.5%;">
-            <div class="tooltip">
-              Singapore Office<br>
-              <span>Regional Office</span><br>
-              <a href="#features-cards">Details</a>
-            </div>
-          </div>
-
-          {{-- <div class="pin" style="top: 33%; left: 41%;">
-            <div class="tooltip">
-              UK Office<br>
-              <a href="https://uk.example.com" target="_blank">Visit Site</a>
-            </div>
-          </div> --}}
         </div>
-
       </div>
+        {{-- <div class="row g-4 justify-content-center mb-4">
+            
+            <div class="col-12 col-md-12">
+              <div id="map"></div>
+              <img src="{{ asset('images/global-presence.png') }}" class="img-fluid rounded-4 mt-4" alt="Global Presence" style="width: 100%;">
+            </div>
+        </div> --}}
 
-      <style>
-          .map-container {
-            position: relative;
-            width: 100%;
-            max-width: 100%; /* Optional: constrain width on larger screens */
-            min-height: 500px;
-            border-radius: 15px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-          }
-
-          /* Background map with 50% opacity */
-          .map-container::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/d/df/World_map_%28Miller_cylindrical_projection%2C_blank_without_Antarctica%29.svg') no-repeat center/cover;
-            opacity: 0.5;
-            z-index: 0;
-          }
-
-          @media (max-width: 1024px) {
-            .map-container {
-              display: none;
-            }
-          }
-
-          @media (min-width: 1399px) {
-            .map-container {
-              height: 650px;
-            }
-          }
-
-          /* Content over the map */
-          .content-on-map {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            padding: 20px;
-            color: #333;
-          }
-
-          .pin {
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            background: linear-gradient(145deg, #4e00c2, #00c2c2);
-            border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            cursor: pointer;
-            transform: translate(-50%, -50%);
-          }
-
-          .pin:hover .tooltip {
-            opacity: 1;
-            visibility: visible;
-          }
-
-          .tooltip {
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            background: rgba(0, 0, 0, 0.75);
-            color: #fff;
-            padding: 6px 10px;
-            border-radius: 5px;
-            white-space: nowrap;
-            font-size: 0.85rem;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 10;
-          }
-
-          .tooltip a {
-            color: #aeeaff;
-            text-decoration: underline;
-          }
-        </style>
-
-
-
-    </section><!-- /services Section -->
+    </section>
 
     <section id="features-cards" class="features-cards section">
 
@@ -155,17 +60,17 @@
 
         <div class="row gy-4">
 
-          <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-6 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
             <div class="feature-box orange">
               <i class="bi bi-award"></i>
               <h4>Head Office</h4>
-              <p style="margin-bottom: 20px;">2502 West Huntington Drive<br/>Tempe, AZ 85282</p>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
+              <p style="margin-bottom: 20px;">@if(!empty(strip_tags($contactdata[1]->content))) {{ strip_tags($contactdata[0]->content) }} @endif</p>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($contactdata[1]->content))) Tel: {{ strip_tags($contactdata[1]->content) }} @endif</span><br/>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($contactdata[2]->content))) Email: {{ strip_tags($contactdata[2]->content) }} @endif</span>
             </div>
-          </div><!-- End Feature Borx-->
+          </div>
 
-          <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+          {{-- <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
             <div class="feature-box blue">
               <i class="bi bi-patch-check"></i>
               <h4>Corporate Office</h4>
@@ -173,27 +78,27 @@
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
               <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
             </div>
-          </div><!-- End Feature Borx-->
+          </div> --}}
 
           <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
             <div class="feature-box green">
               <i class="bi bi-sunrise"></i>
               <h4>Regional Office</h4>
-              <p style="margin-bottom: 20px;">India Office??</p>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
+              <p style="margin-bottom: 20px;">@if(!empty(strip_tags($globalpresences[0]->address))) {{ strip_tags($globalpresences[0]->address) }} @endif</p>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($globalpresences[0]->phone))) Tel: {{ strip_tags($globalpresences[0]->phone) }} @endif</span><br/>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($globalpresences[0]->email))) Email: {{ strip_tags($globalpresences[0]->email) }} @endif</span>
             </div>
-          </div><!-- End Feature Borx-->
+          </div>
 
           <div class="col-xl-3 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400">
             <div class="feature-box red">
               <i class="bi bi-shield-check"></i>
               <h4>Regional Office</h4>
-              <p style="margin-bottom: 20px;">Hi Tech City, BTL,  Kaliakoir, Gazipur, Bangladesh</p>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Tel: +44 20 7946 0958</span><br/>
-              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">Email: info.uk@company.com</span>
+              <p style="margin-bottom: 20px;">@if(!empty(strip_tags($globalpresences[1]->address))) {{ strip_tags($globalpresences[1]->address) }} @endif</p>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($globalpresences[1]->phone))) Tel: {{ strip_tags($globalpresences[1]->phone) }} @endif</span><br/>
+              <span style="font-size: 14px; font-weight: 600; color: #3b3b3b;">@if(!empty(strip_tags($globalpresences[1]->email))) Email: {{ strip_tags($globalpresences[1]->email) }} @endif</span>
             </div>
-          </div><!-- End Feature Borx-->
+          </div>
 
         </div>
 
@@ -217,5 +122,50 @@
 @endsection
 
 @section('third_party_scripts')
+
+  <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+      // Initialize map
+      var map = L.map('map').setView([20, 0], 2);
+
+      // Load OpenStreetMap tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        {{-- attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors', --}}
+        attributionControl: false
+      }).addTo(map);
+      map.attributionControl.setPrefix(''); // Removes the "Leaflet" prefix
+
+      // Define custom icon (blue pin)
+      var customIcon = L.icon({
+          iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png', // pin image
+          iconSize: [32, 32], // size of the icon
+          iconAnchor: [16, 32], // point of the icon at marker's location
+          popupAnchor: [0, -32] // position of popup relative to icon
+      });
+
+      // Add markers with custom icons
+{{--         L.marker([1.3521, 103.8198], {icon: customIcon}).addTo(map)
+      .bindPopup('<b>Singapore</b>').bindTooltip('<b>Singapore</b>').openTooltip();
+
+      L.marker([40.7128, -74.0060], {icon: customIcon}).addTo(map)
+      .bindPopup('<b>New York, USA</b>').bindTooltip('<b>New York, USA</b>').openTooltip();
+
+      L.marker([51.5074, -0.1278], {icon: customIcon}).addTo(map)
+      .bindPopup('<b>London, UK</b>').bindTooltip('<b>London, UK</b>').openTooltip(); --}}
+
+      var globalpresences = @json($globalpresences);
+
+      globalpresences.forEach(function(globalpresence) {
+          if (globalpresence.lat && globalpresence.lng) {
+              L.marker([globalpresence.lat, globalpresence.lng], {icon: customIcon})
+                  .addTo(map)
+                  .bindPopup("<b>" + globalpresence.placename + "</b>")
+                  .bindTooltip("<b>" + globalpresence.placename + "</b>")
+                  .openTooltip();
+          }
+      });
+    </script>
 
 @endsection

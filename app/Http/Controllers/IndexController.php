@@ -46,7 +46,7 @@ class IndexController extends Controller
     public function __construct()
     {
         View::share('productsforfooter', Cache::remember('products_for_footer', 60 * 24 * 30, function () {
-            return Product::orderBy('id', 'desc')->get()->take(6);
+            return Product::orderBy('serial', 'asc')->get()->take(6);
         }));
 
         View::share('marketsforfooter', Cache::remember('markets_for_footer', 60 * 24 * 30, function () {
@@ -61,7 +61,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $featuredprodandtechs = Product::where('isfeatured', 1)->get()->take(3);
+        $featuredprodandtechs = Product::where('isfeatured', 1)->orderBy('serial', 'asc')->get()->take(3);
         $featuredevents = Event::orderBy('id', 'desc')->get()->take(4);
         $newsforhomepage = News::orderBy('id', 'desc')->get()->take(3);
         $clientsforhomepage = Client::orderBy('id', 'desc')->get();
@@ -196,7 +196,7 @@ class IndexController extends Controller
 
     public function getProducts()
     {
-        $products = Product::orderBy('id', 'desc')->get();
+        $products = Product::orderBy('serial', 'asc')->get();
 
         return view('index.products')
                     ->withProducts($products);
@@ -206,8 +206,8 @@ class IndexController extends Controller
     {
         $product = Product::where('slug', $slug)->orderBy('id', 'desc')->firstOrFail();
 
-        $markets = Market::orderBy('id', 'desc')->get()->take(6);
-        $products = Product::orderBy('id', 'desc')->get()->take(6);
+        $markets = Market::orderBy('serial', 'asc')->get()->take(6);
+        $products = Product::orderBy('serial', 'asc')->get()->take(6);
         $recentsuccessstories = Successstory::orderBy('id', 'desc')->get()->take(5);
 
         return view('index.singleproduct')
@@ -220,7 +220,7 @@ class IndexController extends Controller
     public function getMarkets()
     {
         $markets = Market::orderBy('serial', 'asc')->get();
-        $products = Product::orderBy('id', 'desc')->get()->take(6);
+        $products = Product::orderBy('serial', 'asc')->get()->take(6);
         $recentsuccessstories = Successstory::orderBy('id', 'desc')->get()->take(5);
         return view('index.markets')
                     ->withMarkets($markets)
@@ -232,8 +232,8 @@ class IndexController extends Controller
     {
         $market = Market::where('slug', $slug)->orderBy('id', 'desc')->firstOrFail();
         
-        $markets = Market::orderBy('id', 'desc')->get()->take(6);
-        $products = Product::orderBy('id', 'desc')->get()->take(6);
+        $markets = Market::orderBy('serial', 'asc')->get()->take(6);
+        $products = Product::orderBy('serial', 'asc')->get()->take(6);
         $recentsuccessstories = Successstory::orderBy('id', 'desc')->get()->take(5);
 
         return view('index.singlemarket')
@@ -245,7 +245,12 @@ class IndexController extends Controller
 
     public function getRegionalOffices()
     {
-        return view('index.regional-offices');
+        $contactdata = About::where('id', "!=", 1)->get();
+        $globalpresences = Globalpresence::orderBy('id', 'asc')->get();
+                    
+        return view('index.regional-offices')
+                    ->withGlobalpresences($globalpresences)
+                    ->withContactdata($contactdata);
     }
 
     public function getRegionalOffice()

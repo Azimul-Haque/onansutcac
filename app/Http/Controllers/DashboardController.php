@@ -193,6 +193,7 @@ class DashboardController extends Controller
             'isfeatured' => 'required',
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug',
+            'serial' => 'required',
             'text'  => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ));
@@ -202,6 +203,7 @@ class DashboardController extends Controller
         $product->isfeatured = $request->isfeatured;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
+        $product->serial = $request->serial;
         $product->text = $request->text;
 
         // image upload
@@ -227,6 +229,7 @@ class DashboardController extends Controller
             'isfeatured' => 'required',
             'title' => 'required|string|max:191',
             'slug'  => 'required|string|max:300|unique:products,slug,' . $id,
+            'serial'  => 'required',
             'text'  => 'required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
@@ -236,7 +239,7 @@ class DashboardController extends Controller
         $product->isfeatured = $request->isfeatured;
         $product->title = $request->title;
         $product->slug = Str::slug($request->slug);
-
+        $product->serial = $request->serial;
         $product->text = $request->text;
 
         if($request->hasFile('image')) {
@@ -1155,11 +1158,24 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'placename'    => 'required|string|max:191',
+            'address'    => 'sometimes',
+            'phone'    => 'sometimes',
+            'email'    => 'sometimes',
             'locationurl'  => 'required|string',
         ]);
 
         $globalPresence = new Globalpresence;
         $globalPresence->placename = $request->placename;
+        if (!empty($request->address)) {
+            $globalPresence->address = $request->address;
+        }
+        if (!empty($request->phone)) {
+            $globalPresence->phone = $request->phone;
+        }
+        if (!empty($request->email)) {
+            $globalPresence->email = $request->email;
+        }
+        
         $globalPresence->locationurl = $request->locationurl;
 
         // Extract lat/long if Google Maps URL is given
@@ -1183,11 +1199,23 @@ class DashboardController extends Controller
     {
         $this->validate($request, [
             'placename'    => 'required|string|max:191',
+            'address'    => 'sometimes',
+            'phone'    => 'sometimes',
+            'email'    => 'sometimes',
             'locationurl'  => 'required|string',
         ]);
 
         $globalPresence = Globalpresence::findOrFail($id);
         $globalPresence->placename = $request->placename;
+        if (!empty($request->address)) {
+            $globalPresence->address = $request->address;
+        }
+        if (!empty($request->phone)) {
+            $globalPresence->phone = $request->phone;
+        }
+        if (!empty($request->email)) {
+            $globalPresence->email = $request->email;
+        }
         $globalPresence->locationurl = $request->locationurl;
 
         // Extract lat/long if Google Maps URL is given

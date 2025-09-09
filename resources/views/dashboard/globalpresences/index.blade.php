@@ -85,6 +85,21 @@ min-height: 200px;
                                             </div>
 
                                             <div class="form-group mb-3">
+                                                <label for="address">Address</label>
+                                                <input type="text" name="address" id="address" class="form-control" value="{{ old('address', $globalPresence->address) }}" placeholder="Address (OPTIONAL)">
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label for="phone">Place Name</label>
+                                                <input type="text" name="phone" id="phone" class="form-control" value="{{ old('phone', $globalPresence->phone) }}" placeholder="Phone Number (OPTIONAL)">
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label for="email">Place Name</label>
+                                                <input type="text" name="email" id="email" class="form-control" value="{{ old('email', $globalPresence->email) }}" placeholder="Email Address (OPTIONAL)">
+                                            </div>
+
+                                            <div class="form-group mb-3">
                                                 <label for="locationurlEdit{{ $globalPresence->id }}">Location URL</label>
                                                 <input type="url" name="locationurl" id="locationurlEdit{{ $globalPresence->id }}" class="form-control" value="{{ old('locationurl', $globalPresence->locationurl) }}" placeholder="Google Maps URL" required>
                                                 @error('locationurl')
@@ -149,10 +164,25 @@ min-height: 200px;
                     @csrf
                     <div class="form-group mb-3">
                         <label for="placenameAdd">Place Name</label>
-                        <input type="text" name="placename" id="placenameAdd" class="form-control" value="{{ old('placename') }}" placeholder="Placename" required>
+                        <input type="text" name="placename" id="placenameAdd" class="form-control" value="{{ old('placename') }}" placeholder="Placename (e.g. DHAKA, BANGLADESH)" required>
                         @error('placename')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" class="form-control" value="{{ old('address') }}" placeholder="Address (OPTIONAL)">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="phone">Place Name</label>
+                        <input type="text" name="phone" id="phone" class="form-control" value="{{ old('phone') }}" placeholder="Phone Number (OPTIONAL)">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="email">Place Name</label>
+                        <input type="text" name="email" id="email" class="form-control" value="{{ old('email') }}" placeholder="Email Address (OPTIONAL)">
                     </div>
 
                     <div class="form-group mb-3">
