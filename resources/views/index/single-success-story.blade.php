@@ -43,7 +43,7 @@
                   <ul>
                     {{-- <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">John Doe</a></li> --}}
                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="{{ $successstory->created_at }}">{{ date('F d, Y', strtotime($successstory->created_at)) }}</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-book"></i> {{ estimatedReadingTime($successstory->text) }} mins read</li>
+                    <!-- <li class="d-flex align-items-center"><i class="bi bi-book"></i> {{ estimatedReadingTime($successstory->text) }} mins read</li> -->
                   </ul>
                 </div><!-- End meta top -->
 
