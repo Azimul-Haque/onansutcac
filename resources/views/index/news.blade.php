@@ -95,13 +95,12 @@
     </section>
 
 
-    <!-- Testimonials Section -->
     <!-- <section id="testimonials" class="testimonials section">
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Success Stories</h2>
         <p>Where Innovation Meets Success</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
