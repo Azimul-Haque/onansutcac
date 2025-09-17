@@ -61,10 +61,10 @@
                 </div><!-- End post content -->
 
                 <div class="meta-bottom">
-                  <i class="bi bi-folder"></i>
+                  <!-- <i class="bi bi-folder"></i>
                   <ul class="cats">
                     <li><a href="#" class="badge bg-info" style="color: #FFFFFF;">{{ ind_type($market->type) }}</a></li>
-                  </ul>
+                  </ul> -->
 
                   {{-- <i class="bi bi-tags"></i>
                   <ul class="tags">
