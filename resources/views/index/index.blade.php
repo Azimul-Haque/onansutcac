@@ -240,13 +240,13 @@
     </section> -->
 
     
-    <section id="features" class="features section light-background">
+    <!-- <section id="features" class="features section light-background">
 
-      <!-- Section Title -->
+      
       <div class="container section-title" data-aos="fade-up">
         <h2>Events</h2>
         <p>Discover Our Latest Happenings</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -259,8 +259,8 @@
             </a>
           </li>
           @endforeach
-        </ul><!-- End Tab Nav -->
-
+        </ul>
+        
         <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
           @foreach($featuredevents as $key => $event)
           <div class="tab-pane fade {{ $key == 0 ? 'show active' : '' }}" id="features-{{ $event->id }}">
@@ -309,7 +309,7 @@
 
       </div>
 
-    </section>
+    </section> -->
 
     <!-- Clients Section -->
     <section id="clients" class="recent-news section">
