@@ -62,12 +62,14 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#"><span>News & Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li><a href="{{ route('index.news') }}">News</a></li>
+
+        <!-- <li class="dropdown"><a href="#"><span>News & Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="{{ route('index.news') }}">News</a></li>
             <li><a href="{{ route('index.events') }}">Events</a></li>
           </ul>
-        </li>
+        </li> -->
         
 
         {{-- <li class="dropdown"><a href="#"><span>Sustainability</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
