@@ -154,7 +154,7 @@
 
       </div>
 
-    </section> -->
+    </section> 
 
     <style>
       .testimonials .testimonial-item {
@@ -201,7 +201,7 @@
           color: color-mix(in srgb, var(--default-color), transparent 50%);
           margin-bottom: 0;
       }
-    </style>
+    </style> -->
 
     <section id="stats" class="stats section light-background" style="background: linear-gradient(to right, #39b54a, #007cc2); color: white; padding: 80px 0; text-align: center;">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
