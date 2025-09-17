@@ -244,14 +244,12 @@
 
     </section> --}}
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <!-- <section id="testimonials" class="testimonials section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Success Stories</h2>
         <p>Where Innovation Meets Success</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container aos-init" data-aos="fade-up" data-aos-delay="100">
 
@@ -308,7 +306,7 @@
 
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </section>
 
     <style>
       .testimonials .testimonial-item {
@@ -355,7 +353,7 @@
           color: color-mix(in srgb, var(--default-color), transparent 50%);
           margin-bottom: 0;
       }
-    </style>
+    </style> -->
 
     
 
