@@ -218,7 +218,7 @@
 
     </section><!-- /Services Section -->
 
-    <section id="clients" class="clients section">
+    <!-- <section id="clients" class="clients section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -238,7 +238,7 @@
 
       </div>
 
-    </section>
+    </section> -->
 
     <!-- Features Section -->
     <section id="features" class="features section light-background">
