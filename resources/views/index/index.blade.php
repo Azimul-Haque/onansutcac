@@ -298,7 +298,7 @@
               </div>
             </div>
             @if(!empty($event->reg_url))<a href="{{ $event->reg_url }}" class="btn btn-primary shadow-sm">Register Now</a>@endif
-          </div><!-- End Tab Content Item -->
+          </div>
           @endforeach
 
         </div>
