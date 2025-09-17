@@ -220,11 +220,10 @@
 
     <!-- <section id="clients" class="clients section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Partners</h2>
         <p>Our Clients & Collaborators</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up">
 
@@ -232,7 +231,7 @@
           @foreach($clientsforhomepage as $client)
           <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="{{ asset('images/clients/' . $client->image) }}" class="img-fluid" alt="{{ $client->name }}" title="{{ $client->name }}">
-          </div><!-- End Client Item -->
+          </div>
           @endforeach
         </div>
 
@@ -241,7 +240,7 @@
     </section> -->
 
     
-    <!-- <section id="features" class="features section light-background">
+    <section id="features" class="features section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -310,9 +309,7 @@
 
       </div>
 
-      
-
-    </section> -->
+    </section>
 
     <!-- Clients Section -->
     <section id="clients" class="recent-news section">
