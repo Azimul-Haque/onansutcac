@@ -240,8 +240,8 @@
 
     </section> -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section light-background">
+    
+    <!-- <section id="features" class="features section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -312,7 +312,7 @@
 
       
 
-    </section><!-- /Features Section -->
+    </section> -->
 
     <!-- Clients Section -->
     <section id="clients" class="recent-news section">
