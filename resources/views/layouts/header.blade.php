@@ -48,7 +48,7 @@
             <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">         
                   <!-- Biofouling section -->
-                  <li><h6 class="dropdown-header">Biofouling:</h6></li>
+                  <li><h6 class="dropdown-header"><b>Biofouling:</b></h6></li>
                   <li><a class="dropdown-item indented" href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
                   <li><a class="dropdown-item indented" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; RO Additives</a></li>
                   <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
@@ -57,12 +57,12 @@
                   
                   <!-- Corrosion section -->
                   <li><hr class="dropdown-divider"></li>
-                  <li><h6 class="dropdown-header">Corrosion:</h6></li>
+                  <li><h6 class="dropdown-header"><b>Corrosion:</b></h6></li>
                   <li><a class="dropdown-item indented" href="{{ url('/') }}/products/corrosion-inhibitor">Cera2D&trade; Corrosion inhibitor</a></li>
 
                   <!-- PFAS section -->
                   <li><hr class="dropdown-divider"></li>
-                  <li><h6 class="dropdown-header">PFAS:</h6></li>
+                  <li><h6 class="dropdown-header"><b>PFAS:</b></h6></li>
                   <li><a class="dropdown-item indented" href="{{ url('/') }}/products/endpfas">EndPFAS&trade;</a></li>
               </ul>
               <style>
