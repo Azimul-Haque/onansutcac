@@ -66,27 +66,26 @@
                   <li><a class="dropdown-item indented" href="{{ url('/') }}/products/endpfas">EndPFAS&trade;</a></li>
               </ul>
               <style>
-                  /* Custom styles for the dropdown menu */
-                  .navbar-nav .dropdown-menu {
-                      border-radius: 0.75rem;
-                      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-                  }
-                  
-                  .navbar-nav .dropdown-item {
-                      padding: 0.75rem 1.5rem;
-                  }
+                /* Custom styles for the dropdown menu */
+                .navbar-nav .dropdown-menu {
+                    border-radius: 0.75rem;
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                }
+                
+                .navbar-nav .dropdown-item {
+                    padding: 0.75rem 1.5rem;
+                }
 
-                  .navbar-nav .dropdown-header {
-                      font-weight: bold;
-                      color: #495057;
-                      padding: 0.5rem 1.5rem;
-                      font-size: 0.9rem;
-                  }
-                  
-                  .navbar-nav .dropdown-item.indented {
-                      padding-left: 2.5rem; /* Add more padding for indentation */
-                  }
-                  
+                .navbar-nav .dropdown-header {
+                    font-weight: bold;
+                    color: #495057;
+                    padding: 0.5rem 1.5rem;
+                    font-size: 0.9rem;
+                }
+                
+                .navbar-nav .dropdown-item.indented {
+                    padding-left: 2.5rem; /* Add more padding for indentation */
+                }
               </style>
               {{-- <ul>
                 <li class="dropdown"><a href="#!">Biofouling <i class="bi bi-chevron-down toggle-dropdown"></i></a>
