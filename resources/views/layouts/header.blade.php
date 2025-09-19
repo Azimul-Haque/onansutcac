@@ -50,7 +50,7 @@
                 <li class="dropdown"><a href="#!">Biofouling <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
-                    <li><a href="#!">CoreSil&trade; RO Additives</a>
+                    <li class="dropdown"><a href="#!">CoreSil&trade; RO Additives</a>
                       <ul>
                         <li><a href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
                         <li><a href="#!">CoreSil&trade; RO Additives</a>
