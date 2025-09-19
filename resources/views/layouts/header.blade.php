@@ -61,7 +61,7 @@
                 </li>
                 <li class="dropdown"><a href="#!">Corrosion</a>
                   <ul>
-                    <li><a href="{{ url('/') }}/products/coresil-additive">Cera2D&trade; Corrosion inhibitor</a></li>
+                    <li><a href="{{ url('/') }}/products/corrosion-inhibitor">Cera2D&trade; Corrosion inhibitor</a></li>
                   </ul>
                 </li>
                 <li><a href="#!">PFAS</a></li>
