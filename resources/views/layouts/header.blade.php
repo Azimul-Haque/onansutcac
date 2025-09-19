@@ -71,7 +71,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">         
                   <!-- Biofouling section -->
                   <li><h6 class="dropdown-header"><b>Biofouling:</b></h6></li>
-                  <li><a class="dropdown-item indented" style="padding-left: 2.5rem;" href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
+                  <li><a class="dropdown-item indented" style="padding-left: 1rem;" href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
                   <li><a class="dropdown-item indented" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; RO Additives</a></li>
                   <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
                   <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Polymers</a></li>
