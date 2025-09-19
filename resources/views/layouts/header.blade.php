@@ -59,7 +59,13 @@
                     </li>
                   </ul>
                 </li>
-                <li><a href="#!">Corrosion</a></li>
+                <li class="dropdown"><a href="#!">Corrosion</a>
+                  <ul>
+                    <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
+                    <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Polymers</a></li>
+                    <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Metals</a></li>
+                  </ul>
+                </li>
                 <li><a href="#!">PFAS</a></li>
                 </ul>
 
