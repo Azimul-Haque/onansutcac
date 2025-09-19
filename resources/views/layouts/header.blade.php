@@ -49,7 +49,8 @@
               <ul>
                 <li class="dropdown"><a href="#!">Biofouling</a>
                   <ul>
-                    <li><a href="#!">Corrosion</a></li>
+                    <li><a href="#!">CoreSil&trade; RO Membrane</a></li>
+                    <li><a href="#!">CoreSil&trade; RO Additives</a></li>
                   </ul>
                 </li>
                 <li><a href="#!">Corrosion</a></li>
