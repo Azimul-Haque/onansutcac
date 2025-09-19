@@ -73,13 +73,13 @@
                 }
                 
                 .navbar-nav .dropdown-item {
-                    padding: 0.75rem 1.5rem;
+                    padding: 0.75rem 2rem;
                 }
 
                 .navbar-nav .dropdown-header {
                     font-weight: bold;
                     color: #495057;
-                    padding: 0.5rem 1.5rem;
+                    padding: 0.5rem 2rem;
                     font-size: 0.9rem;
                 }
                 
