@@ -67,22 +67,6 @@
               </ul>
               <style>
                 /* Custom styles for the dropdown menu */
-                .navbar-nav .dropdown-menu {
-                    border-radius: 0.75rem;
-                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-                }
-                
-                .navbar-nav .dropdown-item {
-                    padding: 0.75rem 1.5rem;
-                }
-
-                .navbar-nav .dropdown-header {
-                    font-weight: bold;
-                    color: #495057;
-                    padding: 0.5rem 1.5rem;
-                    font-size: 0.9rem;
-                }
-                
                 
               </style>
               {{-- <ul>
