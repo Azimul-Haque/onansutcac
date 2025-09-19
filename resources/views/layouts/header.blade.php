@@ -73,19 +73,18 @@
                 }
                 
                 .navbar-nav .dropdown-item {
-                      padding: 0.75rem 1.5rem;
-                  }
+                    padding: 0.75rem 1.5rem;
+                }
 
-                  .navbar-nav .dropdown-header {
-                      font-weight: bold;
-                      color: #495057;
-                      padding: 0.5rem 1.5rem;
-                      font-size: 0.9rem;
-                      padding-left: 2.5rem; /* Indent the header */
-                  }
+                .navbar-nav .dropdown-header {
+                    font-weight: bold;
+                    color: #495057;
+                    padding: 0.5rem 1.5rem;
+                    font-size: 0.9rem;
+                }
                 
                 .navbar-nav .dropdown-item.indented {
-                    padding-left: 5rem; /* Add more padding for indentation */
+                    padding-left: 2.5rem; /* Add more padding for indentation */
                 }
               </style>
               {{-- <ul>
