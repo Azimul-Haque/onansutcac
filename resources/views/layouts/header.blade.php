@@ -52,7 +52,8 @@
                     <li><a href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
                     <li class="dropdown"><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; RO Additives <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                       <ul>
-                        <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; RO Membrane</a></li>
+                        <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
+                        <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
                       </ul>
                     </li>
                   </ul>
