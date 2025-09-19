@@ -45,13 +45,13 @@
 
         <li class="dropdown"><a href="#"><span>Products & Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            {{-- <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 @foreach($productsforfooter as $prodsformenu)
                   <li><a href="{{ route('index.singleproduct', $prodsformenu->slug) }}">{{ $prodsformenu->title }}</a></li>
                 @endforeach
               </ul>
-            </li> --}}
+            </li>
             <li class="dropdown"><a href="{{ route('index.markets') }}">Industries <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 @foreach($marketsforfooter as $marketformenu)
