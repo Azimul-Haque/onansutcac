@@ -73,9 +73,7 @@
 
 
 
-              <ul>
-                <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
-              </ul>
+              
 
               {{-- <ul>
                 @foreach($productsforfooter as $prodsformenu)
