@@ -74,9 +74,9 @@
 
 
               <ul>
-                @foreach($productsforfooter as $prodsformenu)
-                  <li><a href="{{ route('index.singleproduct', $prodsformenu->slug) }}">{{ $prodsformenu->title }}</a></li>
-                @endforeach
+                <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
+                <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Polymers</a></li>
+                <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Metals</a></li>
               </ul>
 
               {{-- <ul>
