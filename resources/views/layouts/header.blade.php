@@ -79,7 +79,7 @@
                 .navbar-nav .dropdown-header {
                     font-weight: bold;
                     color: #495057;
-                    padding: 2rem 2rem;
+                    padding: 0.5rem 1.5rem;
                     font-size: 0.9rem;
                 }
                 
