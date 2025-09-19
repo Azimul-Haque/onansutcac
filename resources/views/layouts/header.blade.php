@@ -53,7 +53,8 @@
                     <li class="dropdown"><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; RO Additives <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                       <ul>
                         <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
-                        <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
+                        <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Polymers</a></li>
+                        <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Metals</a></li>
                       </ul>
                     </li>
                   </ul>
