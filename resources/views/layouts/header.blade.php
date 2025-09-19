@@ -75,8 +75,6 @@
 
               <ul>
                 <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
-                <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Polymers</a></li>
-                <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Metals</a></li>
               </ul>
 
               {{-- <ul>
