@@ -85,7 +85,7 @@
                   }
                 
                 .navbar-nav .dropdown-item.indented {
-                    padding-left: 3.5rem; /* Add more padding for indentation */
+                    padding-left: 5rem; /* Add more padding for indentation */
                 }
               </style>
               {{-- <ul>
