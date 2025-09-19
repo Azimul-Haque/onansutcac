@@ -70,7 +70,7 @@
             <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">         
                   <!-- Biofouling section -->
-                  <li><h6 class="dropdown-header" style="padding-left: 2.5rem;"><b>Biofouling:</b></h6></li>
+                  <li><h6 class="dropdown-header"><b>Biofouling:</b></h6></li>
                   <li><a class="dropdown-item indented" href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
                   <li><a class="dropdown-item indented" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; RO Additives</a></li>
                   <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
