@@ -71,6 +71,14 @@
                 </li>
               </ul>
 
+
+
+              <ul>
+                @foreach($productsforfooter as $prodsformenu)
+                  <li><a href="{{ route('index.singleproduct', $prodsformenu->slug) }}">{{ $prodsformenu->title }}</a></li>
+                @endforeach
+              </ul>
+
               {{-- <ul>
                 @foreach($productsforfooter as $prodsformenu)
                   <li><a href="{{ route('index.singleproduct', $prodsformenu->slug) }}">{{ $prodsformenu->title }}</a></li>
