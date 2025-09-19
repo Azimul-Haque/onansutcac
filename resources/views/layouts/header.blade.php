@@ -47,12 +47,14 @@
           <ul>
             <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-               <li class="dropdown"><a href="#!">Biofouling</a>
-
-               </li>
-               <li><a href="#!">Corrosion</a></li>
-               <li><a href="#!">PFAS</a></li>
-              </ul>
+                <li class="dropdown"><a href="#!">Biofouling</a>
+                  <ul>
+                    
+                  </ul>
+                </li>
+                <li><a href="#!">Corrosion</a></li>
+                <li><a href="#!">PFAS</a></li>
+                </ul>
 
               {{-- <ul>
                 @foreach($productsforfooter as $prodsformenu)
