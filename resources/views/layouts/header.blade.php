@@ -73,7 +73,7 @@
                 }
                 
                 .navbar-nav .dropdown-item {
-                    padding: 2rem 1.5rem;
+                    padding: 0.75rem 1.5rem;
                 }
 
                 .navbar-nav .dropdown-header {
