@@ -47,7 +47,7 @@
           <ul>
             <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li class="dropdown"><a href="#!">Biofouling</a>
+                <li class="dropdown"><a href="#!">Biofouling <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="#!">CoreSil&trade; RO Membrane</a></li>
                     <li><a href="#!">CoreSil&trade; RO Additives</a></li>
