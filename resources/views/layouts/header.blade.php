@@ -53,9 +53,6 @@
                     <li class="dropdown"><a href="#!">CoreSil&trade; RO Additives</a>
                       <ul>
                         <li><a href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
-                        <li><a href="#!">CoreSil&trade; RO Additives</a>
-
-                        </li>
                       </ul>
                     </li>
                   </ul>
