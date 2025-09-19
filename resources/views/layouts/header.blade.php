@@ -69,7 +69,7 @@
                     <li><a href="{{ url('/') }}/products/endpfas">EndPFAS&trade;</a></li>
                   </ul>
                 </li>
-                </ul>
+              </ul>
 
               {{-- <ul>
                 @foreach($productsforfooter as $prodsformenu)
