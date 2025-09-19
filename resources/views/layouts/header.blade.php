@@ -47,7 +47,9 @@
           <ul>
             <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-               <li><a href="{{ route('index.singleproduct', $prodsformenu->slug) }}">{{ $prodsformenu->title }}</a></li>
+               <li><a href="#!">Biofouling</a></li>
+               <li><a href="#!">Corrision</a></li>
+               <li><a href="#!">Corrision</a></li>
               </ul>
 
               {{-- <ul>
