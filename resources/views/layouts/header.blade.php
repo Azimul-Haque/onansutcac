@@ -83,9 +83,7 @@
                     font-size: 0.9rem;
                 }
                 
-                .navbar-nav .dropdown-item.indented {
-                    padding-left: 2.5rem; /* Add more padding for indentation */
-                }
+                
               </style>
               {{-- <ul>
                 <li class="dropdown"><a href="#!">Biofouling <i class="bi bi-chevron-down toggle-dropdown"></i></a>
