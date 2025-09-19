@@ -66,7 +66,7 @@
                 </li>
                 <li><a href="#!">PFAS <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
-                    <li><a href="{{ url('/') }}/products/corrosion-inhibitor">Cera2D&trade; Corrosion inhibitor</a></li>
+                    <li><a href="{{ url('/') }}/products/corrosion-inhibitor">EndPFAS&trade</a></li>
                   </ul>
                 </li>
                 </ul>
