@@ -63,11 +63,11 @@
                 <li><a href="#!">PFAS</a></li>
                 </ul>
 
-              {{-- <ul>
+              <ul>
                 @foreach($productsforfooter as $prodsformenu)
                   <li><a href="{{ route('index.singleproduct', $prodsformenu->slug) }}">{{ $prodsformenu->title }}</a></li>
                 @endforeach
-              </ul> --}}
+              </ul>
             </li>
             <li class="dropdown"><a href="{{ route('index.markets') }}">Industries <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
