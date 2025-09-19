@@ -46,7 +46,26 @@
         <li class="dropdown"><a href="#"><span>Products & Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">         
+                  <!-- Biofouling section -->
+                  <li><h6 class="dropdown-header">Biofouling:</h6></li>
+                  <li><a class="dropdown-item indented" href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
+                  <li><a class="dropdown-item indented" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; RO Additives</a></li>
+                  <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
+                  <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Polymers</a></li>
+                  <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Metals</a></li>
+                  
+                  <!-- Corrosion section -->
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header">Corrosion:</h6></li>
+                  <li><a class="dropdown-item indented" href="{{ url('/') }}/products/corrosion-inhibitor">Cera2D&trade; Corrosion inhibitor</a></li>
+
+                  <!-- PFAS section -->
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header">PFAS:</h6></li>
+                  <li><a class="dropdown-item indented" href="{{ url('/') }}/products/endpfas">EndPFAS&trade;</a></li>
+              </ul>
+              {{-- <ul>
                 <li class="dropdown"><a href="#!">Biofouling <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
@@ -69,7 +88,7 @@
                     <li><a href="{{ url('/') }}/products/endpfas">EndPFAS&trade;</a></li>
                   </ul>
                 </li>
-              </ul>
+              </ul> --}}
 
 
 
