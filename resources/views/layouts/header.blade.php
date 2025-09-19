@@ -80,6 +80,7 @@
                     font-weight: bold;
                     color: #495057;
                     padding: 0.5rem 1.5rem;
+                    padding-left: 2.5rem;
                     font-size: 0.9rem;
                 }
                 
