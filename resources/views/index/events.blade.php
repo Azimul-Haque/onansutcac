@@ -57,7 +57,7 @@
                     <span class="category">{{ $event->type }}</span>
                     <a href="#!" title="Open Details" data-bs-toggle="modal" data-bs-target="#eventModal{{ $event->id }}"><h3>{{ $event->title }}</h3></a>
                     <p class="text-muted fst-italic mb-1">
-                      <i class="bi bi-calendar-event me-2"></i> **{{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}** | {{ $event->from_to }}
+                      <i class="bi bi-calendar-event me-2"></i> {{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }} | {{ $event->from_to }}
                     </p>
                     <p>{{ Str::limit(strip_tags($event->text), 100) }}</p>
                   </div>
@@ -76,10 +76,10 @@
                         <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ $event->title }}" style="max-height: 350px; object-fit: cover; width: 100%;">
                         <h3 class="modal-title fw-bold mb-2" id="eventModalLabel">{{ $event->title }}</h3>
                         <p class="text-muted fst-italic mb-1">
-                          <i class="bi bi-calendar-event me-2"></i> **{{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }}** | {{ $event->from_to }}
+                          <i class="bi bi-calendar-event me-2"></i> {{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }} | {{ $event->from_to }}
                         </p>
                         <p class="text-muted fst-italic mb-0">
-                          <i class="bi bi-geo-alt me-2"></i> **{{ $event->address }}**
+                          <i class="bi bi-geo-alt me-2"></i> {{ $event->address }}
                         </p>
                       </div>
 
