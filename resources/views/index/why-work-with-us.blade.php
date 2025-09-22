@@ -8,7 +8,7 @@
     #map {
         /* Changed height from fixed pixels to viewport height (vh) */
         /* 70vh means the map will take up 70% of the viewport's height */
-        height: 70vh; 
+        height: 500px; 
         width: 100%;
         border-radius: 10px;
     }
