@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
     <style>
     #map {
-      max-height: 500px;  /* Required for Leaflet to display */
+      height: 500px;  /* Required for Leaflet to display */
       width: 100%;
       border-radius: 10px; /* Optional: smooth edges */
     }
