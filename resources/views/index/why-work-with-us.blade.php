@@ -16,7 +16,7 @@
     /* You can add a min-height for very short devices if needed */
     @media (max-width: 768px) {
         #map {
-            height: 400px;
+            height: 300px;
         }
     }
     </style>
