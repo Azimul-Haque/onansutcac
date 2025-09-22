@@ -136,8 +136,15 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
     <script>
-      // Initialize map
-      var map = L.map('map').setView([20, 0], 2);
+      // Determine the initial zoom level based on screen width
+      var initialZoom = 2; // Default for desktop
+      if (window.innerWidth < 768) { // A common breakpoint for mobile
+          initialZoom = 1; // More zoomed out for mobile
+      }
+
+      // Initialize the map with the chosen zoom level
+      var map = L.map('map').setView([20, 0], initialZoom);
+
 
       // Load OpenStreetMap tiles
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
