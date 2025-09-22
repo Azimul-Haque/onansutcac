@@ -306,6 +306,9 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
       <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+             AOS.init();
+        });
         // Initialize map
         var map = L.map('map').setView([20, 0], 2);
 
