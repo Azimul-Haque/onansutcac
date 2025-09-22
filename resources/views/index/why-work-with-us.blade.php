@@ -305,11 +305,7 @@
       <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
       
 
-      <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-             AOS.init();
-        });
-        
+      <script>        
         // Determine the initial zoom level based on screen width
         var initialZoom = 2; // Default for desktop
         if (window.innerWidth < 768) { // A common breakpoint for mobile
