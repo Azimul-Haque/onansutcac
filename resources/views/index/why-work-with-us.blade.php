@@ -348,6 +348,14 @@
                     .openTooltip();
             }
         });
+
+        // This is a crucial line for making Leaflet maps responsive to container size changes.
+        // It tells the map to update its size after the page elements have been rendered and animations complete.
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                map.invalidateSize();
+            }, 1000); // 1 second delay to ensure AOS animations are finished
+        });
       </script>
 
 @endsection
