@@ -43,14 +43,85 @@
           </ul>
         </li> --}}
 
+        <style>
+          /* Custom styles for the dropdown menu */
+          .navbar-nav .dropdown-menu {
+              border-radius: 0.75rem;
+              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          }
+          
+          .navbar-nav .dropdown-item {
+              padding: 0.75rem 1.5rem;
+          }
+
+          .navbar-nav .dropdown-header {
+              font-weight: bold;
+              color: #495057;
+              padding: 0.5rem 1.5rem;
+              font-size: 0.9rem;
+          }
+          
+          .navbar-nav .dropdown-item.indented {
+              padding-left: 2.5rem; /* Add more padding for indentation */
+          }
+        </style>
         <li class="dropdown"><a href="#"><span>Products & Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li class="dropdown"><a href="{{ route('index.products') }}">Products <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">         
+                  <!-- Biofouling section -->
+                  <li><h6 class="dropdown-header"><b>Biofouling:</b></h6></li>
+                  <li><a class="dropdown-item indented" href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
+                  <li><a class="dropdown-item indented" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; RO Additives</a></li>
+                  <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
+                  <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Polymers</a></li>
+                  <li><a class="dropdown-item indented ps-5" href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Metals</a></li>
+                  
+                  <!-- Corrosion section -->
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header"><b>Corrosion:</b></h6></li>
+                  <li><a class="dropdown-item indented" href="{{ url('/') }}/products/corrosion-inhibitor">Cera2D&trade; Corrosion inhibitor</a></li>
+
+                  <!-- PFAS section -->
+                  <li><hr class="dropdown-divider"></li>
+                  <li><h6 class="dropdown-header"><b>PFAS:</b></h6></li>
+                  <li><a class="dropdown-item indented" href="{{ url('/') }}/products/endpfas">EndPFAS&trade;</a></li>
+              </ul>
+              
+              {{-- <ul>
+                <li class="dropdown"><a href="#!">Biofouling <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="{{ url('/') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil&trade; RO Membrane</a></li>
+                    <li class="dropdown"><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; RO Additives <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                      <ul>
+                        <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Textile</a></li>
+                        <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Polymers</a></li>
+                        <li><a href="{{ url('/') }}/products/coresil-additive">CoreSil&trade; Metals</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#!">Corrosion <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="{{ url('/') }}/products/corrosion-inhibitor">Cera2D&trade; Corrosion inhibitor</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#!">PFAS <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="{{ url('/') }}/products/endpfas">EndPFAS&trade;</a></li>
+                  </ul>
+                </li>
+              </ul> --}}
+
+
+
+              
+
+              {{-- <ul>
                 @foreach($productsforfooter as $prodsformenu)
                   <li><a href="{{ route('index.singleproduct', $prodsformenu->slug) }}">{{ $prodsformenu->title }}</a></li>
                 @endforeach
-              </ul>
+              </ul> --}}
             </li>
             <li class="dropdown"><a href="{{ route('index.markets') }}">Industries <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
