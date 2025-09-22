@@ -6,9 +6,18 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
     <style>
     #map {
-      height: 500px;  /* Required for Leaflet to display */
-      width: 100%;
-      border-radius: 10px; /* Optional: smooth edges */
+        /* Changed height from fixed pixels to viewport height (vh) */
+        /* 70vh means the map will take up 70% of the viewport's height */
+        height: 70vh; 
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* You can add a min-height for very short devices if needed */
+    @media (max-width: 768px) {
+        #map {
+            min-height: 400px;
+        }
     }
     </style>
   
