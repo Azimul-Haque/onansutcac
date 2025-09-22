@@ -310,7 +310,7 @@
              AOS.init();
         });
         // Initialize map
-        var map = L.map('map').setView([20, 0], 3);
+        var map = L.map('map').setView([20, 0], 2);
 
         // Load OpenStreetMap tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
