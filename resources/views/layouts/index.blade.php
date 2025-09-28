@@ -30,8 +30,8 @@
       {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "CactusNANO",
-      "description": "{{ $blog->description ?? mb_substr(strip_tags($blog->body), 0, 200) }}",
+      "headline": "CactusNano",
+      "description": "CactusNano - High trust U.S.-made semiconductors for the next generation AI photonic platform and power",
       "image": "{{ asset('images/blogs/'.$blog->featured_image) ?? asset('images/abc.png') }}",
       "url": "{{ url()->current() }}",
       "author": {
