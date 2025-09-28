@@ -21,6 +21,7 @@
   <meta property="og:image:width" content="1025" />
   <meta property="og:image:height" content="542" />
   <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="cactusnano-nano-tech-onnocation.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="author" content="A. H. M. Azimul Haque">
 
