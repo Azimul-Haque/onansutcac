@@ -32,7 +32,7 @@
       "@type": "Article",
       "headline": "CactusNano",
       "description": "CactusNano - High trust U.S.-made semiconductors for the next generation AI photonic platform and power",
-      "image": "{{ asset('images/blogs/'.$blog->featured_image) ?? asset('images/abc.png') }}",
+      "image": "{{ asset('images/cactusnano-nano-tech-onnocation.png') }}",
       "url": "{{ url()->current() }}",
       "author": {
         "@type": "Person",
