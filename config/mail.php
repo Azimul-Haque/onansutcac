@@ -1,5 +1,5 @@
 
-text/x-generic mail.php ( PHP script, ASCII text )
+<!-- text/x-generic mail.php ( PHP script, ASCII text ) -->
 <?php
 
 return [
