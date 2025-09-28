@@ -57,7 +57,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'support@mainichihalalfood.com', 'name' => 'Mainichi Halal Food'],
+    'from' => ['address' => 'support@cactusnano.com', 'name' => 'CactusNano'],
 
     /*
     |--------------------------------------------------------------------------
