@@ -25,6 +25,24 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="author" content="A. H. M. Azimul Haque">
 
+  <!-- Structured data JSON-LD (optional but highly recommended) -->
+  <script type="application/ld+json">
+      {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ $blog->title }}",
+      "description": "{{ $blog->description ?? mb_substr(strip_tags($blog->body), 0, 200) }}",
+      "image": "{{ asset('images/blogs/'.$blog->featured_image) ?? asset('images/abc.png') }}",
+      "url": "{{ url()->current() }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ $blog->user->name ?? 'এ. এইচ. এম. আজিমুল হক' }}"
+      },
+      "datePublished": "{{ $blog->created_at ?? now()->toIso8601String() }}",
+      "dateModified": "{{ $blog->updated_at ?? now()->toIso8601String() }}"
+      }
+  </script>
+
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/svg" />
   <link rel="apple-touch-icon" href="{{ asset('images/favicon.png') }}" />
