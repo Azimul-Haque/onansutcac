@@ -9,14 +9,15 @@
   <title>@yield('title') | CactusNANO</title>
   <meta name="description" content="Cactus Nano develops powerful, long-lasting antimicrobial, antifouling technology for applications in water filters, water storage and distribution systems, and consumer products." />
 
-  <link rel="canonical" href="index.html" />
+  <link rel="canonical" href="{{ url('/') }}" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Cactus Nano - High trust U.S.-made semiconductors for the next generation AI photonic platform and power" />
   <meta property="og:description" content="Cactus Nano develops powerful, long-lasting antimicrobial, antifouling technology for applications in water filters, water storage and distribution systems, and consumer products." />
   <meta property="og:url" content="{{ url('/') }}" />
   <meta property="og:site_name" content="Gradiant" />
-  <meta property="og:image" content="{{ url('/') }}" />
+  <meta property="og:canonical" content="{{ url('/') }}" />
+  <meta property="og:image" content="{{ asset('images/cactusnano-nano-tech-onnocation.png') }}" />
   <meta property="og:image:width" content="1025" />
   <meta property="og:image:height" content="542" />
   <meta property="og:image:type" content="image/jpeg" />
