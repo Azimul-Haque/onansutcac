@@ -41,7 +41,7 @@ Route::get('/information-center', 'IndexController@getInformationCenter')->name(
 Route::get('/testimonials', 'IndexController@getTestimonials')->name('index.testimonials');
 Route::get('/sdg-alignment', 'IndexController@getSDGAlignment')->name('index.sdg-alignment');
 Route::get('/social-impact', 'IndexController@getSocialimpact')->name('index.social-impact');
-Route::post('/newsletter/subscribe', 'IndexController@getSocialimpact')->name('index.social-impact');
+Route::post('/newsletter/subscribe', 'IndexController@storeEmails')->name('index.social-impact');
 
 // blog
 Route::get('/blogs', 'BlogController@index')->name('blogs.index');
