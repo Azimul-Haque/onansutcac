@@ -373,6 +373,7 @@ class IndexController extends Controller
 
         $newsletter = new Newsletterlist;
         $newsletter->email = $request->email;
+        $newsletter->save();
 
                     
         return view('index.sdgpage')->withSdgdata($sdgdata);
