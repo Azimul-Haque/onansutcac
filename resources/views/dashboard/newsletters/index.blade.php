@@ -39,7 +39,7 @@
                   
                   <td align="right">
                     <button type="button" class="btn btn-primary btn-sm">
-                      <i class="fas fa-trash-alt"></i>
+                      <i class="fas fa-clipboard-check"></i> Copy
                     </button>
                   </td>
                 </tr>
