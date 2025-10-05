@@ -23,10 +23,7 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th>নাম</th>
-                  <th>যোগাযোগ</th>
-                  <th>মেসেজ</th>
-                  <th>সময়</th>
+                  <th>ইমেইল তালিকা</th>
                   <th>Action</th>
                 </tr>
               </thead>
