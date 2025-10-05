@@ -45,9 +45,9 @@
 
           <li><i class="bi bi-chevron-right" style=""></i> <a href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ RO Additives</a></li>
           <!-- Additional products below CoreSil Additives -->
-          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="#">CoreSil™ Textile</a></li>
-          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="#">CoreSil™ Polymers</a></li>
-          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="#">CoreSil™ Metals</a></li>
+          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Textile</a></li>
+          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Polymers</a></li>
+          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Metals</a></li>
 
           <!-- 1. Biofouling Category -->
           <li style="margin-top: 15px;">
