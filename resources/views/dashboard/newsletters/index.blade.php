@@ -32,7 +32,7 @@
                   </td>
                   
                   <td align="right">
-                    <button type="button" class="btn btn-primary btn-sm">
+                    <button type="button" id="newsletterbutton" class="btn btn-primary btn-sm">
                       <i class="fas fa-clipboard"></i> Copy
                     </button>
                   </td>
