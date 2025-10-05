@@ -1340,7 +1340,7 @@ class DashboardController extends Controller
     {
         $newsletters = Newsletter::all();
 
-        return view('dashboard.contacts.index')->withMessages($messages);
+        return view('dashboard.contacts.index')->withNewsletters($newsletters);
     }
 
 
