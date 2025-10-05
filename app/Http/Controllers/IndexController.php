@@ -370,7 +370,9 @@ class IndexController extends Controller
         $request->validate([
             'email'   => 'required|email|max:255',
         ]);
+
         $newsletter = new Newsletterlist;
+        $newsletter->email = $request->email;
 
                     
         return view('index.sdgpage')->withSdgdata($sdgdata);
