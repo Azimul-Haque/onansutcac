@@ -1324,6 +1324,7 @@ class DashboardController extends Controller
         return view('dashboard.contacts.index')->withMessages($messages);
     }
 
+
     public function deleteMessage($id)
     {
         $messages = Contact::findOrFail($id);
@@ -1332,6 +1333,22 @@ class DashboardController extends Controller
 
         Session::flash('success', 'Message deleted successfully!');
         return redirect()->route('dashboard.messages');
+    }
+
+    public function getNewsletters(Request $request)
+    {
+        if($request->search) {
+            $messages = Contact::where('name', 'LIKE', "%$request->search%")
+                         ->orWhere('email', 'LIKE', "%$request->search%")
+                         ->orWhere('subject', 'LIKE', "%$request->search%")
+                         ->orWhere('message', 'LIKE', "%$request->search%")
+                         ->orderBy('id', 'desc')
+                         ->paginate(10);
+        } else {
+            $messages = Contact::orderBy('id', 'desc')->paginate(10);
+        }
+
+        return view('dashboard.contacts.index')->withMessages($messages);
     }
 
 
