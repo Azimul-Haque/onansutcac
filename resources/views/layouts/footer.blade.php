@@ -49,19 +49,7 @@
           <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Polymers</a></li>
           <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Metals</a></li>
 
-          <!-- 1. Biofouling Category -->
-          <li style="margin-top: 15px;">
-              <span style="display: flex; align-items: center;">
-                  <i class="bi bi-chevron-right" style="margin-right: 5px; font-size: 14px;"></i> 
-                  <strong>Biofouling:</strong>
-              </span>
-              
-              <!-- Nested list for CoreSil™ products, double indented -->
-              <ul style="list-style: none; padding-left: 20px; margin-top: 5px;">
-                  
-                  
-              </ul>
-          </li>
+          <strong>Biofouling:</strong>
           
           <li style="margin-top: 25px;">
               <!-- 2. Corrosion Category -->
