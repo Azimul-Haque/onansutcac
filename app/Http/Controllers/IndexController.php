@@ -368,7 +368,7 @@ class IndexController extends Controller
     public function storeEmails(Request $request)
     {
         $request->validate([
-            'email'   => 'required|email|max:255|unique:users,email_address',
+            'email'   => 'required|email|max:255|unique:newsletterlists,email',
         ]);
 
         $newsletter = new Newsletterlist;
