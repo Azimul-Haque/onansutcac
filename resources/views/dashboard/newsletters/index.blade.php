@@ -30,7 +30,7 @@
                 <tbody>
                   <tr>
                     <td>
-                      <textarea class="form-control" id="newsletterslist">@foreach($newsletters as $newsletter){{ $newsletter->email }},@endforeach</textarea>
+                      <textarea class="form-control" id="newsletterslist" style="min-height: 300px;">@foreach($newsletters as $newsletter){{ $newsletter->email }},@endforeach</textarea>
                     </td>
                     
                     <td align="right">
