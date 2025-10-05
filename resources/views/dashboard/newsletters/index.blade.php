@@ -28,19 +28,22 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($newsletters as $message)
-                	<tr>
-                    <td>
-                      <textarea class="form-control"></textarea>
-                    </td>
-                		
-                		<td align="right">
-                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
-                        <i class="fas fa-trash-alt"></i>
-                      </button>
-                		</td>
-                	</tr>
-                @endforeach
+                <tr>
+                  <td>
+                    <textarea class="form-control">
+                      @foreach($newsletters as $message)
+                        
+                      @endforeach
+                    </textarea>
+                  </td>
+                  
+                  <td align="right">
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                
               </tbody>
             </table>
           </div>
