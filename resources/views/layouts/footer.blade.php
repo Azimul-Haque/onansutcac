@@ -34,11 +34,43 @@
 
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Products</h4>
-        <ul>
+        <!-- <ul>
           @foreach($productsforfooter as $product)
             <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
           @endforeach
-        </ul>
+        </ul> -->
+        <ul>
+          <!-- 1. Biofouling Category -->
+          <li>
+              <i class="bi bi-chevron-right"></i> 
+              <strong>Biofouling:</strong>
+              <!-- Nested list for CoreSil™ products -->
+              <ul style="list-style: none; padding-left: 20px;">
+                  <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.index') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil™ RO Membrane</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ RO Additives</a></li>
+                  <!-- Assuming the following are sub-products related to CoreSil Additive or separate but related -->
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">CoreSil™ Textile</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">CoreSil™ Polymers</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">CoreSil™ Metals</a></li>
+              </ul>
+          </li>
+          <li style="margin-top: 10px;">
+              <!-- 2. Corrosion Category -->
+              <i class="bi bi-chevron-right"></i> 
+              <strong>Corrosion:</strong>
+              <ul style="list-style: none; padding-left: 20px;">
+                  <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.index') }}/products/corrosion-inhibitor">Cera 2D™ Corrosion Inhibitor</a></li>
+              </ul>
+          </li>
+          <li style="margin-top: 10px;">
+              <!-- 3. PFAS Category -->
+              <i class="bi bi-chevron-right"></i> 
+              <strong>PFAS:</strong>
+              <ul style="list-style: none; padding-left: 20px;">
+                  <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.index') }}/products/endpfas">EndPFAS™</a></li>
+              </ul>
+          </li>
+      </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
