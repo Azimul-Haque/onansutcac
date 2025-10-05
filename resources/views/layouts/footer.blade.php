@@ -39,42 +39,7 @@
             <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.singleproduct', $product->slug) }}">{{ $product->title }}</a></li>
           @endforeach
         </ul> -->
-        <ul style="list-style: none; padding-left: 0;">
-          <!-- 1. Biofouling Category -->
-          <li style="margin-top: 15px;">
-              <!-- Removed chevron and kept only the strong category title -->
-              <strong>Biofouling:</strong>
-              
-              <!-- Nested list for CoreSil™ products, double indented -->
-              <ul style="list-style: none; padding-left: 0; margin-top: 5px;">
-                  <!-- Product links now directly follow list items, no chevrons -->
-                  <li style="padding-left: 20px;"><a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil™ RO Membrane</a></li>
-                  <li style="padding-left: 20px;"><a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ RO Additives</a></li>
-                  <!-- Further nested products for Textile, Polymers, Metals -->
-                  <li style="padding-left: 40px;"><a style="color: white; text-decoration: none;" href="#">CoreSil™ Textile</a></li>
-                  <li style="padding-left: 40px;"><a style="color: white; text-decoration: none;" href="#">CoreSil™ Polymers</a></li>
-                  <li style="padding-left: 40px;"><a style="color: white; text-decoration: none;" href="#">CoreSil™ Metals</a></li>
-              </ul>
-          </li>
-          
-          <li style="margin-top: 25px;">
-              <!-- 2. Corrosion Category -->
-              <strong>Corrosion:</strong>
-              <ul style="list-style: none; padding-left: 0; margin-top: 5px;">
-                  <!-- Product links now directly follow list items, no chevrons -->
-                  <li style="padding-left: 20px;"><a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/corrosion-inhibitor">Cera 2D™ Corrosion Inhibitor</a></li>
-              </ul>
-          </li>
-          
-          <li style="margin-top: 25px;">
-              <!-- 3. PFAS Category -->
-              <strong>PFAS:</strong>
-              <ul style="list-style: none; padding-left: 0; margin-top: 5px;">
-                  <!-- Product links now directly follow list items, no chevrons -->
-                  <li style="padding-left: 20px;"><a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/endpfas">EndPFAS™</a></li>
-              </ul>
-          </li>
-      </ul>
+        
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
