@@ -108,7 +108,7 @@
 
 <li class="nav-item">
     <a href="{{ route('dashboard.newsletters') }}" class="nav-link {{ Request::is('dashboard/newsletters') ? 'active' : '' }} {{ Request::is('dashboard/newsletters/*') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-chart-pie"></i>
+        <i class="nav-icon fas fa-list"></i>
         <p>Newsletter Emails</p>
     </a>
 </li>
