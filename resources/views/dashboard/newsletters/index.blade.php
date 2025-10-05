@@ -8,41 +8,41 @@
 @section('content')
 	@section('page-header') Newsletter Email List @endsection
     <div class="container-fluid">
-		<div class="card">
-          <div class="card-header">
-            <h3 class="card-title">Newsletter Email List তালিকা</h3>
+    	<div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Newsletter Email List তালিকা</h3>
 
-            <div class="card-tools">
-            	
-            </div>
+          <div class="card-tools">
+          	
           </div>
-          <!-- /.card-header -->
-          <div class="card-body p-0">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>ইমেইল তালিকা</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <textarea class="form-control" id="newsletterslist">@foreach($newsletters as $newsletter){{ $newsletter->email }},@endforeach</textarea>
-                  </td>
-                  
-                  <td align="right">
-                    <button type="button" id="newsletterbutton" class="btn btn-primary btn-sm">
-                      <i class="fas fa-clipboard"></i> Copy
-                    </button>
-                  </td>
-                </tr>
-                
-              </tbody>
-            </table>
-          </div>
-          <!-- /.card-body -->
         </div>
+        <!-- /.card-header -->
+        <div class="card-body p-0">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ইমেইল তালিকা</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <textarea class="form-control" id="newsletterslist">@foreach($newsletters as $newsletter){{ $newsletter->email }},@endforeach</textarea>
+                </td>
+                
+                <td align="right">
+                  <button type="button" id="newsletterbutton" class="btn btn-primary btn-sm">
+                    <i class="fas fa-clipboard"></i> Copy
+                  </button>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
     </div>
 @endsection
 
