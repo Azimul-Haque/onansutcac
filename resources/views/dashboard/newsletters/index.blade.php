@@ -35,7 +35,7 @@
                     
                     <td align="right">
                       <button type="button" id="newsletterbutton" class="btn btn-primary btn-sm">
-                        <i class="fas fa-clipboard"></i> Copy
+                        <i class="fas fa-clipboard"></i> Copy to Clipboard
                       </button>
                     </td>
                   </tr>
