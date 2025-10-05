@@ -1335,7 +1335,7 @@ class DashboardController extends Controller
         return redirect()->route('dashboard.messages');
     }
 
-    public function getNewsletters(Request $request)
+    public function getNewsletters()
     {
         if($request->search) {
             $messages = Contact::where('name', 'LIKE', "%$request->search%")
