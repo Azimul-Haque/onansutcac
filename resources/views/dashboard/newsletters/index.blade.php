@@ -12,7 +12,7 @@
       <div class="col-md-10">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Newsletter Email List তালিকা</h3>
+              <h3 class="card-title">Newsletter Email List List</h3>
 
               <div class="card-tools">
                 
@@ -23,7 +23,7 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th>ইমেইল তালিকা</th>
+                    <th>Email List</th>
                     <th>Action</th>
                   </tr>
                 </thead>
