@@ -31,7 +31,7 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($messages as $message)
+                @foreach($newsletters as $message)
                 	<tr>
                     <td>
                       @if($message->status == 1)
