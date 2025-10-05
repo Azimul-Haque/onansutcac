@@ -31,15 +31,6 @@
                 @foreach($newsletters as $message)
                 	<tr>
                     <td>
-                      @if($message->status == 1)
-                        <i class="fas fa-calendar-check"></i>
-                      @endif
-                      
-                      @if($message->status == 1)
-                        {{ $message->name }}
-                      @else
-                        <b>{{ $message->name }}</b>
-                      @endif
                       
                     </td>
                 		
