@@ -69,8 +69,10 @@
             // Copy the selected text to clipboard
             document.execCommand('copy');
 
-            // Optional: show a quick confirmation (using alert or Toast)
-            alert('Email list copied to clipboard!');
+            Toast.fire({
+              icon: 'success',
+              title: 'Email list copied to clipboard!'
+            })
         });
     });
     </script>
