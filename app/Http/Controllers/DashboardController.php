@@ -22,7 +22,7 @@ use App\Testimonial;
 use App\Faq;
 use App\Contact;
 use App\Globalpresence;
-use App\Newsletter;
+use App\Newsletterlist;
 
 use Carbon\Carbon;
 use DB;
