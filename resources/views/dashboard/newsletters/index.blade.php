@@ -38,7 +38,7 @@
                   </td>
                   
                   <td align="right">
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
+                    <button type="button" class="btn btn-danger btn-sm">
                       <i class="fas fa-trash-alt"></i>
                     </button>
                   </td>
