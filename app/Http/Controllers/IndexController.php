@@ -375,7 +375,7 @@ class IndexController extends Controller
         $newsletter->email = $request->email;
         $newsletter->save();
                     
-        return redirect()->back()->with('success', 'Your message has been sent successfully!');
+        return redirect()->back()->with('success', 'You have successfully subscribed to our newsletters!');
     }
 
 
