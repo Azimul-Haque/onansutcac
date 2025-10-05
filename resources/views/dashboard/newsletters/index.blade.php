@@ -28,11 +28,9 @@
               <tbody>
                 <tr>
                   <td>
-                    <textarea class="form-control">
-                      @foreach($newsletters as $newsletter)
+                    <textarea class="form-control">@foreach($newsletters as $newsletter)
                         {{ $newsletter->email }}
-                      @endforeach
-                    </textarea>
+                      @endforeach</textarea>
                   </td>
                   
                   <td align="right">
