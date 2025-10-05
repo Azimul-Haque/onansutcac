@@ -31,7 +31,7 @@
                 @foreach($newsletters as $message)
                 	<tr>
                     <td>
-                      
+                      <textarea class=""></textarea>
                     </td>
                 		
                 		<td align="right">
