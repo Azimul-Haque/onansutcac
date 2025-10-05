@@ -180,7 +180,7 @@ Route::get('/dashboard/statistics/{id}/delete', 'DashboardController@deleteStati
 
 
 // --- Statistics Routes ---
-Route::get('/dashboard/newsletters', 'DashboardController@getNewsletter')->name('dashboard.newsletters');
+Route::get('/dashboard/newsletters', 'DashboardController@getNewsletters')->name('dashboard.newsletters');
 // Route::post('/dashboard/newsletters/store', 'DashboardController@storeNewsletter')->name('dashboard.newsletters.store');
 // Route::post('/dashboard/newsletters/{id}/update', 'DashboardController@updateNewsletter')->name('dashboard.newsletters.update');
 // Route::get('/dashboard/newsletters/{id}/delete', 'DashboardController@deleteNewsletter')->name('dashboard.newsletters.delete');
