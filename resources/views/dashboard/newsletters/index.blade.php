@@ -12,7 +12,7 @@
       <div class="col-md-10">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Newsletter Email List List</h3>
+              <h3 class="card-title">Newsletter Email List</h3>
 
               <div class="card-tools">
                 
