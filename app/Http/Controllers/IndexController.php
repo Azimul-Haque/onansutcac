@@ -20,6 +20,7 @@ use App\Event;
 use App\Faq;
 use App\Contact;
 use App\Globalpresence;
+use App\Newsletterlist;
 
 use Carbon\Carbon;
 use DB;
@@ -360,6 +361,14 @@ class IndexController extends Controller
     public function getSocialimpact()
     {
         $sdgdata = About::where('id', 7)->first();
+                    
+        return view('index.sdgpage')->withSdgdata($sdgdata);
+    }
+
+    public function storeEmails(Request $request)
+    {
+        $newsletter = new Newsletterlist;
+        
                     
         return view('index.sdgpage')->withSdgdata($sdgdata);
     }
