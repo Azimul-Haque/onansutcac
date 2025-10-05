@@ -24,7 +24,7 @@
                 <thead>
                   <tr>
                     <th>Email List</th>
-                    <th>Action</th>
+                    <th width="30%">Action</th>
                   </tr>
                 </thead>
                 <tbody>
