@@ -57,4 +57,21 @@
         //     }
         // });
     </script>
+    <script>
+    $(document).ready(function() {
+        $('#newsletterbutton').click(function() {
+            // Get the textarea element
+            var textarea = $('#newsletterslist');
+
+            // Select all text inside the textarea
+            textarea.select();
+
+            // Copy the selected text to clipboard
+            document.execCommand('copy');
+
+            // Optional: show a quick confirmation (using alert or Toast)
+            alert('Email list copied to clipboard!');
+        });
+    });
+    </script>
 @endsection
