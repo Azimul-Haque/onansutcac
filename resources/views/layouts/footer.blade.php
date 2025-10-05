@@ -53,17 +53,8 @@
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.index') }}/products/corrosion-inhibitor">Cera 2D™ Corrosion Inhibitor</a></li>
           
           
-          
-          <li style="margin-top: 25px;">
-              <!-- 3. PFAS Category -->
-              <span style="display: flex; align-items: center;">
-                  <i class="bi bi-chevron-right" style="margin-right: 5px; font-size: 14px;"></i> 
-                  <strong>PFAS:</strong>
-              </span>
-              <ul style="list-style: none; padding-left: 20px; margin-top: 5px;">
-                  <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/endpfas">EndPFAS™</a></li>
-              </ul>
-          </li>
+          <strong>PFAS:</strong>
+          <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/endpfas">EndPFAS™</a></li>
       </ul>
       </div>
 
