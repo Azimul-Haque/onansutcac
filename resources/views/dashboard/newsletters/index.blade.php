@@ -38,7 +38,7 @@
                   </td>
                   
                   <td align="right">
-                    <button type="button" class="btn btn-danger btn-sm">
+                    <button type="button" class="btn btn-primary btn-sm">
                       <i class="fas fa-trash-alt"></i>
                     </button>
                   </td>
