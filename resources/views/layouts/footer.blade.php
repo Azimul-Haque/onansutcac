@@ -95,7 +95,7 @@
         </a>
         <h5>Our Newsletter</h5>
         <p>Subscribe to our newsletter for product and service news.</p>
-        <form action="" method="post" class="php-email-form">
+        <form action="" method="post" class="{{ route('index.store.emails') }}">
           @csrf
           <div class="newsletter-form"><input type="email" name="email" required><input type="submit" value="→"></div>
           <div class="loading">Loading</div>
