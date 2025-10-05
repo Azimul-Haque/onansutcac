@@ -178,6 +178,13 @@ Route::post('/dashboard/statistics/store', 'DashboardController@storeStatistic')
 Route::post('/dashboard/statistics/{id}/update', 'DashboardController@updateStatistic')->name('dashboard.statistics.update');
 Route::get('/dashboard/statistics/{id}/delete', 'DashboardController@deleteStatistic')->name('dashboard.statistics.delete');
 
+
+// --- Statistics Routes ---
+Route::get('/dashboard/newsletter', 'DashboardController@getNewsletter')->name('dashboard.newsletter');
+Route::post('/dashboard/newsletter/store', 'DashboardController@storeNewsletter')->name('dashboard.newsletter.store');
+Route::post('/dashboard/newsletter/{id}/update', 'DashboardController@updateNewsletter')->name('dashboard.newsletter.update');
+Route::get('/dashboard/newsletter/{id}/delete', 'DashboardController@deleteNewsletter')->name('dashboard.newsletter.delete');
+
 // --- Meta Data Routes ---
 Route::get('/dashboard/meta-data', 'DashboardController@getMetaData')->name('dashboard.meta-data');
 Route::post('/dashboard/meta-data/store', 'DashboardController@storeMetaData')->name('dashboard.meta-data.store');
