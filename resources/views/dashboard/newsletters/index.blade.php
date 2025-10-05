@@ -31,8 +31,8 @@
                 <tr>
                   <td>
                     <textarea class="form-control">
-                      @foreach($newsletters as $message)
-                        
+                      @foreach($newsletters as $newsletter)
+                        {{ $newsletter->email }}
                       @endforeach
                     </textarea>
                   </td>
