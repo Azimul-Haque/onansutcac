@@ -1338,7 +1338,7 @@ class DashboardController extends Controller
 
     public function getNewsletters()
     {
-        $newsletters = Newsletter::all();
+        $newsletters = Newsletterlist::all();
 
         return view('dashboard.newsletters.index')->withNewsletters($newsletters);
     }
