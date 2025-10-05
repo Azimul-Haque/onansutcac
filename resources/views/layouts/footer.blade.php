@@ -54,11 +54,7 @@
               <!-- Nested list for CoreSil™ products, double indented -->
               <ul style="list-style: none; padding-left: 20px; margin-top: 5px;">
                   
-                  <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ RO Additives</a></li>
-                  <!-- Additional products below CoreSil Additives -->
-                  <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a style="color: white; text-decoration: none;" href="#">CoreSil™ Textile</a></li>
-                  <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a style="color: white; text-decoration: none;" href="#">CoreSil™ Polymers</a></li>
-                  <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a style="color: white; text-decoration: none;" href="#">CoreSil™ Metals</a></li>
+                  
               </ul>
           </li>
           
