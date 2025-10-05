@@ -49,11 +49,11 @@
           @endforeach
         </ul><br/>
 
-        <h4>Sustainability</h4>
+        <!-- <h4>Sustainability</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.sdg-alignment') }}">SDG Alignment</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.social-impact') }}">Social Impact</a></li>
-        </ul>
+        </ul> -->
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
