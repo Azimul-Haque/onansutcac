@@ -49,7 +49,7 @@
           <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Polymers</a></li>
           <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Metals</a></li>
 
-          <strong style="margin-top: 25px;">Corrosion:</strong>
+          <strong>Corrosion:</strong>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.index') }}/products/corrosion-inhibitor">Cera 2D™ Corrosion Inhibitor</a></li>
           
           
