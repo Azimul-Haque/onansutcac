@@ -1,21 +1,19 @@
 @extends('layouts.app')
-@section('title') ড্যাশবোর্ড | নিউজলেটার ইমেইল তালিকা @endsection
+@section('title') Dashboard | Newsletter Email List @endsection
 
 @section('third_party_stylesheets')
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/icheck-bootstrap@3.0.1/icheck-bootstrap.min.css">
 @endsection
 
 @section('content')
-	@section('page-header') নিউজলেটার ইমেইল তালিকা @endsection
+	@section('page-header') Newsletter Email List @endsection
     <div class="container-fluid">
 		<div class="card">
           <div class="card-header">
-            <h3 class="card-title">নিউজলেটার ইমেইল তালিকা তালিকা</h3>
+            <h3 class="card-title">Newsletter Email List তালিকা</h3>
 
             <div class="card-tools">
-            	{{-- <button type="button" class="btn btn-success btn-sm"  data-toggle="modal" data-target="#addPackageModal" title="" rel="tooltip" data-original-title="নিউজলেটার ইমেইল তালিকা যোগ করুন">
-            		<i class="fas fa-clipboard-check"></i> নতুন নিউজলেটার ইমেইল তালিকা
-            	</button> --}}
+            	
             </div>
           </div>
           <!-- /.card-header -->
