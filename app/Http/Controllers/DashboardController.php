@@ -22,6 +22,7 @@ use App\Testimonial;
 use App\Faq;
 use App\Contact;
 use App\Globalpresence;
+use App\Newsletter;
 
 use Carbon\Carbon;
 use DB;
@@ -1337,16 +1338,7 @@ class DashboardController extends Controller
 
     public function getNewsletters()
     {
-        if($request->search) {
-            $messages = Contact::where('name', 'LIKE', "%$request->search%")
-                         ->orWhere('email', 'LIKE', "%$request->search%")
-                         ->orWhere('subject', 'LIKE', "%$request->search%")
-                         ->orWhere('message', 'LIKE', "%$request->search%")
-                         ->orderBy('id', 'desc')
-                         ->paginate(10);
-        } else {
-            $messages = Contact::orderBy('id', 'desc')->paginate(10);
-        }
+        $newsletters = Newsletter::all();
 
         return view('dashboard.contacts.index')->withMessages($messages);
     }
