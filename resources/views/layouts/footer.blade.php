@@ -103,10 +103,10 @@
           <div class="sent-message">Your subscription request has been sent. Thank you!</div>
         </form>
         <div class="social-links d-flex mt-4">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
           <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a> -->
+          <a href="http://linkedin.com/company/cactus-nano0"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
 
