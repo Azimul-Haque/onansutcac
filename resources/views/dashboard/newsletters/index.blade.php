@@ -68,17 +68,7 @@
                       
                     </td>
                 		
-                		<td align="right">
-                      @if($message->status == 0)
-                        <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#updateModal{{ $message->id }}">
-                        <i class="fas fa-clipboard-check"></i>
-                      </button>
-                      @endif
-                			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
-                        <i class="fas fa-trash-alt"></i>
-                      </button>
-                      
-                		</td>
+                		
                 	</tr>
                 @endforeach
               </tbody>
