@@ -49,7 +49,8 @@
           <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Polymers</a></li>
           <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Metals</a></li>
 
-          <strong>Biofouling:</strong>
+          <strong>Corrosion:</strong>
+          <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/corrosion-inhibitor">Cera 2D™ Corrosion Inhibitor</a></li>
           
           <li style="margin-top: 25px;">
               <!-- 2. Corrosion Category -->
@@ -58,7 +59,7 @@
                   <strong>Corrosion:</strong>
               </span>
               <ul style="list-style: none; padding-left: 20px; margin-top: 5px;">
-                  <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/corrosion-inhibitor">Cera 2D™ Corrosion Inhibitor</a></li>
+                  
               </ul>
           </li>
           
