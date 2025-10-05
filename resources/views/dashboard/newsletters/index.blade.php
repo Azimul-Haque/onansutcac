@@ -45,33 +45,11 @@
                       @endif
                       
                     </td>
-                    <td>
-                      @if($message->status == 1)
-                        {{ $message->mobile }}
-                      @else
-                        <b>{{ $message->mobile }}</b>
-                      @endif
-                    </td>
-                    <td>
-                      @if($message->status == 1)
-                        {{ $message->message }}
-                      @else
-                        <b>{{ $message->message }}</b>
-                      @endif
-                    </td>
-                    <td>
-                      @if($message->status == 1)
-                        {{ date('F d, Y h:m A', strtotime($message->created_at)) }}
-                      @else
-                        <b>{{ date('F d, Y h:m A', strtotime($message->created_at)) }}</b>
-                      @endif
-                    </td>
                 		
                 		<td align="right">
                 			<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ $message->id }}">
                         <i class="fas fa-trash-alt"></i>
                       </button>
-                      
                 		</td>
                 	</tr>
                 @endforeach
