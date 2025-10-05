@@ -110,7 +110,7 @@
     <a href="#!" class="nav-link {{ Request::is('dashboard/newsletters') ? 'active' : '' }} {{ Request::is('dashboard/newsletters/*') ? 'active' : '' }}">
     <a href="{{ route('dashboard.newsletters') }}" class="nav-link {{ Request::is('dashboard/newsletters') ? 'active' : '' }} {{ Request::is('dashboard/newsletters/*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-chart-pie"></i>
-        <p>newsletters Email List</p>
+        <p>Newsletter Emails</p>
     </a>
 </li>
 
