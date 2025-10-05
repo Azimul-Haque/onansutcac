@@ -43,7 +43,7 @@
           <strong>Biofouling:</strong>
           <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a href="{{ route('index.index') }}/products/revolutionizing-ro-membrane-with-nano-technology">CoreSil™ RO Membrane</a></li>
 
-          <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a style="color: white; text-decoration: none;" href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ RO Additives</a></li>
+          <li><i class="bi bi-chevron-right" style="margin-right: 5px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ RO Additives</a></li>
           <!-- 1. Biofouling Category -->
           <li style="margin-top: 15px;">
               <span style="display: flex; align-items: center;">
