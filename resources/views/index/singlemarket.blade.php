@@ -203,7 +203,7 @@
 
     </section>
 
-    <style>
+    <!-- <style>
       .testimonials .testimonial-item {
           background-color: var(--surface-color);
           box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -247,7 +247,7 @@
           color: color-mix(in srgb, var(--default-color), transparent 50%);
           margin-bottom: 0;
       }
-    </style>
+    </style> -->
 
     <!-- <section id="testimonials" class="testimonials section">
 
