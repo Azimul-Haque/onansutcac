@@ -133,12 +133,12 @@
           border-radius: 15px; 
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
           padding: 30px; 
-          min-height: 400px; /* Ensure a decent height for the widget */
-          display: flex; /* Use flexbox to center content vertically if needed */
-          align-items: center; /* Vertically center content */
+          min-height: 400px; 
+          display: flex; 
+          align-items: center; 
         }
 
-        /* Styling for the left navigation links */
+        
         .custom-nav-link {
           color: #6a1aed; /* Your desired text color for inactive links */
           font-weight: 500;
