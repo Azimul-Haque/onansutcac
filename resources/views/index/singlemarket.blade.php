@@ -128,11 +128,11 @@
       <style>
 
         .relevant-technologies-widget {
-          background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
-          backdrop-filter: blur(10px); /* Frosted glass effect */
-          border-radius: 15px; /* Rounded corners for the widget */
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
-          padding: 30px; /* Internal padding */
+          background-color: rgba(255, 255, 255, 0.7); 
+          backdrop-filter: blur(10px);
+          border-radius: 15px; 
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+          padding: 30px; 
           min-height: 400px; /* Ensure a decent height for the widget */
           display: flex; /* Use flexbox to center content vertically if needed */
           align-items: center; /* Vertically center content */
