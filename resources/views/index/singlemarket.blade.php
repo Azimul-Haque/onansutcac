@@ -145,8 +145,8 @@
           padding: 10px 20px;
           margin-bottom: 8px; 
           border-radius: 0; 
-          transition: all 0.3s ease; /* Smooth transition for hover/active */
-          position: relative; /* For the active line */
+          transition: all 0.3s ease; 
+          position: relative; 
           background-color: transparent; 
         }
 
