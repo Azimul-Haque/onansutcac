@@ -92,11 +92,10 @@
 
     <section id="relevant-technologies" class="section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Relevant Industry/Project</h2>
         <p>See Where We Make an Impact<br></p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up">
 
@@ -127,7 +126,6 @@
       </div>
 
       <style>
-        /* --- Custom CSS for the Widget --- */
 
         .relevant-technologies-widget {
           background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
