@@ -90,7 +90,7 @@
       </div>
     </div>
 
-    <section id="relevant-technologies" class="section light-background">
+    <!-- <section id="relevant-technologies" class="section light-background">
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Relevant Industry/Project</h2>
@@ -197,7 +197,7 @@
         }
       </style>
 
-    </section>
+    </section> -->
 
     <!-- <style>
       .testimonials .testimonial-item {
