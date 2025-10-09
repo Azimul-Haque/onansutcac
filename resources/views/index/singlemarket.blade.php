@@ -140,11 +140,11 @@
 
         
         .custom-nav-link {
-          color: #6a1aed; /* Your desired text color for inactive links */
+          color: #6a1aed; 
           font-weight: 500;
           padding: 10px 20px;
-          margin-bottom: 8px; /* Space between links */
-          border-radius: 0; /* Remove default pill rounding */
+          margin-bottom: 8px; 
+          border-radius: 0; 
           transition: all 0.3s ease; /* Smooth transition for hover/active */
           position: relative; /* For the active line */
           background-color: transparent; 
