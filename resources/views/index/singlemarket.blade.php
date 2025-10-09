@@ -149,36 +149,35 @@
           border-radius: 0; /* Remove default pill rounding */
           transition: all 0.3s ease; /* Smooth transition for hover/active */
           position: relative; /* For the active line */
-          background-color: transparent; /* Ensure no default grey background */
+          background-color: transparent; 
         }
 
         .custom-nav-link:hover {
-          color: #4a00af; /* Darker hover color */
-          background-color: rgba(255, 255, 255, 0.3); /* Slightly brighter hover background */
+          color: #4a00af; 
+          background-color: rgba(255, 255, 255, 0.3); 
         }
 
         .custom-nav-link.active {
-          color: #000; /* Text color for active link */
+          color: #000; 
           font-weight: 600;
-          background-color: transparent; /* No background fill, just the border */
-          position: relative; /* For the line */
+          background-color: transparent; 
+          position: relative;
         }
 
         .custom-nav-link.active::before {
           content: '';
           position: absolute;
-          left: 0; /* Align to the left edge */
+          left: 0; 
           top: 50%;
           transform: translateY(-50%);
-          width: 5px; /* Thickness of the active line */
-          height: 80%; /* Height of the active line */
-          background: linear-gradient(to bottom, #8a2be2, #4a00af); /* Gradient for the active line */
-          border-radius: 2px; /* Slightly rounded ends for the line */
+          width: 5px; 
+          height: 80%;
+          background: linear-gradient(to bottom, #8a2be2, #4a00af); 
+          border-radius: 2px; 
         }
 
-        /* Styling for the Discover More button */
         .discover-more-btn {
-          background: linear-gradient(to right, #8a2be2, #4a00af); /* Your desired gradient */
+          background: linear-gradient(to right, #8a2be2, #4a00af); 
           border: none;
           color: white;
           padding: 10px 25px;
@@ -189,14 +188,13 @@
         }
 
         .discover-more-btn:hover {
-          transform: translateY(-2px); /* Slight lift on hover */
+          transform: translateY(-2px);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-          color: white; /* Ensure text color remains white on hover */
+          color: white;
         }
 
-        /* Adjustments for text in content area */
         .tab-content p {
-          color: #333; /* Darker text for readability */
+          color: #333;
           line-height: 1.8;
         }
       </style>
