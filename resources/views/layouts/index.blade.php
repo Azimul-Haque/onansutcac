@@ -35,11 +35,9 @@
       "image": "{{ asset('images/cactusnano-nano-tech-onnocation.png') }}",
       "url": "{{ url()->current() }}",
       "author": {
-        "@type": "Person",
-        "name": "A. H. M. Azimul Haque"
-      },
-      // "datePublished": "{{ $blog->created_at ?? now()->toIso8601String() }}",
-      // "dateModified": "{{ $blog->updated_at ?? now()->toIso8601String() }}"
+          "@type": "Person",
+          "name": "A. H. M. Azimul Haque"
+        }
       }
   </script>
 
