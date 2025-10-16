@@ -15,7 +15,7 @@
   <meta property="og:title" content="CactusNano - Powerful, Long-Lasting Antimicrobial & Antifouling Nanotechnology" />
   <meta property="og:description" content="Cactus Nano develops powerful, long-lasting antimicrobial, antifouling technology for applications in water filters, water storage and distribution systems, and consumer products." />
   <meta property="og:url" content="{{ url('/') }}" />
-  <meta property="og:site_name" content="Gradiant" />
+  <meta property="og:site_name" content="CactusNano" />
   <meta property="og:canonical" content="{{ url('/') }}" />
   <meta property="og:image" content="{{ asset('images/cactusnano-nano-tech-onnocation.png') }}" />
   <meta property="og:image:width" content="1025" />
