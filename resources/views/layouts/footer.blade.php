@@ -77,7 +77,7 @@
         <h4>Resources</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ url('/files/Cactus-Nano-RO-Membrane-Datasheet.pdf') }}">Product Datasheets</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Testing Standards (EPA, ISO)</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="https://cactusnano.com/news/cactus-nano-officially-achieved-iso-9001-2015-certification">Testing Standards (EPA, ISO)</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ url('/files/Cactus-Nano-Profile.pdf') }}">Technical Whitepapers</a></li>
           <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Regulatory Updates (EPA, DOE)</a></li> -->
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.help-center') }}">FAQ</a></li>
