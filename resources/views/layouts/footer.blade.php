@@ -76,7 +76,7 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Resources</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="{{ url('/files/All_Data_sheet_Cactus-Nano.pdf.pdf') }}">Product Datasheets</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ url('/files/All_Data_sheet_Cactus-Nano.pdf') }}">Product Datasheets</a></li>
           <li><i class="bi bi-chevron-right"></i> <span style="color: #B4B7B9;">Testing Standards (<a href="https://cactusnano.com/news/coresil-is-now-epa-approved">EPA</a>,  <a href="https://cactusnano.com/news/cactus-nano-officially-achieved-iso-9001-2015-certification"> ISO</a>)</span></li>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ url('/files/Cactus-Nano-Profile.pdf') }}">Technical Whitepapers</a></li>
           <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Regulatory Updates (EPA, DOE)</a></li> -->
