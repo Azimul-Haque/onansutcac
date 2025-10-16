@@ -12,7 +12,7 @@
   <link rel="canonical" href="{{ url('/') }}" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Cactus Nano - High trust U.S.-made semiconductors for the next generation AI photonic platform and power" />
+  <meta property="og:title" content="CactusNano - Powerful, Long-Lasting Antimicrobial & Antifouling Nanotechnology" />
   <meta property="og:description" content="Cactus Nano develops powerful, long-lasting antimicrobial, antifouling technology for applications in water filters, water storage and distribution systems, and consumer products." />
   <meta property="og:url" content="{{ url('/') }}" />
   <meta property="og:site_name" content="Gradiant" />
@@ -29,22 +29,21 @@
   <script type="application/ld+json">
       {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": "Website",
       "headline": "CactusNano",
       "description": "CactusNano - High trust U.S.-made semiconductors for the next generation AI photonic platform and power",
       "image": "{{ asset('images/cactusnano-nano-tech-onnocation.png') }}",
       "url": "{{ url()->current() }}",
       "author": {
-        "@type": "Person",
-        "name": "A. H. M. Azimul Haque"
-      },
-      // "datePublished": "{{ $blog->created_at ?? now()->toIso8601String() }}",
-      // "dateModified": "{{ $blog->updated_at ?? now()->toIso8601String() }}"
+          "@type": "Person",
+          "name": "A. H. M. Azimul Haque"
+        }
       }
   </script>
 
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/svg" />
+  <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}">
   <link rel="apple-touch-icon" href="{{ asset('images/favicon.png') }}" />
   <meta name="msapplication-TileImage" content="{{ asset('images/favicon.png') }}" />
 
