@@ -45,9 +45,9 @@
 
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ RO Additives</a></li>
           <!-- Additional products below CoreSil Additives -->
-          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Textile</a></li>
-          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Polymers</a></li>
-          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive"">CoreSil™ Metals</a></li>
+          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ Textile</a></li>
+          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ Polymers</a></li>
+          <li><i class="bi bi-chevron-right" style="margin-left: 15px;"></i> <a href="{{ route('index.index') }}/products/coresil-additive">CoreSil™ Metals</a></li>
 
           <strong>Corrosion:</strong>
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.index') }}/products/corrosion-inhibitor">Cera 2D™ Corrosion Inhibitor</a></li>
@@ -76,10 +76,10 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Resources</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Product Datasheets</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Testing Standards (EPA, ISO)</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Technical Whitepapers</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Regulatory Updates (EPA, DOE)</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ url('/files/All_Data_sheet_Cactus-Nano.pdf') }}">Product Datasheets</a></li>
+          <li><i class="bi bi-chevron-right"></i> <span style="color: #B4B7B9;">Testing Standards (<a href="https://cactusnano.com/news/coresil-is-now-epa-approved">EPA</a>,  <a href="https://cactusnano.com/news/cactus-nano-officially-achieved-iso-9001-2015-certification"> ISO</a>)</span></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="{{ url('/files/Cactus-Nano-Profile.pdf') }}">Technical Whitepapers</a></li>
+          <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Regulatory Updates (EPA, DOE)</a></li> -->
           <li><i class="bi bi-chevron-right"></i> <a href="{{ route('index.help-center') }}">FAQ</a></li>
         </ul><br/>
 
@@ -137,7 +137,7 @@
       <!-- You can delete the links only if you've purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
     </div>
   </div>
 
