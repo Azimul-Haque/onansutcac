@@ -73,7 +73,7 @@
                     </div>
                     <div class="modal-body pt-0">
                       <div class="text-center mb-4">
-                        <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ $event->title }}" style="max-height: 350px; object-fit: cover; width: 100%;">
+                        <img src="{{ asset('images/events/' . $event->image) }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ $event->title }}" style="max-height: 350px; width: 100%;">
                         <h3 class="modal-title fw-bold mb-2" id="eventModalLabel">{{ $event->title }}</h3>
                         <p class="text-muted fst-italic mb-1">
                           <i class="bi bi-calendar-event me-2"></i> {{ \Carbon\Carbon::parse($event->event_date)->format('M d, Y') }} | {{ $event->from_to }}
