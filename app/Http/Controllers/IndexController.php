@@ -425,6 +425,7 @@ class IndexController extends Controller
             'About Us' => url('/about'),
             'Contact Us' => url('/contact'),
             'FAQs' => url('/faq'),
+            'Blogs' => url('/blogs'),
             // Add more links as needed
         ];
 
