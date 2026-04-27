@@ -425,7 +425,6 @@ class IndexController extends Controller
             // Add more links as needed
         ];
 
-
         return view('index.sitemap');
     }
 
