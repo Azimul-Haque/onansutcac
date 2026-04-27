@@ -423,6 +423,7 @@ class IndexController extends Controller
             'Home' => url('/'),
             'About Us' => url('/about'),
             'Contact Us' => url('/contact'),
+            'FAQs' => url('/faq'),
             // Add more links as needed
         ];
 
