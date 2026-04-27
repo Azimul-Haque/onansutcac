@@ -35,6 +35,7 @@ use Cache;
 // use OneSignal;
 // use PDF;
 use View;
+use URL;
 use Spatie\Sitemap\SitemapGenerator;
 
 
