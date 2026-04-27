@@ -35,7 +35,7 @@ use Cache;
 // use OneSignal;
 // use PDF;
 use View;
-use SitemapGenerator;
+use Spatie\Sitemap\SitemapGenerator;
 
 
 class IndexController extends Controller
