@@ -407,6 +407,7 @@ class IndexController extends Controller
         $sitemap->add(URL::to('/about'));
         $sitemap->add(URL::to('/contact'));
         $sitemap->add(URL::to('/faq'));
+        $sitemap->add(URL::to('/blogs'));
 
         // You could also add URLs from your database, for example:
         // $posts = Post::all();
