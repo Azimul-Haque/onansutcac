@@ -406,6 +406,7 @@ class IndexController extends Controller
         // You can use a loop to add all your routes or models.
         $sitemap->add(URL::to('/about'));
         $sitemap->add(URL::to('/contact'));
+        $sitemap->add(URL::to('/faq'));
 
         // You could also add URLs from your database, for example:
         // $posts = Post::all();
